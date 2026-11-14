@@ -33,6 +33,21 @@ class PublicationTests(unittest.TestCase):
         pub.validate_path("scripts/a.py", "runtime_code")
         pub.validate_content("scripts/a.py", b"from pathlib import Path\nprint(Path.cwd())\n")
 
+    def test_operator_graph_requires_reviewed_digest(self):
+        data = b"graph(%x : Tensor):\n  return (%x)\n"
+        with self.assertRaises(ValueError):
+            pub.validate_content("universal_eval/a.ir", data)
+        pub.validate_content("universal_eval/a.ir", data,
+                             {"weight_free_operator_graph_SHA256": [pub.digest(data)]})
+        with self.assertRaises(ValueError):
+            pub.validate_path("universal_eval/a.ir", "documentation")
+
+    def test_operator_graph_rejects_tensor_constants_even_with_digest(self):
+        data = b"graph(%x : Tensor):\n  %w : Tensor = prim::Constant[value=<Tensor>]()\n  return (%w)\n"
+        with self.assertRaises(ValueError):
+            pub.validate_content("universal_eval/a.ir", data,
+                                 {"weight_free_operator_graph_SHA256": [pub.digest(data)]})
+
     def test_dirty_checkout_stops_before_any_snapshot(self):
         responses = [SimpleNamespace(stdout=b"codex/910b-source-layout-20261114\n"),
                      SimpleNamespace(stdout=b"https://github.com/lyinguo/910b.git\n"),

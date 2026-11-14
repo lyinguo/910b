@@ -34,3 +34,9 @@ python3 -B scripts/publish_code_daily.py publish --source-root SOURCE --repo-roo
 ```
 
 `SOURCE` 是本次逐文件核 SHA 后的代码快照，`CHECKOUT` 是该 GitHub 分支的独立工作副本。工具拒绝未审核路径、工作区产物、权重、二进制大文件和明显凭据，精确暂存清单中的变化，并核对推送后的远端提交。不执行合并或强制推送。推送失败时保留本地提交，先排查认证或远端变化，不制造重复提交。
+
+## Unsloth Gemma-3n-E2B-it
+
+独立入口为 `configs/Gemma3nForConditionalGeneration/unsloth--gemma-3n-E2B-it-native-BF16-chat-2048-20261115.yaml`。它使用本款原有 BF16 权重、自带对话模板、2048 生成预算、Greedy 和 EOS `[1,106]`，以指定表格 D 列成绩比较 5% 相对误差。该实现采用 Ascend 原生 HF SDPA、外层 10 条及内层逐条计算；与保存的 vLLM 部署记录之间的运行时边界会在报告中披露，不声称捕获了历史 A100 引擎或张量。
+
+共享 MobileNet `.ir` 文件仅包含形状和算子代码，所有学习参数都由评测机器上的本款权重装载。发布策略逐 SHA 审核该文件，并拒绝图中内嵌张量常量。只读 NPZ 索引器用于独立复核，不修改正在运行的旧验收或模型计算。配置检查和 CPU 输入准备不代表已完成真实 NPU 小样本或 200 条评测；这些阶段及五个完整报告仍须实际执行和验收。

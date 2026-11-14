@@ -14,7 +14,7 @@ import subprocess
 
 DENIED_PARTS = {"workspace", "weights", "checkpoints", "datasets", "reports", ".git", ".ssh", "__pycache__"}
 DENIED_SUFFIXES = {".bin", ".safetensors", ".pt", ".pth", ".ckpt", ".gguf", ".npz", ".npy", ".xlsx", ".zip", ".tar", ".gz", ".log", ".jsonl", ".pem", ".key", ".pyc"}
-TEXT_SUFFIXES = {".py", ".yaml", ".yml", ".json", ".md", ".toml", ".txt"}
+TEXT_SUFFIXES = {".py", ".yaml", ".yml", ".json", ".md", ".toml", ".txt", ".ir"}
 SPECIAL_NAMES = {".gitignore", ".gitattributes"}
 MAX_BYTES = 2 * 1024 * 1024
 SECRET_PATTERNS = (
@@ -43,12 +43,14 @@ def validate_path(name, role):
         raise ValueError("Non-code file type: " + name)
     if role not in {"runtime_code", "runtime_config", "verification_code", "publication_policy", "documentation"}:
         raise ValueError("Unreviewed role: " + name)
+    if p.suffix.lower() == ".ir" and role != "runtime_code":
+        raise ValueError("Operator graph must be reviewed runtime source: " + name)
     if p.suffix.lower() == ".json" and role not in {"runtime_config", "publication_policy"}:
         raise ValueError("JSON requires a real configuration consumer: " + name)
     return p
 
 
-def validate_content(name, data):
+def validate_content(name, data, entry=None):
     if len(data) > MAX_BYTES or b"\x00" in data:
         raise ValueError("Binary/oversized content: " + name)
     text = data.decode("utf-8-sig")
@@ -69,6 +71,13 @@ def validate_content(name, data):
                 if isinstance(key, str) and key.lower() in {"password", "api_key", "access_token", "auth_token", "secret_key", "openai_api_key"}:
                     if isinstance(value, str) and len(value) >= 4 and value.upper() not in {"EMPTY", "NONE", "DUMMY", "PLACEHOLDER", "YOUR_API_KEY"} and not value.startswith(("${", "<", "{")):
                         raise ValueError("Literal credential assignment; value suppressed: " + name)
+    elif name.endswith(".ir"):
+        approved = (entry or {}).get("weight_free_operator_graph_SHA256", [])
+        if digest(data) not in approved or not text.lstrip().startswith("graph("):
+            raise ValueError("Operator graph needs explicit weight-free source review: " + name)
+        for line in text.splitlines():
+            if "prim::Constant" in line and re.search(r"Tensor|BFloat|Half\(|value=\{", line):
+                raise ValueError("Tensor constants forbidden in operator source: " + name)
     elif name.endswith(".json"):
         json.loads(text)
 
@@ -118,7 +127,7 @@ def plan_snapshot(source, repo, policy_path):
     records = []
     for name, entry in sorted(policy["files"].items()):
         data = checked_file(source, name)
-        validate_content(name, data)
+        validate_content(name, data, entry)
         previous = (repo / name).read_bytes() if (repo / name).is_file() else None
         records.append(dict(path=name, SHA256=digest(data), bytes=len(data), role=entry["role"],
                             action="unchanged" if previous == data else ("update" if previous is not None else "add")))
@@ -141,7 +150,7 @@ def audit_outgoing(repo, policy, base):
                 raise ValueError("Outgoing commit contains an unapproved file: " + name)
             validate_path(name, policy["files"][name]["role"])
             data = git(repo, "show", commit + ":" + name).stdout
-            validate_content(name, data)
+            validate_content(name, data, policy["files"][name])
     return commits
 
 

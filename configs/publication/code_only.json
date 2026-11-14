@@ -2679,6 +2679,79 @@
       "role": "runtime_code",
       "reason": "static-local-import",
       "initial_SHA256": "acfe30229ea04f80139a8118063deb8d96828e2b5376f174130cfcfef13dff7a"
+    },
+    "scripts/prepare_UnslothGemma3nE2Bit_own_frontend_source_preflight_1207_20261114.py": {
+      "role": "verification_code",
+      "reason": "Own checkpoint assets and independent processor pixel preparation; no model scores",
+      "initial_SHA256": "ccde9f58e83f6dcae60da2f7de1f3fc71be251bf17b2de2cfc9d075190d7fb01"
+    },
+    "universal_eval/utils/readonly_npz_indexed.py": {
+      "role": "runtime_code",
+      "reason": "Immutable indexed NPZ reader for independent numeric audits",
+      "initial_SHA256": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7"
+    },
+    "scripts/diagnostic_E4B_indexed_readonly_npz_existing_true3_only_1207_20261114.py": {
+      "role": "verification_code",
+      "reason": "Review-only unchanged numerical assertions using an indexed archive reader",
+      "initial_SHA256": "88f0cce21336cfd939c8fd945ea8e617708b4f85cedb80bfea2c8b920b5919b2"
+    },
+    "scripts/diagnostic_E4B_immutable_array_read_cache_existing_true3_only_0705_20261114.py": {
+      "role": "verification_code",
+      "reason": "Bounded immutable array cache diagnostic, separate from active frozen verifier",
+      "initial_SHA256": "0379fbaf708eed7363b73de2feee30c4045c67b5da70948ae1f0738fab684238"
+    },
+    "tests/test_readonly_npz_indexed.py": {
+      "role": "verification_code",
+      "reason": "Checks exact array values, dtype/order, safe reads and bounded caching",
+      "initial_SHA256": "03d61545b48bbe03c0b02cf604acd9b6f002187b9674b5cdb8e5d72638fbfc7e"
+    },
+    "scripts/prepare_unsloth_gemma3n_e2bit_native.py": {
+      "role": "verification_code",
+      "reason": "Own instruction frontend, source/config binding and resource checks before true3",
+      "initial_SHA256": "0377633f381237a9768b0942da6237a604b2e99309c6374e60f10b679e3a170a"
+    },
+    "scripts/verify_unsloth_gemma3n_e2bit_native.py": {
+      "role": "verification_code",
+      "reason": "Own source tensors, full heads, native KV, masks and complete five-report audit",
+      "initial_SHA256": "b79ba54a682581aa23206a7dec5db501d43bc3b45efab4a3c4bc40e11e74a54a"
+    },
+    "scripts/continue_unsloth_gemma3n_e2bit_after_lock.py": {
+      "role": "runtime_code",
+      "reason": "Waits for actual existing runner release then dispatches reviewed genuine stages",
+      "initial_SHA256": "e821d9eaa390f24c4be1e448bccc0ad3e417e4f7dd478a9d214b251524748b74"
+    },
+    "universal_eval/model/adapters/unsloth_gemma3n_e2bit_native.py": {
+      "role": "runtime_code",
+      "reason": "Own BF16 checkpoint instruction model adapter with complete execution capture",
+      "initial_SHA256": "133dbd7b8eb7fd9a8dea6cd67a98c63211ab85c5349a0f70bbdb24511d2c2f51"
+    },
+    "configs/Gemma3nForConditionalGeneration/unsloth--gemma-3n-E2B-it-native-BF16-chat-2048-20261115.yaml": {
+      "role": "runtime_config",
+      "reason": "Standalone run.py model/task evaluation entry",
+      "initial_SHA256": "5235974f8062c693dcbda4218da70864820ac23892c2a57257e4937b1eb1fbce"
+    },
+    "configs/Gemma3nForConditionalGeneration/unsloth--gemma-3n-E2B-it-native-BF16-chat-2048-20261115-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Standalone genuine3 input range and standard output configuration",
+      "initial_SHA256": "462110f17762c73a6fb01151fbc60979f2400fd98c68a401c2389d9084565de1"
+    },
+    "configs/protocols/unsloth_gemma3n_e2bit_native.json": {
+      "role": "runtime_config",
+      "reason": "Consumed by own adapter and verifier for source/assets and unchanged generation budget",
+      "initial_SHA256": "a7e4c7d962732ff4b2b111ef9be8ad236bb1fefaa137b8a501017fe1ecfbf248"
+    },
+    "configs/protocols/unsloth_gemma3n_e2bit_vision_layout.json": {
+      "role": "runtime_config",
+      "reason": "Consumed by vision constructor for own parameter shapes, aliases and graph argument order",
+      "initial_SHA256": "b99965ab40981434f23575ec8e78208247b38c5ddc1d17c9ca9638a6744404a7"
+    },
+    "universal_eval/model/adapters/gemma3n_E4B_own_original_MobileNetV5_BF16_parameterized_v1_after_reboot_20261113.ir": {
+      "role": "runtime_code",
+      "reason": "Weight-free architecture operator graph; every learned tensor supplied from own checkpoint",
+      "initial_SHA256": "65e0b3b8f48e88cb393ed06723827781fd986251a94bd2525433e61efe855608",
+      "weight_free_operator_graph_SHA256": [
+        "65e0b3b8f48e88cb393ed06723827781fd986251a94bd2525433e61efe855608"
+      ]
     }
   }
 }

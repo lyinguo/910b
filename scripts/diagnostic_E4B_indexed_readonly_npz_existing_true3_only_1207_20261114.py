@@ -1,0 +1,179 @@
+"""Independent full-report, token/logit, native cache and mask audit; no CPU NN."""
+from pathlib import Path
+from decimal import Decimal
+import json,hashlib,re,sys,csv,collections
+import numpy as np
+from universal_eval.algorithm.inference import GreedyInference
+R=Path('/root/projects/comperror');D=R/'workspace/diagnostics';MID='google/gemma-3n-E4B';FILES={'eval_report.json','sample_inputs.jsonl','sample_outputs.jsonl','run.log','operator_lineage.json'};EXTERNAL={}
+def sha(p):
+    with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+def check(p,digest=None,root=D):
+    p=Path(p).resolve();assert p.is_relative_to(Path(root).resolve());h=EXTERNAL.get(str(p)) or sha(p);assert digest is None or h==digest,(str(p),digest,h);EXTERNAL[str(p)]=h;return p
+def js(p):return json.loads(Path(p).read_bytes())
+def jl(p):return [json.loads(s) for s in Path(p).read_text().splitlines()]
+def bs(a):return hashlib.sha256(np.ascontiguousarray(a).tobytes()).hexdigest()
+def f32(a):return (a.astype(np.uint32)<<16).view(np.float32) if a.dtype==np.uint16 else a.astype(np.float32)
+def meta(a,m):
+    types={'torch.bfloat16':'uint16','torch.float32':'float32','torch.float16':'float16','torch.int64':'int64','torch.int32':'int32','torch.bool':'bool'}
+    assert list(a.shape)==m['shape'] and a.dtype==np.dtype(types[m['dtype']]) and bs(a)==m['SHA256']
+def difference(a,b):
+    a=f32(a).astype(np.float64);b=f32(b).astype(np.float64);v=a-b;return dict(max_abs=float(np.abs(v).max()),RMSE=float(np.sqrt(np.mean(v*v))),nonzero=int(np.count_nonzero(v)),count=v.size)
+def independent_choice(raw):
+    from universal_eval.algorithm.native_explicit_mc_v2 import explicit_choice
+    assert explicit_choice('A small object is visible.') is None and explicit_choice('This is a sample.') is None and explicit_choice('<answer>B</answer>')=='B'
+    return explicit_choice(raw) or ''
+def verify(folder,count):
+    assert count in [3,10,200] and re.fullmatch(r'\d{8}_\d{6}',folder.name) and {p.name for p in folder.iterdir()}==FILES
+    report=js(folder/'eval_report.json');cfg=report['pipeline_config'];assert cfg['model']['name']==MID and cfg['sample_count']==count and cfg['sample_range']==f'0:{count-1}' and cfg['algorithm']['batch_size']==1
+    assert cfg['output']==dict(reports_dir='workspace/reports',layout='model_task_timestamp',evidence_dir='workspace/diagnostics/model_runs',timezone='Asia/Hong_Kong',verbose=True)
+    assert cfg['data']['filter_empty'] is False and cfg['data']['download'] is False and cfg['model']['download'] is False and cfg['algorithm']['kwargs']['extract_answer'] is True
+    kw=cfg['model']['kwargs'];p=js(check(kw['protocol_file'],kw['protocol_sha256']));assert p['model_id']==MID and cfg['task_type']==p['report_task']
+    assert folder.parent==R/'workspace/reports/google_gemma-3n-E4B'/p['report_task']
+    if count==200:assert p.get('original_protocol_final_qualification_cleared') and p.get('all_three_D_frozen_verified') and not p.get('preserved_full_D_pending'),'Unresolved selected original deployment or preserved D cannot be a formal qualification'
+    if p.get('all_three_D_frozen_verified'):
+        frozen=js(check(p['three_D_frozen_binding_review'],p['three_D_frozen_binding_review_SHA256']));assert frozen['passed'] and frozen['current_three_D_values']==p['current_A100_D_values'] and set(p['current_A100_D_values'])=={'server','local','preserved_original'}
+        assert sha(frozen['preserved_original_snapshot'])==frozen['preserved_original_snapshot_SHA256']=='700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba'
+        source_review=js(check(p['selected_original_deployment_review'],p['selected_original_deployment_review_SHA256']));assert source_review['passed'] and source_review['model_id']==MID and source_review['selected_original_12_parts_all200_closed_once'] and source_review['all_own_source_actual_AA_NPU_verified'] and source_review['original_precision_budget_attention_cache_preserved']
+
+    for path,h in p['implementation_source_SHA256'].items():assert not Path(path).is_absolute() and '..' not in Path(path).parts;check(R/path,h,R)
+    for path,h in p['static_evidence_SHA256'].items():check(path,h)
+    W=Path(p['weight_path'])
+    for n,h in p['own_runtime_assets_SHA256'].items():check(W/n,h,W)
+    check(p['dataset_path'],p['dataset_SHA256'],R/'workspace/datasets')
+    aa_meta=js(check(p['actual_AA_metadata']));source={x['name']:x for x in js(check(p['actual_AA_source_manifest']))};assert len(source)==1631
+    for n,rec in aa_meta['own_weight_files'].items():assert (W/n).stat().st_size==rec['bytes'];check(W/n,rec['SHA256'],W)
+    front=js(check(p['actual_AA_frontend200']))['samples'];assert len(front)==200 and js(check(p['independent_R_CPU200']))['passed']
+    line=js(folder/'operator_lineage.json')['actual_execution'];assert line==report['operator_lineage']['actual_execution'] and line['hardware']=='Ascend910B' and line['runtime_dtype']=='BF16' and line['max_new_tokens']==2048 and line['actual_outer_batch_size']==1 and line['actual_inner_batch_size']==1 and line['head_size']==262400 and line['per_layer_input_vocab']==262144 and line['cache_implementation']=='hybrid'
+    for path,h in line['runtime_library_source_SHA256'].items():check(path,h,Path('/usr/local/python3.12.16/lib/python3.12/site-packages'))
+    final=js(check(line['final_trace_manifest']));assert final['samples']==count and not final['failed']
+    weights=js(check(line['weight_evidence'],line['weight_evidence_SHA256']));assert len(weights['active_weights'])==1631 and len(weights['original_legacy_unused_shared_KV_source'])==45
+    assert sorted(sorted(g) for g in weights['actual_native_aliases'])==sorted(sorted(g) for g in aa_meta['actual_parameter_aliases'])
+    for name,rec in source.items():assert weights['active_weights'][name]==dict(rec,actual_NPU_device='npu:4',actual_NPU_SHA256=rec['actual_CUDA_SHA256'])
+    control=weights['native_buffer_scope_review'];assert control['passed'] and control['model_id']==MID and control['all_image_only_used_buffers_SHA_equal_to_AA'] and control['image_only_used_buffer_differences']=={}
+    assert final['caption_audio_tower_forward_calls']==0
+    expected_buffers=js(check(p['original_native_buffers']));assert set(weights['native_config_derived_nonpersistent_buffers'])==set(expected_buffers)==set(control['all_native_nonpersistent_buffers'])
+    for name,rec in weights['native_config_derived_nonpersistent_buffers'].items():
+        assert rec['actual_NPU_SHA256']==rec['actual_CPU_initializer_SHA256']==control['all_native_nonpersistent_buffers'][name]['SHA256'] and rec['original_native_AA_SHA256']==expected_buffers[name]['SHA256']
+        if rec['original_image_only_uses_this_buffer']:assert not name.startswith('model.audio_tower.') and rec['actual_NPU_SHA256']==rec['original_native_AA_SHA256']
+        else:assert name.startswith('model.audio_tower.')
+    traces=jl(check(line['sample_trace'],final['sample_trace_SHA256']));ins=jl(folder/'sample_inputs.jsonl');outs=jl(folder/'sample_outputs.jsonl');details=report['detailed_results']
+    for rows in [traces,ins,outs,details]:assert [r['index'] for r in rows]==list(range(count))
+    from transformers import AutoProcessor
+    tokenizer=AutoProcessor.from_pretrained(str(W),local_files_only=True,trust_remote_code=True).tokenizer
+    scores=[];empty=[];invalid=[];truncated=[];numeric=[];steps=0;cfg_aa=aa_meta['actual_config'];types=cfg_aa['text_config']['layer_types'];window=cfg_aa['text_config']['sliding_window']
+    for i,compact in enumerate(traces):
+        e=js(check(compact['actual_execution_file'],compact['actual_execution_SHA256']));ref=front[i];tokens=e['generated_tokens'];N=e['prompt_length'];n=e['actual_native_forwards'];frames=e['frames'];assert n==len(tokens)-N==len(frames)==compact['actual_native_forwards'] and 0<n<=2048 and e['error'] is None and compact['error'] is None
+        assert ins[i]['prompt']==details[i]['prompt']==ref['prompt'] and e['actual_model_prompt']==compact['actual_model_prompt']==ref['original_model_prompt']==GreedyInference._add_answer_instruction(ref['prompt']) and e['actual_model_text']==ref['formatted_text']
+        assert e['reference']==outs[i]['reference']==ins[i]['reference']==details[i]['reference']==ref['reference']
+        check(e['media_path'],ref['image_SHA256'],R/'workspace/datasets');raw=tokenizer.decode(tokens[N:],skip_special_tokens=True).strip();assert raw==e['raw_output']==compact['raw_output']==outs[i]['raw_output']==details[i].get('raw_output',details[i].get('extra',{}).get('raw_output'));choice=independent_choice(raw);assert choice==outs[i]['prediction']==details[i]['prediction']
+        assert tokens[:N]==e['input_ids'] and 1 not in tokens[N:-1] and (n==2048 or tokens[-1]==1)
+        archive=check(e['archive'],e['archive_SHA256']);assert archive.stat().st_size==e['archive_bytes'];visited=set();cache={}
+        with BoundedReadOnlyNPZ(archive,allow_pickle=False) as a:
+            for key,rec in ref['inputs'].items():meta(a['input_'+key],rec);visited.add('input_'+key)
+            assert a['generated_tokens'].tolist()==tokens and a['input_input_ids'][0].tolist()==tokens[:N];visited.add('generated_tokens')
+            logits=a['all_original_full_head_logits'];assert logits.shape==(n,262400) and logits.dtype==np.uint16;visited.add('all_original_full_head_logits')
+            if i<3:
+                for key,rec in e['activation_prefill'].items():
+                    name=key.replace('.','_');meta(a[name],rec);visited.add(name)
+                ids=a['input_input_ids'][0];image=ids==cfg_aa['image_token_id'];assert int(image.sum())==256
+                injection=a['injection_inputs_embeds'][0];text=a['original_text_embeds_before_multimodal_scatter'][0];projected=a['vision_projected'][0]
+                # Original Gemma3n replaces the entire own vision vocabulary range,
+                # including start/end markers, before scattering actual soft tokens.
+                vision_mask=(ids>=cfg_aa['vision_config']['vocab_offset'])&(ids<cfg_aa['audio_config']['vocab_offset']);audio_mask=ids>=cfg_aa['audio_config']['vocab_offset'];assert not audio_mask.any()
+                expected_injection=text.copy();vision_words=a['stage_model_embed_vision'][0];assert vision_words.shape==text.shape
+                expected_injection[vision_mask]=vision_words[vision_mask];expected_injection[image]=projected
+                assert np.array_equal(injection,expected_injection),'Original own text/vision-marker/soft-image insertion differs'
+            def consume(value):
+                if value is None:return []
+                if isinstance(value,list):return [x for v in value for x in consume(v)]
+                name=value['array'];meta(a[name],value);visited.add(name);return [a[name]]
+            for k,frame in enumerate(frames):
+                score=f32(logits[k]).copy();assert np.isfinite(score).all() and int(score.argmax())==frame['head_argmax']
+                prior=tokens[:N+k]
+                assert int(score.argmax())==tokens[N+k],(i,k,'Own actual full head original HighTen unmodified greedy mismatch')
+                root_ids=consume(frame.get('input_ids'));assert len(root_ids)==1 and root_ids[0].tolist()==[prior if k==0 else prior[-1:]]
+                consume(frame.get('attention_mask'));consume(frame.get('position_ids'));consume(frame.get('cache_position'));consume(frame.get('token_type_ids'))
+                for obs in frame['cache']:
+                    g=str(obs['group']);kind=obs['kind']
+                    if kind in ['initial','complete_native_shape_change']:
+                        value=a[obs['array']];assert bs(value)==obs['SHA256'];visited.add(obs['array']);cache[g]=value.copy()
+                    elif kind in ['native_length_growth_one','native_exact_sliding_roll_one']:
+                        value=a[obs['array']];assert bs(value)==obs['SHA256'] and value.shape[3]==1;visited.add(obs['array']);cache[g]=np.concatenate([cache[g] if kind=='native_length_growth_one' else cache[g][:,:,:,1:],value],axis=3)
+                    else:
+                        assert kind=='exact_changed_slots'
+                        if obs['changed_count']:
+                            ix=a[obs['indices_array']];v=a[obs['values_array']];assert bs(ix)==obs['indices_SHA256'] and bs(v)==obs['values_SHA256'] and len(ix)==len(v)==obs['changed_count'] and np.all(ix[1:]>ix[:-1]) and ix[0]>=0 and ix[-1]<cache[g].size;cache[g].reshape(-1)[ix]=v;visited.update([obs['indices_array'],obs['values_array']])
+                    assert list(cache[g].shape)==obs['shape'] and cache[g].dtype==np.uint16
+                    if k:assert bs(cache[g])==obs['reconstructed_complete_SHA256']
+                assert len(frame['layers'])==35
+                for j,obs in enumerate(frame['layers']):
+                    assert obs['name']=='model.language_model.layers.'+str(j)
+                    assert obs['shared_kv_from']==(18 if types[j]=='sliding_attention' else 19) if j>=20 else obs['shared_kv_from'] is None
+                    position=consume(obs.get('position_ids'));assert len(position)==1;pos=position[0];expected_pos=np.arange(N) if k==0 else np.array([N+k-1]);assert pos.tolist()==[expected_pos.tolist()]
+                    consume(obs.get('position_embeddings'));consume(obs.get('per_layer_input'));masks=consume(obs.get('attention_mask'))
+                    if masks:
+                        assert len(masks)==1;m=f32(masks[0]);assert m.ndim==4 and m.shape[:2]==(1,1) and m.shape[-2]==len(expected_pos);L=m.shape[-1];offset=max(0,int(expected_pos[-1])+1-L) if k and types[j]=='sliding_attention' else 0;key_pos=np.arange(L)+offset;expected=(expected_pos[:,None]>=key_pos[None,:])
+                        if types[j]=='sliding_attention':expected&=(expected_pos[:,None]-key_pos[None,:])<window
+                        assert np.array_equal(masks[0][0,0] if masks[0].dtype==np.bool_ else m[0,0]==0,expected),(i,k,j,'Original causal/sliding geometry differs')
+                    else:assert k>0 or N<=window or types[j]=='full_attention','Implicit SDPA mask requires original causal/sliding source and valid context'
+            for g,rec in e['final_native_cache_groups_SHA256'].items():assert bs(cache[g])==rec['actual_NPU_SHA256']==rec['reconstructed_complete_SHA256']
+            assert set(a.files)==visited,(set(a.files)-visited,visited-set(a.files))
+            diagnostic=dict(index=i,full_262400_head_rows=n,all_40_physical_and_4_original_shared_KV_buffers_losslessly_reconstructed_every_step=True,actual_masks_positions_original_causal_sliding_geometry_verified=True)
+            if i<3:
+                ar=js(check(p['actual_AA_samples'][i]['metadata'],p['actual_AA_samples'][i]['metadata_SHA256']));ap=check(p['actual_AA_samples'][i]['arrays'],p['actual_AA_samples'][i]['arrays_SHA256']);diff={}
+                with BoundedReadOnlyNPZ(ap,allow_pickle=False) as aa:
+                    for rec in ar['records']:meta(aa[rec['key']],rec)
+                    for j in range(35):
+                        key='stage_model_language_model_layers_'+str(j);assert a[key].shape==aa[key].shape;diff[key]=difference(a[key],aa[key])
+                    same=True;heads=[]
+                    for t in range(min(n,ar['actual_forwards'])):
+                        if same:heads.append(dict(step=t,**difference(logits[t],aa['full_head_row_'+str(t+1)])))
+                        same=same and tokens[N+t]==ar['generated_tokens'][N+t]
+                    diagnostic.update(AA35_native_prefill_stage_differences=diff,AA_same_token_prefix_full_head_differences=heads,AA_raw_equal=raw==ar['raw_output'],nonzero_differences_preserved=True)
+            numeric.append(diagnostic)
+        scores.append(float(choice==str(ref['reference']).strip()));steps+=n
+        if not raw:empty.append(i)
+        if not choice:invalid.append(i)
+        if e['original_budget_hit']:truncated.append(i)
+    profile=final['first_real_vision_prefill_all_profiler_files_SHA256'];assert profile
+    for path,h in profile.items():check(path,h)
+    tasks=[Path(x) for x in profile if re.search(r'/task_time_[^/]+\.csv$',x)];kernel_count=0
+    for t in tasks:
+        with t.open(newline='') as f:rows=list(csv.DictReader(f))
+        assert all(x['Device_id']=='4' for x in rows);kernel_count+=sum(x['kernel_type'].startswith('KERNEL') and float(x['task_time(us)'])>0 for x in rows)
+    if not tasks:
+        trace=[Path(x) for x in profile if x.endswith('/trace_view.json')];assert trace
+        for t in trace:
+            z=js(t);events=z if isinstance(z,list) else z['traceEvents'];hw={x['pid'] for x in events if x.get('name')=='process_name' and x.get('args',{}).get('name')=='Ascend Hardware'};kernel_count+=sum(x.get('pid') in hw and x.get('ph')=='X' and str(x.get('args',{}).get('Task Type','')).startswith('KERNEL') for x in events)
+    assert kernel_count>100,'Real original vision and prefill NPU kernels are required'
+    score=sum(scores)/count;assert report['metrics']=={'Strict_MC_Accuracy':score} and report['summary']['current_score']==score and report['statistics']['total_samples']==count and report['statistics']['batch_size']==1
+    errors={k:abs(Decimal(str(score))-Decimal(v))/abs(Decimal(v)) for k,v in p['current_A100_D_values'].items()};assert all(Decimal(v)!=0 for v in p['current_A100_D_values'].values())
+    return dict(passed=True,report_dir=str(folder),sample_count=count,metrics={'Strict_MC_Accuracy':score},sample_Accuracy=scores,error_indices=[],empty_indices=empty,invalid_indices=invalid,truncated_indices=truncated,NEW_real_NPU_inference=True,actual_NPU_inference=True,historical_record_reuse=False,actual_forward_count=steps,standard_empty_raw_explicitly_verified_in_full_extra_and_sample_outputs=True,actual_original_A100_first502_input_SHA256_verified=True,original_GreedyInference_answer_transform_restored=True,all1631_own_source_actual_AA_NPU_SHA256=True,all45_original_legacy_unused_KV_source_preserved=True,all_native_KV_values_losslessly_reconstructed=True,all_full_inputs_tokens_raw_references_errors_preserved=True,numeric_sample_checks=numeric,NPU_profiler_kernel_events=kernel_count,profile_scope='First real original vision and text prefill only',relative_error_to_A100_table_D=float(errors['server']),relative_error_to_current_A100_D={k:str(v) for k,v in errors.items()},formal_alignment_within_5pct=(count==200 and p.get('original_protocol_final_qualification_cleared',False) and p.get('all_three_D_frozen_verified',False) and all(x<=Decimal('.05') for x in errors.values())),original_protocol_final_qualification_complete=(count==200 and p.get('original_protocol_final_qualification_cleared',False) and p.get('all_three_D_frozen_verified',False) and all(x<=Decimal('.05') for x in errors.values())),selected_original_protocol_reconstruction_verified=p.get('original_protocol_final_qualification_cleared',False),preserved_full_D_pending=p.get('preserved_full_D_pending',True),historical_source_boundary=p['historical_source_boundary'],independent_verifier_SHA256=sha(__file__),report_sha256={n:sha(folder/n) for n in sorted(FILES)},external_evidence_sha256=EXTERNAL)
+
+from universal_eval.utils.readonly_npz_indexed import ReadOnlyNPZ as BoundedReadOnlyNPZ, IO_READ_CACHE_STATS
+assert sha(R/'universal_eval/utils/readonly_npz_indexed.py')=='07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7'
+
+if __name__=='__main__':
+    import time,traceback
+    from datetime import datetime,timezone
+    H=Path(sys.argv[1]);assert H.is_dir()
+    folder=R/'workspace/reports/google_gemma-3n-E4B/image-text-to-text/20261114_004243'
+    original=R/'scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py'
+    assert sha(original)=='47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e'
+    start=time.monotonic()
+    try:
+        parent=D/'batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/E4B_complete_failure_records_source_bound_true3_v9_real_FLOCK_1605_20261113'
+        oldproof=js(parent/'fresh3/verification_stdout.json');assert sha(parent/'fresh3/verification_stdout.json')=='84fe1ad0325e2b718f1002b578cd103bf9faa49589410216f045c83c85d1a2a5'
+        report_before={name:sha(folder/name) for name in FILES}
+        proof=verify(folder,3)
+        same_old=dict(oldproof);same_new=dict(proof);same_old.pop('independent_verifier_SHA256');same_new.pop('independent_verifier_SHA256')
+        assert same_old==same_new,'Read-cache diagnostic must preserve the complete original proof, not only the score'
+        assert report_before=={name:sha(folder/name) for name in FILES}
+        result=dict(passed=True,UTC=datetime.now(timezone.utc).isoformat(),scope='Diagnostic re-verification of the existing completed true3 only; no NN, no new acceptance or G, no active200 modification',original_proof=str(parent/'fresh3/verification_stdout.json'),original_proof_SHA256=sha(parent/'fresh3/verification_stdout.json'),all_original_proof_fields_exactly_equal_except_new_diagnostic_source_SHA256=True,full_original_numeric_checks_all_executed=True,old_full_five_report_SHA256=report_before,diagnostic_source_SHA256=sha(__file__),elapsed_seconds=time.monotonic()-start,array_IO_stats=IO_READ_CACHE_STATS,new_NPU_inference=False,new_original_protocol_qualification=False,current200_untouched=True)
+        result['reader_source_SHA256']=sha(R/'universal_eval/utils/readonly_npz_indexed.py')
+        (H/'diagnostic_full_true3_proof.json').write_text(json.dumps(dict(proof=proof,new_NPU_inference=False,diagnostic_reverification_of_existing_records=True,original_evaluation_flags_are_not_new_run_claims=True),ensure_ascii=False,allow_nan=False),encoding='utf-8')
+        (H/'diagnostic_review.json').write_text(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
+        (H/'actual_completion.json').write_text(json.dumps(dict(actual_returncode=0,UTC=result['UTC'],passed=True,elapsed_seconds=result['elapsed_seconds']),ensure_ascii=False,indent=2),encoding='utf-8')
+        print(json.dumps(result,ensure_ascii=False,allow_nan=False))
+    except BaseException:
+        (H/'actual_completion.json').write_text(json.dumps(dict(actual_returncode=1,UTC=datetime.now(timezone.utc).isoformat(),passed=False,error=traceback.format_exc()),ensure_ascii=False,indent=2),encoding='utf-8');raise
