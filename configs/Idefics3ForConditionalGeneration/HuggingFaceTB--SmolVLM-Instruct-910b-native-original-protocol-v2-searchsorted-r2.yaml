@@ -1,0 +1,87 @@
+{
+  "name": "HuggingFaceTB--SmolVLM-Instruct-910b-native-original-protocol-v2-searchsorted-r2",
+  "description": "Exact existing BF16 Idefics3 checkpoint on NPU with original own template/tokenizer/image metadata and original generation protocol. PIL preserves declared LANCZOS. Original HighTen reference prompt and generation limits are preserved exactly, including the existing smol2 c500 64-token clamp and size settings. No downloads, model substitutions or invented scores. Full images, patch positions, text tokens, raw outputs and actual NPU evidence are independently verified.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolVLM-Instruct",
+    "adapter": "universal_eval/model/adapters/idefics3_searchsorted_910b_adapter.py:Idefics3Searchsorted910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/HuggingFaceTB/SmolVLM-Instruct",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        2
+      ],
+      "max_new_tokens": 4096,
+      "processor_protocol": "vllm_greedy",
+      "resource_sha256": {
+        "added_tokens.json": "26ea04161b0495f893c3dd0c124eb01da31de88c804dec7bae85cf539e02b3a5",
+        "chat_template.json": "a68ad1a42681ae44eacd109ff8dd56a840f761c03d72f4ff4c515d092f882168",
+        "config.json": "ba1d63f10c81add0c5256759f2a66d9aaa25d41daff67775e096732ab2d8cecc",
+        "generation_config.json": "73153bc1a2a2eb7399142dd15b7a682a35f1e35484965ae0444733a877f07819",
+        "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "preprocessor_config.json": "08fd6c57e2f65c5f9563f3d9539dd611110a783435876e128944fb7e656a381f",
+        "processor_config.json": "9a970ca907f1a38eac04290f5817df29bc0145dc422f6d13b66dfd0a113a4f03",
+        "special_tokens_map.json": "aa0ff906077086dfa9734a7f97f68c825877a48f9468807be65504495cdeef09",
+        "tokenizer.json": "cbfb7909eeb6746ad50a63a6fad2ba2aea041af5e0f9590667c62679f23b226e",
+        "tokenizer_config.json": "ef2537b79d885f75abef6f969ebe828ea12fedbd727dd713e1dd81e381e3c713",
+        "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/modeling_idefics3.py": "ed053434f2c5347d5f56b145abea2b6b44c2a16008a68bb565aff89c55ff7bed",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py": "380aaf0761f29d3221b7b750d7585ed29ceeec36818666f6da8768d907c8592c",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/configuration_idefics3.py": "86628f41a51472a7322795162a534fb16f8439a39fdab8470fb5ee2dfeab10e2",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/image_processing_pil_idefics3.py": "c0d9480ea2a1b943aac6eac1dafbbe6d2cf20661e9d7d66727523e553a5ef8dd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/configuration_llama.py": "5e2e803d15956cdc402ab1c4a5151a899bd39ddfbecbb81181733657817aaeda",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_rope_utils.py": "9592ba129bf723ed3fa54afcc48ddd3d40d2dac2947ce5cc37803c496ca320e8"
+      },
+      "weight_headers": {
+        "model.safetensors": {
+          "size": 4492630912,
+          "header_sha256": "bd268dd22a97c33aeae4e195da7e997a8ac095e0263de9537e9a81d232e9befc"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Idefics3ForConditionalGeneration/HuggingFaceTB--SmolVLM-Instruct.yaml",
+      "original_config_sha256": "e5fd544a9f60673baaa1f0080f993a9893a2d63012ab0e4d29264df6c9998f99",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

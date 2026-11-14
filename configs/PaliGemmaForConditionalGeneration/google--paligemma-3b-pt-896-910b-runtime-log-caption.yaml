@@ -1,0 +1,120 @@
+{
+  "name": "google--paligemma-3b-pt-896-910b-runtime-log-caption",
+  "description": "Exact existing F32 PaliGemma tensors on native NPU, HF32 disabled. The existing full200 caption report matching this row original MLU score supplies the exact caption prefix/prompt override/instruction/extraction and original1024 budget; its inputs/references and original source extraction replayed across all200 records. The real original run.log explicitly supplies the effective extract_answer flag when omitted from pipeline_config; it is never guessed from current defaults. Root default generic VLLM chat YAML is unchanged and retained as provenance. Original image-to-text/ROUGE-L benchmark and broad workbook image-text-to-text alias disclosed; frozen existing1500 caption snapshot, never MMBench. Own PIL/tokenizer, real image-to-language bridge, original buffer precision, prefix masks and1-based positions verified; independent Hunt-Szymanski ROUGE, full200 denominator including empty/invalid/truncated answers. No model/data download or substitution.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma-3b-pt-896",
+    "adapter": "universal_eval/model/adapters/paligemma_runtime_log_caption_910b_adapter.py:PaliGemmaRuntimeLogCaption910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma-3b-pt-896",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        6
+      ],
+      "source_dtype": "F32",
+      "max_new_tokens": 1024,
+      "vqa_prefix": "",
+      "resource_sha256": {
+        "added_tokens.json": "7d0bad90030d638a4bf89a82e91206e25f1fbe0012f14bca21666a64b643bc49",
+        "config.json": "b553f5463edc3466c241a3b5c028e3cda85bd8e90f071fe5f62fb9bd263df87d",
+        "generation_config.json": "e851cababc44e9fbd81a42b19f9220638832bf8a17e0927bb7cbba97b446893d",
+        "model.safetensors.index.json": "1e6b5ba1fcef0ef4e81f7ff0d32f53638af86aadee45ad58b4c641e9ecd7eb35",
+        "preprocessor_config.json": "72df8d37a07e16580f74329517e375673e08a15cf039c7bb80078499d29fc179",
+        "special_tokens_map.json": "5ef37093ae4236587b6e8266acb815b46e2db8ce656c66552bfa574d32880405",
+        "tokenizer.json": "ef6773c135b77b834de1d13c75a4c98ab7a3684ffd602d1831e1f1bf5467c563",
+        "tokenizer.model": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+        "tokenizer_config.json": "3259402b1d1802e02417d7bff75a889ec61d359d15be6050a957b307c48edbbe"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/modeling_paligemma.py": "8fcc95632840510c7a125061276c4fd86d22d7f2798d088068db24133de726aa",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/processing_paligemma.py": "bd1c4cc3bd9169cebf5104268e586adabce1e243dcfae5c9ce481fb5206474d3",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/configuration_paligemma.py": "6e07beb626c7c06e4842965c7596264ced84514c4bbeae1fb27fd55a3b590788",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/modeling_gemma.py": "434040c2e998483aea5cc7d48b422a56b146fbdacab00279b8fe5fc2d13cb8d0",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/configuration_gemma.py": "ac4b6de5c5a977278d652ca8d392b5fe10c7e81cdfb72ac691b8e2c3198967e9",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/modeling_gemma2.py": "3f4bfffad51ceef61f1db793887fb0905cd32c9488357687853c073a61774ec5",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/configuration_gemma2.py": "d81e5abd688436da573ae299a65598d01ea871a8874d0cabeb5149967855ca07",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/configuration_siglip.py": "0a402ea5452a1527ad54f5339889774549688f5f84028af30979bdbc4b32206e",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/image_processing_pil_siglip.py": "61ff04dc131c526dd5e638bc2ad778cc1186989f474507bd3bf7368ea09f54c1",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/masking_utils.py": "5f48e428ea02d1b6008acb45c147fcdb4eba89deea69627744662aa05da1b9f2"
+      },
+      "weight_headers": {
+        "model-00001-of-00003.safetensors": {
+          "size": 4971107200,
+          "header_sha256": "c98408a38b13b1801727fb00848efef57b0f34f7e5dfe5ea4882793f1cadabad"
+        },
+        "model-00002-of-00003.safetensors": {
+          "size": 4999820608,
+          "header_sha256": "aae9e30beb96e3d5b57c676eeb883ccf711f58e4b37ec76d263dc208a88f98cf"
+        },
+        "model-00003-of-00003.safetensors": {
+          "size": 1740714288,
+          "header_sha256": "15f8c250253c4f682ffd75e2b27fdc67c767c3f44b9d3246e879e1817cedc5b1"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/PaliGemmaForConditionalGeneration/google--paligemma-3b-pt-896.yaml",
+      "original_config_sha256": "7b13ada6b1d300b9ad47b5c75c43ec2f7c496766d9bfad0e991a1c0ebc4a7265",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+      "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl",
+      "dataset_sha256": "709cf45623d2feb5cb2e5d6306a9c024e47762f8debc718a055884d3def0adbf",
+      "reference_report": "/mnt/afs/comp_error/workspace/reports/google_paligemma-3b-pt-896/image-to-text/20260913_200358/eval_report.json",
+      "reference_report_sha256": "0a1116eb7e1547e6e75214d6a0ecf164af87a860c7129600af86feee792a931e",
+      "reference_source_sha256": {
+        "/mnt/afs/comp_error/universal_eval/model/adapters/paligemma_mlu.py": "3e85b30bd946d445e3f25f4ab62c6621802b62d00b9adfc7027505d2a102b81e",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/paligemma2_mlu.py": "5e9b304cfc630c333a1cadd4a3e9f68fd1a6658176be93d51ad3b1ab99e198f5",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_mlu_manual.py": "c7b0469bb5a5a91ceaa4cd7efb6ca67f60c6be7f5ea51be7ec9d2099a8bc7c7a",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_vlm.py": "997655cd77c5842f57996a2ff7aa8ee7ee4b08ee7249f82c3a2d954537d9b93c",
+        "/mnt/afs/comp_error/universal_eval/algorithm/inference.py": "7f22e79d5259af42ee799da7728d71fa0fb290092cc02b040e2f09c1d1259b62"
+      },
+      "reference_protocol": {
+        "vqa_prefix": "",
+        "mc_instruction": "",
+        "strip_eval_instruction": false,
+        "prompt_override": "",
+        "extract_answer": false
+      },
+      "reference_log": "/mnt/afs/comp_error/workspace/reports/google_paligemma-3b-pt-896/image-to-text/20260913_200358/run.log",
+      "reference_log_sha256": "fb9f719c8acd1541b416ecb53ecf8637030a77d4b0e5a5abfc23555f0c5ec288",
+      "expected_image_size": 896,
+      "workbook_reference_score": 0.0567
+    }
+  },
+  "algorithm": {
+    "name": "paligemma_reference_caption_inference",
+    "adapter": "universal_eval/algorithm/paligemma_reference_caption_inference_910b.py:PaliGemmaReferenceCaptionInference910B",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0567,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

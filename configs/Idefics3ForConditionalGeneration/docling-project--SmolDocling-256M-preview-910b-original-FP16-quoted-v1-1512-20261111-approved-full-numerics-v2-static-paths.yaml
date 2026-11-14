@@ -1,0 +1,59 @@
+{
+  "name": "docling-project--SmolDocling-256M-preview-910b-original-FP16-quoted-v1-1512-20261111-approved-full-numerics-v2-static-paths",
+  "description": "Original own FP16/SDPA/512/outer10 inner1; restore explicit quoted option labels, retain raw and full denominator; new NPU3 before approval.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "docling-project/SmolDocling-256M-preview",
+    "adapter": "universal_eval/model/adapters/smoldocling_native_fp16_v2_0624_20261108_adapter.py:SmolDoclingNativeFP16Original",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/docling-project/SmolDocling-256M-preview",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/SmolDocling_original_quoted_static_path_recovery_v2_1512_20261111/approved_original_protocol.json",
+      "protocol_sha256": "d912de0deb4042f64932d896e599fbea8a65eb050518e918dc95ead370442a60",
+      "protocol": {
+        "model_id": "docling-project/SmolDocling-256M-preview"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "smoldocling_original_explicit_quoted_labels",
+    "adapter": "universal_eval/algorithm/smoldocling_native_explicit_quoted_labels_1512_20261111.py:SmolDoclingNativeExplicitQuotedLabels",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.335,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

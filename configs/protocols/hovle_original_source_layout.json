@@ -1,0 +1,3335 @@
+{
+  "model_id": "OpenGVLab/HoVLE-HD",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/HoVLE-HD",
+  "resource_sha256": {
+    "added_tokens.json": "df59e170102f8d19d3e186cc91c81006c9822ea9fe8ce2b68e7be77195c01db3",
+    "config.json": "15b18aa071adf55068038a1a317a9a3b0262174226d5ec87cb4976bafff8dae6",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "configuration_holistic_embedding.py": "658836dd4f5d169254a73be2fe9733811d998284471b4f0ff7d3c72485c6d3b6",
+    "configuration_internlm2.py": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60",
+    "configuration_internvl_chat.py": "27b71791206ac472c091ee06e041eddbb99333007157a8008d4a8d906f383b91",
+    "conversation.py": "e61b0d953ddcfbd5b39aa531288d62c3a65f9c751dcb24260405778147427779",
+    "generation_config.json": "0e4f311ebf5b3a4cbaffa11dd5c7789cace552e8fb47bb5740e548412f9ffd2b",
+    "model.safetensors.index.json": "885551c97326d7889b834d0ab6579f938f14071d42dc67e139d65e36c6f5c591",
+    "modeling_holistic_embedding.py": "89aa2db348c5801afb2a2165270f78359b5fd3c6afa031e058d6e51cb2024f94",
+    "modeling_internlm2.py": "80f03a88d010096c2a169fb55e98c55197ba50e0c073170e4cb57511ad7b7e24",
+    "modeling_internvl_chat.py": "18db7cbea1afeeafb32c69aec47ae46ac0e4ab9ea838a6febd5f0250b8c1c910",
+    "preprocessor_config.json": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+    "special_tokens_map.json": "8cb729e6fd4c29e8c5be65cb51128735cea0ab56606a186cf8cbb30123c72eae",
+    "tokenization_internlm2.py": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa",
+    "tokenizer.model": "e2486ca5c306ecb7c18cd8e0fea161d33faaf7e15db89f972bba13cd2649df95",
+    "tokenizer_config.json": "2a0e30fb556e25b8255729fcb67db4e0e1a265e3fb177d9b09316f7c665f31f7"
+  },
+  "source_files": {
+    "model-00001-of-00003.safetensors": {
+      "bytes": 4935635440,
+      "sha256": "535606a434c518f96002212a5b016e70a98fab5d9547d5128ead2b0d79af6d2e"
+    },
+    "model-00002-of-00003.safetensors": {
+      "bytes": 4731511192,
+      "sha256": "81a2d9b949ab097d3eb40e4d522ba660d1377e71e1410876f0e0958d46c0bc57"
+    },
+    "model-00003-of-00003.safetensors": {
+      "bytes": 758194320,
+      "sha256": "8d3ea6c5694a7baac6efad8284d899b14de14904ba2369d81a53df4394232a86"
+    }
+  },
+  "source_tensor_records": [
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6840aefe908815768fb472960ee4b85e4a858100a65ced7073e163bfffd7df79",
+      "original_BF16_cast_full_sha256": "6e61a1cee48abc4cdaf7faee3266cbfac7519a84925bba1c95a659160c185cbf",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a9e3259fb072d856e3d5784c193073ce46e8b6e41f12e076d3d54269ecc2df39",
+      "original_BF16_cast_full_sha256": "4eb79491b2f09fda0d217bc09e549ca9baa6ab1766ea7c7480b8fa15b6397e1e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d757d2137f08ae065c996e16145484faa22aefd592529d00e03707e7d086662a",
+      "original_BF16_cast_full_sha256": "7e0cf5fb61cd8ab02883db5721df295506588bd93d2d0d36ebac844ee653eb86",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1e927f931af3361b61c388d457ed5fd141e4003ee118875a233f407c3f4fc5f7",
+      "original_BF16_cast_full_sha256": "6dd2a44460217c1ac5285124b4eef7661bfeac70c18d50decc5a7db84804cee6",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2906823c75c152a06b20ceeaf921fefd8b1ff332b576939fe8b1e0f6c0dfe410",
+      "original_BF16_cast_full_sha256": "34818081b9b92f3ae3fc5580942cc06b91e20ffca4769b8ca0a5d24b507aafdf",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7eb73a60cc88196d3b6dee6b092b297db3c49f38b5fd3c21504bf4e8ce5c2f65",
+      "original_BF16_cast_full_sha256": "02e8e5e1a3e8ef8c7b89898d2ea9c65e1adc857e6feb9b709f2cdf3e12256249",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.0.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9417270faa7effaf7d01fed9dd1266ee18bc8008185239f16089c864cad5a86d",
+      "original_BF16_cast_full_sha256": "d4269f01557f262e1f85abb48db2d69d1e5db2aeda7430d90c616d692a3e2cca",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e4384572870b6d951e3ffc57db66fab42c31138b852846b08cb23cca2f183594",
+      "original_BF16_cast_full_sha256": "666d50eeb861cbe5de17506772680950e98df60817533e612a6658957a0e6800",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "311697b2bc04e6e4ed2d45bc2c98eae8be62ccdf9cc04fa0c179938d5e03af07",
+      "original_BF16_cast_full_sha256": "6c6db638716ee0866987a757ab49300bfd253353cabeb30909c74dd690ac262a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c3426da7e641d467fec0a0f00fb0f907259cfcd71111bbc3c0f0868bb7f526aa",
+      "original_BF16_cast_full_sha256": "4c22cbdfd7b02ea48d289c40a9fc0200e4df136d31bcb4c54059e5b86ab145cc",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1f7bc4d5bfec5135a8f381dc5110fce865ff7bbf9447e289d6717c289553cc54",
+      "original_BF16_cast_full_sha256": "f8da9e0b27619792bbe534e993dc287ffea05883e8dbd515c41800ce52a51c1f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "413db145a7dbd65bc307ca2cbbb8bb514394f656b9673d641c422d302d3e56ca",
+      "original_BF16_cast_full_sha256": "cd45992d15c5488fe83d115685056f17943306b1d681ba2e1c9798822a53aae9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "58f42afb902a675a39b6f0b0a3e569d0973cb49a7b54e2144ec795377200f459",
+      "original_BF16_cast_full_sha256": "90b160160e18fa427e1cf99748a8ba435312bb385e287197ff61edfbb720ce57",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.1.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "dbfcfcf979408f18f52af20bf10b62f1c98070ab3a3df9119dffa8280d8c1ca8",
+      "original_BF16_cast_full_sha256": "9ae1784745fdace95ecac490d48f4a813c85c3969c451d526203a17d5e16a813",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a23e5ea8ba228d0366d4960d7462988c0d13d641fad7db6491a92d325cec196f",
+      "original_BF16_cast_full_sha256": "0b4d4916ce1f1ba66d4bd13fec561e9010d53a0275dc9c04ecb2bd9f64bfbdb0",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0ef708e6c1c6d7201bd050e0c1765c9c3157f53928cfc3805edfdaec7b961f9b",
+      "original_BF16_cast_full_sha256": "1908d123740aa1b8fc609e093b067b988a612c96b96a335d579713ddea0b6e22",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8c78e4ac7f035d02a1a3bae5534cf4cad66aa9bf158644f178466ee241691197",
+      "original_BF16_cast_full_sha256": "a076cd6ecbb69fc54c5b9bdbf1e1d374f57affc27fb312095c45c028147d3515",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e6d3a594af2b6c763cf1c6d627bacea588376894229c90b66f1c10f5aee9ca1b",
+      "original_BF16_cast_full_sha256": "40521620a7a72795d1a0150f6e8ee19a669d2dd3da08352d59bf6409eb4a75aa",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7ef027db9ea4cf66a5b0e0a1d3b48aef66d1164c01a7014863b6e8834e972d0d",
+      "original_BF16_cast_full_sha256": "2804ab5dc8a96de4fa1e138e83e1114294e1e9e94a45fac5043e857f70118c05",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e637632e8d56207365c8475137e9ca3a7a0ae5dff49f5ebfe0663595f3e21e67",
+      "original_BF16_cast_full_sha256": "fa3023f4a088de1c47a8a79d3f89a172d662cce8d9eb3a7be6fbf590cc65b148",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.2.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a076ca7928101d3ec4d4ef040caa8fd529ddeefbd4973f4360c5fbe23da0b069",
+      "original_BF16_cast_full_sha256": "7cd086095bccba44526b9fd60fec2288bd3a35415923029335d10da4061e34f3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1d420e03844ebfe0c98d0ef275e645532a5179e08cf17dd4b96e86ebc34d46e3",
+      "original_BF16_cast_full_sha256": "fe8da0c34b172473d3b5b8df7279890423b90146604e3fff0505d0db14f57284",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d1a8591d75b1222f11fe525d43f80e3c9f81452b06754677300fa23c17b2a5b3",
+      "original_BF16_cast_full_sha256": "8ee5ab8dab7652465e16f63428d57a7210097c9867e10d69394325112ccab980",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "374ba92143bc7b6f652e050f7f195d5ea40dcedbc67f5a60287465095c397563",
+      "original_BF16_cast_full_sha256": "8ce98168d753ddece95973ea1c76d4aa2b33523ee62f8445a9cf5c710a09e287",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d558bd22a1f6a4e89c52325bf9caf81d24d187c5e4c283d6a8b54ecc870347e3",
+      "original_BF16_cast_full_sha256": "fc7e3f98af0ceb25edb623cbe2f1b5ac765eecb4215da314d4ea47aa83d4eae9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "98bd84d1dd1f98e0020b7015e12e9a88c01bd0b253b97baa47d7db5f2a6bf750",
+      "original_BF16_cast_full_sha256": "87b3aec1359c083e0d14a4be91403449872e1e639cea2dbbbdafc57ccc5ea57d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "640511e60e1ba405a28604cdf0ce15a2be98f999adc20d55fffb65c58f71bd00",
+      "original_BF16_cast_full_sha256": "7db92ec0c967d13014a4b444b7916a954b0b7c6cec09481242465aa5ffd19696",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.3.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1aa31c95ad49d469a480ca2f24f1ed0bc40bdc95acfd578b16d9e43de6c3f141",
+      "original_BF16_cast_full_sha256": "4dcd2658bfaf9f9c429ba2711789393fd7faecd35af33143f9caa8763d736b72",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c116a4c16908538fc3a1177c0144f779e595009200b401b6d54dc32ac17e1ef0",
+      "original_BF16_cast_full_sha256": "a9136a470fac7bd5b0a4982e2a5b64f7c1ead142f55d2ed796b1218aa2b2237b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e1e8ccb92918101cddb56091adeb0e1391f5fb5305ef2b2b81d254ae7f992f60",
+      "original_BF16_cast_full_sha256": "82c33278436ae5f7de14038b675d8ce203d7a4e93425573240b21865b4ed2852",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0eebfb1124eebf6225ec70c802d5eb67348d9a1a3075090aa63a9849e33fff42",
+      "original_BF16_cast_full_sha256": "921e6800d9d896b966d387d9faae779e3298e265d7b3e4cda16c5634c7930092",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b5c430a8bd98c89e3b540509f6d230526ab15eae23cbdcef1a8aa336575754bd",
+      "original_BF16_cast_full_sha256": "369836712c014876e4275cfe29177d93b89b460add210777d4ad7579562ca31b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d1cd17f944949283d5de9fe18de6e63dd1107753fc5b847f73931194f1fef982",
+      "original_BF16_cast_full_sha256": "e3813fd87f3b70aee1e0572d679b5b635a579571485b8e52542f4885c6ac8d05",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "49c67ab619a1443fdd6cf9104d97533e9b36d979a65988f0601dc74da4c96128",
+      "original_BF16_cast_full_sha256": "94d9d853e1a66e09ccaf26afed524f7c0f08469835253741a7cbef38f54e4db9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.4.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b5b2a1c3f37b9c2df9d1c48138ad92ecb3c6fabd427066742211022ffb4ab2e3",
+      "original_BF16_cast_full_sha256": "6cc6bca2635dc12e1e5127c0f88bf6812419e804530dd3208bb025ad872cc5f1",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3b874c2232ce70925d4c8505e95b385f208a2a3f278819234d00b31272f71fcb",
+      "original_BF16_cast_full_sha256": "eb715f7a1d48d5c30f8bf9663b8af9121e9a44863bcfe32684cb4554aa9ff201",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2ba2110fc9e7fd5a545406248aa4b1f2ba8765cac24b240689892fbe3094beaf",
+      "original_BF16_cast_full_sha256": "d8b1bae7c2f5afa3859c991bf86bc8cd50d9edfa4d73d96ca074eab99d687813",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a810b195309bbba38a4e1f03582b36fe00dd5963c08cf6ece75fbcf9fa0a5121",
+      "original_BF16_cast_full_sha256": "81a5e5aeaa606edffe16ea94d86fa3f3521bd73cd0c511ccb081070bec18dfe7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "39df80ecfe5022fdd34aaa408153a7dbc937f03647a10d60f953bf0ae0932744",
+      "original_BF16_cast_full_sha256": "325101700d34d7ef7899060573de394d2ab3417546fe81413e9d2926ab5c940b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0b36341da3fbd37b4ec2150a1a693663f4b0649b84771f66cd32d52d221eb049",
+      "original_BF16_cast_full_sha256": "5c1de2ce5af559ded13db4a7415c5af22cdf0eaef5fe02bc689388450898a1a4",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "29238af5dc3d570be6c8cfdd7fa003b891c55dadd67921d5c358d055f9ab7e07",
+      "original_BF16_cast_full_sha256": "9c0ea5204c2f6d08e0bc163d0d9aa4889312b36dfc79773873c5722c6e31408f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.5.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9d9c9f76aacb079ac9ea0f9ded40a87962c931512e9a7420d394e08992635dc4",
+      "original_BF16_cast_full_sha256": "30f7064ef83891089e69e960eaddb3d99385472ba991b4fdf0d1f3d225460296",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d941ebadabc1d09f19e6f0a5a4a6aae628f0d000132740257a14f56485132584",
+      "original_BF16_cast_full_sha256": "5b6383f4f6b9b1af99cb98343264d57ed65e61b1cda4f390e78664fb720354b8",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8cac4255f35ae4e7716b9f9355fccc2d1b5bab122a3cf76fa931d8fbf0ad1958",
+      "original_BF16_cast_full_sha256": "32101b57e18a6e91d76a5ded516471ff283b8db0728224469b7ba6d4f5f38e85",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7bd6a2776d313f55f531198bedb9b0f8fbf6317787681026c33231b4b2cbbe21",
+      "original_BF16_cast_full_sha256": "e4777df7d5a188093efe34fae7e9328e7a1110522460d07ada364fb8b33330e1",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6fc6eaf830050df8db524137d180c1c02abda577e3a7b284733604a0a8f448b2",
+      "original_BF16_cast_full_sha256": "17080e88447dcd60e92a4494bdf2c87e73a71b00e875eede7b53683701c36565",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "aad9eeb762cd28eac0c8996d0acc61ceb8e46fc87a03a7d2dfba2d0b3ebf284e",
+      "original_BF16_cast_full_sha256": "dcafd05ba515269477a823a5357a4f05e922d5b0165a29510b74cea175b5e76c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "174dfc9aa63732f28dae6e23eaac57f3c79cb790600f8c467a13e584674d1e5d",
+      "original_BF16_cast_full_sha256": "43d6d9aa0d5d558dac0ce1fe556191b3af1cd6914aeb894b60d1a89609015ccd",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.6.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e5d433d8acd7c996c6f84bce3384dde112a7224c1208952e12e31a8ad7115b3a",
+      "original_BF16_cast_full_sha256": "4a7778ed6c84e8399b444475e27589a7615d413ab71388a0fb2613287b0b29d0",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "f9a23f937b0bdad37dff9989f76bbdd8c13681280a0e99563c1c31278c14337f",
+      "original_BF16_cast_full_sha256": "781b1a3980d1862a60b401e647bded61d706743ccc11514b8312212865c3a15e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2935003f54b97f37b9b43eff187f1cc28a24cff1fdfcfb414ea13078b8016b6b",
+      "original_BF16_cast_full_sha256": "f9b03bd9a0bc908d02059ddc53db92a68f97bac787b589fae9a70cd59ca9224e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "70b2624004dab8aa78df2b013f7ff3edf7e83b63e4c9e914d65f7e43a856a2db",
+      "original_BF16_cast_full_sha256": "c87c1646d4d393f301585008aa3fb203b84c931d383135410f499fd6fe8315d7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d629cd8388b084fe74439a9985dfb6e27564d3bc588fc6abd9587463dcdb19ba",
+      "original_BF16_cast_full_sha256": "fead3ddac2058047ae5e485938a84bf40897fc0c550b24f2e055a1eb28dbbd04",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d042c427082449a4a4a57c92154270bf80654f4fc5944daf4cc7db7592825429",
+      "original_BF16_cast_full_sha256": "587d6ef61d1e5e8e9ff715746df2907be1d75e4c3a9653e2682721edc41660f2",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0887cae40ee8b0b85fd523bf502e0ffe7604b27cfe8af9b58f6efafc235a40ad",
+      "original_BF16_cast_full_sha256": "7609432cd9f2b12533ed58b18e569748a8f2eb95109b9f9fc3b414ec3af587a0",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.encoder.7.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0e3812ca522d198cf8a0d66f942aa104412c46481346affc91aa564b6d5a98c9",
+      "original_BF16_cast_full_sha256": "8c0a3a6762c2bd6027170dfe4681ef535ae1085611c2c013e70c6996d4cf0a4e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.llm_text_embeddings.weight",
+      "shape": [
+        92553,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9fead189307e8296a5550f8cf27ac2b7d9b4fd71e4330a3344c7eda9d4053c2e",
+      "original_BF16_cast_full_sha256": "94c544f6115357fe06dfc69e5e1873f6ec4c40fbe8c3200255cb9c2f30dd84e8",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.pixel_shuffle_proj.0.bias",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "cbdd69b3b155d8d84afe22ef323bf5da080581057b811bf3d915a1f5b073d5b1",
+      "original_BF16_cast_full_sha256": "68b985933ead6f1de658c8d3a93762933bb8eb8e20f5b73a6bcc6d9625ddff25",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.pixel_shuffle_proj.0.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "fe10d16ef559bf9bca8e2520dcae313c4069ca9e539259d7a017689142605bea",
+      "original_BF16_cast_full_sha256": "f14f488541ee41e51d7bc6004ea0cf12e025e145d20a7d1ac2b57826d8562045",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.pixel_shuffle_proj.2.bias",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c34801b226fd2e7d01441473f56cad20b65be54a28e6bebf21c71fa04d9f2433",
+      "original_BF16_cast_full_sha256": "d4a4033c51e984b671474f9309d2dc900bcbc5ff1458ed20d6181a31bcaec1a8",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.pixel_shuffle_proj.2.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d02a992e21d3079e686e05c34c31034cf9d135d6fb3425dd9935144c07b58c98",
+      "original_BF16_cast_full_sha256": "d9ca764a89703370691ae22eef8210fc7459bdfb7afdce2953086b5f5745a68f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.vision_embeddings.class_embedding",
+      "shape": [
+        1,
+        1,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c562bc06f9c2f11fd3df1e39854fa26bda85813d0b972a09af9a153bbf732ba1",
+      "original_BF16_cast_full_sha256": "465afd2d9244fae2e91e90db6ea0908e479151145fa842db228f3f3c44cec30b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.vision_embeddings.patch_embedding.bias",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6bbf1428ac70fb9cc92cbb1cd492156b4b42f62b06e763e22a07b23aaccdc01c",
+      "original_BF16_cast_full_sha256": "7400e97d5e78f5ca7b19b1b1ed7067d670ce54a6b0e4385bee320998c1296fe7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.vision_embeddings.patch_embedding.weight",
+      "shape": [
+        2048,
+        3,
+        14,
+        14
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ab7cd53f531908fe38123ca1e2f29332a1c7ea7747fb5f4865a4f8bbab2cda63",
+      "original_BF16_cast_full_sha256": "ca68214dabc226d888cb3a414537ffb837a9eed4789a4e4cf1c00be7531efb6b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "embedding_model.vision_embeddings.position_embedding",
+      "shape": [
+        1,
+        1025,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2c481175a25d4710229254c923f2a7b0502d1ea42a684324f10665c60e5811f7",
+      "original_BF16_cast_full_sha256": "1ab909b657a4036b77a2553f8ed9f3e807d1b51f8a636f50813571da1f75f388",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1a0f529f16b270befe9d716e0b7ea11687709510ffb511cd37d62522fd63aab0",
+      "original_BF16_cast_full_sha256": "e86a27bd1fcfe708839e6b3b24f13270f371fba94ee8caf52e54a4d7ccb81d37",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7c1a5c22f79146f1bac20ac4f6626715b70bef180c32f2df469fb4400280dbaa",
+      "original_BF16_cast_full_sha256": "7fa76038c5a167e9d6e03904408f6947970d7aa5618f7802c774a94e43298382",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7c8983d7ba78f8200f9fc33f6dd5ed05751acc0af4e48e284a81fa86378c5d7d",
+      "original_BF16_cast_full_sha256": "6997f3ab636313a9d6c054a783689fe71d06cda5fef5adb3da963592bcbaa375",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "5eed57b5d7154cb532504683073eed2368607756bad5ed5751b5f12954931d48",
+      "original_BF16_cast_full_sha256": "0719271e1ec11c1af8801270975be0940f8451d8cd23442db1eedf7e68a0618d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6628c58f6d38b2a0f0618e3ae34e94545e107c5ce7ea3408d254fc705a687fb0",
+      "original_BF16_cast_full_sha256": "5389e11ebc2b43e207c7d7bb58ebb8685b69a395716bc53960ad969320c3ca35",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0e02513f0bdcfee0448df2799bbbbfa8c07a83f41706d7dc50dfcdd3fa6aa298",
+      "original_BF16_cast_full_sha256": "7f228bbd73a4df2e993056fcc94b115367b099a88faca62e8d1d706e5afa9639",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.0.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2b37e9062e60ccbec646a102a4c1246e660d745030783b23c48efd2252be1e2f",
+      "original_BF16_cast_full_sha256": "14b7a0bd3cdc2d267aafcd69200ab0cc70865e90e0bd414008253c630b4aa214",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "853c4f4bba54a70b1831f7d1e747b1d195b09743efc44c7415bf03ec2d8ae1f5",
+      "original_BF16_cast_full_sha256": "5f7ca33d26d51ad56c80b2cf27478a1272eb0d03c3b73c86abb829b5674f36ae",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "640947755616279331d4ef6cfb882f0501fe0e69e6af939c7895ef5174e6652c",
+      "original_BF16_cast_full_sha256": "cbacb5814b10d362add065324181996f23e3781ca59d495726639c865c83f9e7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ead702b86c9824e8f566568f73960b41a5b859ccaae3119eec1da58cec293784",
+      "original_BF16_cast_full_sha256": "6d0db845c643b732108dba9795cc70defdf1e7473cef2574f02b3a40506fa084",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "01634e4d85c832bb1ad70783f44a808de11e17080fb513d3d482806d8806bfde",
+      "original_BF16_cast_full_sha256": "81fac3a267fe96183922d9a0acfd0cbb1995767c94310c5905330fd2acd6d633",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a480dcb9241b702d2e51dcad082950ccc6f50f92b73fc488239b91ae911ce42a",
+      "original_BF16_cast_full_sha256": "c527116cf755f2e1c62585ce9e7cb34b1684526aee9850c07462846ccdbda434",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0f5f4b82b28b3d16dc35045acac81beacfe875677fd8a3007380d4d618997f4d",
+      "original_BF16_cast_full_sha256": "79d89c2c4cfcfaf304de3394d5299990d4cd4618b695ffc8463447e58bb47f64",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.1.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "aba366207e8ddaa3c395488d502f131aaeb831b8986da522aeb994b88dc8403a",
+      "original_BF16_cast_full_sha256": "8b26eb4ddd276a2b6e5c697f01482f8ea567b83d878eb12c5fd1cf027ff97c0f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b85ae9a081edf3e46161c49b0915eea2509766a515e54a1872d5009566121efd",
+      "original_BF16_cast_full_sha256": "a5c237cfa45d70f360bb88c87ce3c69a47c92e1138e2ddbb0053e9df83d8a8ba",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2fe0976765aefc492ff6a6c022dfe9953b92ea3fe1814c2b00419580a9362aa7",
+      "original_BF16_cast_full_sha256": "dc11205ffc7d19d5b2b0f405987df9a899eafb581230ec818f844c197e7e9f68",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c1c90b49a02bb0faca3d9f39c9afa9052737ad4bed71054551cc3b3f60b4d121",
+      "original_BF16_cast_full_sha256": "1374cf862f1a69f20da16c51af46279a1f6e74e135310430de6e2fb9b6604253",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6db4f3eaa93b9f336adc7de0fe2c4857dfb65bfbee41b08e41172f4043366a16",
+      "original_BF16_cast_full_sha256": "aac5180da92f3f9f70650956d188ef4bbd91d701aa3a467e6750036d23ce9911",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ed98b41d4c92e14595c138b62f94d8aed0f742659dae9b602831b50ff110e5f7",
+      "original_BF16_cast_full_sha256": "e424d2242caf6c5559056f32d92adc4923c67e15f663a9a1224c80a0cf3d1b27",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c5c042f853e93f19d1490df158ffcb415127d6f914b1ebd0325ba5fed69bfc01",
+      "original_BF16_cast_full_sha256": "7818fa6ea9528bd12935adc01a0f62ad36ece759a8f32760d5d5ba596117c167",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.2.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b765000fb71cd63ddbde49dc7cf2f5d83b79f29776f89ca50a6a801329a4f2cf",
+      "original_BF16_cast_full_sha256": "74154100c60807c1cd9bbb105a5ba60b5db4fa93cabc20968a4596230d6c8974",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b22924121afbe33b0ca8327c59b973c89778b5cb177c5c3b8b3210e9674fe94f",
+      "original_BF16_cast_full_sha256": "7ad616eba8709ceb839557dce3e586ad5270d2f08a4c262792f7ea3cf81ac716",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "95ec32b1013774bbbfcb94b74d5be8f1a441b982716d30fde22f195ae22c4cae",
+      "original_BF16_cast_full_sha256": "063b500814d13373b3323a8ba535c4fc3bf6d95de63093bf2600e8982e17f3e3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8ec03d2db6e3b3eae8f5a34bed56ad7e3afbdf9797b30b18f0147abbe982a3b7",
+      "original_BF16_cast_full_sha256": "fd16670f4ad07344f68617b4ab7a2e79b9c11f5e95c024bd79eaf8172da020d9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d0cbe4cd0be0ac3771ebd19c0caaf9f5edd6fb9a9fea1100303b6872d61c5798",
+      "original_BF16_cast_full_sha256": "02011cbb4fdc791cc30ffd8f90f8c2b0a23b9e0cd942ca559d7f7fcfd8398ff7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "25cab4a273f30857218c35943c435a0b66c1e91785810a0372ca33e1e1e8c4e8",
+      "original_BF16_cast_full_sha256": "8f3f03df0798760e035992e052eaff2a386eb3935e06bd58dc236765c839bba5",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4f5f108f21ec00f3b2c48dd9a4a6097afecc585d7842bb4f47ac28f5f688879d",
+      "original_BF16_cast_full_sha256": "ab76192eaec9be51c467a2c8b39f8e7a404cd89b46f27fcc6e429a97fa203082",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.3.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6a4c3525ef0e82e83725ece0c5229288a916b3cd7531d6cf19db476a30ed6b5a",
+      "original_BF16_cast_full_sha256": "96cd4df99db0134aa6b040fe1f0951bf4df246b9168868cf992d6f839044ff83",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "59ad47bc76806c6be3bf4ab27d248cb277c95343822dec0e76b66f7e3666b95e",
+      "original_BF16_cast_full_sha256": "ecf011368bd836dbbce5e273bc83daaaab74cbe771696f25b8f49226d50669cf",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2df9fa44ebf4365e6f2d05464c6a87189f8b80f6e849edae11408a740869ed72",
+      "original_BF16_cast_full_sha256": "effaea3ef58ad8324117790ef8b894ced0dc8e44903a05966fcc19e254f6aef5",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9b43a8dad30a82976aad9f80ad8324233c5866679a63ab023f93d625c6dd0f80",
+      "original_BF16_cast_full_sha256": "3ffaf8f4a47b2eaafae52bf341abe7a88a2d8cf7fc47839b92e957f2a30bd868",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "898c370714fba067f9883b8aeda6fd0a171e6d6e898beaa96325ea8941098692",
+      "original_BF16_cast_full_sha256": "32fe5c4a8c4fa7fffdf20a1c18b8599c5313627cf22b42a52c3d057a4a6fd1c4",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a91f4a776cb9883c1c33c0afe5ab78f09d49ba610602a16549f12fa94f118d17",
+      "original_BF16_cast_full_sha256": "fb031d84a2af018ac6e876c608460360456dbc077f696ff1c0a477ec075312f2",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e19abfd35f2f1734e36eeda5205973172bc9c1f43995893e11abb7548eb0e426",
+      "original_BF16_cast_full_sha256": "66be0758e10896d00812bcd13816ce355954e76222a075e0d665e36d9f9990ab",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.4.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "cbea3565c5ad5ebd88e62fd904e81cec280045b811eda56de3ba2d6eed19315b",
+      "original_BF16_cast_full_sha256": "28c9a379a9e9c9a559110df55c17dfbe5211bae31930d7942850c85df493e895",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d6e0834a68a0f9a36c5efc0cfc4276ffaee8a9249aa66774b4101075a61d6d5a",
+      "original_BF16_cast_full_sha256": "f1acedb0a1fc8ffb6561d070707a4427a59319a834116b471c4143573ac0183d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2e434353e0ecf5ba2df15f701f39ca0cc79ee218dde18b40057a85fd98d9c512",
+      "original_BF16_cast_full_sha256": "e678dd19658a64ad72b39af0456daf7792ea46293ce43439ff8e4be435a2d34e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00001-of-00003.safetensors",
+      "source_key": "language_model.model.tok_embeddings.weight",
+      "shape": [
+        92553,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "cdc936c5d40a0ce9411d6acfc83cf2d65ee969eda530264a6caaa37ea9c04576",
+      "original_BF16_cast_full_sha256": "afe5240fe775f309be825c0c4a183c6fe18f365661463f9bea9c553d19ab9747",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7d5b4f4a997bdd08a6b555c831e209683d2856d22ff083c24e7937f414ae32aa",
+      "original_BF16_cast_full_sha256": "91013f9357bc5dcc994f3897a5dc9c20174bc87d5469ac9791253408bcdaa649",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "30492ee14982974e3bad7631a10e6a6298404c0105181bce5c74769bebc3df11",
+      "original_BF16_cast_full_sha256": "8ccecb89f693b6c2f291853b5f4403df73febcae5cd6d7d02194e03d5b369548",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9eb6a96697abc9c0485558eaa6de83d4f41795f5d25a64edd5cb636796919643",
+      "original_BF16_cast_full_sha256": "6b2ccc389d50e4902ee297c0a22d15842f4d4ef5842d8ae60643d42d535f8a84",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0fb16f9c78175a912ff77f07fab7f647586c2bd86c6f263de1e77f5271ec7e5d",
+      "original_BF16_cast_full_sha256": "0849f6815ad3f224f44ee44b30f31da9c6b2568ea3afe4c91b6d263db9d86900",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c772d580dc19f6dcf812d499e18eb0a796f1c06f9d860b2dd797ab3dbf265ece",
+      "original_BF16_cast_full_sha256": "d4c747957249f7bc84f91859bba5fa16517f360d90557085ea20e55ec8cc0330",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d2f71c51c86e030f9aa071049ac80aa8e77e3673ef94e20587978e4418eda8dd",
+      "original_BF16_cast_full_sha256": "0c961dfc9b4fa6e9cf8519bf5bed3315c314708fd1549d9341c62e3b49890422",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.10.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e8c92f6166cee01db908789c53604a6d6c06ee4605008f473c5e7fbbc031d7a2",
+      "original_BF16_cast_full_sha256": "345ba0116103c12b2675c9f4080317aa9fe87c127eeae608a15ef281e83e25ad",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2f4182cdbb742b3f936aa89cb0bbc316891fa252f54c0838445574f1f8569262",
+      "original_BF16_cast_full_sha256": "74bd24af618d10677fc7f04919ffa4ef5ae9338741a5afdaed55cc63baec6c07",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7052015186342e3014db06eab6c9219287a817ca5b87cff30e87c3b0f478e5f7",
+      "original_BF16_cast_full_sha256": "2554669bc093afa485b4944cb170b3d78f3df575de9f3813af9efe822c3d10fb",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "85ba01ae23e753e119745fd5ad2a6b716b2e98ba8d11009d1215e3e29f1e8718",
+      "original_BF16_cast_full_sha256": "1627b3409e5f804f3ff104b3ad3c23e88806f0b6077f445383ac322b9c3b1c0c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d73393494a37edcc29274a3b0a120155ab6303590120bf9ec9b42df02e739040",
+      "original_BF16_cast_full_sha256": "037ec15bebeeb88bc3bfb164c831e86e0c7f7dfe971c10125284e8d2d340b376",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "48bcfe8c067831576dcecf14382ca8c566993cc4f279f25ed0fba67e132ea68a",
+      "original_BF16_cast_full_sha256": "674616f22548fff4c6136551b23522643ea509f7c9d3fb1a7141072ea33a6224",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7d362231e279e06db4087c8327958f56711dae1edf8819e2364e1ef0b208b2f6",
+      "original_BF16_cast_full_sha256": "e1722b0f553df46b325bb5595898f68ab99b415c464872746ffe3881f166d0ad",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.11.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "20912a680df92e585ac0986e6b6fb276e2049e8a17b97ffa6a3487abe77d5e1c",
+      "original_BF16_cast_full_sha256": "0e809fa75e92dd776bd7e8683ada5a4505c322f25e3e7b6b54176e1c79e0f99d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b8f018db7bb0edca2bcd34319ebad667772f5dd061629acb2eed93cf4934a819",
+      "original_BF16_cast_full_sha256": "5cb16cb94e6993c8e509ce536aec2b241125531a53cd7136c7d442e5daba2acf",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "86488ac8f9ee5800cec83e3105739cee7db634bf57926f2cb2f0cfe30861573c",
+      "original_BF16_cast_full_sha256": "05432efa6d505771a5cf7b2716110364b3ac6a0482b2d9e824dbb3a3a41d1ab9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "64197b41a4a17f0c8d3cc7a1abb82286a773ddbfb04a36ee136a8a55328ddc46",
+      "original_BF16_cast_full_sha256": "64137f319f610170e3210228ab7e7d5e53dc3a5339f3a450acccbff97aa797fb",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e049d40ee55d5020befda4d5f6642a6ec99b344d58d6fc2d6a35cc921bb4d98e",
+      "original_BF16_cast_full_sha256": "f98b706b86c9c02e675d7ad7a54749f6fd47ecb0a35442a762818b4b71009720",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "983d6b6b7325a0f83ad16cdffe3c7a991dc254c9810f51b0d86a7bb4b584d213",
+      "original_BF16_cast_full_sha256": "866153049b31afa2569b52557589cc620bdcd17096c6b904bdeab79b727ba68b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "09383670619e0455f626b258bd9ba63f633cb99b2ea0b8a05bc1718bf74941f9",
+      "original_BF16_cast_full_sha256": "3f94d27ea3d7e0a62393b7aa1db8432a362331225c5b7713cbe43e17fd5c2cd7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.12.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "958b7d7f792e924ae515ac2a0632dfe1939ed16b834d673393801ec865bc92c8",
+      "original_BF16_cast_full_sha256": "7f2254f440f152c73cb1f3344db70a58ac43209e956b4489509d5f6edc0f5da0",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "72c2189566a7c87e79ba397937eaf7d2e23dbcacc156b7cf4f0220fa5d1567aa",
+      "original_BF16_cast_full_sha256": "d15a57481946c2e3d8bfed13d2fa6e949d37f6aecaf979dbbae04a26fa04e2ef",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b60e926958c8caa208059e80af6bea9e9b8efb1d5ade1ba84424ff2941deb649",
+      "original_BF16_cast_full_sha256": "d313c3580460002d35462a80a9a5a6f7dea9a71217e7bc21ef7af153b530fe2a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "dbdee593028acc2f98c6a1a9a92f6c86870b2d3c002cacfb9e144cc876bbc71c",
+      "original_BF16_cast_full_sha256": "81c4e3072b88d5af77d00b02dd85bce589e8a1d6c9f92cd793ec49a48cfaca1c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3151903c4734f3c532a0764dea0d9c2f17f42c226151064640406879908f6c8d",
+      "original_BF16_cast_full_sha256": "715db25653f10995fb550f4312396e6b5411567de3ca0c2b2f99009ed03164aa",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ab1c4746a52af861a322a5c4bfbee7d6ed373f7e41c43a464039f9db2bee19a5",
+      "original_BF16_cast_full_sha256": "18d400de0afbbf693ff1b74fa934bb9ac25bd1b10ff36f3b8849727a8d370520",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d8f95bb9f6d2221cec7ad49f848c07675d13a3b891dadc55f22b9a23c03da857",
+      "original_BF16_cast_full_sha256": "63ae0780cd80319f0a3cf1c9704bcb63a08aaede36def8512802ddb76e60d58e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.13.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8217a8cb63b46b14232cb5492a7ff9b667291e19ff7a9a6def5f7318f100b7c2",
+      "original_BF16_cast_full_sha256": "3eb22c8c60351da8ab748964de94587a94478326eaa18d14e8e800d96f6ecf82",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "eb9eed1aa1b0b669d709fe7e8dea3e27e81c4d68da9cca039584e5a1ef3812d0",
+      "original_BF16_cast_full_sha256": "1db3fec254bd6f47be53b3ca98ea4ae0ca2e6db3dee5d58d1e25800e7f7747f5",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e4df3f7ccd289310abf918bde4ee1b2864641b1a1cd8223ad965d55a71228cbc",
+      "original_BF16_cast_full_sha256": "759ab8f68b9ebfbb794fd2d7226327e1640bd0bcc7994a1d3764aa56ad1e46c3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4a6304bd424c0a19d2595a7f9f65d4866885c3e4cd435428ae619ee7f696710f",
+      "original_BF16_cast_full_sha256": "2a672876a5e91d6f06f1bde48b7797e2f412b32fe91541a846b1940f377139f4",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b6d4681ccadee80f3b9e8143e4bb00043c41235d7d6d6c9c643fe411ae331d2a",
+      "original_BF16_cast_full_sha256": "0feaf7433aa09693a97c3980913884ac36e5506a562597932022d8e119793e76",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b05d3d1488166d9f5dfbdbf4677c9d7a922bce494993aaa27c1c9a10e5c2139a",
+      "original_BF16_cast_full_sha256": "4e5a14f82aea1792a0f3fd6425554c79921305f88c2e31eb5e7e306b27de163a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7e4527b9c576189f0bd00bf284bcbb38dba4a9e71a61410e0014af0480e4ea30",
+      "original_BF16_cast_full_sha256": "1100223604d47473ce78ffaa632a1561bfd991ece60a2558e50117e8a03c5c78",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.14.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ff418b30e0fab5b43261c50f0ea325b8b2825f6f6d269f95203823ea15a7ca81",
+      "original_BF16_cast_full_sha256": "650f8771eb9046cd13474ca8e8e7a31ab1900de835ebf85efc60780f932092a8",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6294ebd743c79d098328e26b8050049253fe6955d664fa5b8b6780dd8b193c30",
+      "original_BF16_cast_full_sha256": "c252c6858c949d4cb4e51bdac40bc1565af33a1842dd069352982353de06529a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "64b0d91fecd2456e9f3fd646f4d702484d9d7e4052d06c5f70bd0a35b44f1dbd",
+      "original_BF16_cast_full_sha256": "6aa7a6e6c8b8bfe0c3298f3f2c6b2e668d235d700c81765373214333e1ab8398",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "893c8067b233d0ee9c6aa23d66e269712aaab9ab9cfedf275222a34a2d86ecd0",
+      "original_BF16_cast_full_sha256": "170bac7edbe9ae6aa58a7fd78a19204c5f227fa4aff2f2ffeddcc887e06fc41d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9175a34d99c2c2311038eee5d5cdc1c1825462860141ef81ec80ad7a15d21d0b",
+      "original_BF16_cast_full_sha256": "b8c361917567603685179f704f152918cd9cd53598238f40c13f5f66d2b1132f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c08ed6fe78248d255104e7863f765383dfc69987f7bbd70640b7d82f67c500ab",
+      "original_BF16_cast_full_sha256": "7775eba6038c8a15d85e9a50c70c544633f7995687760999cbd00e2ad890cde3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2206db04e31d3023b5a9ed87d745b5abd1af71705d83ef0b23fddfab586e6706",
+      "original_BF16_cast_full_sha256": "f3b32cbf9892b3f4be2347dea9a9e34e63d2b923d7ee7f5a8221b12b2b3436f1",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.15.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6451489368fdab97c594f579eff3a1009b668048ef516a5f230b3e43129d8b54",
+      "original_BF16_cast_full_sha256": "db4cc2638964f30ba79f1db1a17d5529d0d416f4a53a9b26f64a51d818a4753b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "99b48d28d3a569755f39ca611fc9613fdf5bd59b22c0037afa426f71836e09f5",
+      "original_BF16_cast_full_sha256": "ba59a876a2a455a751c5e136648348a2fc19e6f3e962c9e37504e6044dda78a1",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8835541064f9aee661f028ffe579d5a09257cd85277e482a0b1b454f2bf67a63",
+      "original_BF16_cast_full_sha256": "9d83d65354221b05214b6e4ab4230ecd299e55910b255d59c696b5b0144bd7bf",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1527dab390f967bccb3d26d8217b4d9269478ebc696d45ddca7ca00538bde00d",
+      "original_BF16_cast_full_sha256": "195afa08353e89dbe8bf299fd7a86a6794a208062813bc1661dc6c01ded23e17",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d44fafb2a7623627da46d6abf8d031c03a29b2e7db5276692a78e2e895db8715",
+      "original_BF16_cast_full_sha256": "80eeae9f9fda029d14f2166e4ba211d6051e3370a82782dfc26a82e8137ff660",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "561952a2e47e171b49c69399a92b741de8acaf8f8c5004d610e4572d4f68e085",
+      "original_BF16_cast_full_sha256": "f8efc5001cfad01cb6a48b702825619805ad000d2d181d123427e74e7eaebe6a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3ed62c84b1176dc7825e5c73795ebe88b052e931190575e53a6e4aaaf14b269d",
+      "original_BF16_cast_full_sha256": "f2d09fb8b2efbc9886a11d2e5f53aa2a354bb20835c10812b5177fd40cce629c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.16.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a265675a2ebfe312d7cd87b4ab19ba744905e951a1c807266e0428da6a96a751",
+      "original_BF16_cast_full_sha256": "3e03b86f257deb8878544e095b18241229daa48bf21c7972521ff6d85e5d8c4d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3ea5dd2fbf618f6b16652bd4aaf4fc4eee520079266054a9f88d36ea213d59f6",
+      "original_BF16_cast_full_sha256": "2252155824b62d88037beb55a4a232949091a95264cc40c41301ceb25f52ad35",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4cba347f96f34b0bac7addcb8a5460ae83d4eb344cea93bf381f76cacba3d252",
+      "original_BF16_cast_full_sha256": "ed0dd31f15e8edc29dcc8d01833cfc030f244a2e681530f7cc18a093d87e2595",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "37e7300aa73375bc5cd109e69671a271bbe24c45a9b4fbbc77a9c477d7017057",
+      "original_BF16_cast_full_sha256": "f69814e0118299aeed7edc74afa490b5cb3cec2475cfa2a5d419b888e0c1c37a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e363858504f2076379216a9ffd8cfe281e06c75bc9f5fee11cdf67c3ae80f254",
+      "original_BF16_cast_full_sha256": "9d854e5a81a6a41068ffa232efd0389f5fc98aaf13b83206674cf252116995fa",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "f37a325f8971b6cf21447a2e6d1e8adcee446caf7f74dbf0761ce36d563860e1",
+      "original_BF16_cast_full_sha256": "321ef69f3dac6ddb36ea85ca8993c0afbf38d6342bd0ec5be2e86c6cace12b75",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7c6f0d92a7634c1ff53d39ba2425b35e937435f10512381cfe096fef694f47a0",
+      "original_BF16_cast_full_sha256": "887b04cb4edbbaf3dae1533eaef197076ac40d213342331b2731cf91e96ebba7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.17.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6d460d6fe4e12557187400c061ef0ed6d4c076e46ba374b72a2f69aad32b9497",
+      "original_BF16_cast_full_sha256": "99bd27caf54cadcb3ec743ad10930dadd6f5eb0183e04a495275fa05cc33b9c9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2fda2aca53accdd2ffa3b7e8e0050126e17059cfb7cbbab496ea37c170f9bf5e",
+      "original_BF16_cast_full_sha256": "ee211df3865267171bcc0329484de260c2b13c8fb4588af090475db4c464c843",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "20cd30b6ccdc1c3902e3fe7ceb8cfcba2f2be861a2a4255235cba264a03e54e1",
+      "original_BF16_cast_full_sha256": "d7b5892cf12e6bdf2b51bb54c853c83b6e48d1b50ea7ca1a07c2dc34a2681a8c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6d135f025771b04db20108c0582f6c288a63c0fd299a89d78e268e1022e62a1a",
+      "original_BF16_cast_full_sha256": "f99cb70d93f8e1a3822759f9bcee1c8f075fe79b10a6e5d615c55cd1ddac240d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6a5624dc77a458a076f7fba8cb62591a66b499447fe35da5f63ba3939dacde09",
+      "original_BF16_cast_full_sha256": "4847367949edbda0c20b14427b5b33f1123253e56d5ba26ab5aa332dfa2fb5ad",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4c807273022046f91d1f0c0abd9802235b48a1e08659fe4266942a687e8eadc6",
+      "original_BF16_cast_full_sha256": "1562ffe51f1b8b8b7db322aa1782dfba4d16892fc166e118fafdd0e39d5d631f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2d183aeda349670698a5a41f7b04521d132d70b0a67be6b0cfab95c4a388c07a",
+      "original_BF16_cast_full_sha256": "fd9798a0181737fcfeef16d83945ea2f95c400639820a0d1dd32a5e45aa80375",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.18.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4c27817559c87f41455d6391c78f6e01f44422b33638a9af7e78ad4af69f29a8",
+      "original_BF16_cast_full_sha256": "2762f553653b5af7046290b89388dc12ac69cb46e4e2ab56948c357448c03868",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "caaeb52c27318bfe4e2b51f696cefc1ba4468a24bbdb899930dd31cc7f136434",
+      "original_BF16_cast_full_sha256": "e07b23990a5610e2aac9332121949e1f7683ce522b34854c8ed94bae34dd2192",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9315025f10c45cc3a4b19d9accaa6ef0daa35cafb8bd8f7a93c9edf5b2247627",
+      "original_BF16_cast_full_sha256": "a3e67066bd7cda843a81efd3d3dfcb49a3b03d042c17555444b25c5bb6736155",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1369864e82428bd5756c4c305f8f25f83c1a005228f5022acb0aece97b9ac3c0",
+      "original_BF16_cast_full_sha256": "f439c915a1c2ce409465934cf5e74dde9572231a11258ba04b5322af2cc4b362",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "58dc6a5fac0a08f6d6bf22fe76658e47cd39f6c7a962ce23873891a86ae3eec0",
+      "original_BF16_cast_full_sha256": "c5e7e992a3a29d5d7baed38a88b342ee132487f4120dc207e446d919399b387c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c7c072b4e24a2429cce5a35e0b351e6ff214c82da065b5323719ff9d0858101e",
+      "original_BF16_cast_full_sha256": "889f83fc0ebaf8cf1205fc1365c7b0510ae23ea67ff55a3b403a10d09df3c3ef",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8b4fca2f953df821498dc7b63898b0fbf0818302b43921d2fb5b305a2fb5e3c5",
+      "original_BF16_cast_full_sha256": "5b4b8f5e326dff6c005f4c0a41ac8188bcd6cc342d4b7da353ac44eaa70658ef",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.19.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "32cce71d911895ec2aef126ff13eea125ce133f6e2593933869f42add44d1e0d",
+      "original_BF16_cast_full_sha256": "27b8a2aea03cb7bc5cd952700d1bf73d501344f3bd2af6784bbb85b17c106d49",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "71a8646b94fcd1da89562409a86278db4e555af9a4afd0cbe3d1cd8f966c721b",
+      "original_BF16_cast_full_sha256": "4e5eb4c3ea813b9211918ff6aaf3e45c806317210c60c015d172f60005c6f204",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6833995dc5807f8f4f01ade65d710e5f81fed1f8a7c28012a6aa90c660ee0d8a",
+      "original_BF16_cast_full_sha256": "e5e1b7ea9159847335cb37717a0fe28096f5666c3e3d277540d3881aeaecf7c6",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8a6d1cb3c7da524910a0da638a4189af39572bcdb7ba78114cab3f6ca2d1805d",
+      "original_BF16_cast_full_sha256": "4b26367b84db2c8e5f6c160d9e8b8847df553f6676e3e0702d028083d587db80",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "c7c14bdd1726f662380f7f47d8b033de3179357d921f4573ef9e55137c758004",
+      "original_BF16_cast_full_sha256": "3aadce1f64c50a5bb3328ebce1a62b48f3236b0b90d2f49bb0dcb460af20289b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "37726de1d5b2ab8edecb286cf7ac143ce47bd8d5c57bbcc2cf2ea05d29e046f8",
+      "original_BF16_cast_full_sha256": "34e92708e8cfe321ab575821c5bbe041cac8a1e824eca5b49cb0d7c5d43dd788",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "5abfa49bcb0c212717578b847b84018af9634d42bb1fb0f677f01484a5935143",
+      "original_BF16_cast_full_sha256": "8d9ac7c86db6f08f68480de2c8aebefb4a70286e4071495862cf03bd510d0b7c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.20.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2c852dce85ce756b3504ccd5d42f3177ef8898912b72797688942c08f8d375cc",
+      "original_BF16_cast_full_sha256": "a01f08d57b60d3150fdc434c1ab1b027f6a20904fd37080df1e71f5b32950184",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b82727bdfd7461dce3761c4140b0993041e9bbef410e01846b36311afedd163d",
+      "original_BF16_cast_full_sha256": "63fa478cb741c283c54a82b6e78a3f1f9ac3e679b5f2a014712a9c3a56cbc28d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a759ed9098b6d72672a51499a9b28d066da5f00a1bf417b96dcc42aaaa3388f0",
+      "original_BF16_cast_full_sha256": "73f6c7e9e5eb6593ff8db0d1f4a8aebaec379b6ef3a517e4b185c226faa8cecb",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0ca7413822a0c909528c16ed09a4c342a3fc553ac25d3db7fdb7eab9ac3a4b3a",
+      "original_BF16_cast_full_sha256": "ddaf355cf31bef6ec3ef224feccda963d3a3b9c9a6b0282db1b820cf99c9a836",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "f48a0c6593e2b84202212a170d8c8374bc206a898ba6f915ed6967fe5609a8cd",
+      "original_BF16_cast_full_sha256": "01bd8aff5fccbcfe321934f296c21302cafc1697a86bd881a0224f3f50d8ea21",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "29057f964c2e3e83bb5765e85df50f9d06c1edb128bc2e516f559cf743d798d9",
+      "original_BF16_cast_full_sha256": "a5e6e4575b7f00671f04ed6bc8081c61d79d4b4e62cecfef2917009ea17d2f9e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "040d9a8f1dae6ce17713c261f34dbb094725e5e7e9109426538e3066b561735a",
+      "original_BF16_cast_full_sha256": "27bcf23ee6b17a2afb2678af8223537e3847a1888e9cc7b155d8b31d12017d1b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.21.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "2b1b429bb8f590322c58813f9fee0704a0a4392e1a64110c0fb1550a188abe8d",
+      "original_BF16_cast_full_sha256": "e547d74bc980f010f9be2f72643ccd642fac4a85c1760ce68739e4f15e2bdc21",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "332d6534b31687ac9abe0ce79d42f8a30d59d19a50164005d0ec73982ba02b0b",
+      "original_BF16_cast_full_sha256": "a9630200ef901435146b8de06026e5c094374706e489f5232a6bbcc2922e2d88",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e81906fe29aebfc36e0717a998e9afcaf0250e8b150024cd9156500db5c8fb5d",
+      "original_BF16_cast_full_sha256": "f0d865343339bba2bd7520536340c6b1b2145f72bc64a997fea367aa9986fe63",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "012e0958b7004dde0cb1b01012dd4cd3ffa8e31b9148c16031626ab9e16e5517",
+      "original_BF16_cast_full_sha256": "890ff3f403661a53eb9253fe71b33c0d00714f38d8787ac2cb615dbb370367e6",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b6bdc9bd65297b574254d9ff463bf580f4fa36dd7d23f47cf57397eb54c7108b",
+      "original_BF16_cast_full_sha256": "d2827d122bb618b8669eee2f8738bde4f8d13884356ae5cd9960bff6d9ff107c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1c63a978e89faffea24740a6d37cddb3ac6ec695367ef42f8bd5231b8bb14c7b",
+      "original_BF16_cast_full_sha256": "9a078f80adc00945e6fad3b854c4d008ce269f6ed4b397da0de26f148b396369",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ee689e6dac5169b087d6985bb6d89f7fb3e944e76ed470b2b61927e751aa6560",
+      "original_BF16_cast_full_sha256": "04aecb2b0e22c5c6c06d645a07fb78b0e2876ee35e81259088a7aeb54a8d540c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.22.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "422c0bc4c501d076f0404c144605e81b363f60e3d490db9de521c6b1e8ed741e",
+      "original_BF16_cast_full_sha256": "a79965c2d244393f751b72569edeeca6043011fd1edc235ffd98e18c6a136a97",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "8f09887e77f8d4e979beb779f7bfa1e6ce100113028a4bcde8eeea6761de9b30",
+      "original_BF16_cast_full_sha256": "687564672dfdea4d87aa38d8fd8c926ab6747b5353e8fad963f8a3ad57047177",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3036063b950754aabf2b42813ee028ff467b9d9813bb6729047f5a03403d8bed",
+      "original_BF16_cast_full_sha256": "7b4975fc6918ce4d15449548de6696d679f416d38e278b62729b70114113d63b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "230a78a7915b272a05ab999a84e069236ae52a1979ca2db882542b4ef5989be0",
+      "original_BF16_cast_full_sha256": "10903fad60a09ffac658a67a75d7c92ccb7e2c9966e5f6993198cbb5a19ad624",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "df54cbbcb0c19611ef5a4ffc6ea29cc65ff4ed00c197f588951235b32e2ccdea",
+      "original_BF16_cast_full_sha256": "c6e74debdf99f29c3e29567b807880744e81d764e300b8099b0eb4e975906dc8",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "f3deb4747def9a7a5c5e65451e4093aa1fa6f05d6f9282eb4358891337c5ab93",
+      "original_BF16_cast_full_sha256": "02cc05cbd5e1a05d560bfda232239ef9ec486f61d05863b1c48b61e024d06764",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "88ed9294c12c3687a2ecbc0b48682bc8db1c8fc39ac4b350e282fb9cd0900315",
+      "original_BF16_cast_full_sha256": "04f66b7fa6714822b0a6834b9a558e2c0b74ba60e4418f8a69b47c76ab66a80a",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.23.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ee474f44674d75e4062cf02126d6cfa1a54f909287fcae545380565805883586",
+      "original_BF16_cast_full_sha256": "8eb94456eab133e073402fd8a8e0287e3c364e20491e1013e26884c7fad31ab9",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "4da2caccc715defc79c77ac8d4229da405bb659bfa0b11254f008dfc140b64cf",
+      "original_BF16_cast_full_sha256": "1f37c43e4b9fd6b6da8f32842414f9ea77d8609f0a03424b1948a60e817a20b3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "14b083bf322862a3a1ad24d66f1699a0b7d692e1c3a05308573b085a8cfe845f",
+      "original_BF16_cast_full_sha256": "acc1e1b9668e4f0a13af8f0216b0ae897088736bf6ceab3d9a716735110df976",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e37d19007c6389e0c000d4c869240d0301f6217e994fceb9a0002080e6b4644c",
+      "original_BF16_cast_full_sha256": "5390935199649836496a26c6e2fc22e404b51d9caf56634dc95c25b1f5c69e79",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "312d94e17ef33655bac7ab353851f994eb8c122651fa7f330db1fa6784ace3d6",
+      "original_BF16_cast_full_sha256": "b5fe54e345caaa72fbd755b76a1e61cec480182951755c19c17948012ab7d3ef",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.5.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "d2891f2769940e7b64046753b1c26eeaa3cdda9a1a6aec5a6726245ec5e9772f",
+      "original_BF16_cast_full_sha256": "76e506cd611fc7c0d6a1ae10c35d6e2f7264e87bc3a2f1f9828fce22dbc77021",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "5c43ea4d3c24e899eed8a599a1e9ff18e81f8ee82523212ce96d48c405008a1e",
+      "original_BF16_cast_full_sha256": "30ec29152e393837869acf9015cc0989a9f8cf15140593068b135b9ca3e813ab",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "37ee47103ff94e70c7b1cf9788c5558ae62bb78a5e7d81f75e90a700094bec14",
+      "original_BF16_cast_full_sha256": "c619d0a0500041219f60a16df0682fe0f02b149ccc159557ea95d5ea01e8c6ad",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6f619f1f19d5c257a09bf7b62ec887015c99ed613a594d56fd1c5d86fd539ed9",
+      "original_BF16_cast_full_sha256": "884db3ea6ba85ebdc94cfa45f0ebfdd60f6c02368dcd2759567c0577184e44b2",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "1a784672d0f57097b2697fe8a36837a3a54e7fa08986758f81d050b30b680ba0",
+      "original_BF16_cast_full_sha256": "d6de1e41f20d03c364bd8327a2d619ea1c68cdc0ec8c07cb4a2c37b1de99fa92",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ca7d3cc5f07c1a0e05b3bedae9b705759c6e0a888888906ff9579b0841013984",
+      "original_BF16_cast_full_sha256": "5eeec3e01509328031d0d2ce5f302ceab19d1eb92f18d3f277c19e331c385347",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e1a4598051f4acbb69a3f473673d95e64cee32aab717eacc9137a0f43eb931d3",
+      "original_BF16_cast_full_sha256": "69de5883ec16a47e65450eb1c9c7276c525387c7b29e652cc3089f7931adf85b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.6.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e924f5018c8ffab4a60a747bfc178701b7cc30cb72dae93ac407e7206abcd1d0",
+      "original_BF16_cast_full_sha256": "c27e6ef6801a54f116faf43f85f05f56ad8f4756ad2dc93d75326b9532dab8c2",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e083bae037e13029236daaec85d6af143462e0aca17d3c63bf0723d91265ba51",
+      "original_BF16_cast_full_sha256": "6dce8d94c96899eb10380ce7d7ff0ba530fb2f1ab8bfd57f718f40b1dd189b06",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3f5c333896fc0fc3dfbe31a03be04c3de9b982d8c99e3950278606e93f7e4015",
+      "original_BF16_cast_full_sha256": "63b91ece3109ae4b104121e33404d5a41858c78e94729a4124ad882ecb2e5aac",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "5352377701c636c4d8a5f044004de2b7f7a0d01671075d72dfaa55e2b40db70b",
+      "original_BF16_cast_full_sha256": "f2d10e557edf80a1ee1b12d8b64eb4bd749f58b01d9e0764369e5c1689f45391",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "fb7f86190a3f2f08445843d8ed4373d8b907e023f147e7ac96a78fbf49288f28",
+      "original_BF16_cast_full_sha256": "6dd3b8181251a6cbba0e5813a297789376987ff81f640bfbb44cc11c9a7ea48c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "7fb95c5af53eb522de9c8ff0a0151e918e98076daf6a6d320e4162e83ca06e71",
+      "original_BF16_cast_full_sha256": "fa5f505c66d39744634fce6419c09016c816ff12089f76099dae5060e155e742",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3eeb5e6e544c49e4a5421f071015bc371b2c24724539dee547fca1eddbeab0a0",
+      "original_BF16_cast_full_sha256": "0d6690744a59027f0558d21d530e2016491ce18d8d4730145de2c67c0734551f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.7.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "955b95788f7a87d11ac653e66ae3908fecadd4cc26cc28371a01b2e567a0aafc",
+      "original_BF16_cast_full_sha256": "0d3859a687420b17559ec23ace4405a82ed668fb4eddb55d62c561fc6b3e2926",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "cdcf684890327de6141184f3781d0a9041f3599b4729e929534d2c30847ef26c",
+      "original_BF16_cast_full_sha256": "7270d1c2e778ff5eb4979e89c698eb62a0f85050b6eced01627ac93477a352ff",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "ff99dfa7c8bfdaee2c4fc4b411b6674e1787ea169ae3454facf20bd821996a9b",
+      "original_BF16_cast_full_sha256": "1a56fc70fbc0ecefc58f650caa3addc12c967ec91ecb0a1ef0ae40c261558f7c",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "953939cbf80cc78ea81752b0559102b0291034ddc39d0bb6bd3e310ea10d166c",
+      "original_BF16_cast_full_sha256": "29d9f76a27618d4b6219e961ff0f7d7e81dc59ee0f46b35bb67a1f8ca81dc03f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "a097518feb5051b937389b35986c182bbada97a5b69cd2ef79158688745e275f",
+      "original_BF16_cast_full_sha256": "087d567f03e40da91cf3cb21da26aa0e329551e95cedc77d05877c369fe02559",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "cae7cac9375c046f7436aa28a313da6b5372ae9a839ec56e225f03382fc58319",
+      "original_BF16_cast_full_sha256": "36959f094b17d5ade08b6bd93c9553bd2d0fc3e369170db41e3b73245d826f7f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "e4e74ffff173d7c0beb0d3ead8605c67cd3b3bc26b5cc60dd9f92bd532b729e7",
+      "original_BF16_cast_full_sha256": "814c2cbf6a16682a2a746d4ab3a891e886f305fc70c94ca1cbd1d82290c1d776",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.8.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "06256e8b4b433c225287d4904c371f1513797eb9e77115ce356a5491eb8bb501",
+      "original_BF16_cast_full_sha256": "a9f7d1802f3f6e0dab1cddede99128f945a1ca0400b25f70a83773189d86d95b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.attention.wo.weight",
+      "shape": [
+        2048,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "6d29db4b419a3c73d97fb6d9dc27d0938ed7230e6b5519924eb9dab107c4ad57",
+      "original_BF16_cast_full_sha256": "fd6c142b263d1d8d4b0ebb4896ac1dc59939403e91fab8a532a75a86116e7dcb",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.attention.wqkv.weight",
+      "shape": [
+        4096,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "5fdfb14bab54b0f3c979c34304240df99f59a410b98f764f6919c10a21965994",
+      "original_BF16_cast_full_sha256": "6b59037356f109f23cea409c4cdcd62e0359b6a3029eb2a2412fc416f18f8dc2",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.attention_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "78c648680ac2e3a0ae10a118de184eba4c73c946b8e23364cf786b5688c865e1",
+      "original_BF16_cast_full_sha256": "482fa153407d1f0182a285dab1644e403d9ef0da43f9724e2d025cc6de21e03b",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.feed_forward.w1.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9f2da0bddb7f522824b484edd869690f81b5bbf04eaecb2f1757c0675b4830f7",
+      "original_BF16_cast_full_sha256": "831279745ec6d85e703f0c07c1a2feece3488990cad190136ed2953d7deb963e",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.feed_forward.w2.weight",
+      "shape": [
+        2048,
+        8192
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "b5a2f8735781cab710eaf07800dc2140d3f5b01d47f77f6c72ef51e9585baaed",
+      "original_BF16_cast_full_sha256": "6ea076bb8f6b82ce3ae0fcb3de53f59c941b72f33745f20d295c0a4b8c433b38",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.feed_forward.w3.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "0037d2760f9bfd54f1fd9cf8f7a208ccc9f5e41314448a81c494f929abff1629",
+      "original_BF16_cast_full_sha256": "13192a8d55c0e4784ae94155b3df7d4b2eae33e86a33c2e9040b59726273262d",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.layers.9.ffn_norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "3697e8932feaf34c1143bdb8735f5a6acf740ad32d0176caa3d6c08906f2ddae",
+      "original_BF16_cast_full_sha256": "7a8c6edb8dd2c39cc0ce837c3d3fe7af5584fdfa7f9bdad504981c8d2594b0c3",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00002-of-00003.safetensors",
+      "source_key": "language_model.model.norm.weight",
+      "shape": [
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "bf7ae88d8e6db151fa0adb97241da3e4f88eae7cc07ca110c1995d2436bdfae8",
+      "original_BF16_cast_full_sha256": "d4babf78d2e8f1a2aa7713f67e5544abd06c65cf69b4ddebc5eb086a61283c9f",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    },
+    {
+      "source_file": "model-00003-of-00003.safetensors",
+      "source_key": "language_model.output.weight",
+      "shape": [
+        92553,
+        2048
+      ],
+      "source_dtype": "torch.float32",
+      "original_runtime_dtype": "torch.bfloat16",
+      "source_full_sha256": "9f292628f4e9dfc20783ddb257adc65670815a47245cfba083d1e102a3fb2875",
+      "original_BF16_cast_full_sha256": "23b2beadf22568bf4e1924ec26666d26570192972422dd51db0a8a457254b5c7",
+      "original_F32_to_BF16_roundtrip_changed_elements": 0,
+      "original_nonzero_underflow": 0
+    }
+  ],
+  "input_audit": "/root/projects/comperror/workspace/diagnostics/batch_910b/HoVLE_original_sourceF32_to_BF16_and_independent_CPU200_20261102/20261102_045146_683753/audit.json",
+  "input_audit_sha256": "cdbce96c6d3e2efb0a4b3216f4b5b4ec765695bac395ae9181a77d212781ee6c",
+  "original_runtime_patch_source": "/root/projects/comperror/universal_eval/model/reference_sources/hovle_original_patches.py",
+  "original_runtime_patch_sha256": "e1ae1d7554c4cc47793a7517dac0faa5c3865aabc3582fa6f3f432aa3931822d",
+  "runtime_sha256": {
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/torch/__init__.py": "51c90fe34a7cf869517d1bab4cd114498790e169ec668f1a154c35ec64117a5e",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/torch_npu/__init__.py": "322a9fd43cb381effe571ccd37307a4aadae52a7cd76075de7b4e2a7b38fac5d",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/__init__.py": "67b01cb68df95d42da0661ea120535f33bb618225622e9523bd32e3b7741f9e1",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/PIL/Image.py": "04050c2d4dd67931ce8c3cfdbc49ac4a6944d379d037c8f1d5eeeb67fba29a10",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/numpy/__init__.py": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/sentencepiece/__init__.py": "4654e37d6be2ff8892b2369c853b08d2ff8ac6031f3b13d2e4aafb21864ec768",
+    "/root/projects/comperror/universal_eval/model/reference_sources/hovle_original_patches.py": "e1ae1d7554c4cc47793a7517dac0faa5c3865aabc3582fa6f3f432aa3931822d"
+  },
+  "evidence_sha256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/next_Docopilot_HoVLE_source_protocol_20261102/20261102_043838_349452/OpenGVLab_HoVLE-HD_review.json": "ebb437221b843621435d93707d01c9b39d177eb55506ae0d0e6294a1da7037da",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/HoVLE_original_sourceF32_to_BF16_and_independent_CPU200_20261102/20261102_045146_683753/audit.json": "cdbce96c6d3e2efb0a4b3216f4b5b4ec765695bac395ae9181a77d212781ee6c",
+    "/mnt/afs/comp_error/workspace/diagnostics/mmbench_alignment_20261014/source_snapshot/internvl_adapter.py": "7fcc194763d680509c314258e36f83d41a124525adbd68bdeceb09bf891a832f",
+    "/mnt/afs/comp_error/workspace/reports/OpenGVLab_HoVLE-HD/image-text-to-text/20260920_224434/eval_report.json": "cb69cc8bae33b711565fcb9b1640f929bd73e15345fff231db16dd0155a31f4c",
+    "/mnt/afs/comp_error/workspace/reports/OpenGVLab_HoVLE-HD/image-text-to-text/20260920_224434/run.log": "0bc8b8f734a9b36a4668dcf7ed516b72153dff6d1fe0aa090f37d98b687c5fb2"
+  },
+  "original_history_Accuracy": 0.86,
+  "historical_same_raw_strict_MC_Accuracy": 0.86,
+  "original_num_hidden_layers": [
+    8,
+    24
+  ],
+  "native_cache_slot_count": 32,
+  "original_generation_kwargs": {
+    "max_new_tokens": 2048,
+    "do_sample": false,
+    "temperature": 0.0,
+    "eos_token_id": 92542
+  },
+  "original_custom_hd_attention_mask_not_extended_by_GenerationMixin": true,
+  "original_hd_decode_position_is_fixed_last_prefill_position": true,
+  "own_vocab_size": 92553,
+  "original_template": "internlm2-chat",
+  "original_runtime_dtype": "BF16",
+  "original_source_dtype": "F32",
+  "original_source_cast_all_values_exact_BF16": true,
+  "original_actual_language_batch_size": 1,
+  "original_outer_algorithm_metadata_batch_size": 10,
+  "low_visual_tokens_per_tile": 256,
+  "HD_visual_tokens_per_tile": 1024,
+  "original_causal_mask_holistic_upper_fill": -65504.0,
+  "original_LM_causal_mask_upper_fill": "torch.finfo(BF16).min",
+  "original_source_and_input_only_preflight": "/root/projects/comperror/workspace/diagnostics/batch_910b/HoVLE_original_sourceF32_to_BF16_and_independent_CPU200_20261102/20261102_045146_683753/audit.json",
+  "no_NPU_approval_from_CPU_evidence": true,
+  "original_run_log_patch_messages_exactly_match_frozen_patch_methods": true,
+  "original_actual_budget_2048_leaf_floor_not_pipeline_metadata256": true,
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_sha256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "reference_report": "/mnt/afs/comp_error/workspace/reports/OpenGVLab_HoVLE-HD/image-text-to-text/20260920_224434/eval_report.json",
+  "reference_report_sha256": "cb69cc8bae33b711565fcb9b1640f929bd73e15345fff231db16dd0155a31f4c",
+  "original_leaf_load_source": "def load(self, model_path: str, **kwargs: Any) -> None:\n        \"\"\"加载前修补 InternVLProcessor 与 MLU eager attention，加载后禁用 flash attention。\"\"\"\n        self._disable_broken_flash_attn_import()\n        self._patch_internvl_processor()\n        # 强制 attn_implementation=eager，避免 MLU 上 Phi3 等语言模型因\n        # flash_attention_2 配置在加载/前向阶段报错。\n        self._patch_mlu_attn_eager()\n        # 补齐 transformers 5.x 移除的遗留缓存 API，远端 Phi3 生成路径依赖它们。\n        self._patch_legacy_cache_compat()\n        super().load(model_path, **kwargs)\n        self._disable_flash_attn()\n        self._fix_meta_rotary_buffers()\n        self._fix_tied_lm_head()\n        self._ensure_lm_eager_attention()\n        self._patch_flash_attn_to_eager()\n        self._patch_hovle_causal_mask()\n        self._patch_hovle_prepare_inputs()\n        self._patch_hovle()"
+}

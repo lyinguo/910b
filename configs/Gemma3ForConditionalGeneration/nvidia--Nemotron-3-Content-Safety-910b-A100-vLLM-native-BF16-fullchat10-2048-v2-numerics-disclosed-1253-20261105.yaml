@@ -1,0 +1,61 @@
+{
+  "name": "nvidia--Nemotron-3-Content-Safety-910b-A100-vLLM-native-BF16-fullchat10-2048-v2-numerics-disclosed-1253-20261105",
+  "description": "Own original A100 vLLM full-chat native BF16 mathematical/scheduler reference on Ascend. Own883/673 SHA, original10/2048/16384/doubleBOS/EOS1+stop106, original explicitly selected same-model template in readonly diagnostics. No original resource, library or inventory mutation; no CUDA paged acceleration claim.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "nvidia/Nemotron-3-Content-Safety",
+    "adapter": "universal_eval/model/adapters/nemotron_vllm_A100_native_lineage_v1_1253_20261105_adapter.py:NemotronVllmA100NativeLineageV1Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/nvidia/Nemotron-3-Content-Safety",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nemotron_native_adapter_original_fullchat_install_1253_20261105/sanitized_own_execution_protocol_v2_numerics_disclosed.json",
+      "protocol_sha256": "18c2268aa8f4987415f2368c02ad75f565277ea495a35b0b4ad20841b2162a15",
+      "protocol": {
+        "model_id": "nvidia/Nemotron-3-Content-Safety"
+      },
+      "npu_devices": [
+        3
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nemotron_native_adapter_original_fullchat_install_1253_20261105/independent_visual_numerical_review_v1.json",
+      "numerical_review_sha256": "45c0f342df89b3f0014761fe4f3145eacc6ee6f4b85f6b889495392113ba29ec"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.71,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

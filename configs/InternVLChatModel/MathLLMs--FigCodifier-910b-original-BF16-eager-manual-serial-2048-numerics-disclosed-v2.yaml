@@ -1,0 +1,62 @@
+{
+  "name": "MathLLMs--FigCodifier-910b-original-BF16-eager-manual-serial-2048-numerics-disclosed-v2",
+  "description": "Own573 original BF16/InternLM2 eager manual greedy, original2048/cacheTrue/stop92542/serial1 within outer10 size order, exact original tiles and own SP. Strict explicit MCv2, complete denominator. Numerical gate required before approval. Native BF16 differences retained, independent same-rounded FP32 control diagnostic only. Original legacy .61 and same-oldraw Strict .38 distinguished; baseline uses same strict historical raw, never changes oldF.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "MathLLMs/FigCodifier",
+    "adapter": "universal_eval/model/adapters/figcodifier_original_disclosed_910b_adapter.py:FigCodifierOriginalDisclosed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/MathLLMs/FigCodifier",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/FigCodifier_original_manual_protocol_20261102/20261102_040618_618025/protocol.json",
+      "protocol_sha256": "a143f92a6c76018a11b1ac997208cf470326b9ccdf3f912b311256ec5977f579",
+      "npu_devices": [
+        11
+      ],
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/FigCodifier_native_numerical_disclosure_20261102/20261102_042926_435678/review.json",
+      "native_numerical_review_sha256": "d2e5681cadfc524f96c833620084c26d8aa2122c3b4caef4d952139ae3d93cde",
+      "metric_contract_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/FigCodifier_original_vs_strict_metric_contract_20261102/20261102_041854_968895/audit.json",
+      "metric_contract_sha256": "f1a5ed348cc0755f3c277a07119aad384f6efad2a80d8d7fd2a07042f83586ba",
+      "frozen_extraction_audit_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/FigCodifier_frozen_original_extraction_CPU200_20261102/20261102_042009_317620/audit.json",
+      "frozen_extraction_audit_sha256": "16362491ca1c52eda7632d932bcd36a1fd47dbc4140c3f0ab557ee3167627da6"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "include_failed_predictions": true,
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.38,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

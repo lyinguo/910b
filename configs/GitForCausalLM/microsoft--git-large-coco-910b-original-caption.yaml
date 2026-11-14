@@ -1,0 +1,172 @@
+{
+  "name": "microsoft--git-large-coco-910b-original-caption",
+  "description": "Table-F matched original image-only caption768/no-extra-min/cacheTrue/greedy protocol from existing before-run Git archive, full499 source tensor SHA on NPU F32 including originalI64 position buffers. Own CLIP PIL/BERT, original257 image prefix and text-only learned positions. Current native decode double-cache offset repaired only for this instance; original native layers, cache and image-bidirectional/text-causal masks retained and independently audited. Historical MLU auto precision may differ. Full original whitespace sentenceBLEU4 method1 and Porter ROUGE retained, fixed complete denominator. No downloads, replacement model, lowbit claims or later root min64.",
+  "task_type": "image-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl"
+  },
+  "model": {
+    "name": "microsoft/git-large-coco",
+    "adapter": "universal_eval/model/adapters/git_original_caption_910b_adapter.py:GitOriginalCaption910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/GitForCausalLM/microsoft/git-large-coco",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        13
+      ],
+      "protocol": {
+        "model_id": "microsoft/git-large-coco",
+        "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/GitForCausalLM/microsoft/git-large-coco",
+        "resource_sha256": {
+          "config.json": "399ba9fb603bc8dd14f7ee6adc7572e21df88736a5033cba5aed087462e320ae",
+          "configuration.json": "2e1c5a9e1cdae7ee2a28ac27d4e25172029cfa661cbeb4418f6be9998ef02f79",
+          "generation_config.json": "038491bf746d76c662790d297cd0b4555708784d9263c7517ac42c41621a1fb9",
+          "preprocessor_config.json": "54404ef25acb1afdee419c0651477c5810559d2063cf261b89878a14155b85e6",
+          "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+          "tokenizer.json": "ad3a0d445d3e88c2f679eb9d309cf0f6dd4e6325f559bb815490c935c57e0d24",
+          "tokenizer_config.json": "5b5d830c6763f67d6f068100a26fe48fbba609e95bd8d428080accaf34eddfdf",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        },
+        "weight_headers": {
+          "model.safetensors": {
+            "size": 1576861900,
+            "header_sha256": "c0477e1c95a52d49b2d863f207b1a8c19fb7c9352b1934d6897b29706047028c"
+          }
+        },
+        "reference_report": "/mnt/afs/comp_error/workspace/reports/microsoft_git-large-coco/image-to-text/20260913_143608/eval_report.json",
+        "reference_report_sha256": "1f07f2a55b815ba21a2ed81f656b3278fd646d0c26f4ee1c16f0f11c511de929",
+        "reference_log": "/mnt/afs/comp_error/workspace/reports/microsoft_git-large-coco/image-to-text/20260913_143608/run.log",
+        "reference_log_sha256": "df739d3f186f8ebd69b4e2c23e70c1ef3dd78c3aeb55ab60b7603ab1693436c2",
+        "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl",
+        "dataset_sha256": "709cf45623d2feb5cb2e5d6306a9c024e47762f8debc718a055884d3def0adbf",
+        "effective_generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 768,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 1,
+          "use_mtp": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": null,
+          "output_hidden_states": null,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 0,
+          "bos_token_id": 101,
+          "eos_token_id": 102,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": null,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "historical_adapter": "/root/projects/comperror/workspace/diagnostics/batch_910b/git_historical_source_review_20261101/20261031_221624_082551/source_snapshot/git_vlm_1ac4513.py",
+        "historical_adapter_sha256": "d5075036fc6f8f538cfd072d220f63b1babb8494d129660ee91f4a12cc12e339",
+        "historical_parent": "/root/projects/comperror/workspace/diagnostics/batch_910b/git_historical_source_review_20261101/20261031_221624_082551/source_snapshot/transformers_vlm_1ac4513.py",
+        "historical_parent_sha256": "cc13f611fea54cdf22e52685b6c53d4bb97d3d231cc90a2370af7c7782d3e1d7",
+        "historical_git_commit": "1ac4513",
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/git/modeling_git.py": "1ec8627e758392314da85ea9c8783b14e0a59cc1fc50ed60447c221d685914d6",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/git/processing_git.py": "b63d1e30135e7bf10764badb543cdfa1dce4f02e812975e00786c7d16f300381",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/clip/image_processing_pil_clip.py": "252e10876195f0d800a2d0edb9b054739556c03e4a71e6a3fa4a85327af92f24",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/activations.py": "4b1a469c24be4e4c6320536ad55a7337d24de04c3ecc71597fbf0267f1560612"
+        },
+        "canonical_text_position_compatibility": "Current native GitModel adds total visual+text cache length to generation-provided text positions at decode. Instance-only embedding pre-hook subtracts that added total cache offset, preserving original text-only0-based learned positions. All actual supplied/resolved positions, cache lengths, original source and native forward graph are disclosed and independently checked; no learned layers or original cache/attention/generation replaced.",
+        "source_dtype": "F32",
+        "max_new_tokens": 768,
+        "extract_answer": false,
+        "skip_text_input": true,
+        "historical_source_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/git_historical_source_review_20261101/20261031_221624_082551/review.json"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 4,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "BLEU-4",
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/git_original_caption_metrics_910b.py:OriginalCaptionBLEU4910B",
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

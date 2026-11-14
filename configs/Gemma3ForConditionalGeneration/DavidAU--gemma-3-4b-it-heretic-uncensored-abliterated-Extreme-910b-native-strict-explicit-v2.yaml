@@ -1,0 +1,71 @@
+{
+  "name": "DavidAU--gemma-3-4b-it-heretic-uncensored-abliterated-Extreme-910b-native-strict-explicit-mc-v2",
+  "description": "Native original BF16 Gemma3 weights on Ascend NPU; exact own tokenizer/chat template and existing image metadata, explicit bidirectional image-token masks, original 2048-token generation budget. Processor resource origin is fully disclosed. Strict explicit MC score over all fixed samples, independent CPU input/decode and actual kernel verification; no downloads or substituted weights. Explicit choice v2 includes complete one-letter tags, matched tag labels, quoted labels and rejects ordinary English articles.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "DavidAU/gemma-3-4b-it-heretic-uncensored-abliterated-Extreme",
+    "adapter": "universal_eval/model/adapters/gemma3_existing_resources_910b_adapter.py:Gemma3ExistingResources910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/DavidAU/gemma-3-4b-it-heretic-uncensored-abliterated-Extreme",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "processor_metadata": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/DavidAU/gemma-3-4b-it-heretic-uncensored-abliterated-Extreme/preprocessor_config.json",
+      "processor_metadata_sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+      "processor_is_own": true,
+      "resource_sha256": {
+        "config.json": "b017d7f400ed2d657ac781327b7ce04680a840bf24d0234ca2d16bcf54074065",
+        "chat_template.jinja": "e0a1e0983c75b0198f1045cbb20c64506a9ffb30925bd44feba0b91acf2d4f43",
+        "tokenizer_config.json": "6eac11d7a3e6c40d7e0f19195baf61435c1350c9e5da4fea4c097779c65b2fb6",
+        "tokenizer.json": "d786405177734910d7a3db625c2826640964a0b4e5cdbbd70620ae3313a01bef"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py": "fadae295b33eedd46e7f2f390dc25e97eb57ef5c7f2e6128345cfa66a2fe35cb",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/tokenization_gemma.py": "ff2481e06983015188575dc62bd2fa0e6f33ed2d01165d940efe77b80ee8d419",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/image_processing_gemma3.py": "e8450028ceb6eb1f4d44255ebfaa27c75e3921a5acf0bd741e139f306ec08a56",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/processing_gemma3.py": "fcffc0e37f26e30c080afb9c95620c1f7f8f28325d341a71906288b457cad0a4"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

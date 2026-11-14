@@ -1,0 +1,97 @@
+{
+  "name": "microsoft--Fara-7B-910b-native-explicit-v2-reviewed-r2",
+  "description": "Exact existing Qwen2.5-VL BF16 source tensors on NPU; own complete local tokenizer, original chat template, own dynamic-resolution image processor and original greedy token budget. Original constrained one-letter choice protocol is preserved only where the original adapter requires it. No downloads or model/data substitutes. Full images, tokens, M-RoPE, outputs, kernel trace and independent metrics retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "microsoft/Fara-7B",
+    "adapter": "universal_eval/model/adapters/qwen25vl_reviewed_910b_adapter.py:Qwen25VLReviewed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/microsoft/Fara-7B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 4096,
+      "generation_mode": "greedy",
+      "resource_sha256": {
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "chat_template.jinja": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+        "config.json": "66da8d32be7f31ed9aa94707e2c6fb9813a5744f61bfc4a73b68e5da06b1d642",
+        "generation_config.json": "fa2df5de2bac851a6affb6053d916cf8f1b8b7bf67d8603e73e51611b3119fb2",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model.safetensors.index.json": "860981a0ea4d17f6c448c394a762d8d62d721599126da67b40deb04d94412798",
+        "preprocessor_config.json": "549c158011407dfb750d9ec578047cf76f5bfe365cd0aa069a50137d3f98d9dd",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "tokenizer_config.json": "e04be4dd17e9f661bc487ba848a37f66a8f1adf2eef412f5d4ecb40cab4d39e7",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "7cdf4e42cb7624123f89f5357553ae222aec3ce0c9c0c49abf183e2fdde06857",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "456318743a1472bddf34b6765aeb08a0bd2fcaae22c5bcf7aa883aa7ff696d3a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py": "085160680e6e00385f39b3e414e9818c7d455bcaa2efa66770b8b402cfd9b571",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "f19497685281402691f0049a0ab5be8085f92fb5c37adfcc680e4ccd17863a77",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/video_processing_qwen2_vl.py": "3ea608073d65c0d55164bd51eb829ddfde0dc9a4dcef9f87b7d7133062672d2a"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4968243272,
+          "header_sha256": "3ec346dcf1cccad115456812269774002c3c586b7729345e735bbcd002362084"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4991495784,
+          "header_sha256": "9853e93d6638e3d0012f71362fc89ac13f88a903431f434a9851b8aaa485a02b"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4932751008,
+          "header_sha256": "067937b4afdc8e03aaf457539b1997847f468daa27c83e95f5d13e154518498b"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 1691924352,
+          "header_sha256": "d48c8d9367928fcf0ded80266d2c32ddd8b33d0a6677f11488b9b076aeb52408"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Qwen2_5_VLForConditionalGeneration/microsoft--Fara-7B.yaml",
+      "original_config_sha256": "43ff2ea97ba5d32bd20358358f0bbcfb33979da1e75d7f1aece61a2791970595",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "OddTheGreat--Meteor_4B_V.1-910b-original-BF16-three-variant-letter-score-numerics-disclosed-v4",
+  "description": "Exact own original Gemma3AnswerScore letter protocol. One real full-position BF16 NPU forward then original FP32 full-vocab log_softmax and max over first token of letter/space-letter/newline-letter, stable original option order. SourceFP16->originalBF16 explicitly disclosed for Meteor; no generation or substitute templates/resources.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OddTheGreat/Meteor_4B_V.1",
+    "adapter": "universal_eval/model/adapters/gemma3_answer_score_disclosed_910b_adapter.py:Gemma3AnswerScoreDisclosed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/OddTheGreat/Meteor_4B_V.1",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/gemma3_original_answer_score_native_preflight_20261102/20261101_215846_808342/OddTheGreat_Meteor_4B_V.1_protocol.json",
+      "protocol_sha256": "bd35de1b4dc9aaf25db77e65c373039e833d80eaff4833cd690eb5a291df9a03",
+      "npu_devices": [
+        7
+      ],
+      "max_new_tokens": 2048,
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/gemma3_original_answer_score_numerical_disclosure_20261102/20261101_222452_458059/OddTheGreat_Meteor_4B_V.1_review.json",
+      "native_numerical_review_sha256": "31bde6a25b845e4ba124b3ea059b8fbe74b9c6f0ac305831b3277ee126a0e33e"
+    }
+  },
+  "scoring_mode": "mc_score",
+  "algorithm": {
+    "name": "gemma3_original_answer_score",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    },
+    "adapter": "universal_eval/algorithm/gemma3_original_score_evidence_910b.py:Gemma3OriginalScoreEvidence910B"
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.78,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

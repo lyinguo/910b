@@ -1,0 +1,60 @@
+{
+  "name": "google--paligemma2-3b-pt-896-910b-A100-vLLM-BF16-original-caption10-1024-full-numerics-disclosed-v3-0403-20261106",
+  "description": "Own original A100 generic vLLM Pali fallback caption.727BF16/541packed/26LM/27vision/4096image/singleBOS/true10 logical requests/8192 scheduler+encoder/partial prefills/original1024. Original full algorithm caption instruction and generic non-MC extraction retained. Ascend mathematical/logicalKV reference; not CUDA native paged acceleration. Workbook B uses broad image-text-to-text alias; actual original1459 caption benchmark, ROUGE-L, original instruction/extraction and every input/reference remain unchanged. Complete own439 visual/same-rounded FP32 and genuine2304/9216 CUDA-NPU operator differences disclosed; original EOS1 at budget guard retained; lossless level1 arrays. Official BF16 protocol and all required evidence retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-3b-pt-896",
+    "adapter": "universal_eval/model/adapters/paligemma2_3b_pt896_vllm_A100_native_v3_original_limit_archive_0403_20261106_adapter.py:Pali3Pt896A100VllmNative0403Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-3b-pt-896",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali3Pt896_final_full_numerics_unapproved_candidate_v3_0403_20261106/sanitized_own_execution_protocol_v3.json",
+      "protocol_sha256": "a08be36c10c8ebbb0962c65a4c43350d3af36b79696ba2d67adfc82c00725830",
+      "protocol": {
+        "model_id": "google/paligemma2-3b-pt-896"
+      },
+      "npu_devices": [
+        1
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali3Pt896_independent_full_numerical_review_v1_0403_20261106/complete_numerical_review_v1.json",
+      "numerical_review_sha256": "9f294aee735abb7dc8e01f34064f3049a79a7aa3e3afb75debb443268e4834a9"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0823,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "RekklesAI--LogicFlow-Gemma-3-27b-thinking-910b-local-explicit-v2-preserved-head",
+  "description": "Existing exact Gemma3 BF16 tensors on NPU with original own tokenizer/template (Jinja file or tokenizer_config), existing own or explicitly disclosed matching stock image metadata, original 2048 generated-token budget. BF16 reference execution only: quantization-related model names do not imply native low-bit kernels or speedup. No downloads or substituted model/data. Explicit MC v2 over all fixed samples; independently replayed inputs, full raw outputs and real NPU evidence. The local checkpoint stores a separate output-head matrix. Preserve every serialized parameter via explicit untied output head; use its own legacy string-content/image-list Jinja interface without replacing the template.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "RekklesAI/LogicFlow-Gemma-3-27b-thinking",
+    "adapter": "universal_eval/model/adapters/gemma3_reviewed_config_910b_adapter.py:Gemma3ReviewedConfig910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Unknown/RekklesAI/LogicFlow-Gemma-3-27b-thinking",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "processor_metadata": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Unknown/RekklesAI/LogicFlow-Gemma-3-27b-thinking/preprocessor_config.json",
+      "processor_metadata_sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+      "processor_is_own": true,
+      "resource_sha256": {
+        "config.json": "48d657defefdb2f6ffa39ccceefbf426e092062d451f7fa19061cd8d619d27bc",
+        "tokenizer_config.json": "d9a38779733bdb0de811692446dcff8cef56f4787996aebdf0ccf0a5fae33edf",
+        "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+        "chat_template.jinja": "1b241cc2b3af2e23212bf2083a57ca1c007c8985d982b48088108fb1a3a5d2e6"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py": "fadae295b33eedd46e7f2f390dc25e97eb57ef5c7f2e6128345cfa66a2fe35cb",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/tokenization_gemma.py": "ff2481e06983015188575dc62bd2fa0e6f33ed2d01165d940efe77b80ee8d419",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/image_processing_gemma3.py": "e8450028ceb6eb1f4d44255ebfaa27c75e3921a5acf0bd741e139f306ec08a56",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/processing_gemma3.py": "fcffc0e37f26e30c080afb9c95620c1f7f8f28325d341a71906288b457cad0a4"
+      },
+      "reviewed_config": {
+        "preserve_explicit_output_head": true
+      },
+      "prompt_mode": "legacy_string_images"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

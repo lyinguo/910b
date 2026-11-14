@@ -1,0 +1,59 @@
+{
+  "name": "HuggingFaceTB--SmolVLM2-2.2B-Instruct-910b-original-HF-FP16-4096-v1-2109-20261111-v2-numeric-disclosed",
+  "description": "Own original HF FP16 SDPA/4096/outer10 inner serial1 with exact independent own image inputs; no optional video dependency or stub. Explicit array retention scope. Final original same3/10/numerical controls bound, unchanged HF generation and explicit invalid label accounting.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "adapter": "universal_eval/model/adapters/smol22_original_HF_native_v1_2109_20261111_adapter.py:Smol22OriginalHFNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/SmolVLMForConditionalGeneration/HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Smol22_original_HF_approved_continuation_v2_numeric_2109_20261111/protocol.json",
+      "protocol_sha256": "161fbc19d9fd3b9917a282a01169a3f716b6d843d55d9e82654787374c40f5c9",
+      "protocol": {
+        "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "smol22_original_HF_MC_guard_v2",
+    "adapter": "universal_eval/algorithm/smol22_original_HF_MC_guard_v2_2109_20261111.py:Smol22OriginalMCGuard",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.67,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

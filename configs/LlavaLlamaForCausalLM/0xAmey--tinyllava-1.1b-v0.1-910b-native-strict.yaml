@@ -1,0 +1,60 @@
+{
+  "name": "0xAmey--tinyllava-1.1b-v0.1-910b-native-strict",
+  "description": "Native greedy generation using only the existing TinyLLaVA checkpoint, including all CLIP vision weights. Existing Vicuna prompt, original 2048-token budget, 224 center crop derived from positional-embedding shape. Original per-layer rotary buffers preserved in equivalent shared buffer. No downloads or external vision weight substitution. Explicit MC extraction and Strict_MC_Accuracy do not count ordinary standalone English articles as option A. Historical legacy scores are retained and are not recalculated. All invalid/failed/truncated outputs remain in the 200-sample denominator.",
+  "task_type": "visual-question-answering",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "0xAmey/tinyllava-1.1b-v0.1",
+    "adapter": "universal_eval/model/adapters/tinyllava_native_910b_adapter.py:TinyLlavaNative910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/0xAmey/tinyllava-1.1b-v0.1",
+    "download": false,
+    "kwargs": {
+      "torch_dtype": "bfloat16",
+      "scoring": "generation",
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "evidence_dir": "workspace/diagnostics/model_runs"
+    }
+  },
+  "algorithm": {
+    "name": "tinyllava_strict_native",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "progress_interval": 1
+    },
+    "adapter": "universal_eval/algorithm/tinyllava_strict_mc.py:TinyStrictGreedy"
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.31,
+    "threshold": 0.05,
+    "gap_mode": "absolute",
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

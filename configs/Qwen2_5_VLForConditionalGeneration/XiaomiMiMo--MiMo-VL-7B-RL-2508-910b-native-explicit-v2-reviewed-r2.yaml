@@ -1,0 +1,97 @@
+{
+  "name": "XiaomiMiMo--MiMo-VL-7B-RL-2508-910b-native-explicit-v2-reviewed-r2",
+  "description": "Exact existing Qwen2.5-VL BF16 source tensors on NPU; own complete local tokenizer, original chat template, own dynamic-resolution image processor and original greedy token budget. Original constrained one-letter choice protocol is preserved only where the original adapter requires it. No downloads or model/data substitutes. Full images, tokens, M-RoPE, outputs, kernel trace and independent metrics retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "XiaomiMiMo/MiMo-VL-7B-RL-2508",
+    "adapter": "universal_eval/model/adapters/qwen25vl_reviewed_910b_adapter.py:Qwen25VLReviewed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/XiaomiMiMo/MiMo-VL-7B-RL-2508",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 2048,
+      "generation_mode": "greedy",
+      "resource_sha256": {
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "chat_template.json": "4757062314f864cf47b9ce6ea4bd921590611c5b90f0860c523831756edc4fa1",
+        "config.json": "577c695f5f2fcd9c0d94f01f77f61bc85f5405884f8d38915efd5e80b07a426d",
+        "generation_config.json": "91299bcc334095eb7d4352d16bce2500e3ef0b88c731e608f31a98ac8b307096",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model.safetensors.index.json": "e04c60ee22acd1266730b230daf6560f76d49927e5c58823a4f8100eaa089d14",
+        "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "cfeae2f7f1c2c2ca25c51d6fe03c0003a2965eb84ed97b405120d84cc73889f4",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "7cdf4e42cb7624123f89f5357553ae222aec3ce0c9c0c49abf183e2fdde06857",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "456318743a1472bddf34b6765aeb08a0bd2fcaae22c5bcf7aa883aa7ff696d3a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py": "085160680e6e00385f39b3e414e9818c7d455bcaa2efa66770b8b402cfd9b571",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "f19497685281402691f0049a0ab5be8085f92fb5c37adfcc680e4ccd17863a77",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/video_processing_qwen2_vl.py": "3ea608073d65c0d55164bd51eb829ddfde0dc9a4dcef9f87b7d7133062672d2a"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4612695408,
+          "header_sha256": "c366d80d4cd5fd8253f2652048a8e701cc8b382d24ed9a4d5eda907a4bd94427"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4937303136,
+          "header_sha256": "ea5a4c0a6a05c92e82f62a1fccae9d1b3361fc7c40ba363b9f6e58e8b06260c8"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4982109888,
+          "header_sha256": "9d27892f5ca0f3bc8c91e07d3e293327f47ea639e7e039deadfbcb1abc155294"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 2080418376,
+          "header_sha256": "cb8afff5d6f6c621f82d8e97bbd119eb31de2386a8b4a5b3510e59936bd95ce9"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Qwen2_5_VLForConditionalGeneration/XiaomiMiMo--MiMo-VL-7B-RL-2508.yaml",
+      "original_config_sha256": "8f6d1b904bb1629985e2b0d4279838a9d33542edff5c34aeb92ddea2556f9d03",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

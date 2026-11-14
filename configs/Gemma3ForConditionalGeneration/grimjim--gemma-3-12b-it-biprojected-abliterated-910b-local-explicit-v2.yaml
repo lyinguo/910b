@@ -1,0 +1,71 @@
+{
+  "name": "grimjim--gemma-3-12b-it-biprojected-abliterated-910b-local-explicit-v2",
+  "description": "Existing exact Gemma3 BF16 tensors on NPU with original own tokenizer/template (Jinja file or tokenizer_config), existing own or explicitly disclosed matching stock image metadata, original 2048 generated-token budget. BF16 reference execution only: quantization-related model names do not imply native low-bit kernels or speedup. No downloads or substituted model/data. Explicit MC v2 over all fixed samples; independently replayed inputs, full raw outputs and real NPU evidence.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "grimjim/gemma-3-12b-it-biprojected-abliterated",
+    "adapter": "universal_eval/model/adapters/gemma3_local_910b_adapter.py:Gemma3Local910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Unknown/grimjim/gemma-3-12b-it-biprojected-abliterated",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "processor_metadata": "/root/projects/comperror/configs/Gemma3ForConditionalGeneration/gemma3_4b_896_metadata/preprocessor_config.json",
+      "processor_metadata_sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+      "processor_is_own": false,
+      "resource_sha256": {
+        "config.json": "f90bcec51a94110513680f80cf9d86be7eea00e1694fa3b1bbd7a4b91109e48a",
+        "tokenizer_config.json": "6eac11d7a3e6c40d7e0f19195baf61435c1350c9e5da4fea4c097779c65b2fb6",
+        "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+        "chat_template.jinja": "e0a1e0983c75b0198f1045cbb20c64506a9ffb30925bd44feba0b91acf2d4f43"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py": "fadae295b33eedd46e7f2f390dc25e97eb57ef5c7f2e6128345cfa66a2fe35cb",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/tokenization_gemma.py": "ff2481e06983015188575dc62bd2fa0e6f33ed2d01165d940efe77b80ee8d419",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/image_processing_gemma3.py": "e8450028ceb6eb1f4d44255ebfaa27c75e3921a5acf0bd741e139f306ec08a56",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/processing_gemma3.py": "fcffc0e37f26e30c080afb9c95620c1f7f8f28325d341a71906288b457cad0a4"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "OpenGVLab--Mono-InternVL-2B-910b-original-HF-BF16-visual-expert-v5-numerics-disclosed-scope-review-2109-20261111",
+  "description": "Own original Mono-InternVL visual-expert native HF BF16/eager/serial1/manual2048 with complete lossless cache/head evidence. No plain InternVL/text-only fallback. Original same3 all57 full92553 numerical differences explicitly disclosed. Original whole200 historical runtime reconstructed from own source and exact original log, not a claim frozen untracked full source.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/Mono-InternVL-2B",
+    "adapter": "universal_eval/model/adapters/mono_internvl_original_native_v3_evidence_scope_2109_20261111_adapter.py:MonoInternVLOriginalNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/Mono-InternVL-2B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Mono_original_HF_numerical_approved_continuation_v5_scope_receipt_2109_20261111/approved_execution_protocol.json",
+      "protocol_sha256": "754e5e8d4cf06daf975153190f7ee2e17c197d1d7e22953a0b7fcef013a66c75",
+      "protocol": {
+        "model_id": "OpenGVLab/Mono-InternVL-2B"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.835,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

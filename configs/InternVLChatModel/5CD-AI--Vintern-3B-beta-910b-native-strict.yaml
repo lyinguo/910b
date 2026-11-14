@@ -1,0 +1,63 @@
+{
+  "name": "5CD-AI--Vintern-3B-beta-910b-native-strict",
+  "description": "Native existing BF16 checkpoint on Ascend NPU; original Hermes-2, dynamic 448 tiles, max 4096 generated tokens. Independent explicit MC extraction and full denominator. Historical scores are preserved; not a historical reformat or reused inference run.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "5CD-AI/Vintern-3B-beta",
+    "adapter": "universal_eval/model/adapters/internvl_qwen2_native_910b_adapter.py:InternVLQwen2Native910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/5CD-AI/Vintern-3B-beta",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 4096,
+      "architecture_sha256": {
+        "config.json": "470b4031df0aea598fa5e3775a15d55276ffbb502e7f1e5ad724feba2a89c89f",
+        "configuration_intern_vit.py": "f9b42f449b004284e8290b590ce3878322ec94b50b407083f1e3819b21544ee7",
+        "configuration_internvl_chat.py": "c2cf666f758f88fd4ded369c7fdad241509625f91ee93d5d615eb9f0c719d529",
+        "modeling_intern_vit.py": "ef8664bbbf7e9abb7e6ef8f2282104a5d3fc515ffb1bfbe9e928d5e44b5a64cf",
+        "modeling_internvl_chat.py": "d482cc2d2f66ae9726b0d56a0f1a5e7d8d95b0ec2e0c33caeb0e054ef5c2992d",
+        "conversation.py": "34eeb00963a380e07ed0cb75b5a0f201460833aaec89755b14825cd774991b3f"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "internvl_qwen2_native_explicit_mc",
+    "adapter": "universal_eval/algorithm/internvl_strict_mc.py:InternVLStrictGreedy",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

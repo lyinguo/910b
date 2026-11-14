@@ -1,0 +1,83 @@
+{
+  "name": "alpindale--Llama-3.2-11B-Vision-Instruct",
+  "description": "Actual A100 original FP16 parameter load then BF16 / FP32 RoPE / native SDPA / serial1 inside metadata10 / right pad / own original single BOS and template / original2048. Independent genuine A100 CUDA3 control; native math unchanged; historical metric definition difference retained. No resource files edited or borrowed. Same original precision actual A100/NPU full-vision numerical differences explicitly retained, including max893.75, and static full-array independent diagnostics bound by SHA. Compatibility approval does not declare formal A100 relative5% acceptance.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+    "download": false
+  },
+  "model": {
+    "name": "alpindale/Llama-3.2-11B-Vision-Instruct",
+    "adapter": "universal_eval/model/adapters/alpindale_mllama_A100_native_0910_20261104_adapter.py:AlpindaleMllamaA100Serial0910Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MllamaForConditionalGeneration/alpindale/Llama-3.2-11B-Vision-Instruct",
+    "download": false,
+    "kwargs": {
+      "protocol": {
+        "model_id": "alpindale/Llama-3.2-11B-Vision-Instruct"
+      },
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Alpindale_actual_A100_BF16_SDPA_native_0910_20261104/protocol_v2_rendered.json",
+      "protocol_sha256": "161f93c24c637704a1bda9f7e11e70b04a35de571f15973758a74d1f666be632",
+      "npu_devices": [
+        6
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Alpindale_A100_FP16load_BF16_SDPA_formal200_v4_0910_20261104/original_A100_BF16_numerical_review_all_sources.json",
+      "numerical_review_sha256": "85c6619d9e0ecb4478e546837c4b0522867e51b5878cfa975d6f1844b868d265",
+      "numerical_disclosure": {
+        "official_A100_FP16_parameter_load_then_BF16_execution_retained": true,
+        "FP32_analytic_RoPE_buffers_retained": true,
+        "all906_AA_GPU_and_NPU_source_cast_SHA_equal": true,
+        "original_native_SDPA_logical_masks_positions_cache_verified": true,
+        "direct_original_precision_A100_NPU_control_is_diagnostic_only": true,
+        "CPU_or_FP32_model_answers_not_used": true,
+        "static_original_controls_not_reexecuted_each_report": true,
+        "same_input_vision_max_abs_differences": [
+          703.5,
+          767.5,
+          893.75
+        ],
+        "same_input_projector_max_abs_differences": [
+          71.25,
+          48.875,
+          58.625
+        ],
+        "full_numeric_arrays_logit_prefix_scope_and_raw_differences": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Alpindale_A100_FP16load_BF16_SDPA_formal200_v4_0910_20261104/original_A100_BF16_numerical_review_all_sources.json",
+        "nonzero_differences_retained_not_eliminated": true
+      }
+    }
+  },
+  "is_ocr": false,
+  "scoring_mode": "",
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.785,
+    "threshold": 0.05
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

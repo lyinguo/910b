@@ -1,0 +1,4 @@
+from universal_eval.algorithm.native_explicit_mc_v2 import NativeExplicitMCV2
+from universal_eval.model.adapters.internvl35_flash4b_own_frontend_v2_own2560_original_TV2_uint8_F32_0123_20261113 import original_answer_instruction
+class InternVL35Flash4BOriginalMC(NativeExplicitMCV2):
+    _add_answer_instruction=staticmethod(original_answer_instruction)

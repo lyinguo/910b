@@ -1,0 +1,55 @@
+{
+  "name": "CohereLabs--aya-vision-8b-910b-A100-FP16-20261110",
+  "description": "Own Aya Vision weights, original FP16, original prompt and native generation, fixed A100 MMBench input.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "CohereLabs/aya-vision-8b",
+    "adapter": "universal_eval/model/adapters/aya_vision_A100_native_fp16_20261110_adapter.py:AyaVisionA100FP16910B",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/AyaVisionForConditionalGeneration/CohereLabs/aya-vision-8b",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "CohereLabs/aya-vision-8b"
+      },
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AyaVision_A100_FP16_compat3_1322_20261110/protocol.json",
+      "protocol_sha256": "aa7ae6f8ff373ed70d92d49a028f2fa21054d0b1cb7685df2fb42915380b6eec"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.845,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

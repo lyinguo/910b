@@ -1,0 +1,52 @@
+name: unsloth--Llama-3.2-11B-Vision-Instruct
+description: Own original906 BF16/eager/4096/leftpad/doubleBOS. Original outer10 with
+  recorded three MLU groupwise fallback events, replay126 original successful groups/max7;
+  no fabricated new OOM or other group split. StrictMC vs old legacy definition difference
+  disclosed. All own BF16/CPU-erf/CPU-only-tanh/independent NPU13 FP32 differences
+  retained and disclosed by SHA; original largest successful7 native vision memory
+  passed. Controls never replace official BF16 or language answers.
+task_type: image-text-to-text
+sample_count: 200
+sample_range: 0:199
+data:
+  preprocess: true
+  apply_template: false
+  filter_empty: false
+  dataset_path: /root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+  download: false
+model:
+  name: unsloth/Llama-3.2-11B-Vision-Instruct
+  adapter: universal_eval/model/adapters/unsloth_mllama11b_original_fallback_disclosed_910b_adapter.py:UnslothMllama11BOriginalFallbackDisclosed910BAdapter
+  model_path: /mnt/afs/huggingfaceautoclonemodels/downmodels/MllamaForConditionalGeneration/unsloth/Llama-3.2-11B-Vision-Instruct
+  download: false
+  kwargs:
+    protocol_file: /root/projects/comperror/workspace/diagnostics/batch_910b/Unsloth_Mllama11B_original_numerical_disclosed_preflight_1903/20261102_195225_511218/protocol.json
+    protocol_sha256: 50952a0f26a562a56d564208e72f6bb512237abefe561faca2a74ed03808b0fc
+    npu_devices:
+    - 11
+    - 12
+    native_numerical_review: /root/projects/comperror/workspace/diagnostics/batch_910b/Unsloth_Mllama11B_original_numerical_disclosed_preflight_1903/20261102_195225_511218/review.json
+    native_numerical_review_sha256: 0747f3cba9f8920ad087d62b561334badec3047e183da81ee97dfbad3bf1dda6
+is_ocr: false
+scoring_mode: ''
+algorithm:
+  name: native_explicit_mc_v2
+  adapter: universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2
+  batch_size: 10
+  kwargs:
+    extract_answer: true
+metrics:
+  override:
+  - Strict_MC_Accuracy
+  adapters:
+  - universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy
+  include_failed_predictions: true
+baseline:
+  score: 0.745
+  threshold: 0.05
+output:
+  reports_dir: workspace/reports
+  layout: model_task_timestamp
+  evidence_dir: workspace/diagnostics/model_runs
+  timezone: Asia/Hong_Kong
+  verbose: true

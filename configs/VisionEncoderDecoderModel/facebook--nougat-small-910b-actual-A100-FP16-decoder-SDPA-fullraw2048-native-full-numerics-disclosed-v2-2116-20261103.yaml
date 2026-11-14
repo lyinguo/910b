@@ -1,0 +1,241 @@
+{
+  "name": "facebook--nougat-small-910b-actual-A100-FP16-decoder-SDPA-fullraw2048-native-v1-2116-20261103-full-numerics-disclosed-v2",
+  "description": "Actual A100 D-matched original image-only caption1459 protocol. Original FP16/encoder eager+decoderSDPA/serial2048/nativecache/forcedEOS2/fullraw/no extraction or firstsentence. All source/cast/CUDA/NPU hashes and real native kernels/vision/cross/positions/cache/full-vocab/dual metrics.",
+  "task_type": "image-to-text",
+  "is_ocr": false,
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "facebook/nougat-small",
+    "adapter": "universal_eval/model/adapters/nougat_A100_FP16_disclosed_2116_20261103_adapter.py:NougatA100FP16Disclosed2116Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/VisionEncoderDecoderModel/facebook/nougat-small",
+    "download": false,
+    "kwargs": {
+      "protocol": {
+        "model_id": "facebook/nougat-small",
+        "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/VisionEncoderDecoderModel/facebook/nougat-small",
+        "source_dtype": "F32",
+        "execution_dtype": "FP16",
+        "max_new_tokens": 2048,
+        "extract_answer": false,
+        "truncate_first_sentence": false,
+        "reference_report": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/original_A100_report.json",
+        "reference_report_sha256": "1c21bc4045b7d424addea0385819f6695b2de4bc87877e88be7a073776da036d",
+        "reference_log": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/original_A100_run.log",
+        "reference_log_sha256": "ae2779b492b0721fe1fa128d927d76f67cbf0aacc57e579aeca565c5576a47b8",
+        "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl",
+        "dataset_path_sha256": "ceb1670f2848955290915dbe375dca8b34b62d6980e9f6cd1abe38bf0e68963b",
+        "CPU200_reference": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/CPU200_original_inputs.json",
+        "CPU200_reference_sha256": "50ec002054af7e15f7c8a572b53cde79f1c95b543390830686149f16f9130412",
+        "source_cast_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/full484_source_cast_manifest.json",
+        "source_cast_manifest_sha256": "e6fbd017ea5552f58fb5bf6ded8bd728d273bb805855ffab554b1e9401f25a5e",
+        "original_A100_real3_diagnostic": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/actual_A100_CPU200_and_real3.json",
+        "original_A100_real3_diagnostic_sha256": "e65f4c93c3122a4b51e76c2f5d55665a85cea8a6b024552eb6add505d6068a9a",
+        "actual_A100_original_report_sha256": "694f4f5eef9398bc21ac15a56d0ea2557755042c204a69efead2ed98df484f38",
+        "original_A100_parent_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/native_adapter_v1/original_A100_source_snapshot/transformers_vlm.py",
+        "original_A100_parent_snapshot_sha256": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+        "actual_A100_attention": {
+          "root": "sdpa",
+          "encoder": "eager",
+          "decoder": "sdpa"
+        },
+        "effective_generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 2048,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 1,
+          "use_mtp": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 0.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": 2,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": null,
+          "output_hidden_states": null,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": null,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "image_processor": {
+          "do_align_long_axis": false,
+          "do_crop_margin": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "do_thumbnail": true,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "NougatImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "resample": 2,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 896,
+            "width": 672
+          }
+        },
+        "weights": {
+          "model.safetensors": {
+            "size": 989981536,
+            "sha256": "c3d93334d71f50b3b3ca5f54f4bdbeef6cfb7497c8ff8b3b3413e41f8aa7d49f"
+          }
+        },
+        "resource_sha256": {
+          "config.json": "84a7efa6729fe444c3adc734dcb4c4e681bb799b727bf8a339e15a83039b426a",
+          "configuration.json": "2e1c5a9e1cdae7ee2a28ac27d4e25172029cfa661cbeb4418f6be9998ef02f79",
+          "generation_config.json": "1391e25be2ec036d70536dbb78513ff95aa2b626880f42fb8f54b612db98ce09",
+          "preprocessor_config.json": "e5d10fb098168614cb65a17760e133b110c0b25844508da5ceb73981e5fc7e94",
+          "special_tokens_map.json": "9046da57c270c8e74d0f38832b4adce269c9d914ef21d2a0925e7772152dd793",
+          "tokenizer.json": "5206bef946bfe9981af5d61bf993b52950a4ebc29f1c0256cc113a1698448536",
+          "tokenizer_config.json": "6db75f8174b27dd3649a79cf0603fd1c87a040f8431dc15f0f408ccbf22c74a6"
+        },
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py": "28d1d16141df916cd2bee23d27c83f0bf2fceb7bd1932888fccd210a91079b79",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/donut/modeling_donut_swin.py": "28b0e4552a4bec3471a129bcf56c1888216ae85d3a3bd3379096d19a1e7d5588",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/mbart/modeling_mbart.py": "d613060370ff6a6cbb453c7e228963b8617a1d62cb2f5ffae3165320890cb61c",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/nougat/image_processing_nougat.py": "5ff94a14f91445da733de736ec59c686e5612f047359834ed6eb7e3b5fa58494",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/tokenization_utils_tokenizers.py": "4142769e9147cd371e7ee4b3270f521013fcbf1306fc9842aa87bb503f9f64fb",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/activations.py": "4b1a469c24be4e4c6320536ad55a7337d24de04c3ecc71597fbf0267f1560612",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/cache_utils.py": "ee7902fbd031ed332b5e26d07756a33f09b5c90a435b8363b9330876dc33ce0e",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/masking_utils.py": "5f48e428ea02d1b6008acb45c147fcdb4eba89deea69627744662aa05da1b9f2",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/torch/nn/functional.py": "f6335e443ce93ddf21ecf9d94bbb4d4a4d92e128c5bfb59826f35495c9c28703"
+        },
+        "project_source_sha256": {
+          "universal_eval/model/adapters/nougat_A100_FP16_native_2116_20261103_adapter.py": "88abde210799291a3c734865d8fce41c3ba6819c6bf0ba7f5732cb9a351cd654",
+          "scripts/verify_nougat_A100_FP16_native_2116_20261103.py": "1dde265ec498ce29d878af231e6f0f806318f3a159c7d5cc358fac9dedc84018",
+          "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+          "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+          "universal_eval/orchestrator/report.py": "ebaac67e8b65019704245b7e44b01290dfedf3f68e14b7d09d603d5a8a7077c1",
+          "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+          "universal_eval/metric/rouge_reference_910b.py": "246c73529e428593e2b5b87d6748e9a5cd8549f0759eff6ca158f0d770df4e00",
+          "universal_eval/metric/rouge_910b_porter.py": "84688436a7392d05d69a2c4752880c14d61c1f86086dbf297edef3fe7c5e0939",
+          "universal_eval/metric/rouge_910b_stem_api.py": "378f5281b141c89c59ffb27cde43fde7a9a4e842afeb684098a97b94f1b3d6d3",
+          "universal_eval/metric/git_original_caption_metrics_910b.py": "a041a7e72ce4ff70f0b82b0414716545a6f5f5b422c43f32ac7a2af425a155c6",
+          "scripts/nougat_original_cpu_reference_v2_910b.py": "2721e9782309f9dd67e34745e2b326a416c7b13d124185b437aa66c38dcfebcf",
+          "scripts/A100_Nougat_FP16_CPU200_real3_v2_2116_remote.py": "55d771aaf890cba8b01097a48bd0c94df6161bd39a428b0566cf2bedf41293c1",
+          "scripts/validate_alignment_adapter_spec_1813_20261103.py": "244ea36b165175fc6782d92047489fa95bd4effef0ef5fae423e938dcf80e2cc",
+          "universal_eval/model/adapters/nougat_A100_FP16_disclosed_2116_20261103_adapter.py": "340b40166da7c03ee9bb9e86d40ef83b52466e933b2cc4ec41eba5dad5d2a982",
+          "scripts/verify_nougat_A100_FP16_disclosed_2116_20261103.py": "04fcc4d26d80985f19fae4a154b929d97c99025ddab4423512332e87a065ee9d",
+          "scripts/audit_nougat_A100_FP16_visual_v2_2116_20261103.py": "e3809987a0a505ee4b14ccb57b3b59bfcc062665796dc6c08a6d3ca6e82d2102"
+        },
+        "native_GELU_method_note": "/root/projects/comperror/workspace/diagnostics/batch_910b/native_operator_method_notes/GELU_20261031_170335_364228/method_note.json",
+        "native_GELU_method_note_sha256": "0842aa75ef490056d6ccf8035fbb63684a98d709b193f59dcb2dba10b21d41d6",
+        "A100_D": 0.0136,
+        "original_A100_ROUGE_L": 0.013629908669786871,
+        "original_A100_BLEU4": 0.0014099884766419419,
+        "original_A100_report_path": "/mnt/afs/comp_error/workspace/reports/facebook_nougat-small/image-to-text/20261001_104840/eval_report.json",
+        "precision_disclosure": "Actual A100 F32 source-to-FP16 conversion,247353402 changed roundtrip elements/110 nonzero underflows retained; all484 source/cast/CUDA/NPU SHA checked. Native original encoder eager/decoderSDPA/cacheTrue/raw2048 retained; no forced CPU equivalence.",
+        "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Nougat_actual_A100_FP16_preflight_2116_20261103_20261103_212757_158611/native_adapter_v1/full_numerics_disclosed_v2/numerical_review_with_exact_sources.json",
+        "numerical_review_sha256": "8226f4e2d551080937f726defb43457ba7068a8e129f42a5e53cc3ed53da05c8"
+      },
+      "npu_devices": [
+        3
+      ],
+      "evidence_dir": "workspace/diagnostics/model_runs"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false,
+      "truncate_first_sentence": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L",
+      "BLEU-4"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B",
+      "universal_eval/metric/git_original_caption_metrics_910b.py:OriginalCaptionBLEU4910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0136,
+    "threshold": 0.05,
+    "gap_mode": "relative"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

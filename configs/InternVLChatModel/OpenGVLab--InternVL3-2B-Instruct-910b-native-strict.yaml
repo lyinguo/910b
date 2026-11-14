@@ -1,0 +1,63 @@
+{
+  "name": "OpenGVLab--InternVL3-2B-Instruct-910b-native-strict",
+  "description": "Real native BF16 NPU inference from this exact existing checkpoint. Own visual tower, projector, dynamic tiles and original conversation template; original 2048 generated-token budget. Strict explicit MC metric with full denominator, independently replayed inputs. No historical record is presented as a new run.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL3-2B-Instruct",
+    "adapter": "universal_eval/model/adapters/internvl_qwen2_family_910b_adapter.py:InternVLQwen2Family910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL3-2B-Instruct",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "architecture_sha256": {
+        "config.json": "22f8d2930a74f7a0cdf5eca3e1a180414f4e991f304d0800e0f6ce7694e65bdb",
+        "configuration_intern_vit.py": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+        "configuration_internvl_chat.py": "6524e6deae6c318543d1022a599f011120f5a970eaa25f1118e7f5d0e346710c",
+        "modeling_intern_vit.py": "d3e0f68f29e86be1f3e6e101dc45303ec24e5115e0034de101665972576eb348",
+        "modeling_internvl_chat.py": "76fe595f04acd077d168f038a15c697d1c66093a0c000bffb0568dfa90095ba8",
+        "conversation.py": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "internvl_qwen2_native_explicit_mc",
+    "adapter": "universal_eval/algorithm/internvl_strict_mc.py:InternVLStrictGreedy",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "name": "google--paligemma2-3b-pt-224-actual-A100-FP16-SDPA-caption2048-1513-processor-JSON-v2-original-generation-resolution-v3-full-numerics-disclosed-v4",
+  "description": "Actual A100 D-matched PaliGemmaTransformers caption protocol: own full727 BF16 source tensors cast to original FP16 with full CPU/NPU SHA and disclosed underflow. Native SDPA vision/text, own Torchvision-v2 uint8 BICUBIC224/fused F32 normalization, original1459 caption/Describe prompt/2048/cacheTrue/serial1, original256 image prefix and1-based positions. Complete native full-vocab greedy and53activations/26cache/visual evidence. No low-bit acceleration, changed budget or reference substitution.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-3b-pt-224",
+    "adapter": "universal_eval/model/adapters/paligemma2_A100_FP16_disclosed_1513_20261103_adapter.py:PaliGemma2A100FP16Disclosed1513Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-3b-pt-224",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "protocol": {
+        "model_id": "google/paligemma2-3b-pt-224",
+        "A100_D": 0.1401,
+        "max_new_tokens": 2048,
+        "source_dtype": "BF16",
+        "execution_dtype": "FP16",
+        "A100_resolved_attention": {
+          "root": "sdpa",
+          "text": "sdpa",
+          "vision": "sdpa"
+        },
+        "effective_generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 2048,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 1,
+          "use_mtp": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": null,
+          "output_hidden_states": null,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 0,
+          "bos_token_id": 2,
+          "eos_token_id": 1,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": null,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "effective_image_processor": {
+          "do_convert_rgb": null,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SiglipImageProcessor",
+          "image_seq_length": 256,
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 224,
+            "width": 224
+          }
+        },
+        "resource_sha256": {
+          "config.json": "843da874e6cd12c4ce34772a1b6459b25c804eb0300651b9a0ec13a08224c640",
+          "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+          "generation_config.json": "017091192354d800548a1a1f40205149844b954acae91d9b346c7bec053bb8e3",
+          "preprocessor_config.json": "08c1db591aa93e3b53b391f4ed5337bfec8fa88ac8c1bf0a94c42b0ed0b76d24",
+          "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+          "tokenizer.json": "172fab587d68c56b63eb3620057c62dfd15e503079ff7fce584692e3fd5bf4da",
+          "tokenizer_config.json": "5a4d5042efb7f465976b1c7257dc3b080e8c1a5e5afabe43a0ff7d31e45025ad",
+          "model.safetensors.index.json": "21240476ed13b7618776b3acaabb62e1b01eb57f3183ce1ffafea867bec9f70e"
+        },
+        "weights": {
+          "model-00001-of-00002.safetensors": {
+            "sha256": "34721034c2fae19889e1a459959b854cddb57cd89cade3eff9599a5ea43938dd",
+            "size": 4993319560
+          },
+          "model-00002-of-00002.safetensors": {
+            "sha256": "02bf50514615eeb6689fde65408734d61d0905876820e77031b908f3de0bfae5",
+            "size": 1071263816
+          }
+        },
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/modeling_paligemma.py": "8fcc95632840510c7a125061276c4fd86d22d7f2798d088068db24133de726aa",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/processing_paligemma.py": "bd1c4cc3bd9169cebf5104268e586adabce1e243dcfae5c9ce481fb5206474d3",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/image_processing_siglip.py": "f716aedcc35e6e271662e1bee77d9546fcf3155a6c6bd166872a87540e853c4c",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/modeling_gemma2.py": "3f4bfffad51ceef61f1db793887fb0905cd32c9488357687853c073a61774ec5",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd"
+        },
+        "original_source_sha256": {
+          "/root/projects/comperror/universal_eval/model/adapters/paligemma_transformers.py": "9ea1cc744121511672f213532c12eded98eff147325d979f992fd6a30b12e6ab",
+          "/root/projects/comperror/universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3"
+        },
+        "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl",
+        "dataset_sha256": "ceb1670f2848955290915dbe375dca8b34b62d6980e9f6cd1abe38bf0e68963b",
+        "CPU200_reference": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/CPU200_reference.json",
+        "source_cast_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/source_cast_manifest.json",
+        "reference_report": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/actual_A100_report_snapshot.json",
+        "reference_log": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/actual_A100_run.log",
+        "actual_A100_reference_original_path": "/mnt/afs/comp_error/workspace/reports/google_paligemma2-3b-pt-224/image-to-text/20260915_021401/eval_report.json",
+        "actual_A100_original_report_sha256": "ca87074f09493d13e4fb09f52490f5900e45c7b93b39f08abc08fe96d1d969b9",
+        "reference_snapshot_reencoded_without_inference": true,
+        "A100_metadata_source": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/actual_A100_source_metadata.json",
+        "A100_input_CPU200_comparison": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_actual_A100_FP16_preflight_1513_20261103_20261103_153833_370653/actual_A100_CPU200_comparison.json",
+        "original_task": "image-to-text",
+        "workbook_task": "image-text-to-text",
+        "original_batch_metadata": 10,
+        "actual_language_batch": 1,
+        "no_first_sentence_truncation": true,
+        "no_caption_en_prefix": true,
+        "all_original_labels_minus100_passed_to_native_generate": true,
+        "CPU200_reference_sha256": "bad747faeb7df8032a44f56a3fc4e7797ed5402f828ab0362b7261c94495fd13",
+        "source_cast_manifest_sha256": "5586b5a04246975f047d1db5459b423d13f48754f484a96c8cf78c987cf4e606",
+        "reference_report_sha256": "794de0fe6e1be05a598a76eca52d7b33dabb528c6fe55b73e662292773ce1ef4",
+        "reference_log_sha256": "e81127c4978840845ffba5a5a4267a122910108cdd67c0db69cc8ad3461dcccf",
+        "generation_default_resolution": "Exact original model.generate(**prepared,max_new_tokens=2048,do_sample=False) resolves both output_attentions and output_hidden_states to None. Preflight explicit generation_config produced False metadata; no token/budget/cache/beam/precision/attention math changed.",
+        "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali2_A100_FP16_three_host_visual_numerics_1513_20261103/audit.json",
+        "numerical_review_sha256": "eb4018e3a355dc12ff34fbd012ec6d8968b6fa965bccdf156a10b9254c4c3fde",
+        "actual_A100_analytic_buffers": {
+          "model.vision_tower.embeddings.position_ids": {
+            "shape": [
+              1,
+              256
+            ],
+            "dtype": "torch.int64",
+            "sha256": "bbd330b12e8159e117376ef24fa106413bc9fc18032a0d43e95c5dae5e47953f"
+          },
+          "model.language_model.embed_tokens.embed_scale": {
+            "shape": [],
+            "dtype": "torch.float16",
+            "sha256": "20d8479229ae2132eded30fff7493c8e438ab05dd2ff722c59fdf7ea2a00ec3b"
+          },
+          "model.language_model.rotary_emb.inv_freq": {
+            "shape": [
+              128
+            ],
+            "dtype": "torch.float32",
+            "sha256": "cc63341a0ac42a60b986ed638fd0d45b838b72fabeffec059c463eac4ed9ea15"
+          },
+          "model.language_model.rotary_emb.original_inv_freq": {
+            "shape": [
+              128
+            ],
+            "dtype": "torch.float32",
+            "sha256": "cc63341a0ac42a60b986ed638fd0d45b838b72fabeffec059c463eac4ed9ea15"
+          }
+        }
+      }
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.1401,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

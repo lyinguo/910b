@@ -1,0 +1,59 @@
+{
+  "name": "google--t5gemma-2-1b-1b-910b-original-HighTen-BF16-canonical64-v1-0123-20261113",
+  "description": "Own original HighTen canonical text, BF16 SDPA serial1/64, native unmodified hybrid generation config and self/cross cache. All inputs, 1119 stored weights, full heads and exact lossless cache changes independently verified; historical metric difference disclosed.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "google/t5gemma-2-1b-1b",
+    "adapter": "universal_eval/model/adapters/t5gemma2_original_HighTen_BF16_native_v3_lossless_observer_full_error_0123_20261113_adapter.py:T5Gemma2OriginalHighTenNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/T5Gemma2ForConditionalGeneration/google/t5gemma-2-1b-1b",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/T5Gemma2_original_HighTen_canonical64_native_candidate_v1_0123_20261113/protocol.json",
+      "protocol_sha256": "9bd2a76ff497149e3721cb2156587e5fad30c53d16a924353812ce0270c22832",
+      "protocol": {
+        "model_id": "google/t5gemma-2-1b-1b"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "t5gemma2_original_HighTen_canonical_MC",
+    "adapter": "universal_eval/algorithm/t5gemma2_original_HighTen_canonical_MC_v1_0123_20261113.py:T5Gemma2OriginalCanonicalMC",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.545,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

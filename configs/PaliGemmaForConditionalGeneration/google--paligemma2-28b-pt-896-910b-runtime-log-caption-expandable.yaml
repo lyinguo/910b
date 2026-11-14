@@ -1,0 +1,155 @@
+{
+  "name": "google--paligemma2-28b-pt-896-910b-runtime-log-caption-expandable",
+  "description": "Exact existing BF16 PaliGemma tensors on native NPU, HF32 disabled. The existing full200 caption report matching this row original MLU score supplies the exact caption prefix/prompt override/instruction/extraction and original1024 budget; its inputs/references and original source extraction replayed across all200 records. The real original run.log explicitly supplies the effective extract_answer flag when omitted from pipeline_config; it is never guessed from current defaults. Root default generic VLLM chat YAML is unchanged and retained as provenance. Original image-to-text/ROUGE-L benchmark and broad workbook image-text-to-text alias disclosed; frozen existing1500 caption snapshot, never MMBench. Own PIL/tokenizer, real image-to-language bridge, original buffer precision, prefix masks and1-based positions verified; independent Hunt-Szymanski ROUGE, full200 denominator including empty/invalid/truncated answers. No model/data download or substitution. Allocator-only remedy using the installed torch_npu documented expandable_segments setting, keeping every native model operation inherited unchanged; no image/token/precision reduction.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-28b-pt-896",
+    "adapter": "universal_eval/model/adapters/paligemma_expandable_allocator_910b_adapter.py:PaliGemmaExpandableAllocator910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-28b-pt-896",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        7
+      ],
+      "source_dtype": "BF16",
+      "max_new_tokens": 1024,
+      "vqa_prefix": "",
+      "resource_sha256": {
+        "config.json": "182f0069e12625b4b604fbb89c95752a406d9ce150c34dbeec10c802eefaff1a",
+        "generation_config.json": "017091192354d800548a1a1f40205149844b954acae91d9b346c7bec053bb8e3",
+        "model.safetensors.index.json": "c5d4d86eab80d369f64ec2a07d97a2a051787ef24655c288b0c8c94e827ff5b5",
+        "preprocessor_config.json": "557125fd652ee1f104409d8419bfb73860552867376d40662856cf6c7af55016",
+        "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+        "tokenizer.json": "172fab587d68c56b63eb3620057c62dfd15e503079ff7fce584692e3fd5bf4da",
+        "tokenizer_config.json": "5a4d5042efb7f465976b1c7257dc3b080e8c1a5e5afabe43a0ff7d31e45025ad"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/modeling_paligemma.py": "8fcc95632840510c7a125061276c4fd86d22d7f2798d088068db24133de726aa",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/processing_paligemma.py": "bd1c4cc3bd9169cebf5104268e586adabce1e243dcfae5c9ce481fb5206474d3",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/configuration_paligemma.py": "6e07beb626c7c06e4842965c7596264ced84514c4bbeae1fb27fd55a3b590788",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/modeling_gemma.py": "434040c2e998483aea5cc7d48b422a56b146fbdacab00279b8fe5fc2d13cb8d0",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/configuration_gemma.py": "ac4b6de5c5a977278d652ca8d392b5fe10c7e81cdfb72ac691b8e2c3198967e9",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/modeling_gemma2.py": "3f4bfffad51ceef61f1db793887fb0905cd32c9488357687853c073a61774ec5",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/configuration_gemma2.py": "d81e5abd688436da573ae299a65598d01ea871a8874d0cabeb5149967855ca07",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/configuration_siglip.py": "0a402ea5452a1527ad54f5339889774549688f5f84028af30979bdbc4b32206e",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/image_processing_pil_siglip.py": "61ff04dc131c526dd5e638bc2ad778cc1186989f474507bd3bf7368ea09f54c1",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/masking_utils.py": "5f48e428ea02d1b6008acb45c147fcdb4eba89deea69627744662aa05da1b9f2",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/torch_npu/npu/memory.py": "ed9177073fa526ab6536862cbd7c9a2c7858d8674e584ad1b9c241a45dd6c3af"
+      },
+      "weight_headers": {
+        "model-00001-of-00012.safetensors": {
+          "size": 4800407408,
+          "header_sha256": "1cf058b02ea1ece1245225b9aea7c74e5925e608ace1dee5fb74c2c65a3f3769"
+        },
+        "model-00002-of-00012.safetensors": {
+          "size": 4869740336,
+          "header_sha256": "56a98fa6d9bc660c21fbbd8486abcdb28f8fcbf8f85d4bddb076cefc9c0d8b14"
+        },
+        "model-00003-of-00012.safetensors": {
+          "size": 4983024472,
+          "header_sha256": "f1b9c50dbde57d744b2f850528fe786583b5e550aa3392a01ec8e7a285bf0ab2"
+        },
+        "model-00004-of-00012.safetensors": {
+          "size": 4869740392,
+          "header_sha256": "a95e6681a0d364ca5977c63062061a9e4182c43a5a50b2e3000b355d4a4ed9e3"
+        },
+        "model-00005-of-00012.safetensors": {
+          "size": 4869740384,
+          "header_sha256": "a18ebd3be2d1fa14bdf364c7f4009ef7e2487e8f3b6ab7ba440a3854d39186cd"
+        },
+        "model-00006-of-00012.safetensors": {
+          "size": 4983024528,
+          "header_sha256": "2cead73fab1c451a7277173c1b591f22393ed6af53c23e43da68797ae73f956e"
+        },
+        "model-00007-of-00012.safetensors": {
+          "size": 4869740392,
+          "header_sha256": "7f68982a02ca9712c3297a3ffb9f4ca3ec6877f320af997ff6b36e2bee7989de"
+        },
+        "model-00008-of-00012.safetensors": {
+          "size": 4869740384,
+          "header_sha256": "a7af67dbf05c4e3f968998589b620e3b4cbf0e72150512dd5f94bf8df9e411d0"
+        },
+        "model-00009-of-00012.safetensors": {
+          "size": 4983024528,
+          "header_sha256": "1985951709884f4f6ca51dc748ce68d3fd543501677c51c0252add710e2c475b"
+        },
+        "model-00010-of-00012.safetensors": {
+          "size": 4869740392,
+          "header_sha256": "c73a5bed5f14a0a17d4cde7c692da76dd328989743f52ac2f13e0f22668be6b6"
+        },
+        "model-00011-of-00012.safetensors": {
+          "size": 4869740384,
+          "header_sha256": "9ee595b312b7baa7a080a9dd3b6155188e6a8529101c9ffbb0a793b7a8cd6faa"
+        },
+        "model-00012-of-00012.safetensors": {
+          "size": 1472285896,
+          "header_sha256": "a1c54b86920cdd7223023214039dbce8aaa6494fc7854afa724f1c6872fdb9c2"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/PaliGemmaForConditionalGeneration/google--paligemma2-28b-pt-896.yaml",
+      "original_config_sha256": "f2dbebf6c32a97a8a3e8efc82fc9834d6786c5f85d3461caf40e2722b9d08bde",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+      "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl",
+      "dataset_sha256": "709cf45623d2feb5cb2e5d6306a9c024e47762f8debc718a055884d3def0adbf",
+      "reference_report": "/mnt/afs/comp_error/workspace/reports/google_paligemma2-28b-pt-896/image-to-text/20260827_183848/eval_report.json",
+      "reference_report_sha256": "cf42f3d2983d3ea657004bce6bc0d7c5c6826ed36119b71491c81eeac9496033",
+      "reference_source_sha256": {
+        "/mnt/afs/comp_error/universal_eval/model/adapters/paligemma_mlu.py": "3e85b30bd946d445e3f25f4ab62c6621802b62d00b9adfc7027505d2a102b81e",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/paligemma2_mlu.py": "5e9b304cfc630c333a1cadd4a3e9f68fd1a6658176be93d51ad3b1ab99e198f5",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_mlu_manual.py": "c7b0469bb5a5a91ceaa4cd7efb6ca67f60c6be7f5ea51be7ec9d2099a8bc7c7a",
+        "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_vlm.py": "997655cd77c5842f57996a2ff7aa8ee7ee4b08ee7249f82c3a2d954537d9b93c",
+        "/mnt/afs/comp_error/universal_eval/algorithm/inference.py": "7f22e79d5259af42ee799da7728d71fa0fb290092cc02b040e2f09c1d1259b62"
+      },
+      "reference_protocol": {
+        "vqa_prefix": "",
+        "mc_instruction": "\n\nRespond with only the letter of the correct option.",
+        "strip_eval_instruction": false,
+        "prompt_override": "",
+        "extract_answer": true
+      },
+      "reference_log": "/mnt/afs/comp_error/workspace/reports/google_paligemma2-28b-pt-896/image-to-text/20260827_183848/run.log",
+      "reference_log_sha256": "8f2bc41c2f3e88937840fccc17eb92ad902f485d5b4c3d0fcaf3e278044a8837",
+      "expected_image_size": 896,
+      "workbook_reference_score": 0.1444
+    }
+  },
+  "algorithm": {
+    "name": "paligemma_reference_caption_inference",
+    "adapter": "universal_eval/algorithm/paligemma_reference_caption_inference_910b.py:PaliGemmaReferenceCaptionInference910B",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.1444,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

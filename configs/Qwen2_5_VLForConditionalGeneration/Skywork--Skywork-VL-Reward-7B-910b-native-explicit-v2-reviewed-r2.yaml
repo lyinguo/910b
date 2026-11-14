@@ -1,0 +1,97 @@
+{
+  "name": "Skywork--Skywork-VL-Reward-7B-910b-native-explicit-v2-reviewed-r2",
+  "description": "Exact existing Qwen2.5-VL BF16 source tensors on NPU; own complete local tokenizer, original chat template, own dynamic-resolution image processor and original greedy token budget. Original constrained one-letter choice protocol is preserved only where the original adapter requires it. No downloads or model/data substitutes. Full images, tokens, M-RoPE, outputs, kernel trace and independent metrics retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "Skywork/Skywork-VL-Reward-7B",
+    "adapter": "universal_eval/model/adapters/qwen25vl_reviewed_910b_adapter.py:Qwen25VLReviewed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/Skywork/Skywork-VL-Reward-7B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 2048,
+      "generation_mode": "greedy",
+      "resource_sha256": {
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "chat_template.json": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7",
+        "config.json": "0ce875f921087f94b69b444ebe808c76bc2309f1f1e8f8c7e8c7fda9f8389272",
+        "generation_config.json": "365de3fc184cfa2817b6cab23ff90d8f3c7a390e017549adb5e327ab5cdce931",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model.safetensors.index.json": "792b42848a1f5325d03a07c8c6b6874b290f2cb73e8f944e61c00d2b6af2bb03",
+        "preprocessor_config.json": "549c158011407dfb750d9ec578047cf76f5bfe365cd0aa069a50137d3f98d9dd",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "tokenizer_config.json": "e1261bba2c7de85f22b3e45a90e4511f2dd4a72ea69d8eee808dfed241ebbb5a",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "7cdf4e42cb7624123f89f5357553ae222aec3ce0c9c0c49abf183e2fdde06857",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "456318743a1472bddf34b6765aeb08a0bd2fcaae22c5bcf7aa883aa7ff696d3a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py": "085160680e6e00385f39b3e414e9818c7d455bcaa2efa66770b8b402cfd9b571",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "f19497685281402691f0049a0ab5be8085f92fb5c37adfcc680e4ccd17863a77",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/video_processing_qwen2_vl.py": "3ea608073d65c0d55164bd51eb829ddfde0dc9a4dcef9f87b7d7133062672d2a"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4976698776,
+          "header_sha256": "0e767fecd76ca079f0c68b7158f7ef8c140e246af69dc9ac902321c1da15877f"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4932751032,
+          "header_sha256": "11d668e5b9b3359f6f96806a1089e7e9ea994273b105d8279c52718fc98ac45a"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4991495808,
+          "header_sha256": "58e60cf3222f4ae68ae6cb6542d49fee240d83dc5b5d15e341eca827b8b96835"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 1683468512,
+          "header_sha256": "de441d224232234ca54127d72e542dce1c5ea55ef6cd8c11a3bb42497af7cf38"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Qwen2_5_VLForConditionalGeneration/Skywork--Skywork-VL-Reward-7B.yaml",
+      "original_config_sha256": "fe763183112598c4eceed093654ed5229fa1bed5b8d36c69ee912ab03b13b384",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

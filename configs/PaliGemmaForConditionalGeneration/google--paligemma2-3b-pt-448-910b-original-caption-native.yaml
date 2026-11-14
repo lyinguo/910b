@@ -1,0 +1,92 @@
+{
+  "name": "google--paligemma2-3b-pt-448-910b-original-caption-native",
+  "description": "Exact existing BF16 PaliGemma/PaliGemma2 tensors on native NPU with HF32 disabled. Preserve original PaliGemmaTransformers caption prefix, greedy generation and original token budget. Workbook broad image-text-to-text category retains original image-to-text caption/ROUGE-L benchmark provenance. Frozen existing AFS1500 caption data SHA709cf456, fixed first200; original1459 target is untouched. No MMBench substitution. Own tokenizer/PIL processor, true image feature injection, prefix attention and 1-based positions verified. English stemmed ROUGE-L uses existing Porter software and independent full-denominator LCS verification; no missing-library metric fallback.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-3b-pt-448",
+    "adapter": "universal_eval/model/adapters/paligemma_caption_native_910b_adapter.py:PaliGemmaCaptionNative910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-3b-pt-448",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "source_dtype": "BF16",
+      "max_new_tokens": 2048,
+      "vqa_prefix": "",
+      "resource_sha256": {
+        "config.json": "cc1d3734a4132c35ffc057cc1ec45a826313e5eeb36e4067f1a9087b2de3f6d1",
+        "generation_config.json": "017091192354d800548a1a1f40205149844b954acae91d9b346c7bec053bb8e3",
+        "model.safetensors.index.json": "101aefeca4ce099eafe31aa6e051f1fc6b41edad72cccae6e460697c15a413c0",
+        "preprocessor_config.json": "6a95b351c016da050e0821591357e732cce182681a8c079ecf196c4943cabdfa",
+        "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+        "tokenizer.json": "172fab587d68c56b63eb3620057c62dfd15e503079ff7fce584692e3fd5bf4da",
+        "tokenizer_config.json": "5a4d5042efb7f465976b1c7257dc3b080e8c1a5e5afabe43a0ff7d31e45025ad"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/modeling_paligemma.py": "8fcc95632840510c7a125061276c4fd86d22d7f2798d088068db24133de726aa",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/processing_paligemma.py": "bd1c4cc3bd9169cebf5104268e586adabce1e243dcfae5c9ce481fb5206474d3",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/configuration_paligemma.py": "6e07beb626c7c06e4842965c7596264ced84514c4bbeae1fb27fd55a3b590788",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/modeling_gemma.py": "434040c2e998483aea5cc7d48b422a56b146fbdacab00279b8fe5fc2d13cb8d0",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/configuration_gemma.py": "ac4b6de5c5a977278d652ca8d392b5fe10c7e81cdfb72ac691b8e2c3198967e9",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/modeling_gemma2.py": "3f4bfffad51ceef61f1db793887fb0905cd32c9488357687853c073a61774ec5",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/configuration_gemma2.py": "d81e5abd688436da573ae299a65598d01ea871a8874d0cabeb5149967855ca07",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/configuration_siglip.py": "0a402ea5452a1527ad54f5339889774549688f5f84028af30979bdbc4b32206e",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/image_processing_pil_siglip.py": "61ff04dc131c526dd5e638bc2ad778cc1186989f474507bd3bf7368ea09f54c1"
+      },
+      "weight_headers": {
+        "model-00001-of-00002.safetensors": {
+          "size": 4995089032,
+          "header_sha256": "225a97bc0117813d98a1dd648ab70cc4305bd9c49f9701c9960459010c60ec55"
+        },
+        "model-00002-of-00002.safetensors": {
+          "size": 1071263816,
+          "header_sha256": "d1fe7b2134562fa880e695697c67b0630ab1636fedf2feecfdbc7903d068371b"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/PaliGemmaForConditionalGeneration/google--paligemma2-3b-pt-448.yaml",
+      "original_config_sha256": "b3b1d67ece110a04eede7da000280a47de955c63fcc4a401127f1e5465e715c4",
+      "original_adapter_sha256": "9ea1cc744121511672f213532c12eded98eff147325d979f992fd6a30b12e6ab",
+      "dataset_path": "/root/projects/comperror/workspace/datasets/protocol_snapshots/image-to-text-short_709cf45623d2_20261031_093143/eval.jsonl",
+      "dataset_sha256": "709cf45623d2feb5cb2e5d6306a9c024e47762f8debc718a055884d3def0adbf"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

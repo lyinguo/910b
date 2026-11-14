@@ -1,0 +1,201 @@
+{
+  "name": "daekeun-ml--ko-trocr-base-nsmc-news-chatbot-910b-original-native-ocr-v2-native-gelu-disclosed-runtime-evidence-v2",
+  "description": "Exact own Korean/Thai image-only OCR/CER checkpoint and table-matched real historical200 protocol. All source learned F32/F16 tensors, declared head/bias aliases, own complete tokenizer JSON and PIL processor retained on native NPU, HF32 off. Original4096 budget, own beam/penalty/cache/IDs; when no generation_config file exists, original raw model-config generation fields are restored before native construction. All real3 independent evidence must pass before fixed200. No downloads, substitutions, grammar constraints or low-bit acceleration claim. Source tokenizer vocabulary may be shorter than original model output-head size; both are preserved, source mapping and every model-ID decode verified without resizing. Genuine EOS empty predictions remain complete records and full CER denominator. Native CANN fused GELU requested via original approximate=none follows an observed vendor tanh approximation. Native graph/weights/generation remain unchanged; disclose numerical behavior rather than substitute an ERF reference kernel. CPU original-erf and vendor-matched-tanh computations are diagnosis only and never replace official NPU outputs or metrics. Native CANN fused GELU requested via original approximate=none follows an observed vendor tanh approximation. Native graph/weights/generation remain unchanged; disclose numerical behavior rather than substitute an ERF reference kernel. CPU original-erf and vendor-matched-tanh computations are diagnosis only and never replace official NPU outputs or metrics.",
+  "task_type": "image-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "is_ocr": true,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "daekeun-ml/ko-trocr-base-nsmc-news-chatbot",
+    "adapter": "universal_eval/model/adapters/ocr_decoder_variants_disclosed_v2_910b_adapter.py:OCRDecoderVariantsDisclosedV2Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/VisionEncoderDecoderModel/daekeun-ml/ko-trocr-base-nsmc-news-chatbot",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        10
+      ],
+      "protocol": {
+        "model_id": "daekeun-ml/ko-trocr-base-nsmc-news-chatbot",
+        "source_dtype": "torch.float32",
+        "decoder_family": "roberta",
+        "alias_groups": [
+          [
+            "decoder.lm_head.decoder.weight",
+            "decoder.roberta.embeddings.word_embeddings.weight"
+          ],
+          [
+            "decoder.lm_head.bias",
+            "decoder.lm_head.decoder.bias"
+          ]
+        ],
+        "cross_attention_module": "decoder.roberta.encoder.layer.0.crossattention.self",
+        "position_embedding_module": "decoder.roberta.embeddings.position_embeddings",
+        "resource_sha256": {
+          "config.json": "6ef0b4e2f77075f63d0d5cc98228a081d9e812a557286821cfe03c1f761a5490",
+          "merges.txt": "fe36cab26d4f4421ed725e10a2e9ddb7f799449c603a96e7f29b5a3c82a95862",
+          "preprocessor_config.json": "92618838e02bb5a308ee041b439825dc5aeefdc97e46b0a5ca2d2cb773041b76",
+          "special_tokens_map.json": "311de3f4eed9d76a43bf0d71f10e62e086ca65ccce9f15d5da0d2098bf519ecc",
+          "tokenizer.json": "d59d3eeee57ef7924e88afb25bafb99ff3565dc583231b2dd617900aa24ffb44",
+          "tokenizer_config.json": "d6a46ed821dbbe139a8e7c0c8b5b9c8b6dacafd692a1f01523dbaffccb97442f",
+          "vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+          "vocab.txt": "1ad4978b5dbe269dcc402a3c6eb71ceab21d712bca3b7d3b9994845e54cdcb39"
+        },
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py": "edcdb558ad838f7cdc8131dc38697c92e4f6786592504af47c72aa209b3ee05d",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/roberta/modeling_roberta.py": "3ac9642e0bde6f15e68c6565bcd81db34737f0c98f44164c88a04853336ee6c9",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/camembert/modeling_camembert.py": "1d57a1ef7c689b981359eafa8056b471ae62f9a8092bc31a5f9984befcc6208b",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/electra/modeling_electra.py": "81d22ed4b31a0fb530dc7eb5d2c7c8f1c1c224888a2737cbe0fe7f2d00b4179c",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/vit/modeling_vit.py": "d6e8e18d0d7c32beaac672b5701f1e83d72df62781e79f8508ca7f3dc0db9de2",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/deit/modeling_deit.py": "4105ecd9a4567c2b6a342cc1d25376144920cd13faa8749cf05bf625ba53b673",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py": "28d1d16141df916cd2bee23d27c83f0bf2fceb7bd1932888fccd210a91079b79",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/configuration_utils.py": "cd1f545feac3ab97a5f9c0dc6bc4c934f282e5799fec3053fb244c465d0a110a",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/tokenization_utils_base.py": "f86fc8ce6ad86bcbb4bad93b84b3cde9f7b93b516703b5d220889c66bbdd7b5a",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/tokenization_utils_tokenizers.py": "4142769e9147cd371e7ee4b3270f521013fcbf1306fc9842aa87bb503f9f64fb",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/image_processing_utils.py": "db1fe91c9841ec39093a62fc08a75a742e5589463671a8346e5344f3ae4f10c6",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_utils.py": "d8bf1879d6f582888b6cf47b4d63070260285a3bd1dc94ce7e1373304f74168a",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/processing_utils.py": "d49b92aba8a755e6d93928a5fec94950004a5bc53a48746f9b83dd04cb7edacd",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/activations.py": "4b1a469c24be4e4c6320536ad55a7337d24de04c3ecc71597fbf0267f1560612"
+        },
+        "original_source_sha256": {
+          "/root/projects/comperror/universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+          "/root/projects/comperror/universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+          "/root/projects/comperror/universal_eval/metric/ocr.py": "d9ff3adea304f72af700f6b6528202ecf5a68498b2609555c89bc01fce70ebfd",
+          "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_vlm.py": "997655cd77c5842f57996a2ff7aa8ee7ee4b08ee7249f82c3a2d954537d9b93c",
+          "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_mlu_manual.py": "c7b0469bb5a5a91ceaa4cd7efb6ca67f60c6be7f5ea51be7ec9d2099a8bc7c7a",
+          "/mnt/afs/comp_error/universal_eval/algorithm/inference.py": "7f22e79d5259af42ee799da7728d71fa0fb290092cc02b040e2f09c1d1259b62",
+          "/mnt/afs/comp_error/universal_eval/metric/ocr.py": "8dad6e34bd5e2ba0f44c3a3b0c1706cea9959c1837f704bd5616087c71d06637"
+        },
+        "weights": {
+          "model.safetensors": {
+            "format": "safetensors",
+            "size": 902875104,
+            "header_sha256": "ff5390cfd9eb570d2bd270489091d8057a4ce021e43fa94854a3bfb20009c98f"
+          }
+        },
+        "reference_report": "/mnt/afs/comp_error/workspace/reports/daekeun-ml_ko-trocr-base-nsmc-news-chatbot/image-to-text/20260827_092250/eval_report.json",
+        "reference_report_sha256": "ca82ce9939c9e9aa669f806eb813996d041a129acad7590d6c29623798318f55",
+        "reference_log": "/mnt/afs/comp_error/workspace/reports/daekeun-ml_ko-trocr-base-nsmc-news-chatbot/image-to-text/20260827_092250/run.log",
+        "reference_log_sha256": "2cb92fff764a295edefba772a91b30ee2a0e82f1c222f8cd2cc931bd42d7f075",
+        "max_new_tokens": 4096,
+        "extract_answer": true,
+        "ocr_extract": true,
+        "effective_generation_config": {
+          "max_length": 64,
+          "max_new_tokens": 4096,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": true,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 4,
+          "use_mtp": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 0.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 2.0,
+          "no_repeat_ngram_size": 3,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": 0,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl",
+        "dataset_sha256": "49aa4d96f9c24c16d31f8cb092ddb0ee839f93a0507c8588675cdd5801b9efd5",
+        "vocabulary_contract": {
+          "model_vocab_size": 32000,
+          "tokenizer_size": 32000,
+          "core_vocabulary_sha256": "a6f51acd3adeb50c2ac2135c9e5ac5f651310d27e92a7f66e867b8703db75d2d"
+        }
+      }
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "adapter": "universal_eval/algorithm/inference.py:GreedyInference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "CER"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

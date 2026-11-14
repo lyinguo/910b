@@ -1,0 +1,56 @@
+{
+  "name": "AIDC-AI--Ovis2-1B-910b-A100-original-BF16-1512-20261111-v2-prompt-fields-strict-final-v5",
+  "description": "Own original Ovis BF16/eager + AIMv2 SDPA; original 2048, multimodal8192, own Final answer suffix; native torch_npu; complete five-file stage3 only pending B10 and numerical approval",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "AIDC-AI/Ovis2-1B",
+    "adapter": "universal_eval/model/adapters/ovis21b_A100_original_bf16_native_1512_20261111_adapter.py:Ovis21BOriginalNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Ovis/AIDC-AI/Ovis2-1B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Ovis21B_A100_BF16_final_standard_report_source3_v5_1512_20261111/protocol.json",
+      "protocol_sha256": "2ba10a6db43b13e74e2eccf8f7dbfd72f9acd22bd122cee859c28bb898b3a4d9",
+      "protocol": {
+        "model_id": "AIDC-AI/Ovis2-1B"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/ovis21b_native_explicit_mc_v2_guard_1512_20261111.py:Ovis21BNativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.72,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

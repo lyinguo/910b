@@ -1,0 +1,56 @@
+{
+  "name": "HuggingFaceTB--SmolVLM2-256M-Video-Instruct-910b-A100-own-FP16-v3-original-inputs-1512-20261111-finalproof-v4",
+  "description": "Own SmolVLM2 original FP16 HF image protocol, native torch_npu, same original AA3 and ten serial controls; all200 image/token/mask values bitwise verified against genuine A100 processing.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolVLM2-256M-Video-Instruct",
+    "adapter": "universal_eval/model/adapters/smolvlm2_256video_A100_native_fp16_v3_original_inputs_1512_20261111_adapter.py:SmolVLM2256VideoOwnFP16OriginalInputsV3",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/SmolVLMForConditionalGeneration/HuggingFaceTB/SmolVLM2-256M-Video-Instruct",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "HuggingFaceTB/SmolVLM2-256M-Video-Instruct"
+      },
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/SmolVLM2256Video_A100_FP16_original_inputs_compat3_v3_1512_20261111/protocol.json",
+      "protocol_sha256": "7e4691e6f64d984f6d9f91e2e4b3c9e250cd44284b302dd617ed07df03918006"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.335,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

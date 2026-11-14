@@ -1,0 +1,59 @@
+{
+  "name": "OpenGVLab--InternVL3_5-4B-Flash-910b-original-HF-BF16-2048-v1-own36-DropPath-0123-20261113",
+  "description": "Own806/two-shard BF16 original eager visual gate/cache/serial1/2048. Full original DropPath semantics retained. Genuine AA controls and historical untracked source boundary disclosed; no scoring or precision change.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL3_5-4B-Flash",
+    "adapter": "universal_eval/model/adapters/internvl35_flash4b_original_HF_native_v1_0123_20261113_adapter.py:InternVL35Flash4BOriginalHFNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL3_5-4B-Flash",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/InternVL35Flash4B_original_HF_BF16_own36_DropPath_candidate_v1_0123_20261113/protocol.json",
+      "protocol_sha256": "9ba05bd2966669c2e2a9a8c70da847158a8504338f2543eba3e238b322a0d3c8",
+      "protocol": {
+        "model_id": "OpenGVLab/InternVL3_5-4B-Flash"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "internvl35_flash4b_original_HF_MC",
+    "adapter": "universal_eval/algorithm/internvl35_flash4b_original_HF_MC_v2_own_frontend_0123_20261113.py:InternVL35Flash4BOriginalMC",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.895,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

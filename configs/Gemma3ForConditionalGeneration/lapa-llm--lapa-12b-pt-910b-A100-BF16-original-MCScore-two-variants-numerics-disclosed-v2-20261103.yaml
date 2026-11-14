@@ -1,0 +1,46 @@
+name: Lapa actual A100 BF16 MCScore alignment-native-numerics-disclosed-v2
+description: Exact A100 D=.695 original two-variant final-position scoring, own resources
+  and full evidence
+task_type: image-text-to-text
+scoring_mode: mc_score
+sample_count: 200
+sample_range: 0:199
+data:
+  dataset_path: /root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+  download: false
+  preprocess: true
+  apply_template: false
+  filter_empty: false
+model:
+  name: lapa-llm/lapa-12b-pt
+  adapter: universal_eval/model/adapters/lapa_A100_mc_disclosed_20261103_adapter.py:LapaA100MCDisclosed20261103Adapter
+  model_path: /mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/lapa-llm/lapa-12b-pt
+  download: false
+  kwargs:
+    npu_devices:
+    - 1
+    protocol_file: /root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Lapa_A100_MC_unapproved_v1/protocol.json
+    protocol_sha256: 5c2eb2a5875be49e790b1c1c0a66db916296e0e6f3e7a8fdb0387e4d6d5a3477
+    native_numerical_review: /root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Lapa_A100_BF16_CPU_visual_numeric_v1/audit.json
+    native_numerical_review_sha256: cad8f85bc56e95ccec50809f4f7a0e8e9ce2d9d3d55d4c1bddfc3395f66329fe
+algorithm:
+  name: lapa_A100_original_MCScore
+  adapter: universal_eval/algorithm/lapa_A100_mc_score_evidence_20261103.py:LapaMCScoreEvidenceA10020261103
+  batch_size: 1
+  kwargs:
+    extract_answer: false
+metrics:
+  override:
+  - Accuracy
+  include_failed_predictions: true
+baseline:
+  score: 0.695
+  primary_metric: Accuracy
+  difference_mode: relative
+  threshold: 0.05
+output:
+  reports_dir: workspace/reports
+  layout: model_task_timestamp
+  evidence_dir: workspace/diagnostics/model_runs
+  timezone: Asia/Hong_Kong
+  verbose: true

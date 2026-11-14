@@ -1,0 +1,55 @@
+{
+  "name": "01-ai--Yi-VL-6B-910b-auto",
+  "description": "Yi-VL-6B on existing Ascend NPU BF16 weights. FP32 full-option mean log-probability scoring; this is an explicitly different protocol from historical free-generation Yi-VL-6B configurations. No model or dataset downloads.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "01-ai/Yi-VL-6B",
+    "adapter": "universal_eval/model/adapters/yivl_family_910b_adapter.py:YiVLFamily910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/01-ai/Yi-VL-6B",
+    "download": false,
+    "kwargs": {
+      "torch_dtype": "bfloat16",
+      "scoring": "discriminative",
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 128,
+      "evidence_dir": "workspace/diagnostics/model_runs"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "progress_interval": 1
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.72,
+    "threshold": 0.05,
+    "gap_mode": "absolute",
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

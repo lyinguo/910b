@@ -1,0 +1,174 @@
+{
+  "name": "team-lucid--trocr-small-korean-910b-original-ocr",
+  "description": "Exact table-matched original full200 OCR/CER historical protocol, verified real runtime flags. Own existing checkpoint F32 tensors remain NPU F32, HF32 off; historical auto MLU precision may differ. Native eager ViT/DeiT -> real cross-attention TrOCR with own image processor and vocab/merges; retain each original64/2048/4096 budget, beam and cache settings. No new character constraints, downloads or substitutions. Later generic/root YAML variants are preserved but do not replace the table-matched benchmark.",
+  "task_type": "image-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "is_ocr": true,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "team-lucid/trocr-small-korean",
+    "adapter": "universal_eval/model/adapters/trocr_original_910b_adapter.py:TrOCROriginal910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/VisionEncoderDecoderModel/team-lucid/trocr-small-korean",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        9
+      ],
+      "protocol": {
+        "model_id": "team-lucid/trocr-small-korean",
+        "resource_sha256": {
+          "config.json": "8778ac03010b4ab89edc124d58bc90b2fac4f30d7ac101c504787506c1bf0016",
+          "generation_config.json": "5cf209be6bb317fdf8e3cfb247e95cd033bc6baae90434bc3d7600d7b3db0d41",
+          "merges.txt": "23dbe86741adb0c54e86503ecaa2d2405cf320743528f5d2f3397c47dc1229b7",
+          "preprocessor_config.json": "de5f3b46b8b2be82045620e2141b199a1a4ed3ce67aad9e965ecce29eb5688b2",
+          "special_tokens_map.json": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+          "tokenizer.json": "ee6607aa19bbbf9e0894dfdc5c393516ea246e40cab7fbc3c05a06cc72fe1866",
+          "tokenizer_config.json": "761f6f8afbe932fc87a736f91f032597ff6be5470d0a9d43f60d52f118c72723",
+          "vocab.json": "7b7385c2484458551006f558d7171816b2216a0a0863538fb5e69f1ac1464321"
+        },
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/trocr/modeling_trocr.py": "08bca3ac39d3719917f08f9bf889bea52ffe3aa7e70b800dd9d4648920f35a1a",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/vision_encoder_decoder/modeling_vision_encoder_decoder.py": "28d1d16141df916cd2bee23d27c83f0bf2fceb7bd1932888fccd210a91079b79",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/vit/modeling_vit.py": "d6e8e18d0d7c32beaac672b5701f1e83d72df62781e79f8508ca7f3dc0db9de2",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/deit/modeling_deit.py": "4105ecd9a4567c2b6a342cc1d25376144920cd13faa8749cf05bf625ba53b673",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_utils.py": "d8bf1879d6f582888b6cf47b4d63070260285a3bd1dc94ce7e1373304f74168a",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/processing_utils.py": "d49b92aba8a755e6d93928a5fec94950004a5bc53a48746f9b83dd04cb7edacd",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7"
+        },
+        "original_source_sha256": {
+          "/root/projects/comperror/universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+          "/root/projects/comperror/universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+          "/root/projects/comperror/universal_eval/metric/ocr.py": "d9ff3adea304f72af700f6b6528202ecf5a68498b2609555c89bc01fce70ebfd",
+          "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_vlm.py": "997655cd77c5842f57996a2ff7aa8ee7ee4b08ee7249f82c3a2d954537d9b93c",
+          "/mnt/afs/comp_error/universal_eval/model/adapters/transformers_mlu_manual.py": "c7b0469bb5a5a91ceaa4cd7efb6ca67f60c6be7f5ea51be7ec9d2099a8bc7c7a",
+          "/mnt/afs/comp_error/universal_eval/algorithm/inference.py": "7f22e79d5259af42ee799da7728d71fa0fb290092cc02b040e2f09c1d1259b62",
+          "/mnt/afs/comp_error/universal_eval/metric/ocr.py": "8dad6e34bd5e2ba0f44c3a3b0c1706cea9959c1837f704bd5616087c71d06637"
+        },
+        "weights": {
+          "model.safetensors": {
+            "format": "safetensors",
+            "size": 218211304,
+            "header_sha256": "c2be2a53503a42ded084ea52d0ed4a14db492fc5d430f806c28667c37c09b625"
+          }
+        },
+        "reference_report": "/mnt/afs/comp_error/workspace/reports/team-lucid_trocr-small-korean/image-to-text/20260827_092955/eval_report.json",
+        "reference_report_sha256": "76b77ab851e8bea728d46447eb0f9ab0819abbb8b2b1339f0b0fee7b6480d05c",
+        "reference_log": "/mnt/afs/comp_error/workspace/reports/team-lucid_trocr-small-korean/image-to-text/20260827_092955/run.log",
+        "reference_log_sha256": "f4b2554173ab40378a404288bf84d322e70d8858a423f66764d02354d1ec81e3",
+        "max_new_tokens": 4096,
+        "extract_answer": true,
+        "ocr_extract": true,
+        "effective_generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 4096,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 1,
+          "use_mtp": null,
+          "use_cache": false,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 0.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": null,
+          "output_hidden_states": null,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 1,
+          "bos_token_id": 0,
+          "eos_token_id": 2,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": 2,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl",
+        "dataset_sha256": "49aa4d96f9c24c16d31f8cb092ddb0ee839f93a0507c8588675cdd5801b9efd5"
+      }
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "adapter": "universal_eval/algorithm/inference.py:GreedyInference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "CER"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

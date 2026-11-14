@@ -1,0 +1,392 @@
+{
+  "name": "google--paligemma2-10b-mix-448-910b-actual-A100-FP16-SDPA-caption-en64-original-fullraw-native-v1-0311-20261104-canonical-media-v2-full-original-FP16-numerics-disclosed-v3",
+  "description": "Own actualA100 10B/903 BF16 source to originalFP16/42LM+27vision/69activations/8KV; original own448/1024prefix/caption en/64/serial1/SDPA/cacheTrue/raw caption1459; original source cast and underflow fully disclosed. No accepted3B source modified.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-10b-mix-448",
+    "adapter": "universal_eval/model/adapters/paligemma2_10b_mix_A100_FP16_native_0311_20261104_adapter.py:Pali10MixA100FP16Native0311Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-10b-mix-448",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "google/paligemma2-10b-mix-448",
+        "A100_D": "0.1597",
+        "max_new_tokens": 64,
+        "caption_prefix": "caption en ",
+        "source_dtype": "BF16",
+        "execution_dtype": "FP16",
+        "A100_resolved_attention": {
+          "root": "sdpa",
+          "text": "sdpa",
+          "vision": "sdpa"
+        },
+        "effective_generation_config": {
+          "max_length": 20,
+          "max_new_tokens": 64,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "early_stopping": false,
+          "max_time": null,
+          "stop_strings": null,
+          "do_sample": false,
+          "num_beams": 1,
+          "use_mtp": null,
+          "use_cache": true,
+          "cache_implementation": null,
+          "cache_config": null,
+          "max_cache_len": null,
+          "temperature": 1.0,
+          "top_k": 50,
+          "top_p": 1.0,
+          "min_p": null,
+          "top_h": null,
+          "typical_p": 1.0,
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "repetition_penalty": 1.0,
+          "encoder_repetition_penalty": 1.0,
+          "length_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "bad_words_ids": null,
+          "renormalize_logits": null,
+          "forced_bos_token_id": null,
+          "forced_eos_token_id": null,
+          "remove_invalid_values": false,
+          "exponential_decay_length_penalty": null,
+          "suppress_tokens": null,
+          "begin_suppress_tokens": null,
+          "sequence_bias": null,
+          "token_healing": null,
+          "guidance_scale": null,
+          "watermarking_config": null,
+          "num_return_sequences": 1,
+          "output_attentions": null,
+          "output_hidden_states": null,
+          "output_scores": false,
+          "output_logits": null,
+          "return_dict_in_generate": false,
+          "pad_token_id": 0,
+          "bos_token_id": 2,
+          "eos_token_id": 1,
+          "encoder_no_repeat_ngram_size": 0,
+          "decoder_start_token_id": null,
+          "is_assistant": null,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "assistant_confidence_threshold": 0.4,
+          "prompt_lookup_num_tokens": null,
+          "max_matching_ngram_size": null,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "target_lookbehind": 10,
+          "assistant_ensemble_weight": null,
+          "compile_config": null,
+          "disable_compile": null,
+          "continuous_batching_config": null,
+          "low_memory": null,
+          "penalty_alpha": null,
+          "dola_layers": null,
+          "diversity_penalty": 0.0,
+          "num_beam_groups": 1,
+          "constraints": null,
+          "force_words_ids": null,
+          "prefill_chunk_size": null,
+          "_from_model_config": true,
+          "transformers_version": "5.14.1"
+        },
+        "effective_image_processor": {
+          "do_convert_rgb": null,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SiglipImageProcessor",
+          "image_seq_length": 1024,
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 448,
+            "width": 448
+          }
+        },
+        "effective_processor_tokenizer_flags": {
+          "add_bos_token": false,
+          "add_eos_token": false,
+          "reason": "Own authentic PaliProcessor disables automatic BOS/EOS; original explicit singleBOS2 preserved"
+        },
+        "resource_sha256": {
+          "config.json": "ffdfd708a4f434cc85ec0938f898edf2ff9998e284ff91b70928408d8dfe6f2c",
+          "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+          "generation_config.json": "017091192354d800548a1a1f40205149844b954acae91d9b346c7bec053bb8e3",
+          "model.safetensors.index.json": "87fa7c851565d1d99542c5d432da74401cf3b11815f1cf22dcdda85e33ef9a5c",
+          "preprocessor_config.json": "6a95b351c016da050e0821591357e732cce182681a8c079ecf196c4943cabdfa",
+          "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+          "tokenizer.json": "172fab587d68c56b63eb3620057c62dfd15e503079ff7fce584692e3fd5bf4da",
+          "tokenizer_config.json": "5a4d5042efb7f465976b1c7257dc3b080e8c1a5e5afabe43a0ff7d31e45025ad"
+        },
+        "weights": {
+          "model-00001-of-00004.safetensors": {
+            "size": 4954265240,
+            "sha256": "dff25264a99bb491b0def8f2b54dfa1902039eebd73e8e2a10d8bac062b8e602"
+          },
+          "model-00002-of-00004.safetensors": {
+            "size": 4947572960,
+            "sha256": "b0c88cb9b084c8c4c13bdf7ae8c73fee9642d2a21cc620bd22b7401815b8dc78"
+          },
+          "model-00003-of-00004.safetensors": {
+            "size": 4962223472,
+            "sha256": "9c7294db3e17bd03b74ba5613f5c22ea0260e7819e7898c68cbb11db686dc14f"
+          },
+          "model-00004-of-00004.safetensors": {
+            "size": 4463107504,
+            "sha256": "faea080b43b56a18b86e4070f3aad6d290e75f3f4860b52367840bac2a7dd9c2"
+          }
+        },
+        "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl",
+        "dataset_sha256": "ceb1670f2848955290915dbe375dca8b34b62d6980e9f6cd1abe38bf0e68963b",
+        "CPU200_reference": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_actual_A100_FP16_native_0311_20261104_20261104_032814_324626/canonical_media_v2/CPU200_canonical_media_reference.json",
+        "source_cast_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_actual_A100_FP16_native_0311_20261104_20261104_032814_324626/reviewed903_loader_manifest.json",
+        "reference_report": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/next_Pali10Mix_actual_A100_CPU200_0016_20261104_20261104_002323_055058/original_A100_report.json",
+        "reference_log": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/next_Pali10Mix_actual_A100_CPU200_0016_20261104_20261104_002323_055058/original_A100_run.log",
+        "actual_A100_reference_original_path": "/mnt/afs/comp_error/workspace/reports/google_paligemma2-10b-mix-448/image-to-text/20260912_160644/eval_report.json",
+        "actual_A100_original_report_sha256": "f9703d21f456a94d70a5d83cf11302bd8f11ef2195085250c1d2f5297026701a",
+        "actual_A100_original_log_sha256": "a0836ba4ed883e9b5c6233027f51c3601e3897996f330d7ccb06f647cf881167",
+        "reference_snapshot_reencoded_without_inference": true,
+        "original_task": "image-to-text caption ROUGE-L, exactly the same original200 fixture as worksheet D",
+        "workbook_task": "image-text-to-text",
+        "original_batch_metadata": 10,
+        "actual_language_batch": 1,
+        "no_first_sentence_truncation": true,
+        "all_original_labels_minus100_passed_to_native_generate": true,
+        "actual_A100_analytic_buffers": {
+          "model.vision_tower.embeddings.position_ids": {
+            "shape": [
+              1,
+              1024
+            ],
+            "dtype": "torch.int64",
+            "sha256": "2f88e9ce00d238e7e011a7b140b413dcad818f1da41a721f914f1af604d0e217"
+          },
+          "model.language_model.embed_tokens.embed_scale": {
+            "shape": [],
+            "dtype": "torch.float16",
+            "sha256": "b9d04000ec4b28a98248daa9fc0e5e7f6b3b4588a4c84e7bc700e86d66bbe635"
+          },
+          "model.language_model.rotary_emb.inv_freq": {
+            "shape": [
+              128
+            ],
+            "dtype": "torch.float32",
+            "sha256": "cc63341a0ac42a60b986ed638fd0d45b838b72fabeffec059c463eac4ed9ea15"
+          },
+          "model.language_model.rotary_emb.original_inv_freq": {
+            "shape": [
+              128
+            ],
+            "dtype": "torch.float32",
+            "sha256": "cc63341a0ac42a60b986ed638fd0d45b838b72fabeffec059c463eac4ed9ea15"
+          }
+        },
+        "original_A100_real3_diagnostic": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_actual_A100_FP16_native_0311_20261104_20261104_032814_324626/original_A100_real3_diagnostic.json",
+        "original_source_sha256": {
+          "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/next_Pali10Mix_actual_A100_CPU200_0016_20261104_20261104_002323_055058/actual_A100_parent_sources.json": "1c8adf3196dc2eb584b53d7915b1ce7218b55cff1443ae41bc13dd78eaf0fdae",
+          "/root/projects/comperror/scripts/A100_Pali10Mix_native_FP16_real3_0311_remote.py": "d4fb9224c87a78b046fb00f0fdcd8fce603c809963e54dca9bde322fb0d09da0"
+        },
+        "runtime_sha256": {
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/paligemma/modeling_paligemma.py": "8fcc95632840510c7a125061276c4fd86d22d7f2798d088068db24133de726aa",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma2/modeling_gemma2.py": "3f4bfffad51ceef61f1db793887fb0905cd32c9488357687853c073a61774ec5",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/masking_utils.py": "5f48e428ea02d1b6008acb45c147fcdb4eba89deea69627744662aa05da1b9f2",
+          "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/cache_utils.py": "ee7902fbd031ed332b5e26d07756a33f09b5c90a435b8363b9330876dc33ce0e"
+        },
+        "CPU200_reference_sha256": "b145fa423862aebc1ceac80f77c7a37917a640e4ef36715a18b0b5d025c474ba",
+        "source_cast_manifest_sha256": "044bdd08d9b0138c8d1fe5589d6c30a2a2970c24e11f64767e74b5fc6a3c3bc3",
+        "reference_report_sha256": "e09c39c41cbbc4f978f36853fe2191b11b28657389ab0b1bb4f1be6cdfce7c16",
+        "reference_log_sha256": "a0836ba4ed883e9b5c6233027f51c3601e3897996f330d7ccb06f647cf881167",
+        "original_A100_real3_diagnostic_sha256": "547a6ddad3c45fa76066b54a7eb120f301ee98b5dc3da2ad83488e4370ee8f9b",
+        "project_sources": {
+          "universal_eval/model/adapters/paligemma2_10b_mix_A100_FP16_native_0311_20261104_adapter.py": "c043ebe3ee2f9f622a0bdb1844411da794fbc57c46c27460fed9643c3ffa914d",
+          "scripts/A100_Pali10Mix_native_FP16_real3_0311_remote.py": "d4fb9224c87a78b046fb00f0fdcd8fce603c809963e54dca9bde322fb0d09da0",
+          "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+          "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+          "universal_eval/orchestrator/report.py": "ebaac67e8b65019704245b7e44b01290dfedf3f68e14b7d09d603d5a8a7077c1",
+          "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+          "universal_eval/metric/rouge_reference_910b.py": "246c73529e428593e2b5b87d6748e9a5cd8549f0759eff6ca158f0d770df4e00",
+          "universal_eval/metric/rouge_910b_porter.py": "84688436a7392d05d69a2c4752880c14d61c1f86086dbf297edef3fe7c5e0939",
+          "universal_eval/metric/rouge_910b_stem_api.py": "378f5281b141c89c59ffb27cde43fde7a9a4e842afeb684098a97b94f1b3d6d3",
+          "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+          "scripts/validate_alignment_adapter_spec_1813_20261103.py": "244ea36b165175fc6782d92047489fa95bd4effef0ef5fae423e938dcf80e2cc",
+          "scripts/verify_paligemma2_10b_mix_A100_FP16_native_v2_0311_20261104.py": "b03f713eb392afc2a8662f441d63fb91330b175a3a50be3816acecfa1021fe3f",
+          "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+          "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+          "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+          "scripts/audit_Pali10Mix_A100_FP16_visual_0311_20261104.py": "86b8e4c7607fda947a19af1a6de6083569bbeae93e7d602fa077792f12d267b5"
+        },
+        "canonical_media_resolution_receipt": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_actual_A100_FP16_native_0311_20261104_20261104_032814_324626/canonical_media_v2/all200_original_pipeline_and_canonical_paths_sha_receipt.json",
+        "canonical_media_resolution_receipt_sha256": "0a1ef84cfe874675e0ba74c780cda92a8f037eb38163c18fd8456c95c7c7b665",
+        "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_A100_FP16_formal200_v3_0311_20261104/original_FP16_numerical_review_all_sources.json",
+        "numerical_review_sha256": "33218fb2838e47bfaf1f78e6bd5736bace893ddf9ecdf89bd92f8223d5eb9c2f",
+        "numerical_disclosure": {
+          "static_reference_from_real3_not_new_CPU_each_report": true,
+          "original_source_dtype": "BF16",
+          "original_execution_dtype": "FP16",
+          "source_cast_roundtrip_changes": 6687437,
+          "source_cast_nonzero_underflow": 509416,
+          "official_native_math_precision_budget_mask_cache_unchanged": true,
+          "original_CPU_vision_activation": "gelu_pytorch_tanh",
+          "CPU_439_vision_projector_only_not_decoder_answers": true,
+          "three_host_measured_differences": [
+            {
+              "index": 0,
+              "original_CPU_activation": "gelu_pytorch_tanh",
+              "CPU_FP16_vs_NPU_encoder": {
+                "max_abs": 4.1875,
+                "mean_abs": 0.009256323799490929,
+                "RMS": 0.02481937939061985,
+                "nonzero_count": 1110911
+              },
+              "CPU_FP16_vs_NPU_projector": {
+                "max_abs": 0.27734375,
+                "mean_abs": 0.0009176593157462776,
+                "RMS": 0.002370568375676105,
+                "nonzero_count": 3441474
+              },
+              "actual_A100_FP16_vs_NPU_encoder": {
+                "max_abs": 20.5,
+                "mean_abs": 0.0211025457829237,
+                "RMS": 0.09394124035653738,
+                "nonzero_count": 1136230
+              },
+              "actual_A100_FP16_vs_NPU_projector": {
+                "max_abs": 1.27294921875,
+                "mean_abs": 0.002120762364938855,
+                "RMS": 0.009319455557487593,
+                "nonzero_count": 3515883
+              },
+              "actual_A100_raw": "In this image we can see a poster with some text and images.",
+              "actual_NPU_raw": "In this image we can see a poster with some text and images.",
+              "same_raw": true
+            },
+            {
+              "index": 1,
+              "original_CPU_activation": "gelu_pytorch_tanh",
+              "CPU_FP16_vs_NPU_encoder": {
+                "max_abs": 0.75,
+                "mean_abs": 0.004824344534426928,
+                "RMS": 0.008704577154717045,
+                "nonzero_count": 1094637
+              },
+              "CPU_FP16_vs_NPU_projector": {
+                "max_abs": 0.048828125,
+                "mean_abs": 0.0004741771554108709,
+                "RMS": 0.0008131656553432043,
+                "nonzero_count": 3382110
+              },
+              "actual_A100_FP16_vs_NPU_encoder": {
+                "max_abs": 6.5625,
+                "mean_abs": 0.008157504722476006,
+                "RMS": 0.020809869272189724,
+                "nonzero_count": 1114683
+              },
+              "actual_A100_FP16_vs_NPU_projector": {
+                "max_abs": 0.427734375,
+                "mean_abs": 0.0008104819571599364,
+                "RMS": 0.0019478383454867697,
+                "nonzero_count": 3438774
+              },
+              "actual_A100_raw": "In this image we can see a plant with flowers. In the background there is a wall and a door.",
+              "actual_NPU_raw": "In this image we can see a plant with flowers. In the background there is a wall and a door.",
+              "same_raw": true
+            },
+            {
+              "index": 2,
+              "original_CPU_activation": "gelu_pytorch_tanh",
+              "CPU_FP16_vs_NPU_encoder": {
+                "max_abs": 6.375,
+                "mean_abs": 0.00761156203225255,
+                "RMS": 0.02241889263888554,
+                "nonzero_count": 1109866
+              },
+              "CPU_FP16_vs_NPU_projector": {
+                "max_abs": 0.4296875,
+                "mean_abs": 0.000755714310798794,
+                "RMS": 0.0021405332339359214,
+                "nonzero_count": 3423550
+              },
+              "actual_A100_FP16_vs_NPU_encoder": {
+                "max_abs": 20.25,
+                "mean_abs": 0.013870874419808388,
+                "RMS": 0.05836390956673359,
+                "nonzero_count": 1132062
+              },
+              "actual_A100_FP16_vs_NPU_projector": {
+                "max_abs": 1.642578125,
+                "mean_abs": 0.0013989086728543043,
+                "RMS": 0.005694907956374775,
+                "nonzero_count": 3493654
+              },
+              "actual_A100_raw": "In this image we can see a web page.",
+              "actual_NPU_raw": "In this image we can see a web page.",
+              "same_raw": true
+            }
+          ],
+          "disclosure": "Original native SDPA/FP16 and gelu_pytorch_tanh remain in official inference. All CPU/actual-A100 control outputs here are numerical diagnostics, not new910B scores or a replacement for fresh3/formal200. Nonzero differences remain and are explicitly retained; no formula/precision/mask/budget changed to force agreement.",
+          "no_bitwise_equivalence_or_eliminated_difference_or_native_lowbit_claim": true,
+          "source_report": "/root/projects/comperror/workspace/reports/google_paligemma2-10b-mix-448/image-text-to-text/20261104_114042",
+          "source_proof_sha256": "2fb9cf26e8b55499a2da61f59d851071f5a432e2548bfb81f812f8100a72f36d"
+        }
+      },
+      "evidence_dir": "workspace/diagnostics/model_runs"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.1597,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

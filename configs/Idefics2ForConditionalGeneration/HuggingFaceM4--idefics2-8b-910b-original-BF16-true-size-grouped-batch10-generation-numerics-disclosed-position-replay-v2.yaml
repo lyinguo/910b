@@ -1,0 +1,54 @@
+{
+  "name": "HuggingFaceM4--idefics2-8b-910b-original-grouped-generation",
+  "description": "Original own BF165-image true size groups within batches10; full2048greedy/cache; native NPU.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+    "download": false,
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false
+  },
+  "model": {
+    "name": "HuggingFaceM4/idefics2-8b",
+    "adapter": "universal_eval/model/adapters/idefics2_grouped_disclosed_910b_adapter.py:Idefics2GroupedDisclosed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics2ForConditionalGeneration/HuggingFaceM4/idefics2-8b",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        6
+      ],
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/idefics2_generative_original_source_cast_preflight_20261102/20261101_161552_725329/HuggingFaceM4_idefics2-8b/review.json",
+      "protocol_sha256": "5959ec6c1b1db1c7ae9ff1067e0983315180286bf85d6faaec91d3f5c7c44860",
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/idefics2_grouped_original_visual_numerics_20261102/20261101_163241_407467/audit.json",
+      "native_numerical_review_sha256": "04c814e32898354d79df038502d3879c17780ae7cb2c96749c7df34cef46af86"
+    }
+  },
+  "algorithm": {
+    "name": "idefics2_original_grouped_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.87,
+    "threshold": 0.05
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

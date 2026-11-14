@@ -1,0 +1,56 @@
+{
+  "name": "01-ai--Yi-VL-34B-910b",
+  "description": "Ascend 910B BF16 reference computation, historical full-option mean log-probability protocol",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "01-ai/Yi-VL-34B",
+    "adapter": "universal_eval/model/adapters/yivl34b_910b_adapter.py:YiVL34B910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/01-ai/Yi-VL-34B",
+    "download": false,
+    "kwargs": {
+      "torch_dtype": "bfloat16",
+      "scoring": "discriminative",
+      "npu_devices": [
+        0,
+        1
+      ],
+      "max_new_tokens": 128,
+      "evidence_dir": "workspace/diagnostics/model_runs"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "progress_interval": 1
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.76,
+    "threshold": 0.05,
+    "gap_mode": "absolute",
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "google--gemma-3n-E4B-original-Greedy-HighTen-BF16-2048-v9-capacity-recovered-complete-failure-records-1605-20261113",
+  "description": "Resource-guard retry with complete real failure records. Original model computation, 2048 budget, BF16, serial1, native cache and strict scoring unchanged. New genuine3, then approved NEWfresh3/fixed200 and all independent gates before any publication.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "google/gemma-3n-E4B",
+    "adapter": "universal_eval/model/adapters/gemma3n_E4B_actual_original_HighTen_BF16_native_v5_complete_failure_records_1605_20261113_adapter.py:Gemma3nOriginalHighTenE4B",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3nForConditionalGeneration/google/gemma-3n-E4B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/E4B_capacity_recovery_complete_failure_records_continuation_v9_1605_20261113/protocol_v9_complete_failure_records.json",
+      "protocol_sha256": "f78dbf3fc4844404e444a95274ad6be1036025143afcdf3bc1a3bed5e2e4e557",
+      "protocol": {
+        "model_id": "google/gemma-3n-E4B"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "gemma3n_E4B_current_HighTen_native_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.31,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,2 @@
+# Preserve SHA-bound existing source/config bytes exactly, including original LF/CRLF.
+* -text

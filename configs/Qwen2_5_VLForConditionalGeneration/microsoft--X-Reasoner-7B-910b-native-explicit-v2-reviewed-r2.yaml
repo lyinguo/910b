@@ -1,0 +1,97 @@
+{
+  "name": "microsoft--X-Reasoner-7B-910b-native-explicit-v2-reviewed-r2",
+  "description": "Exact existing Qwen2.5-VL BF16 source tensors on NPU; own complete local tokenizer, original chat template, own dynamic-resolution image processor and original greedy token budget. Original constrained one-letter choice protocol is preserved only where the original adapter requires it. No downloads or model/data substitutes. Full images, tokens, M-RoPE, outputs, kernel trace and independent metrics retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "microsoft/X-Reasoner-7B",
+    "adapter": "universal_eval/model/adapters/qwen25vl_reviewed_910b_adapter.py:Qwen25VLReviewed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/microsoft/X-Reasoner-7B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 2048,
+      "generation_mode": "greedy",
+      "resource_sha256": {
+        "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+        "chat_template.json": "94174d7176c52a7192f96fc34eb2cf23c7c2059d63cdbfadca1586ba89731fb7",
+        "config.json": "619f6c8b180c811d1b515c5f4351ace1ef327881091050874acbe9264265794f",
+        "generation_config.json": "434676baf6b0e9da847d0dc8b274a77182960cb12a052a4973befe35c7a40307",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model.safetensors.index.json": "b6b7574c2113fc1bbdff2b42df2c315d9edba2933bc37d01c132a52517882ec7",
+        "preprocessor_config.json": "c1c9d43adb750cc52f317b130734fefa8edba78a5814066f6c10ecc1826e98af",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+        "tokenizer_config.json": "eac491c899ab739c577352b5c15e1e8e6f6077fa3733226d964eeb00d74d8de2",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "7cdf4e42cb7624123f89f5357553ae222aec3ce0c9c0c49abf183e2fdde06857",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "456318743a1472bddf34b6765aeb08a0bd2fcaae22c5bcf7aa883aa7ff696d3a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py": "085160680e6e00385f39b3e414e9818c7d455bcaa2efa66770b8b402cfd9b571",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "f19497685281402691f0049a0ab5be8085f92fb5c37adfcc680e4ccd17863a77",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/video_processing_qwen2_vl.py": "3ea608073d65c0d55164bd51eb829ddfde0dc9a4dcef9f87b7d7133062672d2a"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4940903808,
+          "header_sha256": "348658e0972a204912f9af64b265d90cdf85b7fcbe78db60afa09bae05218b87"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4866281424,
+          "header_sha256": "9fabab98ed756360d549a8bc1ee045508562a688c312d08ce0b06a8c6cb248a5"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4338290376,
+          "header_sha256": "a65081449d3ff4b344cee1ba703d34866898492d2dd07ee55bc9572cbba7a239"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 2438938936,
+          "header_sha256": "e5d276f3a1060046e49dac789e5b09060c9660f71ff2d5ec0d2bae8fa2d1a6f7"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Qwen2_5_VLForConditionalGeneration/microsoft--X-Reasoner-7B.yaml",
+      "original_config_sha256": "1ae59393238715f64817c13bb281142a3143fc7e8e915c973dba443c4636eb41",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

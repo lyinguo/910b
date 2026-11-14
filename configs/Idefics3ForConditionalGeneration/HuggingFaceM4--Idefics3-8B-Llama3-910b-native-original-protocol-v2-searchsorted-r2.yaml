@@ -1,0 +1,96 @@
+{
+  "name": "HuggingFaceM4--Idefics3-8B-Llama3-910b-native-original-protocol-v2-searchsorted-r2",
+  "description": "Exact existing BF16 Idefics3 checkpoint on NPU with original own template/tokenizer/image metadata and original generation protocol. PIL preserves declared LANCZOS. Original HighTen reference prompt and generation limits are preserved exactly, including the existing smol2 c500 64-token clamp and size settings. No downloads, model substitutions or invented scores. Full images, patch positions, text tokens, raw outputs and actual NPU evidence are independently verified.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceM4/Idefics3-8B-Llama3",
+    "adapter": "universal_eval/model/adapters/idefics3_searchsorted_910b_adapter.py:Idefics3Searchsorted910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/HuggingFaceM4/Idefics3-8B-Llama3",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        2
+      ],
+      "max_new_tokens": 4096,
+      "processor_protocol": "vllm_greedy",
+      "resource_sha256": {
+        "chat_template.json": "39d0fd4c64dc994ecdbae47fa55b96285dba3a09b26812c112f3465e9acd64d7",
+        "config.json": "943fff826c989b00d8646dc4d46b1ed5a1342bc4369760fa31fc82531a45c52f",
+        "generation_config.json": "cf01c95d2b5aebc3f64f8103e37538c86474a091a4a0dd30fe805b545067bde5",
+        "model.safetensors.index.json": "74dc7c10b50bea2ef86fb49ca7f16601119476e7167e920a8b8dbdb43070d2df",
+        "preprocessor_config.json": "47f094184fa3985052776c800b1cd809f709fcfb9122bde69a976dd4aa20a69a",
+        "special_tokens_map.json": "890c25f56d1cbb0f97fb47bb3b4f51c0727db2723aefb7e263d04bc7dafb2572",
+        "tokenizer.json": "c813df93a4d055a468052ffa0d6793e77b960daed2987758fb4307f79b5dbb08",
+        "tokenizer_config.json": "ee3000ee24247286f8844366a82fb325b80d36d8e0d623be7ef25d2bc7eb727c"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/modeling_idefics3.py": "ed053434f2c5347d5f56b145abea2b6b44c2a16008a68bb565aff89c55ff7bed",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py": "380aaf0761f29d3221b7b750d7585ed29ceeec36818666f6da8768d907c8592c",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/configuration_idefics3.py": "86628f41a51472a7322795162a534fb16f8439a39fdab8470fb5ee2dfeab10e2",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/image_processing_pil_idefics3.py": "c0d9480ea2a1b943aac6eac1dafbbe6d2cf20661e9d7d66727523e553a5ef8dd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/configuration_llama.py": "5e2e803d15956cdc402ab1c4a5151a899bd39ddfbecbb81181733657817aaeda",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_rope_utils.py": "9592ba129bf723ed3fa54afcc48ddd3d40d2dac2947ce5cc37803c496ca320e8"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4967932424,
+          "header_sha256": "2fbcb043299465ad7a3026414cb7cb11dce2fedb805f611b821b14694648026a"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4999803840,
+          "header_sha256": "c8e744e03178e113de32332fe6f81f12738a564dc8154561ff1f124a7bf0cde1"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4915917280,
+          "header_sha256": "8f7f3f26bcd167f3b7a52af3dc486cd669aa30ba00557b15dfd0cfb18703cf12"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 2040613728,
+          "header_sha256": "2622fd76383ebac7716aa040b43ec8faa78422bafd5293c2cad1e346aee53bae"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Idefics3ForConditionalGeneration/HuggingFaceM4--Idefics3-8B-Llama3.yaml",
+      "original_config_sha256": "38e892c64ac355bea7f4c18cfaaf6836e5d808cea5393bc7e6458914d06f592e",
+      "original_adapter_sha256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

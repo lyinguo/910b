@@ -1,0 +1,58 @@
+{
+  "name": "ibm-granite--granite-docling-258M-mlx-910b-original-HF-BF16-512-v1-0239-20261112-v2-exact-BF16-buckets-v3-exact-mixed-BF16-buckets",
+  "description": "Own original BF16 HF caption serial1/512/no-cache, own471 layout SHA mapping and exact200 original pixel/token/mask; canonical workbook task label retained, actual caption data/score unchanged. Original right bucket ranks use equivalent native BF16 comparisons, finite BF16 domain independently verified; no dtype/mask/attention/budget change. Original right bucket ranks use equivalent native BF16 comparisons, finite BF16 domain independently verified; no dtype/mask/attention/budget change.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "ibm-granite/granite-docling-258M-mlx",
+    "adapter": "universal_eval/model/adapters/granite_mlx_original_HF_BF16_v3_mixed_buckets_0239_20261112_adapter.py:GraniteMLXOriginalHFV3",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/ibm-granite/granite-docling-258M-mlx",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GraniteMLX_original_HF_BF16_native_candidate_v3_mixed_buckets_0239_20261112/protocol.json",
+      "protocol_sha256": "f193d0a72a1bdb916102d58fc8423330d0eb3564a554f4c7473604f35c57eb5d",
+      "protocol": {
+        "model_id": "ibm-granite/granite-docling-258M-mlx"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/granite_mlx_original_caption_metric_0239_20261112.py:OriginalGraniteMLXRougeL"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.183,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

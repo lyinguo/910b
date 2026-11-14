@@ -1,0 +1,93 @@
+{
+  "name": "nvidia--Cosmos-Reason1-7B-910b-native-explicit-v2-reviewed-r2",
+  "description": "Exact existing Qwen2.5-VL BF16 source tensors on NPU; own complete local tokenizer, original chat template, own dynamic-resolution image processor and original greedy token budget. Original constrained one-letter choice protocol is preserved only where the original adapter requires it. No downloads or model/data substitutes. Full images, tokens, M-RoPE, outputs, kernel trace and independent metrics retained.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "nvidia/Cosmos-Reason1-7B",
+    "adapter": "universal_eval/model/adapters/qwen25vl_reviewed_910b_adapter.py:Qwen25VLReviewed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/nvidia/Cosmos-Reason1-7B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 2048,
+      "generation_mode": "greedy",
+      "resource_sha256": {
+        "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+        "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+        "generation_config.json": "6c2953cfed29c8e1c54c9a6f7712f628af92ae63698b016141e55aa72d808e6c",
+        "model.safetensors.index.json": "f442fe7207a37695f59a543282c9a3b67c2491d0d974b4da72cbac3a109aaa45",
+        "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py": "7cdf4e42cb7624123f89f5357553ae222aec3ce0c9c0c49abf183e2fdde06857",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/processing_qwen2_5_vl.py": "456318743a1472bddf34b6765aeb08a0bd2fcaae22c5bcf7aa883aa7ff696d3a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_5_vl/configuration_qwen2_5_vl.py": "085160680e6e00385f39b3e414e9818c7d455bcaa2efa66770b8b402cfd9b571",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py": "f19497685281402691f0049a0ab5be8085f92fb5c37adfcc680e4ccd17863a77",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2_vl/video_processing_qwen2_vl.py": "3ea608073d65c0d55164bd51eb829ddfde0dc9a4dcef9f87b7d7133062672d2a"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4968243304,
+          "header_sha256": "7955ebae49f6bb727c0e8c907557fc7b29fb60da578e77160798ba7245a4dfb0"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4991495816,
+          "header_sha256": "b9676392b6df3903b528063da32323c530c03815710033bbf968cc33dc129a88"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4932751040,
+          "header_sha256": "5f1ee99f140d25c0c3ceafc669a9aafa77f56bc222bb2dc3b8440c2c6ccb3a00"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 1691924384,
+          "header_sha256": "de21a48e60099f25a7f19c0a66870cf0934fc775f19d475f84ddecd8a1c02df2"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/Qwen2_5_VLForConditionalGeneration/nvidia--Cosmos-Reason1-7B.yaml",
+      "original_config_sha256": "dd26fe95c2ea6a0376294bdda9a42d413763f2b1f13bb44eca6db882858b1fb4",
+      "original_adapter_sha256": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

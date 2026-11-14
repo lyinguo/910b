@@ -1,0 +1,61 @@
+{
+  "name": "heretic-org--gemma-3-4b-it-heretic-910b-A100-own-PrefixLM-capacity-v2-0226-20261109-formal",
+  "description": "Own Heretic original A100 text PrefixLM and FA2 BF16, original EOS1/stop106, original batch10 and output2048. Full archival evidence.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "heretic-org/gemma-3-4b-it-heretic",
+    "adapter": "universal_eval/model/adapters/heretic_vllm_A100_original_prefix_capacity_0226_20261109_adapter.py:HereticOriginalPrefixAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Unknown/heretic-org/gemma-3-4b-it-heretic",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Heretic_A100_own_original_PrefixLM_capacity_v2_compat3_0226_20261109/sanitized_own_PrefixLM_execution_protocol.json",
+      "protocol_sha256": "382da8659c0319d269538e63f5de2b0f2d76d488f887e0d44dd448b37cc6ff93",
+      "protocol": {
+        "model_id": "heretic-org/gemma-3-4b-it-heretic"
+      },
+      "npu_devices": [
+        4
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Heretic_A100_own_original_PrefixLM_capacity_v2_compat3_0226_20261109/independent_own_A100_NPU3_current_PrefixLM_review.json",
+      "numerical_review_sha256": "a87294b33e05369460c862ef38cb92a7364c0d00b61fd3ebcaae9858460fa2fe"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.8,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

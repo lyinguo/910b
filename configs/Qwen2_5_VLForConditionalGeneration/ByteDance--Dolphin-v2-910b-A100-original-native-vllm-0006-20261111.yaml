@@ -1,0 +1,55 @@
+{
+  "name": "ByteDance--Dolphin-v2-910b-A100-original-native-vllm-0006-20261111",
+  "description": "Own Dolphin-v2 original weights, original fixed MMBench inputs and native vLLM Ascend evaluation.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "ByteDance/Dolphin-v2",
+    "adapter": "universal_eval/model/adapters/dolphin_v2_A100_native_vllm_0006_20261111_adapter.py:DolphinV2Native910B",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2_5_VLForConditionalGeneration/ByteDance/Dolphin-v2",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "ByteDance/Dolphin-v2"
+      },
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DolphinV2_A100_original_native_vllm_compat3_0006_20261111/protocol.json",
+      "protocol_sha256": "557355ed60b83a5a7cbaceec674b9bf37bb7cc3b56767cf6f22bf23635ef7463"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.29,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

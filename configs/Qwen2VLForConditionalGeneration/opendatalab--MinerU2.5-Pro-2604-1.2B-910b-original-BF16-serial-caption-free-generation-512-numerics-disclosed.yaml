@@ -1,0 +1,59 @@
+{
+  "name": "opendatalab--MinerU2.5-Pro-2604-1.2B-910b-original-BF16-serial-caption-free-generation-512-numerics-disclosed",
+  "description": "Original MinerUStrictBatch4 source actually calls serial1. Own681 stored BF16 tensors and original tied head. Original model-constructor-derived greedy512/SDPA/cacheTrue/eos151645/pad151643, own slow settings resolved to original native uint8 TorchVision processing and own chat template, actual3-axis M-RoPE. No option grammar, no own generation-file substitution, no model/data downloads. Authorized MCv2 strict full-denominator Accuracy, original historical legacy Accuracy diagnostic kept separately. Full native151936 vocabulary logits and true visual/position/cache/57activation evidence independent verification.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "opendatalab/MinerU2.5-Pro-2604-1.2B",
+    "adapter": "universal_eval/model/adapters/mineru_original_disclosed_910b_adapter.py:MinerUOriginalDisclosed910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen2VLForConditionalGeneration/opendatalab/MinerU2.5-Pro-2604-1.2B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/mineru_original_serial_native_preflight_20261102/20261101_191514_346370/protocol.json",
+      "protocol_sha256": "933f440f4baf3d983e3f1291bf720a0b45125c9c3f7355d1adb07df8dfa7b561",
+      "npu_devices": [
+        5
+      ],
+      "numerical_review_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/mineru_original_numerical_review_20261102/20261101_192426_410511/review.json",
+      "numerical_review_sha256": "95acd5cb80ea1892d286b8576daf01bfca20ea8fe8e632d11b8db0729d4130d3"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.315,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy",
+    "comparison_mode": "absolute"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

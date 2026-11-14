@@ -1,0 +1,93 @@
+"""Independent full HoVLE dual-stream original generation evidence verifier."""
+import sys,os,pathlib,json,re,collections
+os.environ['HF_HUB_OFFLINE']='1';os.environ['TRANSFORMERS_OFFLINE']='1'
+import torch,numpy as np
+from PIL import Image
+from safetensors import safe_open
+sys.path.insert(0,str(pathlib.Path(__file__).resolve().parent))
+from hovle_independent_cpu_910b import sha,fp,tr,arrays,independent_pixels,HoVLEOwnSentencePieceReference
+from strict_mc_independent_reference_910b import independent_choice
+torch.set_num_threads(4)
+folder=pathlib.Path(sys.argv[1]).resolve();count=int(sys.argv[2]);assert count in [3,200]
+assert {q.name for q in folder.iterdir()}=={'eval_report.json','sample_inputs.jsonl','sample_outputs.jsonl','run.log','operator_lineage.json'}
+report=json.loads((folder/'eval_report.json').read_text());cfg=report['pipeline_config'];kw=cfg['model']['kwargs'];assert sha(kw['protocol_file'])==kw['protocol_sha256'];p=json.loads(pathlib.Path(kw['protocol_file']).read_text());wp=pathlib.Path(p['weight_path']);line=json.loads((folder/'operator_lineage.json').read_text())['actual_execution'];dev='npu:'+str(kw['npu_devices'][0]);assert p['model_id']==cfg['model']['name']=='OpenGVLab/HoVLE-HD' and cfg['model']['model_path']==str(wp) and folder.parent.parent.name=='OpenGVLab_HoVLE-HD' and folder.parent.name==cfg['task_type']=='image-text-to-text' and re.fullmatch(r'\d{8}_\d{6}',folder.name)
+assert cfg['sample_count']==count and cfg['sample_range']=='0:'+str(count-1) and cfg['algorithm']['batch_size']==10 and cfg['algorithm']['adapter']=='universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2' and cfg['algorithm']['kwargs']=={'extract_answer':True} and cfg['metrics']['override']==['Strict_MC_Accuracy'] and cfg['metrics']['adapters']==['universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy'] and cfg['metrics']['include_failed_predictions']
+assert cfg['output']=={'reports_dir':'workspace/reports','layout':'model_task_timestamp','evidence_dir':'workspace/diagnostics/model_runs','timezone':'Asia/Hong_Kong','verbose':True} and cfg['data']['preprocess'] and not cfg['data']['filter_empty'] and not cfg['data']['apply_template'] and not cfg['data']['download'] and not cfg['model']['download']
+assert line['protocol']=='HoVLE_HD_original_BF16_8plus24_native_generation' and line['protocol_sha256']==kw['protocol_sha256'] and line['source_dtype']=='F32' and line['runtime_dtype']=='BF16' and line['weight_tensor_count']==236 and line['all_expected_parameters_loaded'] and line['original_untied_output_head_preserved'] and line['own_vocab_size']==92553 and line['own_BOS_ID']==1 and line['original_EOS_ID']==92542 and line['native_cache_slots']==32 and line['low_image_tokens_per_tile']==256 and line['HD_image_tokens_per_tile']==1024 and line['actual_language_sample_batch_size']==1 and line['outer_algorithm_metadata_batch_size']==10 and line['original_max_new_tokens']==2048 and line['original_HD_decode_position_repeats_last_HD_prefill_position'] and line['original_HD_mask_not_extended_by_GenerationMixin'] and set(line['module_placements'].values())=={dev} and line['HF32_enabled']=={'conv':False,'matmul':False}
+gen=line['resolved_generation_config'];assert gen['use_cache'] is True and gen['max_new_tokens']==2048 and gen['do_sample'] is False and gen['num_beams']==1 and gen['repetition_penalty']==1 and gen['temperature']==0 and gen['eos_token_id']==92542 and gen['forced_eos_token_id'] is None and gen['forced_bos_token_id'] is None
+for n,d in dict(p['runtime_sha256'],**p['evidence_sha256']).items():assert sha(n)==d
+for n,d in p['resource_sha256'].items():assert pathlib.Path(n).name==n and sha(wp/n)==d
+expected={r['source_key']:r for r in p['source_tensor_records']};loading=pathlib.Path(line['weight_loading_evidence']);loaded={r['source_key']:r for r in json.loads(loading.read_text())};assert len(expected)==len(loaded)==236
+for file,header in p['source_files'].items():
+ assert sha(wp/file)==header['sha256'] and (wp/file).stat().st_size==header['bytes']
+ with safe_open(str(wp/file),framework='pt',device='cpu') as f:
+  for k in f.keys():
+   x=f.get_tensor(k);z=x.bfloat16();r=loaded[k];e=expected[k];assert x.dtype==torch.float32 and torch.equal(x,z.float()) and str(x.dtype)==r['source_dtype'] and r['runtime_dtype']=='torch.bfloat16' and r['device']==dev and list(x.shape)==r['shape']==e['shape'] and r['source_file']==e['source_file']==file and r['target_key']==k and fp(x)==e['source_full_sha256']==r['source_sha256'] and fp(z)==e['original_BF16_cast_full_sha256']==r['original_BF16_cast_sha256']==r['actual_NPU_sha256'] and r['original_cast_changed_elements']==r['original_nonzero_underflow']==0
+embed_key='embedding_model.llm_text_embeddings.weight'; embed_file=expected[embed_key]['source_file']
+with safe_open(str(wp/embed_file),framework='pt',device='cpu') as ef:own_original_text_embeddings=ef.get_tensor(embed_key).bfloat16()
+inv=1.0/(1000000**(torch.arange(0,128,2).float()/128));freq=torch.outer(torch.arange(32768).float(),inv);emb=torch.cat((freq,freq),-1);cos=emb.cos();sin=emb.sin();assert len(line['original_32_analytic_rotary_buffers'])==32
+for r in line['original_32_analytic_rotary_buffers']:
+ assert r['stream'] in ['holistic','language'] and r['class']==('InternLM2RotaryEmbedding' if r['stream']=='holistic' else 'InternLM2DynamicNTKScalingRotaryEmbedding') and r['dim']==128 and r['base']==1000000 and r['factor']==(None if r['stream']=='holistic' else 2) and r['max_seq_len_cached']==32768 and r['buffers']=={'inv_freq':tr(inv),'cos_cached':tr(cos),'sin_cached':tr(sin)}
+assert sha(p['input_audit'])==p['input_audit_sha256'];audit=json.loads(pathlib.Path(p['input_audit']).read_text());records={r['index']:r for r in audit['records']};assert sorted(records)==list(range(200));own=HoVLEOwnSentencePieceReference(wp)
+data=[json.loads(x) for x in pathlib.Path(p['dataset_path']).read_text().splitlines()];assert len(data)==4329 and sha(p['dataset_path'])==p['dataset_sha256'];old=json.loads(pathlib.Path(p['reference_report']).read_text());assert sha(p['reference_report'])==p['reference_report_sha256'] and len(old['detailed_results'])==200
+ins=[json.loads(x) for x in (folder/'sample_inputs.jsonl').read_text().splitlines()];outs=[json.loads(x) for x in (folder/'sample_outputs.jsonl').read_text().splitlines()];details=report['detailed_results'];trace_path=pathlib.Path(line['per_sample_evidence']);trace=[json.loads(x) for x in trace_path.read_text().splitlines()];acts_path=pathlib.Path(line['activation_execution_trace']);acts=[json.loads(x) for x in acts_path.read_text().splitlines()];assert len(ins)==len(outs)==len(details)==len(trace)==len(acts)==count
+for rows in [ins,outs,details]:assert [r['index'] for r in rows]==list(range(count))
+assert sorted(x['index'] for x in trace)==list(range(count));by={x['index']:x for x in trace};actby={x['index']:x for x in acts};order=[]
+for start in range(0,count,10):
+ groups=collections.OrderedDict()
+ for i in range(start,min(start+10,count)):groups.setdefault(tuple(v//64 for v in records[i]['original_size']),[]).append(i)
+ for group in groups.values():order+=group
+assert [x['index'] for x in trace]==order and len(line['activation_modules'])==33
+external={str(q):sha(q) for q in [loading,trace_path,acts_path,pathlib.Path(line['profiler_trace']),pathlib.Path(line['native_GELU_probe']['path']),pathlib.Path(line['generation_progress'])]};correct=0;empty=[];invalid=[];truncated=[];steps_total=0;scores=[];tilehist=collections.Counter();norm_differences=[]
+for i,(a,b,r) in enumerate(zip(ins,outs,details)):
+ e=by[i];rec=records[i];assert e['error'] is None and e['actual_original_model_prompt']==rec['actual_original_model_prompt'] and sha(rec['media_path'])==rec['source_image_sha256']==e['source_image_sha256'] and a['prompt']==r['prompt']==rec['original_prompt'] and a['reference']==b['reference']==r['reference']==rec['reference']
+ q=pathlib.Path(e['sample_execution']);assert sha(q)==e['sample_execution_sha256'];g=json.loads(q.read_text());external[str(q)]=sha(q);assert sha(g['archive'])==g['archive_sha256'];external[g['archive']]=sha(g['archive']);t=arrays(g['archive'],g['tensor_records'])
+ with Image.open(rec['media_path']) as im:px,grid=independent_pixels(im.convert('RGB'))
+ assert tr(px)==rec['original_pixel_values']==g['CPU_pixel_values'] and grid==rec['original_grid']==g['original_grid'];M=px.shape[0];tilehist[M]+=1;assert g['actual_tile_batch_size']==M and g['actual_language_sample_batch_size']==1 and torch.equal(t['actual_pixels'],px.bfloat16()) and t['actual_vision_patches_plus_position'].shape==(M,1024,2048)
+ low=own.encode(rec['original_low_query']);hd=own.encode(rec['original_hd_query']);assert low==rec['original_low_input_ids'] and hd==rec['original_hd_input_ids'] and g['low_input_ids']==[low] and g['HD_input_ids']==[hd] and low[0]==hd[0]==1 and low.count(92546)==M*256 and hd.count(92546)==M*1024
+ lo=torch.tensor(low)==92546;hi=torch.tensor(hd)==92546;assert torch.equal(t['actual_HD_input_hidden'][0,hi],t['actual_vision_patches_plus_position'].reshape(-1,2048));assert torch.equal(t['actual_HD_input_hidden'][0,~hi],own_original_text_embeddings[torch.tensor(hd)[~hi]])
+ # Independent original post-attention2x2 packing, then actual native projector.
+ hdlast=t['actual_HD_final_hidden'];img=hdlast[0,hi].reshape(M,32,32,2048);packed=img.reshape(M,16,2,16,2,2048).permute(0,1,3,2,4,5).reshape(M*256,8192);assert torch.equal(packed,t['actual_pixel_shuffle_output']) and t['actual_projected_low_visual'].shape==(M*256,2048)
+ before=torch.empty(1,len(low),2048,dtype=torch.bfloat16);before[0,~lo]=hdlast[0,~hi];before[0,lo]=t['actual_projected_low_visual'];assert torch.equal(before,t['actual_before_original_normalize']) and g['actual_visual_injection_and_original_normalization_verified']
+ # The native normalization division is observed bitwise on NPU by the adapter.
+ # Independent CPU diagnostics retain its real arithmetic difference explicitly.
+ cpu_norm=before.float().norm(dim=-1,keepdim=True);native_norm=t['actual_original_prefix_norm'];norm_differences.append({'index':i,'norm_max_abs_CPU_FP32_vs_NPU_BF16':float((cpu_norm-native_norm.float()).abs().max()),'normalized_prefix_max_abs_CPU_FP32_vs_NPU_BF16':float((before.float()/cpu_norm-t['actual_LM_normalized_prefix'].float()).abs().max())});assert torch.isfinite(native_norm).all() and bool((native_norm>0).all()) and torch.isfinite(t['actual_LM_normalized_prefix']).all()
+ tokens=g['generation_token_ids'];steps=g['steps'];assert 1<=len(tokens)==len(steps)<=2048 and g['full_generation_output_ids']==[low+tokens] and all(v!=92542 for v in tokens[:-1]) and (tokens[-1]==92542 or len(tokens)==2048)
+ act=actby[i];assert act['error'] is None and act['device']==dev and act['dtype']=='torch.bfloat16' and act['language_sample_batch_size']==1 and act['tile_batch_size']==M and act['decoder_forwards']==len(tokens) and act['module_call_counts']==g['native_activation_call_counts'] and set(act['module_call_counts'])==set(line['activation_modules'])
+ for name,calls in act['module_call_counts'].items():assert calls==(1 if 'pixel_shuffle_proj' in name else len(tokens))
+ for n,(step,token) in enumerate(zip(steps,tokens),1):
+  assert step['step']==n and len(step['layers'])==len(step['cache'])==32
+  if n>1:assert torch.equal(t['%04d_decode_embedding'%n],own_original_text_embeddings[tokens[n-2]][None,None])
+  for stream,base,N in [('holistic',len(hd),8),('language',len(low),24)]:
+   total=base+n-1;Q=base if n==1 else 1;pos=torch.arange(base) if n==1 else torch.tensor([base-1 if stream=='holistic' else total-1]);assert step[stream+'_positions']==[pos.tolist()]
+   qpos=torch.arange(total-Q,total);fill=-65504. if stream=='holistic' else torch.finfo(torch.bfloat16).min;cm=torch.where(qpos[:,None]>=torch.arange(total)[None,:],torch.tensor(0.,dtype=torch.bfloat16),torch.tensor(fill,dtype=torch.bfloat16))[None,None];assert tr(cm)==step[stream+'_mask'];assert torch.equal(t['%04d_%s_cos'%(n,stream)],cos[pos].bfloat16()) and torch.equal(t['%04d_%s_sin'%(n,stream)],sin[pos].bfloat16())
+   layers=[v for v in step['layers'] if v['stream']==stream];caches=[v for v in step['cache'] if v['stream']==stream];assert len(layers)==len(caches)==N
+   for j,(layer,cache) in enumerate(zip(layers,caches)):assert layer['layer']==cache['layer']==j and layer['device']==cache['device']==dev and layer['dtype']==cache['dtype']=='torch.bfloat16' and layer['past_length']==(0 if n==1 else total-1) and layer['actual_same_stream_mask_and_positions_equal'] and cache['key_shape']==cache['value_shape']==[1,8,total,128] and cache['original_tuple_type'] and cache['actual_NPU_full_prior_key_value_prefix_equal']
+  logits=t['%04d_logits'%n];assert logits.shape==(1,92553) and logits.dtype==torch.float32 and torch.isfinite(logits).all() and tr(logits)==step['full_next_token_logits'] and int(logits.argmax(-1))==token==step['next_token_ID']
+ decoded=own.decode(tokens);raw=decoded.split('<|im_end|>')[0].strip();choice=independent_choice(raw);prediction=choice if choice is not None else raw;assert decoded==g['full_decoded_output_before_original_strip'] and raw==g['raw_output']==e['raw_output']==r['raw_output']==b['raw_output'] and tokens==e['generation_token_ids'] and r['prediction']==b['prediction']==prediction and b['error'] is None and r['extra']['execution']==e
+ hit=int(choice is not None and choice==str(r['reference']).strip().upper());scores.append(hit);correct+=hit;steps_total+=len(tokens)
+ if not raw:empty.append(i)
+ if choice is None:invalid.append(i)
+ if len(tokens)>=2048:truncated.append(i)
+ assert e['truncated']==g['truncated']==(len(tokens)>=2048)
+score=correct/count;assert report['metrics']['Strict_MC_Accuracy']==report['summary']['current_score']==score and report['summary']['primary_metric']=='Strict_MC_Accuracy' and report['statistics']['error_count']==0 and report['statistics']['total_samples']==count and report['statistics']['batch_size']==10 and len(external)==2*count+6
+probe=line['native_GELU_probe'];assert sha(probe['path'])==probe['sha256'] and probe['device']==dev;torch.set_num_threads(probe['CPU_threads'])
+with np.load(probe['path'],allow_pickle=False) as z:
+ for dtype,label in [(torch.float32,'FP32'),(torch.bfloat16,'BF16')]:
+  x=torch.linspace(-8,8,20001).to(dtype);assert np.array_equal(z[label+'_input_bytes'],x.view(torch.uint8).numpy())
+  for mode in ['none','tanh']:
+   cpu=torch.nn.functional.gelu(x,approximate=mode);native=torch.from_numpy(z[label+'_NPU_'+mode+'_bytes'].copy()).view(dtype);assert np.array_equal(z[label+'_CPU_'+mode+'_bytes'],cpu.view(torch.uint8).numpy()) and bool(torch.isfinite(native).all()) and float((native-cpu).abs().max())==probe['modes'][label][mode]['max_abs_CPU_same_declared']
+profile=json.loads(pathlib.Path(line['profiler_trace']).read_text());events=profile if isinstance(profile,list) else profile['traceEvents'];hw={e['pid'] for e in events if e.get('name')=='process_name' and e.get('args',{}).get('name')=='Ascend Hardware'};kernels=[e for e in events if e.get('pid') in hw and e.get('ph')=='X' and str(e.get('args',{}).get('Task Type','')).startswith('KERNEL')];assert len(kernels)>100
+proof={'passed':True,'report_dir':str(folder),'sample_count':count,'Accuracy':score,'metrics':{'Strict_MC_Accuracy':score},'sample_Accuracy':scores,'correct':correct,'error_indices':[],'empty_indices':empty,'invalid_indices':invalid,'truncated_indices':truncated,'index_duplicates':False,'historical_record_reuse':False,'inference_reused_for_verifier_repair':'--reuse-for-verifier-repair' in sys.argv,'all236_source_F32_original_BF16_cast_actual_NPU_SHA_verified':True,'all_expected_actual_HD_visual_and_low_projected_features_injected':True,'all8_Holistic_plus24_LM_original_cache_positions_masks_RoPE_and_full92553_argmax_steps_verified':steps_total,'actual_activation_module_count':33,'all33_activation_counts_verified':True,'original_HD_decode_last_prefill_position_and_unextended_mask_preserved':True,'original_language_sample_batch_size':1,'original_outer10_size_group_execution_order':order,'original_tile_batch_histogram':dict(tilehist),'original_EOS92542_budget2048_and_native_generation_preserved':True,'own_SentencePiece_and_cleanup_output_decode_verified':True,'NPU_profiler_kernel_events':len(kernels),'profiler_scope':'First real native prefill only, complete per-step observations independent','external_evidence_sha256':external,'report_sha256':{q.name:sha(q) for q in folder.iterdir()},'protocol_file':kw['protocol_file'],'protocol_sha256':kw['protocol_sha256'],'actual_prefix_norm_CPU_FP32_diagnostics_only':norm_differences,'precision_disclosure':line['precision_disclosure'],'pre_numerical_review_real3_not_approved':True}
+assert 'native_numerical_review' in kw
+assert 'inactive_import_guard' in kw
+gp=pathlib.Path(kw['inactive_import_guard']);assert sha(gp)==kw['inactive_import_guard_sha256'];guard=json.loads(gp.read_text());assert guard['passed'] and guard['zero_drop_path_and_zero_LoRA_configuration'] and guard['all16_holistic_drop_paths_are_original_nn_Identity'] and guard['no_DropPath_or_peft_standin_defined_or_installed'] and guard['new_pixels_all200_exact']
+nrp=pathlib.Path(kw['native_numerical_review']);assert sha(nrp)==kw['native_numerical_review_sha256'];nr=json.loads(nrp.read_text());assert nr==line['native_numerical_review'] and nr['official_original_BF16_dual_stream_generation_unchanged'] and nr['CPU_FP32_controls_diagnostic_only'] and nr['all_CPU_NPU14_control_parameter_SHA_equal'] and nr['full_HD_inputs_no_truncation'] and nr['native_operator_formulas_unchanged']
+ev=dict(nr['evidence_sha256']);ev[str(nrp)]=sha(nrp);ev[str(gp)]=sha(gp)
+for path,digest in ev.items():assert pathlib.Path(path).resolve().is_relative_to('/root/projects/comperror/workspace/diagnostics') and sha(path)==digest
+progress=[json.loads(x) for x in pathlib.Path(line['generation_progress']).read_text().splitlines()];completed=[v for v in progress if v['event']=='sample_complete'];assert [v['index'] for v in completed]==order
+proof.update(native_numerical_difference_retained_and_disclosed=True,pre_numerical_review_real3_not_approved=False,all_original_HD_text_and_decode_embedding_rows_independently_replayed=True,hovle_numerical_diagnostic_evidence_sha256=ev,native_numerical_review=nr,static_CPU_NPU14_controls_from_prior_real3_not_recomputed_per_report=True)
+
+dest=loading.parent/'independent_report_verification.json';assert not dest.exists() or json.loads(dest.read_text())==proof
+if not dest.exists():dest.write_text(json.dumps(proof,ensure_ascii=False,indent=2))
+print(json.dumps(proof,ensure_ascii=False,indent=2))

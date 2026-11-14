@@ -1,0 +1,61 @@
+{
+  "name": "ibm-granite--granite-docling-258M-mlx-hf-910b-original-A100-vLLM-BF16-2048-v4-numerics-disclosed-2109-20261111",
+  "description": "Own original Granite Docling A100 mathematical and logical-scheduler reference on Ascend BF16. Full own471 logical/333 physical tensors, own100352 independent head, original10/2048/8192 and16-token prefix cache. No paged-cache acceleration claim.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "ibm-granite/granite-docling-258M-mlx-hf",
+    "adapter": "universal_eval/model/adapters/granite_docling_own_vllm_native_v3_async_config_2109_20261111_adapter.py:GraniteDoclingOriginalA1002109Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/ibm-granite/granite-docling-258M-mlx-hf",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GraniteDocling_native_candidate_v3_async_config_2109_20261111/execution_protocol.json",
+      "protocol_sha256": "8ecd1bced8d518f638cb750c982d715917401e18fcf906cca062ed0534f8508f",
+      "protocol": {
+        "model_id": "ibm-granite/granite-docling-258M-mlx-hf"
+      },
+      "npu_devices": [
+        4
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GraniteDocling_final_numerics_disclosed_v4_2109_20261111/independent_numeric_review_v2_cold_context.json",
+      "numerical_review_sha256": "3a9227c4ec112c2cddae0f833c33099cd251015fd010954f92394a342b4bcaf2"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.175,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

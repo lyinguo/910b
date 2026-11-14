@@ -1,0 +1,56 @@
+{
+  "name": "HuggingFaceM4--idefics2-8b-base-910b-original-first-letter-score",
+  "description": "Original base mc_score, full BF16 log_softmax of first candidate letter token, no free generation.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+    "download": false,
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false
+  },
+  "model": {
+    "name": "HuggingFaceM4/idefics2-8b-base",
+    "adapter": "universal_eval/model/adapters/idefics2_base_disclosed_v2_910b_adapter.py:Idefics2BaseDisclosedV2_910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics2ForConditionalGeneration/HuggingFaceM4/idefics2-8b-base",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        5
+      ],
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/idefics2_base_original_preflight_20261101/20261101_133706_138395/review.json",
+      "protocol_sha256": "e648072b99ee24be5994f8fb9ff313b522f4ef0701e1d1513708544d9882b65d",
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/idefics2_base_original_visual_numerics_20261101/20261101_135710_377856/audit.json",
+      "native_numerical_review_sha256": "307c1b62722d3a0855b710fbcdd82baf23ae4798b1ed2c89cf5cf1532e0bc5e6",
+      "log_softmax_reference_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/idefics2_base_BF16_log_softmax_reference_review_20261101/20261101_140028_419690/audit.json",
+      "log_softmax_reference_review_sha256": "f16b2de4a88ff0c23a00335abf50ad89f095148bb49e4e8b6fb452102438bd3a"
+    }
+  },
+  "algorithm": {
+    "name": "idefics2_original_first_token_mc_score",
+    "batch_size": 8,
+    "kwargs": {
+      "extract_answer": false
+    },
+    "adapter": "universal_eval/algorithm/idefics2_base_original_score_910b.py:Idefics2BaseOriginalScore910B"
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.605,
+    "threshold": 0.05
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

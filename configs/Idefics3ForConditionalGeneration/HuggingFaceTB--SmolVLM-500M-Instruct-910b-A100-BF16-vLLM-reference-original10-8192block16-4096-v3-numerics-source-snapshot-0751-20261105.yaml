@@ -1,0 +1,61 @@
+{
+  "name": "HuggingFaceTB--SmolVLM-500M-Instruct-910b-A100-BF16-vLLM-reference-original10-8192block16-4096-v3-numerics-source-snapshot-0751-20261105",
+  "description": "Own actual A100 BF16 vLLM mathematical/scheduling reference, original10/8192/16/4096, own fullchat singleBOS and exact original PIL10.4 uint8 pass order. Not native vLLM Ascend128 paged acceleration. No source/weight/task/data/reference/budget substitution. Actual BF16 CPU/A100/NPU differences and independent same-input same-rounded-weight FP32 controls remain nonzero; these static visual-only diagnostics do not replace official BF16 generation.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "adapter": "universal_eval/model/adapters/smol500_vllm_A100_original_0751_20261105_adapter.py:Smol500OriginalA1000751Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/HuggingFaceTB/SmolVLM-500M-Instruct",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Smol500_native_implementation_0751_20261105/model_candidate_v1/sanitized_own_original_execution_protocol_v1.json",
+      "protocol_sha256": "9c0f0e1b77799ac831fbafc0655353aaf31607badc52f10e6579fdd62feb0cc8",
+      "protocol": {
+        "model_id": "HuggingFaceTB/SmolVLM-500M-Instruct"
+      },
+      "npu_devices": [
+        1
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Smol500_native_implementation_0751_20261105/model_candidate_disclosed_v3_source_snapshot/independent_numeric_review.json",
+      "numerical_review_sha256": "c8d9ab0c32469cb832e2f7c05f5bebecf87f5b071bd03c17da336a1d77ac88dc"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.64,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

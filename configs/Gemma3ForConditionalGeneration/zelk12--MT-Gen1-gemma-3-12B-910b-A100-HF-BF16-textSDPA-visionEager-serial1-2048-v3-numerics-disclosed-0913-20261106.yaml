@@ -1,0 +1,63 @@
+{
+  "name": "zelk12--MT-Gen1-gemma-3-12B-910b-actual-A100-HF-BF16-textSDPA-visionEager-serial1-max2048-identity-v2-numerics-disclosed",
+  "description": "Actual original A100 HighNine HF BF16, text SDPA + vision eager, serial1/max2048, own1065/nativealias, own doubleBOS and rightpad/real EOS defaults; unapproved real3 only before independent numerical gate. No old group10 protocol or model/data replacement.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "zelk12/MT-Gen1-gemma-3-12B",
+    "adapter": "universal_eval/model/adapters/zelk12_A100_HighNine_HF_disclosed_v1_0913_20261106_adapter.py:Zelk12A100HighNineHFDisclosed0913Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/zelk12/MT-Gen1-gemma-3-12B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Zelk12_actual_A100_HighNine_HF_serial1_unapproved_v1_0913_20261106/protocol_v2_identity_contract.json",
+      "protocol_sha256": "fd67e2adf8493a25c00c45d173bc964762686c17d2fc9536ba4ce3fa512d9ae8",
+      "npu_devices": [
+        3
+      ],
+      "max_new_tokens": 2048,
+      "protocol": {
+        "model_id": "zelk12/MT-Gen1-gemma-3-12B",
+        "protocol_file_sha256": "fd67e2adf8493a25c00c45d173bc964762686c17d2fc9536ba4ce3fa512d9ae8"
+      },
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Zelk12_actual_A100_HighNine_HF_serial1_unapproved_v1_0913_20261106/independent_serial1_visual_and_full_HF3_numerical_disclosure_v1.json",
+      "native_numerical_review_sha256": "49c4465ab6b365f93247562db2c482edd365577c5673a843c50f4bf43c15be30"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "include_failed_predictions": true,
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.855,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

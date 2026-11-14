@@ -1,0 +1,61 @@
+{
+  "name": "CalmState--gemma-3-4b-polyglot-r1-910b-A100-vLLM-native-BF16-fullchat10-EOS106-2048-v2-numerics-disclosed-2259-20261105",
+  "description": "Own original A100 vLLM full-chat native BF16 mathematical/scheduler reference on Ascend. Own883/673 SHA, original10/2048/16384/doubleBOS/ownEOS106 with no added stop tokens. Own raw FP16 metadata resolves to original-version autoBF16 as independently qualified; own template and original resources unchanged. No original resource, library or inventory mutation; no CUDA paged acceleration claim.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "CalmState/gemma-3-4b-polyglot-r1",
+    "adapter": "universal_eval/model/adapters/calmstate_vllm_A100_native_lineage_v2_2259_20261105_adapter.py:CalmStateVllmA100NativeLineageV1Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Unknown/CalmState/gemma-3-4b-polyglot-r1",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CalmState_native_adapter_original_fullchat_install_2259_20261105/sanitized_own_execution_protocol_v2_numerics_disclosed.json",
+      "protocol_sha256": "810375decc7af8d4b38e1e805668952db8adc431b6259afc2853182c1fa64ab9",
+      "protocol": {
+        "model_id": "CalmState/gemma-3-4b-polyglot-r1"
+      },
+      "npu_devices": [
+        7
+      ],
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CalmState_native_adapter_original_fullchat_install_2259_20261105/independent_visual_numerical_review_v1.json",
+      "numerical_review_sha256": "42848c673813cc81a91e1b77370127efcf5e99dc2df7148b60f8569aa6798887"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.765,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

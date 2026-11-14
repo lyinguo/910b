@@ -1,0 +1,55 @@
+{
+  "name": "OpenGVLab--InternVL3_5-4B-910b-A100-original-native-vllm-1011-20261111",
+  "description": "Own InternVL3.5-4B original weights, original fixed MMBench inputs and native vLLM Ascend evaluation.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL3_5-4B",
+    "adapter": "universal_eval/model/adapters/internvl35_4b_A100_native_vllm_1011_20261111_adapter.py:InternVL354BNative910B",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL3_5-4B",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "OpenGVLab/InternVL3_5-4B"
+      },
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/InternVL354B_A100_original_native_vllm_compat3_1011_20261111/protocol.json",
+      "protocol_sha256": "b50617c9dc12edeff3b78363328b33c97dd9c84763e56cc69db03945da857d43"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.895,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

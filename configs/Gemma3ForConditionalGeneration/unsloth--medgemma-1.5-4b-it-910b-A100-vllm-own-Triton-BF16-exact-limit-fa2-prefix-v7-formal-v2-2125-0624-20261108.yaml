@@ -1,0 +1,61 @@
+{
+  "name": "unsloth--medgemma-1.5-4b-it-910b-A100-vllm-own-Triton-BF16-exact-limit-fa2-prefix-v7-formal-v2-2125-0624-20261108",
+  "description": "Actual A100 original vLLM packed BF16 mathematical reference on NPU, original10 request batches, double BOS, genuine MM/prefix full-block sharing and native incremental decode; no CUDA paged acceleration claim. No filtering, score writing or original source mutation.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "unsloth/medgemma-1.5-4b-it",
+    "adapter": "universal_eval/model/adapters/medgemma_A100_prefix_complete_archive_space_guard_2125_20261108_adapter.py:MedGemmaOriginalPrefixCompleteArchiveAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/unsloth/medgemma-1.5-4b-it",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MedGemma_A100_FA2_original_prefix_archive_guard_compat3_v7_2125_20261108/own_A100_original_Triton_text_prefix_archive_guard_protocol.json",
+      "protocol_sha256": "3c3b311475331db19c04055c581eb47553bee31f3b21aa219beb3ebde16d2175",
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "unsloth/medgemma-1.5-4b-it"
+      },
+      "numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MedGemma_A100_FA2_original_prefix_archive_guard_compat3_v7_2125_20261108/current_v7_actual_NPU3_PrefixLM_archive_guard_numerical_review.json",
+      "numerical_review_sha256": "ff989082cda797f164d263758dbb2b8afa94e3f37b91704275ed8395eec0da2d"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.76,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "qingy2024--GRMR-V3-G4B-910b-actual-A100-HighNine-BF16-textSDPA-visionEager-probability-serial1-v1-numerics-disclosed",
+  "description": "Selected original A100 HighNine literal completion; full-position BF16 logits, FP32 log_softmax and original three FIRST-token candidate maxima; no generation. Original scoring raw None retained separately from the delivered selected candidate label. Full own883 and actual NPU/source snapshots/trace evidence.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "qingy2024/GRMR-V3-G4B",
+    "adapter": "universal_eval/model/adapters/grmr_A100_HighNine_probability_disclosed_v1_1726_20261106_adapter.py:GRMRActualA100HighNineProbabilityDisclosed1726Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/qingy2024/GRMR-V3-G4B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GRMR_actual_A100_HighNine_probability_unapproved_v1_1726_20261106/protocol_unapproved_v1.json",
+      "protocol_sha256": "8bdd1a58d4295679b8f980dda0f48425b78ce0b177e5070348f8de0f8c6d638f",
+      "protocol": {
+        "model_id": "qingy2024/GRMR-V3-G4B",
+        "protocol_file_sha256": "8bdd1a58d4295679b8f980dda0f48425b78ce0b177e5070348f8de0f8c6d638f"
+      },
+      "npu_devices": [
+        1
+      ],
+      "max_new_tokens": 2048,
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GRMR_actual_A100_HighNine_probability_unapproved_v1_1726_20261106/independent_serial1_visual_and_full_AA3_probability_numerical_disclosure_v1.json",
+      "native_numerical_review_sha256": "de49229343bfcc1f386476e646bf1249f540908b0681891a2cb3efd556e1e0d9"
+    }
+  },
+  "scoring_mode": "mc_score",
+  "algorithm": {
+    "name": "grmr_A100_HighNine_probability",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    },
+    "adapter": "universal_eval/algorithm/grmr_A100_HighNine_probability_evidence_1726_20261106.py:GRMRA100HighNineProbabilityEvidence1726"
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.625,
+    "threshold": 0.05,
+    "target": 0.625,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

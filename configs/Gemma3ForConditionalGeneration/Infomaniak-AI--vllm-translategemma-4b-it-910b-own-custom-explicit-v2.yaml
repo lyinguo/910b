@@ -1,0 +1,75 @@
+{
+  "name": "Infomaniak-AI--vllm-translategemma-4b-it-910b-local-explicit-v2-own-custom-interface",
+  "description": "Existing exact Gemma3 BF16 tensors on NPU with original own tokenizer/template (Jinja file or tokenizer_config), existing own or explicitly disclosed matching stock image metadata, original 2048 generated-token budget. BF16 reference execution only: quantization-related model names do not imply native low-bit kernels or speedup. No downloads or substituted model/data. Explicit MC v2 over all fixed samples; independently replayed inputs, full raw outputs and real NPU evidence. Preserve the source flat linear RoPE factor 8 by explicit per-layer normalization. Use this checkpoint own Jinja-supported <<<custom>>> interface with its own image marker and the unchanged MC question; no language translation task, guessed language fields, substitute chat template or substitute model.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "Infomaniak-AI/vllm-translategemma-4b-it",
+    "adapter": "universal_eval/model/adapters/gemma3_custom_prompt_910b_adapter.py:Gemma3CustomPrompt910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/Infomaniak-AI/vllm-translategemma-4b-it",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        0
+      ],
+      "max_new_tokens": 2048,
+      "processor_metadata": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/Infomaniak-AI/vllm-translategemma-4b-it/preprocessor_config.json",
+      "processor_metadata_sha256": "5b2f684b616a25f3cd4a700e5e471a07fcaabc5ec07871d2231b7e376e8648ce",
+      "processor_is_own": true,
+      "resource_sha256": {
+        "config.json": "5e2619ca6f3bc75b2856f98458f0224f7364651805a9dc8710caf056bce97e18",
+        "tokenizer_config.json": "88269475414d45d3e59892d3519b0d4e28ec6416fecf6b523fb986cbe452075f",
+        "tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+        "chat_template.jinja": "5fe67942c81c51bafa6e78b623d128f9323c15dee9694135f9c4bc62d2353f45"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/modeling_gemma3.py": "fadae295b33eedd46e7f2f390dc25e97eb57ef5c7f2e6128345cfa66a2fe35cb",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma/tokenization_gemma.py": "ff2481e06983015188575dc62bd2fa0e6f33ed2d01165d940efe77b80ee8d419",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/image_processing_gemma3.py": "e8450028ceb6eb1f4d44255ebfaa27c75e3921a5acf0bd741e139f306ec08a56",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/siglip/modeling_siglip.py": "0737486486910787571058155916dadd926f3c8c75ca093b2e31cf01bf7f15cd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/gemma3/processing_gemma3.py": "fcffc0e37f26e30c080afb9c95620c1f7f8f28325d341a71906288b457cad0a4"
+      },
+      "reviewed_config": {
+        "normalize_flat_rope_parameters": true
+      },
+      "prompt_mode": "custom_string_image_marker"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

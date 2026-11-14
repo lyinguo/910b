@@ -1,0 +1,59 @@
+{
+  "name": "smolagents--SmolVLM2-2.2B-Instruct-Agentic-GUI-910b-original-HF-FP16-4096-v1-0239-20261112-v2-library-scope",
+  "description": "Own original HF FP16 SDPA/4096/outer10 inner serial1 with exact independent own image inputs; no optional video dependency or stub. Explicit array retention scope.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI",
+    "adapter": "universal_eval/model/adapters/agentic_smol22_original_HF_native_v1_0239_20261112_adapter.py:AgenticSmol22OriginalHFNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/SmolVLMForConditionalGeneration/smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AgenticSmol22_original_HF_FP16_native_candidate_v1_0239_20261112/protocol.json",
+      "protocol_sha256": "f7d74ee336fa28cb346a4bb4f8f1a1b069a993b0e96fe75863144afddd3a32d0",
+      "protocol": {
+        "model_id": "smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "agentic_smol22_original_HF_MC",
+    "adapter": "universal_eval/algorithm/agentic_smol22_original_HF_MC_0239_20261112.py:AgenticSmol22OriginalMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.47,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

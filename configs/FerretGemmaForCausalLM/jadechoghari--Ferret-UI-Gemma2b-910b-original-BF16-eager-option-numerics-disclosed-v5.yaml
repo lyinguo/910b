@@ -1,0 +1,60 @@
+{
+  "name": "jadechoghari--Ferret-UI-Gemma2b-910b-original-BF16-eager-option-numerics-disclosed-v5",
+  "description": "Own576 BF16 original Ferret/Gemma1 eager no-cache option teacher-forced native mean CE. Original 525 real visual forwards, own anyres spatial tiles and all256001 vocabulary retained. No external learned CLIP values. Numerical/independent real3 approval pending. Actual native BF16 numerical differences and independent same-weight FP32 controls disclosed; CPU/FP32 never official score.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "jadechoghari/Ferret-UI-Gemma2b",
+    "adapter": "universal_eval/model/adapters/ferret_original_disclosed_0106_adapter.py:FerretOriginalDisclosed0106Adapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/FerretGemmaForCausalLM/jadechoghari/Ferret-UI-Gemma2b",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/workspace/diagnostics/batch_910b/Ferret_original_option_CPU200_0106/20261103_014934_425237/protocol_native_runtime_review_v2.json",
+      "protocol_sha256": "3c9665d2d69a496d69a447426147404c8b669b8f7599a90b59f95928121d13be",
+      "npu_devices": [
+        0
+      ],
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/Ferret_original_BF16_native_numerical_control_0106/20261103_020232_621029/numerical_review_for_original_BF16_official.json",
+      "native_numerical_review_sha256": "42983a9f4dc2734af4bf5d979526d4aee7db74ea9b4e03b04e90b0f91866e045",
+      "max_new_tokens": 2048,
+      "scoring": "option"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "include_failed_predictions": true,
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.425,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

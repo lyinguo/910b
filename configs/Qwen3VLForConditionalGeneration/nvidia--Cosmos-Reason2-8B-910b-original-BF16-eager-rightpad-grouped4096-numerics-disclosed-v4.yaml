@@ -1,0 +1,46 @@
+name: nvidia--Cosmos-Reason2-8B
+description: Original Cosmos-Reason2-8B BF16/eager/4096/true size groups; independent
+  explicit MC v2, no downloads
+task_type: image-text-to-text
+sample_count: 200
+sample_range: 0:199
+data:
+  preprocess: true
+  apply_template: false
+  filter_empty: false
+  dataset_path: /root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+  download: false
+model:
+  name: nvidia/Cosmos-Reason2-8B
+  adapter: universal_eval/model/adapters/cosmos_reason2_8b_original_disclosed_v2_910b_adapter.py:CosmosReason2_8BOriginalDisclosed910BAdapter
+  model_path: /mnt/afs/huggingfaceautoclonemodels/downmodels/Qwen3VLForConditionalGeneration/nvidia/Cosmos-Reason2-8B
+  download: false
+  kwargs:
+    protocol_file: /root/projects/comperror/workspace/diagnostics/batch_910b/CosmosReason2_8B_original_rightpad_own_template_CPU200_v3_20261102/20261102_123742_044038/protocol.json
+    protocol_sha256: 8857e6690d5a9a77a14dd0d9607230e4c9ba940e5dcb3e5b76798b6a3118ecd0
+    npu_devices:
+    - 1
+    native_numerical_review: /root/projects/comperror/workspace/diagnostics/batch_910b/CosmosReason2_8B_original_native_numerical_review_20261102/20261102_133127_660173/review.json
+    native_numerical_review_sha256: d8d0d328138cb8d7cf9ed254713cf2f53a92b9e3dfe7cffd9e1b0334d96caae6
+is_ocr: false
+algorithm:
+  name: native_explicit_mc_v2
+  adapter: universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2
+  batch_size: 10
+  kwargs:
+    extract_answer: true
+metrics:
+  override:
+  - Strict_MC_Accuracy
+  adapters:
+  - universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy
+  include_failed_predictions: true
+baseline:
+  score: 0.92
+  threshold: 0.05
+output:
+  reports_dir: workspace/reports
+  layout: model_task_timestamp
+  evidence_dir: workspace/diagnostics/model_runs
+  timezone: Asia/Hong_Kong
+  verbose: true

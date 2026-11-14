@@ -1,0 +1,60 @@
+{
+  "name": "OpenGVLab--HoVLE-HD-910b-original-native-source-layout",
+  "description": "Own HoVLE8+24 BF16 native dual-stream original chat/greedy2048 with complete evidence",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/HoVLE-HD",
+    "adapter": "universal_eval/model/adapters/hovle_original_disclosed_v2_910b_adapter.py:HoVLEOriginalDisclosedV2_910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/HoVLE-HD",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/hovle_original_source_layout.json",
+      "protocol_sha256": "c68628547459e593e69fc205c53d580e9db5940de84e1b1435b9a2691dfe8f81",
+      "npu_devices": [
+        13
+      ],
+      "native_numerical_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/HoVLE_original_native_numerical_review_20261102/20261102_073305_217419/review.json",
+      "native_numerical_review_sha256": "025e86f6e3b61c8d0b11147358a823cfc79f251f1abc6f5729e4087b9fbdee94",
+      "inactive_import_guard": "/root/projects/comperror/workspace/diagnostics/batch_910b/HoVLE_inactive_import_no_standin_CPU200_guard_20261102/20261102_073756_250307/audit.json",
+      "inactive_import_guard_sha256": "57796545c37a7a90141db6021583cea6e71ceca60d7cc855d558620d0958e465"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "include_failed_predictions": true,
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.86,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

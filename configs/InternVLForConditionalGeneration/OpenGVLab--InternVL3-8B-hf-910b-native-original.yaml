@@ -1,0 +1,108 @@
+{
+  "name": "OpenGVLab--InternVL3-8B-hf-910b-native-original",
+  "description": "Exact own BF16 checkpoint, native NPU eager InternVL HF vision/projector and Qwen2/Qwen3. Original TransformersVLM string message/chat/image-placeholder protocol and own dynamic patch processor. Both original different head and embedding tensors preserved, overriding new native composite default tying. Original greedy2048 generation and full fixed200 denominator; independent CPU image/token/position/causal mask/raw decode/metric and actual NPU kernel acceptance. No model/data downloads or substitutes.",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:199",
+  "sample_count": 200,
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL3-8B-hf",
+    "adapter": "universal_eval/model/adapters/internvl_hf_original_910b_adapter.py:InternVLHFOriginal910BAdapter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLForConditionalGeneration/OpenGVLab/InternVL3-8B-hf",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        8
+      ],
+      "max_new_tokens": 2048,
+      "resource_sha256": {
+        "added_tokens.json": "222d504fd2fb42e08a43b7ef6383a130483d34233f506b6ccc799655de48dff8",
+        "chat_template.jinja": "b3e3fa7cdeceec1d3dfe0d17b77724baf3857714e688f3a700261567e96140eb",
+        "config.json": "2f651cf5dcad81635fcd688dc8aa569797a3d829b9d0644f489e1c7272b1c637",
+        "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+        "generation_config.json": "c142bebeae7dfc9ef119d3f12fb03022261ceef51320c75ead103af4d8e150c2",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "preprocessor_config.json": "af09ffbe57900d5ae07f93f4c20693559a272e32fa6c5f816132cb71985aac98",
+        "processor_config.json": "3511f4ae65c2fa5c1ab6a0fb2bb2fe767d6f0ee53ba412953b33acc892327c2a",
+        "special_tokens_map.json": "e847a86633f2470a0d9fed41b5a36ff1f4435050929aa80b28c41d28420501b2",
+        "tokenizer.json": "7cc80b7e20adf8bf6f6ca442bf1abfac8056bb3b7d3e0b11c9d497d3e79398c9",
+        "tokenizer_config.json": "b336af8282760f5e596726eb9834ce20dd6625d55aa7df73030ef4c59028567f",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "runtime_sha256": {
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/internvl/modeling_internvl.py": "fec9f18a83dea42dd32730555cac5a66ece67ef5f236f32967fed1f296d42bd6",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/internvl/processing_internvl.py": "1f2e8fccfa29a105bff6253500bdfdb4c6ecbc5cae90fddcdeada3db3afaf47b",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/internvl/configuration_internvl.py": "1b752faecda19b50b4e08a98e6641c110c792badeb747b1a3d6f7479ea0062fa",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/got_ocr2/image_processing_got_ocr2.py": "b3d6113cdb43c8a85ddc6eaf355256d381fd6e9a2f21f2e344d78528206593ff",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py": "99fa98c5676604cf6ef505892b70fda5c1c4cd835971459f38d61090cccab1e4",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_rope_utils.py": "9592ba129bf723ed3fa54afcc48ddd3d40d2dac2947ce5cc37803c496ca320e8",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/modeling_utils.py": "d8bf1879d6f582888b6cf47b4d63070260285a3bd1dc94ce7e1373304f74168a",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/processing_utils.py": "d49b92aba8a755e6d93928a5fec94950004a5bc53a48746f9b83dd04cb7edacd",
+        "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/generation/utils.py": "ec9e5bce8b654d5ef8169ddf595be18a06a95c87568fcd909d37d88255ffb8f7"
+      },
+      "weight_headers": {
+        "model-00001-of-00004.safetensors": {
+          "size": 4877374576,
+          "header_sha256": "ec8f723794048aabd87a3d80e67f9d8e283041d4132a929dfbf2eeca2f2d0e9c"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size": 4991497800,
+          "header_sha256": "f46b47abaec09ddddd0e957ccd75ca06e1e7c5497a273d12d174e3a4e8b70286"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size": 4932774744,
+          "header_sha256": "1f6039b06155447eea482f9034b00024052614f7fda94108918dce6d5b7dd745"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size": 1087199376,
+          "header_sha256": "fcb8fc685b8e8ea6c18205ac46e31314fb1d98f25c9ae11ece91fb5de19251dc"
+        }
+      },
+      "original_config": "/root/projects/comperror/configs/InternVLForConditionalGeneration/OpenGVLab--InternVL3-8B-hf.yaml",
+      "original_config_sha256": "e5ef5d9012563b2fb41ef7878a4c04a03c9b48eaebe86bbcf743c102cd4a4854",
+      "original_adapter_sha256": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+      "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+      "dataset_sha256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+      "reference_report": "/mnt/afs/comp_error/workspace/reports/OpenGVLab_InternVL3-8B-hf/image-text-to-text/20260905_142522/eval_report.json",
+      "reference_report_sha256": "7b3d6a67088ae6c80d2d0b6c93f8ad3d6645d6cf0505cb5acb21b0b524857eea",
+      "source_head_sha256": "386d879884cd7a8e386c85170efb83bcf191e14d47816412d8819ddd8344dfe2",
+      "source_embedding_sha256": "f8507efb76e793372cedd37e600d6f397aa5019d415f0b1619c81127ab53ca4a"
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}
