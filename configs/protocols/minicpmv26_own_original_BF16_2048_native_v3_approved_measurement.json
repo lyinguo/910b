@@ -1,0 +1,96 @@
+{
+  "model_id": "openbmb/MiniCPM-V-2_6",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV/openbmb/MiniCPM-V-2_6",
+  "source_tensor_count": 789,
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 4874808328,
+      "SHA256": "327b5e63ac7729d00b0b17233a0d648a623fc080cc1069dce9cb79478cdaf2b5",
+      "header_SHA256": "bf45356c1e30ab7bb9e7def55fc6960f53d2e474bd983b03723f747d0ab73e43"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4932751496,
+      "SHA256": "e6d7af1f12ba8c72fec16ba3f3951df5643bef24de8b0af5baec67290c07ca4f",
+      "header_SHA256": "51cfc754f18a8afdcd99b34917044ff7ec058a05879af594c09ea7930a30d8c2"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4330865648,
+      "SHA256": "e9ba1332c74a92b9c8af5fbc2c2da1baa8cd5ed4fd8056b98a586ff4bc3e54cf",
+      "header_SHA256": "46e3b03d15b3488ae8c91771c1255a724b3860d9c346289ed6041da904c75769"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 2060017080,
+      "SHA256": "16fcfafa8caaa67e16f9dae7cc79bf081eb59d4e248723a8e79d9678e42732fe",
+      "header_SHA256": "2de0e1bc2a0dfeae45e886b2e861d966209d0a699b62b3a4e55a1e54dabf10ad"
+    }
+  },
+  "own_assets_SHA256": {
+    "added_tokens.json": "f67327aead2a3259804bdbb2a7b592c5238af4434f92b7952555f16531228804",
+    "config.json": "6ca8152bcc0655f23002e12e9b910e4ced9793310014eea18c5b291e1b887ed2",
+    "configuration.json": "c1b09db419119513247e9b8b912c4b9897106c9b20c6cada7e107d993c5435eb",
+    "generation_config.json": "1f32c18467b4816e3e93ef405b8d247f3607c2dbf14d97031b90894739016237",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model.safetensors.index.json": "c7ebbc47804c20e6a2ec0c82763f5372dbcd0b2cb9085287ec449fba73829001",
+    "preprocessor_config.json": "5c0dbc92920ded2304e2ed6ad4251da56029aa1f3f69427117ac6df9bc68496e",
+    "special_tokens_map.json": "0887e33758ba41337db48453635f642b9ddf3504f1482c50a7a0705691ce4223",
+    "tokenizer.json": "120c8f9b7a4f6fb721e3ffab5ab7863babd7f0ec706799192415dcd6a6e9fbbf",
+    "tokenizer_config.json": "d812665de21026393b5ec5cfa4fc4bb97c43c7a43ff8b91266b1ce35291db862",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_own_original_fullsource_frontend200_v2_unpadded_vllm_user_continue_20261115/own_full_source_manifest.json",
+  "own_source_manifest_SHA256": "0504a0891e560d147edc34f45dfb6cfc0bfb810f0ec8345f95bbec7941827db9",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_own_original_fullsource_frontend200_v2_unpadded_vllm_user_continue_20261115/own_original_frontend200.json",
+  "own_frontend200_SHA256": "0f32ba15b5c2d9f371c890f123398a1e4a096cea0d980fdc0d14b557b9e33842",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151645
+  ],
+  "workbook_D_reference_authorized": true,
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "287961057c328b77c99abdd891b9ce06738435a53f5c0cb43d4032f88413355a",
+  "current_A100_D_values": {
+    "server": "0.8550",
+    "local": "0.8550",
+    "preserved_original": "0.855"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/minicpmv26_own_original_20261115/resampler.py": "8ba12ce07446900fc2bf0abfc04af7774d44a4915ac230331d5ae9d9787ce43c",
+    "universal_eval/model/minicpmv26_own_original_20261115/modeling_minicpmv.py": "fde0d8c25238ebd286a5fc03ada8867a780faeafc0e8c927f6567cc113f46313",
+    "universal_eval/model/minicpmv26_own_original_20261115/image_processing_minicpmv.py": "070fbe746243ce3fd666b48bbf415d9b9b3bf4cddaad15ab3f243733e40a6201",
+    "universal_eval/model/minicpmv26_own_original_20261115/modeling_navit_siglip.py": "b67d27800d18dc623ac10414e180fd5b3dcd9ba2975faa26c5ed53752d4cb4c2",
+    "universal_eval/model/minicpmv26_own_original_20261115/__init__.py": "2eb36f0f98548f70b1c7cdd981f890c38f3b0d9e1b7ece1a4da41e58eed6e585",
+    "universal_eval/model/minicpmv26_own_original_20261115/processing_minicpmv.py": "f817f348f704f11727b2f340742efe3479a715b8e7970e0ec1368131092b2044",
+    "universal_eval/model/minicpmv26_own_original_20261115/tokenization_minicpmv_fast.py": "4eb76984f6945cfdbfb5b2fece8cb3ebbdac96aea15e28af3eadbdba471f9b55",
+    "universal_eval/model/minicpmv26_own_original_20261115/configuration_minicpm.py": "e07b81b20d94d1535e5f651f6737272c49639e8b2c3417f077d0ba39c18c04ff",
+    "universal_eval/model/adapters/minicpmv26_own_frontend_bf16_v2_unpadded_vllm.py": "11754ccc4f90e6dcb3b774577b3ad88fd3e1bc911dd452356ae43c9043f2de79",
+    "universal_eval/model/adapters/minicpmv26_own_native_bf16_v2_unpadded_vllm.py": "74b8c007996b25586afd0afb51d4ad2bd8fe5a54103693b2ce58851e26f5b1aa",
+    "scripts/verify_minicpmv26_own_native_bf16_v2_unpadded_vllm.py": "23f94da90397fd101df42daee8446456d13a0463ec547615f29429e917b93c49",
+    "scripts/prepare_minicpmv26_own_native_fullsource_frontend200_v2_unpadded_vllm_20261115.py": "d2f89988c3346b901f210fb13779d62bb9f42d13ed32d90f7f6ddde3fec7e1a5",
+    "scripts/prepare_minicpmv26_own_native_readiness_true3_v2_unpadded_vllm_20261115.py": "134f32c9bcc04c21b0f7289d2b3920798bf61b94ac1132ed650448597b92c9a8",
+    "universal_eval/model/adapters/minicpmv4_original_pixel_check_v1.py": "ad5abbde88ecde0920e52fad8cc00012b86a035e3b3f13719f092b009aa16dd6",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+    "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+    "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_own_original_fullsource_frontend200_v2_unpadded_vllm_user_continue_20261115/readiness.json": "0f49c11c663faaabceee20df603ef7dfe0d1417560b149e80e45027ceb2f67fc",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_original_own_HF_mask_vs_saved_VLLM_unpadded_contract_v2_user_continue_20261115/review.json": "7ce4c818d1e1180ade09b25f3c1136428d7a3429c8f08ff2dceda1bfba136f11",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_true3_then_complete_shape_capacity_fresh3_fixed200_v3_continuation_user_continue_20261115/capacity_review.json": "58b67a97b1ce09ce5fbb54735d24ca1378a3c85924c2b53ecc3057e65782d49d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV26_true3_then_complete_shape_capacity_fresh3_fixed200_v3_continuation_user_continue_20261115/first200_measurement_approval.json": "d13470371b6f63309cd4ec517a09a7cf68fde2fe370db7f2aadff5bbc0a169a7"
+  },
+  "historical_source_boundary": "User-confirmed original workbook A100 D is the comparison. Own saved MiniCPM-V-2_6 VLLMModel BF16/Greedy outer10 inner1/2048, own Qwen2_28 GQA4x128 + own NavitSiglip27/resampler64, own448 max9slice/151666 head and raw tokenizer/chat template; original generation_config EOS exactly preserved. Current own native HF eager reconstruction and CPU integer pixel geometry/analytic RoPE are disclosed; historical A100 vLLM engine/backend/tensors were not captured. Full own source functions unchanged. No borrowed checkpoint/data/tokenizer/template, no original HF chat default beam3 or repetition1.2 substituted for saved VLLM greedy. Original standard input preprocessing/fixed200 and strict MC retain the original Greedy instruction; all own image boundaries and per-patch pixels independently verified. Own HF processor marks token0 (! at indices6/26) as masked via ne0 despite pad_id151643. Its original mask is retained verbatim as diagnostic. Saved vLLM passes token ids and absolute positions without that HF token-value mask, so the candidate original unpadded causal-mask math was not changed; exact current vLLM static source and original HF mask are archived, no historical engine capture claim.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

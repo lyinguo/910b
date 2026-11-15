@@ -1,0 +1,59 @@
+{
+  "name": "openbmb--MiniCPM-o-2_6-own-original-BF16-4096-native-v2-unpadded-vllm-20261116",
+  "description": "User-confirmed original workbook A100 D is the comparison. Own saved MiniCPM-o-2_6 VLLMModel BF16/Greedy outer10 inner1/4096, own Qwen2_28 GQA4x128 + own NavitSiglip27/resampler64, own448 max9slice/151700 head and raw tokenizer/chat template; original generation_config EOS exactly preserved. Current own native HF eager reconstruction and CPU integer pixel geometry/analytic RoPE are disclosed; historical A100 vLLM engine/backend/tensors were not captured. Executed own image methods are AST-exact; legitimate image-task graph constructs own Qwen2/vision/resampler, retaining all audio/TTS source SHA as non-executed weights. No mock/stub modules or auxiliary modality execution claim. No borrowed checkpoint/data/tokenizer/template, no original HF chat default beam3 or repetition1.2 substituted for saved VLLM greedy. Original standard input preprocessing/fixed200 and strict MC retain the original Greedy instruction; all own image boundaries and per-patch pixels independently verified. The original own MiniCPMO image processor uses a true padding-length mask, all true for the saved single unpadded input. Its original mask is retained verbatim as diagnostic. Saved vLLM passes token ids and absolute positions without that HF token-value mask, so the candidate original unpadded causal-mask math was not changed; exact current vLLM static source and original HF mask are archived, no historical engine capture claim.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "openbmb/MiniCPM-o-2_6",
+    "adapter": "universal_eval/model/adapters/minicpmo26_own_native_bf16_v2_unpadded_vllm.py:MiniCPMO26OwnNativeBF16V2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMO/openbmb/MiniCPM-o-2_6",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/minicpmo26_own_original_BF16_4096_native_v2_unpadded_vllm.json",
+      "protocol_sha256": "318d31d0f376af4ff8734c60d296d3aa2f3a40091be1e2d6c88d32556853c049",
+      "protocol": {
+        "model_id": "openbmb/MiniCPM-o-2_6"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.885,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "model_id": "unsloth/gemma-3n-E4B-it",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3nForConditionalGeneration/unsloth/gemma-3n-E4B-it",
+  "report_task": "image-text-to-text",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/unsloth_gemma3n_e4bit_native_v1.py": "839c31583794477f7f16d928924f727f034f6313bdf2e5d60bfa77a0aae4599f",
+    "scripts/verify_unsloth_gemma3n_e4bit_native_v1.py": "662f393c7d0dd39898260b78a92034d23094d48359976d865b242cd5d7ba9abc",
+    "scripts/prepare_unsloth_gemma3n_e4bit_native_v1.py": "8b589b8f8d329b9eaa8ac9e70312c2bcbbb436a74e73b352a79454e9b8976998",
+    "scripts/prepare_unsloth_gemma3n_e4bit_own_frontend200.py": "bc9d6b3547fbf610a51c691f4b53d6f1ae98c6956a2f67c3ae49248ea1954c50",
+    "universal_eval/model/adapters/gemma3n_E4B_actual_original_HighTen_BF16_native_v5_complete_failure_records_1605_20261113_adapter.py": "85e9805e810b2d61c7585520367b5e6c33e134770ca9fa41b20e3875fdda353f",
+    "universal_eval/model/adapters/gemma3n_E4B_HighTen_own_parameterized_BF16_vision_native_v1_after_reboot_20261113.py": "ca9301ff070085ca05173dc9c3448c9a25e7af01cc24bcbd11c3825b35eca3e1",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "configs/protocols/unsloth_gemma3n_e4bit_own_vision_layout_v1.json": "b0ed859bbe303ea100afab724c8638a38b679a073dc1c640ff28464f95fe341e",
+    "universal_eval/model/adapters/gemma3n_E4B_own_original_MobileNetV5_BF16_parameterized_v1_after_reboot_20261113.ir": "65e0b3b8f48e88cb393ed06723827781fd986251a94bd2525433e61efe855608"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/UnslothE4Bit_own_chat_frontend200_assets_1210_20261115/review.json": "e744ea02dccfec61b1b04d0c0689fa7c0d63a3c677a7c6dbfa7694e5f135ac95",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/UnslothE4Bit_own_chat_frontend200_assets_1210_20261115/frontend200.jsonl": "13b0015cc0d8936dbfec468daa34628a7ab800bb08fcb0dfafa9f3cd8bc2cc4f",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/UnslothE4Bit_own_chat_frontend200_assets_1210_20261115/source_tensor_headers.json": "08c29fda23c1d3c029afe462e4d48d087ba767bc39d41808fc3896c88df01f53",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba"
+  },
+  "own_runtime_assets_SHA256": {
+    "chat_template.jinja": "ac03dcb3b09726f1e50ac55ae58fc8d5930eadc3b3a12cb04286dc1d82ac8001",
+    "config.json": "e441b8435c51235842e3e49709a9e59f1a7991b8f074b266f375b5213c5d0f74",
+    "generation_config.json": "1f03e448ab2b9f8fe10418c4fab330defe071185202f772ff247f0acaa1974cd",
+    "model.safetensors.index.json": "649c3e33f72723dacfe5a820970ef3d51a496a5e59334f10e55f0221b2c5bcdf",
+    "preprocessor_config.json": "bacaf03d98d289f498e68c798f0ce28c0a4d438771d23d2844ca8ff77af1a029",
+    "processor_config.json": "a9619bc49d78e910ce7f0fa723d461bb5f6088916b131bbb1d67c6631dc55f4a",
+    "special_tokens_map.json": "0b2853eda381eca3619e95cae306f6747100464da9f8ef200520aaca0b095124",
+    "tokenizer.json": "b6c35ee648c07754b44cd9e371c75d4caa05c4504910b7ad29b1847ee9d8ba5d",
+    "tokenizer.model": "ea5f0cc48abfbfc04d14562270a32e02149a3e7035f368cc5a462786f4a59961",
+    "tokenizer_config.json": "bb2367e549608c33eefc18f812bbd1e81677655a8c3273105b078af134613587"
+  },
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 3077103824,
+      "SHA256": "1af26e1fd61af0dc067252c907bf52900c7cd5864893e29970e6ea87320322a6",
+      "header_SHA256": "3a62da5b1e53f06d4c95a7708c9fbe01db5b68f35faf61e34efca50371086dae",
+      "tensor_count": 826
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4966792808,
+      "SHA256": "5dff2214c41034789c514931257d804bc0808b8ce709a795a8f966b8cc36c002",
+      "header_SHA256": "f2f80c6798f68c58f3cc104b1fc02d443995e0508ff5aa5e782efb748d4347d8",
+      "tensor_count": 102
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4992870216,
+      "SHA256": "bbe396c49b463b6147243ea883b06a4c09e85d558a392501c2dbfbdd0e1f2f9f",
+      "header_SHA256": "99686f4f4ba459decc17fb1ae9dc6dc4fe903586ef33a1d533981d6c5da59bb7",
+      "tensor_count": 508
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 2663414864,
+      "SHA256": "5bebe6d74423ec0cfb6a837d42319c36e5999888832606992a136258cd49e718",
+      "header_SHA256": "d3b153c512bbfba7e35a0ea6a5cfadfaf8b20fbc19cfb57ff87324a128e62047",
+      "tensor_count": 240
+    }
+  },
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/UnslothE4Bit_own_chat_frontend200_assets_1210_20261115/frontend200.jsonl",
+  "vision_graph": "/root/projects/comperror/universal_eval/model/adapters/gemma3n_E4B_own_original_MobileNetV5_BF16_parameterized_v1_after_reboot_20261113.ir",
+  "vision_graph_layout": "/root/projects/comperror/configs/protocols/unsloth_gemma3n_e4bit_own_vision_layout_v1.json",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "current_A100_D_values": {
+    "server": "0.8000",
+    "local": "0.8000",
+    "preserved_original": "0.8"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma3nForConditionalGeneration/unsloth--gemma-3n-E4B-it.yaml",
+  "saved_original_YAML_SHA256": "2c44ddec2a89f6e9fbdeba3292317fa78513844063a6fc09f53adc86057f113f",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "1aa036a96585f4fa7008d389f5cdf8bb1d633e2d1cd88a3bf4094c720a3ab6a0",
+  "historical_source_boundary": "Saved own vLLM/Greedy 2048/outer10 configuration and own instruction template reconstructed as native HF SDPA BF16/inner serial1 on 910B. A100 comparison uses the user workbook D. Historical A100 engine bytes/tensors were not captured."
+}

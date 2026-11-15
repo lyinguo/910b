@@ -1,0 +1,59 @@
+{
+  "name": "OpenGVLab--InternVL2-4B-own-native-BF16-2048-v1-user-continue-20261115-smoke",
+  "description": "Saved own vLLM enforce_eager/Greedy2048/outer10-inner1, own Phi3 chat/SPM and original current vLLM image processor. NPU uses own InternVision24 and Phi3_32 BF16, original SU short/long RoPE and native tuple KV, EOS from own generation [2,32000,32007]. Historical A100 engine/tensor bytes were not captured. Only zero-drop-path constructor scalar device and a real append-only legacy cache compatibility namespace differ; no learned computation or installed library changes. Workbook D is the user-confirmed comparison reference.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL2-4B",
+    "adapter": "universal_eval/model/adapters/internvl2_4b_own_native_bf16_v1.py:InternVL2_4BOwnNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL2-4B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/internvl2_4b_own_native_bf16_v1.json",
+      "protocol_sha256": "2a41c35b1195369a7ed8c74e77eec847c20edb6756f8b9f976408d9e5ae00be1",
+      "protocol": {
+        "model_id": "OpenGVLab/InternVL2-4B"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.905,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

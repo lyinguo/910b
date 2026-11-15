@@ -1,0 +1,59 @@
+{
+  "name": "rednote-hilab--dots.ocr-own-original-BF16-OCR12-native-v3-fixed200-no-filter-20261115",
+  "description": "User-confirmed workbook A100 D is the comparison. Own saved DotsOCR VLLMModel OCR3000/fixed0:199, original max_tokens12, Greedy serial1 with original final-answer suffix and OCR extraction/CER; own BF16 weights and 42-block original vision/28-Qwen2/151936 head, native 28 GQA2x128 cache, original own max11289600 pixels and patch14/merge2, own multimodal chat_template.json and own imgpad151665. Original stored VLLM engine/template dispatch/backend bytes were not captured; current native Qwen2 eager and original missing-FA2 VisionAttention fallback disclosed, no historical bitwise claim. No generic mock/stub initialization, own source functions unchanged, no new token ids or borrowed assets. Independent pixel reference follows installed original F64 multiply then F32 normalization; actual processor pixels were not altered. All3000 original OCR rows survived the original preprocessing; fixed200 is kept without filtering, and every frozen original input/ref/image is verified unchanged. Downloads explicitly disabled.",
+  "task_type": "image-text-to-text",
+  "is_ocr": true,
+  "sample_range": "0:199",
+  "data": {
+    "download": false,
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "dataset_path": "/mnt/afs/comp_error/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "rednote-hilab/dots.ocr",
+    "adapter": "universal_eval/model/adapters/dotsocr_own_native_bf16_v2_original_rescale.py:DotsOCROwnNativeBF16V2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/DotsOCRForCausalLM/rednote-hilab/dots.ocr",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/dotsocr_own_original_BF16_OCR12_native_v3_fixed200_no_filter.json",
+      "protocol_sha256": "1fc6a6c2c14ef8f75e7dc75864b7b5b5b8809127ebf15635bdf50c3eed95f65f",
+      "protocol": {
+        "model_id": "rednote-hilab/dots.ocr"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "dotsocr_original_greedy_evidence",
+    "adapter": "universal_eval/algorithm/dotsocr_original_greedy_evidence_v1.py:DotsOriginalGreedyEvidence",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/dotsocr_original_greedy_evidence_v1.py:DotsOriginalCER"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.283,
+    "threshold": 0.05
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

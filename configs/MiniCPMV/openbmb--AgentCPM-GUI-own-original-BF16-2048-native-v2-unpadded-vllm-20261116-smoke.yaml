@@ -1,0 +1,59 @@
+{
+  "name": "openbmb--AgentCPM-GUI-own-original-BF16-2048-native-v2-unpadded-vllm-20261116-smoke",
+  "description": "User-confirmed original workbook A100 D is the comparison. Own saved AgentCPM-GUI VLLMModel BF16/Greedy outer10 inner1/2048, own Qwen2_28 GQA4x128 + own NavitSiglip27/resampler64, own448 max9slice/151679 head and raw tokenizer/chat template; original generation_config EOS exactly preserved. Current own native HF eager reconstruction and CPU integer pixel geometry/analytic RoPE are disclosed; historical A100 vLLM engine/backend/tensors were not captured. Full own source functions unchanged. No borrowed checkpoint/data/tokenizer/template, no original HF chat default beam3 or repetition1.2 substituted for saved VLLM greedy. Original standard input preprocessing/fixed200 and strict MC retain the original Greedy instruction; all own image boundaries and per-patch pixels independently verified. The own HF processor ne0 mask is retained verbatim separately from the saved vLLM unpadded sequence mask; no borrowed tokenizer or GUI template. Its original mask is retained verbatim as diagnostic. Saved vLLM passes token ids and absolute positions without that HF token-value mask, so the candidate original unpadded causal-mask math was not changed; exact current vLLM static source and original HF mask are archived, no historical engine capture claim.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "openbmb/AgentCPM-GUI",
+    "adapter": "universal_eval/model/adapters/agentcpmgui_own_native_bf16_v2_unpadded_vllm.py:AgentCPMGUIOwnNativeBF16V2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV/openbmb/AgentCPM-GUI",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/agentcpmgui_own_original_BF16_2048_native_v2_unpadded_vllm.json",
+      "protocol_sha256": "0c85f3da3fcede6131ebbefb9da394d721d94a3708627b4d1301b4f303433042",
+      "protocol": {
+        "model_id": "openbmb/AgentCPM-GUI"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.895,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

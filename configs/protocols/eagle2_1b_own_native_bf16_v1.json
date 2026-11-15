@@ -1,0 +1,70 @@
+{
+  "model_id": "nvidia/Eagle2-1B",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Eagle2_5_VLForConditionalGeneration/nvidia/Eagle2-1B",
+  "own_weight_files": {
+    "model.safetensors": {
+      "SHA256": "a67b1a076346d99d202427f39c173b22cf79fd6c666dd4461d3cade62dfa38ed",
+      "bytes": 2126511128
+    }
+  },
+  "own_assets_SHA256": {
+    "added_tokens.json": "e66b6bc948dec3421f01a8986f31632cf8d556aaa89f7b39c183b3dd4b5b2c83",
+    "chat_template.json": "60d851b3481bce3a0820075955e10a48b3e078ee538d3fb62b0e53290acaf177",
+    "config.json": "90ec3c2a95d3ddf22f6907be08aa93d187f9325c9338d66a707476db058cd6d5",
+    "configuration_eagle2_5_vl.py": "a0ce11fd2db3dfd36f6f38f0e7ceb91674d5259d8a62c2113cdfbf63c011f5d0",
+    "demo.py": "3c8b00f25775471a889562f5c96bb3cb023520164d5de9ead40f8cb3dd32c512",
+    "generation_config.json": "69d76e6b0a3b31f0de871f8f5b968957e0532fd9b17214aabf151da4bdbe1804",
+    "image_processing_eagle2.py": "44cf8cadbdf79e8c691610f31729cf68a8844219906d9b8127281ff4e41376ee",
+    "image_processing_eagle2_5_vl_fast.py": "b452bfc295fbb070cf5eb0429659a2e762e3797b88e9f34e3c5502a404c998cd",
+    "merges.txt": "455e0caaa06abffc663e9282dfe71dde07fd1991eaf24146bf08793c4dba4497",
+    "modeling_eagle2_5_vl.py": "4635b452a333f41f100b6a0a8941a37507ec6554c34a804f5e041ec5c54ccb25",
+    "preprocessor_config.json": "00e26d751081db14f252e8cf80df87e71e4ac87381c84e2e0eb53b86f3ece3a1",
+    "processing_eagle2_5_vl.py": "a116067c85aa1fe40d7636d13de2cf58a94b25615be1b6be6be3318092dfe640",
+    "processor_config.json": "89d2e707633d65f291e4d0042bec32389cedbc17a8138760f9b75dea8811cd6e",
+    "special_tokens_map.json": "13a6dea522a937ef05172912c66214162c75165e723a3d6cf4ae2d09752013bf",
+    "tokenizer_config.json": "54b7617275d9c25742e86d63d7ad68653916bf3f8fb25cede1b48a98e557e507",
+    "vocab.json": "87a257b04b17642a0688c98cd1df89c398bda4fee532d6f88b38a659ecb4ac8d"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_1B_own_frontend200_native_source_preflight_v5_original_Greedy_1900_20261115/own_source_manifest.json",
+  "own_source_manifest_SHA256": "99be4d98fc4ab6f7bd5022c3e645d1193faed60012ba8471967273244f6673e4",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_1B_own_frontend200_native_source_preflight_v5_original_Greedy_1900_20261115/own_frontend200.json",
+  "own_frontend200_SHA256": "8bc8dce439309ec17ed3282970935262b8cb1ee9bbbe545883322bf7bd984545",
+  "workbook_D_reference_authorized": true,
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "4acd405375a631143c1852c75265f1df273877a4773b27bc210379007958dad0",
+  "current_A100_D_values": {
+    "server": "0.7300",
+    "local": "0.7300",
+    "preserved_original": "0.73"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/eagle2_1b_own_native_bf16_v1.py": "5473b82bb0333ef98133de7b26872d8574324147b3978210bafa51b84538fc43",
+    "universal_eval/model/adapters/eagle2_1b_own_frontend_v1.py": "30532d67ea022c1d8ac816b285a1d7bc967561ac18ae5792bce2745f97ec5be4",
+    "scripts/verify_eagle2_1b_own_native_bf16_v1.py": "4cc5440e739b777659f639d03bd6518873af5e159a345da2f7b76ec85e42450f",
+    "scripts/prepare_eagle2_1b_own_native_yaml_v1.py": "8ac780d182bd4c186614e25bc2b7e09e9c4e54d855e072802632936a9698a075",
+    "scripts/prepare_eagle2_1b_own_frontend_native_sources_v5.py": "3665d917d1b8dee382a11ebfc9f918b7b1eb56389cc9cc3051e298cb6411517a",
+    "universal_eval/model/eagle2_1b_own_native_20261115/__init__.py": "0cb2fedf01f3acd225b5189190b8ae7692fe370ea8816e41b67f7a0025e13672",
+    "universal_eval/model/eagle2_1b_own_native_20261115/configuration_eagle2_5_vl.py": "a0ce11fd2db3dfd36f6f38f0e7ceb91674d5259d8a62c2113cdfbf63c011f5d0",
+    "universal_eval/model/eagle2_1b_own_native_20261115/modeling_eagle2_5_vl.py": "27d9791e9e6525e0e2604b552bc416a3d5fef7f92f8d80cc0da25ef6b3c0c9ca",
+    "universal_eval/model/adapters/internvl35_flash2b_own_frontend_v3_original_TV2_uint8_F32_1518_20261112.py": "fe447e3ace21adafc11e6d60828bef3dd7ec4baef636ebe5c7cb25323c6ceed4",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_1B_own_frontend200_native_source_preflight_v5_original_Greedy_1900_20261115/review.json": "12f931c9c968147362533642f774bf8943557881fb4d1e774bbebc4402970b86",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b"
+  },
+  "historical_source_boundary": "User-confirmed workbook A100 D is the comparison. Saved own Eagle2 YAML/adapter uses BF16, eager, original Greedy outer10-inner1, own fast 448/max12+thumbnail processor/template, natural EOS151645, 256 tokens. Current HF changes Siglip parameter names only; every one of 745 own source tensors maps bijectively. Historical A100 engine/tensor bytes were not captured.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

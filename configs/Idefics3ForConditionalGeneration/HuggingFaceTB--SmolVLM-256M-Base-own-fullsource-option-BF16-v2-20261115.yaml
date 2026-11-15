@@ -1,0 +1,56 @@
+{
+  "name": "HuggingFaceTB--SmolVLM-256M-Base-own-fullsource-option-BF16-v2-20261115",
+  "description": "Original own SmolDoclingDiscriminativeVLM option-text mean logprob protocol, BF16, no cache and no autoregressive scoring substitution. Prior NPU.450 versus user A100 D.300 remains outside5%; this qualification rerun adds complete own source-to-NPU SHA and retained full visual values, replacing sparse source-slice-only proof. The historical A100 engine/tensors were not captured; D is the user-confirmed reference. No scoring, model math, input budget or original checkpoint change.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolVLM-256M-Base",
+    "adapter": "universal_eval/model/adapters/smolbase_own_fullsource_bf16_v2.py:SmolBaseOwnFullSource",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/HuggingFaceTB/SmolVLM-256M-Base",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/smolbase_own_fullsource_option_bf16_v2.json",
+      "protocol_sha256": "1410c305976eda7a900111b3bd1ce54bc5a654a7a97bcfe9070eed75d0d0d47b",
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "native_explicit_mc_v2",
+    "adapter": "universal_eval/algorithm/native_explicit_mc_v2.py:NativeExplicitMCV2",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.3,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

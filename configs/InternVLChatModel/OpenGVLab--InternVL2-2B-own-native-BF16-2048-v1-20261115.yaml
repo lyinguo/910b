@@ -1,0 +1,59 @@
+{
+  "name": "OpenGVLab--InternVL2-2B-own-native-BF16-2048-v1-20261115",
+  "description": "Saved own vLLM eager/Greedy2048/outer10, own tokenizer and current original vLLM processor; NPU uses own native InternVision24+InternLM2 eager BF16 and exact original dynamic factor2 RoPE. Historical A100 engine/tensor bytes not captured. Workbook D is the user-confirmed comparison reference.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/InternVL2-2B",
+    "adapter": "universal_eval/model/adapters/internvl2_2b_own_native_bf16_v1.py:InternVL2OwnNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL2-2B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/internvl2_2b_own_native_bf16_v1.json",
+      "protocol_sha256": "4f48e1d97c24adf63a8b423d9597a26ad852a13a668fc908e23a09568ba8bf5f",
+      "protocol": {
+        "model_id": "OpenGVLab/InternVL2-2B"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.835,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

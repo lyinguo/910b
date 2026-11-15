@@ -1,0 +1,74 @@
+{
+  "model_id": "rednote-hilab/dots.ocr",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/DotsOCRForCausalLM/rednote-hilab/dots.ocr",
+  "source_tensor_count": 643,
+  "own_weight_files": {
+    "model-00001-of-00002.safetensors": {
+      "bytes": 4292758192,
+      "SHA256": "ea1d532184f3adf5cbcfcc00b2cf5b2abfa6fe182768a3ae63d441a9b5fc99ac",
+      "header_SHA256": "4051efce1b7cbb5829a0d2fd5c225b6d7adaad82fa7ac29973b4c723dd549f0e"
+    },
+    "model-00002-of-00002.safetensors": {
+      "bytes": 1785673544,
+      "SHA256": "26ab1ec6c8b4e4116befbd59af42159f1dbcb0ad0c045a15e890bb2f6e8b0dae",
+      "header_SHA256": "2574ff00758fa34adf6077061e2234024201b892883ec472d2020ee3aa0bf5db"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.json": "315c86fc560a11463ab2360aea5c7001c56533cb7229ee5cbcaaecca6d210698",
+    "config.json": "41d5c9aad72c730bb97062cab7a59cdb1d427eeec0b7a6e2f95e1ee72ad3b498",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "generation_config.json": "daaf4cfc2d4bd75bc68d07a8e51dcfb464f99e59a8d69772b25f1c793c7b3cdf",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors.index.json": "90b4c82045a7d1343348d59c584d124a9cc0e23f3ca8b7d81250e93030924842",
+    "preprocessor_config.json": "fec8b3187ab0ae340f6d0b1f6f892a53c63b73b328836c83dd7bff1d5bc4c79a",
+    "special_tokens_map.json": "92b060f39417514eed2f7652f454a3d5afb0e4a57b9f4b51dd4d1dfd8fdb9736",
+    "tokenizer.json": "386545eb05f08c51352cde2fcc2c867f1592bb330f305efd1c6a57a93b1244cd",
+    "tokenizer_config.json": "4f09a26dd6b20c82e9678d96b7363a58a778a948a21261d3315a949d47ed4cf4",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DotsOCR_own_original_source_frontend200_v3_exact_original_rescale_user_continue_20261115/own_full_source_manifest.json",
+  "own_source_manifest_SHA256": "6c186a9cbbf33a01f95f4cd23c2951b5761e0a9e4b93f535a2a47a2e1281836f",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DotsOCR_own_original_source_frontend200_v3_exact_original_rescale_user_continue_20261115/own_original_frontend200.json",
+  "own_frontend200_SHA256": "c20e14e9966091dc9b1ea0855215ccbe562ea5750bf4000098067dd7e18fb196",
+  "dataset_path": "/mnt/afs/comp_error/workspace/datasets/image-to-text-ocr/eval.jsonl",
+  "dataset_SHA256": "49aa4d96f9c24c16d31f8cb092ddb0ee839f93a0507c8588675cdd5801b9efd5",
+  "workbook_D_reference_authorized": true,
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "9b51ede8e3e15079017d9b8fcd9181ff681df7c10a17339cd488d7d8b033c62a",
+  "current_A100_D_values": {
+    "server": "0.2830",
+    "local": "0.2830",
+    "preserved_original": "0.283"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/dotsocr_own_original_sources_20261115/configuration_dots.py": "e86a4fd70c6f21178c57112c44d5cc64b8ee02e3e8ad8cafe00045c0844b931b",
+    "universal_eval/model/dotsocr_own_original_sources_20261115/modeling_dots_vision.py": "9fb57cce892e6f065ff86b6f02fbd72110fe6d9f749c2ae8c82897068bbed877",
+    "universal_eval/model/dotsocr_own_original_sources_20261115/modeling_dots_ocr.py": "18a433538112dbe86d3814c55eec6160a8b9828cbb50d582343d537f02fa9d92",
+    "universal_eval/model/dotsocr_own_original_sources_20261115/__init__.py": "0c5cb8decc98f12e6ef72c77a40aab7489cb4541132820f70a7f6612aace99c0",
+    "universal_eval/model/dotsocr_own_original_sources_20261115/modeling_dots_ocr_vllm.py": "fc70aa417e8c0f5589366fbdc789193c97f4c4d0a094f867b222092188b68b19",
+    "universal_eval/model/adapters/dotsocr_own_frontend_bf16_v2_original_rescale.py": "2934e02c79b967df1fdb3620ccf42e23e2770e14617c6c06f8e4a07ad3031853",
+    "universal_eval/model/adapters/dotsocr_own_native_bf16_v2_original_rescale.py": "f8de7dd72622959d71c93bcb0528d14c0387a0a8128cbe0881b9d7e40b7c1c46",
+    "scripts/verify_dotsocr_own_native_bf16_v2_original_rescale.py": "c88172eb6449e0bb9309c0df79bc48d8b39c5102a7b88ef90fd1b66dd4b99668",
+    "scripts/prepare_dotsocr_own_fullsource_frontend200_v3_original_rescale_20261115.py": "d474263d191a9dea16d62fe7b9b32096832136b923b461d3cda820ca2e5d00d9",
+    "scripts/prepare_DotsOCR_own_native_v2_readiness_true3_20261115.py": "31d19c3162267d7f74cc8510f2a4d6f4dc2d6ba682d6ae2fb2d7ca0aaa4c2376",
+    "universal_eval/algorithm/dotsocr_original_greedy_evidence_v1.py": "c352ae64653b865c015fac456bd827b044ade8e2976309bbe77054019b3cf431",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/metric/ocr.py": "d9ff3adea304f72af700f6b6528202ecf5a68498b2609555c89bc01fce70ebfd",
+    "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+    "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+    "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DotsOCR_own_original_source_frontend200_v3_exact_original_rescale_user_continue_20261115/readiness.json": "a003ff514931ecb1214fae4ade38ff2d7cc613a7cb3a2cdce87b4a6d33c142ea",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b"
+  },
+  "historical_source_boundary": "User-confirmed workbook A100 D is the comparison. Own saved DotsOCR VLLMModel OCR3000/fixed0:199, original max_tokens12, Greedy serial1 with original final-answer suffix and OCR extraction/CER; own BF16 weights and 42-block original vision/28-Qwen2/151936 head, native 28 GQA2x128 cache, original own max11289600 pixels and patch14/merge2, own multimodal chat_template.json and own imgpad151665. Original stored VLLM engine/template dispatch/backend bytes were not captured; current native Qwen2 eager and original missing-FA2 VisionAttention fallback disclosed, no historical bitwise claim. No generic mock/stub initialization, own source functions unchanged, no new token ids or borrowed assets. Independent pixel reference follows installed original F64 multiply then F32 normalization; actual processor pixels were not altered.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

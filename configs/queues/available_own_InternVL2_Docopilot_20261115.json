@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "UTC": "2026-11-15T08:53:07.885242+00:00",
+  "evidence_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/available_own_InternVL2_Docopilot_immediate_private_stage_queue_1535_20261115",
+  "immediate_next_on_actual_completion": true,
+  "original_runner_lock_and_all_report_numeric_guards_preserved": true,
+  "no_G_or_canonical_write_by_scheduler": true,
+  "stages": [
+    {
+      "model_id": "OpenGVLab/InternVL2-2B",
+      "source": "scripts/continue_internvl2_verified3_after_four_run_retention_fresh3_fixed200_v7.py",
+      "source_SHA256": "909a438bd46ec72e78867091139cdcd9fbc587d032a86c65399b28c53ac31f7e",
+      "completion": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/InternVL2_2B_verified3_after_authorized_retention_fresh3_fixed200_v7_1535_20261115/actual_completion.json",
+      "own_weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/InternVL2-2B"
+    },
+    {
+      "model_id": "OpenGVLab/Docopilot-2B",
+      "source": "scripts/continue_docopilot2b_true3_fresh3_200_v1.py",
+      "source_SHA256": "67d3429181f514c9454d1b5046ff1ee8ddffc20203dfa7b40537ab5f3d3d522b",
+      "completion": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_true3_then_measured_capacity_approved_fresh3_fixed200_continuation_v1_1535_20261115/actual_completion.json",
+      "own_weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/Docopilot-2B"
+    }
+  ]
+}

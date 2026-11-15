@@ -1,0 +1,59 @@
+{
+  "name": "mlx-community--gemma-3n-E4B-it-bf16-native-BF16-chat-2048-v1-20261115",
+  "description": "Saved own vLLM/Greedy 2048/outer10 configuration and own instruction template reconstructed as native HF SDPA BF16/inner serial1 on 910B. A100 comparison uses the user workbook D. Historical A100 engine bytes/tensors were not captured.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "mlx-community/gemma-3n-E4B-it-bf16",
+    "adapter": "universal_eval/model/adapters/mlx_gemma3n_e4bit_bf16_native_v1.py:MLXGemma3nE4BitBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3nForConditionalGeneration/mlx-community/gemma-3n-E4B-it-bf16",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/mlx_gemma3n_e4bit_bf16_native_v1.json",
+      "protocol_sha256": "858103eb55906e05bd3513aef2d78929bf743606f7301605170b400e53ce6a6e",
+      "protocol": {
+        "model_id": "mlx-community/gemma-3n-E4B-it-bf16"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.805,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

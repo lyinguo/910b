@@ -1,0 +1,12 @@
+{
+  "prior_model_id": "nvidia/Eagle2-1B",
+  "prior_controller_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_1B_true3_then_measured_capacity_approved_fresh3_fixed200_continuation_v1_1910_20261115",
+  "next_model_id": "nvidia/Eagle2-2B",
+  "next_controller": "/root/projects/comperror/scripts/continue_eagle2_2b_true3_fresh3_200_v1.py",
+  "next_controller_SHA256": "47024ce47c17525d503a9b9a475cbcc531f5ff1fc6daab7d3c9b4368520a5e1d",
+  "next_readiness": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_2B_own_native_readiness_v1_1925_20261115/readiness.json",
+  "next_readiness_SHA256": "f17c1813316be2afd7ee2c9402980d3d7e2e9fa8300784a98927d7d9c37569fa",
+  "next_controller_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Eagle2_2B_true3_then_measured_capacity_approved_fresh3_fixed200_continuation_v1_1930_20261115",
+  "no_G_write": true,
+  "no_model_math_or_budget_change": true
+}

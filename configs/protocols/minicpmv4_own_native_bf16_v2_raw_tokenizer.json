@@ -1,0 +1,82 @@
+{
+  "model_id": "openbmb/MiniCPM-V-4",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV/openbmb/MiniCPM-V-4",
+  "own_weight_files": {
+    "model-00001-of-00002.safetensors": {
+      "bytes": 4966445072,
+      "SHA256": "c1636a5c21c7fedb3f6f0ff3f3a4e35103e6208c1144f320a0c5a92c22a16af6"
+    },
+    "model-00002-of-00002.safetensors": {
+      "bytes": 3152707944,
+      "SHA256": "cd6ee63b0a3ae1ad24790f954cca3448392cd3a0d9d2d208cb2b14e0da53d32e"
+    }
+  },
+  "own_assets_SHA256": {
+    "config.json": "a83a83259378c2684a96ce3a6cb96d418a1d97f46118af3aff2ac1222fc783b8",
+    "configuration_minicpm.py": "ff493a387dbac8bcde4bad93574f74238d4f715808189630c6d1f7ed207e9dfc",
+    "generation_config.json": "b3604fc95ad97535c8efa08711e939743fb57cc004fc36ef358684dd2083087f",
+    "image_processing_minicpmv.py": "070fbe746243ce3fd666b48bbf415d9b9b3bf4cddaad15ab3f243733e40a6201",
+    "model.safetensors.index.json": "803b4c6605fd33df8ba4386c787f914e75d4d382f937e4e2c3f640d47e1f6d5c",
+    "modeling_minicpmv.py": "c59f539caf3bab55b4d491cb56449d6267ae07fe1ff25f63a859ea4a3e7f69e2",
+    "modeling_navit_siglip.py": "c71ca316fe7405325b7097364f98f71c317fff8c9f5c8820f30d3362b1ed5bfa",
+    "preprocessor_config.json": "1d9513a6613e3919dda231a4ea935073122fd92107ab5342abd8ab3c212ca8f5",
+    "processing_minicpmv.py": "8af1702cc70167e94cb77f0d3a7c387d0923755a22679c7313a8380b72e5a3b2",
+    "resampler.py": "6f4f91977fd409b15fe7d2e7ab2ee3f88b544e71a1209026a937eece6c6c582e",
+    "special_tokens_map.json": "068594063e37662c02b21acf42ebb334ef6a74fb810e68a2368f88f08351de76",
+    "tokenization_minicpmv_fast.py": "4512e985d4af814747a5c9d81d5f911fcb95c1d714b547282b01dd06639c08d0",
+    "tokenizer.json": "028e74a0efb7bbe99dc7e8b5c216c5fe54da231f80f41bb658e21326883503f3",
+    "tokenizer.model": "63099373ce6901674187ba3d7233c5970a253e8e0874056823bf0d3abc8d96a1",
+    "tokenizer_config.json": "c13da6ff468cfed3d14eeccd4198cc304305660281cb91dc280aeb332e4d67e4"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_native_frontend200_source_meta_preflight_user_continue_20261115/own_source_tensor_manifest.json",
+  "own_source_manifest_SHA256": "a9bfb3733a734b4d42499d6b1305d86e1c82671806c8cda1f9146e6848bac065",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_frontend200_v3_exact_raw_tokenizer_special_metadata_user_continue_20261115/own_frontend200.json",
+  "own_frontend200_SHA256": "0eec15900aae68aa1a1a3466636a3678896fa7c49a3d9af14e8517faa9bc71a8",
+  "workbook_D_reference_authorized": true,
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "reference_workbook": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_native_YAML_resource_source_readiness_v1_user_continue_20261115/reference_workbook_original_bytes.xlsx",
+  "reference_workbook_SHA256": "960d16530a4d8f011297efcb4affec5e6a41867c4f7e6665683346509a9c4a11",
+  "current_A100_D_values": {
+    "server": "0.8900",
+    "local": "0.8900",
+    "preserved_original": "0.89"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/minicpmv4_own_native_bf16_v2_raw_tokenizer.py": "7b774dc39f039f47f800d56d9714f10e8ee07e381bc1503482523eed52a4fae8",
+    "universal_eval/model/adapters/minicpmv4_own_frontend_v2_raw_tokenizer.py": "255dca3a36d0c00a9f317b90e70ed87a29af8194b4013b4c609033619d26de50",
+    "universal_eval/model/adapters/minicpmv4_own_frontend_v1.py": "d3b7b2a9ab3fb095814c9876ab577ea14760502f2ca781a6dbd98f1477f083be",
+    "universal_eval/model/adapters/minicpmv4_original_pixel_check_v1.py": "ad5abbde88ecde0920e52fad8cc00012b86a035e3b3f13719f092b009aa16dd6",
+    "scripts/verify_minicpmv4_own_native_bf16_v2_raw_tokenizer.py": "b268d0d7018a59348f9597889a1a9e8def41ee2472de054df62e019c64d67e5c",
+    "scripts/continue_minicpmv4_true3_fresh3_200_v3_raw_tokenizer.py": "8358886559d4f47ac477754eb193ecce3dbc0c1ec91532e3af969d6734f06eb4",
+    "scripts/prepare_minicpmv4_own_native_yaml_v5_raw_tokenizer_bound.py": "08c70d56e17d9fc5616fc8c3d0e7868bffa696a0031107e1b382b99affd832a8",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "universal_eval/model/minicpmv4_own_native_20261115/__init__.py": "56f122c42f026bc1c68b4219ebaf91636f573195da0b69bf432d427846af592e",
+    "universal_eval/model/minicpmv4_own_native_20261115/configuration_minicpm.py": "ff493a387dbac8bcde4bad93574f74238d4f715808189630c6d1f7ed207e9dfc",
+    "universal_eval/model/minicpmv4_own_native_20261115/image_processing_minicpmv.py": "070fbe746243ce3fd666b48bbf415d9b9b3bf4cddaad15ab3f243733e40a6201",
+    "universal_eval/model/minicpmv4_own_native_20261115/modeling_minicpmv.py": "c59f539caf3bab55b4d491cb56449d6267ae07fe1ff25f63a859ea4a3e7f69e2",
+    "universal_eval/model/minicpmv4_own_native_20261115/modeling_navit_siglip.py": "c71ca316fe7405325b7097364f98f71c317fff8c9f5c8820f30d3362b1ed5bfa",
+    "universal_eval/model/minicpmv4_own_native_20261115/processing_minicpmv.py": "8af1702cc70167e94cb77f0d3a7c387d0923755a22679c7313a8380b72e5a3b2",
+    "universal_eval/model/minicpmv4_own_native_20261115/resampler.py": "6f4f91977fd409b15fe7d2e7ab2ee3f88b544e71a1209026a937eece6c6c582e",
+    "universal_eval/model/minicpmv4_own_native_20261115/tokenization_minicpmv_fast.py": "4512e985d4af814747a5c9d81d5f911fcb95c1d714b547282b01dd06639c08d0"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_native_frontend200_v2_tensor_metadata_recovery_user_continue_20261115/readiness.json": "43f142f7068307e4950260a59c3cccba13bdd1471eb1a96328df0a139c8b0338",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_native_frontend200_v2_tensor_metadata_recovery_user_continue_20261115/actual_completion.json": "886e680de7a0bb615929c78a739c566d8db94a9c7e27ecf682d9d988c362c0de",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_native_frontend200_source_meta_preflight_user_continue_20261115/own_source_copy_review.json": "1ce5beb89a820c6a1d0234756a142cceb9a21162f5cc064d5ecca8131e8c7c1d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_frontend200_v3_exact_raw_tokenizer_special_metadata_user_continue_20261115/readiness.json": "821fab4d1424fb744075813ecaef2dbab14edb6cb497069f9e39f7e250b66387",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV4_own_frontend200_v3_exact_raw_tokenizer_special_metadata_user_continue_20261115/actual_completion.json": "adbdbe7bece6a711ff8cd55526bf83931a516e5791f4a370d8061814a33050fa"
+  },
+  "historical_source_boundary": "Own original MiniCPM-V-4 saved VLLMModel: own BF16, Greedy outer10, 2048 budget, own ChatML, 64 soft tokens per original max9 slice image, EOS2/73440, native Llama longrope. Current native own HF eager vision and Llama/resampler, serial1 within original outer10, complete learned weights on NPU. Original A100 engine/backend bytes and tensors were not captured; no bitwise historical runtime claim. Workbook original D remains the authorized comparison. Exact original own tokenizer.json backend is restored after current HF constructor lost embedded image-special encoding. All 73448 vocabulary ids, original normalizer/pretokenizer/postprocessor/decoder and own JSON bytes remain identical. No added or replaced token ids, borrowed tokenizer, embedding resize or changed model math. Old image-unused 3/91 result is rejected and preserved, not reused as visual evidence.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

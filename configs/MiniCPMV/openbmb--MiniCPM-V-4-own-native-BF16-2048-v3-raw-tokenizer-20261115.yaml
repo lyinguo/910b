@@ -1,0 +1,59 @@
+{
+  "name": "openbmb--MiniCPM-V-4-own-native-BF16-2048-v3-raw-tokenizer-20261115",
+  "description": "Own original MiniCPM-V-4 full source native BF16, complete five reports and full head/KV/input evidence",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "openbmb/MiniCPM-V-4",
+    "adapter": "universal_eval/model/adapters/minicpmv4_own_native_bf16_v2_raw_tokenizer.py:MiniCPMV4OwnNativeBF16V2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV/openbmb/MiniCPM-V-4",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "openbmb/MiniCPM-V-4"
+      },
+      "protocol_file": "/root/projects/comperror/configs/protocols/minicpmv4_own_native_bf16_v2_raw_tokenizer.json",
+      "protocol_sha256": "532bd4d22a9e5eddcc710d542e24e0e0b1ff5e67508e374c05bc14699a1cc735"
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.89,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

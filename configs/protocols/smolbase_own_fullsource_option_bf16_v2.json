@@ -1,0 +1,63 @@
+{
+  "model_id": "HuggingFaceTB/SmolVLM-256M-Base",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Idefics3ForConditionalGeneration/HuggingFaceTB/SmolVLM-256M-Base",
+  "resource_sha256": {
+    "added_tokens.json": "18978c45479d31b68104a8846f6a11c502f539258fcf1ff006c2d3356dd4333d",
+    "chat_template.json": "4d394b3c624d9c548e149ba1cbdf40215904629fc5a171a04211adc241a7da0c",
+    "config.json": "fe21c9feaf43b717675899c12e5889acb9248261e2886ba9dd762f26c5e98e8f",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "generation_config.json": "20bb8ca56949f0c2d048a745e78da9df281fa817fb7930cabfde1a80971c7f41",
+    "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+    "preprocessor_config.json": "6cb6e36d6fcb88ca1502c4a26750715dc3e7dedddc9a8f17b27d8d167d1457e7",
+    "processor_config.json": "e7bff42da73ae9eec9042ef20e066e11f1ee20f025358ff79131e3c0fb549b46",
+    "special_tokens_map.json": "aa0ff906077086dfa9734a7f97f68c825877a48f9468807be65504495cdeef09",
+    "tokenizer.json": "761e5e6886a3184d65cb626bac0253616c33d5e3df7c2c40ed0d87ed85b41a62",
+    "tokenizer_config.json": "e9cb30a053a50b094501c1370aaea394ce4d387a1acef475ee37358efdf3e870",
+    "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+  },
+  "runtime_sha256": {
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/modeling_idefics3.py": "ed053434f2c5347d5f56b145abea2b6b44c2a16008a68bb565aff89c55ff7bed",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/processing_idefics3.py": "380aaf0761f29d3221b7b750d7585ed29ceeec36818666f6da8768d907c8592c",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/configuration_idefics3.py": "86628f41a51472a7322795162a534fb16f8439a39fdab8470fb5ee2dfeab10e2",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/idefics3/image_processing_pil_idefics3.py": "c0d9480ea2a1b943aac6eac1dafbbe6d2cf20661e9d7d66727523e553a5ef8dd",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/llama/configuration_llama.py": "5e2e803d15956cdc402ab1c4a5151a899bd39ddfbecbb81181733657817aaeda"
+  },
+  "weight_headers": {
+    "model.safetensors": {
+      "size": 513028808,
+      "header_sha256": "aa10d06ce394f9f1ba247ab6445e44eb96993a1ec453be663deadb53292e0c75"
+    }
+  },
+  "weight_file_SHA256": {
+    "model.safetensors": "ec40c62f049b6d8e9c35777e24be8d5d88070a9b1004fcce452f73a39d01c960"
+  },
+  "original_config": "/root/projects/comperror/configs/Idefics3ForConditionalGeneration/HuggingFaceTB--SmolVLM-256M-Base.yaml",
+  "original_config_sha256": "d4a824c363eeb921351d32af941079dbaf6d71925e96b9faf820abc134de07df",
+  "original_adapter_sha256": "03de4a47ec6236fc66b8c2ca6a5d933d7f7636ec8de9fd235ee18837593be60d",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/smolbase_own_fullsource_bf16_v2.py": "81efba2c24065084e9b46685eef7e53ab6df42256bc9e0a96b97d4feab14f09b",
+    "scripts/verify_smolbase_own_fullsource_bf16_v2.py": "945d51134dafb9b00d0c82d907d764a26ed4ff7481ea0f5f62d2e3aff10744fd",
+    "universal_eval/model/adapters/idefics3_option_ranking_910b_adapter.py": "99f960000ee0d4bcb8f2a08c89c87889cf76eeb7773ceba1341e5014533aa434",
+    "universal_eval/model/adapters/idefics3_searchsorted_910b_adapter.py": "cbc40372034712fc1c4707ed44f4e71fc4171dfc9fb5b574146f56ea24fead15",
+    "universal_eval/model/adapters/smoldocling_discriminative.py": "03de4a47ec6236fc66b8c2ca6a5d933d7f7636ec8de9fd235ee18837593be60d",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "dataset": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "960d16530a4d8f011297efcb4affec5e6a41867c4f7e6665683346509a9c4a11",
+  "current_A100_D_values": {
+    "server": "0.3000",
+    "local": "0.3000",
+    "preserved_original": "0.3"
+  },
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "sample_guard_bytes": 2147483648,
+  "historical_source_boundary": "Original own SmolDoclingDiscriminativeVLM option-text mean logprob protocol, BF16, no cache and no autoregressive scoring substitution. Prior NPU.450 versus user A100 D.300 remains outside5%; this qualification rerun adds complete own source-to-NPU SHA and retained full visual values, replacing sparse source-slice-only proof. The historical A100 engine/tensors were not captured; D is the user-confirmed reference. No scoring, model math, input budget or original checkpoint change."
+}

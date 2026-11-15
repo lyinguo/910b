@@ -1,0 +1,84 @@
+{
+  "own_original_vllm_stop_ids": [
+    2
+  ],
+  "saved_vLLM_engine_uses_explicit_KV_despite_HF_config_use_cache_False": true,
+  "model_id": "OpenGVLab/Docopilot-2B",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/Docopilot-2B",
+  "own_assets_SHA256": {
+    "added_tokens.json": "df59e170102f8d19d3e186cc91c81006c9822ea9fe8ce2b68e7be77195c01db3",
+    "config.json": "3775e3179b63b975cf4ced08aaabb6bdf7a1509ef0d7a1c32c2e01471f690233",
+    "configuration.json": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c",
+    "configuration_intern_vit.py": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+    "configuration_internlm2.py": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60",
+    "configuration_internvl_chat.py": "2f158940c2a9224f65afb017c93bb46c0a34e5bf6b3ef50c93744b2e9ea0235f",
+    "conversation.py": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+    "generation_config.json": "69d76e6b0a3b31f0de871f8f5b968957e0532fd9b17214aabf151da4bdbe1804",
+    "modeling_intern_vit.py": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b",
+    "modeling_internlm2.py": "c014d933c6afdf7414791c1859c692ca4b49c925688bcc00fbd1658ef75fb0ba",
+    "modeling_internvl_chat.py": "1915c32d984aed6750e911884ad59f92504f73b799c7443121c67b9cb21fe347",
+    "special_tokens_map.json": "8cb729e6fd4c29e8c5be65cb51128735cea0ab56606a186cf8cbb30123c72eae",
+    "tokenization_internlm2.py": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa",
+    "tokenization_internlm2_fast.py": "b6dc75cb1a276a897190a003b97a65b13b68b948d64646df67e7f18392dfbb34",
+    "tokenizer.model": "e2486ca5c306ecb7c18cd8e0fea161d33faaf7e15db89f972bba13cd2649df95",
+    "tokenizer_config.json": "5d447a72776c37ec21eaf10e45bb4634068388f56c9373882aac8aea91c40aed"
+  },
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 4411571040,
+      "SHA256": "f5cc4fbd7aeed504cf492e6349f0976fb7748651e24ef87873c037b08a99099d"
+    }
+  },
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_frontend200_original_vllm_stop2_1535_20261115/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/docopilot2b_own_native_bf16_v1.py": "9b20fe09f56c2b0a6c5d6eba8fb259906e0d2a44ac7d02d02250e647b18adb5b",
+    "scripts/verify_docopilot2b_own_native_bf16_v1.py": "274b3812f9e273786b0d64b223a3f4e98a089f77ce87e74c824bb4f05bfe96d4",
+    "scripts/prepare_docopilot2b_own_native_v2_local_D.py": "22f499a542171138f5a9efe2e7ea164688ecf706964f89f98717b20ea7e2dd7b",
+    "scripts/prepare_docopilot2b_own_frontend200_original_vllm_stop2.py": "cf52c6215cf33c1da8487f06d70d945970079f3046f004351721c866911b446a",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "universal_eval/model/internvl35_flash4b_own_native_0123_20261113/own_original_timm_drop_path_0123_20261113.py": "7383b91a00968b1cbe33a8d761813ef558ef91da7a64b971a496ba3d0af83d16",
+    "universal_eval/model/docopilot2b_own_native_20261115/modeling_internlm2.py": "c014d933c6afdf7414791c1859c692ca4b49c925688bcc00fbd1658ef75fb0ba",
+    "universal_eval/model/docopilot2b_own_native_20261115/modeling_internvl_chat.py": "1915c32d984aed6750e911884ad59f92504f73b799c7443121c67b9cb21fe347",
+    "universal_eval/model/docopilot2b_own_native_20261115/configuration_internvl_chat.py": "2f158940c2a9224f65afb017c93bb46c0a34e5bf6b3ef50c93744b2e9ea0235f",
+    "universal_eval/model/docopilot2b_own_native_20261115/configuration_internlm2.py": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60",
+    "universal_eval/model/docopilot2b_own_native_20261115/configuration_intern_vit.py": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+    "universal_eval/model/docopilot2b_own_native_20261115/tokenization_internlm2.py": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa",
+    "universal_eval/model/docopilot2b_own_native_20261115/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/docopilot2b_own_native_20261115/conversation.py": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+    "universal_eval/model/docopilot2b_own_native_20261115/modeling_intern_vit.py": "4a5ccff6504e18a6328aea84a6c1c035744e8c37894c1ea428a2c6e35c0e21bd",
+    "universal_eval/model/docopilot2b_own_native_20261115/tokenization_internlm2_fast.py": "b6dc75cb1a276a897190a003b97a65b13b68b948d64646df67e7f18392dfbb34"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_frontend200_original_vllm_stop2_1535_20261115/review.json": "8e9a8212d46731493470ebe9d456fafcbe844caaf67808bcde6c05b5441cb9ee",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_frontend200_original_vllm_stop2_1535_20261115/frontend200.jsonl": "bdbc5d87ef16d2e2195942692da17c92e1403274a8925213191385fa050610d8",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_frontend200_original_vllm_stop2_1535_20261115/source_headers.json": "c5ea4097924fdfd4bd7f649bf7398e84351844559253af75d199ab4e4cc09ccf",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_frontend200_original_vllm_stop2_1535_20261115/original_vllm_stop_defaults.json": "407665957c7facdf18a295bfbe5c52eeda357fd97ea9cd3cbebe010c7da5ce81",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_meta_vllm_default_scope_1535_20261115/review.json": "79805366d1c4deb8636042f241b15ebd89d6dba4537d3bd8ca47545e2bf25119",
+    "/vllm-workspace/vllm/vllm/model_executor/models/internlm2.py": "4474c6d89febbcc332c6b33fb1ddcd90baa40602766f04c1d533aa276b181ca4",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Docopilot2B_own_source_frontend_launch_1535_20261115/own_source_transplant.json": "074b7ddd418d9339cc2d0819e4515c1d2f3e9f871c86c6e9d2571ee93c09e3a3",
+    "/root/projects/comperror/configs/InternVLChatModel/OpenGVLab--Docopilot-2B.yaml": "35343bcb2cdc9d9a2813b5c9284188814e762ce1f07626a34efe0e4d5a040b79",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "3f25bdf0c0da51840b2ef604e7723616bab838729ee6a46b6bfe7020bcbe230e",
+  "current_A100_D_values": {
+    "server": "0.8000",
+    "local": "0.8000",
+    "preserved_original": "0.8"
+  },
+  "workbook_D_reference_authorized": true,
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Saved own vLLM/Greedy2048/outer10 (no enforce_eager override in own saved YAML), own tokenizer and current original vLLM processor; NPU uses own native InternVision24+InternLM2 eager BF16 and exact original dynamic factor2 RoPE. Saved mnt2 path is unavailable; current registered own Docopilot checkpoint is frozen by its own complete SHA. Own generation_config supplies no extra EOS; original vLLM defaults use own tokenizer EOS2 only. Saved vLLM engine KV maps to explicit native tuple KV without rewriting own HF use_cacheFalse. Historical A100 engine/tensor bytes not captured. Workbook D is the user-confirmed comparison reference."
+}
