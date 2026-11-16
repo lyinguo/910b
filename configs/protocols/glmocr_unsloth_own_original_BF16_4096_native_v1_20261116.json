@@ -1,0 +1,70 @@
+{
+  "model_id": "unsloth/GLM-OCR",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/GlmOcrForConditionalGeneration/unsloth/GLM-OCR",
+  "source_tensor_count": 510,
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 2650579464,
+      "SHA256": "a16eb0de98d199293371c560f95f83130d2a2c9612449df16839f08ff9498815"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "062e7ee4cc8defa88a5938b5d456dc60366ffd80647f918946ee747bf09ddc7c",
+    "config.json": "4e1daf0d8a3f63e58960ac14bcb58b7be96758cad231fb7a1e5fec60f42dcd8c",
+    "configuration.json": "2e1c5a9e1cdae7ee2a28ac27d4e25172029cfa661cbeb4418f6be9998ef02f79",
+    "generation_config.json": "4e2a3412f65b2a21d315d928986c55723d3e60dfb92c3982a5b9fd56835b0aa5",
+    "preprocessor_config.json": "02cc50c36240882ae35e8cd4077a25a379664108185d728d261cb785aefeccff",
+    "tokenizer.json": "aa0fd058c73a5718bb191f6672dc16d122ee0147b20c123d1726514298f9968a",
+    "tokenizer_config.json": "23404f517abeb2893f1c175c6d7c539f733f6fca287414a2ce9ab569d99a1c06"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLMOCRUnsloth_own_original_BF16_4096_frontend200_meta_v1_exact_F32_fused_constants_no_NPU_20261116/own_source_manifest.json",
+  "own_source_manifest_SHA256": "69a8816f4f54386a9e5476191c9088d5d1e48c5867c377625fe2a934487c3ff1",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLMOCRUnsloth_own_original_BF16_4096_frontend200_meta_v1_exact_F32_fused_constants_no_NPU_20261116/own_original_frontend200.json",
+  "own_frontend200_SHA256": "6621c3fa86c3d9eec426fdec4f69e8fd177961e52419b9928ba4abede58667ba",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl",
+  "dataset_SHA256": "49aa4d96f9c24c16d31f8cb092ddb0ee839f93a0507c8588675cdd5801b9efd5",
+  "original_stop_ids": [
+    59246,
+    59253
+  ],
+  "original_BF16_4096_outer1_inner1_CER_protocol_preserved": true,
+  "own_unused_MTP_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLMOCRUnsloth_own_original_BF16_4096_frontend200_meta_v1_exact_F32_fused_constants_no_NPU_20261116/own_unused_MTP_original_source_manifest.json",
+  "own_unused_MTP_source_manifest_SHA256": "71d8119ee49b8a03ca2f13a409c6b81eb16e470598a24d2bcf8d1d33fea1a197",
+  "original_physical_source_tensor_count": 526,
+  "original_unused_MTP_source_tensor_count": 16,
+  "workbook_D_reference_authorized": true,
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "364cf16d7fca909bafa4c3fef0c042c595a9be7f6bdcea236d66c1278fb4e87b",
+  "current_A100_D_values": {
+    "server": "0.0701",
+    "local": "0.0701",
+    "preserved_original": "0.0701"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/glmocr_unsloth_own_frontend_20261116.py": "4994cbebbd57aa30d0aeef2fb68cd27c7f543c7a54722e08fafafac190fa6694",
+    "universal_eval/model/adapters/glmocr_unsloth_own_native_bf16_4096_20261116.py": "46e11df763d3e4e37437410052233eabd143ed2f8d2a1297d7f4ccbda32cb39f",
+    "scripts/verify_glmocr_unsloth_own_native_bf16_4096_v1_CER_primary_20261116.py": "7075e5abb34831266ac92dd1dc23b114efb028aba6d0b5bfb749d14cba7a6c00",
+    "scripts/prepare_glmocr_unsloth_own_readiness_true3_20261116.py": "68a6ab03d54d260dec3adabccf136e0d7a387d114907f3c84bb7e5f09726338c",
+    "scripts/prepare_glmocr_unsloth_own_original_4096_frontend_meta_v1_exact_F32_constants_20261116.py": "5e7b068fc639b5512818cc4ff6fbadb7ef0e84e4ef2b565f0d3e46c6c89e639b",
+    "universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/metric/ocr.py": "d9ff3adea304f72af700f6b6528202ecf5a68498b2609555c89bc01fce70ebfd",
+    "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+    "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+    "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLMOCRUnsloth_own_original_BF16_4096_frontend200_meta_v1_exact_F32_fused_constants_no_NPU_20261116/readiness.json": "a12f41197cb2eab5962bd7fa06dfc484d0bded14da6fe1b13915c1b9c25a4e67",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLMOCRUnsloth_own_original_BF16_4096_frontend200_meta_v1_exact_F32_fused_constants_no_NPU_20261116/own_unused_MTP_original_source_manifest.json": "71d8119ee49b8a03ca2f13a409c6b81eb16e470598a24d2bcf8d1d33fea1a197",
+    "/root/projects/comperror/configs/GlmOcrForConditionalGeneration/unsloth--GLM-OCR.yaml": "1fcab3e6f4edec2630d22c5cccb1a4b7aad58f5abe7dc8fa5c5af6bbaa85e0ee"
+  },
+  "historical_source_boundary": "User-confirmed workbook D is the comparison reference; online A100 replay is not an extra first200 gate. Own GLM-OCR BF16 checkpoint526 tensors, saved installed standard HF16 main decoder/vision24 path uses510 and does not execute16 auxiliary MTP parameters. All526 physical own tensors are hashed,510 active ones must match actual NPU. Own Glm46V processor/chat template uses the saved generic GlmOcr enable_thinking=False branch, not newly changed after a measurement. Original4096/greedy/outer1 serial1/native16cache/EOS59246,59253/CER OCR data and extraction retained. No mock initializer, package install, borrowed checkpoint/data/tokenizer/font, altered model math or shortened budget. Saved YAML names this same model at /mnt2/afs/download_models; current original-model inventory owns the checkpoint at /mnt/afs/huggingfaceautoclonemodels, whose own whole-file and per-tensor SHA are frozen. Historical path bytes and A100 engine/tensor bytes were not captured and are not claimed. No other model checkpoint is substituted.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

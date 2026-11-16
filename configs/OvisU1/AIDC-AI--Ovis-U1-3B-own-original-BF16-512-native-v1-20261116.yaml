@@ -1,0 +1,57 @@
+{
+  "name": "AIDC-AI--Ovis-U1-3B-own-original-BF16-512-native-v1-20261116",
+  "description": "Own original Ovis-U1 checkpoint/config/Qwen3_28+AIMv2_24/487 active source plus573 original unused Yak storage. Original BF16 load casts3 active F32 visual-head tensors; unused generator copies are source/NPU SHA controls, never claimed executed. Own original512/outer4 inner1/multimodal4096/current original CLIP Torchvision frontend/own formatter original default thinkingFalse unchanged. Original saved task label any-to-any with same own any-to-any-mmbench inputs; canonical B/report label image-text-to-text disclosed, no task/data replacement. Original root PreTrainedModel legacy generation-config side effect reconstructed from own root config, whose EOS is None; original predict explicitly passes that None, no new early EOS, all512 native greedy steps kept. Current Qwen3 native SDPA and real CANN varlen vision, original F32 rotary preserved; no mock/stub/library override or package install. Historical A100 engine/tensor and older runtime default bytes were not captured; workbook D is authorized comparison, not a claim of original engine capture.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/any-to-any-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "AIDC-AI/Ovis-U1-3B",
+    "adapter": "universal_eval/model/adapters/ovisu1_own_original_understanding_bf16_512_native_20261116.py:OvisU1OwnUnderstandingNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/OvisU1/AIDC-AI/Ovis-U1-3B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/ovisu1_own_original_understanding_BF16_512_v1_20261116.json",
+      "protocol_sha256": "4dd403c053dc1b9a50d55b040ab9af69b866ae622a0af9c4a5264fdb38ca88b4",
+      "protocol": {
+        "model_id": "AIDC-AI/Ovis-U1-3B"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 4,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy",
+      "BLEU-4",
+      "ROUGE-L"
+    ]
+  },
+  "baseline": {
+    "score": 0.875,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

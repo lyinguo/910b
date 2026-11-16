@@ -1,0 +1,55 @@
+{
+  "name": "nicoboss--MedraN-E4B-Uncensored-EP7-own-original-FP16-2048-native-v1-20261116-smoke",
+  "description": "User workbookD, own1676 originalF16/1631active+45unused sharedKV, original saved vLLM Greedy2048/outer10, own chat+EOS[1,106], native originalFP16 HF35 SDPA/hybrid cache. The unweighted MobileNet architecture has14874 unchanged operator nodes/edges/non-dtype literals, only its entry cast/static type annotations bound to own originalFP16. Every parameter is this checkpoint, no originalAA engine/tensor capture claimed, no BF16 or CPU grade substituted, no source/data/precision/budget/stop tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "nicoboss/MedraN-E4B-Uncensored-EP7",
+    "adapter": "universal_eval/model/adapters/medran_e4b_own_original_FP16_native_v1_20261116.py:MedraNE4BOwnOriginalFP16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3nForConditionalGeneration/nicoboss/MedraN-E4B-Uncensored-EP7",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/medran_e4b_own_original_FP16_native_v1_20261116.json",
+      "protocol_sha256": "e78d5e57539cc34991d32a9d38863d1d20bc5cfb5d7d9dd88e70473031b65193",
+      "protocol": {
+        "model_id": "nicoboss/MedraN-E4B-Uncensored-EP7"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.745,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

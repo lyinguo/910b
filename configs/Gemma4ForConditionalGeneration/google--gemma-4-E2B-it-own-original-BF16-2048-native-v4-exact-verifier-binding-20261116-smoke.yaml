@@ -1,0 +1,55 @@
+{
+  "name": "google--gemma-4-E2B-it-own-original-BF16-2048-native-v4-exact-verifier-binding-20261116-smoke",
+  "description": "Workbook B original any-to-any capability category is preserved as the report task label; the actual benchmark is exactly the saved original image-text-to-text MMBench image branch, with no claim that other modalities were evaluated. Own2011 BF16 Gemma4E2B source including1951 active and60 original unused sharedKV tensors; native original HF35LM/16vision, clippedlinear bounds, physical15 KV plus native shared20, original1536/262144 head. Saved own Gemma4VLLMModel already sets enable_thinkingFalse; the same own template branch and originalGreedy tail are retained, not newly disabled. Saved original batch2/2048 generation and4096 request budget, own dynamic aspect ratio280 soft patches/EOS[1,106,50]. Native reference serial requests preserve original dispatch order. The historical vLLM runtime/engine/tensors were not captured and are not claimed equal; no foreign checkpoint, processor, font, data, CPU score or budget/precision adjustment.",
+  "task_type": "any-to-any",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "google/gemma-4-E2B-it",
+    "adapter": "universal_eval/model/adapters/gemma4_e2b_own_original_BF16_native_v2_loading_info_set_safe_20261116.py:Gemma4E2BOwnBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/google/gemma-4-E2B-it",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/gemma4_e2b_own_original_BF16_native_v4_exact_verifier_binding_20261116.json",
+      "protocol_sha256": "f65d2ae2c8b7ec00194af46b92a30f37dec618e698a7fed4822c1f8ae80f7375",
+      "protocol": {
+        "model_id": "google/gemma-4-E2B-it"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 2,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.815,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

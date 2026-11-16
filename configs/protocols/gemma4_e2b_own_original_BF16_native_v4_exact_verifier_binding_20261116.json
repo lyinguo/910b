@@ -1,0 +1,75 @@
+{
+  "model_id": "google/gemma-4-E2B-it",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/google/gemma-4-E2B-it",
+  "report_task": "any-to-any",
+  "workbook_B_task": "any-to-any",
+  "saved_original_benchmark_task": "image-text-to-text",
+  "selected_image_to_text_branch_only_not_all_modalities": true,
+  "own_runtime_assets_SHA256": {
+    "chat_template.jinja": "603a42db292c25278e9b23d94c7abbe77453f13e26a053c43c5c2f900b4136f7",
+    "config.json": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330",
+    "configuration.json": "a2d35662b8f8fbef70347eb85d67514f383ca3594db139cb078a55b115e7891a",
+    "generation_config.json": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+    "processor_config.json": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c",
+    "tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "tokenizer_config.json": "90c3a3ba5bf53818383a58e1a776cbcacd2a038d4812eaa373e1522f2d06f3df"
+  },
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 10246621918,
+      "SHA256": "2db5482b20d746879bb3ef79b5203e9075a2e2b98f54ec7c2f281c1477ddc550",
+      "header_SHA256": "2f73f917a34fcf7c45554e83a8efb28bb016bdf38a48d2506d928411d4962f1a",
+      "tensor_count": 2011
+    }
+  },
+  "own_source_headers": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json",
+  "original_enable_thinking_false_from_saved_adapter": true,
+  "original_configured_batch_size": 2,
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/gemma4_e2b_own_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/gemma4_e2b_own_20261116/observer.py": "bb210b764a4054b06bdf425471e07213c662934189137b51921d79ccb322c2b3",
+    "universal_eval/model/adapters/gemma4_e2b_own_original_BF16_native_v2_loading_info_set_safe_20261116.py": "9a137bfa07508331f6983466c38528ac8f8ffe3c2d91811459d9e1e845d6c3b7",
+    "scripts/verify_gemma4_e2b_own_original_BF16_native_v1_20261116.py": "18e12e58105e2a8029211c5e30e0a74f943afb77839ee6f6e946616c75a152c1",
+    "scripts/prepare_gemma4_e2b_own_original_BF16_adapter_frontend200_v1_20261116.py": "46d44010eec82d1045dbca0985de3df3ee89d723f3edf940588e7227736d4ed3",
+    "scripts/prepare_gemma4_e2b_own_original_BF16_native_readiness_v4_exact_verifier_binding_20261116.py": "8c199586edd9cfb7b91451f631fe9acafa13ea3b4dc99e524b59776450f54a62",
+    "scripts/continue_gemma4_e2b_own_original_BF16_true3_fresh3_fixed200_v4_exact_verifier_binding_20261116.py": "4cf3de830d94283bd5c057e2fb4c106b23c29aef96f53de7942a3436b4e21747",
+    "scripts/measure_gemma4_e2b_own_original_BF16_actual_capacity_v4_exact_verifier_binding_20261116.py": "7e2d7875814f497ec1ede81fd5b0d8f0e9efbe07bc5d8de9ccc1b6c2d4a089ed",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/model/adapters/gemma4_vllm.py": "69053000225a3b6825c7d6da830371c42123d18f7ceb5596fd7973ca625cdaf1",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/review.json": "89f8ef1048ee92a6d876d08f9301917bec9b4a2126dca1c341603bcba811da6a",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/frontend200.jsonl": "70e8304336d03391d072beb1677d000a8e5f4b944b928110af663ec4c9e9cc3e",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json": "7d9acd56661842dc93fed10efbd41775585f255cc4f415399efcc6f2ef792f96",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4E2B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/own_source_native_meta_mapping.json": "bf1f8dda7f0abf728c10f35b6b4e3d0c1fd814546af1b4268b4fd8ec3e1f5698",
+    "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/google--gemma-4-E2B-it.yaml": "0a868cfec415275b239abbdb6468aaf5c56558dad079b80b6294182937d9007a",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d"
+  },
+  "current_A100_D_values": {
+    "server": "0.8150",
+    "local": "0.8150",
+    "preserved_original": "0.815"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/google--gemma-4-E2B-it.yaml",
+  "saved_original_YAML_SHA256": "0a868cfec415275b239abbdb6468aaf5c56558dad079b80b6294182937d9007a",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "195e9af1a5284c764c795516853256bca54e9880ddd7b388cfefaa9a3c31b496",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Workbook B original any-to-any capability category is preserved as the report task label; the actual benchmark is exactly the saved original image-text-to-text MMBench image branch, with no claim that other modalities were evaluated. Own2011 BF16 Gemma4E2B source including1951 active and60 original unused sharedKV tensors; native original HF35LM/16vision, clippedlinear bounds, physical15 KV plus native shared20, original1536/262144 head. Saved own Gemma4VLLMModel already sets enable_thinkingFalse; the same own template branch and originalGreedy tail are retained, not newly disabled. Saved original batch2/2048 generation and4096 request budget, own dynamic aspect ratio280 soft patches/EOS[1,106,50]. Native reference serial requests preserve original dispatch order. The historical vLLM runtime/engine/tensors were not captured and are not claimed equal; no foreign checkpoint, processor, font, data, CPU score or budget/precision adjustment."
+}

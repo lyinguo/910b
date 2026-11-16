@@ -1,0 +1,43 @@
+{
+  "model_id": "google/paligemma2-10b-pt-448",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-10b-pt-448",
+  "media_root": "/root/projects/comperror/workspace/datasets/image-to-text-short/media",
+  "dataset": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl",
+  "dataset_sha256": "ceb1670f2848955290915dbe375dca8b34b62d6980e9f6cd1abe38bf0e68963b",
+  "resource_sha256": {
+    "config.json": "ffdfd708a4f434cc85ec0938f898edf2ff9998e284ff91b70928408d8dfe6f2c",
+    "generation_config.json": "017091192354d800548a1a1f40205149844b954acae91d9b346c7bec053bb8e3",
+    "preprocessor_config.json": "6a95b351c016da050e0821591357e732cce182681a8c079ecf196c4943cabdfa",
+    "tokenizer_config.json": "5a4d5042efb7f465976b1c7257dc3b080e8c1a5e5afabe43a0ff7d31e45025ad",
+    "tokenizer.json": "172fab587d68c56b63eb3620057c62dfd15e503079ff7fce584692e3fd5bf4da",
+    "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+    "model-00001-of-00004.safetensors": "7288124c0bcac69246d734b99942b470a9aed43d2d7a02f15eb2f6175c06c3bd",
+    "model-00002-of-00004.safetensors": "870bb3397f36fbf15bce614367c070f321c544286efb5f4e2de3604684c2e113",
+    "model-00003-of-00004.safetensors": "9dda77262a5979be011e9ba82db60deebf025da454f23d1179f2e32883b210c3",
+    "model-00004-of-00004.safetensors": "bfb7ec21f87455cf8b79620e9e2dc1614fd82492685e9d0aa172163b6dabebe7",
+    "model.safetensors.index.json": "87fa7c851565d1d99542c5d432da74401cf3b11815f1cf22dcdda85e33ef9a5c"
+  },
+  "original_A100_score": 0.0701163866618813,
+  "original_A100_deployment": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/AA_next_pali10_pt448_input_assets_1322.json",
+  "original_A100_report_SHA256": "fb891b291ff0d50c1b4b1c3d6aae41721c32f7e772d32bccfcfdacbe0579196e",
+  "A100_D": {
+    "current_remote": "0.0701",
+    "current_local": "0.0701",
+    "preserved_local": "0.070116"
+  },
+  "static_evidence_sha256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/AA_next_pali10_pt448_input_assets_1322.json": "61b8126bf9809a728a37d228c920cf271caeb605aca9185caf33f29e12c5c6b5",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/AA_next_pali10_pt448_input_assets_1322.json.completion.json": "a381599166d56dfcf379ea70ba7dfe3a6fa0c00c8aab25825395f25082f431cf",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/AA_next_pali10_pt448_original_fullsha_1322.json": "a26aec447c5d3437e117e3087e3d8254eed7d2cef204e7d7f0a549d22331acca",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/R_next_pali10_pt448_fixed200_media_1322.json": "91fd98a1b0c7533cefe46944845ba560ae1662c67831e593a93ccc337b167d0c",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/R_next_pali10_pt448_input_assets_1322.json": "26df280d17584a6090b1c30cc55755d31e995e22f69a82106b9e89dd3d36dfeb",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/R_next_pali10_pt448_original_fullsha_1322.json": "027021acc1b5f5958846de9d8c0cbeb76c22e40c3fd0cb311736942ed0a75699",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Pt448_A100_original_native_vllm_compat3_1322_v2_20261110/original_source_evidence/first_prepare_prelaunch_filter_fixed_denominator_failure.stderr": "e1254f3cf9c335413f648b5a92871b87e2bcfa44c083f038abdf2ed2f570c8de"
+  },
+  "original_A100_group_size": 10,
+  "original_A100_max_output_tokens": 1024,
+  "numerical_alignment_approved": false,
+  "canonical_task_label": "image-text-to-text",
+  "original_A100_task_label": "image-to-text",
+  "fixed_original_sample_set_verified_nonempty": true
+}

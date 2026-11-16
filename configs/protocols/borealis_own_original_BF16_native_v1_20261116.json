@@ -1,0 +1,89 @@
+{
+  "model_id": "NbAiLab/borealis-4b-instruct-preview",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/NbAiLab/borealis-4b-instruct-preview",
+  "report_task": "image-text-to-text",
+  "own_runtime_assets_SHA256": {
+    "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "chat_template.jinja": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+    "config.json": "367790304da0b98e85db2b15e4f12d6ca6ec5c023e71e67c06dd5e0f4e679659",
+    "generation_config.json": "407c8a366689314d43e99a7514ed820330fdb33f09580dba0a5db63a3d1368f1",
+    "model.safetensors.index.json": "445cf847f7e59adf068a0876967a02d37ea331110f54621993b2b1d1c08b8f75",
+    "preprocessor_config.json": "7c678efe7a9a7997ce406f260c333deaaa88d1aed61f0a9e958dab94a1737c86",
+    "processor_config.json": "3ffd5f11778dc73e2b69b3c00535e4121e1badf7018136263cd17b5b34fbaa53",
+    "special_tokens_map.json": "45a857d8a2495d0be30a5d2d6de03278195eb028b6e0b8efc248bfa697d65f05",
+    "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+    "tokenizer_config.json": "79005bc07969253bf996e09ccd4d6e3792d4e630f6f50026b196d23682283467"
+  },
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 4929932320,
+      "SHA256": "86c737b8750525ce69cac7b8bb2469c7aa2a4da69b64caf0ba470e02fe07a20d",
+      "header_SHA256": "f387e9301a767d03d537f797050f1fdb8b6d23d36be81ecfeabcb9cd282c3716",
+      "tensor_count": 487
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4907916792,
+      "SHA256": "fdc83110c0739dfa96da01de2d179534fd2ffbdc08579431f735685f890ce749",
+      "header_SHA256": "f6bea9984c534980951289df15603bf938ee994d282336de28cab93c22f427fb",
+      "tensor_count": 169
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4907916872,
+      "SHA256": "aeb5e5369367732098390cd22b1f2851e6784bdbfd3c7c59a4069ea31222671a",
+      "header_SHA256": "90bd5c1cfe328fee7db769e084c08fff9e6861452b6357fa8676cda326f2eab7",
+      "tensor_count": 169
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 1615037808,
+      "SHA256": "469eaf92684bdd7a6f194fc91ebb8e8fc75c60786417c9255d0fc33c4b21cf5f",
+      "header_SHA256": "a369365ae61bccb647e7cbd5af39a55c857cbfba1cabb0d9abd4bac5071845fd",
+      "tensor_count": 58
+    }
+  },
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Borealis4B_own_original_BF16_chat_frontend200_assets_v3_native_image_alias_schema_20261116/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/borealis_own_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/borealis_own_20261116/observer.py": "d17ed7328e5af4933be8f5dd58af37c118fbbc16a20f44513d466d2dfd44997b",
+    "universal_eval/model/adapters/borealis_own_original_BF16_native_v1_20261116.py": "34971dd1bb6f7d9a8f820a4b1f05cecbfbf393518aa6c48f262d5c89f9365d94",
+    "scripts/verify_borealis_own_original_BF16_native_v1_20261116.py": "3e7de9fa70845c75fd8d84c18c06860aa0ccbd939897ee0e16d82717085d6608",
+    "scripts/prepare_borealis_own_original_BF16_chat_frontend200_v3_native_image_alias_schema_20261116.py": "b41bc57c1ebc0c54d293f5668f9720f113dde6f81b99aabcc5871d829d7fe330",
+    "scripts/prepare_borealis_own_original_BF16_native_readiness_v1_20261116.py": "e5fd1059cbed8375551ce6ee48d4ec9baa90705bc10444384cbad66e95df248b",
+    "scripts/continue_borealis_own_original_BF16_true3_fresh3_fixed200_v1_20261116.py": "cf52c27e83a7d85116535c3b155fce79d406ff8e39be30f133bf8864f64b5cc6",
+    "scripts/measure_borealis_own_original_BF16_actual_capacity_v1_20261116.py": "9d9d36510150c5ee7d33716fa89c5ea64754d53bd3effc90873c8bf2d507dab3",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Borealis4B_own_original_BF16_chat_frontend200_assets_v3_native_image_alias_schema_20261116/review.json": "d4d57346f8b9ee6da3e747d301e4b7f3a40118229b5c9dcaa76652a364b1494f",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Borealis4B_own_original_BF16_chat_frontend200_assets_v3_native_image_alias_schema_20261116/frontend200.jsonl": "5a980cee604788bb2345eb70d85d86dddcb41ed8d6a79b145649673a5245f425",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Borealis4B_own_original_BF16_chat_frontend200_assets_v3_native_image_alias_schema_20261116/source_tensor_headers.json": "71f9ae68518a1b566abd60755ff66762f6dc85418b2d04a907963868528498b6",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Borealis4B_own_original_BF16_chat_frontend200_assets_v3_native_image_alias_schema_20261116/own_source_to_native_meta_bijection.json": "9954347c754e6c377f7ba7d3afa448293f4a9d2396c7e1760adc38ab57b0174e",
+    "/root/projects/comperror/configs/Gemma3ForConditionalGeneration/NbAiLab--borealis-4b-instruct-preview.yaml": "955fb9e37b5d7274e953b1638a2874a0d1a888f45226884d2c9e467da480089e",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d"
+  },
+  "current_A100_D_values": {
+    "server": "0.7900",
+    "local": "0.7900",
+    "preserved_original": "0.79"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma3ForConditionalGeneration/NbAiLab--borealis-4b-instruct-preview.yaml",
+  "saved_original_YAML_SHA256": "955fb9e37b5d7274e953b1638a2874a0d1a888f45226884d2c9e467da480089e",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "195e9af1a5284c764c795516853256bca54e9880ddd7b388cfefaa9a3c31b496",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "User workbookD .7900, own883 mixed F32/BF16 source cast as own root/text/vision BF16 and saved vLLM auto dtype contract. Original saved Greedy2048/outer10 dispatch, own chat/template/assets/896px256soft/EOS[106,1,106]/16384 request length, native HF34 Gemma3 SDPA and own27 Siglip. Native per-request serial execution and Dynamic/sliding34KV retain all original sequence order and budgets; historical vLLM batching/kernel/runtime/tensor bytes were not captured and are not claimed equal. Full own values and independent CPU numerical diagnostics, never CPU scores, replace no model weights or reference."
+}

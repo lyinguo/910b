@@ -1,0 +1,58 @@
+{
+  "name": "google--paligemma2-10b-pt-448-own-preserved-vllm-BF16-1024-full-numerics-pending-20261116",
+  "description": "Own existing real vLLM BF16/1024/outer10 protocol preserved. Historical true3/B10 are complete and will not be blindly rerun. Full actual-NPU parameter/head/KV numeric capture remains pending; not a formal qualification or new NPU launch.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-10b-pt-448",
+    "adapter": "universal_eval/model/adapters/paligemma2_10b_pt448_A100_native_vllm_20261110_adapter.py:PaliGemma10BPt448Native910B",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-10b-pt-448",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "google/paligemma2-10b-pt-448"
+      },
+      "protocol_file": "/root/projects/comperror/configs/protocols/paligemma2_10b_pt448_preserved_original_vllm_BF16_1024_numeric_capture_pending_20261116.json",
+      "protocol_sha256": "3ab820cf89fc17e81c277a4d75400b70c280c4e5cc73d6b3c04529bb5712cbaf"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0701,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

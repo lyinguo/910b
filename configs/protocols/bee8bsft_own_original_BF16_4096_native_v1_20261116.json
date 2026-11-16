@@ -1,0 +1,98 @@
+{
+  "model_id": "Open-Bee/Bee-8B-SFT",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/BeeForConditionalGeneration/Open-Bee/Bee-8B-SFT",
+  "source_tensor_count": 827,
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 4997908256,
+      "SHA256": "2d3d6f6ce4f56ca7468002bc579e6070ce3424bc7eaf5d2e38d2b6b8aa1adda6"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4983070432,
+      "SHA256": "372146bafb0b52b75066ac0036adbb2f3b7587ccda7b2cff2c923279bee36b7f"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4999848312,
+      "SHA256": "5d005f7b220c1d58921a19117a6d031b7ae897a0a1226d5f6746bc9b14102ff1"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 2369320744,
+      "SHA256": "8adbd6f98edd5b79ac5030b74605552dd3dab6e94dc3246817ce7deca51a24cf"
+    }
+  },
+  "own_assets_SHA256": {
+    "added_tokens.json": "aba7c1fd6c4d6e21a95d4b7c316412030655e94b6ca6dc01c04875b2f4599380",
+    "chat_template.jinja": "28c2662b7fc7de74267371b7c97e8961b4346126e218b3da05c8ada106627714",
+    "config.json": "6c70e8d87c786349ea107a8b95058e71758032e890c6f6239b85105d315127ac",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "configuration_bee.py": "0450e115d67dc0f9e633a2b1370c94cf0161224fe1c72195f13ba091a1fe3ad2",
+    "generation_config.json": "b17e2c6813e1f5e4de267a4c7697b46f69ba7ba95643c8253ad671fab7d7271c",
+    "image_processing_bee.py": "eb380f36817d60e5d2f56f104bd46695c11aa2b81f651b7bb825cd2d525c820e",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model.safetensors.index.json": "6700c0e5fd8e77a8f5185c45b47f9655ea20a4d983a82454e5a6082a439963a4",
+    "modeling_bee.py": "61ceae30d0537ede43cc07742f4820cd6c9b2f8ad10b7a896444d1d9040bafcc",
+    "preprocessor_config.json": "6d342053fcec00a6923b049767a38898b1efdac90322afe0f88ea6049e89f8a3",
+    "processing_bee.py": "1efd4deda0e3cf03664ddb0068a946f6cade282d94f50033c9fe4485ccab8960",
+    "processor_config.json": "50f3df62a440d99b519663d951a5574902a2ee75bf36cc0b96328c9b03ec4a9c",
+    "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "tokenizer.json": "c6a4e9901c580f8acc48cdbd2618c3b0ec673dcb91d44b555171844c707f28d2",
+    "tokenizer_config.json": "1fb33dec695ce65d858580d6fb3f3c5d76b79c7cc87f6ae583c835b5ca4dc2ca",
+    "video_preprocessor_config.json": "2e9ff0055fc5b661db07c023065622b3ba24e32d39b49163fb5c72b7338efeb3",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Bee8BSFT_own_resource_frontend_meta_v5_actual_shards_BF16_native_vision_prefix_no_NPU_20261116/own_source_manifest.json",
+  "own_source_manifest_SHA256": "a2ed731fea32e0694f78b85ceab9094ae5aabe3a0d065025c7a27eaf0efe0a49",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Bee8BSFT_own_original_frontend200_v1_no_NPU_20261116/own_original_frontend200.json",
+  "own_frontend200_SHA256": "9c41c4f712f592719b19a1664dc1a7663fafca7b0730f62cbde19900098fe62f",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151645
+  ],
+  "original_budget4096_preserved": true,
+  "workbook_D_reference_authorized": true,
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "d39447b7054fd381bb8c1801ab33ef141f17753488080249e0f50ed47bfc4a63",
+  "current_A100_D_values": {
+    "server": "0.9300",
+    "local": "0.9300",
+    "preserved_original": "0.93"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/bee8bsft_own_original_20261116/configuration_bee.py": "0450e115d67dc0f9e633a2b1370c94cf0161224fe1c72195f13ba091a1fe3ad2",
+    "universal_eval/model/bee8bsft_own_original_20261116/processing_bee.py": "1efd4deda0e3cf03664ddb0068a946f6cade282d94f50033c9fe4485ccab8960",
+    "universal_eval/model/bee8bsft_own_original_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/bee8bsft_own_original_20261116/modeling_bee.py": "61ceae30d0537ede43cc07742f4820cd6c9b2f8ad10b7a896444d1d9040bafcc",
+    "universal_eval/model/bee8bsft_own_original_20261116/image_processing_bee.py": "eb380f36817d60e5d2f56f104bd46695c11aa2b81f651b7bb825cd2d525c820e",
+    "universal_eval/model/adapters/bee8bsft_own_frontend_bf16_20261116.py": "083340496c1155c3d521fecce166ac09ae68a8cac23fdbf1674457ac2216da25",
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_20261116.py": "797ceb3199b41e1d26e505eee756b43e94ac13d826cec70175c16eb332d31429",
+    "scripts/verify_bee8bsft_own_native_bf16_4096_20261116.py": "0d8daeb54627048d2f176d83981788df2bd9ac08c3e5e27e67fa6f8a3836a03d",
+    "scripts/prepare_bee8bsft_own_frontend200_20261116.py": "ef9f46ec78e306707ccc3a806471766d3b85704d8f4d3e55dd1bcc9016db0f2a",
+    "scripts/prepare_bee8bsft_own_readiness_true3_20261116.py": "bdb51e0389ca4f55206dff118b2b97977b289119ca1ff0dbc8cecb98784b9192",
+    "scripts/prepare_bee8bsft_own_resource_meta_v5_actual_shards_BF16_native_vision_prefix_20261116.py": "071661ec51b94caabf32c762648c34aeb155e0a667d8d7d68811a1ab7d56034b",
+    "universal_eval/model/adapters/bee_adapter.py": "3958a0bb6b212b49acf2ded0ee0ca750e1508a3da81d0482ec2159b27f25f565",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+    "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+    "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Bee8BSFT_own_original_frontend200_v1_no_NPU_20261116/readiness.json": "2059d51be38d7370d69621dcccca9ddcfd0d30ef4ad564bddd2bb4d48973b765",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Bee8BSFT_own_resource_frontend_meta_v5_actual_shards_BF16_native_vision_prefix_no_NPU_20261116/resource_meta_ready.json": "8ab4439b1914a45231d52481b44e3383318a0a3ca41f452a601cbbff0289628b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Bee8BSFT_own_resource_frontend_meta_v5_actual_shards_BF16_native_vision_prefix_no_NPU_20261116/original_index_vs_actual_shard_inventory.json": "62c3de6d0cd27afc249c0d132987ab74ba56721a7ab75db65264172c8f3f5459",
+    "/root/projects/comperror/configs/BeeForConditionalGeneration/Open-Bee--Bee-8B-SFT.yaml": "de8218a7e9683df1e3087498e7066be687bb45f55840e1a9cae3ae14905f310e"
+  },
+  "historical_source_boundary": "User-confirmed A100 workbook D, not an online A100 replay prerequisite. Own saved BeeAdapter and YAML: torch_dtype auto maps to BF16, own Siglip26/384 anyres_max6 + own Qwen3_36 GQA8x128/152000 head, original4096 greedy outer10/serial1. Own827 source tensors are FP16 and are cast to original BF16 execution exactly as saved adapter load; complete source/cast/actualNPU SHA required. Original four shard files and original index are unmodified; original index has stale shard locations, while actual unique whole-file headers have the exact full original index key set. Native version removes only the old vision_model parameter wrapper name, with full name/shape bijection. Original Bee chat_template enable_thinking=False is a saved adapter default and is preserved, not a newly introduced suppression; no template or checkpoint borrowed. Original direct-forward first-token EOS boundary is preserved, no early EOS or shorter budget. Native HF SDPA and native causal positions/cache are disclosed. Historical A100 runtime/tensors/checkpoint bytes were not captured and are not claimed.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

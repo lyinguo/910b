@@ -1,0 +1,55 @@
+{
+  "name": "NbAiLab--borealis-4b-instruct-preview-own-original-BF16-2048-capacity-recovered-approved-first200-v3-20261116",
+  "description": "User workbookD .7900, own883 mixed F32/BF16 source cast as own root/text/vision BF16 and saved vLLM auto dtype contract. Original saved Greedy2048/outer10 dispatch, own chat/template/assets/896px256soft/EOS[106,1,106]/16384 request length, native HF34 Gemma3 SDPA and own27 Siglip. Native per-request serial execution and Dynamic/sliding34KV retain all original sequence order and budgets; historical vLLM batching/kernel/runtime/tensor bytes were not captured and are not claimed equal. Full own values and independent CPU numerical diagnostics, never CPU scores, replace no model weights or reference.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "NbAiLab/borealis-4b-instruct-preview",
+    "adapter": "universal_eval/model/adapters/borealis_own_original_BF16_native_v1_20261116.py:BorealisOwnBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma3ForConditionalGeneration/NbAiLab/borealis-4b-instruct-preview",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/borealis_own_original_BF16_capacity_recovered_approved_first200_v3_20261116.json",
+      "protocol_sha256": "e820c21fb1747f12422ef7fe55a1e39ac3c824dcb59df8dd8e5d31c8d2a2830a",
+      "protocol": {
+        "model_id": "NbAiLab/borealis-4b-instruct-preview"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.79,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

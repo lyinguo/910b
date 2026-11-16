@@ -1,0 +1,56 @@
+{
+  "name": "unsloth--GLM-OCR-own-original-BF16-4096-native-v1-approved-first200-20261116-smoke",
+  "description": "User-confirmed workbook D is the comparison reference; online A100 replay is not an extra first200 gate. Own GLM-OCR BF16 checkpoint526 tensors, saved installed standard HF16 main decoder/vision24 path uses510 and does not execute16 auxiliary MTP parameters. All526 physical own tensors are hashed,510 active ones must match actual NPU. Own Glm46V processor/chat template uses the saved generic GlmOcr enable_thinking=False branch, not newly changed after a measurement. Original4096/greedy/outer1 serial1/native16cache/EOS59246,59253/CER OCR data and extraction retained. No mock initializer, package install, borrowed checkpoint/data/tokenizer/font, altered model math or shortened budget. Saved YAML names this same model at /mnt2/afs/download_models; current original-model inventory owns the checkpoint at /mnt/afs/huggingfaceautoclonemodels, whose own whole-file and per-tensor SHA are frozen. Historical path bytes and A100 engine/tensor bytes were not captured and are not claimed. No other model checkpoint is substituted.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "unsloth/GLM-OCR",
+    "adapter": "universal_eval/model/adapters/glmocr_unsloth_own_native_bf16_4096_20261116.py:UnslothGlmOcrOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/GlmOcrForConditionalGeneration/unsloth/GLM-OCR",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/glmocr_unsloth_own_original_BF16_4096_native_v1_approved_measurement_20261116.json",
+      "protocol_sha256": "e63f71b1ccfe778445e8e12e8e26b309c863e45af8bfb8de3b8e067d679c7dbd",
+      "protocol": {
+        "model_id": "unsloth/GLM-OCR"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ]
+  },
+  "baseline": {
+    "score": 0.0701,
+    "threshold": 0.05,
+    "primary_metric": "CER"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": true
+}

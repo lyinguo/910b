@@ -1,0 +1,91 @@
+{
+  "model_id": "openbmb/MiniCPM-V-4.6",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV4_6ForConditionalGeneration/openbmb/MiniCPM-V-4.6",
+  "source_tensor_count": 779,
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 2600957528,
+      "SHA256": "aa67da5820411176d0f9593a00265bc25a73c45f62dc5a605a93b1b5516a0d34"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "dfe1fa43a3444f065406d3a2b9aa315602f5c146b80cf22e0426a6c1466d85aa",
+    "config.json": "72d83ac9089bebddf28131b9953908acaf0a5740b868263c8aaac7c40b97991c",
+    "configuration.json": "9bc53d0ef8dd7cdd59e0cba599dbc528a30cee2d925e5c8df56d86730d7d37ea",
+    "generation_config.json": "355e944b910ce784e4c561d67b8e7fee9c6c89385cc790e5a6affb7747b1f118",
+    "preprocessor_config.json": "eb7cd430865c06eeaad22fcd28c6c606ce26b6fd54d3d6d0e99370779b3197a5",
+    "tokenizer.json": "33861e37bb955af1e3f3061182b820f347eba2b9c2c1011c82794bf0d6e77b54",
+    "tokenizer_config.json": "f08d15030f1157ca8826aa92f64408dba6ecf50292f5dd74a6287d6aec0c4660"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV46_own_original_BF16_MCq_fullsource_frontend200_v3_original_fused_uint8_tuple_20261116/own_full_source_manifest.json",
+  "own_source_manifest_SHA256": "f3450be97457f86ec53af52c19780c1c0fe67c470bbdedff4c4988647e6c1480",
+  "own_native_meta_layout": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV46_own_original_BF16_MCq_fullsource_frontend200_v3_original_fused_uint8_tuple_20261116/own_native_meta_layout.json",
+  "own_native_meta_layout_SHA256": "8da7f8f84bf1d9bfbcf953b65273a469ddb12189c07071b1b2495c9ea0aa473c",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV46_own_original_BF16_MCq_fullsource_frontend200_v3_original_fused_uint8_tuple_20261116/own_original_frontend200.json",
+  "own_frontend200_SHA256": "b1cde7a1643aecfdac33f2cf7b8e663f39f99cdca574bd79c781b22f3fb954cb",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "native_libraries_SHA256": {
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/configuration_minicpmv4_6.py": "f38765e4c952604f4bafb89487e27dc8e8813c62422b30dbe7f879893cd18a01",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/processing_minicpmv4_6.py": "b2df7df1d1437c21bccec39a2d192b218b8671b924fb4af7ce4541ba48fbca49",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/image_processing_minicpmv4_6.py": "61ae10578b477c811a0ebb2153152170e84e8f55437c4989c3adad98dc6a42c5",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/modular_minicpmv4_6.py": "575252eeabeb3f8f683c78f9c25236e516a46edc931f1da80e14e201916a6653",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/__init__.py": "702265baec4829831242d4f504f13c71b793de6fd97c6bfea05acd8437b48f14",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/modeling_minicpmv4_6.py": "eb5b288b16ebe5c99bb4cbac340dbd311cfeda529106e94d49c8903a787673da",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/video_processing_minicpmv4_6.py": "b97374cf76ee28d959de6eb26d56704fc19be264fe66508d4c7454b3e499a3e1",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/minicpmv4_6/image_processing_pil_minicpmv4_6.py": "9d04d4facdfd10a611a9f51f44d19f75635bcc7aa0bf3b5aa7bab44370fdd2e3",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3_5/configuration_qwen3_5.py": "3c01b3cdcff8d77cbafac9841bc48c41e5a5b38637231f1bde3d843cd198dbaf",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3_5/tokenization_qwen3_5.py": "3d2f98abc1c6eec61e4548171286b88f5e8173ac6d63954b8fd225b7e24cf25a",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3_5/__init__.py": "e1d6bd33c0bfce7f782e2d186f84bcc0e42f8260eac85c10d16bb7808665a1b5",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/qwen3_5/modular_qwen3_5.py": "29882e38e2d0ac8c00b63c5576b8105165dbb655082c2e22f99d6ee3e35dc437",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/image_processing_backends.py": "250394884a9f90845cf87b6fc0cf3341337b193428556c6ff61ed2b04bedb692"
+  },
+  "original_stop_ids": [
+    248044,
+    248046
+  ],
+  "workbook_D_reference_authorized": true,
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "364cf16d7fca909bafa4c3fef0c042c595a9be7f6bdcea236d66c1278fb4e87b",
+  "current_A100_D_values": {
+    "server": "0.9250",
+    "local": "0.9250",
+    "preserved_original": "0.925"
+  },
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/minicpmv46_own_frontend_20261116.py": "b34b3ea0c751ac75baaa8a5616f518ac9cd9861f5ed903222c2ce1aa4fe4ba42",
+    "universal_eval/model/adapters/minicpmv46_own_native_bf16_2048_v2_original_EOS_20261116.py": "ebca29a35132687f24b93283f2a22210de4b2cfc347bfe619521f250f14d46ec",
+    "universal_eval/model/reference_sources/minicpmv46_original_mcq_protocol.py": "12825576cb9dbf0fcedb88e8f5be7f2286fef76bca506c22e44aca45d8d73c08",
+    "universal_eval/model/reference_sources/minicpmv46_original_window_merger_patch.py": "d3f59a3bbc6aadd703a9cd34fda3701d228bf2d30c7e9748043b00231fc24ca7",
+    "scripts/verify_minicpmv46_own_native_bf16_2048_v2_original_EOS_20261116.py": "dffb4f13b6f3c21152cec8de9b0a794f492ae8f6ec478f911b31898dae2b9696",
+    "scripts/prepare_minicpmv46_own_native_source_frontend200_v3_original_fused_uint8_tuple_20261116.py": "1e55907a82fe34cef891419f286d5aa29daa6af019a4c3232b2b1d9508566294",
+    "scripts/prepare_minicpmv46_own_native_true3_v2_original_EOS_20261116.py": "8cf57fbc4d0799b81399c102525d153d451b161fbe8cc63c9751f568c24d2c1a",
+    "scripts/continue_minicpmv46_own_true3_capacity_fresh3_fixed200_v2_original_EOS_20261116.py": "a3201c6ef093c51cd50c2c763e23e35542faa922f2710d7344ef3d5ef2e61c39",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/data/loader.py": "6ae75552bdade926b4855df509bc018ea3e89f8e8174ea1f8a039282f5757032",
+    "universal_eval/data/registry.py": "c773148ccf7938696015df2f704d6385768a541df217a6acc72bc32461c8d544",
+    "universal_eval/data/preprocessor.py": "acfd7e3eabc7ce668927bba6bba653ed383dfab6acf0e408219ee91fea8a9ef0",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MiniCPMV46_own_original_BF16_MCq_fullsource_frontend200_v3_original_fused_uint8_tuple_20261116/readiness.json": "f22ba0393bc11647aa1b32aa1471974f5e52e4e7b1b665ff929ff0745d752038",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/universal_eval/model/adapters/minicpmv4_6_mcq.py": "a4fe81bab5d148c4a114bc344989685ded00d28c4a7c997c25b6f021f0e02190",
+    "/root/projects/comperror/universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "/root/projects/comperror/configs/MiniCPMV4_6ForConditionalGeneration/openbmb--MiniCPM-V-4.6.yaml": "d92fa7b0bcaa67607d2a3b34231627a3e5a86c6e946dad709e177f0e2010f67f"
+  },
+  "historical_source_boundary": "User-confirmed workbook A100 D; own MiniCPM-V-4.6 original saved MCQ adapter and BF16/2048/outer4-inner1 deployment. Original static two-format examples, own chat template without enable_thinking override, original reference-independent normalization and original per-image vision-window patch are preserved, not newly introduced. Own779 BF16 tensors plus own declared tied head248094, own vision27 and Qwen3_5 text24(18 native linear recurrent layers plus6 full-attention layers) execute on NPU4. Native original F32 recurrent accumulation/analytic RoPE are retained inside the BF16 architecture; no learned CPU inference/CPU grade. Full input/head/all24 hybrid-state matrices are archived losslessly, own masks/positions/stops/cache and original2048 are not reduced. Installed native torch recurrent fallback is used, no CUDA-only kernel stub/package. A100 historical engine/tensor bytes were not captured and are not claimed. Original parser cases that could mistake an ordinary article for A are separately flagged and cannot qualify for publication.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "original_frontend_ready_stop_metadata_was_single_EOS_and_corrected_only_in_new_binding": true
+}

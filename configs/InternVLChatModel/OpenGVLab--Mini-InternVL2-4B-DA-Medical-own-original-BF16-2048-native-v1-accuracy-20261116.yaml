@@ -1,0 +1,55 @@
+{
+  "name": "OpenGVLab--Mini-InternVL2-4B-DA-Medical-own-original-BF16-2048-native-v1-accuracy-20261116",
+  "description": "User-confirmed workbook D; own Mini-InternVL2-4B-DA-Medical original complete541BF16 source, own tokenizer.json/current vLLM direct chat encode-decode image replacement,448 dynamic1:12+thumbnail/256soft/Phi3_32/32020head/SU own factors/original2048/outer10 inner1. Original saved vLLM engine maintained KV; native equivalent uses real32-layer append storage while own config use_cacheFalse is preserved as stored. Own Medical remote source (including its own distinct conversation registration and generation helpers) is retained, and the manual saved-vLLM input/native forwarding calls no original chat helper. Exact own configuration/tokenizer/processor-identical200 input controls are reused without another learned model or another checkpoint value. Own original DropPath0.1 remains eval, its constructor scalar linspace only is on CPU; no learned CPU ops. No historical A100 engine/tensor capture claimed, no package install/stub/borrowed source weights or assets, no generation/score/budget/stop tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/Mini-InternVL2-4B-DA-Medical",
+    "adapter": "universal_eval/model/adapters/miniinternvl2_medical_own_native_BF16_2048_v1_accuracy_20261116.py:MiniInternVL2MedicalOwnNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/Mini-InternVL2-4B-DA-Medical",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/miniinternvl2_medical_own_native_BF16_2048_v1_accuracy_20261116.json",
+      "protocol_sha256": "116e62227147cdd8f976c331be5fc26b5d35deb300efa0608593cbcb0c75e7eb",
+      "protocol": {
+        "model_id": "OpenGVLab/Mini-InternVL2-4B-DA-Medical"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.89,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

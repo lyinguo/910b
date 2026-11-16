@@ -1,0 +1,56 @@
+{
+  "name": "tiiuae--Falcon-OCR-own-original-BF16-512-native-v2-original-triton-approved-first200-20261116-smoke",
+  "description": "Own current raw files contain documented existing MLU-compatible real rotary/eager branches; not claimed as historical A100 source byte capture. Saved original HF generate(image, category=plain,512,temp0,compileFalse) and workbook D .0909 are the comparison protocol. Own saved HF plain/category, BF16 parameters/F32 golden buffer/512 rounded128 allocation/seed42/temp0/compileFalse/outer8 inner1 are preserved; every terminal token still gets its original extra forward. NPU replaces only actual hardware backend and storage of the unchanged attention predicate, using CANN BF16 output/F32 LSE then original separate sink scaling; original Triton gate is called unchanged and preserves BF16 intermediate rounding; old F32-port claim is disproved in the retained root-cause diagnostic. No new online A100 run or historical engine-byte claim. No download/stub/borrowed weights/data/fonts/tokenizer or scoring change.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "tiiuae/Falcon-OCR",
+    "adapter": "universal_eval/model/adapters/falconocr_own_original_bf16_native_512_v2_original_triton_20261116.py:FalconOCROwnOriginal512V2OriginalTriton",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/FalconOCRForCausalLM/tiiuae/Falcon-OCR",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/falconocr_own_original_BF16_512_native_v2_original_triton_approved_measurement_20261116.json",
+      "protocol_sha256": "3f13437d49a38d040b6b3ce2b9d0365f5064a66a226c9880db0b8e1bc814a790",
+      "protocol": {
+        "model_id": "tiiuae/Falcon-OCR"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 8,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ]
+  },
+  "baseline": {
+    "score": 0.0909,
+    "threshold": 0.05,
+    "primary_metric": "CER"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": true
+}

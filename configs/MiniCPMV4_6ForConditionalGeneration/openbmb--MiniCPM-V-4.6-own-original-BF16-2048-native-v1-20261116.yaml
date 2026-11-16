@@ -1,0 +1,59 @@
+{
+  "name": "openbmb--MiniCPM-V-4.6-own-original-BF16-2048-native-v1-20261116",
+  "description": "User-confirmed workbook A100 D; own MiniCPM-V-4.6 original saved MCQ adapter and BF16/2048/outer4-inner1 deployment. Original static two-format examples, own chat template without enable_thinking override, original reference-independent normalization and original per-image vision-window patch are preserved, not newly introduced. Own779 BF16 tensors plus own declared tied head248094, own vision27 and Qwen3_5 text24(18 native linear recurrent layers plus6 full-attention layers) execute on NPU4. Native original F32 recurrent accumulation/analytic RoPE are retained inside the BF16 architecture; no learned CPU inference/CPU grade. Full input/head/all24 hybrid-state matrices are archived losslessly, own masks/positions/stops/cache and original2048 are not reduced. Installed native torch recurrent fallback is used, no CUDA-only kernel stub/package. A100 historical engine/tensor bytes were not captured and are not claimed. Original parser cases that could mistake an ordinary article for A are separately flagged and cannot qualify for publication.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "openbmb/MiniCPM-V-4.6",
+    "adapter": "universal_eval/model/adapters/minicpmv46_own_native_bf16_2048_20261116.py:MiniCPMV46OwnNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MiniCPMV4_6ForConditionalGeneration/openbmb/MiniCPM-V-4.6",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/minicpmv46_own_original_BF16_2048_native_v1_20261116.json",
+      "protocol_sha256": "ad1742f2a5e5a0f3d6fd529ace00b1ea222d52b6b20b93d532a90a3659263d43",
+      "protocol": {
+        "model_id": "openbmb/MiniCPM-V-4.6"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 4,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.925,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

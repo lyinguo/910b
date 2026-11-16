@@ -1,0 +1,56 @@
+{
+  "name": "zai-org--GLM-OCR-own-original-BF16-2048-native-v1-20261116-smoke",
+  "description": "User-confirmed workbook D is the comparison reference; online A100 replay is not an extra first200 gate. Own GLM-OCR BF16 checkpoint526 tensors, saved installed standard HF16 main decoder/vision24 path uses510 and does not execute16 auxiliary MTP parameters. All526 physical own tensors are hashed,510 active ones must match actual NPU. Own Glm46V processor/chat template uses the saved generic GlmOcr enable_thinking=False branch, not newly changed after a measurement. Original2048/greedy/outer10 serial1/native16cache/EOS59246,59253/CER OCR data and extraction retained. No mock initializer, package install, borrowed checkpoint/data/tokenizer/font, altered model math or shortened budget. Historical A100 engine/tensor bytes were not captured and are not claimed.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "zai-org/GLM-OCR",
+    "adapter": "universal_eval/model/adapters/glmocr_zai_own_native_bf16_2048_20261116.py:GlmOcrZaiOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/GlmOcrForConditionalGeneration/zai-org/GLM-OCR",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/glmocr_zai_own_original_BF16_2048_native_v1_20261116.json",
+      "protocol_sha256": "8a6e3dbb2538a9ada02463b81f7cbb03b1f206285ec728836ebb1102697f0b93",
+      "protocol": {
+        "model_id": "zai-org/GLM-OCR"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ]
+  },
+  "baseline": {
+    "score": 0.0701,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": true
+}

@@ -1,0 +1,55 @@
+{
+  "name": "OpenGVLab--Mini-InternVL2-4B-DA-DriveLM-own-original-BF16-2048-native-v2-accuracy-20261116",
+  "description": "User-confirmed workbook D; own Mini-InternVL2-4B-DA-DriveLM original complete541BF16 source, own tokenizer.json/current vLLM direct chat encode-decode image replacement,448 dynamic1:12+thumbnail/256soft/Phi3_32/32020head/SU own factors/original2048/outer10 inner1. Original saved vLLM engine maintained KV; native equivalent uses real32-layer append storage while own config use_cacheFalse is preserved as stored. Own original DropPath0.1 remains eval, its constructor scalar linspace only is on CPU; no learned CPU ops. No historical A100 engine/tensor capture claimed, no package install/stub/borrowed source weights or assets, no generation/score/budget/stop tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OpenGVLab/Mini-InternVL2-4B-DA-DriveLM",
+    "adapter": "universal_eval/model/adapters/miniinternvl2_drivelm_own_native_BF16_2048_v2_accuracy_20261116.py:MiniInternVL2DriveLMOwnNative",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OpenGVLab/Mini-InternVL2-4B-DA-DriveLM",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/miniinternvl2_drivelm_own_native_BF16_2048_v2_accuracy_20261116.json",
+      "protocol_sha256": "2bc94b681f52f224a2da6341c9c7e39658cb2124d2e7b00dc9b2c45e0bcc6353",
+      "protocol": {
+        "model_id": "OpenGVLab/Mini-InternVL2-4B-DA-DriveLM"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.88,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

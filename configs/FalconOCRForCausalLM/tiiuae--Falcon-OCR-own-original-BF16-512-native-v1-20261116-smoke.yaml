@@ -1,0 +1,56 @@
+{
+  "name": "tiiuae--Falcon-OCR-own-original-BF16-512-native-v1-20261116-smoke",
+  "description": "Own current raw files contain documented existing MLU-compatible real rotary/eager branches; not claimed as historical A100 source byte capture. Saved original HF generate(image, category=plain,512,temp0,compileFalse) and workbook D .0909 are the comparison protocol. Own saved HF plain/category, BF16 parameters/F32 golden buffer/512 rounded128 allocation/seed42/temp0/compileFalse/outer8 inner1 are preserved; every terminal token still gets its original extra forward. NPU replaces only actual hardware backend and storage of the unchanged attention predicate, using CANN BF16 output/F32 LSE then original separate sink scaling; original Triton gate uses F32 internal arithmetic with one BF16 store. No new online A100 run or historical engine-byte claim. No download/stub/borrowed weights/data/fonts/tokenizer or scoring change.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-ocr/eval.jsonl"
+  },
+  "model": {
+    "name": "tiiuae/Falcon-OCR",
+    "adapter": "universal_eval/model/adapters/falconocr_own_original_bf16_native_512_20261116.py:FalconOCROwnOriginal512",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/FalconOCRForCausalLM/tiiuae/Falcon-OCR",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/falconocr_own_original_BF16_512_native_v1_20261116.json",
+      "protocol_sha256": "86b846e0f1c577cbc156da1c78b9ad9fe690df99ee287240482da65c5c320aad",
+      "protocol": {
+        "model_id": "tiiuae/Falcon-OCR"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 8,
+    "kwargs": {
+      "extract_answer": true,
+      "ocr_extract": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "CER"
+    ]
+  },
+  "baseline": {
+    "score": 0.0909,
+    "threshold": 0.05,
+    "primary_metric": "CER"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": true
+}

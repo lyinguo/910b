@@ -1,0 +1,77 @@
+{
+  "model_id": "coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+  "report_task": "image-text-to-text",
+  "workbook_B_task": "image-text-to-text",
+  "saved_original_benchmark_task": "image-text-to-text",
+  "selected_image_to_text_branch_only_not_all_modalities": true,
+  "own_runtime_assets_SHA256": {
+    "chat_template.jinja": "33204f1acb5bd0002713e16a593847f24ceeafe711ed88bda2a352dc996a3373",
+    "config.json": "198f153f0a2959357e32ac2f17d53ada2ae881cd5e1a44985312a44d0c9f02ce",
+    "configuration.json": "a2d35662b8f8fbef70347eb85d67514f383ca3594db139cb078a55b115e7891a",
+    "generation_config.json": "ac8409fab7a6b0cfbbaad252ac672c1e543f1ffe51093b1fceafc50826efc607",
+    "preprocessor_config.json": "4f4c5237720ae18bf8280df5765ee6d726a851e1e84af93c5a74f8fad07e9e18",
+    "tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "tokenizer_config.json": "a1bab8c81ed15fa6ce912ec993c66cb49392e0487fb1ea5f5f11ea3618683627"
+  },
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 15882477500,
+      "SHA256": "7b8f17c1e3ca6e86db57d94697f71ddd99658109a6eb7608f558441f54f2e053",
+      "header_SHA256": "43c74abf2f43285454b674b62703f559ee81d13b16f7527b346a0eca12a6bed7",
+      "tensor_count": 2076
+    }
+  },
+  "own_source_headers": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json",
+  "original_HF_template_kwargs_empty_preserved": true,
+  "original_input_float_dtype_preserved": true,
+  "original_configured_batch_size": 10,
+  "own_unquantized_BF16_not_native4bit_claim": true,
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/coder_gemma4_e4b_own_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/coder_gemma4_e4b_own_20261116/observer.py": "92a483014da19a91553751e4f9d80a1ae4137f5f924aa2ce52ff2b42b8c7fdad",
+    "universal_eval/model/adapters/coder_gemma4_e4b_own_original_BF16_native_v1_saved_HF_F32_20261116.py": "ffaaf6865d79b40b5ee801ed55d157934c43ce82f530f606e5b1a3527441d7cc",
+    "scripts/verify_coder_gemma4_e4b_own_original_BF16_native_v1_saved_HF_F32_20261116.py": "975416f3690783c95e31e0f08a4c21f9d9de6e2561c80b60fc73e2d030fb37ec",
+    "scripts/prepare_coder_gemma4_e4b_own_saved_HF_default_template_F32_frontend200_v1_20261116.py": "fe939808091dfeacaf04362d2a8dafb8ff37418f81195f85a564c850c2ffd061",
+    "scripts/prepare_coder_gemma4_e4b_own_original_BF16_native_readiness_v1_saved_HF_F32_20261116.py": "31ed129985e6c66cef4b540b2a35e3d7b9a750fcdb0af326cdf656ad367cb016",
+    "scripts/continue_coder_gemma4_e4b_own_original_BF16_true3_fresh3_fixed200_v1_saved_HF_F32_20261116.py": "cb24d34fdd29c35c2882937ed78eb50b5ae32c97f5056ba7e90cb329d72c60bb",
+    "scripts/measure_coder_gemma4_e4b_own_original_BF16_actual_capacity_v1_saved_HF_F32_20261116.py": "0cc6487ec47b14792c2c279b127f8b372c9e6a7eea0660e4c7280cf3080fad1e",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/review.json": "64e8cc43fb83d77397d410c07a905ffabadd6cfbed0efc4aa091d2635ec2d23f",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/frontend200.jsonl": "b3a6e718e4388295efcbec8e7c25e4575f9b3193e48868c358d51d9ea5a3a372",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json": "8c6d8cac39348f094cfc1029e087c1487122620589562147c071a303337f9632",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E4B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261116/own_source_native_meta_mapping.json": "9008908a00c79cb72a20fc16f7f40789996f09a21482a95266c39b53a9064f09",
+    "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/coder3101--gemma-4-E4B-it-qat-q4_0-unquantized-heretic.yaml": "cbca8f352032acc52dbe6abe7218e2f0a964125d18e4fb4b4d5c368d91a82536",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d"
+  },
+  "current_A100_D_values": {
+    "server": "0.8500",
+    "local": "0.8500",
+    "preserved_original": "0.85"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/coder3101--gemma-4-E4B-it-qat-q4_0-unquantized-heretic.yaml",
+  "saved_original_YAML_SHA256": "cbca8f352032acc52dbe6abe7218e2f0a964125d18e4fb4b4d5c368d91a82536",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "78bb01b2b821e6a2508661aabca551904403130937ff377870f4b52db1196f1d",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Own coder3101 unquantized BF16 2076 source checkpoint, native42LM/16vision/H2560/GQA2/262144 head/physical24+shared18 original cache, own original HF TransformersVLM Greedy2048 outer10 within serial1. The saved HF branch leaves template kwargs empty for the actual native Gemma4ForConditionalGeneration class, retains processor F32 image patches, default special-token behavior and temperature0; no copied enable_thinkingFalse, early F32-to-BF16 rounding, added4096 request cap, BOS deduplication, foreign checkpoint or native4bit claim. Own original model mirror is checked by full file and per-tensor SHA; historical runtime/engine/tensor bytes and the historical /mnt2/afs mount are not claimed captured. All original raw/reference/error/token/denominator and complete reports remain."
+}

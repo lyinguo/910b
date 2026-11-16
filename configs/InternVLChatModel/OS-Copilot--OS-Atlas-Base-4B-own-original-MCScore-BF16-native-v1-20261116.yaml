@@ -1,0 +1,58 @@
+{
+  "name": "OS-Copilot--OS-Atlas-Base-4B-own-original-MCScore-BF16-native-v1-20261116",
+  "description": "Saved own OSAtlasMCScore and mc_score: original dynamic448/max6/thumbnail, phi3-chat system fallback, original Answer tail, direct own tokenizer IDs, one BF16 eager forward, last full32022 head F32 log_softmax, max of original three first-token forms per option. Original own cacheFalse, original DropPath0.1 in eval, no generation or early EOS path. Current installed LlamaTokenizer derives Rust rules from own SentencePiece; own rows/added flags frozen, no borrowed vocab. Exact historical A100 engine/tokenizer/tensor runtime bytes were not captured; user workbook D is the reference. Own raw7 model source is unchanged except real DropPath import and constructor analytic linspace CPU device, no learned model math or installed libraries changed. Original generic mock/stub loader is never called.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "OS-Copilot/OS-Atlas-Base-4B",
+    "adapter": "universal_eval/model/adapters/osatlas4b_own_original_mcscore_bf16_20261116.py:OSAtlas4BOwnOriginalMCScore",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/InternVLChatModel/OS-Copilot/OS-Atlas-Base-4B",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/osatlas4b_own_original_mcscore_bf16_20261116.json",
+      "protocol_sha256": "01662332a1fdcfe11923191d090deaa273d1ba7162fcf2a3d96caf199bdd86f6",
+      "protocol": {
+        "model_id": "OS-Copilot/OS-Atlas-Base-4B"
+      },
+      "npu_devices": [
+        4
+      ],
+      "max_new_tokens": 2048,
+      "torch_dtype": "bfloat16"
+    }
+  },
+  "algorithm": {
+    "name": "mc_score",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.605,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy",
+    "gap_mode": "absolute"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

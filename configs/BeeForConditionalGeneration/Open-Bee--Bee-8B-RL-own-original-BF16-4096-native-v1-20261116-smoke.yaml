@@ -1,0 +1,59 @@
+{
+  "name": "Open-Bee--Bee-8B-RL-own-original-BF16-4096-native-v1-20261116-smoke",
+  "description": "User-confirmed A100 workbook D, not an online A100 replay prerequisite. Own saved BeeAdapter and YAML: torch_dtype auto maps to BF16, own Siglip26/384 anyres_max6 + own Qwen3_36 GQA8x128/152000 head, original4096 greedy outer10/serial1. Own827 source tensors are BF16 and preserve original BF16 execution exactly as saved adapter load; complete source/cast/actualNPU SHA required. Original four shard files and original index are unmodified; original index has stale shard locations, while actual unique whole-file headers have the exact full original index key set. Native version removes only the old vision_model parameter wrapper name, with full name/shape bijection. Original Bee chat_template enable_thinking=False is a saved adapter default and is preserved, not a newly introduced suppression; no template or checkpoint borrowed. Original direct-forward first-token EOS boundary is preserved, no early EOS or shorter budget. Native HF SDPA and native causal positions/cache are disclosed. Historical A100 runtime/tensors/checkpoint bytes were not captured and are not claimed.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "Open-Bee/Bee-8B-RL",
+    "adapter": "universal_eval/model/adapters/bee8brl_own_native_bf16_4096_20261116.py:BeeRLOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/BeeForConditionalGeneration/Open-Bee/Bee-8B-RL",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/bee8brl_own_original_BF16_4096_native_v1_20261116.json",
+      "protocol_sha256": "805955df99b1e9693e675d6bae6ad9142f5717670397e6cf0bba261e789b7d75",
+      "protocol": {
+        "model_id": "Open-Bee/Bee-8B-RL"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "own_native_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Strict_MC_Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/tinyllava_strict_mc.py:StrictMCAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.935,
+    "threshold": 0.05,
+    "primary_metric": "Strict_MC_Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}
