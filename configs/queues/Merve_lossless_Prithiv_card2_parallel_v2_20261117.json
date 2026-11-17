@@ -1,0 +1,56 @@
+{
+  "schema": "two_distinct_physical_card_existing_own_model_stages_v2",
+  "max_parallel_stages": 2,
+  "core_worker": "scripts/A100_alignment_parallel_stage_worker_v2_20261117.py",
+  "core_master": "scripts/A100_alignment_parallel_coordinator_v2_20261117.py",
+  "declared_sources": {
+    "scripts/A100_alignment_parallel_stage_worker_v2_20261117.py": "6fc09ae3d0e8b749acf590a94cb77a5f3dcc5793e2f5779c6385acdb0014329c",
+    "scripts/A100_alignment_parallel_coordinator_v2_20261117.py": "0cfb8e00e980887a8331cc8aa03f729ca2ed8e9bb50b6f5d03ebe8ccde14f3eb",
+    "universal_eval/model/merve_pali_full_native_value_20261117/worker_named_lossless_RPC_v2.py": "813629beccd10ac9a58c362750459b7e18238afa41c05f9ea44a5a7a76392ec5",
+    "universal_eval/model/adapters/merve_pali_own603_original_native_lossless_values_v2_20261117.py": "4c97402db1aa1dbdc8e48944dd4b70d0f031808120b1776b23f117122445d4a6",
+    "scripts/verify_merve_pali_own603_original_native_lossless_full_values_v2_20261117.py": "ff05c9ed384a243e798ca4a8011fe4f7be2494d4194a0d794dbbe06febbc32f3",
+    "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "9028d0ca8bb5f545d6144403738aa3697b2082fa9dca58a3be965b2a6a61245e",
+    "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "699370ccd31a4ffa6d75a0fc8786f88b37a33eaf5d0dbd1bd158af88aaf0894e"
+  },
+  "expected_canonical": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/state.json": "3e7afac31817f8de402d5ef0efacf06be8e0a243c3a369835bef30392f84e496",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/registry.json": "91f944b9336bc5cebac8a25c8134e0a391969315725bd72f037423cc11c1e9c8",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/PAUSE": "bea02604ea552f7b341e0760c698801f048f58ab41d30b5589cae99bc699ea49",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/POLICY.json": "a0806e53a4a085761e3347e6eaea82a395db81014324d86be4786ee575fa8f87",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_PUBLICATION_POLICY.json": "acd9a8cd1bf5a555f3a13e79f8c675c18dafd2484cc64fa0d91107b125ea9128",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_POLICY.json": "66857aae2ab0836a7639a09d7d09a32db01808b3184fb052f027da4ab6b88ac7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_LEDGER.json": "26c1b267f85c943f742f050b144e0c398339757dd5211d81bf6d96a4712a7d1b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_LOCAL_WORKBOOK.json": "ed4eead6ccd1802f5731266f8f9ba8b180cf0a17ad39b3e1076abd2fc267e38d",
+    "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx": "d2f69f9805a26da93b050e3bac71ed7d2bdb1f0823b57082cd068792c20fd54a"
+  },
+  "Merve_adapter": "universal_eval/model/adapters/merve_pali_own603_original_native_lossless_values_v2_20261117.py",
+  "Merve_verifier": "scripts/verify_merve_pali_own603_original_native_lossless_full_values_v2_20261117.py",
+  "Prithiv_adapter": "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py",
+  "Prithiv_verifier": "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py",
+  "Merve_extension": "universal_eval.model.merve_pali_full_native_value_20261117.worker_named_lossless_RPC_v2.OwnMerveLosslessValueWorkerExtension",
+  "source_delta_review": {
+    "original_frozen_runner_file_never_changed": true,
+    "original_Merve_loader_and_predict_and_named_RPC_math_source_reverse_delta_byte_identical": true,
+    "Prithiv_changes_only_real_device_2_constructor_load_occupancy_lineage_and_two_independent_device_guards": true,
+    "Prithiv_original_load_own_model_and_predict_and_observer_functions_byte_identical": true,
+    "all_original_NPU_math_precision_budget_cache_inputs_sampling_and_numeric_assertions_unchanged": true,
+    "coordinator_failure_releases_only_after_all_actually_owned_children_naturally_exit": true,
+    "sources": {
+      "scripts/A100_alignment_parallel_stage_worker_v2_20261117.py": "6fc09ae3d0e8b749acf590a94cb77a5f3dcc5793e2f5779c6385acdb0014329c",
+      "scripts/A100_alignment_parallel_coordinator_v2_20261117.py": "0cfb8e00e980887a8331cc8aa03f729ca2ed8e9bb50b6f5d03ebe8ccde14f3eb",
+      "universal_eval/model/merve_pali_full_native_value_20261117/worker_named_lossless_RPC_v2.py": "813629beccd10ac9a58c362750459b7e18238afa41c05f9ea44a5a7a76392ec5",
+      "universal_eval/model/adapters/merve_pali_own603_original_native_lossless_values_v2_20261117.py": "4c97402db1aa1dbdc8e48944dd4b70d0f031808120b1776b23f117122445d4a6",
+      "scripts/verify_merve_pali_own603_original_native_lossless_full_values_v2_20261117.py": "ff05c9ed384a243e798ca4a8011fe4f7be2494d4194a0d794dbbe06febbc32f3",
+      "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "9028d0ca8bb5f545d6144403738aa3697b2082fa9dca58a3be965b2a6a61245e",
+      "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "699370ccd31a4ffa6d75a0fc8786f88b37a33eaf5d0dbd1bd158af88aaf0894e"
+    }
+  },
+  "Merve_original_completed_full_numeric3_home": "MervePali_own603_original_native_2048_missing_full_numeric_true3_v1_real_FLOCK_20261117",
+  "Prithiv_original_completed_card4_home": "PrithivGemma4E4B_own_original_BF16_true3_v2_own_config_real_FLOCK_20261116",
+  "Merve_lossless_diagnostic_home": "Merve_completed_numeric3_lossless_exact_tensor_sharing_full_independent_diagnostic_v1_20261117",
+  "Merve_lossless_diagnostic_review_SHA256": "e3a314c43ae044d50948e42741e970a5ec25ea5396ec9cd634971c08825ed24f",
+  "small3_budget_bytes_each": 12884901888,
+  "exact_user_request": "请问这个机器有没有多卡，是不是可以多卡并行进行适配，现在的效率有点低，好久没有大进展了呢",
+  "no_G_or_canonical_writes": true,
+  "no_deletion": true
+}

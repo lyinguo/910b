@@ -1,0 +1,25 @@
+import sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,subprocess,os
+R=Path('/root/projects/comperror');D=R/'workspace/diagnostics/batch_910b';B=D/'A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct';sys.path[:0]=[str(R),str(R/'scripts')]
+from A100_alignment_incremental_monitor_20261103 import project_processes,runner_lock_owners
+assert not runner_lock_owners() and not [p for p in project_processes() if p['role'] in ['model','alignment_runner','CPU_verifier_or_audit','CPU_verifier','verifier','independent_verifier']]
+js=lambda p:json.loads(Path(p).read_bytes())
+def sha(p):
+ with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+pub=B/'CoderGemma4E4B_original_HF_BF16_verified176_blank_G_publication_20261117';assert js(pub/'full_target_dual_publication_audit.json')['passed'] and js(pub/'dual_publication_completed.json')['completed'];assert js(D/'A100_ALIGNMENT_LOCAL_WORKBOOK.json')['real_record_count']==176
+I=B/'four_verified176_retention_review_inputs_for_PrithivE4_capacity_20261117';I.mkdir(exist_ok=False)
+state=js(D/'state.json');reg=js(D/'registry.json');known=[{'model_id': 'google/paligemma2-10b-mix-448', 'proof': '/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Pali10Mix_A100_FP16_formal200_v4_0311_20261104/formal200/verification_stdout.json', 'proof_SHA256': 'aef2fdb8bf0fdb5556f815d6c00a3b62ec49107bd3a1489e479fa8dd322741e3', 'home': '/root/projects/comperror/workspace/diagnostics/model_runs/Pali10Mix_A100_FP16_0311_20261104_120544_253103_542283', 'kind': 'visual_features'}, {'model_id': 'HuggingFaceTB/SmolVLM2-256M-Video-Instruct', 'proof': '/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/SmolVLM2256Video_A100_FP16_approved_fresh3_fixed200_v5_schema_1512_20261111/formal200/verification_stdout.json', 'proof_SHA256': '46994951f7292dcd17d33740e222cda19cadbee363edf5175e1ec37f24b12bf3', 'home': '/root/projects/comperror/workspace/diagnostics/model_runs/smol256video_FP16_native_4bu6dqg_', 'kind': 'root_batch10_grouped'}, {'model_id': 'AIDC-AI/Ovis2-1B', 'proof': '/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Ovis21B_A100_BF16_strict_v5_approved_fresh3_fixed200_1512_20261111/formal200/verification_stdout.json', 'proof_SHA256': 'abbbd33cecee30cc7e613e72787c0ae843b137c25c2344187d7ef354fa2a5deb', 'home': '/root/projects/comperror/workspace/diagnostics/model_runs/ovis21b_original_BF16_native_2m5nmke0', 'kind': 'root_batch10_grouped'}]
+mid='coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic';rr=reg[mid];pf=Path(rr['accepted_formal200_proof']);assert sha(pf)==rr['accepted_formal200_proof_sha256'];p=js(pf);assert p['passed'] and p['sample_count']==200 and p['actual_NPU_inference'] and p['original_protocol_final_qualification_complete'] and p['formal_alignment_within_5pct'];assert p['all2076_own_source_actual_NPU_SHA256_verified'] and p['all_native_KV_values_losslessly_reconstructed'] and p['all_full_head_rows_independently_recomputed']
+known.append(dict(model_id=mid,proof=str(pf),proof_SHA256=sha(pf),home='/root/projects/comperror/workspace/diagnostics/model_runs/CoderGemma4E4B_own_original_BF16_20261117_024248_713108_1441945',kind='sample_serial'))
+for scope in known:
+ mid=scope['model_id'];assert state['models'][mid]['status']=='done' and reg[mid]['accepted_formal200_proof']==scope['proof'] and reg[mid]['accepted_formal200_proof_sha256']==scope['proof_SHA256']==sha(scope['proof'])
+v=dict(UTC=datetime.now(timezone.utc).isoformat(),only_after_verified176_full200_and_dual_publication_completed=True,no_live_or_failed_or_small_sample_arrays_in_scope=True,scopes=known,reason='Original passed Prithiv own real3 capacity restoration only; all reports, code, logs, examples and small samples preserved; no changed budgets/guards')
+f=I/'reviewed_inputs.json';f.write_bytes(json.dumps(v,ensure_ascii=False,indent=2).encode());tool=R/'scripts/retain_four_complete_verified_runs_nonexample_matrices_for_PrithivE4_capacity_v1_20261117.py';env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
+with (I/'plan_stdout.json').open('xb') as out,(I/'plan_stderr.log').open('xb') as err:p=subprocess.run(['python3','-B',str(tool),'plan',str(f),sha(f)],cwd=R,stdout=out,stderr=err,env=env)
+assert p.returncode==0,(I/'plan_stderr.log').read_text()
+plan=js(I/'plan_stdout.json');audit=R/'scripts/audit_four_retention_all_verified176_foreign_metadata_20261117.py'
+with (I/'foreign_audit_stdout.json').open('xb') as out,(I/'foreign_audit_stderr.log').open('xb') as err:p=subprocess.run(['python3','-B',str(audit),plan['plan_SHA256']],cwd=R,stdout=out,stderr=err,env=env)
+assert p.returncode==0,(I/'foreign_audit_stderr.log').read_text();print(json.dumps(dict(reviewed_input=str(f),reviewed_input_SHA256=sha(f),plan=plan,foreign_audit=js(I/'foreign_audit_stdout.json'),no_deletion_applied=True),ensure_ascii=False))

@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const p='D:/code-lv/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx';
+const raw=await fs.readFile(p);const before=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(before,'9bd689a4a763bb716c6f9d4c3869aed95bb8d4b1ea9ede4b418591e3226a859c');
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(p));const sheet=book.worksheets.items[0];
+assert.equal(sheet.getRange('C411').values[0][0],'merve/paligemma_vqav2');assert.equal(sheet.getRange('G411').values[0][0],.10339966521681303);
+const image=await book.render({sheetName:sheet.name,range:'B409:G413',scale:1.25,format:'png'});
+const out='D:/code-lv/.tmp/batch_910b_20261030/MervePaliCompact_local_result_sync_verified179_20261117/final_published_411.png';await fs.writeFile(out,new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(p)).digest('hex'),before);console.log(JSON.stringify({published_G411:.10339966521681303,book_SHA256:before,production_unchanged:true,image:out}));

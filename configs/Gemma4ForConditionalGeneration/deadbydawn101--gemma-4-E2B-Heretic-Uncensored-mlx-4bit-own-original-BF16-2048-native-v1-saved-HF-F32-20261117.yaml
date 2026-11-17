@@ -1,0 +1,55 @@
+{
+  "name": "deadbydawn101--gemma-4-E2B-Heretic-Uncensored-mlx-4bit-own-original-BF16-2048-native-v1-saved-HF-F32-20261117",
+  "description": "Own deadbydawn101 checkpoint: all2011 BF16 stored sources,1951 native active parameters plus60 original unused sharedKV projections. The MLX/4bit repository label is not an execution-precision claim; the actual saved local checkpoint and HF branch are BF16. Own, native35LM/16vision/H1536/GQA1/262144 head/physical15+shared20 original cache, own original HF TransformersVLM Greedy2048 outer10 within serial1. The saved HF branch leaves template kwargs empty for the actual native Gemma4ForConditionalGeneration class, retains processor F32 image patches, default special-token behavior and temperature0; no copied enable_thinkingFalse, early F32-to-BF16 rounding, added4096 request cap, BOS deduplication, foreign checkpoint or native4bit claim. Own original model mirror is checked by full file and per-tensor SHA; historical runtime/engine/tensor bytes and the historical /mnt2/afs mount are not claimed captured. All original raw/reference/error/token/denominator and complete reports remain.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit",
+    "adapter": "universal_eval/model/adapters/deadbydawn_gemma4_e2b_own_original_BF16_native_v1_saved_HF_F32_20261117.py:DeadbydawnGemma4E2BOwnBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/deadbydawn_gemma4_e2b_own_original_BF16_native_v1_saved_HF_F32_20261117.json",
+      "protocol_sha256": "d69ba05ef874b4de24fd1ceec88ebf36bee9e75aa063a40b212e9cc1ced93267",
+      "protocol": {
+        "model_id": "deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.785,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

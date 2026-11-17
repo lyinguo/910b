@@ -1,0 +1,11 @@
+{
+  "parent_private_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Prithiv_completed_card2_true3_verified179_capacity_approved_NEWfresh3_fixed200_original_real_FLOCK_20261117",
+  "parent_job_SHA256": "43edb448bd4d0835bf89fcc0b98ba6eb3a178c6eb51c462ae7eeb408fb0f8b57",
+  "followup_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/after_Prithiv_completed_card2_real_release_immediate_original_resource_queue_20261117",
+  "selector_source": "scripts/select_existing_original_resource_queue_1245_20261117.py",
+  "selector_SHA256": "27daea622ea40c92d1182895e6dcd1a9d5803fac9cc0b7a7d224a4f80dd52494",
+  "no_completed_stage_replay": true,
+  "do_not_wait_periodic_check_after_parent_release": true,
+  "no_G_or_canonical_write": true,
+  "original_resource_gates_and_protectedstate_preserved": true
+}

@@ -14,7 +14,7 @@ import subprocess
 
 DENIED_PARTS = {"workspace", "weights", "checkpoints", "datasets", "reports", ".git", ".ssh", "__pycache__"}
 DENIED_SUFFIXES = {".bin", ".safetensors", ".pt", ".pth", ".ckpt", ".gguf", ".npz", ".npy", ".xlsx", ".zip", ".tar", ".gz", ".log", ".jsonl", ".pem", ".key", ".pyc"}
-TEXT_SUFFIXES = {".py", ".yaml", ".yml", ".json", ".md", ".toml", ".txt", ".ir"}
+TEXT_SUFFIXES = {".py", ".yaml", ".yml", ".json", ".md", ".toml", ".txt", ".ir", ".mjs"}
 SPECIAL_NAMES = {".gitignore", ".gitattributes"}
 MAX_BYTES = 2 * 1024 * 1024
 SECRET_PATTERNS = (
@@ -43,6 +43,8 @@ def validate_path(name, role):
         raise ValueError("Non-code file type: " + name)
     if role not in {"runtime_code", "runtime_config", "verification_code", "publication_policy", "documentation"}:
         raise ValueError("Unreviewed role: " + name)
+    if p.suffix.lower() == ".mjs" and role not in {"runtime_code", "verification_code"}:
+        raise ValueError("JavaScript must be reviewed code: " + name)
     if p.suffix.lower() == ".ir" and role != "runtime_code":
         raise ValueError("Operator graph must be reviewed runtime source: " + name)
     if p.suffix.lower() == ".json" and role not in {"runtime_config", "publication_policy"}:
@@ -71,6 +73,17 @@ def validate_content(name, data, entry=None):
                 if isinstance(key, str) and key.lower() in {"password", "api_key", "access_token", "auth_token", "secret_key", "openai_api_key"}:
                     if isinstance(value, str) and len(value) >= 4 and value.upper() not in {"EMPTY", "NONE", "DUMMY", "PLACEHOLDER", "YOUR_API_KEY"} and not value.startswith(("${", "<", "{")):
                         raise ValueError("Literal credential assignment; value suppressed: " + name)
+    elif name.endswith(".mjs"):
+        approved = (entry or {}).get("reviewed_javascript_source_SHA256", [])
+        if digest(data) not in approved:
+            raise ValueError("JavaScript requires an explicit reviewed source digest: " + name)
+        if any(len(line) > 32768 for line in text.splitlines()):
+            raise ValueError("Embedded JavaScript payload requires separate review: " + name)
+        credential = re.compile(r"\b(?:password|api_key|access_token|auth_token|secret_key|openai_api_key)\s*[:=]\s*[\"']([^\"']+)[\"']", re.I)
+        for match in credential.finditer(text):
+            value = match.group(1)
+            if len(value) >= 4 and value.upper() not in {"EMPTY", "NONE", "DUMMY", "PLACEHOLDER", "YOUR_API_KEY"} and not value.startswith(("${", "<", "{")):
+                raise ValueError("Literal credential assignment; value suppressed: " + name)
     elif name.endswith(".ir"):
         approved = (entry or {}).get("weight_free_operator_graph_SHA256", [])
         if digest(data) not in approved or not text.lstrip().startswith("graph("):

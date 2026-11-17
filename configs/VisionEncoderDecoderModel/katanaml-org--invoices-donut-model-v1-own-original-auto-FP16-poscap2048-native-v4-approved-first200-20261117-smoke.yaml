@@ -1,0 +1,54 @@
+{
+  "name": "katanaml-org--invoices-donut-model-v1-own-original-auto-FP16-poscap2048-native-v4-approved-first200-20261117-smoke",
+  "description": "Own original auto->FP16 Donut; dataset prompt decoder prefix and native1536 position cap of requested2048. Complete head/KV/input/source evidence. Original A100 ROUGE-L only8 samples; no historical full200 capture/qualification claim.",
+  "task_type": "image-to-text",
+  "is_ocr": false,
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "katanaml-org/invoices-donut-model-v1",
+    "adapter": "universal_eval/model/adapters/donut_invoice_own_native_fp16_v2_offline_metric_bindings_20261117.py:DonutInvoiceOwnFP16MetricBindingsV2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/VisionEncoderDecoderModel/katanaml-org/invoices-donut-model-v1",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/donut_invoice_own_original_auto_FP16_poscap_approved_first200_v4_20261117.json",
+      "protocol_sha256": "e406fbbda02f504b12a27a3ae1a1bc1efe83a14ca9121ba063fba01e2e43d4e4",
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": false,
+      "truncate_first_sentence": false
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L",
+      "BLEU-4"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0039,
+    "threshold": 0.05
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

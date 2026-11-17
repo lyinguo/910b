@@ -1,0 +1,31 @@
+name: google--gemma-4-12B-it
+description: google/gemma-4-12B-it (Gemma4UnifiedForConditionalGeneration) 全流程评测管线 [Transformers 专用适配器，禁用 thinking]
+task_type: image-text-to-text
+sample_range: 0:199
+data:
+  preprocess: true
+  apply_template: false
+  filter_empty: true
+  dataset_path: /mnt/afs/comp_error/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+model:
+  name: google/gemma-4-12B-it
+  adapter: universal_eval/model/adapters/gemma4_unified_vlm.py:Gemma4UnifiedVLLMModel
+  model_path: /mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4UnifiedForConditionalGeneration/google/gemma-4-12B-it
+  download: false
+  kwargs:
+    max_new_tokens: 2048
+    torch_dtype: bfloat16
+    enable_thinking: false
+algorithm:
+  name: greedy_inference
+  batch_size: 1
+  kwargs:
+    extract_answer: true
+metrics:
+  override:
+  - Accuracy
+baseline:
+  score: 0.0
+  threshold: 0.05
+output:
+  verbose: true

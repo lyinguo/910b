@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const p='D:/code-lv/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx';
+const raw=await fs.readFile(p);const before=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(before,'f2f05d07e779323349b936d505c72984027ef147ba44ddf2f5fed751e34e164d');
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(p));const sheet=book.worksheets.items[0];
+assert.equal(sheet.getRange('C239').values[0][0],'deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit');assert.equal(sheet.getRange('G239').values[0][0],.805);
+const image=await book.render({sheetName:sheet.name,range:'B237:G241',scale:1.25,format:'png'});
+const out='D:/code-lv/.tmp/batch_910b_20261030/DeadbydawnGemma4E2B_local_result_sync_verified177_20261117/final_published_239.png';await fs.writeFile(out,new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(p)).digest('hex'),before);console.log(JSON.stringify({published_G239:.805,book_SHA256:before,production_unchanged:true,image:out}));

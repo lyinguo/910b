@@ -1,0 +1,55 @@
+{
+  "name": "coder3101--gemma-4-E4B-it-qat-q4_0-unquantized-heretic-own-original-BF16-2048-v2-static-current-binding-capacity-recovered-approved-first200-20261117-smoke",
+  "description": "Own coder3101 unquantized BF16 2076 source checkpoint, native42LM/16vision/H2560/GQA2/262144 head/physical24+shared18 original cache, own original HF TransformersVLM Greedy2048 outer10 within serial1. The saved HF branch leaves template kwargs empty for the actual native Gemma4ForConditionalGeneration class, retains processor F32 image patches, default special-token behavior and temperature0; no copied enable_thinkingFalse, early F32-to-BF16 rounding, added4096 request cap, BOS deduplication, foreign checkpoint or native4bit claim. Own original model mirror is checked by full file and per-tensor SHA; historical runtime/engine/tensor bytes and the historical /mnt2/afs mount are not claimed captured. All original raw/reference/error/token/denominator and complete reports remain.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+    "adapter": "universal_eval/model/adapters/coder_gemma4_e4b_own_original_BF16_native_v1_saved_HF_F32_20261116.py:CoderGemma4E4BOwnBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/coder_gemma4_e4b_own_original_BF16_capacity_recovered_first200_v2_static_current_binding_20261117.json",
+      "protocol_sha256": "f12330e8d13d5de425f19b51af3cbac4604d2005f74cd6377948011d4566ded3",
+      "protocol": {
+        "model_id": "coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.85,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

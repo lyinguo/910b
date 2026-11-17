@@ -1,0 +1,122 @@
+{
+  "model_id": "prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+  "report_task": "any-to-any",
+  "workbook_B_task": "any-to-any",
+  "saved_original_benchmark_task": "image-text-to-text",
+  "selected_image_to_text_branch_only_not_all_modalities": true,
+  "own_runtime_assets_SHA256": {
+    "chat_template.jinja": "55572b8d3c8342044e25874c73fe5234b661fa0a57a57f6ef75b58e03d7d959a",
+    "config.json": "1d57f2cd1d5564f10374d31a93af3f51e6fec725ab87e23884285e49fd2d5f8a",
+    "generation_config.json": "002fcdd119e744ae5863f4cf21455b8831d43a280ce7291fbc6ec54cb5f6b818",
+    "model.safetensors.index.json": "ac8334054d5c6fca37e1043e4d12b42900aa97bdc0a9d53e1df216aaed2830b8",
+    "processor_config.json": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c",
+    "tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "tokenizer_config.json": "820ad481cb4152f8df6061f4ae6ae20255777c39b77a9970f1e3cbd427b21511"
+  },
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 5637144744,
+      "SHA256": "aa3e9d1e0443f9874260af4efbe8f0aa4c8fed25d41c9ca172e4c354d101c709",
+      "header_SHA256": "41cf20649280d7a6392802df69108e7f7d0f248f9b4e9ba060bcd268b4da4312",
+      "tensor_count": 1
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4994573962,
+      "SHA256": "a8026ebbab497ed848e5e5dba0f58ce7a276a89bff8f65c97b3937eb9361d096",
+      "header_SHA256": "16931062b2f8036f438718441ede9a4cf5caec3fa31f40a6e3e317e3776bb4d9",
+      "tensor_count": 1028
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4971005506,
+      "SHA256": "fded60be3b3e95ef6803423ed05b457664ff48b0cfe76249cef421916562e798",
+      "header_SHA256": "e6df14db6d2286c8b7a63953c995ef20a438e2b5ded0d2693642f200e0dc4757",
+      "tensor_count": 441
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 389867768,
+      "SHA256": "e61d1c83d3b7ab94b5e82ff8182aa00b484d6c5d5a4d5be8b441b22410dd3f82",
+      "header_SHA256": "8728aea3b3f426d223c78d18cc4a910ebfeb8debe1576898b563f73856d2a3f8",
+      "tensor_count": 660
+    }
+  },
+  "own_source_headers": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json",
+  "own_source_tensor_files": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_files.json",
+  "original_enable_thinking_false_from_saved_adapter": true,
+  "original_configured_batch_size": 10,
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/prithiv_gemma4_e4b_own_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/prithiv_gemma4_e4b_own_20261116/observer.py": "8217200308e81516156bdce81062541771c6e9f4de6161855124901a25de7008",
+    "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_native_v1_20261116.py": "c82e1a09896d632628bac14134964571504b3c5da3f2deb5bad54ebfbbc6ed54",
+    "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_native_v1_20261116.py": "b99050b3c77bbf0e4a300333d333533087c7274d8170fb0288f8570891364138",
+    "scripts/prepare_prithiv_gemma4_e4b_own_original_BF16_four_shards_frontend200_v1_20261116.py": "9e0adbfc0cae5bd3b24173c1aea770511300702d0c90e28a5b910c68cca7d271",
+    "scripts/prepare_prithiv_gemma4_e4b_own_original_BF16_native_readiness_v1_own_config_20261116.py": "2bd3923cefd88dfe7482a412798a3e65498460225f7b625d2a2f5e6d374b952b",
+    "scripts/continue_prithiv_gemma4_e4b_own_original_BF16_true3_fresh3_fixed200_v1_own_config_20261116.py": "828753d9d1c5d9f522bccd7015aac8e8ca55d7e06b75375f4c8cd20ca5aa17b4",
+    "scripts/measure_prithiv_gemma4_e4b_own_original_BF16_actual_capacity_v1_own_config_20261116.py": "9bd916b292c2b814846e88215323c70916b9c570784616d9cd382119249a2f8d",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/model/adapters/gemma4_vllm.py": "69053000225a3b6825c7d6da830371c42123d18f7ceb5596fd7973ca625cdaf1",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "scripts/continue_prithiv_gemma4_e4b_own_original_BF16_true3_fresh3_fixed200_v2_own_config_20261116.py": "5e0235e73c28d5920568702049fee17915fd31d07785ff45dbf880bd4f7e8475",
+    "scripts/measure_prithiv_gemma4_e4b_own_original_BF16_actual_capacity_v2_own_config_20261116.py": "9387e799be5f8facf9adbce2fcf36944da9c265165d887c657e901fbbf7262a8",
+    "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_native_v2_exact_own_report_path_20261116.py": "975ec3d59987d55ffb76c5555aaa9fe7fe94b0ead74889f0288a612102407b07",
+    "scripts/continue_prithiv_gemma4_e4b_v2_own_report_path_after_verified173_dual_publication_20261116.py": "fbf4ae6065c0e6da0030f9ab22d7f65bf22a771c52d7cff3caabfcf8056f7952",
+    "scripts/A100_alignment_evidence_runner_20261103.py": "58de6b4fd664b5483a9ca08115f1ca1ab4fb1478e1ffb6387539296e80babf90",
+    "scripts/A100_alignment_parallel_control_20261117.py": "9f1306bb68d742ee95b3397b24a1e08053c4b94ccc7f8889302f764ea51ba263",
+    "scripts/A100_alignment_parallel_stage_worker_v2_20261117.py": "6fc09ae3d0e8b749acf590a94cb77a5f3dcc5793e2f5779c6385acdb0014329c",
+    "scripts/A100_alignment_parallel_coordinator_v2_20261117.py": "0cfb8e00e980887a8331cc8aa03f729ca2ed8e9bb50b6f5d03ebe8ccde14f3eb",
+    "scripts/prepare_launch_Merve_lossless_Prithiv_card2_parallel_v2_20261117.py": "ad49a61aa6faa1137b1692f2b95357f4c4b0af72ee7035db7e7aaa1a1a1e54ee",
+    "configs/queues/Merve_lossless_Prithiv_card2_parallel_v2_20261117.json": "994cf74746bf47455e893b4fbfa7ab93946468d768d782e0ff762a9140a7456c",
+    "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "9028d0ca8bb5f545d6144403738aa3697b2082fa9dca58a3be965b2a6a61245e",
+    "scripts/verify_prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py": "699370ccd31a4ffa6d75a0fc8786f88b37a33eaf5d0dbd1bd158af88aaf0894e",
+    "scripts/continue_prithiv_completed_card2_true3_after_user_verified179_retention_fresh3_fixed200_20261117.py": "9433eaa2365d0e9dadb3c8d5168265d452739fa76df32698c9d56b9e59163337"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_files.json": "3ddfb55eda1e6960e648523b629913feb785470171eb039e6279d90b983f9dbd",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/review.json": "8182c761505cc3cf27314edeb524c2f67962f70fddb1b0c812e65fee8ff499ff",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/frontend200.jsonl": "f4e57c40ae566373d66c1aa66294d8506dd01307f7aad2f39680a45d528aaf1d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/source_tensor_headers.json": "b143277f36d2149155a81a0480d1829fbbd39b2a26db40979723105c30c03388",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_adapter_template_false_pixel_patch_frontend200_v1_20261116/own_source_native_meta_mapping.json": "d4e30984064512ba0f95a4e699ef433f8382920c83900de353de83626c20c94b",
+    "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/prithivMLmods--gemma-4-E4B-it-Uncensored-MAX.yaml": "93f05a5f2c86c18bc9c7e6fa310bcf542fc6902bb18671dbedfcb89f4db3c7d1",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_true3_v1_own_config_real_FLOCK_20261116/job.json": "50dc962d7226d44596241549e5e4c775698657a73d8619a311ff0ae1699ad062",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_existing_failed_true3_full_value_readonly_diagnostic_v2_exact_report_path_20261116/diagnostic_full_value_review.json": "f74ad84baceb721a77cdb78501cab41f2574aa686fb53de45ac4530209e5dd77",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E2B_original_HF_BF16_verified173_blank_G_publication_20261116/publication_receipt.json": "72cea2496b25d7f3b3a0572013f56ef76d45cf743058717915aef51671f7e0b0",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/CoderGemma4E2B_original_HF_BF16_verified173_blank_G_publication_20261116/full_target_dual_publication_audit.json": "134d5da6e7d5c35556ef6b8818cc13c23290eb7398a604dec6addf12c3bc459f",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/two_card_Merve_lossless_Prithiv_card2_parallel_v2_20261117/source_delta_review.json": "9b9023a8b1bcbec444810ec928d85a6d9ee2d0dcfc15b5fb17d5c46f6732deb9",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Prithiv_completed_card2_true3_user_verified179_retention_capacity_recovered_continuation_20261117/capacity_review.json": "4e80e7709c9d310d57b484b957d3120d7f64c701d170f9c186a7b62fd189f27e",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Prithiv_completed_card2_true3_user_verified179_retention_capacity_recovered_continuation_20261117/authorized_static_transition_review.json": "fd63dceb79ba4d2db1550c859e5a0dc52b346a995ee5ce70a88f0d45ef30c755",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Prithiv_completed_card2_true3_user_verified179_retention_capacity_recovered_continuation_20261117/first200_measurement_approval.json": "69d0efeb74e6059ee0d530d9a53d688a2a3cc4d7072ed53443232ae8769ba8e6"
+  },
+  "current_A100_D_values": {
+    "server": "0.8700",
+    "local": "0.8700",
+    "preserved_original": "0.87"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/prithivMLmods--gemma-4-E4B-it-Uncensored-MAX.yaml",
+  "saved_original_YAML_SHA256": "93f05a5f2c86c18bc9c7e6fa310bcf542fc6902bb18671dbedfcb89f4db3c7d1",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Prithiv_completed_card2_true3_user_verified179_retention_capacity_recovered_continuation_20261117/reference_workbook_verified179_before_Prithiv.xlsx",
+  "reference_workbook_SHA256": "9bd689a4a763bb716c6f9d4c3869aed95bb8d4b1ea9ede4b418591e3226a859c",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Workbook B original any-to-any capability category is preserved as the report task label; the actual benchmark is exactly the saved original image-text-to-text MMBench image branch, with no claim that other modalities were evaluated. Own2130 BF16 PrithivGemma4E4B source including2076 active and54 original unused sharedKV tensors; native original HF42LM/16vision, clippedlinear bounds, physical24 KV plus native shared18, original2560/262144 head. Saved own Gemma4VLLMModel already sets enable_thinkingFalse; the same own template branch and originalGreedy tail are retained, not newly disabled. Saved original batch2/2048 generation and4096 request budget, own dynamic aspect ratio280 soft patches/EOS[1,106,50]. Native reference serial requests preserve original dispatch order. The historical vLLM runtime/engine/tensors were not captured and are not claimed equal; no foreign checkpoint, processor, font, data, CPU score or budget/precision adjustment.",
+  "physical_card_deployment_validation": {
+    "original_completed_card4_proof": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/PrithivGemma4E4B_own_original_BF16_true3_v2_own_config_real_FLOCK_20261116/fresh3/verification_stdout.json",
+    "original_completed_card4_proof_SHA256": "fd3bdcaf169547fe4e90f3fb6e1ea269ccb7d2490a085090d07d9d942a42c9b8",
+    "this_stage_is_first_independent_card2_affinity_validation_not_repetition_of_card4_qualification": true,
+    "model_forward_and_observer_and_dtype_math_unchanged": true
+  }
+}

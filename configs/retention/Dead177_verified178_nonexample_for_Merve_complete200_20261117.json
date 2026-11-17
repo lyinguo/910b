@@ -1,0 +1,13 @@
+{
+  "only_after_verified178_full200_and_dual_publication_completed": true,
+  "no_live_or_failed_or_small_sample_arrays_in_scope": true,
+  "scopes": [
+    {
+      "model_id": "deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit",
+      "home": "/root/projects/comperror/workspace/diagnostics/model_runs/DeadbydawnGemma4E2B_own_original_BF16_20261117_073605_159111_1458603",
+      "kind": "sample_serial",
+      "proof": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_completed_true3_419_capacity_recovered_approved_fresh3_fixed200_v3_real_FLOCK_20261117/formal200/verification_stdout.json",
+      "proof_SHA256": "66f7315c8449170e3e724cd961811d8a77879a2f924afe4ebbac642cd47fe99a"
+    }
+  ]
+}

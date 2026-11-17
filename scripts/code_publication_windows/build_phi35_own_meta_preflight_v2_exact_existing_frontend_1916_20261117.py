@@ -1,0 +1,5 @@
+from pathlib import Path
+import sys,ast,base64,hashlib
+sys.dont_write_bytecode=True
+P=Path(__file__).resolve().parent;s=(P/'prepare_phi35_own_frozen_source_meta_interface_preflight_no_NN_1916_20261117.py').read_text();s=s.replace('1916_20261117\'','v2_exact_existing_frontend_1916_20261117\'').replace('/frontend200.jsonl','/own_original_chat_frontend200.jsonl');n='prepare_phi35_own_frozen_source_meta_interface_preflight_v2_exact_frontend_no_NN_1916_20261117.py';ast.parse(s);(P/n).write_bytes(s.encode());h=hashlib.sha256(s.encode()).hexdigest()
+remote='import sys\nsys.dont_write_bytecode=True\nfrom pathlib import Path\nimport os,base64,hashlib,subprocess\nos.chdir("/root");R=Path("/root/projects/comperror");p=R/'+repr('scripts/'+n)+';b=base64.b64decode('+repr(base64.b64encode(s.encode()).decode())+');assert hashlib.sha256(b).hexdigest()=='+repr(h)+'\nif p.exists():assert p.read_bytes()==b\nelse:p.write_bytes(b)\nsubprocess.run(["python3","-B",str(p)],cwd="/root",check=True)\n';(P/'deploy_phi35_own_meta_preflight_v2_exact_frontend_1916_20261117_remote.py').write_bytes(remote.encode());print(h)

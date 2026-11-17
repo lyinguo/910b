@@ -1,0 +1,55 @@
+{
+  "name": "google--gemma-4-12B-it-own-original-HF-BF16-2048-native-v4-exact-loading-metadata-20261117",
+  "description": "Own genuine Unified12B original HF Greedy2048 outer1/serial1 BF16 with original enable_thinking=False, F32 merged48px/280 patch inputs, own48 layers slidingGQA8/head256 and fullGQA1/head512, K-equals-V full layers and zero shared KV. Own677 BF16 tensors and tied own head; exact legacy vision name mapping only, no checkpoint replacement. The original CLI parent compatibility bootstrap is isolated from a fresh genuine learned worker; the learned worker does not import or use that initializer. Workbook D is authorized A100 comparison; historical A100 engine/tensor bytes are not claimed captured. Original filter_emptyTrue is replaced solely by the mandatory full fixed200 no-filter setting, with all200 identical own verified inputs and full denominator retained.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "google/gemma-4-12B-it",
+    "adapter": "universal_eval/model/adapters/gemma4_unified_12bit_own_BF16_clean_worker_v4_exact_loading_metadata_20261117.py:OwnUnified12BitCleanWorker",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4UnifiedForConditionalGeneration/google/gemma-4-12B-it",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/gemma4_unified12bit_own_original_HF_BF16_native_v4_exact_loading_metadata_20261117.json",
+      "protocol_sha256": "3dcb33b7fd1ca74673f07c22bbdae803176abc7a9b1e6ac53fac81d2855888e8",
+      "protocol": {
+        "model_id": "google/gemma-4-12B-it"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.95,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

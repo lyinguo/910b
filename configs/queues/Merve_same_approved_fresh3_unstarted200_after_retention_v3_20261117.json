@@ -1,0 +1,16 @@
+{
+  "original_job_home": "Merve_own603_lossless_complete_values_approved_NEWfresh3_fixed200_parallel_card4_v2_20261117",
+  "original_job_SHA256": "e777fac2fe1642f8df2fe5e3cb3908500b36ebede80d1b997eb9c26f39451696",
+  "original_completion_SHA256": "9546e1f3ad2a067becd11225b1cb55ae511ebd25d8569a3293a030a9fdbd10ac",
+  "approved_fresh3_proof_SHA256": "cf4f13a8cb0a138d72065841200ea828b4f9f18db06ed4d5989c9af4a6b6693d",
+  "retention_home": "authorized_single_Dead177_verified178_nonexample_retention_for_Merve_complete200_capacity_20261117",
+  "retention_actual_SHA256": "ef13a25ed81844d28681ca2aa5c0345f1f525bb64d04338cd0c0335228baa8a0",
+  "retention_ledger_SHA256": "d819f0071dcb53a0269e7476378dc5ad846a10eeec05007838de4661501afa7e",
+  "worker": "scripts/A100_alignment_resume_Merve_approved_fresh3_unstarted200_v3_20261117.py",
+  "verifier": "scripts/verify_merve_lossless_original_numeric_plus_resumed_control_v3_20261117.py",
+  "guard": "scripts/A100_alignment_resume_completed_approved_fresh3_guard_20261117.py",
+  "new_home": "Merve_lossless_v2_completed_approved_fresh3_resumed_unstarted200_after_retention_v3_real_FLOCK_20261117",
+  "no_original_model_config_or_adapter_or_protocol_or_report_proof_modified": true,
+  "completed_same_approved_fresh3_not_replayed": true,
+  "continues_only_original_unstarted_fixed200": true
+}

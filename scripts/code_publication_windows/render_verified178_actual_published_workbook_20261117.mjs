@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const p='D:/code-lv/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx';
+const raw=await fs.readFile(p);const before=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(before,'d2f69f9805a26da93b050e3bac71ed7d2bdb1f0823b57082cd068792c20fd54a');
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(p));const sheet=book.worksheets.items[0];
+assert.equal(sheet.getRange('C364').values[0][0],'ibm-granite/granite-vision-4.1-4b');assert.equal(sheet.getRange('G364').values[0][0],.920);
+const image=await book.render({sheetName:sheet.name,range:'B362:G366',scale:1.25,format:'png'});
+const out='D:/code-lv/.tmp/batch_910b_20261030/Granite41_local_result_sync_verified178_20261117/final_published_364.png';await fs.writeFile(out,new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(p)).digest('hex'),before);console.log(JSON.stringify({published_G364:.920,book_SHA256:before,production_unchanged:true,image:out}));

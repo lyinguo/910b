@@ -1,0 +1,4 @@
+from pathlib import Path
+import sys,base64,hashlib,ast
+sys.dont_write_bytecode=True
+P=Path(__file__).resolve().parent;n='measure_OvisU1_completed_true3_actual_ZIP_component_capacity_no_NN_1916_20261117.py';b=(P/n).read_bytes();ast.parse(b);h=hashlib.sha256(b).hexdigest();r='import sys\nsys.dont_write_bytecode=True\nfrom pathlib import Path\nimport os,hashlib,base64,subprocess\nos.chdir("/root");R=Path("/root/projects/comperror");p=R/'+repr('scripts/'+n)+';b=base64.b64decode('+repr(base64.b64encode(b).decode())+');assert hashlib.sha256(b).hexdigest()=='+repr(h)+'\nif p.exists():assert p.read_bytes()==b\nelse:p.write_bytes(b)\nsubprocess.run(["python3","-B",str(p)],cwd="/root",check=True)\n';(P/'deploy_OvisU1_original_ZIP_component_capacity_review_no_NN_1916_20261117_remote.py').write_bytes(r.encode());print(h)

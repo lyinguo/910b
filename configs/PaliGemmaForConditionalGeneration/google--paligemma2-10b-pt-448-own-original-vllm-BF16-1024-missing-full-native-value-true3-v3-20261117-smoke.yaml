@@ -1,0 +1,58 @@
+{
+  "name": "google--paligemma2-10b-pt-448-own-original-vllm-BF16-1024-missing-full-native-value-true3-v3-20261117-smoke",
+  "description": "Own original native vLLM BF16/1024 and batch10 unchanged. New missing full-value numerical3 phase; old accepted compatibility3/B10 preserved, not reclassified as full-numerical acceptance.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-to-text-short/eval.jsonl"
+  },
+  "model": {
+    "name": "google/paligemma2-10b-pt-448",
+    "adapter": "universal_eval/model/adapters/pali10pt448_own_preserved_vllm_full_value_observer_v2_ABI_20261117.py:Pali10Pt448OwnPreservedVllmFullValues",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/PaliGemmaForConditionalGeneration/google/paligemma2-10b-pt-448",
+    "download": false,
+    "kwargs": {
+      "npu_devices": [
+        4
+      ],
+      "protocol": {
+        "model_id": "google/paligemma2-10b-pt-448"
+      },
+      "protocol_file": "/root/projects/comperror/configs/protocols/pali10pt448_own_original_vllm_BF16_1024_missing_full_native_true3_v3_20261117.json",
+      "protocol_sha256": "8aacfa3d36e10aba5f7d9e763036d4fcca17e7dc628c95569f533cd6977fcb3a"
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "ROUGE-L"
+    ],
+    "adapters": [
+      "universal_eval/metric/rouge_reference_910b.py:OfflineStemmedRougeL910B"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.0701,
+    "threshold": 0.05,
+    "primary_metric": "ROUGE-L"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

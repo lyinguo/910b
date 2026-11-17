@@ -1,0 +1,108 @@
+{
+  "dispatch_resource_snapshot_at_config_preparation": {
+    "actual_project_processes": [
+      {
+        "PID": 1454972,
+        "PPid": 1454961,
+        "role": "other_project_python",
+        "argv": [
+          "python3",
+          "-"
+        ],
+        "cwd": "/root/projects/comperror"
+      }
+    ],
+    "actual_FLOCK": [],
+    "no_NPU_dispatch_during_config_preparation": true
+  },
+  "dispatch_still_requires_actual_NN_NF_and_original_lock_release": true,
+  "own_source_total": 2011,
+  "own_native_active_source_count": 1951,
+  "own_original_unused_sharedKV_source_count": 60,
+  "model_id": "deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/deadbydawn101/gemma-4-E2B-Heretic-Uncensored-mlx-4bit",
+  "report_task": "image-text-to-text",
+  "workbook_B_task": "image-text-to-text",
+  "saved_original_benchmark_task": "image-text-to-text",
+  "selected_image_to_text_branch_only_not_all_modalities": true,
+  "own_runtime_assets_SHA256": {
+    "chat_template.jinja": "241c50d86bdfe5e43307da87f559cd2416aacd67a8de46c15acc0105ef2200b7",
+    "config.json": "266f8edff7c9100a8877332f31386303bb0ed7a043dfdb7ec3b961f261604cb1",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "generation_config.json": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+    "processor_config.json": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c",
+    "tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "tokenizer_config.json": "950772223ebcf6247759538794ee2909b7335733c04a3466d25f0e4fc808a467"
+  },
+  "own_weight_files": {
+    "model.safetensors": {
+      "bytes": 10246621918,
+      "SHA256": "2db5482b20d746879bb3ef79b5203e9075a2e2b98f54ec7c2f281c1477ddc550",
+      "header_SHA256": "2f73f917a34fcf7c45554e83a8efb28bb016bdf38a48d2506d928411d4962f1a",
+      "tensor_count": 2011
+    }
+  },
+  "own_source_headers": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/source_tensor_headers.json",
+  "original_HF_template_kwargs_empty_preserved": true,
+  "original_input_float_dtype_preserved": true,
+  "original_configured_batch_size": 10,
+  "own_unquantized_BF16_not_native4bit_claim": true,
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "implementation_source_SHA256": {
+    "universal_eval/model/coder_gemma4_e2b_own_20261116/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/coder_gemma4_e2b_own_20261116/observer.py": "5feeeaf2ae9a936bce0315eca94a5b3c7f659b420ca51cabd4a130e744b2564a",
+    "universal_eval/model/adapters/deadbydawn_gemma4_e2b_own_original_BF16_native_v1_saved_HF_F32_20261117.py": "3234f662c17cce4002c594192b66f28a771a2196ece39ed7aa89bf0745a8e308",
+    "scripts/verify_deadbydawn_gemma4_e2b_own_original_BF16_native_v1_saved_HF_F32_20261117.py": "f93df37b59ab4c7da729bf3f17fff9c727dab7a533baa3c7025fc155cbdef8b7",
+    "scripts/prepare_deadbydawn_gemma4_e2b_own_saved_HF_default_template_F32_frontend200_v1_20261117.py": "b9fe92b27bd1831af3ca506029aaf5b5cd354cc510c4dc3dd759f2e9ce38db92",
+    "scripts/prepare_deadbydawn_gemma4_e2b_own_original_BF16_native_readiness_v1_saved_HF_F32_20261117.py": "2d8123724d7aad5177215c977df96c61b0ab57f025472f253ed585763e219752",
+    "scripts/continue_deadbydawn_gemma4_e2b_own_original_BF16_true3_fresh3_fixed200_v1_saved_HF_F32_20261117.py": "e30fb83741e737a01de1a5b10cab3566931d134dafea2588449ef7f9fa1aa97f",
+    "scripts/measure_deadbydawn_gemma4_e2b_own_original_BF16_actual_capacity_v1_saved_HF_F32_20261117.py": "52564f769aafdb26c1397af4a23a4bb13dbfa1e6bc76c73e640581e1d3eb40e6",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "universal_eval/model/adapters/deadbydawn_gemma4_e2b_own_original_BF16_native_v2_own_constructor_binding_20261117.py": "a131292ddcbf23d5b13bfeb42061a8018f4382b26d0aafcb9ab4eea588300eed",
+    "scripts/measure_deadbydawn_gemma4_e2b_actual_capacity_v2_own_constructor_binding_20261117.py": "cc7188fa09c4d0a2ecd4dcceed142970ab6f7efd71b92c780f4ba37db78040e5",
+    "scripts/continue_deadbydawn_gemma4_e2b_true3_capacity_fresh3_fixed200_v2_own_constructor_binding_20261117.py": "7565a7b223c65e205dae7fb2dfb878ced6c3634bcfafb7ce10129c94dab8c873",
+    "scripts/prepare_deadbydawn_gemma4_e2b_native_readiness_v2_own_constructor_binding_20261117.py": "d2020aea2ae52022d5fa9ffbc32f1a1bb9e9e7828d5f7d5cbfd744c45be7faca"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/review.json": "1c37b1a1ada57fbfa47d5c4c058580e534e06755c0b32cce82ebefc6d0c53b80",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/frontend200.jsonl": "b3a6e718e4388295efcbec8e7c25e4575f9b3193e48868c358d51d9ea5a3a372",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/source_tensor_headers.json": "7d9acd56661842dc93fed10efbd41775585f255cc4f415399efcc6f2ef792f96",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_saved_HF_default_template_F32_pixel_patch_frontend200_v1_20261117/own_source_native_meta_mapping.json": "956c674f50edeb6e0e014aa9fe03c0bb3ef50e01fbe9ab3d5e555c42c0cf5e37",
+    "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/deadbydawn101--gemma-4-E2B-Heretic-Uncensored-mlx-4bit.yaml": "68fe0bbdb8b97a0091395ed05bf658bd255c1e85835dec35d09a5812c1d8727c",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_original_BF16_native_v2_own_constructor_binding_readiness_20261117/constructor_binding_review.json": "fdb692519e562ec0d8e87ec8eea20025d1033f81e14a56b6ad5bef4d87dc1195",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_own_original_BF16_true3_v2_own_constructor_binding_real_FLOCK_20261117/fresh3/verification_stdout.json": "13b0835212cc55ac129236c325e3db472c16366ccc997c5a9cc4c9edb9f94b2a",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_completed_true3_419_exact_retention_capacity_recovered_approved_fresh3_fixed200_v3_continuation_20261117/capacity_recovered_review.json": "5275a67bd213848cac0d5423e732df84f0112ad0c90938a8af0d8f4c97a5cf70",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_completed_true3_419_exact_retention_capacity_recovered_approved_fresh3_fixed200_v3_continuation_20261117/first200_measurement_approval.json": "baa6f742b308c3fc565f28e56673a690a5fd3812130fac33feeb2d4dbf5f449e",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/authorized_single_CoderE4_verified176_nonexample_retention_for_Deadbydawn_capacity_20261117/actual_completion.json": "1e8b9768442e5f226a5d2cd32c8c7e5eff4d04e79e3a0055a4f3c350eb3af176",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/authorized_single_CoderE4_verified176_nonexample_retention_for_Deadbydawn_capacity_20261117/removed_exact_original_paths_SHA256.jsonl": "0593a3516336538fc39098d21fd50cac67ab8c05bc2badc4855517cadbbaaf72",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/DeadbydawnGemma4E2B_completed_true3_419_exact_retention_capacity_recovered_approved_fresh3_fixed200_v3_continuation_20261117/retention_ledger_after_exact170_original_bytes.json": "26c1b267f85c943f742f050b144e0c398339757dd5211d81bf6d96a4712a7d1b"
+  },
+  "current_A100_D_values": {
+    "server": "0.7850",
+    "local": "0.7850",
+    "preserved_original": "0.785"
+  },
+  "workbook_D_reference_authorized": true,
+  "saved_original_configuration_used": true,
+  "saved_original_YAML": "/root/projects/comperror/configs/Gemma4ForConditionalGeneration/deadbydawn101--gemma-4-E2B-Heretic-Uncensored-mlx-4bit.yaml",
+  "saved_original_YAML_SHA256": "68fe0bbdb8b97a0091395ed05bf658bd255c1e85835dec35d09a5812c1d8727c",
+  "preserved_original_snapshot": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json",
+  "preserved_original_snapshot_SHA256": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "6d73108e181887c9dfd95b7c851981c1ac316238705fe37e8c5bf59c15dc9a82",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Own deadbydawn101 checkpoint: all2011 BF16 stored sources,1951 native active parameters plus60 original unused sharedKV projections. The MLX/4bit repository label is not an execution-precision claim; the actual saved local checkpoint and HF branch are BF16. Own, native35LM/16vision/H1536/GQA1/262144 head/physical15+shared20 original cache, own original HF TransformersVLM Greedy2048 outer10 within serial1. The saved HF branch leaves template kwargs empty for the actual native Gemma4ForConditionalGeneration class, retains processor F32 image patches, default special-token behavior and temperature0; no copied enable_thinkingFalse, early F32-to-BF16 rounding, added4096 request cap, BOS deduplication, foreign checkpoint or native4bit claim. Own original model mirror is checked by full file and per-tensor SHA; historical runtime/engine/tensor bytes and the historical /mnt2/afs mount are not claimed captured. All original raw/reference/error/token/denominator and complete reports remain."
+}

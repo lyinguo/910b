@@ -1,0 +1,55 @@
+{
+  "name": "prithivMLmods--gemma-4-E4B-it-Uncensored-MAX-original-BF16-2048-card2-approved-first200-user-retention-20261117-smoke",
+  "description": "Workbook B original any-to-any capability category is preserved as the report task label; the actual benchmark is exactly the saved original image-text-to-text MMBench image branch, with no claim that other modalities were evaluated. Own2130 BF16 PrithivGemma4E4B source including2076 active and54 original unused sharedKV tensors; native original HF42LM/16vision, clippedlinear bounds, physical24 KV plus native shared18, original2560/262144 head. Saved own Gemma4VLLMModel already sets enable_thinkingFalse; the same own template branch and originalGreedy tail are retained, not newly disabled. Saved original batch2/2048 generation and4096 request budget, own dynamic aspect ratio280 soft patches/EOS[1,106,50]. Native reference serial requests preserve original dispatch order. The historical vLLM runtime/engine/tensors were not captured and are not claimed equal; no foreign checkpoint, processor, font, data, CPU score or budget/precision adjustment.",
+  "task_type": "any-to-any",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+    "adapter": "universal_eval/model/adapters/prithiv_gemma4_e4b_own_original_BF16_card2_affinity_only_v1_20261117.py:PrithivGemma4E4BOwnBF16Card2",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/prithivMLmods/gemma-4-E4B-it-Uncensored-MAX",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/Prithiv_own_original_BF16_card2_approved_first200_after_verified179_user_retention_20261117.json",
+      "protocol_sha256": "cc5576c81dcdb6b5efe6414e166daadeb1d6158b254fff55614f83188a826f92",
+      "protocol": {
+        "model_id": "prithivMLmods/gemma-4-E4B-it-Uncensored-MAX"
+      },
+      "npu_devices": [
+        2
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ]
+  },
+  "baseline": {
+    "score": 0.87,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "is_ocr": false
+}

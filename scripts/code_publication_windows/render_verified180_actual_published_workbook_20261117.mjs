@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const p='D:/code-lv/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx';
+const raw=await fs.readFile(p);const before=crypto.createHash('sha256').update(raw).digest('hex');assert.equal(before,'689b3e894593becd301590ab1ce501e9a9c5af0dcd14b1001e29756f56b3af34');
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(p));const sheet=book.worksheets.items[0];
+assert.equal(sheet.getRange('C572').values[0][0],'prithivMLmods/gemma-4-E4B-it-Uncensored-MAX');assert.equal(sheet.getRange('G572').values[0][0],.88);
+const image=await book.render({sheetName:sheet.name,range:'B570:G574',scale:1.25,format:'png'});
+const out='D:/code-lv/.tmp/batch_910b_20261030/PrithivGemma4E4B_local_result_sync_verified180_20261117/final_published_572.png';await fs.writeFile(out,new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(p)).digest('hex'),before);console.log(JSON.stringify({published_G572:.88,book_SHA256:before,production_unchanged:true,image:out}));

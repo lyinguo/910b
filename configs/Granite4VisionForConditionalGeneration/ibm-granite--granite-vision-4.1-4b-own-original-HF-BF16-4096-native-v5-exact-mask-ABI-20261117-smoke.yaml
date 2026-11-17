@@ -1,0 +1,55 @@
+{
+  "name": "ibm-granite--granite-vision-4.1-4b-own-original-HF-BF16-4096-native-v5-exact-mask-ABI-20261117-smoke",
+  "description": "ibm-granite/granite-vision-4.1-4b (Granite4VisionForConditionalGeneration) 全流程评测管线",
+  "task_type": "image-text-to-text",
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "ibm-granite/granite-vision-4.1-4b",
+    "adapter": "universal_eval/model/adapters/granite41_own_original_HF_BF16_4096_native_v4_exact_mask_ABI_full_errors_20261117.py:Granite41OwnOriginalBF16ExactMaskABI",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Granite4VisionForConditionalGeneration/ibm-granite/granite-vision-4.1-4b",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/granite41_own_original_HF_BF16_4096_native_v5_exact_mask_ABI_20261117.json",
+      "protocol_sha256": "f1bbb0100374b84604e379bb2be41065fd619bf644ff2214ea490d21c61a442f",
+      "protocol": {
+        "model_id": "ibm-granite/granite-vision-4.1-4b"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "greedy_inference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.915,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  },
+  "sample_count": 3
+}
