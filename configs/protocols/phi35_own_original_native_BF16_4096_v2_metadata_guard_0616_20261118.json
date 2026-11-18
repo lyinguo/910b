@@ -1,0 +1,88 @@
+{
+  "model_id": "microsoft/Phi-3.5-vision-instruct",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Phi3VForCausalLM/microsoft/Phi-3.5-vision-instruct",
+  "own_assets_SHA256": {
+    "config.json": "567e28c638a3e41aba1a304ae58b283845ad07e1c60e970643b0ad8fc229b382",
+    "configuration.json": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "generation_config.json": "bf86d2cd9250f89f09563b7f80e25e34663f673b836f531dc207362165051dc9",
+    "model.safetensors.index.json": "72d628080d85b3a0e96eac71a47f7a04a666aabf8a91269100c99a8d543f345c",
+    "preprocessor_config.json": "0f3d920fcec587bb425312d30b0660e1fabaf46a75961f2b75ddbb1ff92de01c",
+    "processor_config.json": "286a9e7fb58a489eae6825b79be69f62068c2028435c29ee52c3a485d071707b",
+    "special_tokens_map.json": "f9535fada19315e0d8eb89521cebe111c008fee98d16e7c6744acfb50505d8c3",
+    "tokenizer.json": "493f8ad437be806d5ccdc57e91479bdbb0c656448c1b89ff70f7653530d78518",
+    "tokenizer_config.json": "581d4654c018fbcef2504b57a805dcad37126038137b5d25d22b5a02abc1ef29",
+    "modeling_phi3_v.py": "b223be7d7e9f01903dd8704e5da45c6030824134441aa2734c40c36597c3b41c",
+    "processing_phi3_v.py": "990ef3d1f6b5cc61b44cf8ec8e8886b19721b7e01e8bae3ebea32781b0fcf598",
+    "configuration_phi3_v.py": "18ff44c5c1f9a6523184fb2e580e03ebf722a65f37b9cc57cd1a6d620a0f2666"
+  },
+  "own_weight_files": {
+    "model-00001-of-00002.safetensors": {
+      "bytes": 4944122112,
+      "SHA256": "be7bdee601478b3560aeb7122fe87a7d68445bb21b5f1ca88a764e8530b3aab8"
+    },
+    "model-00002-of-00002.safetensors": {
+      "bytes": 3349208776,
+      "SHA256": "94621eca6936d7a2fb94bd90f37edb0e28850235e7ba2c5e20445d2fc56bcaed"
+    }
+  },
+  "own_source_headers": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_native_BF16_4096_source_readiness_v2_metadata_guard_0616_20261118/own592_source_headers.json",
+  "own_source_headers_SHA256": "eb7aeff0ed866c63738c9428d83b561751e6ce4683a8a59eefed6174d8985314",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_chat_generation_prefix_native_tokens200_existing_pixel_proof_meta_map_v6_exact_ChatParams_no_NN_20261118/own_actual_native_frontend200.jsonl",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "media_root": "/root/projects/comperror/workspace/datasets",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/phi35_own_original_native_adapter_v1_0616_20261118.py": "5932b0060fe07267fb96bdeaa5e2658e901bf0b20add68e9cc7ed644ffa8fbd9",
+    "universal_eval/model/phi35_own_native_value_0616_20261118/worker.py": "8e1289124200e427230b58a6d1a143239615f77f5363793f0f1b839c69c81278",
+    "universal_eval/algorithm/phi35_own_original_MC_0616_20261118.py": "646cd2090e087bffe96cb6aa3ad365b51b1111b5ffb074c88ed0aa59d19f3e53",
+    "scripts/verify_phi35_own_original_native_BF16_4096_v1_0616_20261118.py": "bd3558b5b9dd0161214760363f13b6f5afe0bd26d83f461cd72ed67fdd1df098",
+    "scripts/prepare_phi35_own_original_native_BF16_4096_true3_v2_metadata_guard_0616_20261118.py": "1632a111d07fbcb1c77173de57707472561ea97857324002d49e73ebd82f95df",
+    "universal_eval/model/phi35_own_native_value_0616_20261118/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "universal_eval/model/reference_sources/phi35_owned_checkpoint_layout_20261118.py": "136cbebec817f161c17256803965cc06d1d3354a784f1f3d8ad32db13ab02a11",
+    "universal_eval/model/phi35_own_original_source_20261117/processing_phi3_v.py": "990ef3d1f6b5cc61b44cf8ec8e8886b19721b7e01e8bae3ebea32781b0fcf598",
+    "universal_eval/model/phi35_own_original_source_20261117/configuration_phi3_v.py": "18ff44c5c1f9a6523184fb2e580e03ebf722a65f37b9cc57cd1a6d620a0f2666",
+    "universal_eval/model/phi35_own_original_source_20261117/modeling_phi3_v.py": "b223be7d7e9f01903dd8704e5da45c6030824134441aa2734c40c36597c3b41c",
+    "universal_eval/model/phi35_own_original_source_20261117/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_chat_generation_prefix_native_tokens200_existing_pixel_proof_meta_map_v6_exact_ChatParams_no_NN_20261118/review.json": "0bed32c5ddd504b0b776ba4a71107a8f415de64fc46e253a069a5733d54f8471",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_chat_generation_prefix_native_tokens200_existing_pixel_proof_meta_map_v6_exact_ChatParams_no_NN_20261118/own_actual_native_frontend200.jsonl": "3ab60cd1701f4ea810e7c886c6e7453f767bf62b74f0dafa87ee0979f25e33dd",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_BF16_4096_native_candidate_frontend200_v3_original_dataset_prompt_no_NN_20261117/review.json": "6d3b9c55301157036758825b35661f9b753ad8d34e78dc9f0a279a497de80646",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_BF16_4096_native_candidate_frontend200_v3_original_dataset_prompt_no_NN_20261117/own_original_chat_frontend200.jsonl": "8efba8e2372fde52937506598e89304eb61330d5c65fdd71bd9c77d4220e1d86",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Phi35_own_original_native_BF16_4096_source_readiness_v2_metadata_guard_0616_20261118/own592_source_headers.json": "eb7aeff0ed866c63738c9428d83b561751e6ce4683a8a59eefed6174d8985314",
+    "/root/projects/comperror/configs/Phi3VForCausalLM/microsoft--Phi-3.5-vision-instruct.yaml": "d16e40ca27659cabbdad21e19079185544ab5ae893832b336a0274c713f2e1cc",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/user_decisions/workbook_A100_D_is_comparison_reference_2130_20261114/decision.json": "22cbb4581a69875f643902001babfeffa694a2275e0f894a447866e356bccf3d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "689b3e894593becd301590ab1ce501e9a9c5af0dcd14b1001e29756f56b3af34",
+  "current_A100_D_values": {
+    "server": "0.8600",
+    "local": "0.8600",
+    "preserved_original": "0.86"
+  },
+  "workbook_D_reference_authorized": true,
+  "original_generation_budget": 4096,
+  "original_outer_batch": 10,
+  "original_engine_stop_ids": [
+    2,
+    32000
+  ],
+  "original_max_model_len_override": null,
+  "own_native_source_count": 574,
+  "original_native_unused_CLIP_source_count": 18,
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "historical_source_boundary": "Saved own R vLLM/Greedy4096/outer10/TP1/.9 and own original assets; current native original LongRoPE default context4096, actual stop [2,32000], own CLIP hidden_states[-2]/23 layers and full Phi3_32 physical KV. Original historical A100 engine/tensor bytes not captured. Workbook D is the user-confirmed comparison reference. Observation-only wrappers and lossless exact-value sharing do not alter model math, native scheduling, original grouping, input values or budget."
+}

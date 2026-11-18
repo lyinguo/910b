@@ -9598,6 +9598,546 @@
       "role": "runtime_code",
       "reason": "Actual local Python import from scripts/diagnostic_merve_completed_numeric3_lossless_exact_tensor_sharing_v1_20261117.py; Explicit primary implementation inventory pending_after_daily_20261117_verified180_Prithiv_Ovis_Phi35_official_full_closure_all_primary_v22.json",
       "initial_SHA256": "e31af9c32cc15c0ba2ebf1945dc859c7539084f0dfde4cc39e6c087b642f912c"
+    },
+    "configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-native-v1-20261118-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "4ef5293c0e089cc11d8ea7b0150b52dd27d9b7358828551a2f387d39bb05080a"
+    },
+    "configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-native-v1-20261118.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "1e1a89ff3d1ce8ff036602efb40f7908eb83ecf766054acd3a7af528b28ab051"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-native-v2-actual-D965-1653-20261118-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "dc5ec7d948cb8afbc1a66e6f741d8e04aca53f79a93e75553d76f937619427dc"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-native-v2-actual-D965-1653-20261118.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "b25e2c91dafc433110cbe1cc669913a82ea1214cfcea77594cc159cad3cc83eb"
+    },
+    "configs/Phi3VForCausalLM/microsoft--Phi-3.5-vision-instruct-own-original-BF16-native-4096-v2-metadata-guard-0616-20261118-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "6138e8f496fa2e8103f98baa334cd8c81961db335268b01c3c8e46827f074347"
+    },
+    "configs/Phi3VForCausalLM/microsoft--Phi-3.5-vision-instruct-own-original-BF16-native-4096-v2-metadata-guard-0616-20261118.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "3479c14d0dd17c7bea57121c8c519f4b81192d6faee048e806a486bc0062b296"
+    },
+    "configs/protocols/glm46flash_own_original_BF16_thinking4096_native_v2_actual_D965_1653_20261118.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-native-v2-actual-D965-1653-20261118.yaml, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-native-v2-actual-D965-1653-20261118-smoke.yaml, scripts/prepare_glm46flash_own_native_BF16_thinking4096_true3_v2_actual_D965_1653_20261118.py",
+      "initial_SHA256": "79832f48fff71ace7c5a3ecc585ed69ecb0ea784f43a1e865b83535a6b85a10d"
+    },
+    "configs/protocols/huihui_glm46flash_own_original_BF16_2048_20261118_native_v1.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_huihui_glm46flash_own_original_BF16_2048_20261118_true3.py, configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-native-v1-20261118.yaml, configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-native-v1-20261118-smoke.yaml",
+      "initial_SHA256": "31d3ecdb553869bfaaf3962b781dddef8b5751759ae98aa1cf87a0d0bf0e0f1d"
+    },
+    "configs/protocols/phi35_own_original_native_BF16_4096_v2_metadata_guard_0616_20261118.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Phi3VForCausalLM/microsoft--Phi-3.5-vision-instruct-own-original-BF16-native-4096-v2-metadata-guard-0616-20261118.yaml, configs/Phi3VForCausalLM/microsoft--Phi-3.5-vision-instruct-own-original-BF16-native-4096-v2-metadata-guard-0616-20261118-smoke.yaml, scripts/prepare_phi35_own_original_native_BF16_4096_true3_v2_metadata_guard_0616_20261118.py",
+      "initial_SHA256": "753aacd87cc67c1cdbadd05d6e974c4d57930930ab141678143e57f5989b5166"
+    },
+    "configs/queues/existing_original_resources_immediately_after_GLM46_completed_own_true3_20261118.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_after_GLM46_real_completion_and_storage_diagnostic_release_original_resource_queue_20261118.py",
+      "initial_SHA256": "a6f6d391810a2fd287399b0d0016c1bde6a5ad83e3895ea95a89572ae898bc7a"
+    },
+    "scripts/code_publication_windows/build_Phi35_native_chat_v6_source_deploy_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "ad45ed4cdee2eee1d4185b33de8e69bbbe1e1202292dfb0f25d5cbdcf1fe02a2"
+    },
+    "scripts/code_publication_windows/build_archive_daily_reviewed_transition_utility_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f15079e361f221f5f4d567968bab4c87635aef1ab9dab06a9437161a09d50e66"
+    },
+    "scripts/code_publication_windows/build_verified180_Day18_Phi35_inputs_Ovis_capacity_handoff_plan_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "6268948aa66a10967b3cdc9665845ab493d828a25d7103c93dea7c042ef93761"
+    },
+    "scripts/code_publication_windows/build_verified180_Day18_official_final_closure_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "b50185bfb873be1493068c1808098cc9abb38a29457857b31a2e0ca7e8c17bd2"
+    },
+    "scripts/code_publication_windows/check_frozen_original_resource_selector_after_Phi35_inputs_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "1b611f9642eb8fc98c8ca9b2426f9f5f4330510a23d9af97ff3874b38d0454a0"
+    },
+    "scripts/code_publication_windows/collect_explicit_daily18_all_declared_primary_v1_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "7c1da42df3c7bc326b6c6703045d79d17210a21b3e92a61d08827464bbd04b3b"
+    },
+    "scripts/code_publication_windows/deploy_execute_verified180_Day18_handoff_builder_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "30c315596b178ade86e190683778d515e4edf33548cb4db5f5ab0a8b1891db2c"
+    },
+    "scripts/code_publication_windows/invoke_daily_code_publisher_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "ce25f36970ce0115940ebeb4a6e1862e77a5d5e1916f82e492207d1382ded94a"
+    },
+    "scripts/code_publication_windows/prepare_daily18_reviewed_source_snapshot_and_full_diff_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "4e9656ba4aa4d89535185a26c646c27ffbf72dc3891e0a89c5cc9a1d79931e8b"
+    },
+    "scripts/code_publication_windows/prepare_official_verified180_Day18_short_handoff_update_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "2167048792b2dfc915bb5fdb94919d4f436c0676e8a6e55b38f51be54bacb73e"
+    },
+    "scripts/code_publication_windows/read_Florence_own_table_task_binding_and_frontend_resources_0114_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "ca235b2fa63e9eb325dbcd19ae273a03fb4a36a3b1346f758f887fa0ed3c54b0"
+    },
+    "scripts/code_publication_windows/read_OvisU1_standard_LZMA_old3_diagnostic_actual_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "bde9272ab4123244af30066bca775275677e329ebcee565d57dea81fe750d13d"
+    },
+    "scripts/code_publication_windows/read_Phi35_actual_renderer_saved_deployment_and_input_processor_contract_no_NN_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f78e8841e110771f0eadf58f450f53c4f483fc71316f6d4c90153c5d58bc0750"
+    },
+    "scripts/code_publication_windows/read_Phi35_completed_native200_and_exact_existing_meta_key_differences_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f3b9d93f9b8b0bce2bf1bd1b0c5dead60720e2ee2d97eff8d52c027a5d5a5935"
+    },
+    "scripts/code_publication_windows/read_Phi35_exact_ChatParams_and_run_chat_source_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "b44da52a7e3142ed4fa465835879dbbd2127d0d8cedb0b059b44949608fe097b"
+    },
+    "scripts/code_publication_windows/read_Phi35_native_renderer_stop_and_vision_source_contracts_no_NN_0020_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "3901373e14606557f996d32b5e6cefa1854d3030664ffa113fb2271f0f1dbb91"
+    },
+    "scripts/code_publication_windows/read_Phi35_preprocess_chat_one_exact_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "2723b20d161dba7c30df08594124b00b92e673ea4f089afeb425df40c2aca3f5"
+    },
+    "scripts/code_publication_windows/read_own_Florence_pending_deployment_heads_and_sources_0114_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "9e1a1058d701f3c3f6634da1b388baa24b87308d74f130edd7ae1ed436b89a61"
+    },
+    "scripts/code_publication_windows/read_required180_Huihui_full_handoff_and_latest_0114_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "2552d1d0212deebce9d294a47d2d26d2de378ce627a36c60909f824a97b004de"
+    },
+    "scripts/code_publication_windows/read_unadapted_own_small_checkpoint_metadata_no_weight_array_scan_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "e61f5f6f40e82c57bbb4e4e6bbed0a9dd54cb1d6a9043b1fd91c08e2981defb5"
+    },
+    "scripts/code_publication_windows/run_daily18_exact_R_source_19_unit_checks_no_model_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "44be9c6e67e0c0d6ce4d49b315dbc91827b3190a1c9da15b2d7f3b102a31063c"
+    },
+    "scripts/code_publication_windows/run_daily_code_tests_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "70b1c461ae1412c9e6663e7e748d28d7b84fa5299406123540f7121a5058768b"
+    },
+    "scripts/code_publication_windows/verify_automation910b_Day18_official_readback_all_fields_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "90356afbcdf693db5074c6b449aed435e420c0c62332c4ccc13256df3a88c781"
+    },
+    "scripts/collect_code_publication_primary_sources.py": {
+      "role": "verification_code",
+      "reason": "Actual primary source publication collector",
+      "initial_SHA256": "260122f226c69a9b3a349115ea83fe6654fe236e1f5c98aa3f6862fd933ed604"
+    },
+    "scripts/continue_after_GLM46_real_completion_and_storage_diagnostic_release_original_resource_queue_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "0059f53ebcb3e553df52c826d3f14f0ecba875c5a99863f6a62609ff2fe1b8d5"
+    },
+    "scripts/continue_glm46flash_completed_true3_wait_actual_capacity_resume_fresh3_fixed200_v3_1723_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "96dfdd09b7b14a4845e142cbcc6dcc4384130a362ff1bea777f9fcf2a059637b"
+    },
+    "scripts/continue_glm46flash_own_ready_true3_capacity_fresh3_fixed200_v1_1650_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8e164433e4b449e2f26910b557b66cb35482bbfa40ca3e81ceaca22bc7d2962b"
+    },
+    "scripts/continue_glm46flash_own_ready_true3_capacity_fresh3_fixed200_v2_actual_D965_1653_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "1905a0a9bbc22c43c653e1a432da2bb1dbe4db618b94c51be967304d76054a55"
+    },
+    "scripts/continue_huihui_glm46flash_own_original_BF16_2048_20261118_true3_capacity_fresh3_fixed200.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "d34cb1c64010f02d1651c9190b3db13a0eadddca48e2174605edcf493348cb2b"
+    },
+    "scripts/continue_phi35_formal_NF2_completed_true3_capacity_fresh3_fixed200_v2_0616_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "6c9fbc0a41619b9cf93bdf05210ea59b476fcc912ac6a27879a28242b1d71611"
+    },
+    "scripts/continue_phi35_formal_NF3_completed_true3_capacity_fresh3_fixed200_v3_1642_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "c1f1a273d4c5df5cc436fc39f3a19f7525f3830ae1ed82044188686fbd466e0c"
+    },
+    "scripts/continue_phi35_own_true3_full_shape_capacity_fresh3_fixed200_v1_0616_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f454ee25f364cb20f277884a774b96fb0b9c15a6ec6d218fceb83cbf01042028"
+    },
+    "scripts/diagnostic_OvisU1_complete_old3_standard_LZMA_capacity_no_NN_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "71cff8ef84ff5bdb300682bf20cbee760bbcd77335d0b4326b82a89d1e1f759c"
+    },
+    "scripts/diagnostic_glm46flash_completed_true3_complete_LZMA_storage_capacity_only_1714_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "57b63c1df00daeb322f2ac14b654fb64fb578722b182e7ad560c428c4f4968df"
+    },
+    "scripts/launch_huihui_glm46flash_own_original2048_frontend_ready_true3_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "89a7453876655b0fcc45ca62ebba418fb9ae24f5a9e583f890bde46e50f313a7"
+    },
+    "scripts/local_A100_reference_gate_20261103.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/publish_CoderGemma4E2B_verified173_single_lock_dual_transaction_v1_20261116.py; Actual local Python dependency of scripts/publish_CoderGemma4E4B_verified176_single_lock_dual_transaction_v1_exact_original_reference_20261117.py; Actual local Python dependency of scripts/publish_CoderGemma4E4B_verified176_single_lock_dual_transaction_v2_exact_loaded_source_reference_20261117.py; Actual local Python dependency of scripts/publish_DeadbydawnGemma4E2B_verified177_single_original_lock_dual_transaction_v1_current_reference_20261117.py; Actual local Python dependency of scripts/publish_DeadbydawnGemma4E2B_verified177_single_original_lock_dual_transaction_v2_finish_reference_scope_20261117.py; Actual local Python dependency of scripts/publish_Gemma4E2B_original_BF16_verified171_20261116.py; Actual local Python dependency of scripts/publish_Gemma4E2B_verified171_single_lock_dual_transaction_v2_20261116.py; Actual local Python dependency of scripts/publish_Gemma4E2B_verified171_single_lock_dual_transaction_v3_manifest_task_tests_20261116.py; Actual local Python dependency of scripts/publish_Gemma4_pair_verified172_single_lock_dual_transaction_v1_20261116.py; Actual local Python dependency of scripts/publish_Granite41_verified178_single_original_lock_dual_transaction_v1_20261117.py; Actual local Python dependency of scripts/publish_MervePaliCompact_verified179_dual_transaction_v2_real_formal_acceptance_schema_20261117.py; Actual local Python dependency of scripts/publish_MervePaliCompact_verified179_dual_transaction_v3_exact_negative_fixture_20261117.py; Actual local Python dependency of scripts/publish_MervePaliCompact_verified179_single_original_lock_dual_transaction_v1_20261117.py; Actual local Python dependency of scripts/publish_OSAtlas4B_original_probability_verified170_20261116.py; Actual local Python dependency of scripts/publish_PrithivGemma4E4B_verified180_single_original_lock_dual_transaction_v1_20261117.py; Actual local Python dependency of scripts/publish_RedHatGemma4E2B_verified175_single_lock_dual_transaction_v1_exact_original_reference_20261116.py; Actual local Python dependency of scripts/publish_RedHatGemma4E4B_verified174_single_lock_dual_transaction_v1_20261116.py; Actual local Python dependency of scripts/publish_verified_same_baseline_GLMOcr_pair_169_20261116.py; Actual local Python dependency of scripts/recover_Merve_verified179_committed_dual_readonly_full_audit_field_schema_v4_20261117.py; Actual local Python dependency of scripts/verified_A100_G_cell_writer_20261103.py; Actual local Python dependency of scripts/verified_Merve_actual_formal_acceptance_G_cell_writer_schema_v2_20261117.py",
+      "initial_SHA256": "28a74e06a3e23300086be3c82271a478279774d0f908fc5cb1e1d289860b0faf"
+    },
+    "scripts/maintenance/archive_alignment_reviewed_daily_transition_primary_handoff_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8116219a7bd08a7748c3c01eba9f277505c5e6965b82926ab0165707c29c8be8"
+    },
+    "scripts/maintenance/close_alignment_handoff_official_readback_completed_owned_capacity_v5_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "0cd7fd49493a71464b33b036752ed20f23d89637ecea32152bc0d30c3846fdf2"
+    },
+    "scripts/maintenance/close_alignment_handoff_official_readback_current_owned_stage_v4_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "dc515a28aabc0e88b908160796ec1d80edc1efc90be9f0312ea30924dcbfb6a7"
+    },
+    "scripts/maintenance/finalize_alignment_handoff_official_readback_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "2d004dcb5160f69509577e134521809325005ef56918c7c77895d877b638e1e5"
+    },
+    "scripts/maintenance/finalize_alignment_handoff_reviewed_errors_actual_stage_v2_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a1058fe4dd56a985a431a0e9280cf282b5f98adeb0cfe62a2d49512551f7998f"
+    },
+    "scripts/maintenance/finalize_alignment_handoff_reviewed_errors_actual_stage_v3_late_sources_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a64b05c7310bc4e8f75baca656ba7d1901904d4de65626a9b333bc9c6d9a9f3d"
+    },
+    "scripts/prepare_glm46flash_own_native_BF16_thinking4096_true3_v1_1645_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a7d72f6fad3839ff3214471b21f7c1d7f44258c2f34a14f796eca93b76d0dbd2"
+    },
+    "scripts/prepare_glm46flash_own_native_BF16_thinking4096_true3_v2_actual_D965_1653_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "ec22bd6ceaadd5489e4afa460cbfbd1e990741968b70d5a05fdbcdd2b1cb239e"
+    },
+    "scripts/prepare_glm46flash_own_original_BF16_thinking4096_frontend200_v1_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a3f190f2aa030d111dc44020673c885221f6c5a209a6a7bda92fbf3ddae5b3a1"
+    },
+    "scripts/prepare_huihui_glm46flash_own_original_BF16_2048_20261118_frontend200.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8829b60cd5e4dd40c91c68e985d76f24241edb84dddb38e55dea020e956dd79a"
+    },
+    "scripts/prepare_huihui_glm46flash_own_original_BF16_2048_20261118_true3.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "4bc8a0e6442c71b3a8633dfdfac5375a75320cefca4290f22d9f9ea50f299158"
+    },
+    "scripts/prepare_phi35_own_actual_native_frontend200_and_engine_request_stop_v2_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "58dff5c90a37bd94c86394299021e8f8a0710c3348d49028797685be13c266fe"
+    },
+    "scripts/prepare_phi35_own_actual_native_frontend200_engine_stop_v3_exact_native_pixel_dtype_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "b3af2245ddbeae182a36cef4add3ed849d09089523e74c7cd5f1e09681ec35ad"
+    },
+    "scripts/prepare_phi35_own_actual_native_renderer_contract_no_NN_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "ddc6f18fb43a7f0d20846308159cbfc1b8cccbb33b392d8363d64103280d7436"
+    },
+    "scripts/prepare_phi35_own_native_frontend200_v4_complete_reference_values_cache_observation_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a39b38d1675afbe8c6183f40e9799ae0c9bd28e503ab2f41914498ffbdd263bb"
+    },
+    "scripts/prepare_phi35_own_original_chat_native_tokens200_existing_pixels_meta_map_v5_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a1838430f5f6c07b2736b6c2d83c4258d2616b39314bb6b223fa8cf69c0a5ce6"
+    },
+    "scripts/prepare_phi35_own_original_chat_native_tokens200_existing_pixels_meta_map_v6_exact_ChatParams_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "7c39ef8f6f3c0694d65a13b6a236098982dd5d86cb6bbbbc1a2ea8d291b0a4e7"
+    },
+    "scripts/prepare_phi35_own_original_native_BF16_4096_true3_v1_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "0def715a8e7f0b5951f89c512687010244007f1d1fe71685e615578c0648a109"
+    },
+    "scripts/prepare_phi35_own_original_native_BF16_4096_true3_v2_metadata_guard_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "1632a111d07fbcb1c77173de57707472561ea97857324002d49e73ebd82f95df"
+    },
+    "scripts/run_phi35_completed_true3_formal_NF2_original_BF16_RoPE_no_NN_replay_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "2d3d7da8cdcf50e33c3536b709c410468bf9120a39c29d92d4ec84397a59831b"
+    },
+    "scripts/run_phi35_completed_true3_formal_NF3_actual_profiler_schema_no_NN_replay_1642_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "e56fcb48c70d74769f225068c4798c99bddf452f6d2ada29abee1f91189470f8"
+    },
+    "scripts/verify_glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "148afbeee4860b7a980608ae53b933b81afea6173cfa40aad635ce80f21cb91b"
+    },
+    "scripts/verify_huihui_glm46flash_own_original_BF16_2048_20261118_native.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "22d2919d3bca51c68a6f3de45141ed55999d781aefccb9b22c18affc79e61a1d"
+    },
+    "scripts/verify_phi35_completed_true3_formal_NF2_original_BF16_RoPE_no_NN_replay_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f21152458aabbc26d97a1ed8dbc482a7774f55835d542767f902544dc11669d0"
+    },
+    "scripts/verify_phi35_completed_true3_formal_NF3_actual_profiler_schema_no_NN_replay_1642_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "499ba3154883f02d72ddf6aa86cec0fe4e625763d3a7f21b8950636e93e72b95"
+    },
+    "scripts/verify_phi35_own_original_native_BF16_4096_v1_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "bd3558b5b9dd0161214760363f13b6f5afe0bd26d83f461cd72ed67fdd1df098"
+    },
+    "scripts/verify_phi35_own_original_native_BF16_4096_v2_exact_original_RoPE_reference_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/verify_phi35_completed_true3_formal_NF2_original_BF16_RoPE_no_NN_replay_0616_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "4e246410fc345b874ac06cb98a0f8473135f133add76d36ed890dfcdf59d7b63"
+    },
+    "scripts/verify_phi35_own_original_native_BF16_4096_v3_actual_profiler_core_schema_1642_20261118.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/verify_phi35_completed_true3_formal_NF3_actual_profiler_schema_no_NN_replay_1642_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "56d7e6f41f4465bb9a30b585a574a76be2520aa556b3be9198dc9a50d25a1a99"
+    },
+    "scripts/windows_controls/heartbeat_Huihui_GLM46_20261118/check_910b_actual_resource_waiter_frozen_selector_2016_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "7ac8cd8868db84bbac13b8720e36febc2558ccaed485de353b7687c26895c8b2"
+    },
+    "scripts/windows_controls/heartbeat_Huihui_GLM46_20261118/read_HuihuiGLM46_own2048_actual_stages_and_resource_watch_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "5c557e4e8a50b1d31e1d6a3874a3b962980503d439b89313786ec06f94c88c05"
+    },
+    "scripts/windows_controls/heartbeat_Huihui_GLM46_20261118/read_HuihuiGLM46_own2048_complete_five_metric_and_current_fullNF_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a5875bd4606021d362a362b8d2dec6db647c8f7dcf792d0614bb68e848f650f6"
+    },
+    "scripts/windows_controls/heartbeat_Huihui_GLM46_20261118/read_HuihuiGLM46_own2048_current_attempt_source_inventory_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a9d744ce22203e6208708b0316300721959d6d64494cab00919ebfd6c617e52d"
+    },
+    "scripts/windows_controls/heartbeat_Huihui_GLM46_20261118/read_own_Huihui_AutoGLM_saved_deployment_metadata_no_NN_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "0a5d7a78f68213fca0d86acf3b9f4331a966a843357100e82acc3043a63b100f"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/capture_GLM46_complete_LZMA_storage_actual_1714_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "bfae236a141f634f0c7524ab71dddddcca0ee1a4ae8a967811e074c2e4691e0b"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/capture_GLM46_completed3_actual_forward_and_live_NF_1712_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "faf0922379193a192d32c8252399dd36e67d3ebb8b22d4706193a82297406305"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/capture_current180_GLM46_fullNF_storage_followup_1719_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "c84dfcba5f4c8a89f8529d34d0b6b7d6a6126a2159a0ed6444a4bbf59b8af243"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_GLM46Flash_own_saved_deployment_source_and_weight_headers_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "e5224b8d89974d9eb9261dbd42c3af7599cd68a653ca2fe86e70e9d7e4b54547"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_GLM46Flash_v2_current_true3_real_lock_proc_trace_1655_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "4502432c764b53c6cb6cead8e9d0e73b4b0c0adbfe9e3375f0a1f2884973abd1"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_GLM46_native_readiness_and_Phi35_NF3_actual_small_1652_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "492c4886823ed784ab819a5d0675390dcb3ba31b9513d1a5207678d03df710de"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_actual_kernel_type_join_contract_1642_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "f9321ae83125d9574b2a1b20c46b44ada9716de5d1e633e9644e6420f6c3b5eb"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_actual_worker_io_current_numeric_archive_and_continuation_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "59a150db6b09fec09a9a41ca0583572c59b31f843a74824a8031edf801d55c11"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_formal_NF2_and_GLM46_original_API_sources_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "0e73dc915c5349e37ebc18078e3a9de7362d31ab47b7a2d74e4c4966a80758a0"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_formal_NF2_capacity_and_GLM46_current_compact_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8685c57966dd1483d98807af8f09b5218e83be75b5a57933ef82910fa4446d27"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_formal_NF3_capacity_GLM46_actual_1642_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "687fd30cacd06644b494229e8e03bb896ad4c88eb23014ea99ca23df5766f4e1"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_own_frontend_receipts_and_frozen_job_schema_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "28dfa5dfab37bc0f271104d7588b9b36f25def9a827effca3f2b08c097d68ab6"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_true3_actual_profiler_layout_and_kernel_schema_1640_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "966ac061eee93c3fef888bd018bba64e8d143bc2df329075672bb7bc8eabc606"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_Phi35_true3_v2_actual_proc_lock_current_attempt_v2_unparsed_stdout_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "49543ccd3d7c468d89408dbd10a3d9d61359fce2c353bce11a2a2d866d1239fb"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_current180_Phi35_GLM46_handoff_inventory_proc_io_1658_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "55808a8df02fc60382b0fa3413326814fdba91f52ceb55da77605b2a373f4394"
+    },
+    "scripts/windows_controls/heartbeat_Phi35_GLM46_20261118/read_unadapted_own_config_KV_metadata_priority_0616_20261118_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8a956367c7082c4258128fea4bc1f20a4768607ec908466e5ddcb1e4db1ec752"
+    },
+    "tests/test_phi35_observation_only_full_values_0616_20261118.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "98e7b18bf9d692509bbac38f706ec93beb8c97c1eb8be96d8f266b66422034f1"
+    },
+    "universal_eval/algorithm/glm46flash_own_original_MC_1645_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "cd01b79e3d57306a50c1fff53bda8eaccf8179f94e5621b205c2fb24923b4f7f"
+    },
+    "universal_eval/algorithm/huihui_glm46flash_own_original_BF16_2048_20261118_MC.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "affe4d7fe0e6a535732f688b5ea5cae77bb269fbdec5fdc44c8b7afab3fa90ea"
+    },
+    "universal_eval/algorithm/phi35_own_original_MC_0616_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "646cd2090e087bffe96cb6aa3ad365b51b1111b5ffb074c88ed0aa59d19f3e53"
+    },
+    "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "dbe84b19140aa88ee6cc799944fb6ec0a8419611f8a0f2e7b2348367b91582e0"
+    },
+    "universal_eval/model/adapters/glm46flash_own_original_frontend_1645_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py; Actual local Python dependency of universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "ad9a4cbd1fef332b818db69f5376e72b61ea94e1777a00400e802694dbc995ca"
+    },
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_20261118_frontend.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_huihui_glm46flash_own_original_BF16_2048_20261118_native.py; Actual local Python dependency of universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_20261118_native.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "1412b03792f443fbf330f1e8a5c5cddeea2c3074980888a4480d2d9cc17c097a"
+    },
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_20261118_native.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "461a43f5303e705b9f3f30c5cb351a9d50f328d4b2e1f82d50fdc143a9ec4973"
+    },
+    "universal_eval/model/adapters/phi35_own_original_native_adapter_v1_0616_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "5932b0060fe07267fb96bdeaa5e2658e901bf0b20add68e9cc7ed644ffa8fbd9"
+    },
+    "universal_eval/model/phi35_own_native_value_0616_20261118/__init__.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "universal_eval/model/phi35_own_native_value_0616_20261118/worker.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of tests/test_phi35_observation_only_full_values_0616_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "8e1289124200e427230b58a6d1a143239615f77f5363793f0f1b839c69c81278"
+    },
+    "universal_eval/model/reference_sources/phi35_owned_checkpoint_layout_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/prepare_phi35_own_original_chat_native_tokens200_existing_pixels_meta_map_v5_20261118.py; Actual local Python dependency of scripts/prepare_phi35_own_original_chat_native_tokens200_existing_pixels_meta_map_v6_exact_ChatParams_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "136cbebec817f161c17256803965cc06d1d3354a784f1f3d8ad32db13ab02a11"
+    },
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnostic_OvisU1_complete_old3_standard_LZMA_capacity_no_NN_20261118.py; Actual local Python dependency of scripts/diagnostic_glm46flash_completed_true3_complete_LZMA_storage_capacity_only_1714_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
+      "initial_SHA256": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485"
     }
   }
 }

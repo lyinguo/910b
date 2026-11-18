@@ -1,0 +1,60 @@
+{
+  "name": "zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-native-v2-actual-D965-1653-20261118",
+  "description": "User workbook D is the A100 score reference, not an online AA replay gate. Own GLM-4.6V-Flash704 BF16 tensors/40text GQA2x128/vision24/151552 head; own HF greedy4096 outer10 serial1, original enable_thinking=True and exact saved custom answer instruction, own generation EOS151329/151336/151338/151348. Original installed HF SDPA/model math/native40-layer dynamic cache and all full raw values retained. Historical A100 engine/tensor bytes were not captured. No generic mock initializer, package install, borrowed checkpoint/input source/output, changed precision/budget/thinking/stop/scoring.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "zai-org/GLM-4.6V-Flash",
+    "adapter": "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py:Glm46FlashOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.6V-Flash",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/glm46flash_own_original_BF16_thinking4096_native_v2_actual_D965_1653_20261118.json",
+      "protocol_sha256": "79832f48fff71ace7c5a3ecc585ed69ecb0ea784f43a1e865b83535a6b85a10d",
+      "protocol": {
+        "model_id": "zai-org/GLM-4.6V-Flash"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "glm46flash_original_thinking_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/glm46flash_own_original_MC_1645_20261118.py:OwnGlm46FlashGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true,
+      "answer_instruction": "\n\nThink step by step about the image and the question before deciding. Then give the final answer by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>."
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/glm46flash_own_original_MC_1645_20261118.py:OwnGlm46FlashAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.965,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "microsoft--Phi-3.5-vision-instruct-own-original-BF16-native-4096-v2-metadata-guard-0616-20261118-smoke",
+  "description": "Saved own R vLLM/Greedy4096/outer10/TP1/.9 and own original assets; current native original LongRoPE default context4096, actual stop [2,32000], own CLIP hidden_states[-2]/23 layers and full Phi3_32 physical KV. Original historical A100 engine/tensor bytes not captured. Workbook D is the user-confirmed comparison reference. Observation-only wrappers and lossless exact-value sharing do not alter model math, native scheduling, original grouping, input values or budget.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "microsoft/Phi-3.5-vision-instruct",
+    "adapter": "universal_eval/model/adapters/phi35_own_original_native_adapter_v1_0616_20261118.py:OwnPhi35Native",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Phi3VForCausalLM/microsoft/Phi-3.5-vision-instruct",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/phi35_own_original_native_BF16_4096_v2_metadata_guard_0616_20261118.json",
+      "protocol_sha256": "753aacd87cc67c1cdbadd05d6e974c4d57930930ab141678143e57f5989b5166",
+      "protocol": {
+        "model_id": "microsoft/Phi-3.5-vision-instruct"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "phi35_original_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/phi35_own_original_MC_0616_20261118.py:OwnPhi35OriginalGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/phi35_own_original_MC_0616_20261118.py:OwnPhi35Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.86,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}
