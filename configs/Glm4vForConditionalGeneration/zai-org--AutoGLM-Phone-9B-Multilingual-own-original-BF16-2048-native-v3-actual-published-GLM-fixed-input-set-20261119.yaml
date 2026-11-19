@@ -1,0 +1,60 @@
+{
+  "name": "zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-native-v3-actual-published-GLM-fixed-input-set-20261119",
+  "description": "User workbook D is the A100 score reference, not an online AA replay gate. Own AutoGLM-Phone-9B-Multilingual704 BF16 tensors/40text GQA2x128/vision24/151552 head; own HF greedy2048 outer10 serial1, original generic-adapter default enable_thinking=False, ignored by its own unchanged chat template (no injected /nothink or empty think) and exact original GreedyInference answer instruction, own generation EOS151329/151336/151338/151348. Original installed HF SDPA/model math/native40-layer dynamic cache and all full raw values retained. Own original AFS and R task files and all200 actual image bytes/prompt/ref order are independently identical; original filter_empty=True removes zero of all4329, runtime filter_empty=False keeps the same fixed0:199 and satisfies the frozen runner. No pixel/token control or model NN replay. Historical A100 engine/tensor bytes were not captured. No generic mock initializer, package install, borrowed checkpoint/input source/output, changed precision/budget/thinking/stop/scoring.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "zai-org/AutoGLM-Phone-9B-Multilingual",
+    "adapter": "universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_native.py:AutoGLMPhone9BOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/AutoGLM-Phone-9B-Multilingual",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/autoglm_phone9b_own_original_BF16_2048_20261119_native_v3_actual_published_GLM_fixed_input_set.json",
+      "protocol_sha256": "75e172f49afc258a423cb0ee94c920da158fdd7ccdcabe8d6b2dced9003c28ac",
+      "protocol": {
+        "model_id": "zai-org/AutoGLM-Phone-9B-Multilingual"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "autoglm_phone9b_original_existing_thinkingFalse_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/autoglm_phone9b_own_original_BF16_2048_20261119_MC.py:OwnAutoGLMPhone9BGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true,
+      "answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>."
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/autoglm_phone9b_own_original_BF16_2048_20261119_MC.py:OwnAutoGLMPhone9BAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.82,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

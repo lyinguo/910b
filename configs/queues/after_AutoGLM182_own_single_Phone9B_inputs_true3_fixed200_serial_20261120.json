@@ -1,0 +1,18 @@
+{
+  "max_concurrent_models": 1,
+  "own_input200_and_own_source_all_required": true,
+  "frozen_runner_SHA256": "58de6b4fd664b5483a9ca08115f1ca1ab4fb1478e1ffb6387539296e80babf90",
+  "own_next_readiness_preparer": "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v1_20261120.py",
+  "own_next_source_SHA256": {
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_native.py": "d9be687fb620708342b3c5bb372673d5cc6d796d8c965aea8a427bc9d4c91616",
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_frontend.py": "6f88843a71ac253beefb637bd8dfd6db81779f8ca1c4390331adfcd061e84bc3",
+    "universal_eval/algorithm/autoglm_phone9b_single_own_original_BF16_2048_20261120_MC.py": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d",
+    "scripts/verify_autoglm_phone9b_single_own_original_BF16_2048_native_v1_20261120.py": "3a08758fe52fbb86415daebbee4afe667ba3cbaf3224d1828e6fb95e7fb580ce",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_frontend200_20261120.py": "2798e16b4ea73dadee5302abe8ff6757441021f7246bce163ce370ab87d83694",
+    "scripts/prepare_autoglm_phone9b_single_own_AFS_R_identical_fixed200_no_filter_input_alias_20261120.py": "a74f0ce0439b8152d696f5dc45eab223f59b155fd995de38d8ac38a77dc9e959",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v1_20261120.py": "d18fd3b9da36ccb63e0d31a67e939c1f4caed046070ef4e01fdaedaebcf7b860",
+    "scripts/continue_AutoGLMPhone9B_single_own_inputs_true3_capacity_fresh3_fixed200_after182_serial_20261120.py": "ff35c90c0799ca37b213c69bcf4994599986b766a937f04b70cd53a58153df86"
+  },
+  "max_new_tokens": 2048,
+  "all_original_reports_sources_configs_logs_and_needed_examples_retained": true
+}

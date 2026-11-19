@@ -10138,6 +10138,1614 @@
       "role": "runtime_code",
       "reason": "Actual local Python dependency of scripts/diagnostic_OvisU1_complete_old3_standard_LZMA_capacity_no_NN_20261118.py; Actual local Python dependency of scripts/diagnostic_glm46flash_completed_true3_complete_LZMA_storage_capacity_only_1714_20261118.py; Explicit SHA-pinned primary inventory pending_after_daily_20261118_verified180_Huihui_completeNF0_capacity_actual_official_closure_all_primary_v29.json",
       "initial_SHA256": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485"
+    },
+    "configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v3-20261119.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "47d9275fd191baff34880575dcc964db5581d72fbfa1de0e7e050ac15e5d5cf5"
+    },
+    "configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v4-approval-schema-20261119-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b7b1e797da08e2fce305762ce22791523ca917aad0a226a1c16936573e6615c5"
+    },
+    "configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v4-approval-schema-20261119.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8db246cb71951f81f0062088f8ef104052edcccb940b09e6758a8a7a86e41be6"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-LZMA-approved-first200-serial-v3-actual-published-GLM-fixed-input-set-20261119-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "926f12e5d63639ab77ba4364d78c3588d3b1482499c46c0e89c65d3ddddf635b"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-LZMA-approved-first200-serial-v3-actual-published-GLM-fixed-input-set-20261119.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a66b09aac6416d7bc5835361029c7f7539dc9cd77be6e6f67f8c2307989aef6d"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-native-v3-actual-published-GLM-fixed-input-set-20261119-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2dfba32b7d13f397cb74aa40eaa1b4e01b540154ba31e16ae1e8b2e46a9fb0c5"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-native-v3-actual-published-GLM-fixed-input-set-20261119.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "c20dcdeca72925a2dc4bf523a036b40a9b00c9477ee35db9b8b8a5ff9babfce7"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-native-v1-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "aa680bc00a1d16f44465d9559f0e599d0e370a02065736e35ee07f4fdf721477"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-native-v1-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e93915642a4826c764190e9deb134762f54e46f72f41cc127759b50de683e420"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-LZMA-component-capacity-serial-approved-first200-v2-20261119-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ce01e43a3972385a34b14bd95604d95f487e39d93e9e3419646b879b5d72f327"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-LZMA-component-capacity-serial-approved-first200-v2-20261119.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "7079d17872588e2c4d4e0e71fa2918fc415957ea82fec0b98ea1977f24f619d1"
+    },
+    "configs/protocols/autoglm_phone9b_own_original_BF16_2048_20261119_native_v3_actual_published_GLM_fixed_input_set.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_autoglm_phone9b_own_original_BF16_2048_true3_v3_actual_published_GLM_fixed_input_set_20261119.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v3_exact_stage_dates_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-native-v3-actual-published-GLM-fixed-input-set-20261119.yaml, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v2_exact_owned_report_paths_20261120.py",
+      "initial_SHA256": "75e172f49afc258a423cb0ee94c920da158fdd7ccdcabe8d6b2dced9003c28ac"
+    },
+    "configs/protocols/autoglm_phone9b_own_original_BF16_2048_LZMA_approved_first200_serial_v3_actual_published_GLM_fixed_input_set_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v3_exact_stage_dates_20261120.py, scripts/watch_GLM46_exact_qualified181_dual_recovery_then_own_AutoGLM_serial_v3_20261119.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-LZMA-approved-first200-serial-v3-actual-published-GLM-fixed-input-set-20261119.yaml, configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-Multilingual-own-original-BF16-2048-LZMA-approved-first200-serial-v3-actual-published-GLM-fixed-input-set-20261119-smoke.yaml",
+      "initial_SHA256": "2aa486116bff814e0f5ca56ee486faefd23e51b51fd2c14e3d9f72e8191c4512"
+    },
+    "configs/protocols/autoglm_phone9b_single_own_original_BF16_2048_20261120_native_v3_actual_published_GLM_fixed_input_set.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v1_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-native-v1-20261120.yaml, scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v2_exact_frontend_path_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-native-v1-20261120-smoke.yaml",
+      "initial_SHA256": "8be26b84c937ca6c816617f04592a6f6e5fbea95e9847fe976a2f0ab2c4c0b4e"
+    },
+    "configs/protocols/glm46flash_own_original_BF16_thinking4096_LZMA_component_capacity_serial_first200_v2_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-LZMA-component-capacity-serial-approved-first200-v2-20261119-smoke.yaml, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash-own-original-BF16-thinking4096-LZMA-component-capacity-serial-approved-first200-v2-20261119.yaml, scripts/continue_GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.py",
+      "initial_SHA256": "d08325634efdc895a3be5bb9d4b783129a6dc2653e032c41c6c9f1c5d9b4ed38"
+    },
+    "configs/protocols/huihui_glm46flash_own_original_BF16_2048_lossless_LZMA_serial_first200_v3_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_Huihui_verified4972_lossless_storage_serial_v4_approval_schema_20261119.py, scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v3_20261119.py, scripts/code_publication_windows/build_close_verified4972_complete_sources_current_20261119.py, scripts/code_publication_windows/build_Huihui_verified4972_lossless_storage_serial_resume_v3_20261119.py, configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v3-20261119.yaml",
+      "initial_SHA256": "d4efc77e1b0491c340c6f94be1ea140abf29fbbf2e9d01f6909d43474b96eae5"
+    },
+    "configs/protocols/huihui_glm46flash_own_original_BF16_2048_lossless_LZMA_serial_first200_v4_approval_schema_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_Huihui_verified4972_lossless_storage_serial_v4_approval_schema_20261119.py, configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v4-approval-schema-20261119-smoke.yaml, scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v4_approval_schema_20261119.py, configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated-own-original-BF16-2048-lossless-LZMA-serial-approved-first200-v4-approval-schema-20261119.yaml",
+      "initial_SHA256": "2056ba1df693073deef05a4340b11c82b01f6799af1ec25eebc956bb7e9d0a7c"
+    },
+    "configs/queues/GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_close_Huihui_fullNF_gap105_GLM_serial_actual_all_sources_v41_20261119.py, scripts/code_publication_windows/build_official910b_Huihui_fullNF_gap105_GLM_serial_actual_20261119.py, scripts/code_publication_windows/build_launch_GLM46_after_verified_Huihui_gap_cleanup_serial_v2_20261119.py, scripts/continue_GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.py",
+      "initial_SHA256": "f82c9a0ed8241567385be2163a41e2e6fd40578eb257c2db6a92ca426453dc7d"
+    },
+    "configs/queues/Huihui_real_dual181_then_own_GLM46_complete_component_capacity_serial_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/read_GLM46_serial_next_own_protocol_source_contract_no_NN_20261119_remote.py, scripts/code_publication_windows/build_official910b_Huihui_serial200_dual181_next_GLM_actual_queue_20261119.py, scripts/continue_after_Huihui_real_dual181_then_GLM46_component_capacity_serial_v1_20261119.py, scripts/code_publication_windows/build_close_Huihui_serial200_dual181_next_GLM_all_sources_v40_20261119.py, scripts/code_publication_windows/build_stage_and_launch_Huihui_dual181_then_GLM46_serial_queue_20261119.py",
+      "initial_SHA256": "c48582a6105340d33bf878c579c8e1dd876bc214f9e40125631f6c0da38858d4"
+    },
+    "configs/queues/after_AutoGLM182_own_single_Phone9B_exact_frontend_path_true3_fixed200_serial_v2_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_AutoGLMPhone9B_single_completed_inputs_exact_frontend_path_recovery_true3_first200_serial_v2_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9BSingle_exact_frontend_path_preNN_recovery_v2_20261120.py",
+      "initial_SHA256": "c19ef2fa77e7f6daf583d2bfc55c48a506f629ed0d18afbf677d998116ebe230"
+    },
+    "configs/queues/after_AutoGLM182_own_single_Phone9B_inputs_true3_fixed200_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v3_exact_stage_dates_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9BSingle_exact_frontend_path_preNN_recovery_v2_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v2_exact_owned_report_paths_20261120.py, scripts/continue_AutoGLMPhone9B_single_own_inputs_true3_capacity_fresh3_fixed200_after182_serial_20261120.py",
+      "initial_SHA256": "fd65ffc7dbaa7c7b079892ba1502cbaea5ed40d680b33e8ffa442cf47d1a1059"
+    },
+    "configs/queues/after_GLM46_AutoGLM_v1_preNN_config_refusal_own_fixed_input_set_serial_v2_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_official910b_AutoGLM_fixed_input_set_v2_recovery_late_handoff_20261119.py, scripts/code_publication_windows/prepare_AutoGLM_after_exact_GLM_publication_recovery_serial_v3_20261119.py, scripts/code_publication_windows/prepare_AutoGLM_own_fixed200_preNN_config_recovery_serial_v2_sources_20261119.py, scripts/watch_GLM46_then_AutoGLM_preNN_fixed_input_set_recovery_serial_v2_20261119.py",
+      "initial_SHA256": "c0f23ebb772ee901d5753f942bc47b17e64c7ed33a1ba04c868fd6ff8d5ba6d8"
+    },
+    "configs/queues/after_GLM46_actual200_qualified_dual_commit_or_preserved_gap_AutoGLMPhone_serial_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/watch_GLM46_actual_completed200_then_qualified_dual_commit_or_preserved_gap_start_AutoGLMPhone_serial_20261119.py, scripts/code_publication_windows/build_official910b_GLM200_current_qualified181_AutoGLM_serial_queue_handoff_20261119.py, scripts/code_publication_windows/stage_GLM46_qualified181_publisher_and_AutoGLM_serial_queue_sources_20261119.py",
+      "initial_SHA256": "bf2ec0088966469496005a79805c1a4694880f899a0ac007b05f047984ee8d6e"
+    },
+    "configs/queues/after_GLM46_exact_qualified181_dual_recovery_own_AutoGLM_fixed_input_set_serial_v3_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v3_exact_stage_dates_20261120.py, scripts/watch_GLM46_exact_qualified181_dual_recovery_then_own_AutoGLM_serial_v3_20261119.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py, scripts/code_publication_windows/prepare_AutoGLM_after_exact_GLM_publication_recovery_serial_v3_20261119.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v2_exact_owned_report_paths_20261120.py",
+      "initial_SHA256": "3bcee4f423d6737c9093b60f22a95256df28aa97a08cc81798442731bb069938"
+    },
+    "configs/queues/serial_efficiency_user_priority_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/read_user_serial_efficiency_actual_controller_state_proc_locks_1206_20261119_remote.py, scripts/code_publication_windows/build_official910b_user_serial_efficiency_priority_1203_20261119.py, scripts/code_publication_windows/build_huihui_completed3_serial_efficiency_resumer_1155_20261119.py, scripts/code_publication_windows/build_deploy_huihui_serial_efficiency_policy_resumer_1158_20261119.py, scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v3_20261119.py",
+      "initial_SHA256": "68fe0e21793c88e840d8f43d63e3e935f7ca90f002fff4fbd423b436bb900c9e"
+    },
+    "configs/retention/Huihui_verified200_correct_nonexamples_all_wrong_controls_preserved_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_close_Huihui_fullNF_gap105_GLM_serial_actual_all_sources_v41_20261119.py, scripts/maintenance/retain_Huihui_numerically_verified200_correct_nonexamples_all_wrong_controls_preserved_20261119.py",
+      "initial_SHA256": "d142a5ec1ab7528567c1924ad9544aaec485af32965053fde7fbfba8421a7c72"
+    },
+    "configs/retention/auxiliary_cache_pause_user_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/remove_inactive_auxiliary_HTTP_cache_exact_manifest_20261119.py, scripts/code_publication_windows/build_close_user_optional_cache_pause_sources_current_1420_20261119.py, scripts/code_publication_windows/build_deploy_review_optional_cache_pause_cleanup_1410_20261119.py, scripts/code_publication_windows/build_official910b_optional_auxiliary_cache_pause_1415_20261119.py",
+      "initial_SHA256": "aa869926b0f113ae517eda4ef191ab48b73e92abbaec8208c3c500660b24bbae"
+    },
+    "configs/retention/verified180_accepted_nonexample_user_serial_continue_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_verified180_owner_reference_v2_accepted_cleanup_plan_20261119.py, scripts/maintenance/retain_verified180_current_accepted_nonexample_user_serial_20261119.py, scripts/code_publication_windows/build_verified180_user_accepted_nonexample_cleanup_plan_20261119.py, scripts/code_publication_windows/build_close_verified4972_complete_sources_current_20261119.py",
+      "initial_SHA256": "21329281c20584c224fada15d73883bc1305f382a572272cc0858287fe2b416f"
+    },
+    "configs/retention/verified180_accepted_nonexample_user_serial_continue_owner_reference_v2_20261119.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_verified180_owner_reference_v2_accepted_cleanup_plan_20261119.py, scripts/continue_after_Huihui_real_dual181_then_GLM46_component_capacity_serial_v1_20261119.py, scripts/code_publication_windows/build_Huihui_reviewed_measurement_retention_plan_20261119.py, scripts/maintenance/retain_verified180_current_accepted_nonexample_owner_reference_v2_user_serial_20261119.py, scripts/code_publication_windows/run_Huihui_reviewed_measurement_retention_plan_20261119_remote.py",
+      "initial_SHA256": "d21129a48577e690c6d049473aa2d1baaeed798623d2930c6e01091db6a2a4d2"
+    },
+    "scripts/code_publication_windows/apply_AutoGLMPhone9B_verified182_exact_server_bytes_local_CAS_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "be5b76e211389069c6306c102d09958abf20f661df5aebde6e5c322f1c00193a"
+    },
+    "scripts/code_publication_windows/apply_Huihui_exact_reviewed_correct_nonexample_retention_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "541abeec74076066df85fc3f9e181b9b5e65991a3190933d1361cc92212dd87d"
+    },
+    "scripts/code_publication_windows/apply_Huihui_verified181_exact_server_bytes_local_CAS_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "415346689fb7170991f813fbf8b24ecc1982e2cf49212879694c499ebb1e7174"
+    },
+    "scripts/code_publication_windows/apply_ZaiGLM46_verified181_exact_server_bytes_local_CAS_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4bf5041f0155f97fe0bc2ab28ee2cc4983162a58c50ebc2de1f9df40d170ec84"
+    },
+    "scripts/code_publication_windows/apply_final_gap_bytecode_tmp_wheel_exact_reviewed_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a956fc1606b185ad94380fc5d14f9b92de47851ea8610a2962c2ecc9ca258b4e"
+    },
+    "scripts/code_publication_windows/apply_reviewed_optional_HTTP_cache_pause_exact_manifest_1412_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "cc32580ddecd1f04b22a789f7d070a8053aa9484975b33e8d3e812faa5b2e097"
+    },
+    "scripts/code_publication_windows/apply_reviewed_verified180_owner_reference_v2_exact4972_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "06dda0cb369e8bb283092cbb2765e024a835344d3392892fa7baf79f5fc11089"
+    },
+    "scripts/code_publication_windows/autoglm_phone_workbook_cell_verified182_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "285b5b20df97d51eca5da926efd23c3bdb417c63a86cfe3a5449eeb1a3780f37"
+      ],
+      "initial_SHA256": "285b5b20df97d51eca5da926efd23c3bdb417c63a86cfe3a5449eeb1a3780f37"
+    },
+    "scripts/code_publication_windows/build_AutoGLMPhone9B_verified182_exact_local_receipt_upload_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "47a5c1da90cc65eb5fdc8a34c2530d9755c9f86da2959757c1bc00e9b109d81d"
+    },
+    "scripts/code_publication_windows/build_GLM46_complete_component_capacity_v2_actual_decode_operands_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "47961198b726e7241cd71a42e3faeb34e54133cee9a236a7574ecc0ae215aebe"
+    },
+    "scripts/code_publication_windows/build_GLM46_component_capacity_v3_actual_one_based_capture_ordinals_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e27ea9c8931c95e2a44b0107214e77a63b6c94918d064c2ebfac220e1f04d797"
+    },
+    "scripts/code_publication_windows/build_Huihui_complete_standard_lossless_storage_capacity_after_cleanup_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a3d58112c72e92eba2c945c4d460cbc975158c5ef33917713081a0a0b68c7a6d"
+    },
+    "scripts/code_publication_windows/build_Huihui_exact_reviewed_correct_nonexample_retention_apply_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8ac22abcd4b5ed904355c83cd280462d98c27d9b9109f2a845d1f04bd1d82487"
+    },
+    "scripts/code_publication_windows/build_Huihui_reviewed_measurement_retention_plan_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d4de545b85fcaaa48c115db188d2d4697180aaff92684df72e66d3fae8c3cfce"
+    },
+    "scripts/code_publication_windows/build_Huihui_verified181_exact_local_receipt_upload_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "363cf5e20ec7352679df1dc8adc60ccf6e7a578356f8f26d469a4d0085a901a8"
+    },
+    "scripts/code_publication_windows/build_Huihui_verified4972_lossless_storage_serial_resume_v3_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "bc37e3e5c440a088733f667851bd76d39aedad9192c0af8c07d68d44688fcaf4"
+    },
+    "scripts/code_publication_windows/build_Huihui_verified4972_lossless_storage_serial_v4_approval_schema_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "c6489c9293fef88967d188b774c4b000f21e2539f601fcb8dbe44ddd96eabadb"
+    },
+    "scripts/code_publication_windows/build_ZaiGLM46_verified181_exact_local_receipt_upload_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4ff58d37cb72388a347605ace8104412a9f88a1b97a0d2f053046f88099c4d97"
+    },
+    "scripts/code_publication_windows/build_archive_verified180_Moondream_actual_NPU_loading_KV_candidate_1138_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "aac58cf8796a0d3bd36c5c79c011a1dea3610d4077c74571c40c287c8ac60e74"
+    },
+    "scripts/code_publication_windows/build_archive_verified180_Moondream_actual_NPU_loading_KV_candidate_v2_relative_static_1142_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3c22f71b852ccb565f310066c1c03e6f3ff401c2b12fe1a1f0447b43c739affe"
+    },
+    "scripts/code_publication_windows/build_archive_verified180_Moondream_actual_NPU_loading_KV_candidate_v3_bounded_originals_1145_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8e05f685eedbdac55cfa636637a8366a0d70cee383309a5513401de2ee29decc"
+    },
+    "scripts/code_publication_windows/build_archive_verified180_Moondream_frontend_operator_current_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f526af2e24f275eb6bc289a7f5381cbb7d749265a8199931e3f0550bee738930"
+    },
+    "scripts/code_publication_windows/build_close_GLM181_dual_AutoGLM_actual_true3_first200_serial_v46_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "6586b7e3096e35a1e1f516417c414b7834f543a274f074859a6b0f6c17dc7064"
+    },
+    "scripts/code_publication_windows/build_close_GLM200_live_AutoGLM_own_fixed_input_set_v2_sources_v45_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "39789f8e05e277b91718564fd562b5bf728c55144cce5eedbaade1831bfcce24"
+    },
+    "scripts/code_publication_windows/build_close_GLM200_live_actual_IO_exact_future_publication_closure_v44_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b055f775c9d81f9c6e38dba0c4e7a7b6c0e9ceb5806c4c15ee258f8b488a0b76"
+    },
+    "scripts/code_publication_windows/build_close_GLM200_qualified181_AutoGLM_serial_all_sources_v43_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fcbe1c116e6c1954e43b8c6ab26acd6aeec1f41dd00c9b924a82b9551bcaf6b4"
+    },
+    "scripts/code_publication_windows/build_close_GLM46_fresh3_NF0_formal200_actual_serial_complete_all_sources_v42_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "66d9bae14f94753ae86e396adc3604886ace75770f5580baa381a9f5bb48c455"
+    },
+    "scripts/code_publication_windows/build_close_Huihui_fullNF_gap105_GLM_serial_actual_all_sources_v41_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ac511f89cc865732308d117c14a442c745de14adccfeaf1e848d43e8c5a5edbc"
+    },
+    "scripts/code_publication_windows/build_close_Huihui_serial200_dual181_next_GLM_all_sources_v40_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "132254ee2f0abfa7981f678ca0982b3ab3fd7a4142e0335afcea73b763e67cdb"
+    },
+    "scripts/code_publication_windows/build_close_alignment_handoff_retention_transition_current_owned_v6_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "6a6c871e99991b87711945757d292707fea574b051b82a39467496b4bfa9dfda"
+    },
+    "scripts/code_publication_windows/build_close_official910b_Moondream_frontend_operator_only_current_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9fa7c7344f50faea3a55ebf62714f40e8b1592718ff672edae5a4f279185b83e"
+    },
+    "scripts/code_publication_windows/build_close_official910b_Moondream_loading_KV_current_1152_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "70139705b4b35a000736d64902fbd786593abe9e27ed5d0af9e6f20c4bd9655e"
+    },
+    "scripts/code_publication_windows/build_close_user_optional_cache_pause_sources_current_1420_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8d03b09883636e348d1d45f113eb6da0ac0e3246be25ef737c2efd36d3fb78c9"
+    },
+    "scripts/code_publication_windows/build_close_user_serial_efficiency_decision_sources_current_1210_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "616f6e7c7f19ce11107cd332e4aea4b01a4142104c90024a8243f9752c2edf1d"
+    },
+    "scripts/code_publication_windows/build_close_verified182_AutoSingle_current_sources_v47_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "42048402e941e6f84aa49cc105ffeca8c3b0488ee301df8667bcd73e8fabc2b3"
+    },
+    "scripts/code_publication_windows/build_close_verified4972_complete_sources_current_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9b8272fb653c4ffe670496ff8466f2a468c60cc0f906519fbb2116dfef77344f"
+    },
+    "scripts/code_publication_windows/build_close_verified4972_fresh3_accepted_formal200_real_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0d4bc467e54d01f33e7fb04f64cd0efd5649051bd8e989c18d3a4b1ca4494236"
+    },
+    "scripts/code_publication_windows/build_daily19_current_handoff_preserved_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "44f57adb634a1deddebabffa4fa7406d7348786a3957a0e0f5be167c6339df7f"
+    },
+    "scripts/code_publication_windows/build_daily19_verified_push_receipt_and_R_policy_CAS_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e39f3c49579e9eea96656399ae5202431ee343b0148149048d63abf257efc263"
+    },
+    "scripts/code_publication_windows/build_deploy_GLM46_complete_bitplane_storage_diagnostic_next_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b12cb9f1ba18cb83eebccad0a52090275dddbce229e761b5d807d87d58fb2709"
+    },
+    "scripts/code_publication_windows/build_deploy_GLM46_complete_component_capacity_review_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "6614f481c976273ff9eec45a59f5930c3c13d2e56bef882054a9ba38acd1d91b"
+    },
+    "scripts/code_publication_windows/build_deploy_Huihui_full_measurement_audit_selective_retention_no_model_change_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d1c6190c2358b6a6e8b3cfee8ab9718d5a217530707b90180d45dc9153325730"
+    },
+    "scripts/code_publication_windows/build_deploy_huihui_serial_efficiency_policy_resumer_1158_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a46f93e9adfe1d15ee847d639fb9bdd9687a1f6c57618c8f85e98a2f95e58eae"
+    },
+    "scripts/code_publication_windows/build_deploy_review_optional_cache_pause_cleanup_1410_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0b8d4f2b7856ea073ed53e223597e60741ec4bfacb6a6dfe46253084e868e3f0"
+    },
+    "scripts/code_publication_windows/build_huihui_completed3_serial_efficiency_resumer_1155_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1227ad2dfea5092a321121c5a1a97bbb87e6f910182fae0109820fb6601865d7"
+    },
+    "scripts/code_publication_windows/build_launch_AutoGLMPhone_verified182_actual_reviewed_single_lock_dual_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "db26c056b1cdfa9d4014db480dd36eb5e5c705c15dee42e27991a814cfd98dbe"
+    },
+    "scripts/code_publication_windows/build_launch_GLM46_after_verified_Huihui_gap_cleanup_serial_v2_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "44edc19fe742d72d9546618745763a015d22564a368ec1caa88210f4f84c6a12"
+    },
+    "scripts/code_publication_windows/build_launch_Huihui_verified181_actual_reviewed_publication_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0aead7969a18056a1aa478b9cbe0c02c139a71177e48da8b77a9593a8e04eff6"
+    },
+    "scripts/code_publication_windows/build_launch_ZaiGLM46_verified181_actual_reviewed_publication_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0f1b6b9e96d70e7c2285271c7f10ee74ed54278147cb07fc819cc7ad66f39dd9"
+    },
+    "scripts/code_publication_windows/build_moondream3_original_HF_load_precision_v2_json_sets_1116_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fb030f3ed4d5c0630939cd6ebb7397c7147b20e784f17d8e7a007a9f8a25d140"
+    },
+    "scripts/code_publication_windows/build_moondream3_own_actual_NPU_loading_runtime_contract_1120_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "7529f4b8918d7b12131fc5fd1cd811b13df44b3932c7220d3a3f137a033e991d"
+    },
+    "scripts/code_publication_windows/build_official910b_AutoGLM_fixed_input_set_v2_recovery_late_handoff_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b6070995b0cdef3f52a0f165059a94fe80997adbf58bd3155681860794652484"
+    },
+    "scripts/code_publication_windows/build_official910b_GLM181_dual_AutoGLM_serial_v3_full_handoff_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1625605f32ef39060204b3a5dc9929173deaccc376f91f61c8965b621bf2a760"
+    },
+    "scripts/code_publication_windows/build_official910b_GLM200_current_qualified181_AutoGLM_serial_queue_handoff_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1ba90b9d9e6fccecef9d7f147d0ccad4cc43d73644bde758b002c24c38f01e39"
+    },
+    "scripts/code_publication_windows/build_official910b_Huihui_fullNF_gap105_GLM_serial_actual_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "88cad7b411a28ac6bf050699775b2451c0a949350ac9540c819c0ee4dd910ca7"
+    },
+    "scripts/code_publication_windows/build_official910b_Huihui_serial200_dual181_next_GLM_actual_queue_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0f8f19f240426c4385210ba5b9fdc3b7c5ef4daeec6d1bcda9fceb4e782f39b8"
+    },
+    "scripts/code_publication_windows/build_official910b_Moondream_actual_loading_KV_short_reference_1148_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8b1e2eb77e08d6afae6e19cbe32ce61ba5848d5cf5d108237ef5e7f89925b294"
+    },
+    "scripts/code_publication_windows/build_official910b_daily19_readback_and_completed_capacity_closure_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "61cfaf6d93d70b9d4a37e84df43b74060253194651bc02b851257dd2f20c6325"
+    },
+    "scripts/code_publication_windows/build_official910b_optional_auxiliary_cache_pause_1415_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "c24a7c53dabc6fd93c76888e492e464bdfbf3aaa3bb10b9a0a66d838b0369bfc"
+    },
+    "scripts/code_publication_windows/build_official910b_user_serial_efficiency_priority_1203_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "bb137052548c70283597362baa3465e782ebcf5e30fd728e9979b6c28d2d48b3"
+    },
+    "scripts/code_publication_windows/build_official910b_verified4972_cleanup_lossless_serial_v4_current_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d44f736612ded58b74c10af725b91e9dc60a94e98974e12757f50895167dda09"
+    },
+    "scripts/code_publication_windows/build_stage_and_launch_Huihui_dual181_then_GLM46_serial_queue_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "33cf3ca4e0ed3b463f1552fc5cf6ebca03a1bf5b4fd103d03bf82e6bd355c983"
+    },
+    "scripts/code_publication_windows/build_verified180_owner_reference_v2_accepted_cleanup_plan_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "59a43c0ae5d7809827a90b01f0ee10e74f60305ef31b6d12c545f5a064b11fd0"
+    },
+    "scripts/code_publication_windows/build_verified180_user_accepted_nonexample_cleanup_plan_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8be1f60d6316776dcd1423c842b323ca0852bb6b509d2a163051565f5fd0d9e4"
+    },
+    "scripts/code_publication_windows/check_Huihui_measurement_audit_scope_tests_and_real_completion_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "af9e73cbd9ef147ec7d9c3936e8918ac19565d2fc2df50c8b96b643bdacff7a8"
+    },
+    "scripts/code_publication_windows/collect_daily20_current_qualified181_primary_sources_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "c886463c735c539f949f19ee59ba9b67c4263815110a980f7f90458f75f3346b"
+    },
+    "scripts/code_publication_windows/correct_AutoGLM_late_text_one_FD_clock_label_preserve_original_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "896a9b45d7f920cb449c0032348c6b8be583abc72ead95d7295bcfd4a15efbd8"
+    },
+    "scripts/code_publication_windows/discover_verified180_current_accepted_nonexample_user_serial_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ef6006f28f602e53468ea296bb90044a3ba3b4d56932884ed2c3b04ac5fbdd07"
+    },
+    "scripts/code_publication_windows/find_existing_uv_cache_management_binary_no_install_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "64cccafcc6fcb853af816885a0fa0e7037cbe192c301e70912052163a2f41286"
+    },
+    "scripts/code_publication_windows/huihui_glm46_workbook_cell_verified181_20261119.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "76d04492a8bcec3262ef4a7af1d288a878b11d63db82c108d2f12d2ac03e5ca8"
+      ],
+      "initial_SHA256": "76d04492a8bcec3262ef4a7af1d288a878b11d63db82c108d2f12d2ac03e5ca8"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone182_postcommit_exact_legacy_label_binding_audit_recovery_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "159ce7a663fd4346f20b5da9cdbaaf8b09c3f4286cd6d756228010553f210bce"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone9BSingle_exact_frontend_path_preNN_recovery_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ae16b26fa08610831076effc18d59b47bca680f1421666fdf9eb7ece974be39e"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone9B_own_native_fullNF_serial_readiness_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e78c8d8863aa8a6960f8db8c4fb48360979084f9efd8b56aa91085247121d39e"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8511f6aaaa43563b88863529a409f28501da47c1e670c3581dfd5a293c0df6db"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v2_exact_owned_report_paths_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4d095851403da0cb030e9577f3afbb1428d12fe3eadd5ca97f96b3b1f5796eae"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_v3_exact_stage_dates_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "75c95157c0f97ebf3aa6ea83e6d3757e198bd78abdd297ad0916cc78a1a921e0"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone_own_original_BF16_2048_frontend_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "7fa15e27a1a73a6c12367e2ff15b819690d2cfc1e06d948c349fb3b9336b0eb5"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone_verified182_actual_local_plan_and_artifact_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "00a828c266fc07bb6fb0219d36fcc6e6ef2c2d74b9280b271e0a29fcf8b18e45"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLMPhone_verified182_exact_completed200_dual_publication_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ef4be89a2d622654b22f73bcfe9dbceac6172e2f4e00ec585a0c397b9865ba8a"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLM_after_exact_GLM_publication_recovery_serial_v3_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3366391c7c8dff482fda4ac800c8eb90d50df2233207daa16f33906995c04e14"
+    },
+    "scripts/code_publication_windows/prepare_AutoGLM_own_fixed200_preNN_config_recovery_serial_v2_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "abd35a7187ff569e01c7cbc89d2c78d09c995cfd2adb88e740be2bba6662343e"
+    },
+    "scripts/code_publication_windows/prepare_GLM181_exact_handoff_counts_transition_and_AutoGLM_reader_v11_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "daf9861bcc850c15bab12f5ff1799a201580d441a2654846643c289816ccad3d"
+    },
+    "scripts/code_publication_windows/prepare_Huihui_verified181_completed200_actual_score_local_plan_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e72ead172e4c7d4ebf68c3a1244fcfb3bde5c6f44d6aded4563e2456e5a9f8ff"
+    },
+    "scripts/code_publication_windows/prepare_Huihui_verified181_exact_original_writer_serial_publication_source_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f1fb3bf6e7dc2b52427129a2ffc7175d4df1591fb37412424aa214fc502b5bfa"
+    },
+    "scripts/code_publication_windows/prepare_Huihui_verified181_local_baseline_preview_no_predicted_score_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "250212753fbb33134d40d0ca7b75afa7bb884fce4325811b13d93af1f320472d"
+    },
+    "scripts/code_publication_windows/prepare_Huihui_verified181_serial_publisher_v2_next182_metadata_checks_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ad9dc52aa3489c4becf15939526f6bd0b20e30472bcad08807940db907aab369"
+    },
+    "scripts/code_publication_windows/prepare_ZaiGLM46_exact_original_verifier_binding_publication_recovery_v2_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a2e020a01e6cfb5cb003f0712b02154a7163269c00bdefa2874df45b3d231a4e"
+    },
+    "scripts/code_publication_windows/prepare_ZaiGLM46_verified181_completed200_actual_score_local_plan_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "03cb0340c114cd14b0b406b842e5b6d460e5c18890f508d7df62eda1f88cee70"
+    },
+    "scripts/code_publication_windows/prepare_ZaiGLM46_verified181_guarded_dual_publication_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "40204bc3c544e0f03087c7ec2fb7abe799b14c23f762b7d4d0e290b227779352"
+    },
+    "scripts/code_publication_windows/prepare_ZaiGLM46_verified181_local_baseline_preview_no_predicted_score_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9ede3f054cdb0506896feaf33853a958eff8980791f4d468c45db18cf2a8380d"
+    },
+    "scripts/code_publication_windows/prepare_archive_builder_v2_relative_static_paths_1142_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "232221ba3bb9cbd3f7285b91e3c3d11d85241a61bb56f6aef9b8daf608f48cdb"
+    },
+    "scripts/code_publication_windows/prepare_archive_builder_v3_bounded_original_packets_1145_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4f397bed56c4a21d19e8dc5cdca9a7eabcd71d351d9b167c58175037b6b38fc7"
+    },
+    "scripts/code_publication_windows/prepare_daily20_reviewed_source_snapshot_and_full_diff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "7a3f471daa26f980273b4433e505864549d64a5ac76ccbfaf1a21572dd090df1"
+    },
+    "scripts/code_publication_windows/probe_GLM46_serial_actual200_and_dual_commit_gate_for_local_artifact_review_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "27597b6aa667932f7ff157e7903902c70927e33bae7352e2c9d0518697cb1246"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_after182_actual_preparation_and_true3_or200_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3ad4bee6b8d22278c1b7a6cc06638416d89e0b12b41d34ffb42ca2da2bc6a8e9"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_bound_runtime_sources_verified182_baseline_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "767f750e4e4eab59ca6b11f413d8351a3a03b24a1fbde3caf6d5b7a4f78af9c6"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_current_v1_v2_real_source_binding_stage_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "185a4f5676ea507c1d925c9f14d731dce644574906cef7d20423b411abec77ac"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_own_inventory_root_SF_headers_v3_original_saved_path_preserved_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3b00fd7d612a44c44ac1b7a58180bd3a4de73cf2688e25ccf0eb9e65ccbeadd4"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_own_original_chat_template_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "51b008618b974ccd91f16b8bb82c76e6b4a9e34f934e76291aaa6b6046b77ba4"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_own_saved_path_and_inventory_roots_after_preNN_refusal_v2_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "96e7b85bd9ba8c2179205f4e31e979bd6793a0599bb7bd22fb49b77d11c99a45"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_single_language_own_original_config_SF_headers_for_immediate_next_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "59c7b8dcabcb0672d5b21e38085751ccac9015e936a30b6f125c107d0c73ecbc"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_verified182_server_book_for_local_CAS_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "de0b36b236c18a20046a9c912fb35da4a5e8b5724f0ddeba4ca146d50a5d6e1e"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9B_verified182_server_book_for_local_CAS_v2_actual181_legacy_label_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "617949e18c9ff841eb41221fbc9df18f8c9e073e263716921c1ccca1ab506633"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone_own_original_config_source_and_SF_headers_only_for_serial_next_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "c5d555f100d469578ad4d025edab53d8f38bd854b55f9dbaa9910f1454b41c29"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone_own_processor_dataset_and_three_D_input_contract_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f635af917a885edec4d3b65015e933bdb7e702c4c77d4776bc0eecb5a4eb68b0"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone_verified182_publication_actual_progress_full_logs_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8544e088b76057d894b3007a959bcab636607c4169d4a6108734cb99b96af9b8"
+    },
+    "scripts/code_publication_windows/read_AutoGLM_serial_v1_v2_actual_readonly_waiters_no_job_duplicate_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "37c26c61463a1d38294830289b9ca65433fefb47e52c59ef0e1a63d11b8a6e0c"
+    },
+    "scripts/code_publication_windows/read_AutoGLM_serial_v3_actual_all_child_FDs_job_trace_sources_and_locks_v2_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0813f61b57ece56b6ce61bd7cb4dbea402bde0c7c969221169449f3ff0fd74f5"
+    },
+    "scripts/code_publication_windows/read_AutoGLM_serial_v3_actual_preparation_job_trace_source_and_locks_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "126b6665ad0e590fca7db38d0f4f9eeb6b59727d8208fb8c26440d3789d15383"
+    },
+    "scripts/code_publication_windows/read_AutoGLM_serial_v3_all_bound_runtime_source_bytes_and_181_baseline_no_old_CPU200_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "656b7f27dd7c3a98427ed50d1f905193207d79955aee345f1074d9746ce01363"
+    },
+    "scripts/code_publication_windows/read_GLM46_actual_model_IO_FDs_CPU_and_card4_stage_without_signal_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "695b55c7b519953dbe0a205d063084c86883750ff3f575941b348e9587be8dda"
+    },
+    "scripts/code_publication_windows/read_GLM46_after_Huihui_verified105_serial_v2_real_process_attempt_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0572bc4df552afa8825c0edea500803052f68e2ff268487b85c040174fac2924"
+    },
+    "scripts/code_publication_windows/read_GLM46_formal200_actual_independent_verifier_FDs_CPU_and_report_pending_acceptance_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "12cde0a983af9c0d663fc6e83ba32a046932a5be616012d10dcbb6583e9ce55e"
+    },
+    "scripts/code_publication_windows/read_GLM46_original_complete_capacity_component_metadata_only_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "63c7330ced6ef80f144f4d007fb662b52a6cfe044bba6b3eda090ae677452d98"
+    },
+    "scripts/code_publication_windows/read_GLM46_prepublication_registry_scope_and_current_canonical_readonly_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2fec61b68aa96e59b1de2f5e33699d198eff9bc04d5611ba8ce64ecde04ab75b"
+    },
+    "scripts/code_publication_windows/read_GLM46_serial_next_own_protocol_source_contract_no_NN_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5bcab8ac56127a6f6739e2a282dc28853435d87c01a3ac0dbaf3fc23f8baa23d"
+    },
+    "scripts/code_publication_windows/read_GLM46_serial_v2_full_NF_complete_logs_and_actual_report_trace_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9cbe8b5f4f3c01e4044eb026adfd3b9f02cbecae78fc58063b10d5a01aa9e900"
+    },
+    "scripts/code_publication_windows/read_GLM46_serial_v2_loading_actual_FD_io_card_no_signal_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8f496bb3fe1931f01b396ad24a3e1145f851a263821a086bd80ca877dc3eccb7"
+    },
+    "scripts/code_publication_windows/read_GLM46_to_AutoGLM_serial_queue_actual_state_PID_lock_source_no_replay_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "15d85a5afd5b3d71872ecc0cea7e4c93bb1e4ceb6fcf436d9fb755f028445c00"
+    },
+    "scripts/code_publication_windows/read_GLM46_unique_D_row_and_Ovis_existing_accepted3_storage_metadata_no_new_NN_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "99a56597af6a6b9f33223a86787ae449f23a872f1df89b607c3b958a44a68876"
+    },
+    "scripts/code_publication_windows/read_Huihui_completed200_audit_actual_metadata_schema_no_mutation_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0301bbcf9d78c96454589217d2c8cab2698408b0b17270ec240a97b0fc1346af"
+    },
+    "scripts/code_publication_windows/read_Huihui_completed200_exact_publication_inputs_no_live_assumptions_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3860b7e63147886ea20386be4ced1c7e2f53278bca379a04740de8da3a320cc3"
+    },
+    "scripts/code_publication_windows/read_Huihui_fresh3_schema_and_current200_retention_candidates_no_delete_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2fadf64b7a8b11451dfe6e87a78b4def6ecf6085de2a13a97dc007a046f09a4d"
+    },
+    "scripts/code_publication_windows/read_Huihui_full200_metric_schema_and_original_saved_frontend_source_no_NN_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ab51aba2cd70c4a5df161f04a52c72f3d344978cd1d5b0d3647f321815c699e7"
+    },
+    "scripts/code_publication_windows/read_Huihui_full200_preserved_invalid_raw_answers_diagnostic_no_scoring_change_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "842fb40accbb46fc79c38d0df9768ec070074ab847f93a05faac0c26bcd229c7"
+    },
+    "scripts/code_publication_windows/read_Huihui_full200_real_five_and_active_independent_NF_progress_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8e84e53761c4856c46276986ddee657055f1e0c367a02bc3c36111c79897e49c"
+    },
+    "scripts/code_publication_windows/read_Huihui_lossless_serial_v4_current_v5_partial_JSON_safe_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "08834e77b840773e806b71f5c26e8ab0ee4d4d491ab01bc9c078227367eece9c"
+    },
+    "scripts/code_publication_windows/read_Huihui_publication_role_and_original_cell_schema_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8f5cba52516d29196a95d4860eeadff6b2a357ff168025a316c81533274e3d4b"
+    },
+    "scripts/code_publication_windows/read_Huihui_serial200_and_next_GLM_storage_review_current_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1f1868c6ad40059681eb11c1685d9b770d517af37b5f48bb999fbc90fa2c72f7"
+    },
+    "scripts/code_publication_windows/read_Huihui_serial_followup_true_process_and_next_gate_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "099305dc957d861a2c362cd5717a445d3001dde97487ec6bf4050f558232f239"
+    },
+    "scripts/code_publication_windows/read_Huihui_v3_runner_early_exit_complete_logs_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5f7ac3842ab38a8478f347e63097a6450d532184cdd597126d7fbbe7a7867df0"
+    },
+    "scripts/code_publication_windows/read_Huihui_verified181_server_book_for_local_CAS_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ca80f3164bf351f94e291a543443ba16c468ddade414043ce53348088946d589"
+    },
+    "scripts/code_publication_windows/read_Huihui_verified4972_lossless_serial_v3_actual_job_proc_samples_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f91f4441ef9f0eb37ffa4e248d5942b57286153669bc5dd86b2b08d8f126b9f6"
+    },
+    "scripts/code_publication_windows/read_Huihui_verified4972_lossless_serial_v4_actual_job_proc_samples_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "40597623d0b4a76bde7480e0467c4ded5a13f197070b696b00643beffec18669"
+    },
+    "scripts/code_publication_windows/read_MedraN_completed_failure_and_remaining_original_candidate_metadata_0610_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "df90602800ca6a53536ad55947fc6f462d58e52d285bb4e3a1197c26712e436b"
+    },
+    "scripts/code_publication_windows/read_Moondream3_complete_preflights_operator_controls_and_primary_inventory_0610_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "418f3a09a4cf6b3c2289f8394a694d0eaaef436a07d0fb926d0759f4bf136b43"
+    },
+    "scripts/code_publication_windows/read_Moondream3_own_actual_loading_runtime_KV_candidate_inventory_1135_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b2b3ad6e5f3f1b11b1f54ba65bf77b8ce0eb986db7e43d710c69fb3981c6eab5"
+    },
+    "scripts/code_publication_windows/read_Pali10_completed_true3_serial_next_full_source_capacity_metadata_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5e0a0a1ba52099cd7dd7301af9a8d129492856719164763ce8f4ef742638d042"
+    },
+    "scripts/code_publication_windows/read_Pali10_completed_true3_serial_next_v2_actual_lineage_metadata_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "abadbf6a56a0f5b5ab2dacbdb4330a2520f1371257a56d31e5861019dfc4d9ef"
+    },
+    "scripts/code_publication_windows/read_ZaiGLM46_completed200_exact_publication_inputs_no_live_assumptions_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "26e00a2426caf5cfd9edc6826805b6e295bfbe040e2f7b04b935cd76b70b600b"
+    },
+    "scripts/code_publication_windows/read_ZaiGLM46_verified181_publication_actual_progress_complete_logs_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1ed1bfbcb7a561970be4fd6724cef4278b49d087d7d61403d497d76a4888d8df"
+    },
+    "scripts/code_publication_windows/read_ZaiGLM46_verified181_publication_recovery_v2_actual_progress_complete_logs_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f7c8396871c591c49df5e14837553cbf6164ca46155c63b264091b7e4252fe62"
+    },
+    "scripts/code_publication_windows/read_ZaiGLM46_verified181_server_book_for_local_CAS_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "cc28a7459550241e3e63fc25c957c289a5abd4ce724d2e71e2756d2bbfea4d8a"
+    },
+    "scripts/code_publication_windows/read_ZaiGLM46_verified181_server_book_for_local_CAS_v2_actual_verifier_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9971e1116b1ed597d163b198a9212f64cc20faff97cbc0abbbb26afa94e285e7"
+    },
+    "scripts/code_publication_windows/read_actual_memory_disk_cache_attribution_1325_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1da10d71cf52b5f9cf16e55730c5f5c2f0c49a7da8bcb145f9cb3ca183ef8f83"
+    },
+    "scripts/code_publication_windows/read_all_project_diagnostics_size_partition_1405_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1e4e93b1b7cb2f1887d8489d7e845cf33e10949a1f625c849b6bc3deae2158da"
+    },
+    "scripts/code_publication_windows/read_bound_uv_bootstrap_supported_cache_prune_help_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8e330f2a97dcb26f51c2f28e5f1c467da8e9508eee1e1ed9c9215b36d306ce9e"
+    },
+    "scripts/code_publication_windows/read_current_Moondream3_CPU_load_precision_v2_1116_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8dba798b0a1027c5759a667118e79a820d0d32b14b8074991fadb46eaa51c7d3"
+    },
+    "scripts/code_publication_windows/read_current_Moondream3_NPU_load_runtime_1120_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "99aea01bc6f6b9c8b92a7d68463fdd480b8fb1d2588c537d76dcd52ee2d9fffa"
+    },
+    "scripts/code_publication_windows/read_diagnostic_storage_categories_and_owned_caches_1355_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "78a749847574e74a3ab97dd035a32d04c1fcee0d2e0b0da4c4f0003ed0ec0b21"
+    },
+    "scripts/code_publication_windows/read_existing_pending_original_config_architecture_meta_for_serial_next_no_model_load_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d61ba43a6e4f945e85f24b2bbeb24cc04305dccedac68a6e01411f967071289a"
+    },
+    "scripts/code_publication_windows/read_existing_uv_binary_absolute_candidates_only_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "0b8512e8b67c2d625e86fce4ad166c149408df5a6f9425bcd30f2da750f1747f"
+    },
+    "scripts/code_publication_windows/read_installed_uv_cache_prune_supported_help_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "db456c279afcd48a6332d0a5c871df94999420762d3b13a3707f66b609a73d28"
+    },
+    "scripts/code_publication_windows/read_next_compact_own_deployment_source_metadata_0610_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e4957a92dc1f1391bc0249f1395d601b95393a3e02594e50697559d42e2395ef"
+    },
+    "scripts/code_publication_windows/read_own_Isaac_Moondream_source_original_adapter_and_prior_metadata_0610_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a25089bb79b78e403d54b6d75c7739230d6b4493fed5b441efc7e6f69fc8a074"
+    },
+    "scripts/code_publication_windows/read_regenerable_bytecode_metadata_cache_for_final_capacity_gap_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "455c2de905ef2fbd26ed92cfffa1bcee459b3b7f6f270c90061692cffb6efe85"
+    },
+    "scripts/code_publication_windows/read_required180_Day19_full_handoff_and_latest_0610_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "086e6dd71f7d10d7f3ac9bf8293a52a327b5c9eb327d745ac5b0eeb74c37ef85"
+    },
+    "scripts/code_publication_windows/read_required180_Moondream_full_handoff_latest_1106_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3bcef9f2f6a08152822ad41b7a2897c85bc73e51d399aad421d6b6498b73c5b4"
+    },
+    "scripts/code_publication_windows/read_serial_next_own_weight_pending_metadata_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1477b83b722b2ec2e6dbc184e4952906b5c946f53090a9b667b3ba4b44519816"
+    },
+    "scripts/code_publication_windows/read_user_serial_efficiency_actual_controller_state_proc_locks_1206_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3f79cf16425bee9400925b2c053499bbaf37a247ead7c166d116ee6d6e998531"
+    },
+    "scripts/code_publication_windows/read_verified180_foreign_reference_exact_reasons_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "dad2fdfe25d60e08cfa78742d86076b2aa385ff2867865faa2cf149be0c86046"
+    },
+    "scripts/code_publication_windows/read_verified180_previous_completed_accepted200_only_metadata_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "05d52964f1554fd6682d2946d4ba3da45e208f8419fb16668b285cf55a5721a3"
+    },
+    "scripts/code_publication_windows/read_verified180_retention_actual_progress_current_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "6d6117f0fadcc279bcbaafa96e2f44373d7a8bd7844ab642c743f951a6b82ec9"
+    },
+    "scripts/code_publication_windows/read_verified180_unmapped_accepted_trace_formats_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9b566d2d9c95decd381afafe6e96bad8900836c4266446015ea1938ad2d540f1"
+    },
+    "scripts/code_publication_windows/read_verified4972_cleanup_Huihui_lossless_capacity_current_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5b4fe8378333e643963ffe103031768191def8ba114dd5d2ac3e0b346fef2930"
+    },
+    "scripts/code_publication_windows/record_huihui_three_archive_duplicate_member_feasibility_user_serial_1203_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8fa2938dd10eb6897a59456e944796e54c9a829250bf6ecf54129ef819f51387"
+    },
+    "scripts/code_publication_windows/render_AutoGLMPhone9B_verified182_actual_published_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "cca82f2bb2afbbda33d79c60a34505ad2c0bd437b7b8f50be0b58c72318f5ba4"
+      ],
+      "initial_SHA256": "cca82f2bb2afbbda33d79c60a34505ad2c0bd437b7b8f50be0b58c72318f5ba4"
+    },
+    "scripts/code_publication_windows/render_Huihui_verified181_actual_published_20261119.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "a08d48e47d9757f94dd468e72ed5c6bb7986c54af8778220610039a0dd13dc95"
+      ],
+      "initial_SHA256": "a08d48e47d9757f94dd468e72ed5c6bb7986c54af8778220610039a0dd13dc95"
+    },
+    "scripts/code_publication_windows/render_ZaiGLM46_verified181_actual_published_20261119.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "68c12ae2b3e95daacf0a0d5981853bcb3b003679840fe5b2d8efaa72997c3b62"
+      ],
+      "initial_SHA256": "68c12ae2b3e95daacf0a0d5981853bcb3b003679840fe5b2d8efaa72997c3b62"
+    },
+    "scripts/code_publication_windows/run_Huihui_completed200_full_numerical_gap_target_audit_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ba8c8bd5027a7169cb0db1fd9b426a7483a9e7ee0169c5468015a0f5c219fa0e"
+    },
+    "scripts/code_publication_windows/run_Huihui_reviewed_measurement_retention_plan_20261119_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "286757876c904d2644c332e82aff961b8334b1e820ee7184e8b2be04ab81f3a5"
+    },
+    "scripts/code_publication_windows/run_ZaiGLM46_verified181_reviewed_dual_publication_actual_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d431d6c46fbece4c9d656113426fa170558cc6f8ff5ad092d7fbaad98baa984c"
+    },
+    "scripts/code_publication_windows/run_daily20_actual_R_source_tests_no_model_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b4687d66df8fcb29700b5c2e9e09320d78ce147e40ad48adab6eb48ccc2d0dec"
+    },
+    "scripts/code_publication_windows/run_daily20_reviewed_snapshot_tests_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "72a8adfd02cbbcde277598cb400327ec429c84d16e2a3b69c662a719b066b4ff"
+    },
+    "scripts/code_publication_windows/run_daily20_reviewed_snapshot_tests_exact_same_suite_permission_retry_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "58af5bbc4306f30eb5ce7d8d0aa3892c397f39ef5f4638d465dc262a398a8b13"
+    },
+    "scripts/code_publication_windows/save_local_verified180_current_book_and_clean_code_stat_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "52b7f65fa325579cb28a7767e5ce3d8e1b82ee6613f91e32ee7b287253a1653d"
+    },
+    "scripts/code_publication_windows/stage_AutoGLM_own_fixed_input_alias_source_and_execute_no_NN_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "11966826916a9af3ce334e3fc40b811977f8a7a18ad4281373844218cec38c58"
+    },
+    "scripts/code_publication_windows/stage_GLM46_qualified181_publisher_and_AutoGLM_serial_queue_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "df83eb76fd39e65ad6d2169ba137a2abc95fb23a3bc2d8809da95013d22be05a"
+    },
+    "scripts/code_publication_windows/summarize_user_storage_detailed_categories_cache_1400_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "63ea5f482fd970d3c2e3ffff21ad95fa2cba938fad4dd723ce3e11bf10ab3ea0"
+    },
+    "scripts/code_publication_windows/test_AutoGLMPhone9B_own_binding_complete_audit_storage_and_dispatch_sources_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f09554f1a1c5a9d61077aa5fdb00c373d014d5d9ab475e5487f9d1757595fbc2"
+    },
+    "scripts/code_publication_windows/test_AutoGLM_fixed_input_set_actual_frozen_validator_and_v2_scope_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "49ba3120980d21e8adee47732f00ea47a6d1bc1831870088f76430c368eeb410"
+    },
+    "scripts/code_publication_windows/test_GLM46_to_AutoGLM_serial_queue_full200_three_D_gate_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "152de52cb553ce3117c4790a41bb571b667d2a512abbbad982b5b76ca32e336f"
+    },
+    "scripts/code_publication_windows/verify_official910b_AutoGLM_fixed_input_v2_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "547486ce6520a54157a6194293a25985ac752a9b3b33985e4e7fad2a5eb93f7d"
+    },
+    "scripts/code_publication_windows/verify_official910b_GLM200_AutoGLM_serial_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fcf5e4bfb08a5c2e79c618359baed0cd1b1a31b5b4bc5bda1165c0266441263f"
+    },
+    "scripts/code_publication_windows/verify_official910b_Huihui_fullNF_gap105_GLM_serial_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1c9ff5bbde04384cca4125eadc4491091b13f65aa24f72fd146b25b349d7d402"
+    },
+    "scripts/code_publication_windows/verify_official910b_Huihui_serial161_next_queue_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "08654c7812e1708f125c3a95a906d017be420b397691e0dc05f6d02e3d68f331"
+    },
+    "scripts/code_publication_windows/verify_official910b_Moondream1106_exact_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "7077d2d63c8c85fdf0a32700b5ee58e13815227811d1a7927fc0c53162b96929"
+    },
+    "scripts/code_publication_windows/verify_official910b_optional_cache_pause_readback_1417_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "dd0133bcf4058c87fd1236ca3b2991450ea37a6e40d691f65bcb8b435cae0e74"
+    },
+    "scripts/code_publication_windows/verify_official910b_user_serial_efficiency_readback_1206_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9023c75d8d5312bab090f5ce289946c1efbefd5356ef9372fb17d9b9975dc521"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified4972_lossless_serial_v4_readback_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b6babef84a608d1276e2c0c2ac338e2bfce766f601066094a2d36f69f40abc89"
+    },
+    "scripts/code_publication_windows/wait_GLM46_actual200_then_prepare_actual_qualified181_artifact_review_only_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "91a8db557a8e9125482825c17d9e97af0c96c33cf28d963939607dc447cdbfc1"
+    },
+    "scripts/code_publication_windows/zai_glm46_workbook_cell_verified181_20261119.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "reviewed_javascript_source_SHA256": [
+        "7ac5c00c1f57295f5ed3f42c2a89c2a59eae62574f05d7f45b47fd551dee9be5"
+      ],
+      "initial_SHA256": "7ac5c00c1f57295f5ed3f42c2a89c2a59eae62574f05d7f45b47fd551dee9be5"
+    },
+    "scripts/continue_AutoGLMPhone9B_single_completed_inputs_exact_frontend_path_recovery_true3_first200_serial_v2_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a59afe0f3b0735d7e87130a81562a190b9d2edd548ce2c3df829f16ba3623334"
+    },
+    "scripts/continue_AutoGLMPhone9B_single_own_inputs_true3_capacity_fresh3_fixed200_after182_serial_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ff35c90c0799ca37b213c69bcf4994599986b766a937f04b70cd53a58153df86"
+    },
+    "scripts/continue_GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9730ff38fcb03eb891a12a7f31c3675b4dd494ae97810e460209a45046d06c6f"
+    },
+    "scripts/continue_after_AutoGLM182_real_dual_audit_release_original_resources_serial_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "279a8251f114a2e8c80a4765b8557faf50aba5825f8e2aae8058ec8d3252b030"
+    },
+    "scripts/continue_after_Huihui_real_dual181_then_GLM46_component_capacity_serial_v1_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "80f59b33552019bf001acf615dd003e3b47f7429229cbfcfe3f657a740f01c89"
+    },
+    "scripts/continue_huihui_completed3_serial_efficiency_wait_capacity_fresh3_fixed200_v2_1155_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2059c83e466d0feb78af89d7cc7a7ed041c75370a417aefd10a4cb61b8790252"
+    },
+    "scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v3_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "10f2f754baecc764eb7704553ce3eb3960038ef7b77a35cd184116293a664497"
+    },
+    "scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v4_approval_schema_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9b71a0faee99c8a0b96fb4b7ce9a0823dbd6901e5aa5765dbc35bc0f7d7ccefb"
+    },
+    "scripts/diagnostic_glm46_completed3_full_bitplane_exact_sharing_next_serial_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2a9fed7cc9470cf3d4ca99546fe5e36e41355476b276384384c46f291297a6f3"
+    },
+    "scripts/diagnostic_huihui_completed_true3_complete_standard_LZMA_capacity_after_verified_cleanup_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1c1cad32b5f503c7e33f683df8bc7e0a086d61e1147b7a13ac7d595267517c69"
+    },
+    "scripts/diagnostic_moondream3_original_causal_flex_NPU_interface_v2_full_mask_control_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fa1c280fbcd2404ba2a1e88bb48ab9605794210c8c8bca4c731d4505e42f2ce7"
+    },
+    "scripts/diagnostic_moondream3_own_actual_NPU_loading_runtime_buffers_no_forward_1120_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5c1f36b31152acaf9ca10a041232df14a41d9f30b996e69062160caf5a4b7e5c"
+    },
+    "scripts/diagnostic_moondream3_own_flex_decode_operator_original_lock_no_model_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "dc17cb51dc4487a8d854c21ac1e29523b08dedc491f729233766db2d943536e5"
+    },
+    "scripts/diagnostic_moondream3_own_original_HF_actual_loading_precision_no_forward_1106_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "030059c036cf33c44f32bfa1e544dcc58505a7a3e1e5c053190be418d3c644ae"
+    },
+    "scripts/diagnostic_moondream3_own_original_HF_actual_loading_precision_no_forward_v2_json_sets_1116_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fab375c9735f726c3eb5eb372c2439e32cd43a1eb5cdfe23a453d338c89c89ce"
+    },
+    "scripts/finish_AutoGLMPhone182_postcommit_exact_legacy_label_binding_audit_recovery_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d91103fe3e666bf906d7a4c7e3dbafb442d73c87e64dbe46d3ca258b259ab2f6"
+    },
+    "scripts/glm46_complete_shape_component_capacity_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/review_glm46_completed3_LZMA_complete200_component_shapes_no_NN_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f03deaab1d5a53763bcd4337461b776da76a41af8937cc00cda2eafaa2a04269"
+    },
+    "scripts/glm46_complete_shape_component_capacity_v2_actual_operands_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/review_glm46_completed3_LZMA_complete200_component_shapes_v2_actual_operands_no_NN_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b943b917490606a5777c0938cfa8cfdbc6039044d630b66a20911cb4215c13d2"
+    },
+    "scripts/glm46_complete_shape_component_capacity_v3_actual_one_based_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/continue_AutoGLMPhone9B_single_completed_inputs_exact_frontend_path_recovery_true3_first200_serial_v2_20261120.py; Actual local Python dependency of scripts/continue_AutoGLMPhone9B_single_own_inputs_true3_capacity_fresh3_fixed200_after182_serial_20261120.py; Actual local Python dependency of scripts/review_glm46_completed3_LZMA_complete200_component_shapes_v3_actual_one_based_no_NN_20261119.py; Actual local Python dependency of scripts/watch_GLM46_actual_completed200_then_qualified_dual_commit_or_preserved_gap_start_AutoGLMPhone_serial_20261119.py; Actual local Python dependency of scripts/watch_GLM46_exact_qualified181_dual_recovery_then_own_AutoGLM_serial_v3_20261119.py; Actual local Python dependency of scripts/watch_GLM46_then_AutoGLM_preNN_fixed_input_set_recovery_serial_v2_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2a86561bc32852de4dcc04179699dc8609eba4ce3c61217cda92e85ad9909301"
+    },
+    "scripts/maintenance/archive_alignment_reviewed_daily_transition_primary_handoff_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "48c102d439520105e8883738b270b78c95a615bd14dfb2da59580dbcd5e50302"
+    },
+    "scripts/maintenance/audit_Huihui_completed200_baselinegap_all_targets_before_selective_retention_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/code_publication_windows/run_Huihui_completed200_full_numerical_gap_target_audit_20261119_remote.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9b863f9e424dc84e5125f1748c6b0f174ec7f016ed57ce8546a3f186e1e01b6f"
+    },
+    "scripts/maintenance/cleanup_regenerable_bytecode_and_inactive_tmp_installers_exact_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a7132b6ba2022a7e08d83f0a33ba218cbe557ed96645648c977879a022a526f5"
+    },
+    "scripts/maintenance/close_alignment_handoff_exact_AutoGLM182_postcommit_audit_counts_v12_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3dd79ec4a395a10225507d1ec045eab34c201ffafe3468fe2dd7750cff3ffaf1"
+    },
+    "scripts/maintenance/close_alignment_handoff_exact_ZaiGLM46_qualified181_dual_publication_only_v10_actual_verifier_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "bba2820df3f585473c3b12991df609e0c2985cf978fd17692e1fd9d3b13986a4"
+    },
+    "scripts/maintenance/close_alignment_handoff_exact_ZaiGLM46_qualified181_dual_publication_only_v11_actual_counts_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "06cefbbaeb6b0e4adc0dd85b6097a5ad887b6e5915af67834bc339c76375139a"
+    },
+    "scripts/maintenance/close_alignment_handoff_exact_ZaiGLM46_qualified181_dual_publication_only_v9_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "35d5b8ef7c24a9dfb55631318ad62e3abfa7f3002341b36891abae56b6596c55"
+    },
+    "scripts/maintenance/close_alignment_handoff_official_readback_authorized_retention_current_owned_v6_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a724663f553d7432c8da522dfe2ce13817915ccc8a1b917fd44a9afaf1378f62"
+    },
+    "scripts/maintenance/close_alignment_handoff_verified181_publication_and_retention_v7_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "20c21ca00424c56e94ebd63642ffc26b322270f69b389d9fa14f3dfd7b751052"
+    },
+    "scripts/maintenance/close_alignment_handoff_verified_Huihui_measurement_only_retention_v8_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d94f4893662dcb56cf00893c56fb1ad8b35e7a0261f628d172731b535c9ab131"
+    },
+    "scripts/maintenance/prune_supported_offline_unused_package_cache_final_serial_gap_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "26361fef1c9bcb6a1ee0c799ade77caa24166745388bc21d159636f96e10014d"
+    },
+    "scripts/maintenance/remove_inactive_auxiliary_HTTP_cache_exact_manifest_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3e40ea4244d49019e3c4072e6eada23f573ef3c66bb6e15c1d32f05c790b900d"
+    },
+    "scripts/maintenance/retain_Huihui_numerically_verified200_correct_nonexamples_all_wrong_controls_preserved_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5120db9f35af929f22b01610b7d27353322cdac901e9acc479292c006af9387b"
+    },
+    "scripts/maintenance/retain_verified180_current_accepted_nonexample_owner_reference_v2_user_serial_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "315691969c0f7733bbe94d9498345e37cd493f6a87d7bc62a58c6cf39d50c9b5"
+    },
+    "scripts/maintenance/retain_verified180_current_accepted_nonexample_user_serial_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5b9d49a9aae7b3ff0fb69e1d30e4189832d3e06e77b89aac6edcb0c9c29e30d4"
+    },
+    "scripts/maintenance/retain_verified181_Huihui_accepted_nonexamples_serial_next_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/continue_after_Huihui_real_dual181_then_GLM46_component_capacity_serial_v1_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9fc377b7d6f193744cad920829889fe454e3990281cb653804b6161a85343479"
+    },
+    "scripts/prepare_autoglm_phone9b_own_AFS_R_identical_fixed200_no_filter_input_alias_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "dd9d09b4de766d219cdf8bcb592c7888999610e8266beed95d2ab36752451e8c"
+    },
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_20261119_frontend200.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9f0d561e43e673ec075c3454811db8777115d590dcbe4c856b064109691e8224"
+    },
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_20261119_true3.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e67b91da18c30aae5a2df4487055c8a9e2ef233b9ebc4d7c1432d3c039ba9d75"
+    },
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_true3_v2_fixed_input_set_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "39e860c15b1a2b4f48eee4cada8997f579bfec08d7ff7afecca3c9052e3c2bcd"
+    },
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_true3_v3_actual_published_GLM_fixed_input_set_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9eb52c3917498b94cf4bd72b934e910c1a76a3dc2fec6001c70af36c21c08896"
+    },
+    "scripts/prepare_autoglm_phone9b_single_own_AFS_R_identical_fixed200_no_filter_input_alias_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a74f0ce0439b8152d696f5dc45eab223f59b155fd995de38d8ac38a77dc9e959"
+    },
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_frontend200_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2798e16b4ea73dadee5302abe8ff6757441021f7246bce163ce370ab87d83694"
+    },
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d18fd3b9da36ccb63e0d31a67e939c1f4caed046070ef4e01fdaedaebcf7b860"
+    },
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v2_exact_frontend_path_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "2fb55645d7ea366111e10fe43f6ff57f0683eb38c80c252cfb732d499b60e56b"
+    },
+    "scripts/prepare_moondream3_own_original_source_index_meta_preflight_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b649db8bfed0acf85e75f34861099328f9c6a2e6641047742ad1d98b21e0d1d6"
+    },
+    "scripts/prepare_moondream3_own_source_native_BF16_pixels_frontend200_v2_0610_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "208caa92cc750e0fe0ca127e6845da0f1d8f1342207c1fde0bf147880001014f"
+    },
+    "scripts/publish_AutoGLMPhone9B_verified182_original_single_lock_dual_transaction_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "fab4bab195788d36959c6d5ac4ad39f8e170d2456772cd1727690b52928ea6e8"
+    },
+    "scripts/publish_HuihuiGLM46Flash_verified181_single_original_lock_dual_transaction_v1_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "af640433f752965056b26daff1362152fd4aaec8fd0378d34eeff644aad8312e"
+    },
+    "scripts/publish_HuihuiGLM46Flash_verified181_single_original_lock_dual_transaction_v2_next182_metadata_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "be06184a15a41354a18b164d99dad2f76359578a0160ea73f4060cb51d3299c7"
+    },
+    "scripts/publish_ZaiGLM46Flash_verified181_single_original_lock_dual_transaction_v1_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f245f5bd16476b341d9330877aa750cf98fb6a8d0da7f808c35f9163a551b273"
+    },
+    "scripts/publish_ZaiGLM46Flash_verified181_single_original_lock_dual_transaction_v2_actual_verifier_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "dc4160569fe1d8b694da5d0f0d01c112a81579ab6e01ccd0586f0db8e229954a"
+    },
+    "scripts/review_glm46_completed3_LZMA_complete200_component_shapes_no_NN_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "889fad5b4bbadb9aba9ba9aa1d3cd5aebe7daf933b56771157b45d71ea34fa00"
+    },
+    "scripts/review_glm46_completed3_LZMA_complete200_component_shapes_v2_actual_operands_no_NN_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b4fa57c6aaebe0aa79883001c4cf78ab0262d547fc5164aac844f89dd42ad99b"
+    },
+    "scripts/review_glm46_completed3_LZMA_complete200_component_shapes_v3_actual_one_based_no_NN_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "9526c2cf78b26067b0b5230adbbd2c6893e37aa084aa6f429751745473a4efb4"
+    },
+    "scripts/run_AutoGLMPhone9B_verified182_original_single_lock_dual_publication_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3b5605c2f61ca2c568562b6ee71efbb6a9d5e96b9bbd668256ff5cafbc365e1a"
+    },
+    "scripts/run_GLM46_complete_bitplane_storage_diagnostic_actual_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "50035387d5aa77d66353c574221292019ce314785598e2dcf662b82809f6cf46"
+    },
+    "scripts/run_Huihui_verified181_reviewed_dual_publication_actual_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a65bc395e53128330b6496653d331c4cf9fbb5eeb31a15032898e6044abf13a4"
+    },
+    "scripts/run_ZaiGLM46_verified181_reviewed_dual_publication_actual_v2_exact_verifier_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "ab823137d91721b9e52df79268aa5e8856fdfefb58b141dba435aa8bc412811b"
+    },
+    "scripts/serial_efficiency_dispatch_policy_20261119.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/continue_huihui_completed3_serial_efficiency_wait_capacity_fresh3_fixed200_v2_1155_20261119.py; Actual local Python dependency of scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v3_20261119.py; Actual local Python dependency of scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v4_approval_schema_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1c622d2738796abb697b1151b71825a7a9e68dec8d1f37bf846542cff6c8c6aa"
+    },
+    "scripts/tests/test_GLM46_complete_component_capacity_v2_actual_operands_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d904c0a4ed2e30685c4c89976f3cb61a6bd8cc79f8e8778896578d2b4288d72b"
+    },
+    "scripts/tests/test_GLM46_complete_shape_component_capacity_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "8acb4669561675356ac670ee404c3c1cd187703206b40eddbea23a9872a878b5"
+    },
+    "scripts/tests/test_GLM46_component_capacity_v3_actual_one_based_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "28fe73eac9fde7b4610bd7590359d3b8c32ccbef33fac794ebcce1b47bc7db2d"
+    },
+    "scripts/tests/test_Huihui_completed200_baselinegap_selective_retention_wrong_controls_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "41cba9ae3d1c066050e0a78d0ca7e9274513d7962506a403ba591ae66359ee2f"
+    },
+    "scripts/tests/test_complete_bitplane_shared_npz_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e7730fcf72cbe54d69b169b881f8635cff4479306a3f0f50d3a25ef87c232df6"
+    },
+    "scripts/tests/test_moondream3_complete_physical_KV_journal_1128_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f2d2868625ed2de2a14ce51b27899be7b8e7bed5f9daf908fa6483072f0efa02"
+    },
+    "scripts/tests/test_moondream3_complete_physical_KV_journal_v2_exact_seven_arrays_1130_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d989b2876073254d74eac6945a1b4be7f122ef5f3c7eb7958e18f348ffc472bd"
+    },
+    "scripts/tests/test_serial_efficiency_dispatch_policy_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "a82451e72e826081653ee69b5863f76972253e45b1a626fd1580512e01ec5877"
+    },
+    "scripts/verify_autoglm_phone9b_own_original_BF16_2048_20261119_native.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "39b6e4eb186ad9f073a1995a89d26cbd34372a53fba79909f8e7d20b05d65826"
+    },
+    "scripts/verify_autoglm_phone9b_own_original_BF16_2048_native_v2_fixed_input_set_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "05543ba8f1ea79ee3a22b602e8e2b0afc764528eda2783c0568227399b74a93b"
+    },
+    "scripts/verify_autoglm_phone9b_single_own_original_BF16_2048_native_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "3a08758fe52fbb86415daebbee4afe667ba3cbaf3224d1828e6fb95e7fb580ce"
+    },
+    "scripts/watch_GLM46_actual_completed200_then_qualified_dual_commit_or_preserved_gap_start_AutoGLMPhone_serial_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4dbd18711209b97e23fdf6d2c0b3ebe1d8f415bc0c2d4653bfd95e8dd75412af"
+    },
+    "scripts/watch_GLM46_exact_qualified181_dual_recovery_then_own_AutoGLM_serial_v3_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "41e10477f8713fed91669d1f1aa3c90455934020402f4379e9d665134cbd9394"
+    },
+    "scripts/watch_GLM46_then_AutoGLM_preNN_fixed_input_set_recovery_serial_v2_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "306ca92dc7806961f8ec12e7928220b0e393ff2cf7497016360d3686775c6492"
+    },
+    "universal_eval/algorithm/autoglm_phone9b_own_original_BF16_2048_20261119_MC.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d"
+    },
+    "universal_eval/algorithm/autoglm_phone9b_single_own_original_BF16_2048_20261120_MC.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d"
+    },
+    "universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_frontend.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_autoglm_phone9b_own_original_BF16_2048_20261119_native.py; Actual local Python dependency of scripts/verify_autoglm_phone9b_own_original_BF16_2048_native_v2_fixed_input_set_20261119.py; Actual local Python dependency of universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_native.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5dc86abeaaff0d8096c11dccf2cf5ed72b8600e3179882b1f04617294d7bc0f5"
+    },
+    "universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_native.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4dbcafa1355340af81ce8d8f0f9146c589ae7eb7c0cda8f367195536d624d948"
+    },
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_frontend.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_autoglm_phone9b_single_own_original_BF16_2048_native_v1_20261120.py; Actual local Python dependency of universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_native.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "6f88843a71ac253beefb637bd8dfd6db81779f8ca1c4390331adfcd061e84bc3"
+    },
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_native.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "d9be687fb620708342b3c5bb372673d5cc6d796d8c965aea8a427bc9d4c91616"
+    },
+    "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_standard_LZMA_serial_v2_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1d2291dbbd38c2c3c465f5f21d206f807834e6ab8e954449f936bf5fe790800e"
+    },
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_lossless_LZMA_serial_v3_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1d8d860241d9665fc8c595ed16778925cdb8b447e17733e9f45f7f8c286b243f"
+    },
+    "universal_eval/model/adapters/moondream3_own_complete_physical_KV_journal_v1_1128_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/adapters/moondream3_own_original_KV_observation_hooks_v1_1132_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "4f096c171cd0d20c1919151004e717c4a7257db888dc1052e601722c10355d37"
+    },
+    "universal_eval/model/adapters/moondream3_own_original_KV_observation_hooks_v1_1132_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "5c897b4ac9baed6548a1ff4cfd7387afd2d26585db07710e8a8c191061216a79"
+    },
+    "universal_eval/model/adapters/moondream3_own_original_causal_flex_NPU_interface_v1_0610_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f334c28c97fa38643051fe7885b88dc117ea31ec66d181097dc45ba90fc74313"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/__init__.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/config.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/lora.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/text.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/vision.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "56e47be6abd46b77b73efd2b87d622e8cd5c3c4a87cce4d564c15598cf7ed8c2"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "61469eb306adec3a213e47c56051925d3af6f6d866d38a165247f26244d69516"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/image_crops.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/vision.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1f3f469fcbd3291966c6f9fda5c90f8044d39b391261bac14ef6bbcfb76496cb"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/layers.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/text.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/vision.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "56e3d4dbb74414d2894a0724ce3ac316b9cbbd20748738aefe4d2ac093422ab1"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/lora.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/layers.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/text.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "b9bd0121a6e1fc525bf06e43f56ff83ff22c2ff68b44fe55e1e0ec4232032d54"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/moondream.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "33263b4260ca39d0569996b1b83a4a3c92ab08075dee497799a858a07af4fd1e"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/region.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "1940048c322247275fdcf45cf210d43a1dd710f2985eb82c49855dba72321b2f"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/rope.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/text.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "e8327c01c268564e8d262a8d7347a0da4463167754733f7eb0a50ab5eb141b00"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/text.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "22968acd8812bdfa23f480b7476f7acf5758c56d5b5776edd876270f7b577d48"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/utils.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "08d33430923d83ad26dfdbbc58d6df0f363a4c3c05cbfd8018f6e2c98c82ed59"
+    },
+    "universal_eval/model/moondream3_own_original_source_20261119/vision.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/hf_moondream.py; Actual local Python dependency of universal_eval/model/moondream3_own_original_source_20261119/moondream.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "f524cd4227df0394b0b1e73f281c93791267849729fc13a874a9071fff6f1eed"
+    },
+    "universal_eval/utils/complete_bitplane_shared_npz_20261119.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnostic_glm46_completed3_full_bitplane_exact_sharing_next_serial_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
+      "initial_SHA256": "41c596979943c465301dc67501f6f31a13471280755293bc453b6b3fd9be76ff"
     }
   }
 }

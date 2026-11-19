@@ -1,0 +1,6 @@
+import sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+import hashlib,os,json
+H=Path('/root/projects/comperror/workspace/diagnostics/batch_910b/heartbeat_handoffs/A100_verified180_Moondream_actual_CPU_NPU_all662_BF16_runtime_KV_observer_candidate_no_model_NN_20261119_033050_683408')
+p=H/'full_actual_AutoGLM_fixed_input_set_preNN_validation_recovery_v2_no_model_replay_20261119.txt';raw=p.read_bytes();assert hashlib.sha256(raw).hexdigest()=='468efc3b077b7d8252f2e4f090d0a6a5966922272c50c3131e403f02f8ccc646';a='20:42附近原FD'.encode();b='19:42附近原FD'.encode();assert raw.count(a)==1;new=raw.replace(a,b);assert hashlib.sha256(new).hexdigest()=='c92b2d3989a6ba433d7c6dacfbf6d5148bd8d5ae506ac334e92e1b3fd9d5b898';backup=p.with_name(p.stem+'_before_one_clock_label_correction.original');assert not backup.exists();backup.write_bytes(raw);tmp=p.with_name(p.name+'.owned.clock.tmp');assert not tmp.exists();tmp.write_bytes(new);assert p.read_bytes()==raw;os.replace(tmp,p);print(json.dumps(dict(corrected_only_one_narrative_FD_hour=True,original_preserved=str(backup),before_SHA256=hashlib.sha256(raw).hexdigest(),after_SHA256=hashlib.sha256(new).hexdigest(),no_model_source_or_canonical_or_actual_timestamp_record_changed=True)))

@@ -1,0 +1,27 @@
+{
+  "max_concurrent_models": 1,
+  "qualifying_GLM_requires_actual_dual_publication_before_next_NN": true,
+  "completed_true3_or200_replay_forbidden": true,
+  "original_reports_sources_configs_logs_and_required_numeric_examples_preserved": true,
+  "current_GLM_job_SHA256": "18c9d24f9992311ea3261e82cc56c3121db03ccd0655e21aaafc4d2b5ee4f323",
+  "frozen_runner_SHA256": "58de6b4fd664b5483a9ca08115f1ca1ab4fb1478e1ffb6387539296e80babf90",
+  "qualified_GLM_publisher_SHA256": "f245f5bd16476b341d9330877aa750cf98fb6a8d0da7f808c35f9163a551b273",
+  "before_verified180_workbook_SHA256": "689b3e894593becd301590ab1ce501e9a9c5af0dcd14b1001e29756f56b3af34",
+  "own_next_model_id": "zai-org/AutoGLM-Phone-9B-Multilingual",
+  "own_next_readiness_preparer": "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_20261119_true3.py",
+  "own_next_source_SHA256": {
+    "universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_native.py": "4dbcafa1355340af81ce8d8f0f9146c589ae7eb7c0cda8f367195536d624d948",
+    "universal_eval/model/adapters/autoglm_phone9b_own_original_BF16_2048_20261119_frontend.py": "5dc86abeaaff0d8096c11dccf2cf5ed72b8600e3179882b1f04617294d7bc0f5",
+    "universal_eval/algorithm/autoglm_phone9b_own_original_BF16_2048_20261119_MC.py": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d",
+    "scripts/verify_autoglm_phone9b_own_original_BF16_2048_20261119_native.py": "39b6e4eb186ad9f073a1995a89d26cbd34372a53fba79909f8e7d20b05d65826",
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_20261119_true3.py": "e67b91da18c30aae5a2df4487055c8a9e2ef233b9ebc4d7c1432d3c039ba9d75",
+    "scripts/prepare_autoglm_phone9b_own_original_BF16_2048_20261119_frontend200.py": "9f0d561e43e673ec075c3454811db8777115d590dcbe4c856b064109691e8224",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/glm46_complete_shape_component_capacity_v3_actual_one_based_20261119.py": "2a86561bc32852de4dcc04179699dc8609eba4ce3c61217cda92e85ad9909301"
+  },
+  "own_next_input200_SHA256": "21e7a17a36e7ca4a0a5689c5be4e981704a00cb91b463017f759b2f6fc6e1dd4",
+  "queue_waiting_is_not_model_NN_or_fullNF": true,
+  "own_next_first200_requires_genuine_own3_fullNF_complete_ZIP_all200_shapes_capacity_and_internal_measurement_approval": true,
+  "no_weight_download_or_package_install_or_source_math_precision_budget_extraction_change": true,
+  "no_NPU0_access_or_signal_or_live_job_edit": true
+}

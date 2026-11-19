@@ -1,0 +1,109 @@
+{
+  "model_id": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+  "source_tensor_count": 704,
+  "own_weight_files": {
+    "model-00001-of-00005.safetensors": {
+      "bytes": 4930674944,
+      "SHA256": "bc3840a3445fb1470aca8469326b4c25d5ab1b6a252691f0483c9cbe3410ab28"
+    },
+    "model-00002-of-00005.safetensors": {
+      "bytes": 4895276896,
+      "SHA256": "a022f0032b618368fffdf3db7b5688588172115fc8ac808eafa2f6bf9d89753a"
+    },
+    "model-00003-of-00005.safetensors": {
+      "bytes": 4895276960,
+      "SHA256": "b927c21a96874ac686324d94a10794fd6121c248deee5546ededa2a5177ff3e5"
+    },
+    "model-00004-of-00005.safetensors": {
+      "bytes": 4990197120,
+      "SHA256": "f2d90427851c165a716f2e47c330455e52a9e78926975ce713b3efd3b22903f8"
+    },
+    "model-00005-of-00005.safetensors": {
+      "bytes": 874218088,
+      "SHA256": "656c24771ecc9d3ead5a96a08c79b411bd36cf7a04c8a7363e0af89c22e7b7ec"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "1284a58f16ea319b26f8206898e679523417658686b36979a1dabaf6fc184bda",
+    "config.json": "f19a796c7ab1c847f9200e0ca7ef1e8cbb74650e0f86fbe6849b7465be1164b8",
+    "generation_config.json": "c90d76a6058ad1e3a423ee89587b9713c55fd13a81cd1e4156cc4a577b18811c",
+    "model.safetensors.index.json": "9aef2f7858a9b60efae1dbba602656becfc461fc19aabad4ea3b774ba71497e0",
+    "preprocessor_config.json": "02cc50c36240882ae35e8cd4077a25a379664108185d728d261cb785aefeccff",
+    "tokenizer.json": "bda8e2146c3bb7b7e0fc96dcc4f0aeff041c6c27952e3ace0665663ebff346ba",
+    "tokenizer_config.json": "1e51e869ea52154814e7028232c1e8be5cb235e39ec61419c78983b0616064d4",
+    "video_preprocessor_config.json": "00001992801fc96770b436f735a11066dab59173314e258a08504fa03ca23133"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_native_source_readiness_v1_20261118/own704_active_source_manifest.json",
+  "own_source_manifest_SHA256": "170816e124ec6a08d94a687206633de5ad4998519440bc218cd421c771d8c751",
+  "own_unused_MTP_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_native_source_readiness_v1_20261118/own_unused_source_manifest.json",
+  "own_unused_MTP_source_manifest_SHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_native_source_readiness_v1_20261118/own_frontend200_existing_proof_field_binding_no_replay.json",
+  "own_frontend200_SHA256": "27c7f8099cccd48efc6b68654b7999473f5991fd5fa01e5ac1c9555ad916eee1",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151329,
+    151336,
+    151338,
+    151348
+  ],
+  "original_BF16_existing_thinkingFalse2048_outer4_inner1_Accuracy_protocol_preserved": true,
+  "original_answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>.",
+  "original_existing_enable_thinking_false_adapter_SHA256": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+  "workbook_D_reference_authorized": true,
+  "current_A100_D_values": {
+    "server": "0.9450",
+    "local": "0.9450",
+    "preserved_original": "0.945"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "689b3e894593becd301590ab1ce501e9a9c5af0dcd14b1001e29756f56b3af34",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_20261118_native.py": "461a43f5303e705b9f3f30c5cb351a9d50f328d4b2e1f82d50fdc143a9ec4973",
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_20261118_frontend.py": "1412b03792f443fbf330f1e8a5c5cddeea2c3074980888a4480d2d9cc17c097a",
+    "universal_eval/algorithm/huihui_glm46flash_own_original_BF16_2048_20261118_MC.py": "affe4d7fe0e6a535732f688b5ea5cae77bb269fbdec5fdc44c8b7afab3fa90ea",
+    "scripts/verify_huihui_glm46flash_own_original_BF16_2048_20261118_native.py": "22d2919d3bca51c68a6f3de45141ed55999d781aefccb9b22c18affc79e61a1d",
+    "scripts/prepare_huihui_glm46flash_own_original_BF16_2048_20261118_true3.py": "4bc8a0e6442c71b3a8633dfdfac5375a75320cefca4290f22d9f9ea50f299158",
+    "scripts/prepare_huihui_glm46flash_own_original_BF16_2048_20261118_frontend200.py": "8829b60cd5e4dd40c91c68e985d76f24241edb84dddb38e55dea020e956dd79a",
+    "universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "universal_eval/model/adapters/huihui_glm46flash_own_original_BF16_2048_lossless_LZMA_serial_v3_20261119.py": "1d8d860241d9665fc8c595ed16778925cdb8b447e17733e9f45f7f8c286b243f",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/continue_huihui_completed3_verified4972_lossless_storage_serial_fresh3_fixed200_v3_20261119.py": "10f2f754baecc764eb7704553ce3eb3960038ef7b77a35cd184116293a664497",
+    "scripts/serial_efficiency_dispatch_policy_20261119.py": "1c622d2738796abb697b1151b71825a7a9e68dec8d1f37bf846542cff6c8c6aa",
+    "configs/queues/serial_efficiency_user_priority_20261119.json": "68fe0e21793c88e840d8f43d63e3e935f7ca90f002fff4fbd423b436bb900c9e"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_frontend200_meta_v1_20261118/review.json": "4ef897d10b11ef89dc236a6d4eb9e6dc4f6f9ac02b7d7db29bcd0e0689af9ce8",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_frontend200_meta_v1_20261118/own_original_frontend200.jsonl": "2ab6a9d48b1778bd0d6284e73a5e9cc47d559c090eaf95f38bff7b1fd3369297",
+    "/root/projects/comperror/configs/Glm4vForConditionalGeneration/huihui-ai--Huihui-GLM-4.6V-Flash-abliterated.yaml": "b21abd87e78261d7d3621411d7602a54614b34168db395c6e6c020549e69bca7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46_completed_true3_complete_standard_Fortran_LZMA_capacity_after_verified4972_cleanup_20261119/review.json": "8fd4af31e737f9022a1a351ae1446437d80af8602039f7a3a21548ae8a59a013",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46_completed_true3_complete_standard_Fortran_LZMA_capacity_after_verified4972_cleanup_20261119/actual_completion.json": "a078ab54c9281e2fed07223210f6b349520485fa9cc5ce6ed8f526f8847f594b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/authorized_verified180_current_accepted_nonexample_reaudit_user_serial_continue_20261119/actual_completion.json": "3fc6d85e83cdfe8ebb2b9a9f9079c6ea7fc33caeb393d5bd8cf0c2b307615eb3",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46Flash_own_original_BF16_2048_true3_v1_real_FLOCK_20261118/fresh3/verification_stdout.json": "7bbc04ae6b05c7845ca01dc3e682f94da39000230beea45f6fbf5dc6f773cc59",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46_completed_true3_verified4972_cleanup_lossless_LZMA_serial_resumer_v3_20261119/first200_measurement_approval.json": "82bbfd0e4548c4ba366d2b880b5d9a8d020e91ff4be69a79659b29b074c3d956"
+  },
+  "historical_source_boundary": "User workbook D is the A100 score reference, not an online AA replay gate. Own GLM-4.6V-Flash704 BF16 tensors/40text GQA2x128/vision24/151552 head; own HF greedy2048 outer4 serial1, original generic-adapter default enable_thinking=False and exact original GreedyInference answer instruction, own generation EOS151329/151336/151338/151348. Original installed HF SDPA/model math/native40-layer dynamic cache and all full raw values retained. Historical A100 engine/tensor bytes were not captured. No generic mock initializer, package install, borrowed checkpoint/input source/output, changed precision/budget/thinking/stop/scoring.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "lossless_numeric_archive_encoding": {
+    "format": "standard NPY in standard ZIP-LZMA NPZ",
+    "NPY_order": "Fortran for ndim>=2; all C-order logical raw bits preserved",
+    "complete_storage_review": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/HuihuiGLM46_completed_true3_complete_standard_Fortran_LZMA_capacity_after_verified4972_cleanup_20261119/review.json",
+    "complete_storage_review_SHA256": "8fd4af31e737f9022a1a351ae1446437d80af8602039f7a3a21548ae8a59a013",
+    "all_original_names_shapes_dtypes_values_and_NF_checks_preserved": true
+  }
+}

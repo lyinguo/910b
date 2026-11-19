@@ -1,0 +1,13 @@
+{
+  "mode": "serial",
+  "max_active_models": 1,
+  "prefer_smallest_complete_proven_storage_budget": true,
+  "immediate_after_real_NN_NF_FLOCK_release": true,
+  "first_recovery_candidate": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+  "preserve_existing_bound_legacy_resumer_no_signal_or_hot_edit": true,
+  "yield_if_legacy_is_already_dispatching_or_its_full_budget_passes": true,
+  "parallel_requires_separate_verified_throughput_gain_and_total_storage_admission": true,
+  "user_decision": "平行保证不了那就串行，一切以效率为准；别耽误时间。",
+  "user_message_verbatim": "1. 平行保证不了那就串行一切以效率为准！别耽误我时间哇",
+  "preserve_all_existing_math_inputs_precision_budgets_full_evidence_and_publication_gates": true
+}

@@ -1,0 +1,97 @@
+{
+  "model_id": "zai-org/GLM-4.6V-Flash",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.6V-Flash",
+  "source_tensor_count": 704,
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 5320911456,
+      "SHA256": "058745e42d1003c9fb6d1707838902478cd5acb0d7cb277a7e074ceaecf06402"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 5303216664,
+      "SHA256": "56e35e399921aa4d20ee0e20639bbb7e86e7036b11b74b643487d591206f071c"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 5303216664,
+      "SHA256": "7f57230ee36c64f3c5d2986674ddba5db3df26df828db1833f4792d4ef21ce48"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 4658299264,
+      "SHA256": "8c12ad6165dc9a2895a46547d611ed24990eae6fb357dddf066e239582fece2e"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "bf6cfe131f9af1cdbe0e1e4bda8cd56154e63d95d50df697155654bde7b387fd",
+    "config.json": "ef88f66ef623085cd86f5fd14bd6647a0b7175b9a25773049b82611d4ac82181",
+    "configuration.json": "2d4464e2ead06bc9bc718c781309ad1e7baded626d66e8dcdc8b469ba185faf0",
+    "generation_config.json": "e9527bdf03e7d4971f9cacdbcf81a5fe04b10b64fc478bba6bf389cc0e597b72",
+    "model.safetensors.index.json": "a74197619c081601ce39a5d2e31a1a56b7b5a4a62ffbfd5c0dd5fef8615eff8d",
+    "preprocessor_config.json": "02cc50c36240882ae35e8cd4077a25a379664108185d728d261cb785aefeccff",
+    "tokenizer.json": "9340665016419c825c4bdabbcc9acc43b7ca2c68ce142724afa829abb1be5efd",
+    "tokenizer_config.json": "13809913afa65678aff5d54d888720c30cb000d0e9a85799ef22d1ca9dfdf228",
+    "video_preprocessor_config.json": "00001992801fc96770b436f735a11066dab59173314e258a08504fa03ca23133"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_native_source_readiness_v2_actual_D965_1653_20261118/own704_active_source_manifest.json",
+  "own_source_manifest_SHA256": "8b75c2e72f9fb0a54324207003107cd33823785256e9a06430b6984839971a38",
+  "own_unused_MTP_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_native_source_readiness_v2_actual_D965_1653_20261118/own_unused_source_manifest.json",
+  "own_unused_MTP_source_manifest_SHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_native_source_readiness_v2_actual_D965_1653_20261118/own_frontend200_existing_proof_field_binding_no_replay.json",
+  "own_frontend200_SHA256": "98f6c7850bc172ba8a2764cc5ccae12a0c5afd9c84ea2afdf706483aa52ca557",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151329,
+    151336,
+    151338,
+    151348
+  ],
+  "original_BF16_thinking4096_outer10_inner1_Accuracy_protocol_preserved": true,
+  "original_answer_instruction": "\n\nThink step by step about the image and the question before deciding. Then give the final answer by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>.",
+  "workbook_D_reference_authorized": true,
+  "current_A100_D_values": {
+    "server": "0.9650",
+    "local": "0.9650",
+    "preserved_original": "0.965"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "689b3e894593becd301590ab1ce501e9a9c5af0dcd14b1001e29756f56b3af34",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py": "dbe84b19140aa88ee6cc799944fb6ec0a8419611f8a0f2e7b2348367b91582e0",
+    "universal_eval/model/adapters/glm46flash_own_original_frontend_1645_20261118.py": "ad9a4cbd1fef332b818db69f5376e72b61ea94e1777a00400e802694dbc995ca",
+    "universal_eval/algorithm/glm46flash_own_original_MC_1645_20261118.py": "cd01b79e3d57306a50c1fff53bda8eaccf8179f94e5621b205c2fb24923b4f7f",
+    "scripts/verify_glm46flash_own_original_BF16_thinking4096_native_v1_1645_20261118.py": "148afbeee4860b7a980608ae53b933b81afea6173cfa40aad635ce80f21cb91b",
+    "scripts/prepare_glm46flash_own_native_BF16_thinking4096_true3_v2_actual_D965_1653_20261118.py": "ec22bd6ceaadd5489e4afa460cbfbd1e990741968b70d5a05fdbcdd2b1cb239e",
+    "scripts/prepare_glm46flash_own_original_BF16_thinking4096_frontend200_v1_0616_20261118.py": "a3f190f2aa030d111dc44020673c885221f6c5a209a6a7bda92fbf3ddae5b3a1",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "scripts/continue_GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.py": "9730ff38fcb03eb891a12a7f31c3675b4dd494ae97810e460209a45046d06c6f",
+    "configs/queues/GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.json": "f82c9a0ed8241567385be2163a41e2e6fd40578eb257c2db6a92ca426453dc7d",
+    "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_standard_LZMA_serial_v2_20261119.py": "1d2291dbbd38c2c3c465f5f21d206f807834e6ab8e954449f936bf5fe790800e",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/glm46_complete_shape_component_capacity_v3_actual_one_based_20261119.py": "2a86561bc32852de4dcc04179699dc8609eba4ce3c61217cda92e85ad9909301"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_frontend200_meta_v1_0616_20261118/review.json": "3adefacec66a90776f822ed8543be09ea9f898d5153de68e48381d309cab0d44",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_frontend200_meta_v1_0616_20261118/own_original_frontend200.jsonl": "adb06eb931792fbbdbc8c199394c498fb33909a647e070f32ef5c079738368bc",
+    "/root/projects/comperror/configs/Glm4vForConditionalGeneration/zai-org--GLM-4.6V-Flash.yaml": "cf02531bbe5e67789d2e173f375d82400d49083c3c2ddca0d1413071655a37e4",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_own_original_BF16_thinking4096_true3_v2_actual_D965_real_FLOCK_1653_20261118/fresh3/verification_stdout.json": "d089c0ded120ee0df0be6ad28d9a02fe0b61697330d6f3b4a3178bc667916950",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46Flash_completed_true3_existing_full_LZMA_all200_component_shape_capacity_review_v3_actual_one_based_20261119/review.json": "049bb22e11cf1ca715de4ebb4d339811645455a4eb0417cfa30c73b0c6a9f7b7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM46_own_passed3_after_Huihui_full_NF_baselinegap_verified_correct_nonexample_cleanup_serial_v2_20261119/first200_measurement_approval.json": "49c7ccface5fa0ad998eec9d4aade7d3341785adab49ddb40a130c9c38d268d4",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Huihui_completed200_full_numerical_baselinegap_target_audit_and_correct_nonexample_retention_20261119/measurement_target_audit.json": "b831aacc983f0a03c5aaa2cafa20e5853b7ff8ba0b51a6538027177054a85d36",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Huihui_completed200_full_numerical_baselinegap_target_audit_and_correct_nonexample_retention_20261119/retention_actual_completion.json": "25e0f1b5767ec73d748cf3d1fac44556a9b4d3bc34a2a1a307649c69c8f8de91"
+  },
+  "historical_source_boundary": "User workbook D is the A100 score reference, not an online AA replay gate. Own GLM-4.6V-Flash704 BF16 tensors/40text GQA2x128/vision24/151552 head; own HF greedy4096 outer10 serial1, original enable_thinking=True and exact saved custom answer instruction, own generation EOS151329/151336/151338/151348. Original installed HF SDPA/model math/native40-layer dynamic cache and all full raw values retained. Historical A100 engine/tensor bytes were not captured. No generic mock initializer, package install, borrowed checkpoint/input source/output, changed precision/budget/thinking/stop/scoring.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

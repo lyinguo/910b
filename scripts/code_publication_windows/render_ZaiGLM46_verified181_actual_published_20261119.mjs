@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const home=process.argv[2];const plan=JSON.parse(await fs.readFile(path.join(home,'plan.json'),'utf8'));
+const receipt=JSON.parse(await fs.readFile(path.join(home,'local_publication_receipt.json'),'utf8'));
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(plan.target)).digest('hex'),receipt.after_sha256);
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(plan.target));const sheet=book.worksheets.getItem(plan.sheet_name);
+const c=plan.changes[0];const [task,mid,d]=sheet.getRange('B697:D697').values[0];assert.equal(mid,c.model_id);assert.equal(task,c.task);assert.equal(Number(d),Number(c.A100_full_precision_cached_D));assert.equal(sheet.getRange('G697').values[0][0],c.new_value);
+const image=await book.render({sheetName:plan.sheet_name,range:'B695:G699',scale:1.25,format:'png'});
+await fs.writeFile(path.join(home,'published_after_697.png'),new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+console.log(JSON.stringify({actually_published_local_verified181_rendered:true,cell:'G697',score:c.new_value,workbook_not_rewritten:true}));

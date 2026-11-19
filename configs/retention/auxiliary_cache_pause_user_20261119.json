@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "user_instruction": "请问除了代码，和必须保存的文件，哪里的内存占用这么大呢？？为什么会运行运行就这样呢，对不必要的缓存暂时停止哇",
+  "optional_auxiliary_disk_cache_paused": true,
+  "owned_maintenance_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PIP_NO_CACHE_DIR": "1",
+    "UV_NO_CACHE": "1"
+  },
+  "exact_inactive_cache_roots_allowed_for_this_action": [
+    "/root/.cache/pip/http-v2",
+    "/root/.cache/pip/selfcheck"
+  ],
+  "pause_duplicate_loading_compression_storage_experiments_without_new_required_model_progress": true,
+  "preserve_model_KV_attention_cache_and_all_original_math_runtime_semantics": true,
+  "preserve_complete_reports_sources_configs_logs_all_small_failed_unverified_values_and_required_examples": true,
+  "never_drop_host_page_cache_or_modify_other_services": true,
+  "never_delete_model_assets_installed_package_backing_uv_archives_or_other_disks": true,
+  "no_permission_inferred_for_reducing_full_numerical_evidence_or_original_capacity_guards": true
+}

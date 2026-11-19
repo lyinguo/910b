@@ -1,0 +1,21 @@
+{
+  "max_concurrent_models": 1,
+  "next_original_true3_replay_forbidden": true,
+  "parent_not_qualified_no_G_write": true,
+  "parent_measurement_audit_SHA256": "b831aacc983f0a03c5aaa2cafa20e5853b7ff8ba0b51a6538027177054a85d36",
+  "retention_receipt_SHA256": "25e0f1b5767ec73d748cf3d1fac44556a9b4d3bc34a2a1a307649c69c8f8de91",
+  "retention_manifest_SHA256": "f957592949489091fb0173800a8fa4a9525938bfdfc2800119f008fdb7acdddc",
+  "retention_ledger_after_SHA256": "7978cbde39e32b7d28ecb05cf69148e451cbe262493b39d6b07e6fdb785b9b71",
+  "component_capacity_review_SHA256": "049bb22e11cf1ca715de4ebb4d339811645455a4eb0417cfa30c73b0c6a9f7b7",
+  "latest_actual_user_authorization": {
+    "latest_user_message_verbatim": "继续串行跑，Huihui完整验收通过后同步两份表，马上接下一款有权重、未适配或误差超过5%的模型，不等定期检查。完整报告、源码、配置、日志和必要数值例证保留，停摆或报错及时告诉我。",
+    "prior_user_cleanup_message_verbatim": "那就再检查服务器上已验收的中间矩阵和临时文件，完整报告、源码、配置、日志和必要数值例证保留，不再需要的清理掉，腾够空间马上串行继续跑，别一直等着。",
+    "source": "Direct human user in original910b chat",
+    "scope": "Only the new Huihui accepted200 nonexample arrays if the next single-model budget needs it; all complete reports/source/config/logs/small/failed/unverified/necessary numeric examples retained"
+  },
+  "source_SHA256": {
+    "scripts/continue_GLM46_own_passed3_after_Huihui_numerical_gap_verified_cleanup_serial_v2_20261119.py": "9730ff38fcb03eb891a12a7f31c3675b4dd494ae97810e460209a45046d06c6f",
+    "universal_eval/model/adapters/glm46flash_own_original_BF16_thinking4096_standard_LZMA_serial_v2_20261119.py": "1d2291dbbd38c2c3c465f5f21d206f807834e6ab8e954449f936bf5fe790800e",
+    "scripts/glm46_complete_shape_component_capacity_v3_actual_one_based_20261119.py": "2a86561bc32852de4dcc04179699dc8609eba4ce3c61217cda92e85ad9909301"
+  }
+}
