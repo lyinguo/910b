@@ -1,0 +1,21 @@
+{
+  "model_id": "AIDC-AI/Ovis-U1-3B",
+  "max_concurrent_models": 1,
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_genuine200_formal_NF2_original_raw_fallback_metadata_after_Meta_serial_no_NN_replay_20261121",
+  "previous_Meta_acceptance_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MetaMllama_completed_genuine200_formal_NF4_original_empty_invalid_schema_v2_actual_file_SHA_after_Ovis_serial_no_NN_replay_20261121",
+  "original_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_storage_fullNF_passed_exact23_capacity_approved_NEWfresh3_fixed200_serial_v2_real_FLOCK_20261121",
+  "original_job_SHA256": "11f0c684e4dfe6f39bff484c2386dca3e7371f778230faa6ca2a65ca64affc7d",
+  "original_report": "/root/projects/comperror/workspace/reports/AIDC-AI_Ovis-U1-3B/image-text-to-text/20261121_093507",
+  "own_approved_NEWfresh3_proof_SHA256": "a3422cc1cf1b45002e910374e655d832941702741a9cfe7ec9064c6d987f7443",
+  "original_verifier": "scripts/verify_ovisu1_own_original_understanding_bf16_512_20261116.py",
+  "new_verifier": "scripts/verify_ovisu1_completed200_original_raw_prediction_fallback_metadata_v2_20261121.py",
+  "source_sha256": {
+    "scripts/continue_OvisU1_completed200_original_raw_fallback_NF2_after_Meta_fullNF_serial_20261121.py": "279d6fd12de23071516381ce9bbda8a98de0dce33f5d70de20a393ee64acfc63",
+    "scripts/verify_ovisu1_completed200_original_raw_prediction_fallback_metadata_v2_20261121.py": "60c0d21fd51f9ad8e712890330e9b7c887d72e8154ace6a14b11ab5f6fc20052",
+    "scripts/verify_ovisu1_own_original_understanding_bf16_512_20261116.py": "65cfac82a967dcfba5320163d53930c18bf9be772ae1b07f82abc6ebafbee6b0",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097"
+  },
+  "no_model_math_dtype_budget_EOSNone_extract_or_denominator_change": true,
+  "only_original_saved_raw_prediction_fallback_expectation_corrected": true,
+  "actual_NEW_model_forwards": 0
+}

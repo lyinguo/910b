@@ -12783,6 +12783,642 @@
       "role": "runtime_config",
       "reason": "Actual argv[1] consumed by scripts/reserve_GLM41_completed200_reviewed_dual_publication_original_lock_v1_20261120.py; original failed prepublication invocation retained",
       "initial_SHA256": "be221dce7f2c99c1572a60835267207cb2bfee455195979e93a73045d067f284"
+    },
+    "configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "a05651b88c967e4b86e6f48c9b7e5e5817499d9ed218a30ff310296bd74acb04"
+    },
+    "configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v2-actual-reserved-devices-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "b5bbb6e7662369dd996b208cd2793cccc5e7812c936210edc92e79017bfec648"
+    },
+    "configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v2-actual-reserved-devices-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "eee958798d9a06997c5299a500f50ce5aa8fe02bf41dcaf788f83048efa81b1a"
+    },
+    "configs/protocols/llava_mini_own_original_FP16_2048_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v1-20261122.yaml, scripts/prepare_llava_mini_own_original_FP16_2048_true3_v1_20261122.py",
+      "initial_SHA256": "6e3576b489d30fb53cc882a436ed9222acf3f53d46b7cfa59b231076b467df31"
+    },
+    "configs/protocols/llava_mini_own_original_FP16_2048_native_v2_actual_reserved_devices_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v2-actual-reserved-devices-20261122-smoke.yaml, scripts/prepare_llava_mini_own_original_FP16_2048_true3_v2_actual_reserved_devices_20261122.py, configs/LlavaMiniLlamaForCausalLM/ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v2-actual-reserved-devices-20261122.yaml",
+      "initial_SHA256": "5210386a3ee582b2a533d9988097498830fe638d2b7443e33c9785dab344012c"
+    },
+    "configs/publication/OvisU1_fullNF2_qualified184_reviewed_dual_publication_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/prepare_OvisU1_fullNF2_qualified184_reviewed_dual_controller_20261121.py, scripts/continue_OvisU1_fullNF2_qualified184_reviewed_dual_publication_20261121.py",
+      "initial_SHA256": "260a3e2c1997bb1e1f1a5f308164d7eb3784003081d2665e26f7d9393be71bc4"
+    },
+    "configs/queues/BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121.py, scripts/maintenance/prepare_BeeRL_completed3_full_LZMA_NF_capacity_serial_20261121.py, scripts/maintenance/prepare_verified184_Ovis_dual_Meta117_Bee_serial_full_handoff_v70_20261121.py",
+      "initial_SHA256": "3a28ebbb4727f88234113cd0de1de78db643b8c064ecc21dc63b782f8b5f83cb"
+    },
+    "configs/queues/BeeSFT_completed_storage_NF_capacity_v3_actual_saved_patch_axis_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py, scripts/maintenance/prepare_BeeSFT_capacity_resume_v3_actual_saved_patches_shape_20261121.py, scripts/continue_BeeSFT_completed_full_storage_NF_capacity_v3_actual_saved_patch_axis_serial_20261121.py, scripts/maintenance/prepare_BeeSFT_completed_storage_capacity_v4_immediate_serial_20261121.py",
+      "initial_SHA256": "109c19a10b0215bb7e226276acfd28b346589a5906ce1ba75e80d1333ce95856"
+    },
+    "configs/queues/BeeSFT_completed_storage_NF_capacity_v4_wait_actual_capacity_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py, scripts/maintenance/read_Bee_v4_wait_actual_capacity_and_existing_dedup_sources_v2_20261121_remote.py, scripts/maintenance/read_Bee_v4_wait_actual_capacity_and_existing_dedup_sources_20261121_remote.py, scripts/continue_BeeSFT_completed_storage_NF_wait_actual_capacity_v4_serial_20261121.py, scripts/maintenance/prepare_verified184_Ovis_dual_Meta117_Bee_serial_full_handoff_v70_20261121.py",
+      "initial_SHA256": "36467df7541d12ab886852984d2f44059e80d14b6b329ff74a0b444667abdc2e"
+    },
+    "configs/queues/BeeSFT_completed_true3_complete_LZMA_after_Ovis_dual_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/prepare_BeeSFT_original3_full_LZMA_after_Ovis_dual_serial_20261121.py, scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_Bee_capacity_20261121.py, scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_v2_current_ledger_Bee_capacity_20261121.py, scripts/maintenance/prepare_Meta_fullNF4_correct_nonexample117_retention_20261121.py, scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_20261121.py",
+      "initial_SHA256": "9fa61c37f2644afbf13d1cc72b61bccd4e0cacfca2e22c2e04a0be63066845de"
+    },
+    "configs/queues/BeeSFT_completed_true3_complete_LZMA_after_Ovis_dual_serial_v2_POSIX_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_v2_POSIX_20261121.py, scripts/maintenance/prepare_BeeSFT_capacity_resume_v3_actual_saved_patches_shape_20261121.py, scripts/code_publication_windows/prepare_BeeSFT_after_Ovis_dual_serial_v2_POSIX_paths_20261121.py",
+      "initial_SHA256": "9cf42a6061ce29f7d6969f6539ccfd197f3c75b0b2d2fc940c411bae471bdd82"
+    },
+    "configs/queues/OvisU1_completed200_original_raw_fallback_NF2_after_Meta_fullNF_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_OvisU1_completed200_original_raw_fallback_NF2_after_Meta_fullNF_serial_20261121.py",
+      "initial_SHA256": "47807638814689271dd962c8f9a69a0d063a76c3b69df9462142e5c5b9f4def0"
+    },
+    "configs/queues/llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/collect_daily22_verified184_LlavaMini_cutoff_primary_sources_v2_20261122.py, scripts/continue_llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py",
+      "initial_SHA256": "3f0fccf77c47a4432a3c13d77e4fa5a7464c74f99038315f76de56287a380b22"
+    },
+    "configs/queues/llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v2_actual_reserved_devices_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/collect_daily22_verified184_LlavaMini_cutoff_primary_sources_v2_20261122.py, scripts/continue_llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v2_actual_reserved_devices_20261122.py",
+      "initial_SHA256": "8768cc4d0679e3c88c0407ca6002b3bc907fe5bfe9cfc28b3e5199c2cbfd553e"
+    },
+    "configs/retention/verified184_Meta_fullNF4_correct_nonexample117_user_Bee_capacity_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py, scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_Bee_capacity_20261121.py, scripts/maintenance/prepare_Meta_fullNF4_correct_nonexample117_retention_20261121.py, scripts/maintenance/read_Meta_retention_plan_prewrite_canonical_mismatch_20261121_remote.py, scripts/maintenance/prepare_Meta117_retention_v2_exact_current_ledger_20261121.py",
+      "initial_SHA256": "7bebc113b18e498ffcc8bc17b586f710af20f3a441020461dcea9c371f418474"
+    },
+    "configs/retention/verified184_Meta_fullNF4_correct_nonexample117_v2_current_ledger_Bee_capacity_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py, scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_v2_current_ledger_Bee_capacity_20261121.py, scripts/maintenance/prepare_Meta117_retention_v3_actual_group_layout_20261121.py, scripts/maintenance/prepare_Meta117_retention_v2_exact_current_ledger_20261121.py",
+      "initial_SHA256": "78ad8dde8b3cf74b75899019c8c5ddf428b2b65fbb9f03df5e7943e0d010119f"
+    },
+    "configs/retention/verified184_Meta_fullNF4_correct_nonexample117_v3_actual_groups_Bee_capacity_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py, scripts/maintenance/prepare_Meta117_retention_v3_actual_group_layout_20261121.py, scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_v3_actual_groups_Bee_capacity_20261121.py",
+      "initial_SHA256": "ab04c117e92bfb83814b335f5e3bafa17f403707be8d6aea05d1684452c22c61"
+    },
+    "scripts/code_publication_windows/prepare_BeeSFT_after_Ovis_dual_serial_v2_POSIX_paths_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "3652771eafe53677a0c3f05ea6086b5dbc69818396b7718c091546f5b9effc81"
+    },
+    "scripts/code_publication_windows/prepare_BeeSFT_original3_full_LZMA_after_Ovis_dual_serial_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "e9965e8717ea546057b818b9d64db70338f8d433cf74d38e864950a9741b43fa"
+    },
+    "scripts/code_publication_windows/prepare_OvisU1_NF2_verified184_publication_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "327f2e1942452fbf88607cadef6132cbf0bc05a6177ad270ca3a2baeae5dbdf4"
+    },
+    "scripts/code_publication_windows/prepare_OvisU1_fullNF2_qualified184_reviewed_dual_controller_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "40da71166d9e02308a2d6fa5950bb9aab61950c66dc3434c28d341fbc6bfd38f"
+    },
+    "scripts/code_publication_windows/prepare_OvisU1_verified184_local_plan_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "d095cbd0cfdb3ecb6abc9807f404053c86da8d40bf8f028d9e7d72fee17bc3f1"
+    },
+    "scripts/continue_BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "3a65b4879688b61bcb82398df80f99cacdfff938911eaf70cfcf52e2c544fb9d"
+    },
+    "scripts/continue_BeeSFT_completed_full_storage_NF_capacity_v3_actual_saved_patch_axis_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "73a4a90df70cc2ba3b28d2f3678b2e736a4f7465f158cbb7ce62d39be42e8bc1"
+    },
+    "scripts/continue_BeeSFT_completed_storage_NF_wait_actual_capacity_v4_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "d4053dc6ff3708fe2046cb80d9e4bf6a2aa8e2dfa5ac66620e4b551aea800359"
+    },
+    "scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "16241ed4e429572f4d1fedc49d31bb89f79e9603c1ee357507a51739e2970678"
+    },
+    "scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_v2_POSIX_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "3266abc6ef6b0d718fff208757c3f462f70760b462ede2cc1e8a3eee2a888801"
+    },
+    "scripts/continue_OvisU1_completed200_original_raw_fallback_NF2_after_Meta_fullNF_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "279d6fd12de23071516381ce9bbda8a98de0dce33f5d70de20a393ee64acfc63"
+    },
+    "scripts/continue_OvisU1_fullNF2_qualified184_reviewed_dual_publication_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "7ffd4a5eb17e9c2318c641a3b9e613e2055de6aa56b18b786eba1e9248af8659"
+    },
+    "scripts/continue_llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "789b322bbd60a0145c2ab03b9410c00bddcd3d4fe6d35542899e3eddbfe4cc11"
+    },
+    "scripts/continue_llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v2_actual_reserved_devices_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "9bbb1f6aa990bc1285e00fee0d45c4f65d3ca272f1b55f588da7e4a3052b1354"
+    },
+    "scripts/maintenance/apply_Meta117_v3_exact_reviewed_plan_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "720b489d17278865842b5a133c36a991a6eb923e2d652d071dffad9e23124f86"
+    },
+    "scripts/maintenance/archive_Day21_reviewed_push_policy_transition_and_current_Ovis_results_logs_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "c2a04e82e812470b24da8673a662427586cc98442025a595ef014749454aedfe"
+    },
+    "scripts/maintenance/archive_official_Day21_Ovis_actual_readback_windows_sources_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "e759f5e2db3c452d8ffa2befa2db5eafed60f0840ce2fe5951c61719d24d2838"
+    },
+    "scripts/maintenance/collect_daily22_verified184_LlavaMini_cutoff_primary_sources_v2_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "3dbeddf8566911765e165a208bbc66e52f02bd111b140bd11a91e28eaf7cd395"
+    },
+    "scripts/maintenance/collect_daily22_verified184_explicit_primary_sources_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "f369b7b955c57dc6b8507d274eae7bdfc9235f349e8512bf69c9815f66be2738"
+    },
+    "scripts/maintenance/discover_verified184_current_full_accepted_and_Meta_fullNF4_nonexamples_Bee_capacity_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "dfcdbdfd32b0e834d182325ed1959ddb55ccdb80552c045e0e411aa37e1c07b8"
+    },
+    "scripts/maintenance/prepare_BeeRL_completed3_full_LZMA_NF_capacity_serial_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "8b417e3a17b37813794a766e7b16fc84d5a98781321b87f3e271a0ff563e183b"
+    },
+    "scripts/maintenance/prepare_BeeSFT_capacity_resume_v3_actual_saved_patches_shape_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "e4ac6ba09fb8fd7aefc581409fd429d675cf9210df86d47207ad3bf64f8aa153"
+    },
+    "scripts/maintenance/prepare_BeeSFT_completed_storage_capacity_v4_immediate_serial_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ddbd8564090ffe97bf374d9a7db41cd7f476f52740423cac21895b24c47b47cf"
+    },
+    "scripts/maintenance/prepare_Bee_v4_capacity_reader_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "bf7fd4ef5544d7375ea6b0093a587ff0a28915bbd248c13e6561e4672b5c6713"
+    },
+    "scripts/maintenance/prepare_Meta117_retention_v2_exact_current_ledger_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "39d170b18770dc640990468b5260b161d0109dd66fda23d7e0e5f10ec88f1c87"
+    },
+    "scripts/maintenance/prepare_Meta117_retention_v3_actual_group_layout_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "0fb334bed318ab271095a430739bdceb4454ae97bfede302f02820452199bff7"
+    },
+    "scripts/maintenance/prepare_Meta_fullNF4_correct_nonexample117_retention_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ab12a38b81bb7756076d8b28603cf1d8bd7e35de6ec24fa46638687001685208"
+    },
+    "scripts/maintenance/prepare_verified184_Meta117_Bee_v4_complete_handoff_sources_v70_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "bd2bf5e2d279254078103038cfe7896c249d416687adc142566b093933916959"
+    },
+    "scripts/maintenance/prepare_verified184_Ovis_dual_Meta117_Bee_serial_full_handoff_v70_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "e2bb2ee6f769a988e87245eb47d2f1202c1ba636d6b41ae2a82bd9e6c3d35e48"
+    },
+    "scripts/maintenance/prepare_verified184_current_full_accepted_cleanup_discovery_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "41e3d20f1d5b5ce905b5a02e9f5dce29c86ede63f0e984b0389705fbc372b90d"
+    },
+    "scripts/maintenance/read_BeeRL_exact_original_completed3_protocol_and_file_SHA_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "6c48869330dbfbc4d02cdd242cd96771ecc94e38f441cc3f4dd3a23d048bfb16"
+    },
+    "scripts/maintenance/read_BeeRL_exact_original_reference_backup_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "dd7dc272efce411bba90bbc1f553ea867c0a7b9df8321117cb311d991aa129a9"
+    },
+    "scripts/maintenance/read_BeeRL_existing_completed3_own_source_contract_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "39867854d3cb40f6aa3a912ab6f15bc8b0f3773e1dc420700f6b4fa6b45f7bcf"
+    },
+    "scripts/maintenance/read_BeeRL_serial_lossless_storage_fullNF_actual_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "a4ed4345afd0d04dc314a27bbe5ff0ada2534ffac3bbbfb3b34df31c0ed45ca3"
+    },
+    "scripts/maintenance/read_BeeSFT_existing_genuine3_capacity_own_contract_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "8dc451ad353511cdd883226e92a40ab00a554a0d301dd85cc3633c9463434f68"
+    },
+    "scripts/maintenance/read_BeeSFT_v2_actual_storage_fullNF_capacity_process_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "2168483a5e0844490583b66567219ebc7a1a4594a935a8c7ef2f8c7d34864f7a"
+    },
+    "scripts/maintenance/read_Bee_completed_storage_NF_actual_pixel_metadata_capacity_recovery_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "674ed3f8e82e4ef5552978ae4da13ed9d4f16865d30c6d1a2e005416ef2656de"
+    },
+    "scripts/maintenance/read_Bee_exact_original_reference_existing_backup_metadata_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ca9a7ce3df15789012daa46c43bd54bb5ad0767a66e6b1c4eafb2cd071aadafd"
+    },
+    "scripts/maintenance/read_Bee_v3_actual_capacity_or_runner_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "8cec3888e50d5a3bf5ec2dfbabc89b2053a732ee2ab1ebf6569e2ba425ff221a"
+    },
+    "scripts/maintenance/read_Bee_v4_wait_actual_capacity_and_existing_dedup_sources_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "395db4c9a228a8df0a634e88479c30fcd907fb353344ee5aa04d3ce092eb2ffd"
+    },
+    "scripts/maintenance/read_Bee_v4_wait_actual_capacity_and_existing_dedup_sources_v2_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "27587b75bc1b550b33dc47f79a983700a4b796666f542384a09b4785c701e39d"
+    },
+    "scripts/maintenance/read_GLMBase_Assistant_LlavaMini_original_adapter_and_D_contract_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "615d6b75ad050f750009e9881c13178e12b146976c3172190d5be2a0a6170eb5"
+    },
+    "scripts/maintenance/read_Gemma4_12Bit_own_original_deployment_headers_only_no_NN_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "04439d30e6ebdb5be3429a460deaf51ad481466f5cedd19a60c0de8da036f3cb"
+    },
+    "scripts/maintenance/read_LlavaMed_and_LlavaMore_own_original_resources_metadata_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ef302281c5ad8f9b9cebc6c25f426eb536b50355276357271f73d6c91f4954f5"
+    },
+    "scripts/maintenance/read_LlavaMini_actual_native_cache_and_rotary_interfaces_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "1e21652d2b3ddd7f5821a842521857436f50fa6511a03f2b01807072cf82cf79"
+    },
+    "scripts/maintenance/read_LlavaMini_current_serial_real_process_FLOCK_progress_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "7750678143d535ee4105d299373f0d0a2fdf9955aedcebfef079457c9b7f7066"
+    },
+    "scripts/maintenance/read_LlavaMini_original_clip_fused_pixel_contract_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "e65ac6790fb05f532805e04d2e7c82d42387a44aec5bb945cc94f33861c74fb9"
+    },
+    "scripts/maintenance/read_LlavaMini_original_clip_fused_pixel_contract_v2_unwrap_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "e6c636cdee825edf73d9ea5f873d2e33939491eb31a159e10f1387feba692ab9"
+    },
+    "scripts/maintenance/read_LlavaMini_own_frontend200_meta_v2_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "d034672199d6e3aa6d6bd394e2ba0ac0b6a991e0335fb211c3a91839d3a61aab"
+    },
+    "scripts/maintenance/read_LlavaMini_own_frontend200_meta_v3_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "fcd0535d4f91f7e10d55d7dde967d3736c8142c6e7c05eed6111eedd57a7a4c9"
+    },
+    "scripts/maintenance/read_LlavaMini_own_nonpersistent_buffers_and_CLIP_attention_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "cde2c063cd04bacc695aac436ce8fc39ef8e47353fe6806eed71b096f48a8011"
+    },
+    "scripts/maintenance/read_LlavaMini_own_processor_meta_interface_for_original_FP16_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "edf8b9e5c594a6593ef36377b9c92f470ed5872cad20a251aa32851963154a7d"
+    },
+    "scripts/maintenance/read_LlavaMini_own_processor_meta_interface_v2_original_Fast_fallback_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "52d9d621bf730511fa618f7e252dcd624318658e6c2b98b4cdbdba167d6a9415"
+    },
+    "scripts/maintenance/read_Meta117_v3_plan_actual_process_status_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "2fefb244a022dc1b1d64783225fab392620080041b5f66462a7986b6c1aa3f1d"
+    },
+    "scripts/maintenance/read_Meta_retention_plan_prewrite_canonical_mismatch_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "14e815a1f6645b6af73762bd7e904358cdc27ca41355eecdf1a7d66501044d88"
+    },
+    "scripts/maintenance/read_Ovis_NF2_actual_proof_process_FD_original_lock_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "1c23f228b895d8571754627857508456be08e704217252bf606807bb385306b7"
+    },
+    "scripts/maintenance/read_Ovis_NF2_publication_real_contract_and_current_serial_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "cdada95f96ab3f1224d79d7f2a6fda5ed1ef6d32cfe8c0cbff04a1b25add0c36"
+    },
+    "scripts/maintenance/read_Ovis_fullNF2_conditional_dual_and_Bee_actual_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "4a4833b96d79f1fb171de38c31b28f820b03e95d59925663193fbf9383a01e46"
+    },
+    "scripts/maintenance/read_current183_remaining_resource_reason_metadata_only_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "39eed68ee130ab80bcd6649f2262fd6fa0dab19ddf420df9af7f623649fe41bc"
+    },
+    "scripts/maintenance/read_heartbeat2352_verified184_mandatory_full_and_latest_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "9c2007c37a824588d4a1a8da80be3aa6ba18778807456253aef10c09a1303020"
+    },
+    "scripts/maintenance/read_next_MetaMllama_base_original_saved_config_metadata_only_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "90dfe023032eba9e1985ad5130356addf2ea9dbd92cd7be80276f60f91adc80d"
+    },
+    "scripts/maintenance/read_next_owned_GLMBase_GemmaAssistant_LlavaMini_saved_deployment_metadata_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "397e2bb032eac48e2c8a6662698c6c3e88079cf38ac4806f0f9d377e8012b086"
+    },
+    "scripts/maintenance/read_next_unsloth_Mllama_base_own_original_config_formatter_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ec60c8534b966f24930887339c58fbe719c3cd771ba7f61b7ac36a12702d85a3"
+    },
+    "scripts/maintenance/read_original_resource_gate_and_project_storage_usage_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "84e9c6a8b335e3b0cd9244d985e2edda4fac71d052224b44db7605b77c4a9c3f"
+    },
+    "scripts/maintenance/read_verified184_export_and_report_stat_exact_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "1d96c50e7e4aa20011f7cc31f358c1ade38d14dcde7f24ea1553da54ae3c0a92"
+    },
+    "scripts/maintenance/read_verified184_pending_owned_model_inventory_20261121_2352_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "9a549a83ef2dec654694ed19f9fca5e04065c498b21b3dd6b36b793dc5d981c0"
+    },
+    "scripts/maintenance/read_verified184_post_Meta117_frozen_monitor_storage_and_process_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "9c0c28eb6c529ef473d9d1c76a06041757d638a60ca5c6c5b69d9fb7d04333dd"
+    },
+    "scripts/maintenance/record_active_serial_model_incremental_handoff.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "d7e49d68d29cc22c88a3943bd14775de27ca83ab3dbf1d453ac7c95cf70abb52"
+    },
+    "scripts/maintenance/record_active_serial_model_incremental_handoff_v2_official_readback.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "06044865f2741535b23f8da597a3e8f0b7a529c6fdf5c09190b864e517e736b4"
+    },
+    "scripts/maintenance/record_serial_completed_NPU200_fullNF_publication_handoff_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "b057df5533cc1b6da2bfe9ff37ec537d1e3faf21f3d92ccd187523f3b9aa4fb5"
+    },
+    "scripts/maintenance/record_verified184_BeeRL_formal_fullNF_and_official_readback_v4_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "4347a1b8a0952e66d9ce82699c97d268f02e7ac254e7fc9c046889d11e15ce1a"
+    },
+    "scripts/maintenance/record_verified184_Meta117_BeeRL_serial_handoff_v3_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "143f6dc59f7b92ebd3280bf9edf334d71538cd15f732c59ff273ffd1afccd81b"
+    },
+    "scripts/maintenance/record_verified184_Meta117_Bee_v4_handoff_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "081eb4faf3f2c928e2cd6c3dbd5c3709c66d7165a4ebc1398c2101c64f7a7105"
+    },
+    "scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_Bee_capacity_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "b3eb53d50dbf9af11e0c9732f475ecb38ffa8cfa3e6a549a1001686bb6f61bdd"
+    },
+    "scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_v2_current_ledger_Bee_capacity_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ebc9b444412bc4648a5849b961c74c86f495c2ba7a1a7eb3b2ce6dc4ddb723e9"
+    },
+    "scripts/maintenance/retain_verified184_Meta_fullNF4_correct_nonexample117_v3_actual_groups_Bee_capacity_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "3e3b844efcc251e0881ac3661c8dfedced0ca2bba36edc49e90b91eb9aef6dc4"
+    },
+    "scripts/maintenance/run_daily22_actual_R_source_tests_no_model_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "df8d5beb8e192ea1ea6caaf4a90999d7d53cf3570d8b55b2318015402227c5f1"
+    },
+    "scripts/prepare_llava_mini_own_original_FP16_2048_true3_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "dd39297e64319d2203fa0ba81479435de661cca66c5bd100911298614f30478c"
+    },
+    "scripts/prepare_llava_mini_own_original_FP16_2048_true3_v2_actual_reserved_devices_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "0dd1f42fe99b18393b3380b6b030ffd2c10bc8f53491ce35c71555d49be5014c"
+    },
+    "scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "5aef0a18eba5e093fa61ca9cc7472f0c3233c59ee1c363865a12e4164e576fc4"
+    },
+    "scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v2_actual_flat_CLIP_guard_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "362066a3fce9f98cf96b7177093e4220f421aaf31569a0b43202ccdd5539f8d8"
+    },
+    "scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v3_actual_full_npz_interface_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "3977455e2077ae09202b90637bdf4bfe27e3fdf81bb54a9c89f91f016131253c"
+    },
+    "scripts/publish_OvisU1_genuine200_fullNF2_verified184_single_original_lock_dual_transaction_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "21aab12ef39a372e4e32e32d951218bf7f463c68714233d6bbfe0ea1ffb2435d"
+    },
+    "scripts/tests/OvisU1_NF2_verified184_writer_11_cases_template_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "251dc036115de2d6b2eea1fd7a39dcb7511f41f5ac4cc0fc601a63eec958d571"
+    },
+    "scripts/tests/test_OvisU1_fullNF2_publication_metadata_rejections_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "54e648c71f464941cf72bb0deb5761d3c18e4f79a461a808f5ed38dc525c526a"
+    },
+    "scripts/verified_OvisU1_genuine200_formal_NF2_original_raw_fallback_G_writer_20261121.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/continue_OvisU1_fullNF2_qualified184_reviewed_dual_publication_20261121.py; Actual local Python dependency of scripts/publish_OvisU1_genuine200_fullNF2_verified184_single_original_lock_dual_transaction_20261121.py; Actual local Python dependency of scripts/tests/OvisU1_NF2_verified184_writer_11_cases_template_20261121.py; Actual local Python dependency of scripts/tests/test_OvisU1_fullNF2_publication_metadata_rejections_20261121.py; Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "bc75450f068f5e12628dc6d057056ab6060b4d9cbcbbdeb48211bcae529989e3"
+    },
+    "scripts/verify_bee8brl_own_native_bf16_4096_original_raw_fallback_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "8032414bcf7e187307258c19201f510dae5421b8d513f47fe64ee5104c77fe6a"
+    },
+    "scripts/verify_bee8bsft_own_native_bf16_4096_original_raw_fallback_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "5198f3bd046544c65d9dd65281feb960fcc96a8827fbbf14650dcc2ff8ef997d"
+    },
+    "scripts/verify_llava_mini_own_original_FP16_2048_full_values_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "f8ecda229e1269bfc181715de78439401d2bf83e21bbe2919b58eba7f544b73c"
+    },
+    "scripts/verify_ovisu1_completed200_original_raw_prediction_fallback_metadata_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "60c0d21fd51f9ad8e712890330e9b7c887d72e8154ace6a14b11ab5f6fc20052"
+    },
+    "scripts/windows_910b_20261121/apply_OvisU1_verified184_exact_server_bytes_local_CAS_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "ba12812305f0b63d34f5be3bc92e89026e157483b30d6e0cf797b31070997ba4"
+    },
+    "scripts/windows_910b_20261121/build_OvisU1_verified184_exact_local_receipt_upload_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "5836f1c437476e27788ac16b96080c86d537cfea869ad245f1bc7b41683713e6"
+    },
+    "scripts/windows_910b_20261121/continue_OvisU1_reviewed_exact_local_CAS_and_receipt_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "eef7108372584463bd356f129f5232bfcc094cb2e9af15a3bea3beeb122cea9e"
+    },
+    "scripts/windows_910b_20261121/ovisu1_workbook_cell_verified184_20261121.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "a44618d9e6ce9c857498ee136ba888b644d766e073da38284cd5a5b8dc9c0e4e"
+      ],
+      "initial_SHA256": "a44618d9e6ce9c857498ee136ba888b644d766e073da38284cd5a5b8dc9c0e4e"
+    },
+    "scripts/windows_910b_20261121/read_OvisU1_verified184_server_book_for_local_CAS_20261121_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "510ccf98841adae829db32532a465e66d6877137aadd4294b47e33361130f26a"
+    },
+    "scripts/windows_910b_20261121/render_OvisU1_verified184_actual_published_20261121.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "725893974fdf24b7ab3a646a29e01fb872169c4c23bb5b8a2e102618a6a220f8"
+      ],
+      "initial_SHA256": "725893974fdf24b7ab3a646a29e01fb872169c4c23bb5b8a2e102618a6a220f8"
+    },
+    "scripts/windows_controls/build_Day21_verified_unique_push_and_R_policy_current_handoff_CAS_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "5a7c8c3022bf445c3211f2429cbf588e7c3e882032c3670936c947c0bb010864"
+    },
+    "scripts/windows_controls/build_daily22_explicit_snapshot_and_review_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "354affcc5b833982a60e079b8fa63d95f2dbb3a3fd911836075fda67b1747b60"
+    },
+    "scripts/windows_controls/invoke_daily21_actual_reviewed_code_publisher_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "d038d7bf7fdb1dcf3f37ec2aa1b090ffea02156429713a713aef7c47f4b5c554"
+    },
+    "scripts/windows_controls/prepare_daily21_actual_publisher_plan_and_full_review_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "0a926c6e30f32e5b9df63dcb4b4acf22754ebf02a386d69877ef3c5f688236bb"
+    },
+    "scripts/windows_controls/prepare_daily21_final_v63_exact_source_snapshot_full_diff_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "951717c796e2fc837d677501836d1e4eaa03b8095d70fb768ba0ac8da1bec22a"
+    },
+    "scripts/windows_controls/prepare_official_910b_Ovis_actual_Meta_NF4v2_Day21_pushed_args_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "36b73cca4999637bef8b938d72617a168193d48a7561127a9bfad7526f3ef9fb"
+    },
+    "tests/test_llava_mini_own_original_private_cache_observer_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "a8f3ab7e7e33360d5f6cac537df5d0a5f9530383fb8f781da45aec3edea81847"
+    },
+    "universal_eval/algorithm/llava_mini_own_original_FP16_2048_MC_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "1a83fb62497a29c19578f05502f87daa59e7aa9407ccabe9fc17f61c6ad4648a"
+    },
+    "universal_eval/model/adapters/bee8brl_own_native_bf16_4096_complete_LZMA_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "7de3a373ea2bae78a88f47a8662e1c11b7497453a52dedd40d861cecc97eccce"
+    },
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_complete_LZMA_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261121_verified184_BeeRL_storage_NF_passed_capacity_blocked_all_primary_v72_20261121.json",
+      "initial_SHA256": "9b5db79bff052e351a48725bd2c7afdffda0354469ce59a20a327b92fec37a04"
+    },
+    "universal_eval/model/adapters/high_nine_llava_reference.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/maintenance/read_LlavaMini_actual_native_cache_and_rotary_interfaces_no_NN_20261122_remote.py; Actual local Python dependency of scripts/verify_llava_mini_own_original_FP16_2048_full_values_v1_20261122.py; Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "309134ea42aeecbc317f59ec4b81ad068dc21b2856237c49e80dcb23f8682226"
+    },
+    "universal_eval/model/adapters/llava_mini_own_original_FP16_2048_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of tests/test_llava_mini_own_original_private_cache_observer_20261122.py; Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "5aa86b0a4f7ef4cd9c36d6513d4a4d69ed1bed9205e295ecfcf65f3e1906fc6e"
+    },
+    "universal_eval/model/llava_mini_own_saved_graph_FP16_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/maintenance/read_LlavaMini_own_nonpersistent_buffers_and_CLIP_attention_no_NN_20261122_remote.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v1_20261122.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v2_actual_flat_CLIP_guard_20261122.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v3_actual_full_npz_interface_20261122.py; Actual local Python dependency of scripts/verify_llava_mini_own_original_FP16_2048_full_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_mini_own_original_FP16_2048_native_v1_20261122.py; Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "bd294cd3157487dc045d67a51bc32d3566781937239a099b398d1eb06a2df8bc"
     }
   }
 }

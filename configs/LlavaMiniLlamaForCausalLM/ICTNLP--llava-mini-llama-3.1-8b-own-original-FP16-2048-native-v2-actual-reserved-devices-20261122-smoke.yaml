@@ -1,0 +1,60 @@
+{
+  "name": "ICTNLP--llava-mini-llama-3.1-8b-own-original-FP16-2048-native-v2-actual-reserved-devices-20261122-smoke",
+  "description": "Own732 source; original FP16 CLIP24/compressor1/prefusion4/Llama32/full128256 head, plain RoPE500000 original adapter branch, max2048/outer1/3EOS. Complete own frontend200 reused, private original4D empty cache, native model math unchanged; complete observations and independent full values. Historical A100 runtime uncaptured.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "ICTNLP/llava-mini-llama-3.1-8b",
+    "adapter": "universal_eval/model/adapters/llava_mini_own_original_FP16_2048_native_v1_20261122.py:OwnLlavaMiniOriginalFP16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaMiniLlamaForCausalLM/ICTNLP/llava-mini-llama-3.1-8b",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/llava_mini_own_original_FP16_2048_native_v2_actual_reserved_devices_20261122.json",
+      "protocol_sha256": "5210386a3ee582b2a533d9988097498830fe638d2b7443e33c9785dab344012c",
+      "protocol": {
+        "model_id": "ICTNLP/llava-mini-llama-3.1-8b"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "llava_mini_own_original_FP16_greedy2048",
+    "adapter": "universal_eval/algorithm/llava_mini_own_original_FP16_2048_MC_20261122.py:OwnLlavaMiniGreedy",
+    "batch_size": 1,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/llava_mini_own_original_FP16_2048_MC_20261122.py:OwnLlavaMiniAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.745,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "model_id": "Open-Bee/Bee-8B-SFT",
+  "max_concurrent_models": 1,
+  "config": "/root/projects/comperror/configs/queues/BeeSFT_completed_storage_NF_capacity_v4_wait_actual_capacity_serial_20261121.json",
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_storage_NF_capacity_v4_actual_recovery_approved_serial_20261121",
+  "new_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_storage_NF_capacity_v4_approved_NEWfresh3_fixed200_serial_real_FLOCK_20261121",
+  "previous_dual_publication_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_original_BF16_EOSNone512_fullNF2_verified184_blank_G_publication_20261121",
+  "new_protocol": "configs/protocols/bee8bsft_completed_storage_NF_capacity_v4_actual_recovered_serial_20261121.json",
+  "new_config": "configs/BeeForConditionalGeneration/Open-Bee--Bee-8B-SFT-own-original-BF16-4096-complete-LZMA-capacity-v4-serial-20261121.yaml",
+  "source_sha256": {
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_complete_LZMA_20261121.py": "9b5db79bff052e351a48725bd2c7afdffda0354469ce59a20a327b92fec37a04",
+    "scripts/verify_bee8bsft_own_native_bf16_4096_original_raw_fallback_v2_20261121.py": "5198f3bd046544c65d9dd65281feb960fcc96a8827fbbf14650dcc2ff8ef997d",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_20261116.py": "797ceb3199b41e1d26e505eee756b43e94ac13d826cec70175c16eb332d31429",
+    "scripts/verify_bee8bsft_own_native_bf16_4096_20261116.py": "0d8daeb54627048d2f176d83981788df2bd9ac08c3e5e27e67fa6f8a3836a03d",
+    "scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_v2_POSIX_20261121.py": "3266abc6ef6b0d718fff208757c3f462f70760b462ede2cc1e8a3eee2a888801",
+    "scripts/continue_BeeSFT_completed_full_storage_NF_capacity_v3_actual_saved_patch_axis_serial_20261121.py": "73a4a90df70cc2ba3b28d2f3678b2e736a4f7465f158cbb7ce62d39be42e8bc1",
+    "scripts/continue_BeeSFT_completed_storage_NF_wait_actual_capacity_v4_serial_20261121.py": "d4053dc6ff3708fe2046cb80d9e4bf6a2aa8e2dfa5ac66620e4b551aea800359"
+  },
+  "supersedes_inert_v1_windows_path_waiter_without_source_mutation_or_signals": true,
+  "reuse_completed_storage_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_true3_full_LZMA_NF_capacity_after_Ovis_verified184_dual_serial_v2_POSIX_20261121",
+  "wait_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_storage_NF_capacity_v4_actual_original_disk_waiter_serial_20261121",
+  "required_free_bytes": 192555984252,
+  "completed_capacity_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_storage_NF_capacity_v3_actual_saved_patch_axis_serial_20261121",
+  "cleanup_actual": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/verified184_Meta_fullNF4_correct_nonexample117_v3_actual_groups_Bee_capacity_recovery_20261121/actual_completion.json",
+  "canonical_after_exact117_cleanup_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/state.json": "b001dfe5c178d8ba1191ba8ec894fbd8e7ab81b62a50193262e6d8a7fe4cd450",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/registry.json": "42347681b4fe082b1172b6de023a2cc1d1e2f343a54fdf8d656fa2b7fd40614c",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/PAUSE": "bea02604ea552f7b341e0760c698801f048f58ab41d30b5589cae99bc699ea49",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/POLICY.json": "a0806e53a4a085761e3347e6eaea82a395db81014324d86be4786ee575fa8f87",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_PUBLICATION_POLICY.json": "acd9a8cd1bf5a555f3a13e79f8c675c18dafd2484cc64fa0d91107b125ea9128",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_POLICY.json": "66857aae2ab0836a7639a09d7d09a32db01808b3184fb052f027da4ab6b88ac7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_LEDGER.json": "b3969dd7799de7a9d9a5cfa2621681b931c734c4c6f1233734dc3f803a80fbdd",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_LOCAL_WORKBOOK.json": "f66b7500bbb8c5f5a99a4c35b248f8203b5fd9bde4bbaa15c7f32f21af58526c",
+    "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx": "0104ccaaab17fef845cfd172a7274c0a7c20faf51f858f21c0aef4e4a71992a1"
+  }
+}

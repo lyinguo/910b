@@ -1,0 +1,69 @@
+{
+  "model_id": "AIDC-AI/Ovis-U1-3B",
+  "row": 144,
+  "score": 0.895,
+  "expected_before_sha256": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81",
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_fullNF2_qualified184_reviewed_dual_controller_20261121",
+  "publisher": "scripts/publish_OvisU1_genuine200_fullNF2_verified184_single_original_lock_dual_transaction_20261121.py",
+  "source_sha256": {
+    "scripts/continue_OvisU1_fullNF2_qualified184_reviewed_dual_publication_20261121.py": "7ffd4a5eb17e9c2318c641a3b9e613e2055de6aa56b18b786eba1e9248af8659",
+    "scripts/windows_910b_20261121/continue_OvisU1_reviewed_exact_local_CAS_and_receipt_20261121.py": "eef7108372584463bd356f129f5232bfcc094cb2e9af15a3bea3beeb122cea9e",
+    "scripts/publish_OvisU1_genuine200_fullNF2_verified184_single_original_lock_dual_transaction_20261121.py": "21aab12ef39a372e4e32e32d951218bf7f463c68714233d6bbfe0ea1ffb2435d",
+    "scripts/verified_OvisU1_genuine200_formal_NF2_original_raw_fallback_G_writer_20261121.py": "bc75450f068f5e12628dc6d057056ab6060b4d9cbcbbdeb48211bcae529989e3",
+    "scripts/tests/test_OvisU1_fullNF2_publication_metadata_rejections_20261121.py": "54e648c71f464941cf72bb0deb5761d3c18e4f79a461a808f5ed38dc525c526a",
+    "scripts/tests/OvisU1_NF2_verified184_writer_11_cases_template_20261121.py": "251dc036115de2d6b2eea1fd7a39dcb7511f41f5ac4cc0fc601a63eec958d571",
+    "scripts/verify_ovisu1_completed200_original_raw_prediction_fallback_metadata_v2_20261121.py": "60c0d21fd51f9ad8e712890330e9b7c887d72e8154ace6a14b11ab5f6fc20052",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "local_plan": {
+    "target": "D:\\code-lv\\C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+    "source_backup": "C:\\Users\\lyg\\.codex\\visualizations\\2026\\10\\30\\01a18bbd-8040-7d02-9004-beef491d836a\\OvisU1_local_result_sync_verified184_20261121\\original_user_workbook.xlsx",
+    "expected_before_sha256": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81",
+    "sheet_name": "绝对差≤0.05达标清单",
+    "sheet_xml": "xl/worksheets/sheet1.xml",
+    "last_model_row": 701,
+    "changes": [
+      {
+        "model_id": "AIDC-AI/Ovis-U1-3B",
+        "task": "image-text-to-text",
+        "row": 144,
+        "cell": "G144",
+        "old_value": null,
+        "new_value": 0.895,
+        "A100_full_precision_cached_D": "0.8750",
+        "relative_error": "0.02285714285714285714285714286",
+        "new_real_NPU200": true,
+        "A100_reference_from_user_confirmed_D": true,
+        "report_dir": "/root/projects/comperror/workspace/reports/AIDC-AI_Ovis-U1-3B/image-text-to-text/20261121_093507"
+      }
+    ],
+    "current_measured_count": 183,
+    "real_measured_count_if_qualified": 184,
+    "numeric_within5pct_if_qualified": 169,
+    "numeric_outside5pct": 15,
+    "complete_weights_pending_formal_if_qualified": 206,
+    "confirmed_missing": 310,
+    "original_protocol_qualified_if_qualified": 70,
+    "model_blank_count_if_qualified": 516,
+    "complete_numeric_verifier_passed": false,
+    "all_prior183_C_B_D_G_checked": true,
+    "local_stat_before": {
+      "size": 6099926,
+      "mtime_ns": 1795141421339357600,
+      "ctime_ns": 1795141421337357100
+    },
+    "qualification_and_G_write_not_yet_claimed": true
+  },
+  "artifact_tool_review": {
+    "before_and_author_after_actually_viewed": true,
+    "before_SHA256": "3a21341b877e713ef87a8fb710f65812362493950769c761db04b44885d28217",
+    "after_SHA256": "be86ed0b523d96ffcf7047cb357431c715dabc3b13dcb292410ad4272d47a689",
+    "only_expected_G144_numeric_value_visible": 0.895,
+    "original_narrow_column_style_preserved": true,
+    "canonical_books_not_written": true,
+    "fullNF2_and_original_EX_required_before_publication": true
+  },
+  "no_model_or_original_NF_source_change": true,
+  "only_after_actual_fullNF2_original_qualification_and_three_D_5pct": true
+}

@@ -1,0 +1,17 @@
+{
+  "model_id": "ICTNLP/llava-mini-llama-3.1-8b",
+  "max_concurrent_models": 1,
+  "npu_devices": [
+    4
+  ],
+  "exact_source_SHA256": {
+    "universal_eval/model/adapters/llava_mini_own_original_FP16_2048_native_v1_20261122.py": "5aa86b0a4f7ef4cd9c36d6513d4a4d69ed1bed9205e295ecfcf65f3e1906fc6e",
+    "universal_eval/algorithm/llava_mini_own_original_FP16_2048_MC_20261122.py": "1a83fb62497a29c19578f05502f87daa59e7aa9407ccabe9fc17f61c6ad4648a",
+    "scripts/verify_llava_mini_own_original_FP16_2048_full_values_v1_20261122.py": "f8ecda229e1269bfc181715de78439401d2bf83e21bbe2919b58eba7f544b73c",
+    "scripts/prepare_llava_mini_own_original_FP16_2048_true3_v1_20261122.py": "dd39297e64319d2203fa0ba81479435de661cca66c5bd100911298614f30478c",
+    "scripts/continue_llava_mini_own_original_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": "789b322bbd60a0145c2ab03b9410c00bddcd3d4fe6d35542899e3eddbfe4cc11"
+  },
+  "no_G_or_canonical_write": true,
+  "original_FP16_2048_plain_RoPE_generation_preserved": true,
+  "complete_all_values_and_original_runtime_guards_preserved": true
+}

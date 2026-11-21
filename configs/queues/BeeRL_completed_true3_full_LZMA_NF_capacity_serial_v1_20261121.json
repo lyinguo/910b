@@ -1,0 +1,20 @@
+{
+  "model_id": "Open-Bee/Bee-8B-RL",
+  "max_concurrent_models": 1,
+  "config": "/root/projects/comperror/configs/queues/BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121.json",
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121",
+  "new_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeRL_completed_true3_full_LZMA_approved_NEWfresh3_fixed200_serial_v1_real_FLOCK_20261121",
+  "previous_dual_publication_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_original_BF16_EOSNone512_fullNF2_verified184_blank_G_publication_20261121",
+  "new_protocol": "configs/protocols/bee8brl_completed_full_LZMA_approved_serial_v1_20261121.json",
+  "new_config": "configs/BeeForConditionalGeneration/Open-Bee--Bee-8B-RL-own-original-BF16-4096-complete-LZMA-serial-v1-20261121.yaml",
+  "source_sha256": {
+    "universal_eval/model/adapters/bee8brl_own_native_bf16_4096_20261116.py": "330189d54b6f0722b3fcfbb0a25f97d83a76b16a9f083df42229d157f2d79f5f",
+    "scripts/verify_bee8brl_own_native_bf16_4096_20261116.py": "188b8f162b6bc6176fe8f6f837c84bc7ad9de389e03436866460aa355a46e8b1",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "universal_eval/model/adapters/bee8brl_own_native_bf16_4096_complete_LZMA_20261121.py": "7de3a373ea2bae78a88f47a8662e1c11b7497453a52dedd40d861cecc97eccce",
+    "scripts/verify_bee8brl_own_native_bf16_4096_original_raw_fallback_v2_20261121.py": "8032414bcf7e187307258c19201f510dae5421b8d513f47fe64ee5104c77fe6a",
+    "scripts/continue_BeeRL_completed_true3_full_LZMA_NF_capacity_serial_v1_20261121.py": "3a65b4879688b61bcb82398df80f99cacdfff938911eaf70cfcf52e2c544fb9d"
+  },
+  "original_BF16_sources_not_SFT_FP16": true,
+  "no_original_true3_or_frontend200_NN_replay": true
+}

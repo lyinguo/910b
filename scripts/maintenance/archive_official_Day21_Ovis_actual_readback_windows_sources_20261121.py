@@ -1,0 +1,35 @@
+"""Preserve official settings readback and useful Windows source without touching live evaluation."""
+import sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,base64,os,subprocess
+R=Path('/root/projects/comperror');D=R/'workspace/diagnostics/batch_910b';C=D/'code_publication_source_layout_20261114'
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def js(p):return json.loads(Path(p).read_bytes())
+def put(p,v):
+ p=Path(p);t=p.with_name(p.name+'.tmp.'+str(os.getpid()));t.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf8');os.replace(t,p)
+def main():
+ plan=Path(sys.argv[1]);assert sha(plan)==sys.argv[2];q=js(plan);pointer=D/'A100_ALIGNMENT_HANDOFF_CURRENT.json';old=pointer.read_bytes();assert hashlib.sha256(old).hexdigest()==q['expected_pointer_SHA256'];ptr=json.loads(old);canon=ptr['canonical_SHA256'];assert all(sha(p)==h for p,h in canon.items());parent=Path(ptr['new_primary_pending']);assert sha(parent)==q['expected_parent_pending_SHA256']==ptr['new_primary_pending_SHA256'];rows={v['path']:v for v in js(parent)['all_current_primary_source_and_true_consumer_configs']};assert all(sha(p)==v['SHA256'] for p,v in rows.items())
+ H=Path(ptr['handoff_directory']);note=H/'late_actual_notes'/'final_official_Ovis_same200_Meta_NF4v2_Day21_readback_and_windows_sources_20261121';note.mkdir(exist_ok=False);(note/'previous_pointer.json').write_bytes(old);(note/'previous_closing_addendum.json').write_bytes((H/'closing_addendum.json').read_bytes())
+ for v in q['primary_sources']:
+  rel=v['relative'];assert rel.startswith('scripts/windows_controls/') and '..' not in Path(rel).parts;raw=base64.b64decode(v['base64'],validate=True);assert hashlib.sha256(raw).hexdigest()==v['SHA256'];compile(raw,rel,'exec');p=R/rel
+  if p.exists():assert p.read_bytes()==raw
+  else:
+   p.parent.mkdir(parents=True,exist_ok=True)
+   with p.open('xb') as f:f.write(raw)
+  assert str(p) not in rows;dest=note/'primary_source_snapshots'/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(raw);rows[str(p)]=dict(path=str(p),relative=rel,SHA256=v['SHA256'],bytes=len(raw),snapshot=str(dest),role='useful exact Windows source/plan review/publish/official argument preparation; next Day22 review, no opaque literal transport payload')
+ selfpath=Path(__file__).resolve();rel=str(selfpath.relative_to(R));dest=note/'primary_source_snapshots'/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(selfpath.read_bytes());rows[str(selfpath)]=dict(path=str(selfpath),relative=rel,SHA256=sha(selfpath),bytes=selfpath.stat().st_size,snapshot=str(dest),role='actual official readback/Windows primary archive/current serial model consumer')
+ for v in q['local_original_records']:
+  raw=base64.b64decode(v['base64'],validate=True);assert hashlib.sha256(raw).hexdigest()==v['SHA256'];p=note/'local_original_records'/v['name'];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw)
+ rb=js(note/'local_original_records/official_910b_Ovis_actual_Meta_NF4v2_Day21_pushed_actual_readback_20261121.json');assert rb['passed'] and rb['status']=='ACTIVE' and rb['automation_id']=='910b' and rb['name']=='跟进910B模型评测与规范检查' and rb['rrule']=='RRULE:FREQ=MINUTELY;INTERVAL=300' and rb['targetThreadId']=='01a18bbd-8040-7d02-9004-beef491d836a' and rb['notificationPolicy'] is None and rb['TOML_SHA256']=='7674d165234f920a6a456668ff496e97f3dced4cfc87a7c20329fdb7db1a8e26'
+ reader=R/'scripts/maintenance/read_OvisU1_current_serial_v2_and_preserved_Meta_failed200_20261121.py';r=subprocess.run(['python3','-B',str(reader)],cwd=R,capture_output=True,env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1'));assert r.returncode==0,r.stderr.decode();a=json.loads(r.stdout);put(note/'current_Ovis_final_actual.json',a);active=[v for v in a['captures'] if v['model_PID_matches_capture']]
+ cfg=js(R/'configs/queues/MetaMllama_completed200_original_invalid_empty_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.json');meta=js(Path(cfg['home'])/'state.json');pid=meta['PID'];args=[v.decode() for v in (Path('/proc')/str(pid)/'cmdline').read_bytes().split(b'\0') if v];assert any('continue_MetaMllama_completed200_original_empty_invalid_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.py' in v for v in args) and meta['actual_NEW_model_forwards']==0;put(note/'actual_Meta_NF4_v2_waiter.json',dict(state=meta,argv=args,no_original_runner_EX_held_by_Meta=pid not in {x['PID'] for x in a['original_FLOCK']}))
+ for path,v in a['files'].items():
+  if path.endswith('formal200/console.log'):
+   text=v['complete_text'];assert 'Traceback (most recent call last)' not in text;assert 'self.npu_exception' in text
+ pending=C/'pending_after_daily_20261121_verified183_Ovis_fixed200_Meta_NF4v2_windows_sources_final_v65_20261121.json';assert not pending.exists();put(pending,dict(UTC=a['UTC'],parent_pending=str(parent),parent_pending_SHA256=sha(parent),source_count=len(rows),all_current_primary_source_and_true_consumer_configs=[rows[k] for k in sorted(rows)],Code_Day_already_pushed='2026-11-21',Code_Day_commit='189b3146a82adf0dc9e50f12691007ff31de6b6b',no_second_same_day_commit=True,next_daily_review='Day22 every new useful Windows/R implementation and actual configs; no task-data/artifact/credential uploads'))
+ updates=dict(UTC=a['UTC'],new_primary_pending=str(pending),new_primary_pending_SHA256=sha(pending),latest_pending=str(pending),latest_pending_SHA256=sha(pending),current_source_count=len(rows),current_primary_source_count=len(rows),latest_actual_snapshot=str(note/'current_Ovis_final_actual.json'),latest_actual_snapshot_SHA256=sha(note/'current_Ovis_final_actual.json'),current_Ovis_progress=active,latest_official_readback=str(note/'local_original_records/official_910b_Ovis_actual_Meta_NF4v2_Day21_pushed_actual_readback_20261121.json'),latest_official_readback_SHA256=sha(note/'local_original_records/official_910b_Ovis_actual_Meta_NF4v2_Day21_pushed_actual_readback_20261121.json'),latest_official_TOML_SHA256=rb['TOML_SHA256'],latest_official_prompt_SHA256=rb['prompt_SHA256'],latest_actual_Meta_NF4_v2_waiter=str(note/'actual_Meta_NF4_v2_waiter.json'),latest_actual_Meta_NF4_v2_waiter_SHA256=sha(note/'actual_Meta_NF4_v2_waiter.json'))
+ assert pointer.read_bytes()==old and all(sha(p)==h for p,h in canon.items()) and all(sha(p)==v['SHA256'] for p,v in rows.items());close=js(H/'closing_addendum.json');close.update(updates);put(H/'closing_addendum.json',close);ptr.update(updates);ptr['closing_addendum_SHA256']=sha(H/'closing_addendum.json');put(pointer,ptr)
+ result=dict(passed=True,pointer_SHA256=sha(pointer),closing_SHA256=sha(H/'closing_addendum.json'),pending=str(pending),pending_SHA256=sha(pending),source_count=len(rows),current_Ovis_progress=active,actual_Meta_waiter=meta,all_model_jobs_sources_reports_logs_canonical_unchanged=True,official_settings_exactly_verified=True);put(note/'final_preservation_receipt.json',result);print(json.dumps(result,ensure_ascii=False))
+if __name__=='__main__':main()

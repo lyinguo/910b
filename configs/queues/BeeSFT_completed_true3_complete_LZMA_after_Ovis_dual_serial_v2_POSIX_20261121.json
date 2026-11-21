@@ -1,0 +1,19 @@
+{
+  "model_id": "Open-Bee/Bee-8B-SFT",
+  "max_concurrent_models": 1,
+  "config": "/root/projects/comperror/configs/queues/BeeSFT_completed_true3_complete_LZMA_after_Ovis_dual_serial_v2_POSIX_20261121.json",
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_true3_full_LZMA_NF_capacity_after_Ovis_verified184_dual_serial_v2_POSIX_20261121",
+  "new_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/BeeSFT_completed_true3_full_LZMA_approved_NEWfresh3_fixed200_after_Ovis_dual_serial_v2_POSIX_real_FLOCK_20261121",
+  "previous_dual_publication_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_original_BF16_EOSNone512_fullNF2_verified184_blank_G_publication_20261121",
+  "new_protocol": "configs/protocols/bee8bsft_completed_true3_full_LZMA_after_Ovis_dual_approved_v2_POSIX_20261121.json",
+  "new_config": "configs/BeeForConditionalGeneration/Open-Bee--Bee-8B-SFT-own-original-BF16-4096-complete-LZMA-after-Ovis-dual-serial-v2-POSIX-20261121.yaml",
+  "source_sha256": {
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_complete_LZMA_20261121.py": "9b5db79bff052e351a48725bd2c7afdffda0354469ce59a20a327b92fec37a04",
+    "scripts/verify_bee8bsft_own_native_bf16_4096_original_raw_fallback_v2_20261121.py": "5198f3bd046544c65d9dd65281feb960fcc96a8827fbbf14650dcc2ff8ef997d",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "universal_eval/model/adapters/bee8bsft_own_native_bf16_4096_20261116.py": "797ceb3199b41e1d26e505eee756b43e94ac13d826cec70175c16eb332d31429",
+    "scripts/verify_bee8bsft_own_native_bf16_4096_20261116.py": "0d8daeb54627048d2f176d83981788df2bd9ac08c3e5e27e67fa6f8a3836a03d",
+    "scripts/continue_BeeSFT_existing_true3_full_LZMA_NF_capacity_after_Ovis_dual_serial_v2_POSIX_20261121.py": "3266abc6ef6b0d718fff208757c3f462f70760b462ede2cc1e8a3eee2a888801"
+  },
+  "supersedes_inert_v1_windows_path_waiter_without_source_mutation_or_signals": true
+}
