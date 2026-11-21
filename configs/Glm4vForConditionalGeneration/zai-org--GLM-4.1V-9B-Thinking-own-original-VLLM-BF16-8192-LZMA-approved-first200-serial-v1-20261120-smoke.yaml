@@ -1,0 +1,60 @@
+{
+  "name": "zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-LZMA-approved-first200-serial-v1-20261120-smoke",
+  "description": "User-confirmed actual A100 workbook D, not an online replay gate. Own GLM-4.1V-9B-Thinking four SF/704 BF16 tensors, own vision24/text40/GQA2x128/full151552 head. Saved original VLLM Greedy8192/outer10 serial1/TP1/.9, original image-placeholder removal and white-background ImageMediaIO/native chat default add_generation_prompt, no explicit thinking override, own unchanged template and EOS151329/151336/151338/151348. Current real installed native InputProcessor/renderer and all200 independent full own pixels/Rust own-config tokens prove all actual model BF16 input bytes equal. Own raw tokenizer.json plus its own nine added_tokens_decoder items preserve all IDs; no borrowed vocabulary. Native HF SDPA execution and full40 physical KV/3D positions/head values audited; historical A100 engine/tensor bytes were not captured. Original AFS/R files, all4329 prompt-ref order and all200 image bytes identical; original filter_empty=True removes zero, runtimeFalse preserves exactly fixed0:199. No package installation, generic decoder stubs, borrowed checkpoint/input/output, precision/budget/cache/stop/math/scoring/thinking tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "zai-org/GLM-4.1V-9B-Thinking",
+    "adapter": "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v2_actual_media.py:GLM41ThinkingOwnNativeBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.1V-9B-Thinking",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/glm41thinking_own_original_VLLM_BF16_8192_LZMA_approved_first200_serial_v1_20261120.json",
+      "protocol_sha256": "6431b09ef291bb304fddda076e0abb75034557a28711027a58afa1cb6da2865b",
+      "protocol": {
+        "model_id": "zai-org/GLM-4.1V-9B-Thinking"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "glm41thinking_original_VLLM8192_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/glm41thinking_own_original_VLLM_BF16_8192_20261120_MC.py:OwnGLM41ThinkingGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true,
+      "answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>."
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/glm41thinking_own_original_VLLM_BF16_8192_20261120_MC.py:OwnGLM41ThinkingAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.75,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

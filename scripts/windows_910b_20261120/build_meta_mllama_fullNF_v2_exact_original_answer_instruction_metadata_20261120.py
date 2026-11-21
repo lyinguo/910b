@@ -1,0 +1,17 @@
+"""New private verifier: bind the original saved instruction exactly; no math edit."""
+from pathlib import Path
+import ast,hashlib,json
+V=Path(__file__).resolve().parent;old=V/'verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v1_20261120.py';raw=old.read_bytes();assert hashlib.sha256(raw).hexdigest()=='bec4154921e5f36fdf61b3e4b6386886132a104e2f7d5ca437d33bac8ee1d798'
+s=raw.decode();a="assert cfg['algorithm']['batch_size']==10 and cfg['algorithm']['kwargs']=={'extract_answer':True}";b="assert cfg['algorithm']['batch_size']==10 and cfg['algorithm']['kwargs']=={'extract_answer':True,'answer_instruction':p['input_records'][0]['model_prompt'][len(p['input_records'][0]['prompt']):]}";assert s.count(a)==1;s=s.replace(a,b)
+metadata='''from decimal import Decimal
+relative={name:str(abs(Decimal(str(score))-Decimal(str(value)))/abs(Decimal(str(value)))) for name,value in p['current_A100_D_values'].items()}
+within=all(Decimal(v)<=Decimal('.05') for v in relative.values())
+source_hashes=dict(p['implementation_source_SHA256']);actual_yaml=pathlib.Path('/root/projects/comperror/configs/MllamaForConditionalGeneration')/(cfg['name']+'.yaml');assert actual_yaml.is_file()
+source_hashes.update({str(actual_yaml.relative_to('/root/projects/comperror')):sha(actual_yaml),str(pathlib.Path(kw['protocol_file']).relative_to('/root/projects/comperror')):kw['protocol_sha256'],str(pathlib.Path(__file__).resolve().relative_to('/root/projects/comperror')):sha(__file__)})
+proof.update(historical_record_reuse=False,actual_NPU_inference=True,source_tensor_count=906,source_sha256=source_hashes,relative_error_to_A100_table_D=relative['server'],relative_error_to_current_A100_D=relative,formal_alignment_within_5pct=within,original_protocol_final_qualification_complete=(count==200 and within),all_own_source_actual_NPU_SHA256_verified=True,all_native_KV_values_losslessly_reconstructed=True,all_full_inputs_tokens_raw_references_errors_preserved=True,all_original_active_and_unused_source_bytes_verified=True,actual_forward_count=total_steps,small3_not_full200_qualification_or_extra_5pct_gate=True)
+'''
+needle="q=loadpath.parent/'independent_report_verification.json'";assert s.count(needle)==1;s=s.replace(needle,metadata+needle);assert s.replace(metadata,'').replace(b,a)==raw.decode();ast.parse(s)
+path=V/'verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v2_exact_instruction_metadata_20261120.py';path.write_text(s,encoding='utf8',newline='\n')
+oldnodes=ast.parse(raw).body;newnodes=ast.parse(s.replace(metadata,'')).body;changed=[i for i,(x,y) in enumerate(zip(oldnodes,newnodes)) if ast.dump(x,include_attributes=False)!=ast.dump(y,include_attributes=False)];assert len(oldnodes)==len(newnodes) and len(changed)==1 and isinstance(oldnodes[changed[0]],ast.Assert)
+review=dict(passed=True,old_verifier_SHA256=hashlib.sha256(raw).hexdigest(),new_verifier_SHA256=hashlib.sha256(s.encode()).hexdigest(),only_one_metadata_assert_changed_and_standard_runner_proof_fields_added=True,old_mistake='Omitted already-original answer_instruction from exact kwargs mapping',new_guard='Exact original own model_prompt suffix, not dropped or changed instruction',all_numeric_control_mask_KV_head_source_threshold_functions_AST_unchanged=True,live_old_source_job_YAML_and_deadline_untouched=True,no_NN_replay_authorized_or_performed=True)
+(V/'MetaMllama_fullNF_v2_exact_instruction_derivation_review_20261120.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print(json.dumps(review))

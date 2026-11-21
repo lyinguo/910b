@@ -1,0 +1,23 @@
+{
+  "max_concurrent_models": 1,
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MetaMllama_completed_genuine200_formal_NF4_original_empty_invalid_schema_v2_actual_file_SHA_after_Ovis_serial_no_NN_replay_20261121",
+  "previous_Ovis_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_storage_fullNF_passed_exact23_capacity_approved_NEWfresh3_fixed200_serial_v2_real_FLOCK_20261121",
+  "original_Meta_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MetaMllama_completed_genuine3_shaped_storage_LZMA_v3_actual_capacity_approved_NEWfresh3_fixed200_serial_real_FLOCK_20261120",
+  "original_Meta_job_SHA256": "581c7c7c9a4f6a270f5c9021ee9c6824144dc7c437473b7eb3ab81fce6141757",
+  "original_report": "/root/projects/comperror/workspace/reports/meta-llama_Llama-3.2-11B-Vision-Instruct/image-text-to-text/20261120_195030",
+  "old_verifier": "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py",
+  "new_verifier": "scripts/verify_meta_mllama_completed200_original_empty_invalid_prediction_schema_v4_20261121.py",
+  "source_sha256": {
+    "scripts/verify_meta_mllama_completed200_original_empty_invalid_prediction_schema_v4_20261121.py": "bf31fef6d2d4b59df491872833607fb68c512e34dc63b90156eb5a8077b0193a",
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py": "90bd632c82c339b0b060194342250bde5a868ec5795119db849b9cd5efa8b7c2",
+    "universal_eval/algorithm/meta_mllama_own_original_HF_2048_MC_20261120.py": "f941911cccd47e7610a96107a5c9542359acf119405703af4756572813b63a3d",
+    "scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.py": "dea42fa3ecd081a2b8ff78e27a659267e0151a2242e18180de2393ca7fc5fb39"
+  },
+  "metadata_only_correction_to_original_empty_invalid_predictions": true,
+  "no_model_math_threshold_extraction_budget_raw_or_report_change": true,
+  "actual_NEW_model_forwards": 0,
+  "qualified_Ovis_dual_publication_has_priority": true,
+  "original_preNN_source_pin_failed_completion": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MetaMllama_completed_genuine200_formal_NF4_original_empty_invalid_schema_after_Ovis_serial_no_NN_replay_20261121/actual_completion.json",
+  "original_preNN_source_pin_failed_completion_SHA256": "148544c13faa7ca26efdc3daddb4f7fb658835430ff557712352fcbaff45c7c6",
+  "only_actual_file_SHA_binding_repaired": true
+}

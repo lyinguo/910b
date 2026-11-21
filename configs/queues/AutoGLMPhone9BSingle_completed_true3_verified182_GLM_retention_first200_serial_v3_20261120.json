@@ -1,0 +1,21 @@
+{
+  "max_concurrent_models": 1,
+  "resume_only_completed_own_true3_no_replay": true,
+  "frozen_runner_SHA256": "58de6b4fd664b5483a9ca08115f1ca1ab4fb1478e1ffb6387539296e80babf90",
+  "cleanup_actual_receipt": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/verified182_GLM_accepted_correct_nonexamples_user_serial_Single_capacity_recovery_20261120/actual_completion.json",
+  "cleanup_actual_receipt_SHA256": "1003b1303c34a398c3dab6513cd37d6c365f0814823befb2ea798ec2425f2fb5",
+  "ledger_before_SHA256": "7978cbde39e32b7d28ecb05cf69148e451cbe262493b39d6b07e6fdb785b9b71",
+  "ledger_after_SHA256": "06f870990721bdb4e58a409f842980b7b4578eddc23367263d041c052f8e43ce",
+  "completed_true3_job_SHA256": "d62a8f3918860152e710573db86a074bcf1adbb266faf9c40854efab716d1081",
+  "completed_true3_proof_SHA256": "da99ef8ddab138186eb4368204a6917041f126d3fb03730fe8163352a211c259",
+  "exact_source_SHA256": {
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_native.py": "d9be687fb620708342b3c5bb372673d5cc6d796d8c965aea8a427bc9d4c91616",
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_frontend.py": "6f88843a71ac253beefb637bd8dfd6db81779f8ca1c4390331adfcd061e84bc3",
+    "universal_eval/algorithm/autoglm_phone9b_single_own_original_BF16_2048_20261120_MC.py": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d",
+    "scripts/verify_autoglm_phone9b_single_own_original_BF16_2048_native_v1_20261120.py": "3a08758fe52fbb86415daebbee4afe667ba3cbaf3224d1828e6fb95e7fb580ce",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_frontend200_20261120.py": "2798e16b4ea73dadee5302abe8ff6757441021f7246bce163ce370ab87d83694",
+    "scripts/prepare_autoglm_phone9b_single_own_AFS_R_identical_fixed200_no_filter_input_alias_20261120.py": "a74f0ce0439b8152d696f5dc45eab223f59b155fd995de38d8ac38a77dc9e959",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v2_exact_frontend_path_20261120.py": "2fb55645d7ea366111e10fe43f6ff57f0683eb38c80c252cfb732d499b60e56b",
+    "scripts/continue_AutoGLMPhone9B_single_completed_inputs_exact_frontend_path_recovery_true3_first200_serial_v2_20261120.py": "a59afe0f3b0735d7e87130a81562a190b9d2edd548ce2c3df829f16ba3623334"
+  }
+}

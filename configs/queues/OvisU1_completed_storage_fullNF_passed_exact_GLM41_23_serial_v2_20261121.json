@@ -1,0 +1,42 @@
+{
+  "model_id": "AIDC-AI/Ovis-U1-3B",
+  "max_concurrent_models": 1,
+  "home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_storage_fullNF_passed_after_exact_GLM41_23_capacity_serial_v2_20261121",
+  "new_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_storage_fullNF_passed_exact23_capacity_approved_NEWfresh3_fixed200_serial_v2_real_FLOCK_20261121",
+  "previous_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/MetaMllama_completed_genuine3_shaped_storage_LZMA_v3_actual_capacity_approved_NEWfresh3_fixed200_serial_real_FLOCK_20261120",
+  "new_protocol": "configs/protocols/ovisu1_completed_storage_fullNF_passed_exact23_approved_first200_serial_v2_20261121.json",
+  "new_config": "configs/OvisU1/AIDC-AI--Ovis-U1-3B-own-original-BF16-512-complete-LZMA-approved-first200-serial-v2-exact23-20261121.yaml",
+  "old170_exact_book_backup": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/Gemma4_pair_original_BF16_verified172_blank_G_publication_20261116/before_verified_write/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "old170_book_SHA256": "195e9af1a5284c764c795516853256bca54e9880ddd7b388cfefaa9a3c31b496",
+  "fresh_local_book_SHA256": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81",
+  "expected_protected_canonical_hashes": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/state.json": "faed3c6f4d9514f3e6cfabf1328a51d1f830f637185e0adc8fa75352c112d4f3",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/registry.json": "e5d4143a1a30bc8a395934f7773c64a7421ca28d6a6bd6c17bdba10546b89f29",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/PAUSE": "bea02604ea552f7b341e0760c698801f048f58ab41d30b5589cae99bc699ea49",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/POLICY.json": "a0806e53a4a085761e3347e6eaea82a395db81014324d86be4786ee575fa8f87",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_PUBLICATION_POLICY.json": "acd9a8cd1bf5a555f3a13e79f8c675c18dafd2484cc64fa0d91107b125ea9128",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_POLICY.json": "66857aae2ab0836a7639a09d7d09a32db01808b3184fb052f027da4ab6b88ac7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_LEDGER.json": "6f4dcf0be1dad1b0e4a1e8ec53725d76d6abff0965f5fdf87a9428f772b7179c",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_LOCAL_WORKBOOK.json": "c1c867fbfdf2637c03757612c2c49a43fefefa5be6886b30d979198db6bcf0cb",
+    "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81"
+  },
+  "storage_review_SHA256": "8536ad390400b6f3f9e49228b89826ca30c3c61994f7b80a6288b8d299abdd56",
+  "exact_source_SHA256": {
+    "universal_eval/model/adapters/ovisu1_own_original_understanding_bf16_512_native_v2_actual_empty_precision_guard_20261116.py": "0d35a2bedf7aae131e90b70a7e4ef3816da8f86db81136487425eb0d4c6f822d",
+    "scripts/continue_OvisU1_completed_genuine3_existing_full_LZMA_after_Meta_serial_20261121.py": "250d1fe703218639d543ce1c60e2620e96b204eacf715e639c6fc83cfee2a644",
+    "universal_eval/model/adapters/ovisu1_own_original_understanding_BF16_512_complete_standard_LZMA_20261121.py": "33a961acbadf96a91c08f59e92487b25420d1deef35fdcfc95df5d5f74cdf829",
+    "scripts/verify_ovisu1_own_original_understanding_bf16_512_20261116.py": "65cfac82a967dcfba5320163d53930c18bf9be772ae1b07f82abc6ebafbee6b0",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py": "3b8d1e68785c1e6ddec94eadd0a33b99ddb630aebbe1e12083df275aebbb6604",
+    "configs/queues/OvisU1_completed3_existing_standard_LZMA_after_Meta_serial_v1_20261121.json": "737bfe7f991e391ff19d2df9e48961492d0b09222e0c8fad2e1e3e775da402f8"
+  },
+  "no_model_math_dtype_512_EOSNone_outer4_input_or_scoring_change": true,
+  "original_genuine3_not_replayed": true,
+  "complete_existing_LZMA_values_full_NF_before_first200_approval": true,
+  "reuse_completed_storage_acceptance": {
+    "path": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/OvisU1_completed_genuine3_existing_full_LZMA_after_Meta_serial_v1_20261121/formal_existing_storage_acceptance.json",
+    "SHA256": "c93806c03194e5137a6c5f76f52109ad27aace0f05a0fa9527e4f6f3fde922bc"
+  },
+  "exact_authorized_GLM41_23_retention_receipt": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/verified183_GLM41_full_numeric_gap_correct_nonexample_minimal_Ovis_capacity_recovery_20261121/actual_completion.json",
+  "exact_authorized_GLM41_23_retention_receipt_SHA256": "15e6800acd2a727af9465787cbb61e76e3257e3e01b2bee886f430a9033f5e5c"
+}

@@ -1,0 +1,13 @@
+{
+  "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+  "max_concurrent_models": 1,
+  "existing_GLM41_priority_required_bytes": 136041918364,
+  "exact_source_SHA256": {
+    "scripts/continue_MetaMllama_completed_genuine3_shaped_storage_capacity_wait_v3_first200_serial_20261120.py": "e14a7f393ee6b357862925fc2abc9673618cd9285e52576d3e2469e707059391",
+    "universal_eval/model/adapters/meta_mllama_own_original_BF16_SDPA_2048_native_lossless_shaped_LZMA_v3_20261120.py": "73f9c526f1455b178f09f1d3984b063adbb0fabe3743ba4c18a67f3d0f3bb122",
+    "universal_eval/utils/complete_native_raw_bytes_Fortran_LZMA_20261120.py": "4a95739870af1a5e85f2daeebedbf7bed934c86f70bc5d5ce4d85f5f9e573045",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/meta_mllama_complete_shape_storage_capacity_20261120.py": "fb5fceebc3ed09b8c87cd4ecd9ffd4c9f3098f1c1b72bb61cbf1c89b6997f90a",
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py": "90bd632c82c339b0b060194342250bde5a868ec5795119db849b9cd5efa8b7c2"
+  }
+}

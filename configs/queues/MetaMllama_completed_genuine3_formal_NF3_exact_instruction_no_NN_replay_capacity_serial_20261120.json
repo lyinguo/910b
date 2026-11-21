@@ -1,0 +1,11 @@
+{
+  "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+  "max_concurrent_models": 1,
+  "actual_NEW_model_forwards_in_acceptance": 0,
+  "original_true3_job_SHA256": "ac1384546dbab375c0d02e2fad31e4d0dea3c8f7f2a194e48b72ea9a24086567",
+  "new_verifier_SHA256": "90bd632c82c339b0b060194342250bde5a868ec5795119db849b9cd5efa8b7c2",
+  "exact_source_SHA256": {
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py": "90bd632c82c339b0b060194342250bde5a868ec5795119db849b9cd5efa8b7c2",
+    "scripts/continue_meta_mllama_completed_genuine3_formal_NF3_exact_instruction_no_NN_replay_20261120.py": "ca5123e8da5b22524db773f5fd8cbc96dfccb8a69cf72c9a14e097c01a30fd73"
+  }
+}

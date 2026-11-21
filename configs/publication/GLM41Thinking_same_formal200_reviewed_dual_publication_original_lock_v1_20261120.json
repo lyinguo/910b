@@ -1,0 +1,12 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+  "job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_completed_true3_full_shape_capacity_approved_NEWfresh3_fixed200_serial_v1_real_FLOCK_20261120",
+  "job_SHA256": "756c7f9221f17a39e85f00cf064d640d197fa9ec42e1af0482eac85f17c7d163",
+  "controller": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_completed_true3_verified183_exact271_wait_actual_original_capacity_first200_serial_v2_20261120",
+  "controller_source_name": "continue_GLM41Thinking_completed_true3_after_verified183_exact271_retention_wait_real_capacity_serial_v2_20261120.py",
+  "reservation_home": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_verified184_reviewed_publication_window_after_same_formal200_original_EX_20261120",
+  "initial_runner_PID": 1622920,
+  "initial_controller_PID": 1618883,
+  "reservation_source_SHA256": "4fbec9f54e678830453b65aedd3e65f1f33dd10819b2962405136cf7364e682c",
+  "no_NN_replay_no_signals_no_hot_source_or_job_change": true
+}

@@ -1,0 +1,19 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+  "max_concurrent_models": 1,
+  "original_max_tokens": 8192,
+  "original_no_thinking_override": true,
+  "frozen_runner_SHA256": "58de6b4fd664b5483a9ca08115f1ca1ab4fb1478e1ffb6387539296e80babf90",
+  "verified183_book_SHA256": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81",
+  "frontend_prepare_source": "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v3_actual_media_wrapper_20261120.py",
+  "exact_source_SHA256": {
+    "scripts/continue_GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py": "f7ee759f0d973e1dd356c7ec47614a11b27bc9fa1b2d28ae0b44c9ec6abf55a2",
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_true3_v1_20261120.py": "396392722713a5ea3ec8c1b313e717a6e30aa98677a60aaa2309aed79d8123ed",
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v3_actual_media_wrapper_20261120.py": "8d693814427e23445339cc532a241ea2c873a06e248d4ce5dc1ad02ee16c9495",
+    "universal_eval/model/reference_sources/glm41thinking_owned_tokenizer_config_20261120.py": "aa68e3bd6fada59e4e9829e49d67057a3f15e7f9a7ba80386265af01250ef5f7",
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v2_actual_media.py": "4fd3cee6c2b348e044cb81babc12430a0b4d960620fd8e1686a1b70d6aa779a0",
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend_v2_actual_media.py": "142d19b1566ea8c77f15a7e756d31c258c6db2a27ee22bbe2ba877de9a4205bc",
+    "universal_eval/algorithm/glm41thinking_own_original_VLLM_BF16_8192_20261120_MC.py": "7602abe28485a8426d09a656af92286c6860873de0583cd14e927e6ad117a520",
+    "scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v2_actual_media_20261120.py": "48db53f3f64f7149eb11cdcb1278b8136c17c9a7d432fc82b7c914fb027b1203"
+  }
+}

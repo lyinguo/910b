@@ -1,0 +1,10 @@
+{
+  "max_concurrent_models": 1,
+  "current_own_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_completed_true3_full_shape_capacity_approved_NEWfresh3_fixed200_serial_v3_actual_published_GLM_fixed_input_set_real_FLOCK_20261120",
+  "current_own_job_SHA256": "c05d9f7fb808e0204d8c12d697dea0df83c97eb2edfb75dfa227bba76e4c7049",
+  "own_verifier_SHA256": "3a08758fe52fbb86415daebbee4afe667ba3cbaf3224d1828e6fb95e7fb580ce",
+  "current_own_controller": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120",
+  "qualified183_publication": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_original_BF16_2048_LZMA_verified183_blank_G_publication_20261120",
+  "selector_source": "scripts/select_existing_original_resource_queue_1245_20261117.py",
+  "selector_SHA256": "27daea622ea40c92d1182895e6dcd1a9d5803fac9cc0b7a7d224a4f80dd52494"
+}

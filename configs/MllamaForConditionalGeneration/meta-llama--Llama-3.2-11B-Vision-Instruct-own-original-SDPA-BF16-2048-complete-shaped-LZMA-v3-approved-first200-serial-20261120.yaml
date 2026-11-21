@@ -1,0 +1,61 @@
+{
+  "name": "meta-llama--Llama-3.2-11B-Vision-Instruct-own-original-SDPA-BF16-2048-complete-shaped-LZMA-v3-approved-first200-serial-20261120",
+  "description": "Own Meta5 SF/906BF16/511vision+projector and40text original default native SDPA. Own560/max4tiles/doubleBOS/128256 untiedhead128264embedding/2048/outer10-inner1/3EOS preserved. Old saved YAML incorrectly names unreadable other-brand root; new private YAML binds only this exact Meta own root and keeps original task/data/generation. Full independent own pixels/token200/source/meta; actual source/cast/NPU SHA and complete masks/physicalKV/fullhead audited. Historical A100 engine/tensors uncaptured, CPU values diagnostics only. No borrowed checkpoint/vocabulary/input/output, package install, eager substitution, math/cache/budget/extraction/thinking/stop tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "adapter": "universal_eval/model/adapters/meta_mllama_own_original_BF16_SDPA_2048_native_lossless_shaped_LZMA_v3_20261120.py:MetaMllamaOwnOriginal2048",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/MllamaForConditionalGeneration/meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/meta_mllama_completed_genuine3_shaped_storage_LZMA_v3_approved_first200_serial_20261120.json",
+      "protocol_sha256": "1372dd7edf626821049e3d062661fbe08e2e80fc24b14b54afb476eac599cfe2",
+      "protocol": {
+        "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct"
+      },
+      "npu_devices": [
+        4,
+        5
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "meta_mllama_original_HF2048_greedy_explicit_MC",
+    "adapter": "universal_eval/algorithm/meta_mllama_own_original_HF_2048_MC_20261120.py:OwnMetaMllamaGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true,
+      "answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>."
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/meta_mllama_own_original_HF_2048_MC_20261120.py:OwnMetaMllamaAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.775,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

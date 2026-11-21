@@ -1,0 +1,103 @@
+{
+  "model_id": "zai-org/AutoGLM-Phone-9B",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/AutoGLM-Phone-9B",
+  "source_tensor_count": 704,
+  "own_weight_files": {
+    "model-00001-of-00005.safetensors": {
+      "bytes": 4953999648,
+      "SHA256": "f151df36f732b88a38e598f6694b3e61a2465a57f4a0709a750279da365d0298"
+    },
+    "model-00002-of-00005.safetensors": {
+      "bytes": 4895276872,
+      "SHA256": "e2fbeaeec5d68e3c11c6625ee1e56117ca92995c4bc2457a0bfce7dddea7a895"
+    },
+    "model-00003-of-00005.safetensors": {
+      "bytes": 4895276936,
+      "SHA256": "fae8589128e9701d316051db2cf92b4e3793ed9f1b9d0daeb0b1c4e42c1b5f78"
+    },
+    "model-00004-of-00005.safetensors": {
+      "bytes": 4599576544,
+      "SHA256": "e3b09add418626cacd8d35ca56404665e60b52bc1430800451b7348329bb3476"
+    },
+    "model-00005-of-00005.safetensors": {
+      "bytes": 1241514112,
+      "SHA256": "bb0833949dc3c2317346231f86b3008611242d403f53f6949ebb7e21a9ec189e"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "d758178244b68c9ed01fdb2ebd60e3f8f7d3368bedb33b1ad4d9ef1ed255f13d",
+    "config.json": "0a40fec6c63745033cce39f5b4f2f2ba354629267fc01148678fe540d5ba9881",
+    "configuration.json": "56cb510ec22c10234572a1fc05d3b8dba8eb232a36890b5fe7ce134d6e8dd07e",
+    "generation_config.json": "7785c6b788f2b05504c508ffaeda794f51ad60c1a0c91c4d2636f93c0c92711d",
+    "model.safetensors.index.json": "136a9fe19210d5a627b681ca12b71ac8a85900204144e058e8fad97bcbad439f",
+    "preprocessor_config.json": "d71bebc1307f2d1e38e87563b50faa78c72fd2e4093b5c69c756f12c444fec6a",
+    "special_tokens_map.json": "d1c2389367cb484bce5dd2e9fcd843a1dfaaf2e39d95644d7c8c3aa7550d2d9a",
+    "tokenizer.json": "c2f7919ffc6c6628cbde5f0b1a204a78bc23319be4e85b7331c71a9a48a8d06d",
+    "tokenizer_config.json": "a881239bab2dc4222417de903424938d36f43f37cb43c6725132cfbd21be1e1f",
+    "video_preprocessor_config.json": "0d2e9f32f12b771d80b46fbd2ae0b3f0090c66c763a26cb8b0d3b48ae498b16c"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_readiness_v2_exact_frontend_path_20261120/own704_active_source_manifest.json",
+  "own_source_manifest_SHA256": "a660e59ef9d7069632336e9220359dd2b12dbfb00ade4baa22fd23538b3525a1",
+  "own_unused_MTP_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_readiness_v2_exact_frontend_path_20261120/own_unused_source_manifest.json",
+  "own_unused_MTP_source_manifest_SHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_readiness_v2_exact_frontend_path_20261120/own_frontend200_existing_proof_field_binding_no_replay.json",
+  "own_frontend200_SHA256": "6d3f7f5d74b54cfafb42aeb352250a9b26f809d9c33b965c48b833785bf9fe33",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151329,
+    151336,
+    151338,
+    151348
+  ],
+  "original_BF16_own_template2048_outer10_inner1_Accuracy_protocol_preserved": true,
+  "original_answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>.",
+  "original_existing_enable_thinking_false_adapter_SHA256": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+  "workbook_D_reference_authorized": true,
+  "current_A100_D_values": {
+    "server": "0.7800",
+    "local": "0.7800",
+    "preserved_original": "0.78"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "0b2fcf21fe5a56e5b33111c4e65c2ec0ddf53dae43d451dec756a342df810340",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_native.py": "d9be687fb620708342b3c5bb372673d5cc6d796d8c965aea8a427bc9d4c91616",
+    "universal_eval/model/adapters/autoglm_phone9b_single_own_original_BF16_2048_20261120_frontend.py": "6f88843a71ac253beefb637bd8dfd6db81779f8ca1c4390331adfcd061e84bc3",
+    "universal_eval/algorithm/autoglm_phone9b_single_own_original_BF16_2048_20261120_MC.py": "bf2b3e9721c120feb687ea4debc07f7aab12c9e4622d23284dafc59eae43389d",
+    "scripts/verify_autoglm_phone9b_single_own_original_BF16_2048_native_v1_20261120.py": "3a08758fe52fbb86415daebbee4afe667ba3cbaf3224d1828e6fb95e7fb580ce",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_true3_v2_exact_frontend_path_20261120.py": "2fb55645d7ea366111e10fe43f6ff57f0683eb38c80c252cfb732d499b60e56b",
+    "scripts/prepare_autoglm_phone9b_single_own_original_BF16_2048_frontend200_20261120.py": "2798e16b4ea73dadee5302abe8ff6757441021f7246bce163ce370ab87d83694",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "scripts/prepare_autoglm_phone9b_single_own_AFS_R_identical_fixed200_no_filter_input_alias_20261120.py": "a74f0ce0439b8152d696f5dc45eab223f59b155fd995de38d8ac38a77dc9e959",
+    "universal_eval/model/adapters/transformers_vlm.py": "507b9405d8ec6db48d008a7b4a29b23f448d6f04936545b8c0ce6b82c25336c3",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b",
+    "scripts/continue_AutoGLMPhone9B_single_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.py": "8257c8bb24545b51b7b55c95f469d013cbb9e0840cfa57ba7beed04d9ab678a1",
+    "configs/queues/AutoGLMPhone9BSingle_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.json": "033c0da92f7967d01b040f19d50de31e57b8cf802f200020d86433fb2a8e40cc",
+    "scripts/glm46_complete_shape_component_capacity_v3_actual_one_based_20261119.py": "2a86561bc32852de4dcc04179699dc8609eba4ce3c61217cda92e85ad9909301"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_frontend200_meta_v1_20261120/review.json": "990537b0639ea33433da16ab60bbda40e0578118d1688fadd4934b6c28acc3d3",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_frontend200_meta_v1_20261120/own_original_frontend200.jsonl": "21e7a17a36e7ca4a0a5689c5be4e981704a00cb91b463017f759b2f6fc6e1dd4",
+    "/root/projects/comperror/configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B.yaml": "a004f7d4f8c9bfeb19314f61697a293a7faae06d5f8b406cfab8e5d74fbba010",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_AFS_R_identical_fixed200_no_filter_input_alias_no_NN_20261120/own_fixed200_no_filter_input_alias_proof.json": "bff802d7495c72d0ae34d4a24e78aac41ecd43003fdbcb47feb0c995600c071f",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_own_original_BF16_2048_true3_v2_exact_frontend_path_real_FLOCK_20261120/fresh3/verification_stdout.json": "da99ef8ddab138186eb4368204a6917041f126d3fb03730fe8163352a211c259",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120/own_first200_measurement_approval.json": "dedfc9ef7270f4c81bc02cb244d092ac0794cd030322640f53da5e65aa37a49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120/own_passed3_complete_shape_capacity_review.json": "72438023100b3965f002c69793969d63e9ef3ddbc7acbb87c2df5108ecacfed1"
+  },
+  "historical_source_boundary": "User workbook D is the A100 score reference, not an online AA replay gate. Own AutoGLM-Phone-9B704 BF16 tensors/40text GQA2x128/vision24/151552 head; own HF greedy2048 outer10 serial1, original generic-adapter default enable_thinking=False, ignored by its own unchanged chat template (no injected /nothink or empty think) and exact original GreedyInference answer instruction, own generation EOS151329/151336/151338/151348. Original installed HF SDPA/model math/native40-layer dynamic cache and all full raw values retained. Own original AFS and R task files and all200 actual image bytes/prompt/ref order are independently identical; original filter_empty=True removes zero of all4329, runtime filter_empty=False keeps the same fixed0:199 and satisfies the frozen runner. No pixel/token control or model NN replay. Historical A100 engine/tensor bytes were not captured. No generic mock initializer, package install, borrowed checkpoint/input source/output, changed precision/budget/thinking/stop/scoring.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

@@ -1,0 +1,26 @@
+{
+  "model_ids": [
+    "zai-org/AutoGLM-Phone-9B",
+    "zai-org/AutoGLM-Phone-9B-Multilingual"
+  ],
+  "max_remove_files": 271,
+  "max_remove_bytes": 26607613493,
+  "discovery_SHA256": "4ce49ea46c7c68debe7672d0ccc3ae8c3644420f5159e2efd3552392d73a4594",
+  "foreign_review_SHA256": "b453b960c3c2c96836b585baf2b0686442a0a9a81b6e88e5553c455ae9b2795d",
+  "prior_helper_SHA256": "7ac8773a05cc87aeebd34b748089fd0dde12d8b7ee5530f0b68e3e441501e10b",
+  "canonical_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/state.json": "faed3c6f4d9514f3e6cfabf1328a51d1f830f637185e0adc8fa75352c112d4f3",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/registry.json": "e5d4143a1a30bc8a395934f7773c64a7421ca28d6a6bd6c17bdba10546b89f29",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/PAUSE": "bea02604ea552f7b341e0760c698801f048f58ab41d30b5589cae99bc699ea49",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/POLICY.json": "a0806e53a4a085761e3347e6eaea82a395db81014324d86be4786ee575fa8f87",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_PUBLICATION_POLICY.json": "acd9a8cd1bf5a555f3a13e79f8c675c18dafd2484cc64fa0d91107b125ea9128",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_POLICY.json": "66857aae2ab0836a7639a09d7d09a32db01808b3184fb052f027da4ab6b88ac7",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_EVIDENCE_RETENTION_LEDGER.json": "06f870990721bdb4e58a409f842980b7b4578eddc23367263d041c052f8e43ce",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_ALIGNMENT_LOCAL_WORKBOOK.json": "c1c867fbfdf2637c03757612c2c49a43fefefa5be6886b30d979198db6bcf0cb",
+    "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81"
+  },
+  "ledger_before_SHA256": "06f870990721bdb4e58a409f842980b7b4578eddc23367263d041c052f8e43ce",
+  "verified183_full_target_audit": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/AutoGLMPhone9BSingle_original_BF16_2048_LZMA_verified183_blank_G_publication_20261120/full_target_dual_publication_audit.json",
+  "verified183_full_target_audit_SHA256": "2fe185cc1b6926e8e45adca502e4793168bea2261112b60f00738c5ed6150114",
+  "user_authorization": "用户明示：再检查服务器上已验收的中间矩阵和临时文件，完整报告、源码、配置、日志和必要数值例证保留，不再需要的清理掉，腾够空间马上串行继续跑。仅原已完整独验并正式交付两款的正确非例证；全部错误/invalid/截断/小样本/未验/完整首中末组及foreign/FD依赖保留。"
+}

@@ -1,0 +1,101 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.1V-9B-Thinking",
+  "source_tensor_count": 704,
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 5303216560,
+      "SHA256": "56708b3541e1f69c9843ae19eaa23720c5cee9f3d0c9ed101c3b9b43b40974a1"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 5303216696,
+      "SHA256": "7c353db4141fdd9a0c6b990d50040a28812bb56dc91c42154abc5a4ee81fe698"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 5303216696,
+      "SHA256": "f3fab833fe4cad6cbce924908e1a58320217295417bbf87aa810fff6e4b634a4"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 4675994152,
+      "SHA256": "b3c7723fac7de60f2b67e4f84f2d8648d7431ff32c95c630dcc17790091005eb"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "847603d3ed14387a2b45c197f8d07ddee0f9938051549c727cbc894facfea78b",
+    "config.json": "141e15cb74afaca3d870970ed405c4bab0f93a3fa46cfab70782b91f5dd526f4",
+    "generation_config.json": "e9527bdf03e7d4971f9cacdbcf81a5fe04b10b64fc478bba6bf389cc0e597b72",
+    "model.safetensors.index.json": "d1a77d5ca0b8fa2cb57e097e1d4087bbfcb86e85778ce59e17e5e2610bc6dd86",
+    "preprocessor_config.json": "d71bebc1307f2d1e38e87563b50faa78c72fd2e4093b5c69c756f12c444fec6a",
+    "tokenizer.json": "76ebeac0d8bd7879ead7b43c16b44981f277e47225de2bd7de9ae1a6cc664a8c",
+    "tokenizer_config.json": "468e400c12d54be1b1b0e008fa5ee9382c8c9ef29a5dd0b5093421ef261935ed",
+    "video_preprocessor_config.json": "85d5ca37836f20a5edd11800e4380e731612946f8c7b70fba4d8f532fe752932"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_source_readiness_v1_20261120/own704_active_source_manifest.json",
+  "own_source_manifest_SHA256": "93f2a0a8c6c72b168352b83b3ad9e7d49c019d0d3a211d2d20b5221e65983438",
+  "own_unused_MTP_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_source_readiness_v1_20261120/own_unused_source_manifest.json",
+  "own_unused_MTP_source_manifest_SHA256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_source_readiness_v1_20261120/own_frontend200_existing_proof_field_binding_no_replay.json",
+  "own_frontend200_SHA256": "f4a5969d1368b30dddec5ce72fd64b2027607962df72530af074654c4dc16c5a",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_stop_ids": [
+    151329,
+    151336,
+    151338,
+    151348
+  ],
+  "original_BF16_own_template8192_outer10_inner1_Accuracy_protocol_preserved": true,
+  "original_answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>.",
+  "original_no_thinking_override_adapter_SHA256": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+  "original_native_input_library_source_SHA256": {
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/glm4v/processing_glm4v.py": "89945d9b6d43701cf60e43b3278fd11f0533e4d0f7627527526bf98c66ac3aae",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/glm4v/image_processing_glm4v.py": "bf393cb71c62d53fa629018ce890ae0b0fb9da1451c9657ac8c5b6927bc9da9f",
+    "/vllm-workspace/vllm/vllm/renderers/hf.py": "9cec4d72b0a7464138216791499a2de25adb8edc0fe9a1cd5bd2d6a837ee384c",
+    "/vllm-workspace/vllm/vllm/v1/engine/input_processor.py": "c8abd8e4e14d99929d45a7ff3b2a74898269c5e2a7fa30b826623ee85e4ce813",
+    "/vllm-workspace/vllm/vllm/multimodal/media/image.py": "44004ef3f49ccc12235d55c2a5f22f91cd8014ef9ed53bab7d9065523423f33e",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/glm4v/modeling_glm4v.py": "0f2a156edaa0503d70ade6a6c3f019a95230823fc1a52e2e01a20af4f8ec747d",
+    "/usr/local/python3.12.16/lib/python3.12/site-packages/transformers/models/glm4v/configuration_glm4v.py": "e298106ab6c2c3e435b194c702474bf51e32179fc9a2fc10ace87ed17d28af78"
+  },
+  "workbook_D_reference_authorized": true,
+  "current_A100_D_values": {
+    "server": "0.7500",
+    "local": "0.7500",
+    "preserved_original": "0.75"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "65eb41b210b31b61630c6706e02b36e7a91afe8fe4d9415daabd8b3600513d81",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v2_actual_media.py": "4fd3cee6c2b348e044cb81babc12430a0b4d960620fd8e1686a1b70d6aa779a0",
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend_v2_actual_media.py": "142d19b1566ea8c77f15a7e756d31c258c6db2a27ee22bbe2ba877de9a4205bc",
+    "universal_eval/algorithm/glm41thinking_own_original_VLLM_BF16_8192_20261120_MC.py": "7602abe28485a8426d09a656af92286c6860873de0583cd14e927e6ad117a520",
+    "scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v2_actual_media_20261120.py": "48db53f3f64f7149eb11cdcb1278b8136c17c9a7d432fc82b7c914fb027b1203",
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_true3_v1_20261120.py": "396392722713a5ea3ec8c1b313e717a6e30aa98677a60aaa2309aed79d8123ed",
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v3_actual_media_wrapper_20261120.py": "8d693814427e23445339cc532a241ea2c873a06e248d4ce5dc1ad02ee16c9495",
+    "universal_eval/model/reference_sources/glm41thinking_owned_tokenizer_config_20261120.py": "aa68e3bd6fada59e4e9829e49d67057a3f15e7f9a7ba80386265af01250ef5f7",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_values_20261118.py": "a858f771182c1e8240e8e94d158d6089a4c7ee421b7cae94ab4301c9fb2be485",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "scripts/verify_Gemma3n_E4B_actual_original_HighTen_BF16_native_v4_full_empty_raw_schema_20261113.py": "47daa266bd08890d6ce847ded94473bf6755192ad9e15bff3351218390daaa5e",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_frontend200_meta_v3_actual_media_wrapper_20261120/review.json": "7a6fa1fb057780f1bbf8556bf4ddd5771d8f6924bc80bdbfe64d24714953965d",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_frontend200_meta_v3_actual_media_wrapper_20261120/own_original_frontend200.jsonl": "b2981fe6f94d6f39a2022e4ad8c029ddbb1efdb147ba27126fc0b2c8eb29a63c",
+    "/root/projects/comperror/configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking.yaml": "1d45b618d8f46d022ec0577ef460fa4c68346c08aadd35d225074ee7b5c00dbf",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_frontend200_meta_v3_actual_media_wrapper_20261120/own_whole_source_files.json": "288cae4c2e3ec68cda1fc2f7cabfb98df9e040e5a3ec3337ab186e833f6d589a",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Thinking_own_original_VLLM_BF16_8192_native_frontend200_meta_v3_actual_media_wrapper_20261120/own_meta_only_parameter_layout.json": "7c78accb9797e22ecd3c557cfbae8e333d34d7b5ccb91cd8676fc9e37653327a"
+  },
+  "historical_source_boundary": "User-confirmed actual A100 workbook D, not an online replay gate. Own GLM-4.1V-9B-Thinking four SF/704 BF16 tensors, own vision24/text40/GQA2x128/full151552 head. Saved original VLLM Greedy8192/outer10 serial1/TP1/.9, original image-placeholder removal and white-background ImageMediaIO/native chat default add_generation_prompt, no explicit thinking override, own unchanged template and EOS151329/151336/151338/151348. Current real installed native InputProcessor/renderer and all200 independent full own pixels/Rust own-config tokens prove all actual model BF16 input bytes equal. Own raw tokenizer.json plus its own nine added_tokens_decoder items preserve all IDs; no borrowed vocabulary. Native HF SDPA execution and full40 physical KV/3D positions/head values audited; historical A100 engine/tensor bytes were not captured. Original AFS/R files, all4329 prompt-ref order and all200 image bytes identical; original filter_empty=True removes zero, runtimeFalse preserves exactly fixed0:199. No package installation, generic decoder stubs, borrowed checkpoint/input/output, precision/budget/cache/stop/math/scoring/thinking tuning.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648
+}

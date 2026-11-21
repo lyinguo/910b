@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "user_instruction": "最好是将，没有用的中间结果定期进行清理，适配的代码，和我的需要的结果肯定是必须的！其他的这个相关项目的资料，都不重要！",
+  "scope": "/root/projects/comperror/workspace/diagnostics/model_runs",
+  "preserve": [
+    "adaptation source and configuration",
+    "complete eval reports and every sample input/output/raw/ref/error/token",
+    "logs",
+    "all required full numerical examples",
+    "original model weights and task inputs",
+    "all still-needed failed or unverified diagnosis"
+  ],
+  "max_concurrent_models": 1,
+  "scheduled_check_minutes": 300,
+  "opportunity_check_after_complete_acceptance_and_lock_release": true,
+  "physical_deduplication_keeps_all_original_paths_complete_bytes_and_SHA": true,
+  "storage_method": "Same-volume hard links only after complete SHA256 plus full byte comparison; every original path remains a regular complete file",
+  "atomic_replace_single_link_duplicate_inodes_only": true,
+  "requires_original_global_EX_and_no_model_NN_or_NF": true,
+  "active_FD_or_mode_owner_mismatch_skip": true,
+  "no_runtime_model_KV_prefix_cache_math_dtype_or_budget_change": true,
+  "no_new_numerical_pruning_or_original_retention_ledger_change": true,
+  "all_shared_completed_archives_are_immutable_write_new_private_paths_only": true,
+  "unused_diagnostic_copy_cleanup_requires_original_values_preserved_and_no_real_consumer": true,
+  "proactive_free_target_bytes": 171798691840,
+  "discovery_source": "scripts/maintenance/discover_exact_byte_identical_completed_project_NPZ_storage_reusable_v2_20261120.py",
+  "application_source": "scripts/maintenance/apply_exact_byte_identical_project_matrix_physical_storage_20261120.py",
+  "exact_source_SHA256": {
+    "scripts/maintenance/discover_exact_byte_identical_completed_project_NPZ_storage_reusable_v2_20261120.py": "00ed53b23f3366b606b620eaf072b4fb8aeeec272835cd8156da658df3ff8e3e",
+    "scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_20261120.py": "3af5115b22f73e57cb4931584a7e49f4589574cf86cc0785db435a44fca7cde7",
+    "scripts/maintenance/apply_exact_byte_identical_project_matrix_physical_storage_20261120.py": "8ef3c7495a26f232ac67a41cd919310c6585e64cf81ab9317c3d2bf5851e73e6"
+  },
+  "do_not_generate_extra_unused_disk_copies_or_disable_original_model_runtime_KV_cache": true
+}

@@ -11746,6 +11746,1043 @@
       "role": "runtime_code",
       "reason": "Actual local Python dependency of scripts/diagnostic_glm46_completed3_full_bitplane_exact_sharing_next_serial_20261119.py; Explicit SHA-pinned primary inventory pending_after_daily_20261119_verified182_GLM_AutoMulti_dual_Single_inputs_true3_recovery_all_primary_v47.json",
       "initial_SHA256": "41c596979943c465301dc67501f6f31a13471280755293bc453b6b3fd9be76ff"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-LZMA-approved-first200-serial-v1-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8b53a9ae3fdc91cda34c9afb37c3f315bc6e0c700a5877e618e77c575a5ffbfb"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-LZMA-approved-first200-serial-v1-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "42b8da84cd6801efd704222262344316176150dfe51804e099b80b251ae5ad6d"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-LZMA-approved-first200-serial-v1-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a5e4c461387df8d2b5dd2f67f75ced4b94f1ecab90755246926c92a28b4e5787"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-LZMA-approved-first200-serial-v1-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4e32fa97958da627e1c7f2f97aa8b28182bce5b33c0f19e67457dd1076848df1"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-native-v1-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5577c2b67aadb93f00154f2fc5d2d20e285af3cf1b796b1e9cbf4a7914d2fa69"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-native-v1-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "843811b9739a25da5456270ea37eac427953a4fef1a5dd2236bd70a3e57a5af4"
+    },
+    "configs/MllamaForConditionalGeneration/meta-llama--Llama-3.2-11B-Vision-Instruct-own-original-BF16-SDPA-2048-serial-v1-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "fd82ba45766709018c8fb26d56ef67929ab92af559878e9ae6c852d7ec937480"
+    },
+    "configs/MllamaForConditionalGeneration/meta-llama--Llama-3.2-11B-Vision-Instruct-own-original-BF16-SDPA-2048-serial-v1-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "74c5b68e6d64b8d1cbe17a2bc009a421aeea9602fdfe3629e4bc0516f03207e1"
+    },
+    "configs/MllamaForConditionalGeneration/meta-llama--Llama-3.2-11B-Vision-Instruct-own-original-SDPA-BF16-2048-complete-shaped-LZMA-v3-approved-first200-serial-20261120-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "bbae24f9c9304a674f5185e45d9970388a9031bb68f44f6541e4576740d264a8"
+    },
+    "configs/MllamaForConditionalGeneration/meta-llama--Llama-3.2-11B-Vision-Instruct-own-original-SDPA-BF16-2048-complete-shaped-LZMA-v3-approved-first200-serial-20261120.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4a7935a3b4b195cea63720e641e20bae33e0dafc5c9ba079b87b18eba48886d1"
+    },
+    "configs/OvisU1/AIDC-AI--Ovis-U1-3B-own-original-BF16-512-complete-LZMA-approved-first200-serial-v2-exact23-20261121-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3e2a0645df3d7f5521d3ce2fcb590d63b8f5e9c4e57dec9fdad78acfefac4dc1"
+    },
+    "configs/OvisU1/AIDC-AI--Ovis-U1-3B-own-original-BF16-512-complete-LZMA-approved-first200-serial-v2-exact23-20261121.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f2634387dd0667af58e57790cee7c5d5f8df9be062f490a3f329f8995808fd33"
+    },
+    "configs/maintenance/batch_910b_immediate_disk_recovery_cleanup_v3_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/watch_batch_910b_immediate_disk_recovery_cleanup_v1_20261120.py, scripts/maintenance/build_stage_immediate_disk_recovery_cleanup_watch_v3_20261120.py, scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_v3_immediate_budget_20261120.py",
+      "initial_SHA256": "0bf674ae2fc971e34a020a1fbc8d724d72fe53645e44a8441e3e14557d7e6f29"
+    },
+    "configs/maintenance/batch_910b_periodic_exact_storage_retention_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/build_stage_periodic_exact_storage_policy_consumer_v2_20261120.py, scripts/maintenance/build_stage_reviewed_exact_matrix_physical_storage_plan_20261120.py",
+      "initial_SHA256": "8975f942be1c7734be0e2a250ba27f82b8fe2df43b09434983f4d332beada068"
+    },
+    "configs/maintenance/batch_910b_periodic_exact_storage_retention_v2_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/build_stage_periodic_exact_storage_policy_consumer_v2_20261120.py, scripts/maintenance/build_stage_immediate_disk_recovery_cleanup_watch_v3_20261120.py, scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_20261120.py",
+      "initial_SHA256": "ec4c4ab2ff15505f297d2029c6016aba4a7b8c49a81c1135f635b79453cafe27"
+    },
+    "configs/protocols/autoglm_phone9b_single_own_original_BF16_2048_LZMA_approved_first200_serial_v1_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Glm4vForConditionalGeneration/zai-org--AutoGLM-Phone-9B-single-own-original-BF16-2048-LZMA-approved-first200-serial-v1-20261120.yaml, scripts/continue_AutoGLMPhone9B_single_own_inputs_true3_capacity_fresh3_fixed200_after182_serial_20261120.py, scripts/continue_AutoGLMPhone9B_single_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.py, scripts/code_publication_windows/prepare_AutoGLMPhone9B_single_own_full_sources_after182_serial_20261120.py, scripts/windows_910b_20261120/build_GLM41Thinking_own_serial_true3_capacity_fresh3_fixed200_20261120.py",
+      "initial_SHA256": "1f59af918738d54fefd0813c1cb892cc86b28f57b864d9b8fc82b9aa8784c50f"
+    },
+    "configs/protocols/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v1.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-native-v1-20261120.yaml, scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_true3_v1_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-native-v1-20261120-smoke.yaml",
+      "initial_SHA256": "334fefbb165e8876e473ac5ab04d435afe6a8fdbcc7c504daa0395d213cdd00f"
+    },
+    "configs/protocols/glm41thinking_own_original_VLLM_BF16_8192_LZMA_approved_first200_serial_v1_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-LZMA-approved-first200-serial-v1-20261120.yaml, scripts/windows_910b_20261120/build_GLM41Thinking_own_serial_true3_capacity_fresh3_fixed200_20261120.py, scripts/continue_GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Thinking-own-original-VLLM-BF16-8192-LZMA-approved-first200-serial-v1-20261120-smoke.yaml",
+      "initial_SHA256": "6431b09ef291bb304fddda076e0abb75034557a28711027a58afa1cb6da2865b"
+    },
+    "configs/protocols/ovisu1_completed_storage_fullNF_passed_exact23_approved_first200_serial_v2_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/OvisU1/AIDC-AI--Ovis-U1-3B-own-original-BF16-512-complete-LZMA-approved-first200-serial-v2-exact23-20261121-smoke.yaml, configs/OvisU1/AIDC-AI--Ovis-U1-3B-own-original-BF16-512-complete-LZMA-approved-first200-serial-v2-exact23-20261121.yaml, scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py",
+      "initial_SHA256": "7b85a8df5f266690605a2b5b5820ad6fee42e656f51188bf32070598afebd86f"
+    },
+    "configs/publication/GLM41Thinking_same_formal200_reviewed_dual_publication_original_lock_v2_actual_runner_directory_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_control/build_GLM41_publication_reservation_stage_20261120.py",
+      "initial_SHA256": "4f8d1c51ffd5aef8c944aa5dbf79db302979870b8213708651f7a745297cb2a2"
+    },
+    "configs/queues/AutoGLMPhone9BSingle_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_close_verified182_Day20_GLM154_Single_serial_sources_v48_20261120.py, scripts/continue_AutoGLMPhone9B_single_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.py",
+      "initial_SHA256": "033c0da92f7967d01b040f19d50de31e57b8cf802f200020d86433fb2a8e40cc"
+    },
+    "configs/queues/GLM41Thinking_completed_true3_verified183_exact271_real_capacity_serial_v2_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_910b_20261120/build_recover_verified183_Meta_pending_exact_root_runpy_v2_20261120.py, scripts/windows_910b_20261120/build_official_910b_verified183_Meta_NF3_capacity_exact271_prompt_20261120.py, scripts/continue_GLM41Thinking_completed_true3_after_verified183_exact271_retention_wait_real_capacity_serial_v2_20261120.py, scripts/windows_910b_20261120/build_stage_GLM41Thinking_completed3_real_capacity_serial_v2_20261120.py",
+      "initial_SHA256": "d59009b956d56604c86cb237040efd24745ca4a19de514e449a0ec01b12955a4"
+    },
+    "configs/queues/GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_910b_20261120/build_GLM41Thinking_serial_controller_exact_stage_launch_20261120.py, scripts/windows_910b_20261120/build_stage_compact_verified183_current_source_archive_20261120.py, scripts/windows_910b_20261120/build_GLM41Thinking_own_serial_true3_capacity_fresh3_fixed200_20261120.py, scripts/continue_GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py",
+      "initial_SHA256": "bb772353f2d4e765b23de21ca360b3edb3f800f325b253dfd23c3397ca30f8d4"
+    },
+    "configs/queues/MetaMllama_completed200_original_invalid_empty_NF4_after_Ovis_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_after_Ovis_serial_20261121.py",
+      "initial_SHA256": "b370c5bfecb1219f6fce67a0a9417059ef2999d31b89f8c28d26908c9f9f65f9"
+    },
+    "configs/queues/MetaMllama_completed200_original_invalid_empty_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.py",
+      "initial_SHA256": "17bc6b039ef6e3716c8512ab41735a26d949a6d6ede14c921a81f341c72d61eb"
+    },
+    "configs/queues/MetaMllama_completed_genuine3_after_GLM41_verified184_dual_release_shaped_storage_v4_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_MetaMllama_completed_genuine3_after_GLM41_verified184_dual_release_shaped_storage_v4_serial_20261120.py, scripts/windows_control/build_MetaMllama_after_GLM41_verified184_serial_v4_20261120.py, scripts/windows_control/build_stage_GLM41_publication_and_next_Meta_sources_20261120.py",
+      "initial_SHA256": "4c8389fdab0be0828c9de62fd845a225ac85bff25462325d251bc503e3685649"
+    },
+    "configs/queues/MetaMllama_completed_genuine3_formal_NF2_exact_instruction_no_NN_replay_capacity_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_910b_20261120/build_stage_meta_mllama_formal_NF2_same_genuine3_no_NN_replay_20261120.py, scripts/continue_meta_mllama_completed_genuine3_formal_NF2_exact_instruction_no_NN_replay_20261120.py, scripts/windows_910b_20261120/build_stage_verified183_Meta_full_source_pending_v53_20261120.py",
+      "initial_SHA256": "e02cee40b48acf78040b44fa5b960bc68c07c81e073fa0d72c4afe718560f045"
+    },
+    "configs/queues/MetaMllama_completed_genuine3_formal_NF3_exact_instruction_no_NN_replay_capacity_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_meta_mllama_completed_genuine3_formal_NF3_exact_instruction_no_NN_replay_20261120.py, scripts/windows_910b_20261120/build_stage_meta_mllama_formal_NF3_same_genuine3_no_NN_replay_20261120.py, scripts/windows_910b_20261120/build_stage_verified183_Meta_full_source_pending_v53_20261120.py",
+      "initial_SHA256": "debcc7c62e8a6c30bf8ef57250e27867ad932e7adb28deaefe43d370de1de47f"
+    },
+    "configs/queues/MetaMllama_completed_genuine3_shaped_storage_capacity_wait_v3_first200_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_control/build_MetaMllama_after_GLM41_verified184_serial_v4_20261120.py, scripts/continue_MetaMllama_completed_genuine3_shaped_storage_capacity_wait_v3_first200_serial_20261120.py, scripts/maintenance/build_MetaMllama_shaped_storage_completed3_capacity_wait_v3_20261120.py",
+      "initial_SHA256": "27c5a7fc87b23cb6e500e71056456d69659edb57d226006ed1495138fbad2473"
+    },
+    "configs/queues/MetaMllama_own_SDPA2048_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/windows_910b_20261120/build_stage_MetaMllama_own_SDPA2048_serial_controller_20261120.py, scripts/continue_meta_mllama_own_SDPA2048_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py",
+      "initial_SHA256": "5e4a1cdd0657df88ca037ac0b6a18a5044eeec2e0bc2a096b7c6a3b3a2aee7e8"
+    },
+    "configs/queues/OvisU1_completed3_existing_standard_LZMA_after_Meta_serial_v1_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py",
+      "initial_SHA256": "737bfe7f991e391ff19d2df9e48961492d0b09222e0c8fad2e1e3e775da402f8"
+    },
+    "configs/queues/OvisU1_completed_storage_fullNF_passed_exact_GLM41_23_serial_v2_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py",
+      "initial_SHA256": "9466d07653f6a20ed987253cc3939e090058e6c47f303cf23d996656f4afc04d"
+    },
+    "configs/queues/after_AutoGLMSingle_actual_fixed200_conditional_dual_then_original_resources_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_close_official_verified182_Single_stage_bound_event_waiter_all_sources_v49_20261120.py, scripts/continue_after_AutoGLMSingle_actual_fixed200_outcome_dual_if_qualified_then_original_resources_serial_20261120.py",
+      "initial_SHA256": "be12c82ecf57752beb1f0492a65604d223b19fd259eda1a5a027a48f4dfabc3d"
+    },
+    "configs/retention/verified182_GLM_accepted_correct_nonexamples_continue_Single_serial_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_close_verified182_Day20_GLM154_Single_serial_sources_v48_20261120.py, scripts/maintenance/retain_verified182_GLM_accepted_correct_nonexamples_continue_Single_serial_20261120.py",
+      "initial_SHA256": "a97ed7dbf6594d786c3d1dbbb5cead97274312172483198239f3c1321e8c8586"
+    },
+    "configs/retention/verified183_AutoGLM_two_current_accepted_correct_nonexamples_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/retain_verified183_AutoGLM_two_current_accepted_correct_nonexamples_20261120.py, scripts/windows_910b_20261120/build_stage_verified183_exact271_late_closing_20261120.py",
+      "initial_SHA256": "c430086265614c06257fc00d0aabd0e4e551ae28d769d4a0b0b3cbdc39e3ca8c"
+    },
+    "configs/retention/verified183_GLM41_full_numeric_gap_correct_nonexamples_Ovis_capacity_20261121.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/retain_verified183_GLM41_full_numeric_gap_correct_nonexamples_Ovis_capacity_20261121.py",
+      "initial_SHA256": "a0a1e2c725e0e0f43de1a5736ae6594304b50b303280da62d7c3a1f40f459bed"
+    },
+    "scripts/code_publication_windows/apply_exact_reviewed_verified182_GLM_correct_nonexample_retention_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "1a74018ac13e245c579ee058930b70127f2a5c25b19ece8a96c04aa548c70821"
+    },
+    "scripts/code_publication_windows/build_close_official_verified182_Single_stage_bound_event_waiter_all_sources_v49_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "41f321221f07f7cdf0a0e42755e7ee36a0790b2f2ea419bbb469ad76f7ca29ea"
+    },
+    "scripts/code_publication_windows/build_close_verified182_Day20_GLM154_Single_serial_sources_v48_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "07201c3bb04cc9abea78030774d22a32f0f8501016270adf8973b05e09fd636b"
+    },
+    "scripts/code_publication_windows/build_daily20_verified_push_receipt_and_R_policy_CAS_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8d6c895d885824db2d620d3e464758c823a0954b280af1c868096636874cf565"
+    },
+    "scripts/code_publication_windows/build_verify_daily20_R_source_CAS_before_publish_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2015b035d7ed485c6230a13d1ae957bc5a494e401f6f1d8512823b63845cc6ee"
+    },
+    "scripts/code_publication_windows/invoke_daily_code_publisher_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6dd9887ff4cfd8f5652dd369cb6378250adb478e028244970e25e53e0cfd8a88"
+    },
+    "scripts/code_publication_windows/prepare_daily20_actual_plan_and_full_review_manifest_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a641cb95bd32268ecab0446ab897f3d87afb593a0c39e6df7884f7e0b58e1d0b"
+    },
+    "scripts/code_publication_windows/prepare_daily20_qualified182_source_snapshot_v2_and_full_diff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3da2302b4da6abb4c72eafd999202876cb3ae60c342100d3a5b6b441b9a4b71a"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_bound_stage_no_stale_fresh3_report_v5_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "56e6437b127a8339d4d68be6168a5f6f70071291826d36cb83b8b8205d18ee82"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_current_bound_report_committed_progress_v4_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8e3d2a6d9388f51eb2c3099d310ab6ef9e5a015d252a54f01ced1432f86e1ef2"
+    },
+    "scripts/code_publication_windows/read_AutoGLMPhone9BSingle_verified154_retention_fresh3_fixed200_serial_v3_actual_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7ac85423f6ea36a2043cd2e754da2226a4834a979a6e4b6173392f296ba3136d"
+    },
+    "scripts/code_publication_windows/read_GLM41VBase_own_original_probability_adapter_assets_headers_next_serial_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5838ea3efe7c34503f7244791c4040dca14acb3edf8d0330ce596f9d83ca2b07"
+    },
+    "scripts/code_publication_windows/read_exact_verified182_GLM_correct_nonexample_retention_plan_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5a4831c22024e53e27a4728f2b6d228566e559909324efa19c73991e196fc70b"
+    },
+    "scripts/code_publication_windows/read_verified182_complete_publication_retention_source_schema_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3840ec690db3eba7fcf8666465fb0998a003275c48db19a5c857dbe0120e4986"
+    },
+    "scripts/code_publication_windows/read_verified182_new_accepted_GLM_AutoMulti_retention_inventory_only_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2a114ad1771cdddfaf36de0e6cc0236f7f853e356f91d14529d33f08265a3aa1"
+    },
+    "scripts/code_publication_windows/read_verified182_next_own_weight_pending_GLM_family_metadata_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ff9a902f0d69ac279a4d819fa2d85ea9aa12b6a25825d163f19f4d43862fc02f"
+    },
+    "scripts/continue_AutoGLMPhone9B_single_completed_true3_verified182_GLM_retention_first200_serial_v3_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8257c8bb24545b51b7b55c95f469d013cbb9e0840cfa57ba7beed04d9ab678a1"
+    },
+    "scripts/continue_GLM41Thinking_completed_true3_after_verified183_exact271_retention_wait_real_capacity_serial_v2_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "bcea36fa6ec31541585dc0cfbff2bac8036da998849595446275134bce16a8aa"
+    },
+    "scripts/continue_GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f7ee759f0d973e1dd356c7ec47614a11b27bc9fa1b2d28ae0b44c9ec6abf55a2"
+    },
+    "scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_after_Ovis_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "165e1107b51b2787d37be8d45442f6483e06ca8bc54f6a65674ad49cf5995436"
+    },
+    "scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "dea42fa3ecd081a2b8ff78e27a659267e0151a2242e18180de2393ca7fc5fb39"
+    },
+    "scripts/continue_MetaMllama_completed_genuine3_after_GLM41_verified184_dual_release_shaped_storage_v4_serial_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "c739ccde7ad7b1a2b4d51d7f49b2b55fa9056b70124405ebda39b2beb524769d"
+    },
+    "scripts/continue_MetaMllama_completed_genuine3_shaped_storage_capacity_wait_v3_first200_serial_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "e14a7f393ee6b357862925fc2abc9673618cd9285e52576d3e2469e707059391"
+    },
+    "scripts/continue_OvisU1_completed_genuine3_existing_full_LZMA_after_Meta_serial_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "250d1fe703218639d543ce1c60e2620e96b204eacf715e639c6fc83cfee2a644"
+    },
+    "scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3b8d1e68785c1e6ddec94eadd0a33b99ddb630aebbe1e12083df275aebbb6604"
+    },
+    "scripts/continue_after_AutoGLMSingle_actual_fixed200_outcome_dual_if_qualified_then_original_resources_serial_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "08d3d74f1d9108010e1856442fa69d34df9f5ac29d128dbcb5dd539b0b2f99c6"
+    },
+    "scripts/continue_meta_mllama_completed_genuine3_formal_NF2_exact_instruction_no_NN_replay_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4bef249b083b767afeee652ebbe2f5977767233eaf1b036d9a0afb09103df553"
+    },
+    "scripts/continue_meta_mllama_completed_genuine3_formal_NF3_exact_instruction_no_NN_replay_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ca5123e8da5b22524db773f5fd8cbc96dfccb8a69cf72c9a14e097c01a30fd73"
+    },
+    "scripts/continue_meta_mllama_own_SDPA2048_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_after_Ovis_serial_20261121.py; Actual local Python dependency of scripts/continue_MetaMllama_completed200_original_empty_invalid_NF4_v2_actual_file_SHA_after_Ovis_serial_20261121.py; Actual local Python dependency of scripts/continue_MetaMllama_completed_genuine3_after_GLM41_verified184_dual_release_shaped_storage_v4_serial_20261120.py; Actual local Python dependency of scripts/continue_MetaMllama_completed_genuine3_shaped_storage_capacity_wait_v3_first200_serial_20261120.py; Actual local Python dependency of scripts/continue_OvisU1_completed_genuine3_existing_full_LZMA_after_Meta_serial_20261121.py; Actual local Python dependency of scripts/continue_OvisU1_completed_storage_after_exact_GLM41_23_serial_v2_20261121.py; Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_natural_order_byteplanes_LZMA_v2_20261120.py; Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_shaped_raw_Fortran_LZMA_capacity_20261120.py; Actual local Python dependency of scripts/maintenance/apply_exact_byte_identical_project_matrix_physical_storage_20261120.py; Actual local Python dependency of scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_20261120.py; Actual local Python dependency of scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_v3_immediate_budget_20261120.py; Actual local Python dependency of scripts/maintenance/watch_batch_910b_immediate_disk_recovery_cleanup_v1_20261120.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "abac1235f502449878deb1a19dab3e0e5e06e82653505afbe606ad34ff7cc7b2"
+    },
+    "scripts/diagnose_MetaMllama_completed_true3_complete_natural_order_byteplanes_LZMA_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "64724bc8fd5e96ea6be8123ac1c89c5a1c015c87733989cfd3eb69f4fce13684"
+    },
+    "scripts/diagnose_MetaMllama_completed_true3_complete_shaped_raw_Fortran_LZMA_capacity_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9c8fa5226431d32d5f61398dd8a96794ecb077ffb06778953a9a608a6add73d6"
+    },
+    "scripts/maintenance/append_and_close_GLM41_model200_baselinegap_pending_fullNF_next_original_Meta_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "07f2dff19ae1a83f5fbad4203bd2d824d63d893314a75ea65ed75e26d7966c00"
+    },
+    "scripts/maintenance/append_and_close_GLM41_same200_reviewed_publication_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "0cfb9ffca0b66d13a88b558884bce8e928dc6a7d55a03a010e35c2fad9d7c3bd"
+    },
+    "scripts/maintenance/append_completed_GLM41_full200_NF0_Meta_actual_serial_source_and_handoff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5dd1938120068ee924f90d935f47298431964007cdd38888d727894aee11731b"
+    },
+    "scripts/maintenance/append_verified183_Meta_actual_full_source_pending_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a955fe0ac51f2ddbbb716902c2c8796e2609910a8c025d0ef9e930db18ce51c5"
+    },
+    "scripts/maintenance/append_verified183_Meta_actual_full_source_pending_v2_exact_root_runpy_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2b54057dd50e14580a0c05adc12622e6c973b13a02c22da7f376b38d17c24df7"
+    },
+    "scripts/maintenance/apply_exact_byte_identical_project_matrix_physical_storage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8ef3c7495a26f232ac67a41cd919310c6585e64cf81ab9317c3d2bf5851e73e6"
+    },
+    "scripts/maintenance/build_MetaMllama_complete_natural_order_byteplanes_storage_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b1f8738157eb4c994d9a0ad61593352c57e4cd83254e7479c4623eb46386f0a9"
+    },
+    "scripts/maintenance/build_MetaMllama_shaped_storage_completed3_capacity_wait_v3_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9b5afc317cf4584910a9df8ed108810f604fbdd52a8561d01efda59a523552eb"
+    },
+    "scripts/maintenance/build_stage_exact_NPZ_duplicate_storage_discovery_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "657a1ccafb955d167da54312c95ccb25cfb9e6c4f1e454cccb843a0439aec939"
+    },
+    "scripts/maintenance/build_stage_immediate_disk_recovery_cleanup_watch_v3_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b93a76c095c4e27d15c6d655794f21686a08643fa48dec8dcaf8ad089023e00e"
+    },
+    "scripts/maintenance/build_stage_periodic_exact_storage_policy_consumer_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "88e938f8fb06d84ecdde600fee9fa4e07b57948f130bf3d610b0b2a7580abe3b"
+    },
+    "scripts/maintenance/build_stage_reviewed_exact_matrix_physical_storage_plan_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "477ed14938f8c5312d965daa0918b4703ed78a5ed5360ed8bb40332a31fd925e"
+    },
+    "scripts/maintenance/close_alignment_handoff_exact_verified182_Day20_policy_GLM154_ledger_current_v13_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "302abcf32dc115a6dcb3362b2e7f698867fc26411490d8d0589aca39553257cf"
+    },
+    "scripts/maintenance/close_immediate_disk_recovery_and_GLM41_formal200_handoff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "037824171bd97bce3e4913ad8b2aa62e042f35d3a88a2bc6b9d557040c77e8ec"
+    },
+    "scripts/maintenance/close_user_periodic_storage_cleanup_GLM41_live_handoff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4da0d775f742df761f053b6d55b9b6c6d4df91b37b466d0ac10c8d7ec8e7054c"
+    },
+    "scripts/maintenance/close_verified183_Meta_NF4_preNN_pin_recovery_Ovis_current_Day21_sources_v2_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "17d999e1ce531a2751f2b793f7ba305c3f97671432c26da7b6f429669d437f79"
+    },
+    "scripts/maintenance/close_verified183_Meta_complete_storage_capacity_wait_actual_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "35a5663027409a669bf43b2836a7a39f6bfabcd8087484586d6ca57c3ab18ea8"
+    },
+    "scripts/maintenance/close_verified183_Meta_failed_NF_exact23_Ovis_serial_sources_Day21_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2685e656aa2203231826a386629a69a4789202a33bcd751c2298325300a8dcd6"
+    },
+    "scripts/maintenance/close_verified183_exact271_retention_Meta_frontend_and_official_readback_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "d1457bb591bd32c75a9adea3f9dd1366d7d43deb60a0b8ebd8404d4720d7f40a"
+    },
+    "scripts/maintenance/create_compact_verified183_GLM41Thinking_current_handoff_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "18cc06f6a5fcd03486ee3d5fe61e32913dbdc6f9e753410d4bd8061fae681690"
+    },
+    "scripts/maintenance/discover_exact_byte_identical_completed_project_NPZ_storage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "aed841318782a7f435362ba1b19deb48781d0ecbc9a7896bed3e553f655ee020"
+    },
+    "scripts/maintenance/discover_exact_byte_identical_completed_project_NPZ_storage_reusable_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "00ed53b23f3366b606b620eaf072b4fb8aeeec272835cd8156da658df3ff8e3e"
+    },
+    "scripts/maintenance/discover_verified183_current_accepted_correct_nonexamples_tmp_metadata_only_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ac18ac4e53e609ffb09fa4c854e00ab73069c847deacaddfda75deed5feb9c20"
+    },
+    "scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3af5115b22f73e57cb4931584a7e49f4589574cf86cc0785db435a44fca7cde7"
+    },
+    "scripts/maintenance/periodic_batch_910b_exact_storage_maintenance_v3_immediate_budget_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "58755caac54d19f323ad06e42ed2ae4f7b1031dfeccc640299effb19856dc16e"
+    },
+    "scripts/maintenance/preserve_GLM41_current_fullNF_complete_reports_sources_logs_user_continue_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "492a3b1744256a00e783039e7be84539566f26559bb803c4977db0ffb3fdeb0f"
+    },
+    "scripts/maintenance/preserve_completed_GLM41_full200_and_current_Meta_user_results_logs_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f9e72f8addf12bd173e1b8ffef6613d931f067b11a018faa5dff82634d274944"
+    },
+    "scripts/maintenance/preserve_completed_GLM41_full200_and_current_Meta_user_results_logs_v2_actual_metrics_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f169849bbd7670bf1f12754b8ec38d84bf03aff072e4f76b3fac40480c0a77c6"
+    },
+    "scripts/maintenance/read_AutoGLMPhone9BSingle_verified183_server_book_for_local_CAS_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "033992141df1f6d92111b6a1674cfbbc27ea709493925e611ac8ff4c1b95f2aa"
+    },
+    "scripts/maintenance/read_AutoSingle_verified183_publication_and_followup_actual_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5764037ae8bb3fa62e3bc682f5c4ed955d545f2622f9f98b4ffe82da395096ae"
+    },
+    "scripts/maintenance/read_GLM41Thinking_current_model_loading_CPU_FD_context_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b218cfc2b4641b619546bc3060e9fde6789bc1467704f4eda84bf7c336d3dff3"
+    },
+    "scripts/maintenance/read_GLM41Thinking_own_saved_assets_and_native_VLLM_input_contract_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2111ad6f31198f0c5a82cbd83536f1358be0bc97fc31b2c92cc55d5ff589acbd"
+    },
+    "scripts/maintenance/read_GLM41Thinking_own_tokenizer_native_added_tokens_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7630fb7109cd4905f0efff38e4d3ce2be5a2c00117208314d7dbf1d82184bf75"
+    },
+    "scripts/maintenance/read_GLM41Thinking_serial_actual_progress_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3c20461305435f47bea2307bcc04789615f7756620f527f602cafd9d9e232c33"
+    },
+    "scripts/maintenance/read_GLM41Thinking_verified184_server_book_for_local_CAS_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "01beca8577559c87a63b1316fd569e129e5453ef1041e27c327af4e1fc384045"
+    },
+    "scripts/maintenance/read_GLM41_actual_model200_report_for_preNF_artifact_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "cb490b366a375fde19e68b6830e8190530c579fb2c5a976ec954d053f73703d2"
+    },
+    "scripts/maintenance/read_GLM41_actual_runner_argv_publication_window_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6dd1fcb044f3d479d8630b8e8255e1c770d0beb0f0ee42f89fba63c59836a52f"
+    },
+    "scripts/maintenance/read_GLM41_completed_model200_gap_outputs_and_current_fullNF_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f7e77c6df40c3341c7ca81bc02fb4de4beba0c9b5fbaf56ed4cbc3aa7f99647e"
+    },
+    "scripts/maintenance/read_GLM41_reviewed_publication_and_next_Meta_actual_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "065cd06a497ed7bbf70da87f33ee490a667a8fbca2918c9a0568a07aabded778"
+    },
+    "scripts/maintenance/read_GLM41_reviewed_publication_and_next_Meta_actual_v2_exact_runpy_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a89445a0a720b4a39dfacd8c1c96de144565b5b4a974ee141b0c7d444cf29826"
+    },
+    "scripts/maintenance/read_GLM41_verified183_publication_contract_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "e915bf40c20d1cc178a597ca3ee44d3ef00f7ef87cdf22e6239f3ab1174ee238"
+    },
+    "scripts/maintenance/read_MetaMllama_current_installed_default_attention_meta_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8d1d657628dc88da23af5d41d0ff56f8c90abf65f6b60ca1c0e57ba52f023488"
+    },
+    "scripts/maintenance/read_MetaMllama_current_serial_fixed200_and_GLM41_completed200_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3349cda45e4bb0dc3632d7faaaff9dd180479f2ea9317e1d7744951158b33100"
+    },
+    "scripts/maintenance/read_MetaMllama_frontend_actual_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "72fb24578cada0ba06edd7f2c1ec7d726c55f5b7cea9185f83d0b245956b65fb"
+    },
+    "scripts/maintenance/read_MetaMllama_original_SDPA_scale_and_captured_arguments_no_NN_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "cf8a7c9cf3161720c029368f304d6161e6274e556ce9495bb5151c8c74b49025"
+    },
+    "scripts/maintenance/read_MetaMllama_prior183_approved_protocol_for_next_serial_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "3be467ded565df9b2c1639ff4def6f1417bdf7e9b38a9eec4fe219e8ec0259c0"
+    },
+    "scripts/maintenance/read_MetaMllama_serial_actual_process_FLOCK_progress_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b51c7137166b5415e6cdd02900d55ce7b3c34ebe0587e4830f8faf002036bac2"
+    },
+    "scripts/maintenance/read_OvisU1_current_serial_v2_and_preserved_Meta_failed200_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "29666618e23982cc08e755ae65964188fcc2892260485fc12b5647b944d83851"
+    },
+    "scripts/maintenance/read_OvisU1_exact_original_passed3_LZMA_resume_sources_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4a9cdd6f7747375c8626ba8ccfc4c7330dc3accc8a0c7258b2cf358d676f641c"
+    },
+    "scripts/maintenance/read_OvisU1_original_completed_storage_resume_inventory_v2_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "d360b0178b78ed90efaf593477263d3ed3affc42c71f328e4f67c0ba2fc3b741"
+    },
+    "scripts/maintenance/read_current183_GLM41_capacity_waiter_Meta_closing_fresh_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "d74c64f376fcdd800d3fa10cda8a7e7187066c7b692ee92a69c8183bdca68062"
+    },
+    "scripts/maintenance/read_exact_matrix_physical_storage_application_and_GLM41_serial_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "0554789fb94fe6520cfbde44ca749cc77ab5f45a25b0b70e4577ca892c71c8b8"
+    },
+    "scripts/maintenance/read_frozen_monitor_full_latest_checkpoint_after_GLM41_model200_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "964dc258ac8ae0c20002829ba2ab1faf128f3cec3227305719be29dbbb6f58f9"
+    },
+    "scripts/maintenance/read_frozen_report_contract_static_AST_v2_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a4749ca8910997b39fa7eb3a68ebe16fb303f4c9cb088ef6fe4a0deaab0f4bb4"
+    },
+    "scripts/maintenance/read_immediate_disk_recovery_cleanup_and_current_GLM41_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "d919a4c8ebd12d026be3ff254c7600bb5b256a1116713de2349e51e0b8421a32"
+    },
+    "scripts/maintenance/read_installed_native_media_wrapper_exact_source_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8ff9626875092c62b50777b1a4238756d2e460a40bad6e37e0f8051937163cca"
+    },
+    "scripts/maintenance/read_verified183_Meta_storage_both_waiters_actual_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7ce08f0d25af8913f5b08c3f92e3a6822894cb3d99fb952d7b1a129b217ca93f"
+    },
+    "scripts/maintenance/read_verified183_existing_retention_exclusion_reasons_only_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a8b5414269d9dbba7f9d323afa5aba7de567ca8d5336529fdd76e2bf344ccaac"
+    },
+    "scripts/maintenance/retain_verified182_GLM_accepted_correct_nonexamples_continue_Single_serial_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "bc494d076a8ba99a97d381095d282829e8e640fa18760e9a309f81c0667e9902"
+    },
+    "scripts/maintenance/retain_verified183_AutoGLM_two_current_accepted_correct_nonexamples_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5389ef48b2e0b08eda2f354a538f610e94e586f6ece6d7eac584e180383ead11"
+    },
+    "scripts/maintenance/retain_verified183_GLM41_full_numeric_gap_correct_nonexamples_Ovis_capacity_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "cc79c1c2ac3fad6c87e8143bd22fb62c03c682b8060b6050da2dd95de2019d9a"
+    },
+    "scripts/maintenance/review_verified183_correct_nonexample_foreign_FD_metadata_only_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ccd8db0326d3400db232e1f00a590b0ee9cfa8b656d8e86f0c37db86e0a1f812"
+    },
+    "scripts/maintenance/run_frozen_incremental_monitor_full_latest_checkpoint_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9f0da2d43ae19517f7d23490afd8153b89df7560a22ce9afb1f93faeba1e5069"
+    },
+    "scripts/maintenance/run_frozen_monitor_after_GLM41_model200_baselinegap_current_NF_20261120_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a012d5fd97545f264f671795807d1916d8a34e84ba2d108bef2d0c120f1323cd"
+    },
+    "scripts/maintenance/watch_batch_910b_immediate_disk_recovery_cleanup_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "32bd7209129b3cf22bac0056584847262e9793b3fab6b52dfaccc7b3de801401"
+    },
+    "scripts/meta_mllama_complete_shape_storage_capacity_20261120.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_natural_order_byteplanes_LZMA_v2_20261120.py; Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_shaped_raw_Fortran_LZMA_capacity_20261120.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "fb5fceebc3ed09b8c87cd4ecd9ffd4c9f3098f1c1b72bb61cbf1c89b6997f90a"
+    },
+    "scripts/meta_mllama_own_visual_value_reference_20261120.py": {
+      "role": "verification_code",
+      "reason": "Actual local Python dependency of scripts/verify_meta_mllama_completed200_original_empty_invalid_prediction_schema_v4_20261121.py; Actual local Python dependency of scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v1_20261120.py; Actual local Python dependency of scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v2_exact_instruction_metadata_20261120.py; Actual local Python dependency of scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2ad7322c1e22954767dbac07c9bd8fb040090336ee74101b2f5c0731dc3410dd"
+    },
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "72d9a21195bdd9f02f2e7299a45ef8f26379ee0d45dcfc422deeb068dcbe598b"
+    },
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v2_own_added_tokens_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4cbc72380cf8362c20a5aecaea111303192c2f333870ac40b2a04b4c973ef555"
+    },
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v3_actual_media_wrapper_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "8d693814427e23445339cc532a241ea2c873a06e248d4ce5dc1ad02ee16c9495"
+    },
+    "scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_true3_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "396392722713a5ea3ec8c1b313e717a6e30aa98677a60aaa2309aed79d8123ed"
+    },
+    "scripts/prepare_meta_mllama_own_original_HF_BF16_2048_frontend200_meta_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6496c4ed3672c27808780e84c8d68566a8b96205a9364b0a490046b14933ae14"
+    },
+    "scripts/prepare_meta_mllama_own_original_SDPA_2048_true3_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "a851f815fc930105ef5e3f981cb549901907d849d304969b56e0a2c1531aa8e5"
+    },
+    "scripts/publish_AutoGLMPhone9BSingle_verified183_single_original_lock_dual_transaction_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "504a20985debd6d956a37451e373683819677e86b5dc2aa56963b0b439842755"
+    },
+    "scripts/publish_GLM41Thinking_verified184_same_reserved_original_lock_dual_transaction_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "18236702a21717ff5f578f94a112ddb44b3d3acf08f00e36625db24227852f7d"
+    },
+    "scripts/reserve_GLM41_completed200_reviewed_dual_publication_original_lock_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4fbec9f54e678830453b65aedd3e65f1f33dd10819b2962405136cf7364e682c"
+    },
+    "scripts/reserve_GLM41_completed200_reviewed_dual_publication_original_lock_v2_actual_runner_directory_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f28e5bff07285b8d6f7fe33ca5e5602a00504f35e9e4a57df9f419ae6036fbb7"
+    },
+    "scripts/run_AutoGLMPhone9BSingle_verified183_single_lock_dual_publication_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ca81f5d8bc0f364bde92ef26a1cebbdce106629d9746f33cabb7a696128f9ea4"
+    },
+    "scripts/tests/test_GLM41Thinking_reviewed_publication_contract_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "14ff3485cb2c26d939089d41e3b8899201e2da3db99cf7dc5f467f9d8880a972"
+    },
+    "scripts/tests/test_zai_org_AutoGLM_Phone_9B_verified183_original_writer_isolated_20261119.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ead445669d0fb63a05f487c0cafc0b8bf093cfe81ab853037c71dbc7342ab160"
+    },
+    "scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4630a00d5671133bf001b8057b58048d770b1c9e4c46865f61df9072e02793e6"
+    },
+    "scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v2_actual_media_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "48db53f3f64f7149eb11cdcb1278b8136c17c9a7d432fc82b7c914fb027b1203"
+    },
+    "scripts/verify_meta_mllama_completed200_original_empty_invalid_prediction_schema_v4_20261121.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "bf31fef6d2d4b59df491872833607fb68c512e34dc63b90156eb5a8077b0193a"
+    },
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v1_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "bec4154921e5f36fdf61b3e4b6386886132a104e2f7d5ca437d33bac8ee1d798"
+    },
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v2_exact_instruction_metadata_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "828f833dc5372c5e1daebc28339cbaa44ebb78d34d62cc4574ed1730af38a8eb"
+    },
+    "scripts/verify_meta_mllama_own_original_BF16_SDPA_2048_full_values_v3_exact_original_power_reference_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "90bd632c82c339b0b060194342250bde5a868ec5795119db849b9cd5efa8b7c2"
+    },
+    "scripts/windows_910b_20261120/apply_AutoGLMPhone9BSingle_verified183_exact_server_bytes_local_CAS_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "da27a5295735af910ff7bb3f651999ca560aea14c908f9482a232cc0685adad2"
+    },
+    "scripts/windows_910b_20261120/autoglm_phone_single_workbook_cell_verified183_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "711ab17c8ef21e2d2a041e576a279cbd6fde8bd1623eb421f5caf2e73845c82e"
+      ],
+      "initial_SHA256": "711ab17c8ef21e2d2a041e576a279cbd6fde8bd1623eb421f5caf2e73845c82e"
+    },
+    "scripts/windows_910b_20261120/build_AutoGLMPhone9BSingle_verified183_exact_local_receipt_upload_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "03177eb94dc540b14b29b9ad5705dafc7f3450bba41dfddd8fd649efd0f7aa8b"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_actual_MediaWithBytes_frontend_v3_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "cfb081b8969a2d186c30f4e4cd925ad49a51a87060604c1941110431d131b813"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_original_added_tokens_frontend_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9891280407435a2390e06ef87437bd1b54fc7a7c2136e282c5df16368b2644f9"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_own_frontend_stage_launch_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6475c24aaf4ee5e74b29bf48c0a695d5416a365c60343a293a1bee6451e9f72c"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_own_serial_true3_capacity_fresh3_fixed200_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f8a0468fb6840e92473d13cc54500defb5017d88101a28482e3bec5851f32768"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_owned_media_v3_stage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "c174a91c4b8fd44cc10dccbb20a868d06bb2c54529018d5cf1f8dae44b23b817"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_owned_sources_frontend_v2_stage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "caea6c4e3b0feebadf241680532282d2d23f735cdabd8f3718b999acb7dcf7a5"
+    },
+    "scripts/windows_910b_20261120/build_GLM41Thinking_serial_controller_exact_stage_launch_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9bf3b7c16f8cfb7bedcda2fb34910feea29c0f83193a1017bbfec526d45c89a1"
+    },
+    "scripts/windows_910b_20261120/build_MetaMllama_NF3_exact_original_power_reference_no_model_replay_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7b32c7d8d2f813e8487fa2714f7dca44cfea27fe5e348e11d970e3ab12b16b24"
+    },
+    "scripts/windows_910b_20261120/build_MetaMllama_own_frontend_meta_source_stage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "24075c137c034a833d9ee0298951670184e8a691c38ce2b7bee2f8c8194d6d56"
+    },
+    "scripts/windows_910b_20261120/build_glm41thinking_own_native_fullNF_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f2ebe2ad816918e3b7c9be7daa4c487507a2ff763952eeda276846ac842eeb2c"
+    },
+    "scripts/windows_910b_20261120/build_meta_mllama_fullNF_v2_exact_original_answer_instruction_metadata_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "70ce1725130f98462e285cb3ac454b3d04f1b273f26454f780b4e1b57e275e65"
+    },
+    "scripts/windows_910b_20261120/build_meta_mllama_own_original_SDPA_2048_fullNF_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "e34321f3cca22f004b577200efc2695d422e3878832fe7d1d38313ef20a2c01b"
+    },
+    "scripts/windows_910b_20261120/build_meta_mllama_own_original_SDPA_2048_full_observer_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5118ca64ab89c30a30cc63edd13ac0462dac3fd2fd01ff8a0cdf3700733347e0"
+    },
+    "scripts/windows_910b_20261120/build_official_910b_verified183_Meta_NF3_capacity_exact271_prompt_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "19a4fb57dcb97093207418cfd8355f4d4dbdd2ce3e6bcdcb1a20c3d0ec3aa99b"
+    },
+    "scripts/windows_910b_20261120/build_recover_verified183_Meta_pending_exact_root_runpy_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6e081514880aa439ad051ebf11aa9a389451f4d094f07e8fb17490122833ec71"
+    },
+    "scripts/windows_910b_20261120/build_stage_GLM41Thinking_completed3_real_capacity_serial_v2_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9b094f2ad28a8fa461a92d6d1984ef3aabd043d10ee033ecd038f045de4cc7d7"
+    },
+    "scripts/windows_910b_20261120/build_stage_MetaMllama_own_SDPA2048_serial_controller_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "e4b958193006230d193d4ad2dedbcd31afc5120061f30da5479216654e938c96"
+    },
+    "scripts/windows_910b_20261120/build_stage_compact_verified183_current_source_archive_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7d260cf31d64cea7ee3312df5b46c2bd5d33275fffbdfaaa31f64e1030d9ba44"
+    },
+    "scripts/windows_910b_20261120/build_stage_meta_mllama_formal_NF2_same_genuine3_no_NN_replay_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "62b9c0878322bd15d7dea1580be968cfb52b912dbf34d8730aa2a18f0d9c3df0"
+    },
+    "scripts/windows_910b_20261120/build_stage_meta_mllama_formal_NF3_same_genuine3_no_NN_replay_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2ea5b851ccd718c952293a32053aa20c7d5f87a68db45e2b1514b97da61ffa93"
+    },
+    "scripts/windows_910b_20261120/build_stage_verified183_Meta_final_official_readback_pending_v54_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "6b9c0cd82d19b4fe184522d6ca64d0d2b20cab7b43f7930e9620a6c0cff26ff6"
+    },
+    "scripts/windows_910b_20261120/build_stage_verified183_Meta_full_source_pending_v53_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "10927dc760600f5212bad7338066771f19ad1cbcab6189dbc05e1e096c4d15fc"
+    },
+    "scripts/windows_910b_20261120/build_stage_verified183_exact271_late_closing_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b7159f5e39fdb506318a1144991f24a8da8b51c6f754c034cfbc4704456c332c"
+    },
+    "scripts/windows_910b_20261120/inspect_GLM41Thinking_owned_native_contract_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ff8d81fb90cf5814f64ca18136d82a7e234001ca27be8f9c85aeedae1ef6251c"
+    },
+    "scripts/windows_910b_20261120/render_AutoGLMPhone9BSingle_verified183_actual_published_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "6ce8ba0fa78a449315e845ac4094f1463be40b08cf5d4142b7ef4bf068c26fc1"
+      ],
+      "initial_SHA256": "6ce8ba0fa78a449315e845ac4094f1463be40b08cf5d4142b7ef4bf068c26fc1"
+    },
+    "scripts/windows_910b_20261120/stage_and_launch_AutoSingle_verified183_reviewed_dual_publication_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "c00109611c6cbaf94367a6e46f914715a3f2cc6656710ccdb1120fd3511e2150"
+    },
+    "scripts/windows_910b_20261120/verify_official_910b_MetaNF3_capacity_and_local183_readback_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ea707525054671060d5f31930d8666d8ac2ed30711f99b32217bf43f98ccb4ab"
+    },
+    "scripts/windows_control/apply_GLM41Thinking_verified184_exact_server_bytes_local_CAS_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "5969630522a6b519458e870b81b2f9eef3d548ab14652a0e6a4b41d1bbab2da2"
+    },
+    "scripts/windows_control/build_GLM41Thinking_verified184_exact_local_receipt_upload_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "71e7c5e4a4e1f06d2a614203a3ea77a8b5069ccd0d1d23b11e53388e23798cc7"
+    },
+    "scripts/windows_control/build_GLM41_publication_reservation_stage_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "c275a70f0c2b3cfc06b7981a57ce6dc30739b6e3ecae05b0c895700812c8f224"
+    },
+    "scripts/windows_control/build_MetaMllama_after_GLM41_verified184_serial_v4_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f16f5e08b66ea0644f8568762bd24f095766c571b1b080d6b79a63a51508d7d7"
+    },
+    "scripts/windows_control/build_stage_GLM41_publication_and_next_Meta_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "2613be6e83d642068b932525787ef974ab19b961411b5be9df9dbe9bb7680b57"
+    },
+    "scripts/windows_control/glm41thinking_workbook_cell_verified184_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "0a18362e82469428005d43601fe0328a4e4d85a46d2a923d1fea81c80a5db84c"
+      ],
+      "initial_SHA256": "0a18362e82469428005d43601fe0328a4e4d85a46d2a923d1fea81c80a5db84c"
+    },
+    "scripts/windows_control/prepare_GLM41Thinking_verified184_actual_completed200_plan_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "b6612aa2985a1f401f6b8f9c911ed4b463351e9196aa4edf1f73d2c141eaf175"
+    },
+    "scripts/windows_control/prepare_GLM41Thinking_verified184_publication_sources_20261120.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "97e0985328e3c2dbf297e54ef603f55228f9e6e267ef807a389c550a36334659"
+    },
+    "scripts/windows_control/render_GLM41Thinking_verified184_actual_published_20261120.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "reviewed_javascript_source_SHA256": [
+        "805f80c27dc53fd8b5f89b0095b79e5f083ef72db23669b9033e8485ba27001f"
+      ],
+      "initial_SHA256": "805f80c27dc53fd8b5f89b0095b79e5f083ef72db23669b9033e8485ba27001f"
+    },
+    "universal_eval/algorithm/glm41thinking_own_original_VLLM_BF16_8192_20261120_MC.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7602abe28485a8426d09a656af92286c6860873de0583cd14e927e6ad117a520"
+    },
+    "universal_eval/algorithm/meta_mllama_own_original_HF_2048_MC_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "f941911cccd47e7610a96107a5c9542359acf119405703af4756572813b63a3d"
+    },
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v1_20261120.py; Actual local Python dependency of universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "ca206303a745ca481fb353e9c8d080cada15c01479a00bef9a1ebda7a026c45b"
+    },
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend_v2_actual_media.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_glm41thinking_own_original_VLLM_BF16_8192_native_v2_actual_media_20261120.py; Actual local Python dependency of universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v2_actual_media.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "142d19b1566ea8c77f15a7e756d31c258c6db2a27ee22bbe2ba877de9a4205bc"
+    },
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "9d2c23c9b3f8a5add53c7339589de668e0a554b65b7788236b54af768602607a"
+    },
+    "universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_native_v2_actual_media.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4fd3cee6c2b348e044cb81babc12430a0b4d960620fd8e1686a1b70d6aa779a0"
+    },
+    "universal_eval/model/adapters/meta_mllama_own_original_BF16_SDPA_2048_native_lossless_shaped_LZMA_v3_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "73f9c526f1455b178f09f1d3984b063adbb0fabe3743ba4c18a67f3d0f3bb122"
+    },
+    "universal_eval/model/adapters/meta_mllama_own_original_BF16_SDPA_2048_native_v1_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "7233c9758a7e383536e451efa0f5524c821787f1b4a3dba957ce126b1fb74bc9"
+    },
+    "universal_eval/model/adapters/ovisu1_own_original_understanding_BF16_512_complete_standard_LZMA_20261121.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "33a961acbadf96a91c08f59e92487b25420d1deef35fdcfc95df5d5f74cdf829"
+    },
+    "universal_eval/model/reference_sources/glm41thinking_owned_tokenizer_config_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v2_own_added_tokens_20261120.py; Actual local Python dependency of scripts/prepare_glm41thinking_own_original_VLLM_BF16_8192_frontend200_v3_actual_media_wrapper_20261120.py; Actual local Python dependency of universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend.py; Actual local Python dependency of universal_eval/model/adapters/glm41thinking_own_original_VLLM_BF16_8192_20261120_frontend_v2_actual_media.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "aa68e3bd6fada59e4e9829e49d67057a3f15e7f9a7ba80386265af01250ef5f7"
+    },
+    "universal_eval/utils/complete_native_raw_bytes_Fortran_LZMA_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_shaped_raw_Fortran_LZMA_capacity_20261120.py; Actual local Python dependency of universal_eval/model/adapters/meta_mllama_own_original_BF16_SDPA_2048_native_lossless_shaped_LZMA_v3_20261120.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "4a95739870af1a5e85f2daeebedbf7bed934c86f70bc5d5ce4d85f5f9e573045"
+    },
+    "universal_eval/utils/complete_native_raw_bytes_natural_order_byteplanes_LZMA_v2_20261120.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnose_MetaMllama_completed_true3_complete_natural_order_byteplanes_LZMA_v2_20261120.py; Explicit SHA-pinned primary inventory pending_after_daily_20261120_verified183_Meta_NF4_actual_pin_recovery_Ovis_serial_all_primary_v63_20261121.json",
+      "initial_SHA256": "e9b0b760d602ff41cac542fd62e4f35253cd809d545f7462a8a9f7b971a67e5d"
+    },
+    "configs/publication/GLM41Thinking_same_formal200_reviewed_dual_publication_original_lock_v1_20261120.json": {
+      "role": "runtime_config",
+      "reason": "Actual argv[1] consumed by scripts/reserve_GLM41_completed200_reviewed_dual_publication_original_lock_v1_20261120.py; original failed prepublication invocation retained",
+      "initial_SHA256": "be221dce7f2c99c1572a60835267207cb2bfee455195979e93a73045d067f284"
     }
   }
 }

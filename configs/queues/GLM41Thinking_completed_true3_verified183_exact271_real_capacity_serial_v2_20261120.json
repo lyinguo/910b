@@ -1,0 +1,11 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Thinking",
+  "max_concurrent_models": 1,
+  "needed_bytes": 136041918364,
+  "original_true3_job_SHA256": "2d4c682939fcda8bf9560bdd531deb6f5f2199aa67395f737bfc6e0bcecf7205",
+  "completed_original_controller_SHA256": "f7ee759f0d973e1dd356c7ec47614a11b27bc9fa1b2d28ae0b44c9ec6abf55a2",
+  "exact_source_SHA256": {
+    "scripts/continue_GLM41Thinking_completed_true3_after_verified183_exact271_retention_wait_real_capacity_serial_v2_20261120.py": "bcea36fa6ec31541585dc0cfbff2bac8036da998849595446275134bce16a8aa",
+    "scripts/continue_GLM41Thinking_own_native_inputs_true3_full_capacity_fresh3_fixed200_serial_v1_20261120.py": "f7ee759f0d973e1dd356c7ec47614a11b27bc9fa1b2d28ae0b44c9ec6abf55a2"
+  }
+}
