@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
+const planPath=process.argv[2],q=JSON.parse(await fs.readFile(planPath,'utf8')),home=path.dirname(planPath);
+assert.equal(crypto.createHash('sha256').update(await fs.readFile(q.target)).digest('hex'),'2981b33d68e4825843b3ead4b21a9a53b1931232be497cf5751373e33ead8878');
+const book=await SpreadsheetFile.importXlsx(await FileBlob.load(q.target)),sheet=book.worksheets.getItem(q.sheet_name);
+const [task,model,d]=sheet.getRange('B664:D664').values[0];assert.equal(task,'image-text-to-text');assert.equal(model,'unsloth/gemma-4-E4B-it-MLX-8bit');assert.equal(Number(d),.835);assert.equal(sheet.getRange('G664').values[0][0],.84);
+const image=await book.render({sheetName:q.sheet_name,range:'B662:G666',scale:1.25,format:'png'});await fs.writeFile(path.join(home,'actual_published_664.png'),new Uint8Array(await image.arrayBuffer()),{flag:'wx'});
+console.log(JSON.stringify({actual_published_target_rendered:true,G664:.84,no_workbook_write:true}));

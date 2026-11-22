@@ -1,0 +1,16 @@
+{
+  "model_id": "ytu-ce-cosmos/Turkish-LLaVA-v0.1",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py": "7fdb55b9530d0f83065c264902a4c3f3f637c7ea780b688fdd34b15f55c99553",
+    "universal_eval/model/turkish_llava_own_saved_Transformers_graph_20261122.py": "25713577a94fc7d6c871a798d3652b7dd771d0446036dc628b61db5a1fa999e6",
+    "universal_eval/algorithm/turkish_llava_own_original_FP16_2048_MC_20261122.py": "19e98499ec578ef1ea74c11f5d187bfb2ea8833b6df334cda992331c870d3a0a",
+    "scripts/verify_turkish_llava_own_original_Transformers_FP16_2048_full_values_v1_own_original_20261122.py": "b6120a53e7107b5d40fdeea49b4278d7ff67517c598aae84c1fe504cfb2278e2",
+    "scripts/prepare_turkish_llava_own_original_Transformers_FP16_2048_true3_v1_own_original_20261122.py": "64d2b7fa33825c5465c25029dd8e1464e7eb5203aa0b6dab7b69139b53530a13",
+    "scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122.py": "1de1f52d848f55a6524c69e4b3cb915b2f93f2fc886b8f3a6dcf101b23b46a36"
+  },
+  "wait_own_complete_input_and_CPU_constructor_then_previous_Base_actual_NN_NF_controller_EX_release": true,
+  "original_own_single_EOS128009_and_no_injected_system_date": true,
+  "own_checkpoint128257_original_resize128258_before_remap": true,
+  "no_G_or_canonical_write": true
+}

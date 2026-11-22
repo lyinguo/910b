@@ -1,0 +1,17 @@
+{
+  "model_id": "unsloth/gemma-4-E4B-it-MLX-8bit",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "scripts/prepare_gemma4_e4b_MLX8_own_original_Transformers_BF16_single_SF_frontend200_v1_20261122.py": "b6b00d2c0dbdb76d78504e3206b517572283d2f142ecb34c662d539681348c15",
+    "universal_eval/model/gemma4_e4b_MLX8_own_20261122/observer.py": "637f44b1276ad433c4fea1681b02ddc8d015adc806fe50d9767e8b8d3ad131cb",
+    "universal_eval/model/adapters/gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py": "faf76bc72aa6138310a7c10a453f3cac9297608dd0da4ef495b89b2f26bd6899",
+    "universal_eval/model/gemma4_e4b_MLX8_own_20261122/__init__.py": "32c5395928954221ede868d402805fb4e297a591a24bdeda3d7cb7839ad3ed23",
+    "scripts/verify_gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py": "6f34e6fb44347adb14b3d768d863885e67953639a8caa63fd6dec510dfc424ad",
+    "scripts/prepare_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_v1_20261122.py": "1abb6373c9485804e5627a065274646a3258b5a5cb2f66a0e17717f7a766c230",
+    "scripts/continue_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_capacity_serial_v1_20261122.py": "e70acdef63b314a479d6859cff3ceecbdadba3c1be38ed541f3bae8500159258"
+  },
+  "original_source_is_BF16_not_native8bit": true,
+  "observer_and_load_NPU_capture_AST_identical_to_verified_architecture": true,
+  "own_original_HF_template_default_no_override": true,
+  "no_G_writes": true
+}

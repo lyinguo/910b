@@ -1,0 +1,104 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Base",
+  "weight_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.1V-9B-Base",
+  "source_tensor_count": 704,
+  "own_weight_files": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 5303216560,
+      "SHA256": "c7beb372e4b7fa5402c284b30cab0ec529b5aa239a0e8d52f0520c82a613fc94"
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 5303216696,
+      "SHA256": "f71476c862b2704d4e1556aa0cb8f63d6f4bf0c4ca10a017ab7cc9e906e87354"
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 5303216696,
+      "SHA256": "068af23a9eca089a00269e82c1f9b8abe514372665207bf3281f774489358a6c"
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 4675994152,
+      "SHA256": "3ca99b8cfc6d8e3a6d28e900724ee0b083f3ca04d8477da83ce82466eacaa800"
+    }
+  },
+  "own_assets_SHA256": {
+    "chat_template.jinja": "847603d3ed14387a2b45c197f8d07ddee0f9938051549c727cbc894facfea78b",
+    "config.json": "193ac1bc9233f649f6c2ab1c694292f184a4c0944f94146d27940ab792981c33",
+    "configuration.json": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c",
+    "generation_config.json": "e9527bdf03e7d4971f9cacdbcf81a5fe04b10b64fc478bba6bf389cc0e597b72",
+    "model.safetensors.index.json": "d1a77d5ca0b8fa2cb57e097e1d4087bbfcb86e85778ce59e17e5e2610bc6dd86",
+    "preprocessor_config.json": "d71bebc1307f2d1e38e87563b50faa78c72fd2e4093b5c69c756f12c444fec6a",
+    "tokenizer.json": "76ebeac0d8bd7879ead7b43c16b44981f277e47225de2bd7de9ae1a6cc664a8c",
+    "tokenizer_config.json": "e87c176ab373d67c97f2f787eeb2e05f9026e76f4db356111643b2f511a75a94",
+    "video_preprocessor_config.json": "85d5ca37836f20a5edd11800e4380e731612946f8c7b70fba4d8f532fe752932"
+  },
+  "own_source_manifest": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_probability_BF16_native_source_readiness_v1_20261122/own704_source_manifest.json",
+  "own_source_manifest_SHA256": "284c729f8eee5ea9ab9180c289a27a58f91fee131760fc28cac23d54657b53c1",
+  "own_frontend200": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_probability_BF16_native_source_readiness_v1_20261122/own_frontend200_proof_field_binding_no_replay.json",
+  "own_frontend200_SHA256": "026a84ae568167027d04adf39a35ad5aa89116a4f3fe4f73ca6268a1054b4c44",
+  "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl",
+  "dataset_SHA256": "2f5184c8d02695ef95ef16efe0c48640a0d99c680ab06f6847ec5d1372b06451",
+  "original_option_text_mean_logprob_protocol_preserved": true,
+  "original_stop_ids": [
+    151329,
+    151336,
+    151338,
+    151348
+  ],
+  "original_answer_instruction": "\n\nAnswer the question by providing only the option letter (A, B, C, D, or E) in the format <answer>X</answer>.",
+  "workbook_D_reference_authorized": true,
+  "current_A100_D_values": {
+    "server": "0.9100",
+    "local": "0.9100",
+    "preserved_original": "0.91"
+  },
+  "reference_workbook": "/root/projects/C500_MLU_与A100差距5%内_同值运行已选定_20261029.xlsx",
+  "reference_workbook_SHA256": "2981b33d68e4825843b3ead4b21a9a53b1931232be497cf5751373e33ead8878",
+  "implementation_source_SHA256": {
+    "universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py": "ffc7d6f868514c2a5778580567745b7fdec2e2c1c27f4e73e0cac3076e627e55",
+    "universal_eval/model/adapters/glm41base_own_original_option_inputs_v1_20261122.py": "b6ebc5660645aa49607a3312dd253105c38db15bce894c79db2eecc424078dd8",
+    "universal_eval/algorithm/glm41base_own_original_option_logprob_MC_v1_20261122.py": "89187de2d38c555248cef5492877a56c2a0787b981ac50f975691e49c450a6fd",
+    "scripts/verify_glm41base_own_original_option_logprob_BF16_complete_values_v1_20261122.py": "6828f4bc390d3fda8ad81e4b6f5c3c25afe0afbaa4eab3d79bdc8b97f167eddf",
+    "scripts/prepare_GLM41Base_own_original_option_probability_true3_v1_20261122.py": "39ce5d403a2f18a148532efb7aaa30dfbd8bea9ad299e52859f6926865a78b63",
+    "scripts/continue_GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": "adc510a1dac37de12a2cf4b70c7e2c87eb635d05c8b33db5de6e6bf3e08ac360",
+    "configs/queues/GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.json": "a164a2dddd1e2d06bb8c0d3dc3a59af3027dec8948997129993f4f24cad0585e",
+    "universal_eval/utils/complete_module_values_tree_20261122.py": "82936193223d4dfa42e41276c2cf9df790921febd37b683b97254d6ce776aa47",
+    "scripts/tests/test_complete_module_values_tree_20261122.py": "189400990ef62e4b6f904223aa1b547a338845d0b96365e840f6a0685066a1fb",
+    "scripts/prepare_GLM41Base_own_original_option_logprob_frontend200_native_no_NN_v1_20261122.py": "4501062eb42a73331530ce950b0bdd835b5126800e67dfc67b57d0d3c94fdd9c",
+    "universal_eval/model/adapters/glm41v_base_discriminative.py": "c95d7286200f93a000f7232cd807ec64e80bb4e9ac5911f06976258ed328184d",
+    "universal_eval/model/adapters/glm41v_base_vllm.py": "c435cdcfa181637ed69181ab1d9aa5ca0aaaca17efb6f0015be74e400f10e86c",
+    "universal_eval/model/adapters/vllm_adapter.py": "da65f91d00696a2becf43121c793de985eb8364fd18f2a0164ff8d53541602db",
+    "universal_eval/utils/complete_standard_LZMA_NPZ_parallel_values_20261122.py": "d1f8594c0dfa6b1fc9f549e9bde6cb634d661de08fbea70acdfb201da2e3c668",
+    "scripts/tests/test_complete_standard_LZMA_NPZ_parallel_values_20261122.py": "1441c14aeed7d219dd003c7ba128af0e76a48630819e0f3acac283979cd6eb03",
+    "universal_eval/utils/readonly_npz_indexed.py": "07917b6b23788914dffde9b32a179bdf35a98d2a1e8dedd78669c8d6a13554a7",
+    "scripts/strict_mc_independent_reference_910b.py": "ae9c58092b2904ed439a18bb1952e5f5853c34abd1b1f2c64a8da1cd4b520aa6",
+    "universal_eval/model/interface.py": "531425415165e066e4e8b612e9d2ec36d21e2505bb8ae7a2437268519011d5bc",
+    "universal_eval/model/loader.py": "c24a47798042ad8559055a8d915a3c79cab99d2dd146f8475a0e837363975d36",
+    "universal_eval/model/manager.py": "a6c0c2f542af59b461944be6d0a226162abaed924d0799a316758ef9f8eb573c",
+    "universal_eval/algorithm/inference.py": "5405d7c05e39bc2bc1cba84c7fb0064b85c93c3ef69919842341e60b28994097",
+    "universal_eval/algorithm/native_explicit_mc_v2.py": "6425b5ee3d73e3537a761537250af193fbd01af012753444a2488c9863eecbb4",
+    "universal_eval/algorithm/tinyllava_strict_mc.py": "ece44e305104a9d17718b4bcc2d124a3cb56f32f088892415754f606c40faef7",
+    "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py": "abf60bef4809d025e802be0995d296411ccb4ddfb9e60e0ebfccdefb1bfac0b7",
+    "run.py": "9f902cea04a501fa535f7b30c3388ee839a9ad8d99621fbcdd77f00ac5215a51",
+    "universal_eval/orchestrator/pipeline.py": "0de40c9e1da2b3cce5ba5da79757de9ae3a938746b3370db94bfe8f8f174e08b"
+  },
+  "static_evidence_SHA256": {
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_logprob_native_frontend200_meta_no_NN_v1_20261122/review.json": "395826aef897d0cfadb8bdfacb46d5a89a4f1d036b8271796efd215bad8fca49",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_logprob_native_frontend200_meta_no_NN_v1_20261122/actual_completion.json": "2598c94fac06da0ebc3b19f8c331cb8fd9e2f2d5c73be47a6f34457cf9481cf4",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_logprob_native_frontend200_meta_no_NN_v1_20261122/own_original_option_frontend200.jsonl": "0d4777bbaaab10a0701bc27296850e9441e07c3284717e52bc30f8f089176228",
+    "/root/projects/comperror/configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Base.yaml": "606ac2677328d9b7dfe02dc0e5ef546ea1d56bce4d9c69485278a2e21fb35860",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_workbook_delivery_20261103/local_A100_reference_snapshot.json": "700956054f482a3c6c81ae55de1ae36435ba9e0e15ae81450848af081f0995ba",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/local_reference_external_difference_0910_20261104_120236_794022/current_user_local_D_snapshot.json": "14ab07ef221d0d9deb6da157bcb3e7cadd9577b6a7d0110eb333235c4728c49b",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_probability_local185_binding_20261122/fresh_local_workbook_SHA_stat.json": "ee05db9cced6b2341f76b63ff7a15fbd24d2facb57f0206b95bd826c23b47eaa",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_logprob_native_frontend200_meta_no_NN_v1_20261122/own_whole_source_files.json": "8681835b28c13412b15582d4187ff011722476ee3a15087b8dcb02b1b09c96d1",
+    "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_logprob_native_frontend200_meta_no_NN_v1_20261122/own_meta_only_parameter_layout.json": "746711f1d341a43d49148c457f1030136c9f878467039891a16d6ce7e8efdf7d"
+  },
+  "historical_source_boundary": "Own GLM4.1 Base original discriminative option-text mean prompt logprob, not generation or letter-logit ranking. Own704 BF16/40text/GQA2/24vision/full151552 head. Exact original manual prompt, strip-only-existing instruction suffix, original [-k-2:-2] score slice/mean/tie/order; original option request max_tokens1 temperature0 prompt_logprobs0; saved fallback2048/outer10 unchanged, all fixed200 have options so fallback not triggered. Own PIL direct RGB and native completion inputs all525 option requests independently verified. Native HF SDPA fresh-request full40 physical KV, whole-head logits/all prompt probabilities and every captured original module full values checked against CPU diagnostic references; no CPU grade, no historical A100 engine/tensor claim. Original source/dtype/math/EOS/position/mask/head/scoring unchanged; no borrowed checkpoint, task, tokens, font or output.",
+  "hard_reserve_bytes": 3221225472,
+  "log_reserve_bytes": 1073741824,
+  "precheck_reserve_bytes": 536870912,
+  "per_sample_lossless_space_estimate_bytes": 2147483648,
+  "original_factor4_plus6GiB_capacity_guard": true,
+  "first200_not_approved": true,
+  "fixed_BF16_numeric_relative_RMSE": 0.02,
+  "fixed_FP32_logprob_absolute_tolerance": 0.0001
+}

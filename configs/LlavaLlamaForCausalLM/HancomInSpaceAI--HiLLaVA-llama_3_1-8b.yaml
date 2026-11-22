@@ -1,0 +1,31 @@
+name: HancomInSpaceAI--HiLLaVA-llama_3_1-8b
+description: HancomInSpaceAI/HiLLaVA-llama_3_1-8b (LlavaLlamaForCausalLM) 全流程评测管线
+task_type: image-text-to-text
+sample_range: 0:199
+data:
+  preprocess: true
+  apply_template: false
+  filter_empty: true
+  dataset_path: /mnt/afs/comp_error/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+model:
+  name: HancomInSpaceAI/HiLLaVA-llama_3_1-8b
+  adapter: universal_eval/model/adapters/transformers_vlm.py:TransformersVLM
+  model_path: /mnt2/afs/download_models/LlavaLlamaForCausalLM/HancomInSpaceAI/HiLLaVA-llama_3_1-8b
+  download: false
+  kwargs:
+    device: auto
+    max_new_tokens: 2048
+    torch_dtype: auto
+algorithm:
+  name: greedy_inference
+  batch_size: 10
+  kwargs:
+    extract_answer: true
+metrics:
+  override:
+  - Accuracy
+baseline:
+  score: 0.72
+  threshold: 0.05
+output:
+  verbose: true

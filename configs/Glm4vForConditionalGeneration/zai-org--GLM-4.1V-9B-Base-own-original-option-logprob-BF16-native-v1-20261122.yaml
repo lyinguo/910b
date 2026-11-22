@@ -1,0 +1,59 @@
+{
+  "name": "zai-org--GLM-4.1V-9B-Base-own-original-option-logprob-BF16-native-v1-20261122",
+  "description": "Own GLM4.1 Base original discriminative option-text mean prompt logprob, not generation or letter-logit ranking. Own704 BF16/40text/GQA2/24vision/full151552 head. Exact original manual prompt, strip-only-existing instruction suffix, original [-k-2:-2] score slice/mean/tie/order; original option request max_tokens1 temperature0 prompt_logprobs0; saved fallback2048/outer10 unchanged, all fixed200 have options so fallback not triggered. Own PIL direct RGB and native completion inputs all525 option requests independently verified. Native HF SDPA fresh-request full40 physical KV, whole-head logits/all prompt probabilities and every captured original module full values checked against CPU diagnostic references; no CPU grade, no historical A100 engine/tensor claim. Original source/dtype/math/EOS/position/mask/head/scoring unchanged; no borrowed checkpoint, task, tokens, font or output.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "zai-org/GLM-4.1V-9B-Base",
+    "adapter": "universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py:OwnGLM41BaseOriginalProbabilityBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Glm4vForConditionalGeneration/zai-org/GLM-4.1V-9B-Base",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/glm41base_own_original_option_logprob_BF16_native_v1_20261122.json",
+      "protocol_sha256": "baf5c5c23bf3fe3f07c9a1848d5857fe55f4d639adbdfe787ce2735bdd6439dd",
+      "protocol": {
+        "model_id": "zai-org/GLM-4.1V-9B-Base"
+      },
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "glm41base_own_original_option_text_mean_logprob",
+    "adapter": "universal_eval/algorithm/glm41base_own_original_option_logprob_MC_v1_20261122.py:OwnGLM41BaseProbabilityInference",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/glm41base_own_original_option_logprob_MC_v1_20261122.py:OwnGLM41BaseAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.91,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

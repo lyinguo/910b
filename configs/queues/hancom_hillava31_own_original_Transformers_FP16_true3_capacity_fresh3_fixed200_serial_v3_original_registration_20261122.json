@@ -1,0 +1,20 @@
+{
+  "model_id": "HancomInSpaceAI/HiLLaVA-llama_3_1-8b",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "universal_eval/model/hancom_hillava31_own_saved_Transformers_graph_20261122.py": "97c6f2b99d36f43b540ecea879b25ceee678f43cbaa003b7b28445ad5b7f513e",
+    "universal_eval/algorithm/hancom_hillava31_own_original_FP16_2048_MC_20261122.py": "68833622d1b5201f36f0cd77c57742ef487a260f2901344f1fbb6e2e2bdb4ecc",
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py": "948208b087c6fcaaed829d627d5de60c17b077de85d0b0ee5fe98dc2026ce17d",
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.py": "f67dbaaadad917b612daeadf2826c44d81d23712d312c00e250e6af7295f7d1f",
+    "scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v1_20261122.py": "e60a28b60f00225f3cc28433c7ff60f8ffb92384cd7bfb8b29137a3e3bcc1177",
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py": "439cd4c8a30f0873addfb1ec6c22b184612b427f7ac423424c0614de7c9c507d",
+    "scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v2_original_registration_20261122.py": "e3a645e8f25054b84490d9f9a09dcdd8b7489b5d98e5a65915f70450e3b37981",
+    "scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v3_original_registration_20261122.py": "3bb311ea1c6b7d76abfcb2bc75bc2ce66777e0f4e4bcd19b5b5e062f7cb9ce6e",
+    "scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v3_original_registration_20261122.py": "128fd758689b49e5c9a80cd72f2c17255cbd67ed9900f7dc1c4beb54efd08083",
+    "scripts/diagnose_HancomHiLlava31_original_registered_tokenizer_generation_interface_no_NN_v1_20261122.py": "fc2070dffdb40634ff15a585334aaddba86227bdc77f44b1bbb666ad304ea4b8"
+  },
+  "private_exact_BF16_source_guard_recovery_after_zero_NN": true,
+  "no_math_or_requested_FP16_cast_change": true,
+  "private_original_saved_registration_recovery_after_zero_NN": true,
+  "no_model_math_or_requested_FP16_cast_budget_EOS_threshold_change": true
+}

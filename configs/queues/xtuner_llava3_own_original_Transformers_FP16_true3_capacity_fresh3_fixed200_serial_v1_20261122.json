@@ -1,0 +1,12 @@
+{
+  "model_id": "xtuner/llava-llama-3-8b-v1_1-hf",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "universal_eval/model/xtuner_llava3_own_saved_Transformers_graph_20261122.py": "97c6f2b99d36f43b540ecea879b25ceee678f43cbaa003b7b28445ad5b7f513e",
+    "universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.py": "229796cd236452dd9a2843bdc4fc72552a51568b4e2c62778295d12f0784b42a",
+    "universal_eval/algorithm/xtuner_llava3_own_original_FP16_2048_MC_20261122.py": "7400c75f20fa70c50399d96c034aeebe6b927d46542b705977fed0400d092342",
+    "scripts/verify_xtuner_llava3_own_original_Transformers_FP16_2048_full_values_v1_20261122.py": "34b6bb348272d9966f58f4e5acbbb9b878a607d65c0b653c34065c28d851a4b8",
+    "scripts/continue_xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": "aa1ac47027bcb59a6ca73e42ce02c37c6c50bad3e36b5ef7e2d4542288ee38e2",
+    "scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v1_20261122.py": "8bda597d7b324a11cedb027472cd8824a8c6745093dba15ee30662e42bccdd9b"
+  }
+}

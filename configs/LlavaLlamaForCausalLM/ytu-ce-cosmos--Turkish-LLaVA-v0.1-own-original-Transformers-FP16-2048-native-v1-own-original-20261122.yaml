@@ -1,0 +1,60 @@
+{
+  "name": "ytu-ce-cosmos--Turkish-LLaVA-v0.1-own-original-Transformers-FP16-2048-native-v1-own-original-20261122",
+  "description": "Own686 BF16 physical sources cast to saved nonCPUauto requested FP16; original saved constructor expands to128258 BEFORE legacy remap, same-model constructor-derived extra rows full values/provenance retained, original FP32 analytic RoPE buffers. No foreign checkpoint/head/vision, no historical A100 runtime/tensor claim. Own2048/outer10/Greedy/EOS128009, all200 own input IDs/pixels, full source and original source paths preserved. Actual NPU source/dtype/math proven only by forthcoming own genuine3.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "ytu-ce-cosmos/Turkish-LLaVA-v0.1",
+    "adapter": "universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py:OwnTurkishLlavaOriginalFP16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/ytu-ce-cosmos/Turkish-LLaVA-v0.1",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.json",
+      "protocol_sha256": "f984bdbda745e335a183073046bd273ad4f1d7db692a398e0e9145086b2803e8",
+      "protocol": {
+        "model_id": "ytu-ce-cosmos/Turkish-LLaVA-v0.1"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "turkish_llava_own_original_FP16_greedy2048",
+    "adapter": "universal_eval/algorithm/turkish_llava_own_original_FP16_2048_MC_20261122.py:OwnTurkishLlavaGreedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/turkish_llava_own_original_FP16_2048_MC_20261122.py:OwnTurkishLlavaAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.705,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

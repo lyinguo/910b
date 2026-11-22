@@ -1,0 +1,22 @@
+"""Read actual sole NN, next own exact input proof and source-only CPU constructor."""
+import sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,os,subprocess
+R=Path('/root/projects/comperror');B=R/'workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct'
+def rec(p):
+ b=p.read_bytes()
+ try:v=json.loads(b)
+ except ValueError:v=b.decode('utf8',errors='replace')
+ return dict(SHA256=hashlib.sha256(b).hexdigest(),bytes=len(b),complete_value=v)
+r=subprocess.run(['python3','-B',str(R/'scripts/maintenance/read_GLM41Base_own_probability_true3_serial_full_actual_v1_20261122_remote.py')],cwd=R,capture_output=True,text=True,env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1'));assert r.returncode==0,r.stderr;x=json.loads(r.stdout);records={}
+for stem in ['TurkishLlava_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v1_20261122','TurkishLlava_own_original_frontend200_no_NN_actual_launcher_v1_20261122','TurkishLlava_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v2_exact_own_template_20261122','TurkishLlava_own_original_frontend200_v2_exact_own_template_no_NN_actual_launcher_20261122','TurkishLlava_own_original_auto_FP16_actual_CPU_loader_resize_remap_no_forward_v1_20261122','TurkishLlava_own_frontend_v2_then_original_CPU_resize128258_no_NN_20261122','TurkishLlava_own_CPU_constructor_source_no_forward_actual_launcher_v1_20261122','TurkishLlava_completed_own_frontend200_current_unique_C690_metadata_only_v3_20261122','TurkishLlava_own_original_auto_FP16_actual_CPU_loader_resize_remap_no_forward_v2_current_unique_C690_20261122','TurkishLlava_completed_frontend200_metadata_v3_then_original_CPU_constructor_v2_no_NN_20261122','TurkishLlava_frontend200_metadata_v3_CPU_constructor_v2_no_NN_actual_launcher_20261122','TurkishLlava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122','TurkishLlava_own_original_Transformers_FP16_2048_source_readiness_v1_own_original_20261122','TurkishLlava_own_original_Transformers_FP16_2048_true3_v1_own_original_real_FLOCK_20261122','TurkishLlava_own_original_native_fullNF_after_GLM41Base_serial_v1_actual_launcher_20261122']:
+ for name in ['state.json','job.json','completion.json','fresh3/console.log','fresh3/verification_stderr.log','fresh3/verification_stdout.json','readiness_stderr.log','progress.json','readiness.json','actual_completion.json','actual_failure.json','actual_original_loader_resize_remap_review.json','original_from_pretrained_loading_info_collection_types.json','original_from_pretrained_loading_info.json','own_original_legacy_mapping_meta_review.json','launch.json','stderr.log','stdout.json','constructor_stderr.log','constructor_stdout.json','passed_frontend200_actual_unique_C_metadata_only_no_replay_stderr.log','original_own_CPU_constructor128258_no_learned_forward_stderr.log']:
+  p=B/stem/name
+  if p.is_file():records[str(p)]=rec(p)
+captures=[]
+for h in sorted((R/'workspace/diagnostics/model_runs').glob('TurkishLlava_own_original_FP16_2048_*')):
+ p=h/'generation_progress.jsonl';text=p.read_text() if p.is_file() else '';lines=text.splitlines();pending=bool(text and not text.endswith('\n'));lines=lines[:-1] if pending else lines;rows=[json.loads(v) for v in lines if v.strip()]
+ captures.append(dict(home=str(h),total_committed_native_forwards=len(rows),last_committed_forward=rows[-1] if rows else None,pending_partial_line=pending,committed_sample_execution=(h/'sample_execution.jsonl').read_text() if (h/'sample_execution.jsonl').is_file() else None,NPZ_stat_only=[dict(path=str(p),bytes=p.stat().st_size,mtime_ns=p.stat().st_mtime_ns) for p in h.glob('groups/*/*.npz')]))
+print(json.dumps(dict(UTC=datetime.now(timezone.utc).isoformat(),same_GLM41Base_only_actual_serial_model=x,Turkish_own_exact_frontend_CPU_source_and_serial_job_complete_records=records,Turkish_current_actual_native_capture_progress=captures,Turkish_frontend_and_CPU_source_stages_only_no_learned_forward=True,no_source_job_config_deadline_signal_or_canonical_mutation=True),ensure_ascii=False))

@@ -1,0 +1,34 @@
+name: aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning
+description: aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning (LlavaLlamaForCausalLM)
+  全流程评测管线
+task_type: image-text-to-text
+sample_range: 0:199
+data:
+  preprocess: true
+  apply_template: false
+  filter_empty: true
+  dataset_path: /mnt/afs/comp_error/workspace/datasets/image-text-to-text-mmbench/eval.jsonl
+model:
+  name: aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning
+  adapter: universal_eval/model/adapters/llava_more_vlm.py:LlavaMoreVLM
+  model_path: /mnt2/afs/download_models/LlavaLlamaForCausalLM/aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning
+  download: false
+  kwargs:
+    device: auto
+    max_new_tokens: 2048
+    torch_dtype: auto
+    image_mode: pad
+    mode: discriminative_letter
+algorithm:
+  name: greedy_inference
+  batch_size: 10
+  kwargs:
+    extract_answer: true
+metrics:
+  override:
+  - Accuracy
+baseline:
+  score: 0.79
+  threshold: 0.05
+output:
+  verbose: true

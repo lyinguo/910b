@@ -1,0 +1,57 @@
+{
+  "name": "unsloth--gemma-4-E4B-it-MLX-8bit-completed-true3-fullNF2-original-Transformers-BF16-approved-first200-v2-20261122",
+  "description": "Own registered unsloth/gemma-4-E4B-it-MLX-8bit source is actually one physical BF16 safetensors file, 2130 BF16 tensors; no native8bit or converted-engine equality is claimed. Historical converted /mnt2/afs engine bytes were not captured and are unavailable here. Original saved TransformersVLM BF16/Greedy2048/outer10 serial image MMBench branch retained. Own chat template default false is used with NO enable_thinking override; original F32 pixels enter the native model, original native BF16 graph/casts, native131072 context, EOS[1,106,50], full262144 head and42LM/16vision/physical24 plus shared18KV retained. All200 own tokens/pixels and saved original AFS/R data order/images verified independently. No foreign checkpoint/learned tensors/output reuse, online A100 prerequisite, score substitution or math/budget/filter/extraction tuning.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "unsloth/gemma-4-E4B-it-MLX-8bit",
+    "adapter": "universal_eval/model/adapters/gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py:Gemma4E4BMLX8OwnBF16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/Gemma4ForConditionalGeneration/unsloth/gemma-4-E4B-it-MLX-8bit",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/gemma4_e4b_MLX8_completed_true3_fullNF2_original_Transformers_BF16_approved_first200_v2_20261122.json",
+      "protocol_sha256": "15a295167ab99b3ac298a766f8bb2b6dd16cb9b79c99727037ba2e00eb3e72c3",
+      "protocol": {
+        "model_id": "unsloth/gemma-4-E4B-it-MLX-8bit"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "gemma4_e4b_MLX8_own_original_HF_greedy2048",
+    "adapter": "universal_eval/algorithm/gemma3n_E4B_actual_original_HighTen_native_explicit_MC_v3_after_reboot_20261113.py:E4BActualOriginalHighTenMC",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.835,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

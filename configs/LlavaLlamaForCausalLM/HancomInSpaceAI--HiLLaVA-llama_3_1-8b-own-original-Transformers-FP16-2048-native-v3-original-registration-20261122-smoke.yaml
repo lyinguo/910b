@@ -1,0 +1,60 @@
+{
+  "name": "HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v3-original-registration-20261122-smoke",
+  "description": "Own686 BF16 physical sources cast to saved nonCPUauto requested FP16; original saved constructor expands to128257 BEFORE legacy remap, same-model constructor-derived extra rows full values/provenance retained, original FP32 analytic RoPE buffers. No foreign checkpoint/head/vision, no historical A100 runtime/tensor claim. Own2048/outer10/Greedy/EOS[128001,128008,128009], all200 own input IDs/pixels, full source and original source paths preserved. Actual NPU source/dtype/math proven only by forthcoming own genuine3.",
+  "task_type": "image-text-to-text",
+  "sample_count": 3,
+  "sample_range": "0:2",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "HancomInSpaceAI/HiLLaVA-llama_3_1-8b",
+    "adapter": "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py:OwnHancomHiLlava31OriginalFP16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/HancomInSpaceAI/HiLLaVA-llama_3_1-8b",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.json",
+      "protocol_sha256": "9f504648c7d972fe1057f89911eb885a20488d8096e7ed1ee3fa22713866cedd",
+      "protocol": {
+        "model_id": "HancomInSpaceAI/HiLLaVA-llama_3_1-8b"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "hancom_hillava31_own_original_FP16_greedy2048",
+    "adapter": "universal_eval/algorithm/hancom_hillava31_own_original_FP16_2048_MC_20261122.py:OwnHancomHiLlava31Greedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/hancom_hillava31_own_original_FP16_2048_MC_20261122.py:OwnHancomHiLlava31Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.715,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

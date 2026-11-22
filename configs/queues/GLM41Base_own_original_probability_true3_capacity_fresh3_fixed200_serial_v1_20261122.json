@@ -1,0 +1,18 @@
+{
+  "model_id": "zai-org/GLM-4.1V-9B-Base",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "universal_eval/utils/complete_module_values_tree_20261122.py": "82936193223d4dfa42e41276c2cf9df790921febd37b683b97254d6ce776aa47",
+    "universal_eval/model/adapters/glm41base_own_original_option_inputs_v1_20261122.py": "b6ebc5660645aa49607a3312dd253105c38db15bce894c79db2eecc424078dd8",
+    "universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py": "ffc7d6f868514c2a5778580567745b7fdec2e2c1c27f4e73e0cac3076e627e55",
+    "universal_eval/algorithm/glm41base_own_original_option_logprob_MC_v1_20261122.py": "89187de2d38c555248cef5492877a56c2a0787b981ac50f975691e49c450a6fd",
+    "scripts/verify_glm41base_own_original_option_logprob_BF16_complete_values_v1_20261122.py": "6828f4bc390d3fda8ad81e4b6f5c3c25afe0afbaa4eab3d79bdc8b97f167eddf",
+    "scripts/prepare_GLM41Base_own_original_option_probability_true3_v1_20261122.py": "39ce5d403a2f18a148532efb7aaa30dfbd8bea9ad299e52859f6926865a78b63",
+    "scripts/continue_GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": "adc510a1dac37de12a2cf4b70c7e2c87eb635d05c8b33db5de6e6bf3e08ac360",
+    "scripts/tests/test_complete_module_values_tree_20261122.py": "189400990ef62e4b6f904223aa1b547a338845d0b96365e840f6a0685066a1fb"
+  },
+  "preserve_original_option_text_mean_logprob": true,
+  "no_original_math_precision_position_mask_head_or_scoring_change": true,
+  "complete_values_and_original_capacity_guards_unchanged": true,
+  "no_G_or_canonical_write": true
+}

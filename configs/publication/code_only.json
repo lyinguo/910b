@@ -13419,6 +13419,1522 @@
       "role": "runtime_code",
       "reason": "Actual local Python dependency of scripts/maintenance/read_LlavaMini_own_nonpersistent_buffers_and_CLIP_attention_no_NN_20261122_remote.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v1_20261122.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v2_actual_flat_CLIP_guard_20261122.py; Actual local Python dependency of scripts/prepare_llava_mini_own_original_FP16_frontend200_meta_v3_actual_full_npz_interface_20261122.py; Actual local Python dependency of scripts/verify_llava_mini_own_original_FP16_2048_full_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_mini_own_original_FP16_2048_native_v1_20261122.py; Explicit current-day useful implementation or actual inspection/dependency",
       "initial_SHA256": "bd294cd3157487dc045d67a51bc32d3566781937239a099b398d1eb06a2df8bc"
+    },
+    "configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-completed-true3-fullNF2-original-Transformers-BF16-approved-first200-v2-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "35c1ccd752546f3249918c38694b7dbb792425e74f5bf91f31a331fa9f18fbd3"
+    },
+    "configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-completed-true3-fullNF2-original-Transformers-BF16-approved-first200-v2-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3dfff8c56ae2f24679ad0b5ea617985f60f4c795faf358a996a90a3790df08f5"
+    },
+    "configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-own-original-Transformers-BF16-native-v1-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6ebc0ffbd21cadbe2759b108d02da2dadb9f5de2551666fd5b665ca61c2066d1"
+    },
+    "configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-own-original-Transformers-BF16-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "be5f40db1833c02306a7a554b7c525e2130c95e253160445f5ef31c0d2f89ee1"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Base-own-original-option-logprob-BF16-native-v1-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "19dcc0415b8bc9b899f2b520a276f1e7c4a4ff7f874f3f1e667f691bb3eeba6d"
+    },
+    "configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Base-own-original-option-logprob-BF16-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d388d1ff5b6c784e1f46c3f67d1dd17602ab349959dcc2183ec2715f307c27c0"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v1-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a07734d891124033db8a54dabbb61cbfc7f26720d720821408355e8d0d6ffa45"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e0c25098ef792ba495c663ba62b5d2e8df8b87b14ff76b973d0657e218886e12"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v2-own-BF16-guard-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "093711b871178f0075372fd87fe158cf1dcf68d87c85658ab2bcee095b831d9f"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v2-own-BF16-guard-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3ada0caca3c77d8ff0269535ad0438b515633191d12977680a5323262c9a513b"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v3-original-registration-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "7a7790538c52df82b749912cceca9e1b906923552b2baea812eae12b7b2e3a1b"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v3-original-registration-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4d921563839fdef6a5748c0a49bd68c625ea93684c5e2f9d2cf9a743e06a845c"
+    },
+    "configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "624d81316384e7bff93ba2fd7024f3e7b47051198eb3deff2313aa400a83f84e"
+    },
+    "configs/LlavaLlamaForCausalLM/aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning-own-original-FP16-letter-pad-native-v1-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e2cb7541b706cdc9b3ab1fc47b52fecbdeaa28e8d9d92fc873c2553f2df610ff"
+    },
+    "configs/LlavaLlamaForCausalLM/aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning-own-original-FP16-letter-pad-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "717c82d5ef1985eae80b47ba872d103d735bd6069a33b0ca545a680aedd3691b"
+    },
+    "configs/LlavaLlamaForCausalLM/aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a1052e5e48c71e6b2de7277674c588866596afa4bd5d5236e486826524e37e39"
+    },
+    "configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v1-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6e516a4581489264272c4d50400304af80d72b403b663144f15aac72bb8ef461"
+    },
+    "configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v1-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3ba61dbc66fea847c9160af3e42219159fc464132103caa98dc56c47ed1eb91e"
+    },
+    "configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v2-IModel-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9e296071832e7e3e6a25a9b10a88c6e7420308b0c367f1b04b4575b3dc66ae2e"
+    },
+    "configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v2-IModel-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2d3e129b294f9861451ab01a28ea39c672e12c33ab57a8a47119823df139c78f"
+    },
+    "configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "331d6218b97a78c96f5d69d1d8fc708313a3ed4f1a053ffa95a2aaaa7245bc5a"
+    },
+    "configs/LlavaLlamaForCausalLM/ytu-ce-cosmos--Turkish-LLaVA-v0.1-own-original-Transformers-FP16-2048-native-v1-own-original-20261122-smoke.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3cb512386d78f57c1c77dd5d2e3c271e71968519a61c04279062ee6bd41d877d"
+    },
+    "configs/LlavaLlamaForCausalLM/ytu-ce-cosmos--Turkish-LLaVA-v0.1-own-original-Transformers-FP16-2048-native-v1-own-original-20261122.yaml": {
+      "role": "runtime_config",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "40783aba4b25cad2718e2abf910b55d46297667ce168102df397310ea58dd7ca"
+    },
+    "configs/protocols/gemma4_e4b_MLX8_completed_true3_fullNF2_original_Transformers_BF16_approved_first200_v2_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-completed-true3-fullNF2-original-Transformers-BF16-approved-first200-v2-20261122-smoke.yaml, configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-completed-true3-fullNF2-original-Transformers-BF16-approved-first200-v2-20261122.yaml, scripts/accept_Gemma4MLX8_completed_genuine3_formal_NF2_actual_profiler_schema_capacity_serial_v2_20261122.py, scripts/windows_controls/build_Gemma4MLX8_completed3_profiler_schema_v2_formal_serial_capacity_20261122.py",
+      "initial_SHA256": "15a295167ab99b3ac298a766f8bb2b6dd16cb9b79c99727037ba2e00eb3e72c3"
+    },
+    "configs/protocols/gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-own-original-Transformers-BF16-native-v1-20261122-smoke.yaml, configs/Gemma4ForConditionalGeneration/unsloth--gemma-4-E4B-it-MLX-8bit-own-original-Transformers-BF16-native-v1-20261122.yaml, scripts/prepare_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_v1_20261122.py",
+      "initial_SHA256": "ed3ea1a0a5f7d4e06277f0d7b93547a6888354b1ba0c3a1f44344c7927ad9e30"
+    },
+    "configs/protocols/glm41base_own_original_option_logprob_BF16_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/maintenance/preserve_verified185_Hancom_completed_GLM41Base_own_probability_actual_full_handoff_v86_20261122.py, scripts/prepare_GLM41Base_own_original_option_probability_true3_v1_20261122.py, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Base-own-original-option-logprob-BF16-native-v1-20261122.yaml, configs/Glm4vForConditionalGeneration/zai-org--GLM-4.1V-9B-Base-own-original-option-logprob-BF16-native-v1-20261122-smoke.yaml",
+      "initial_SHA256": "baf5c5c23bf3fe3f07c9a1848d5857fe55f4d639adbdfe787ce2735bdd6439dd"
+    },
+    "configs/protocols/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v1-20261122-smoke.yaml, configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v1-20261122.yaml, scripts/code_publication_windows/build_verified185_Xtuner_done_More_NF_Hancom_ready_full_handoff_v81_20261122.py, scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v1_20261122.py",
+      "initial_SHA256": "6116344043e162a10903b43c4d3f83825a57db1a3dafa0aed81fdacd2188d80b"
+    },
+    "configs/protocols/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v2_own_BF16_guard_20261122.py, configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v2-own-BF16-guard-20261122.yaml, configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v2-own-BF16-guard-20261122-smoke.yaml",
+      "initial_SHA256": "f138c131e41f7706dd1d7a8fb1f751b875a18030c7ac2f006da9b467d0e77255"
+    },
+    "configs/protocols/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v3-original-registration-20261122.yaml, scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v3_original_registration_20261122.py, configs/LlavaLlamaForCausalLM/HancomInSpaceAI--HiLLaVA-llama_3_1-8b-own-original-Transformers-FP16-2048-native-v3-original-registration-20261122-smoke.yaml",
+      "initial_SHA256": "9f504648c7d972fe1057f89911eb885a20488d8096e7ed1ee3fa22713866cedd"
+    },
+    "configs/protocols/llava_more_own_original_FP16_letter_pad_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_LlavaMore_own_original_FP16_letter_true3_source_ready_v1_20261122.py, scripts/code_publication_windows/build_verified185_Xtuner_More_complete_serial_handoff_v79_20261122.py, configs/LlavaLlamaForCausalLM/aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning-own-original-FP16-letter-pad-native-v1-20261122-smoke.yaml, configs/LlavaLlamaForCausalLM/aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning-own-original-FP16-letter-pad-native-v1-20261122.yaml",
+      "initial_SHA256": "6a172f9b0b4ec17f58c8191046ca7b09721bac49967107fa9d141aa93470dc70"
+    },
+    "configs/protocols/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by configs/LlavaLlamaForCausalLM/ytu-ce-cosmos--Turkish-LLaVA-v0.1-own-original-Transformers-FP16-2048-native-v1-own-original-20261122-smoke.yaml, configs/LlavaLlamaForCausalLM/ytu-ce-cosmos--Turkish-LLaVA-v0.1-own-original-Transformers-FP16-2048-native-v1-own-original-20261122.yaml, scripts/maintenance/read_TurkishLlava_same_true3_fullNF_capacity_actual_v8_20261122_remote.py, scripts/prepare_turkish_llava_own_original_Transformers_FP16_2048_true3_v1_own_original_20261122.py",
+      "initial_SHA256": "f984bdbda745e335a183073046bd273ad4f1d7db692a398e0e9145086b2803e8"
+    },
+    "configs/protocols/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v1_20261122.py, configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v1-20261122.yaml, configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v1-20261122-smoke.yaml",
+      "initial_SHA256": "d817c4fe7e50bf82f5dbf74f59ff21c2da20b0e7d7816ce1984bbcdf76dec0ed"
+    },
+    "configs/protocols/xtuner_llava3_own_original_Transformers_FP16_2048_native_v2_IModel_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_verified185_Xtuner_native_IModel_full_handoff_plan_v77_20261122.py, configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v2-IModel-20261122.yaml, configs/LlavaLlamaForCausalLM/xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v2-IModel-20261122-smoke.yaml, scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v2_IModel_20261122.py",
+      "initial_SHA256": "d8ad03e2e6d7a3c5ef6bfb906a1ddba15e790d7eee75fc7073bfe79eab6a41f5"
+    },
+    "configs/queues/BeeSFT_completed_storage_NF_capacity_v5_verified185_exact137_wait_actual_capacity_serial_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_heartbeat1226_verified185_blocked_resource_and_legacy_cleanup_full_handoff_v89_20261122.py, scripts/maintenance/preserve_heartbeat1226_verified185_resource_blocked_legacy_cleanup_full_handoff_v89_20261122.py, scripts/maintenance/sync_daily23_reviewed_code_policy_and_remote_receipts_only_20261123.py, scripts/code_publication_windows/build_BeeSFT_verified185_exact137_cleanup_capacity_wait_serial_v5_20261122.py, scripts/continue_BeeSFT_completed_storage_NF_wait_actual_capacity_v5_verified185_serial_20261122.py",
+      "initial_SHA256": "73f1c92518d26ec3df5a7c094cd7bc7f812643aaac8e465111ba79e0651abc3b"
+    },
+    "configs/queues/GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_GLM41Base_own_original_option_probability_true3_v1_20261122.py, scripts/continue_GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.py, scripts/code_publication_windows/build_GLM41Base_own_original_option_probability_full_numeric_serial_v1_20261122.py, scripts/code_publication_windows/build_verified185_Hancom_completed_GLM41Base_original_probability_full_handoff_v86_20261122.py",
+      "initial_SHA256": "a164a2dddd1e2d06bb8c0d3dc3a59af3027dec8948997129993f4f24cad0585e"
+    },
+    "configs/queues/LlavaMore_own_original_letter_after_Xtuner_actual_release_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_LlavaMore_own_original_FP16_letter_true3_source_ready_v1_20261122.py, scripts/code_publication_windows/build_LlavaMore_own_serial_after_Xtuner_original_controller_v1_20261122.py, scripts/continue_LlavaMore_own_original_letter_after_Xtuner_actual_release_true3_capacity_fresh3_fixed200_serial_v1_20261122.py, scripts/code_publication_windows/build_official910b_verified185_Xtuner_More_v79_requested_args_20261122.py, scripts/code_publication_windows/build_verified185_Xtuner_More_complete_serial_handoff_v79_20261122.py",
+      "initial_SHA256": "d15e16ad172a904ebb0ae18c54a1300b8b57047f1c90044f49eba248bc7a7b4b"
+    },
+    "configs/queues/gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_capacity_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_capacity_serial_v1_20261122.py, scripts/accept_Gemma4MLX8_completed_genuine3_formal_NF2_actual_profiler_schema_capacity_serial_v2_20261122.py, scripts/windows_controls/build_Gemma4MLX8_completed3_profiler_schema_v2_formal_serial_capacity_20261122.py",
+      "initial_SHA256": "06602abc9aaa41d3ef956c36fe2ccba2da48379d97d722b8476daa12a511e68a"
+    },
+    "configs/queues/hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_official910b_verified185_More_Hancom_v81_requested_args_20261122.py, scripts/code_publication_windows/build_HancomHiLlava31_private_exact_BF16_source_guard_recovery_v2_20261122.py, scripts/code_publication_windows/build_verified185_Xtuner_done_More_NF_Hancom_ready_full_handoff_v81_20261122.py, scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py, scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v1_20261122.py",
+      "initial_SHA256": "c68e68fd9eeb2fe1d114e14c12536d6df5268686a551d25fa37b32143443f93b"
+    },
+    "configs/queues/hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_own_BF16_guard_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_own_BF16_guard_20261122.py, scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v2_own_BF16_guard_20261122.py, scripts/code_publication_windows/build_HancomHiLlava31_private_original_tokenizer_registration_recovery_v3_20261122.py",
+      "initial_SHA256": "d16e7678de81364919936403da59ca3a2ee4f46a6a91ba0044988c0e73801b24"
+    },
+    "configs/queues/hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v3_original_registration_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v3_original_registration_20261122.py, scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v3_original_registration_20261122.py",
+      "initial_SHA256": "3a294afe465ab5c47c5e27754932cb35660f258a657c119b9435b8aeea11aa7e"
+    },
+    "configs/queues/turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122.py, scripts/prepare_turkish_llava_own_original_Transformers_FP16_2048_true3_v1_own_original_20261122.py, scripts/code_publication_windows/build_TurkishLlava_own_original_FP16_full_numeric_serial_after_GLM41Base_v1_20261122.py",
+      "initial_SHA256": "a109894a9bb331b1fcab22673d29eb76e5fb7c9b0412d28115c94c4ae1db27f3"
+    },
+    "configs/queues/turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_after_known_Base_visual_failure_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_TurkishLlava_ready_after_exact_Base_visual_NF_failure_serial_v2_20261122.py, scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_after_known_Base_visual_failure_20261122.py",
+      "initial_SHA256": "bacb9bf2590dc89181ff288e8a4e196b3d648caa8f9fcf74d5478883f0f36d51"
+    },
+    "configs/queues/xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v1_20261122.py, scripts/code_publication_windows/build_xtuner_llava3_private_IModel_recovery_v2_20261122.py, scripts/continue_xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py",
+      "initial_SHA256": "687b968ef1adeb03800eed03ffd4ecae843c9621b009f5088aefdcb06cf46449"
+    },
+    "configs/queues/xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_IModel_20261122.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_verified185_Xtuner_native_IModel_full_handoff_plan_v77_20261122.py, scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v2_IModel_20261122.py, scripts/continue_xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_IModel_20261122.py",
+      "initial_SHA256": "ab89b99676ed070364bbc7bdb7684c7775517c9772b2be62a0e8b0be07720c6f"
+    },
+    "scripts/accept_Gemma4MLX8_completed_genuine3_formal_NF2_actual_profiler_schema_capacity_serial_v2_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4755da3dc05a509edc4ad32c740a7e764454c0ceb18cf91b746fd538d2f19ce3"
+    },
+    "scripts/code_publication_windows/build_BeeSFT_verified185_exact137_cleanup_capacity_wait_serial_v5_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e44989efb8e9013af3b5c32ce127fdcf17d8d4a5d122d515ff814c96f78977e0"
+    },
+    "scripts/code_publication_windows/build_GLM41Base_Turkish_serial_current_readers_and_official_controls_v87_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2a2847936e18a3272d360dfbd9a6530b2d79637450c14c5cfbc6aa11933a941b"
+    },
+    "scripts/code_publication_windows/build_GLM41Base_existing_visual_failure_full_value_CPU_diagnostic_only_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6dd2f95d8c42617c0fd5c32c514f387ec839d9734208086accaadc36981b86de"
+    },
+    "scripts/code_publication_windows/build_GLM41Base_own_original_option_probability_full_numeric_serial_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ca55123375d63fb35056a3ad050d86fefdffdf870a7f7e440657e9d64473c4ef"
+    },
+    "scripts/code_publication_windows/build_Gemma4MLX8_verified185_completed_publication_reader_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "df78cfaf91063fec7f756535d1d39e84adebca399f0190035018cd8b2e89009d"
+    },
+    "scripts/code_publication_windows/build_Gemma4MLX8_verified185_local_receipt_and_audit_finish_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "8e9a02dfbc0221745dd4be8c0c3f852e85c34611794dd68d2e7967cbb1eb1290"
+    },
+    "scripts/code_publication_windows/build_HancomHiLlava31_own_frontend_and_original_CPU_constructor_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "68208d5724c1a354cb16809b87d0d0c9292caaeed673b219116cf9a9b393e9ca"
+    },
+    "scripts/code_publication_windows/build_HancomHiLlava31_own_original_FP16_native_fullNF_serial_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "614ed2a8a1eb5705a96ae1032a8a42fac1c2e7e8bc7201dc67da01e858efea04"
+    },
+    "scripts/code_publication_windows/build_HancomHiLlava31_private_exact_BF16_source_guard_recovery_v2_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "71a527dfc8b6e85ab9e3566d663d706c5ed0fdc9b2339f2183521d6add87aa7d"
+    },
+    "scripts/code_publication_windows/build_HancomHiLlava31_private_original_tokenizer_registration_recovery_v3_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c94045b69a3f4df6c850e309562c935939be29a2c495e989fee37fa6c2930875"
+    },
+    "scripts/code_publication_windows/build_LlavaMore_own_original_FP16_probability_fullNF_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "97ec50444db921522e25d98f04e770e62a9734c26fdfa3c90156a0833cee4789"
+    },
+    "scripts/code_publication_windows/build_LlavaMore_own_original_FP16_probability_native_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "748be4dce9489f4885a32485b5d2f3a77ee9c743036f8d2795e9f3dc75e734f9"
+    },
+    "scripts/code_publication_windows/build_LlavaMore_own_serial_after_Xtuner_original_controller_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bdb1260a00321be52bbcb7e56f7fa706eb8333da494c79cb173901b4069748f5"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_completed_frontend200_unique_C_metadata_v3_CPU_constructor_v2_no_replay_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "51e57ac3d0d0b34821e4db8d09d2c2ccaa56ddeb4e8fca9742acb4ad74b73733"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_own_original_CPU_constructor_after_frontend_v2_no_forward_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e1b00a18e53bdf54b0eaa85b319c34d968c1fdf9241d109b2f17d09147a7e195"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_own_original_FP16_full_numeric_serial_after_GLM41Base_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "dfd122d58162162dbcf8916b9656b3a680d934b3a9015e6071117f3833470151"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_own_original_frontend200_meta_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6aba278ca8e2502653e5112163a59d29ca29524269b193c626620ee3a5e113c1"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_own_original_frontend200_v2_exact_own_template_no_NN_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c5830250e191fad340480501599715480f05908a91c25da66abf9cc10fe1216a"
+    },
+    "scripts/code_publication_windows/build_TurkishLlava_ready_after_exact_Base_visual_NF_failure_serial_v2_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "368c5be37928471fd8bd367d9604441feba87aa2ae9cede18527583bedf4ce27"
+    },
+    "scripts/code_publication_windows/build_daily23_controls_and_explicit_collection_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "53dd29361c94c80320119600be0249e25788ee6f4e9556ca37016c6dd315b76f"
+    },
+    "scripts/code_publication_windows/build_heartbeat1226_verified185_blocked_resource_and_legacy_cleanup_full_handoff_v89_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "76ab75a502e84b3a1d9f39d69ef5d3f4209711ad83b60b210299a9211e9762d4"
+    },
+    "scripts/code_publication_windows/build_heartbeat1226_verified185_full_handoff_first_actual_reader_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "704fd43ee766c5826af840b5fed59dc9c9ce57ed7fe8bf898a1c5334bf07de12"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Hancom_completed_GLM41Base_serial_v86_requested_args_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e1e10b347b38dc07c340174f835ce4ddae4b01cd96201eca9d3ba9720318a285"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Hancom_private_registration_v83_requested_args_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d9d596c3aade1830b2e5a53485ff7bc75fe5ca1c9c7842bb4964488aa951c38a"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Hancom_v3_actual_preservation_v84_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9353539ef317fca5ed04ac99ed3f77d42de68bb726d5f1ec85f8fc4e5c7d213c"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_More_Hancom_actual_preservation_v82_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "431ee678f629ee5342f22446b77c7f243956310ba636d1c2a79ffc5043ec2324"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_More_Hancom_v81_requested_args_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "abaf1668b8cda17b7c0ba78e950fc06b37f3cb1216e39677a0fbb655751879cc"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Turkish_fullNF0_capacity_Base_failed_v87_requested_args_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "10f3c1f1e1f143aa66d7356b2be8d8944d7ab3122a04b7420ba65ef9d6558150"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Xtuner_More_v79_requested_args_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ddc634f0b822516599a6f14648d4df0b9a5e3451a87851a41d3ac090bc6ba96b"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Xtuner_More_v80_readback_preservation_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ec59268492c2a3a6c4c26e77773568034c657d9eee404d4676ad9a42bf28e07e"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Xtuner_readback_preservation_v78_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "22444c0bee945de4a4acc122ea5576dd72efe7a3f76b53bc7bbbc4e169ecec40"
+    },
+    "scripts/code_publication_windows/build_original_three_owned_exact_locations_readonly_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "97a084b2a2f36a3692c6fe630cd65eaf392536b19eab951e2db6efbfbf230c14"
+    },
+    "scripts/code_publication_windows/build_project_numeric_allocation_metadata_only_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "10ef6875361b76d239d92d9665377ce8c1bfc4968a355a3efba34a398249a497"
+    },
+    "scripts/code_publication_windows/build_verified185_Base_failed_Turkish_same_serial_full_handoff_v87_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "758a13d5012f3c033cea0adbf783a583299d7e9304665b2b00dadbe900edae2a"
+    },
+    "scripts/code_publication_windows/build_verified185_Gemma4MLX8_dual_retention_Xtuner_full_handoff_plan_v76_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "daa1d73ae86f6398956a6bb283ce94c3b2b723a9f3e23bcf7e75c8747e69ec0b"
+    },
+    "scripts/code_publication_windows/build_verified185_Hancom_completed_GLM41Base_original_probability_full_handoff_v86_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2b3a7d4bef8e6589577e51bccf944f5bb2903ffa75aef943025f820fd80c0b11"
+    },
+    "scripts/code_publication_windows/build_verified185_Hancom_fullNF_GLM41Base_own_frontend_pending_v85_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "31b9547fa338cac129c211eaa6ab3cbe4d67cd09b0034fd4414f8e984e08f4ed"
+    },
+    "scripts/code_publication_windows/build_verified185_More_done_Hancom_private_registration_v3_full_handoff_v83_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "112936bb3a125db91f5e5f7af7f9fd8091992783bf004d247c0f8f80cc0ab069"
+    },
+    "scripts/code_publication_windows/build_verified185_Turkish_completed_official_cleanup_actual_close_v88_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1f5ba667d744fbb9963c4e72032e13309daa5781a3ca7d7a13d779f84ea6a14c"
+    },
+    "scripts/code_publication_windows/build_verified185_Xtuner_More_complete_serial_handoff_v79_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bc14e55167e807012edb41b0ad4703ca943401145a00ce09cfd10b9679aeaf7f"
+    },
+    "scripts/code_publication_windows/build_verified185_Xtuner_done_More_NF_Hancom_ready_full_handoff_v81_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9276960ddc0b9d35a19f3190683334eaaeed93f096f7219c4dd19e53472c3974"
+    },
+    "scripts/code_publication_windows/build_verified185_Xtuner_native_IModel_full_handoff_plan_v77_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f8b8e85e812dc724fda202200d31c35695fff7f187fa8d4b05d3e97c386f10a4"
+    },
+    "scripts/code_publication_windows/build_verified185_current_accepted_correct_nonexample_metadata_reaudit_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1f49b2c286c694ce9c2d58a5acd678002577a0b4558652c213c51e8cfc4f3bfb"
+    },
+    "scripts/code_publication_windows/build_verified185_exact5_legacy_all200_numeric_cleanup_metadata_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c942c953b72065cf32b86cedeb9015951c743c5ed3da2dba23475e683507773f"
+    },
+    "scripts/code_publication_windows/build_verified185_exact8_legacy_allstep_numeric_cleanup_metadata_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "543656b476cbd9747342132991e085f0444dbb6dc87883e652cb46da0825d808"
+    },
+    "scripts/code_publication_windows/build_verified185_legacy_proof_schema_readonly_cleanup_review_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4403fe994adb4733e102ef6bd279b3f556a61d620a034bd17d13737b9204d290"
+    },
+    "scripts/code_publication_windows/build_verified185_legacy_proof_schema_readonly_cleanup_review_v2_original_registry_path_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f1523d26c6c7b1379704eec6910070d309b975966e8bf9b699f4b3b2f2316119"
+    },
+    "scripts/code_publication_windows/build_xtuner_llava3_own_original_FP16_full_numeric_verifier_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "33342e901b8ee5cb87a357972624382f75a543a3c4a9a3fda403fe8c74a4a495"
+    },
+    "scripts/code_publication_windows/build_xtuner_llava3_own_original_FP16_native_observers_fullNF_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4cc65c1a408fd59662bf6b99b0ffec09caac77b35d92c47c0fcbd200c7b8220d"
+    },
+    "scripts/code_publication_windows/build_xtuner_llava3_private_IModel_recovery_v2_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0ac7a4b9d516485ec85720f88fbbd48e6fe3f3fec68adaa7470bdd5af83c38c6"
+    },
+    "scripts/code_publication_windows/daily23_reviewed_code_publication_controls_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "d41c0c106a3fb8a42d163ec061e532b7a214f3973c6779cf45217598639c695b"
+    },
+    "scripts/code_publication_windows/gemma4_MLX8_workbook_cell_verified185_20261122.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "reviewed_javascript_source_SHA256": [
+        "65b9a1246cfbbec434e058175f2e883270655cec22a61ce80bb34f25e287457a"
+      ],
+      "initial_SHA256": "65b9a1246cfbbec434e058175f2e883270655cec22a61ce80bb34f25e287457a"
+    },
+    "scripts/code_publication_windows/prepare_Gemma4MLX8_verified185_publisher_and_ArtifactTool_authoring_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "fbb93608ffe6794987a5d32e0700a39acef2298d1b8c7fe5b141bda490906e71"
+    },
+    "scripts/code_publication_windows/prepare_Gemma4MLX8_verified185_reviewed_transaction_and_CAS_tools_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "71f270f285fcc176586124dcded1d4143fe5022137bf0a3cd1427d4274b212fe"
+    },
+    "scripts/code_publication_windows/render_Gemma4MLX8_verified185_actual_published_workbook_20261122.mjs": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "reviewed_javascript_source_SHA256": [
+        "cdfa4930bc77a2befed286aa42b80f79391d1b7ff126bbe0944c583ed9adebda"
+      ],
+      "initial_SHA256": "cdfa4930bc77a2befed286aa42b80f79391d1b7ff126bbe0944c583ed9adebda"
+    },
+    "scripts/code_publication_windows/sync_Gemma4MLX8_verified185_local_exact_zip_CAS_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "60e24ac310f09e6e799f8964241af725f39f7023da92e4a95a060191a6c7be6b"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_GLM41Base_serial_v86_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "5a40da97c27afb81447b6e45df5d6c9360a440df1ff3cb3c4ad65826745dd299"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_Hancom_private_v83_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "328394229bd25c5be8ac14ac526c3c26aaa8f8f680a209515d81bd4cf57a773b"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_More_Hancom_v81_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e7a195cfab00c1f1739cd1b73fc8378c846eec81ab1b8af83284a69abbf43595"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_Turkish_completed_v87_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ede4863bb25f1240403792dfe8ca0bb73c313d714017c7da008aaffc3266ec0d"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_Xtuner_More_v79_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "57d110d83d8586c0970c73ca30c5b55c13832682c1aa7ce42fc675a6b7fa79fa"
+    },
+    "scripts/code_publication_windows/verify_official_910b_verified185_Xtuner_v77_actual_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f533d65ae79b1dbc565688e0bb1b909580d20aad0acec0ef6101a1785f4a8ed2"
+    },
+    "scripts/code_publication_windows/verify_official_910b_verified185_Xtuner_v77_actual_readback_v2_exact_one_terminal_LF_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c536fad5180751847b931b4f3dd4267bfb7a3825eea0b67662184249976efcac"
+    },
+    "scripts/continue_BeeSFT_completed_storage_NF_wait_actual_capacity_v5_verified185_serial_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1f6f9686a3fd69a42af2d8c3178ce371381a110e3045e37459092aca9f28c7b5"
+    },
+    "scripts/continue_GLM41Base_own_original_probability_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "adc510a1dac37de12a2cf4b70c7e2c87eb635d05c8b33db5de6e6bf3e08ac360"
+    },
+    "scripts/continue_HancomHiLlava31_own_frontend_then_original_CPU_constructor_no_NN_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4425e7c85a8dfec324562079969fa9879503eecb2231a76d68aaa60f5e7ed5e8"
+    },
+    "scripts/continue_LlavaMini_completed_formal_fullNF_only_capacity_v4_zipfile_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "610d49b7b87677b57a5b1b194d496ef41a369495438152053d50632f33052b5f"
+    },
+    "scripts/continue_LlavaMore_own_original_letter_after_Xtuner_actual_release_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f26d34b7d2510eba49f1f2cb09340d42055416ee458e513f94470313285b834c"
+    },
+    "scripts/continue_TurkishLlava_completed_frontend200_metadata_v3_original_CPU_constructor_v2_no_NN_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e7367ae3579b974c6cec102a6e31107dfb353013e7800c3308845d5e9991998e"
+    },
+    "scripts/continue_TurkishLlava_own_frontend_v2_then_original_CPU_constructor_no_forward_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c780c63aacfb9e05b8fd65736ce3b473e3f3d6e8f41c04f9791f50d049f5ba7f"
+    },
+    "scripts/continue_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_capacity_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e70acdef63b314a479d6859cff3ceecbdadba3c1be38ed541f3bae8500159258"
+    },
+    "scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2262775096aa0ce35217ee818a314b9dc39947d672238439ae02756fe6d9910c"
+    },
+    "scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_own_BF16_guard_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9884531d39d6f1587d555085e516b036a09879695985723bf29fd9d24990c67b"
+    },
+    "scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v3_original_registration_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "128fd758689b49e5c9a80cd72f2c17255cbd67ed9900f7dc1c4beb54efd08083"
+    },
+    "scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1de1f52d848f55a6524c69e4b3cb915b2f93f2fc886b8f3a6dcf101b23b46a36"
+    },
+    "scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_after_known_Base_visual_failure_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b897c07959fcd32d5bcf07eb21f1b4747f8fd753ada5269d3f01589e721cbad5"
+    },
+    "scripts/continue_xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "aa1ac47027bcb59a6ca73e42ce02c37c6c50bad3e36b5ef7e2d4542288ee38e2"
+    },
+    "scripts/continue_xtuner_llava3_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_IModel_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e32c627d0013571c10d8a662b2abbb69fa1ec49255f3bb5d46571b869cae523d"
+    },
+    "scripts/diagnose_HancomHiLlava31_original_registered_tokenizer_generation_interface_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "fc2070dffdb40634ff15a585334aaddba86227bdc77f44b1bbb666ad304ea4b8"
+    },
+    "scripts/diagnose_glm41base_completed_visual_full_value_CPU_reference_drift_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c1d37481704e0cf7f6da972ec5f7fa19edda26f0cc7f20964b2a3063f0dcb4a3"
+    },
+    "scripts/formal_accept_LlavaMini_completed_genuine3_fullNF_single_JSON_framing_capacity_serial_v3_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "fa66e660bade105e2acbfb02802bd104b92163703ee2de6341c160be1756506c"
+    },
+    "scripts/inspect_HancomHiLlava31_own_original_auto_FP16_loader_resize_remap_no_forward_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1456767ef11b0fbaaffc7719e5fb997882b1e80c6484c04082c9e30237b6e509"
+    },
+    "scripts/inspect_LlavaMore_own_original_FP16_loader_resize_remap_no_forward_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "936b998938c533caa136806a8d41d4bf879ac72a3b2f521c1fc4bcd1040892a2"
+    },
+    "scripts/inspect_TurkishLlava_own_original_auto_FP16_loader_resize_remap_no_forward_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "50ec430f5dd2fe662f4aa2f5f044ca049032e7a705fc13eab984715f6ba37354"
+    },
+    "scripts/inspect_TurkishLlava_own_original_auto_FP16_loader_resize_remap_no_forward_v2_current_unique_C690_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "239a8ba3a2d54b3a2b75c39a32122b1d2d9d872991a8a981036fc478289c50f2"
+    },
+    "scripts/inspect_gemma4_e4b_MLX8_own_original_Transformers_template_generation_no_NN_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6a4276d5ac7381ee2b11b2678faaca30c42cbcc2600125b13b23e370a0bb4751"
+    },
+    "scripts/inspect_xtuner_llava3_own_original_FP16_loader_resize_remap_no_forward_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "5ce3e847ea4bd5943432586819bed98d427d7a5750be88a60bedb9596438a79a"
+    },
+    "scripts/inspect_xtuner_llava3_own_original_FP16_loader_resize_remap_no_forward_v2_CPU_default_device_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "eedddb8187ae0b839c12926ef002b70a8d00df2e99346699dbd3d6343302b7ff"
+    },
+    "scripts/inspect_xtuner_llava3_own_original_FP16_loader_resize_remap_no_forward_v3_full_loading_info_schema_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "fce0cc708f974cfb5f8f715eeee7f38043351fd30659f3a781f62fab73d7cf90"
+    },
+    "scripts/maintenance/apply_reviewed_verified185_Gemma4MLX8_exact137_retention_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0edee8a77a6005ce6a81a627ac1fd28c14b2ae223867adf5f873a3f326da936e"
+    },
+    "scripts/maintenance/close_verified185_Turkish_fullNF0_capacity_official_and_cleanup_v88_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a5c56226f6715441826d9b19993ba6a4243ab5d5432160a19341c86d099b7213"
+    },
+    "scripts/maintenance/collect_daily23_verified185_explicit_primary_sources_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "4a572faf4611587eb7cf37c8da47643e7087833d6b0575d0593f8985e6d76e4d"
+    },
+    "scripts/maintenance/discover_project_profiler_temporary_storage_readonly_after_verified184_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0c19601206b0d8fb172b11dc09a7b3d6180e100d5209a23a12fe0625dd7b13cd"
+    },
+    "scripts/maintenance/discover_verified185_current_full_accepted_correct_nonexample_metadata_only_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0946c4fc9b913e0842a188b1aa5dfb5aa1da28732fb36de25b7513e9d874ebf6"
+    },
+    "scripts/maintenance/discover_verified185_exact5_legacy_all200_numeric_correct_nonexample_metadata_only_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "90cac0b17b1036e37b0181a205bb331bd7bf2fe0c06fd146e119261bf6f1b2ca"
+    },
+    "scripts/maintenance/discover_verified185_exact8_legacy_allstep_numeric_correct_nonexample_metadata_only_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0f0b7b0f52eae553b14ce45173d46ec4dad96aa21d3ea845bd9ae843b676e01c"
+    },
+    "scripts/maintenance/finish_Gemma4MLX8_verified185_uploaded_local_CAS_receipt_same_original_lock_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e390ce7edbc479d337837e8ada54564f197ae1c60e170d265071e91b87cc7088"
+    },
+    "scripts/maintenance/inspect_GLM41Base_original_generate_renderer_API_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ee810bfd122e876364763b82fa8a14d74e8eff6bdecb0069d990e19ca8c749b8"
+    },
+    "scripts/maintenance/inspect_Hancom_v2_exact_tokenizer_configuration_interface_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "fd6e42df77fdaaf53e28c5b30a7f3a2e20030d54aea9804f4c5430eb85d527b3"
+    },
+    "scripts/maintenance/inspect_next_own_GLM41Base_original_assets_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "151f39391d0c4a014b522e4b364ab0528a2691ccc49e5271a5faf5f78d795f92"
+    },
+    "scripts/maintenance/inspect_next_own_TrOCR_original_assets_task_dtype_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "572a58158e5828833754528bf38dd8c7118752d8b6dd6a1e7c33220b2d2be952"
+    },
+    "scripts/maintenance/inspect_next_own_TrOCR_original_assets_task_dtype_no_NN_v2_config_scope_fallback_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "95f3a23b25d0702715c63e5653bcb9958ed00ec7470089019fd4ab502dd193d2"
+    },
+    "scripts/maintenance/inspect_next_own_Turkish_SpaceLlava_original_assets_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1d2535acfbbefc17b423b87386e3396b5724c3de23400e047936abb4db2ecbdd"
+    },
+    "scripts/maintenance/preserve_heartbeat1226_verified185_resource_blocked_legacy_cleanup_full_handoff_v89_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6b92e3c52e073287cd4a7b120137c0e795f44b3e267dd9b5f2222696dba0b2ce"
+    },
+    "scripts/maintenance/preserve_verified185_Base_failed_Turkish_same_serial_full_handoff_v87_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "617cb1ae1dbec14f6fad3120072d01de1b59b32acc2a0b4319108fbf2994e82a"
+    },
+    "scripts/maintenance/preserve_verified185_Hancom_completed_GLM41Base_own_probability_actual_full_handoff_v86_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d23be7b775d0513073b8c358c2984e162d835d9ae47f46a3c83f14520eec9055"
+    },
+    "scripts/maintenance/read_GLM41Base_full_numeric_progress_same_serial_Turkish_ready_actual_v6_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e0dae9ee09ff229506c6823d94d0272498cb052bb4b36cf787ee5f3304fa11f9"
+    },
+    "scripts/maintenance/read_GLM41Base_native_numeric_architecture_and_cleanup_exact_contracts_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c106fc8ad8a95e71b5d55365af11ea39159a9577657d472356d3da63f4047e4d"
+    },
+    "scripts/maintenance/read_GLM41Base_original_parent_and_own_frontend_architecture_source_contract_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a5eba7405474642777c9c247be67fb3d5cf4a6137efb90e02834e58c3d649ee6"
+    },
+    "scripts/maintenance/read_GLM41Base_own_original_discriminative_source_and_existing_architecture_paths_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9ea078cb0869eb5d4d8d7d70ccd0154c92b69a54d8d4e0cca368bbdd03fb52fa"
+    },
+    "scripts/maintenance/read_GLM41Base_own_probability_true3_serial_full_actual_v1_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "7020ef6235c68b46cd3f6fc5feb167bb0851b68948812e56d417cdb19071ed34"
+    },
+    "scripts/maintenance/read_GLM41Base_same_serial_Turkish_exact_own_template_CPU_no_forward_actual_v3_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e5a14f4ac0625791bb78f31fed0f40250cfa3dc71896ebec44c3b817965e0aa4"
+    },
+    "scripts/maintenance/read_GLM41Base_same_serial_Turkish_metadata_v3_CPU_v2_actual_v4_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "876b09d8c39e9bb348d60970de54de0dd2c17ad764c57bdac3acf2bd26a1f2e3"
+    },
+    "scripts/maintenance/read_GLM41Base_same_serial_Turkish_own_fullNF_queue_actual_v5_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2135c92bfb87523c68cae0f90e6028362b9d6bc231977970acdba7efe65205ad"
+    },
+    "scripts/maintenance/read_GLM41Base_same_serial_Turkish_own_input_only_full_actual_v2_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "adf2390ba53090defefebb4256c52f0bd1165a3887a7674e779a663438245835"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_completed200_metrics_current_fullNF_no_write_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6cb2dc5d3cafd377869b62b4eeb4064d043681eb86b0829b34f28ef7b6c696d0"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_completed3_actual_profiler_schema_unique_tasks_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ea30297bb8ffd78cc651f69a5cc25dede235312dfbd68619275729bbe7ef3032"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_current_serial_proc_FLOCK_attempt_full_small_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "93805574f5e82c3dc4309b58fb1f663c6a8ab6f568d20b358968f70872d7ba88"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_current_serial_v2_console_report_FD_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ef48d5431589b7f5061583e686d248ff58f6a54516e742987bbb252a0142242f"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_formal_NF2_serial_recovery_current_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "8a209ca20cc13854a308990804486e5703f52e277695cd9c2433664510b086cd"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_formal_NF2_serial_recovery_v4_committed_trace_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9a54bdb29dbe2e434e4a73d7869c1bda34149281890d7c9b7e63fe2bc0285abe"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_verified185_dual_publication_exact_inputs_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bcac1f1c2aae468a4d322e518f69c27539b999d207abb902b1ce00694a6827e9"
+    },
+    "scripts/maintenance/read_Gemma4MLX8_verified185_server_book_for_local_CAS_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f207a8d06051cc1454f80d57d4051539f2386e2144d665458f3549c69b17eecf"
+    },
+    "scripts/maintenance/read_Gemma4_native_processor_token_expansion_and_saved_generation_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "daabc93426c194ac0121c3eea21aded6013c36062178dfe70bf720baea45e4ba"
+    },
+    "scripts/maintenance/read_Hancom_private_BF16_guard_v2_real_serial_progress_and_original_failure_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b0d23562dcd5c94437cc28f5cb0ab5a1948770898e9f2050fb84500e9ac13bc5"
+    },
+    "scripts/maintenance/read_Hancom_private_original_registration_v3_actual_serial_and_completed_More_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bdbd9314ad668177b1924130529f8e4bbed123fe907be56e02eb43ce5be67a50"
+    },
+    "scripts/maintenance/read_Hancom_private_original_registration_v3_actual_serial_v4_all_proc_cwd_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a75f26dfd758c99b922a4327351890794a28b19cd788c05d2be5256575324d10"
+    },
+    "scripts/maintenance/read_Hancom_same_genuine3_fullNF_and_GLM41Base_own_frontend_no_NN_v5_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "564a73e801d2596d6cf9691d7daf915e1f755ff88575713742cd0c2bab639e39"
+    },
+    "scripts/maintenance/read_Hancom_v1_actual_zero_forward_failure_complete_context_and_More_exit_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a9ddef16954082def1e7ee651dc6aee8f093f4cc0de4b5ba30c3056147ca0bd1"
+    },
+    "scripts/maintenance/read_LlavaMini_completed3_full_numeric_proof_and_exact_stdout_framing_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "998891f1a0dd146d736613824f5bc39560e1d6da00ebda09ad2c81abab8340b1"
+    },
+    "scripts/maintenance/read_LlavaMini_completed_formal_fullNF_capacity_v4_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "58911883aaa4bcecd6308ae0350b871a0e163c7df21a0abd263d16a86687887e"
+    },
+    "scripts/maintenance/read_LlavaMini_current_serial_v2_real_process_FLOCK_progress_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a8f360318f69919017be70b43745fbcdbdc0069a82528290dd60a06775c9b418"
+    },
+    "scripts/maintenance/read_LlavaMini_current_serial_v3_relative_run_child_and_attempt_logs_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "eb306e452f28347511351b9064825b84807397a9bf4dc8e796966eee0e8df239"
+    },
+    "scripts/maintenance/read_LlavaMini_current_serial_v4_relative_verifier_FD_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2fa9890a579eeea9254fc79d3c81c71f83802609426a4f5eebcdf0e0f90a2ef8"
+    },
+    "scripts/maintenance/read_LlavaMini_formal_single_JSON_acceptance_capacity_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ce6e5acb4f01a13e545cca77a23a81f09a18c3d22386bd33a6f4c0862c775015"
+    },
+    "scripts/maintenance/read_LlavaMore_original_adapter_complete_source_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bcf95e14cfe3fe36144f74c53d38dcff87d5b092ca327ad649f0ed52544f008b"
+    },
+    "scripts/maintenance/read_More_actual_serial_Xtuner_completed3_Hancom_own_front_CPU_no_NN_v3_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "85323c357735648d536367b5081c4169be6c562018838e23a786014b589b5e87"
+    },
+    "scripts/maintenance/read_More_and_Hancom_own_original_native_serial_actual_v4_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "54bd2001a7442947ed3567587579dadede71804abe3832b4a98ff3c10c6e56af"
+    },
+    "scripts/maintenance/read_TurkishLlava_exact_current_C_B_threeD_and_completed_frontend200_v2_no_replay_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "972f86a0ec17acaedbe5360b6d747164846dbcde1b40dfaddf62aa4146ed2879"
+    },
+    "scripts/maintenance/read_TurkishLlava_same_true3_fullNF_capacity_actual_v8_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "933c3cfe3cd719b2f64cfc7990458b25d34a5aca268b208c7a0456734f69b99a"
+    },
+    "scripts/maintenance/read_TurkishLlava_serial_v2_after_Base_failure_and_visual_CPU_diagnostic_actual_v7_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "671bf5cb6f575fed29decb69d6c4eddd7bc32cc3f862d06182e4191a0a8f904f"
+    },
+    "scripts/maintenance/read_XtunerLlava3_own_original_native_true3_fullNF_serial_current_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "cb31e7382c0fba414894e2a17c3f3dfe9344c18a0d28b13abdb5421b6f5b1787"
+    },
+    "scripts/maintenance/read_XtunerLlava3_private_IModel_v2_fullNF_serial_current_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e17c87bfe9a7a57d87a157765e3c0dd6b626e639ec8e3426eefe81413ae48eb2"
+    },
+    "scripts/maintenance/read_Xtuner_completed3_capacity_More_original_probability_current_serial_full_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "995a1eb4c1e1833921674e909fc0e0e607bdbc003f88786a71609cde4eb0a02a"
+    },
+    "scripts/maintenance/read_Xtuner_completed3_capacity_reuse_More_current_serial_v2_incremental_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6a6a64f5b4c751ec7e8ef5fa205b6bc0aa7499c7cfd66c4d5d392526b6af8706"
+    },
+    "scripts/maintenance/read_Xtuner_own_actual_tokenizer_original_TF_EOS_branch_metadata_only_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "67777c44730dc9b6851ca9c5b24c5d0e6bb77e16716277c6b16b762223cbc403"
+    },
+    "scripts/maintenance/read_actual_cleanup_policy_and_GLM41Base_native_layer_interfaces_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2a3ce2e909789a49081156efd88407fa41210b6ad8b89d993b82159b585daaee"
+    },
+    "scripts/maintenance/read_heartbeat0721_verified185_required_v83_and_latest_actual_complete_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "739922be1559e090ce0980845d8662e90502f1105725367809578a32be0306ae"
+    },
+    "scripts/maintenance/read_heartbeat1019_verified185_required_v79_complete_handoff_current_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2f62f603be03cdde37bd4790ff1333072e8a789188cf80f90f55daeaf078eec9"
+    },
+    "scripts/maintenance/read_heartbeat1226_verified185_required_v87_closing_v88_actual_serial_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0ade86373b75ed9aa3b35af7673153bb93e0c42d89addff41c9f83c80aab1887"
+    },
+    "scripts/maintenance/read_heartbeat_verified185_Xtuner_required_latest_handoff_full_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "5aeb7485a0c17e2f227af730b8087a986fb71a4f617d33c2a46f7c513015a64e"
+    },
+    "scripts/maintenance/read_next_MedGemmaPT_and_Gemma4E4B_MLX8_own_saved_deployment_headers_no_NN_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3f74e0aaf36155545119a3cac8519ed1f6cc0cc3bd082c27ead8bb202b1351a8"
+    },
+    "scripts/maintenance/read_next_native_Llava_owned_headers_saved_deployments_no_NN_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1cab975142612229898b73e2c80c8f954184afcc26ab418134791495a7ea9651"
+    },
+    "scripts/maintenance/read_next_owned_Llava_five_original_protocol_header_metadata_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "99daf04a4e78d83de4704ae9331d493a37a73247000c671ed8ba181c640c2a87"
+    },
+    "scripts/maintenance/read_original_three_owned_checkpoint_exact_family_locations_metadata_only_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d05d95ec6a32c173629647f76335820d0fb5bc13a6e9ccd04b00738b97b720f7"
+    },
+    "scripts/maintenance/read_project_numeric_physical_allocation_and_standard_archive_compression_metadata_only_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2a25a8270c3398e09da6e1270aab7a5ab2bb77c69158edcc26fbd3055b62969d"
+    },
+    "scripts/maintenance/read_verified185_Gemma4MLX8_dual_audit_export_frozen_monitor_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2b51126135eb9a200a18db09bd23d17a65fec3c5dccaabb058c2b202381fd175"
+    },
+    "scripts/maintenance/read_verified185_Gemma4MLX8_exact_retention_full_plan_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ef8f44b41a983f92d26b43dbba9f4348105c27d71b3aaecff367128f3712ddad"
+    },
+    "scripts/maintenance/read_verified185_Xtuner_LlavaMore_serial_ready_frozen_monitor_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "63c86bd3da5a884fdcdd493a6b8ec2c0c1c335627dd4ac7fe31e48144fa0a25a"
+    },
+    "scripts/maintenance/read_verified185_Xtuner_current_LlavaMore_frontend_only_no_second_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "41360ca01de34b0843f19dfc6872a5401aecddb0a4113b803eb4b1c9d1dafa44"
+    },
+    "scripts/maintenance/read_verified185_Xtuner_current_LlavaMore_source_constructor_v2_no_second_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3193b40a217e58e6571c06503fa9ece9f29acbad4f13fdf30c08ad1b9b45beab"
+    },
+    "scripts/maintenance/read_verified185_Xtuner_v2_complete_monitor_current_no_write_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2e409d2106a14deaecd5d59f77200653f9f1002a6c307966a38cc4d41ceeed3f"
+    },
+    "scripts/maintenance/read_verified185_Xtuner_v2_current_handoff_binding_no_write_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3e1a84fea3e799402e4cac904b180c3fa0a219856d5bda4a366efc7113122919"
+    },
+    "scripts/maintenance/read_verified185_current_canonical_next_Xtuner_constructor_retention_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2b40060474d1ae10ec8c1bd32e19be9eb2ca402d13b69e93fedc237b13a5f330"
+    },
+    "scripts/maintenance/read_verified185_current_canonical_next_Xtuner_constructor_v2_Bee_capacity_v5_actual_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b69c5d9718de6c8f7d75c090250f9d6f68f974bf2da0e29cf3c4fa1dd907582e"
+    },
+    "scripts/maintenance/read_verified185_legacy_full_numeric_proof_schema_and_disk_cleanup_scope_metadata_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c1ad883ded70f02d8389970f58ff346437b9e2ee954643a9b16dcce843dbc6a6"
+    },
+    "scripts/maintenance/read_verified185_legacy_full_numeric_proof_schema_and_disk_cleanup_scope_metadata_v2_original_registry_path_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "78cbdedfb7ab2ae70bf7659b347112d09819b7acf2694d11cb80034464d07409"
+    },
+    "scripts/maintenance/read_verified185_next_Xtuner_own_frontend_and_Gemma_retention_candidates_no_write_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "79e2902827400b88a907850084486cdc17167030c8ccaad4d4b02ee0b9e2f3fc"
+    },
+    "scripts/maintenance/read_verified185_next_Xtuner_own_frontend_and_Gemma_retention_candidates_v2_no_write_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a34a2ef652b8b9bbcc1ac06a0155caf755c90fcb0108fcf37987bfcc500e0e0e"
+    },
+    "scripts/maintenance/read_verified185_next_own_pending_metadata_and_current_Hancom_serial_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "13107a0b7fb1addf105dad7b9a15c5438b845a52d3b31ee56ad732e68e120c5f"
+    },
+    "scripts/maintenance/read_verified185_original_three_model_resource_gate_no_dispatch_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "49789676dcb4403546977f26b592af06b51da2bf8188d3a8d1f74013e0f2f7c2"
+    },
+    "scripts/maintenance/read_verified185_pending_Llava_original_deployment_only_priority_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "cdf9c17f1e16a2fc9acb945c99c9f72a5e6f2c1fcd17a7df6d7c0c1489d44ed4"
+    },
+    "scripts/maintenance/record_official910b_verified185_Hancom_v3_actual_pending_v84_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "0762cd04a3cf63c6f4faa23eb07c8c84c00206cd41226dce1f99e255758d6dfc"
+    },
+    "scripts/maintenance/record_official910b_verified185_More_Hancom_actual_pending_v82_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "44d530c68e0ee05e5091a24b4f4d62d9caa3be11b63f5b215eef2f43444e245a"
+    },
+    "scripts/maintenance/record_official910b_verified185_Xtuner_More_v80_actual_preservation_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b54f8497b7ef1c6b3d446dd3a92b318be2b9aa325b72d7a7294517c910f90799"
+    },
+    "scripts/maintenance/record_official910b_verified185_Xtuner_actual_readback_pending_v78_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "75cc0e22864a60ef9984b8d253f605f459625e186727edb61a5e38062e6041dc"
+    },
+    "scripts/maintenance/record_original910b_verified184_Gemma4MLX8_v74_official_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "445b84faf21f6b4484d738c6761a3bb4fbc55757c05abc90bf86b5ff4d4d0c99"
+    },
+    "scripts/maintenance/record_verified184_Day22_unique_push_LlavaMini_actual_and_policy_CAS_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f3f636d6cdd20e661cea8b4e65bed2117c7c0b1512661d49d14d741e3eeb75a9"
+    },
+    "scripts/maintenance/record_verified184_LlavaMini_formal_capacity_Gemma4MLX8_serial_full_handoff_v74_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "105ddf509f14fb75074c3047f6117f4c2a905e9217b4a50b14c38b8a75d16eca"
+    },
+    "scripts/maintenance/record_verified185_Gemma4MLX8_dual_exact137_Xtuner_own_source_full_handoff_v76_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "626217c86812bae501bc8dbc9fa53fcc110784a9537ea8e862d3ca88ec959f49"
+    },
+    "scripts/maintenance/record_verified185_Hancom_fullNF_GLM41Base_own_frontend_current_pending_v85_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "5b752a2daac089b15a62e01c1c4657de12b246ca4bde02e5419adcef958823a5"
+    },
+    "scripts/maintenance/record_verified185_More_completed_Hancom_private_registration_v3_full_handoff_v83_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a54e0382631c21d0a76f6c2f1e8e213059ead9cfbe7fd1551705400bef6dcbc3"
+    },
+    "scripts/maintenance/record_verified185_Xtuner_More_full_serial_actual_handoff_v79_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "bae0902ed2a05de41180dd0a0b74638ee85349533bdccf37138903b56986e406"
+    },
+    "scripts/maintenance/record_verified185_Xtuner_completed3_More_Hancom_serial_full_handoff_v81_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ae00b66b32be8bbd5d9770d50e35a5bdfdda5a91bd9edfdaca49d14b0cb8be01"
+    },
+    "scripts/maintenance/record_verified185_Xtuner_full_native_IModel_serial_actual_handoff_v77_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "7ebc9ad39f8bfa92519b2ece821d47d5001c37effcb68d74e0e5c92d4729961d"
+    },
+    "scripts/maintenance/retain_verified185_Gemma4MLX8_accepted_correct_nonexample137_exact_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "47129787c4974d9067c13d92d8224a6c7159deeb52cb033ab29c11d6eb257c8f"
+    },
+    "scripts/maintenance/run_LlavaMini_original_private_cache_complete_observer_units_no_NN_20261122_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "40a71ffc2d51b9f82207df1de09a33d391351f21c272d986f3b01c3639513c00"
+    },
+    "scripts/maintenance/run_daily23_actual_R_source_tests_no_model_20261123_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "1d926431111ec20fed2480657406fcbb26e61bf78e730ce7448fd823da028cce"
+    },
+    "scripts/maintenance/run_daily23_actual_R_source_tests_no_model_v2_original_source_arg_20261123_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "8d45dcb4351f8685197f928d98a95a98bb03633b08ad8d5d3dff95532d35be91"
+    },
+    "scripts/maintenance/sync_daily23_reviewed_code_policy_and_remote_receipts_only_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "51bd1abf7d3867c78d86312d21c1c1f9894bc11cdcd33afb2b69eeab1c7125f5"
+    },
+    "scripts/maintenance/verify_daily22_R_source_concurrent_CAS_before_publish_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3d7ff318784a4562d1e42fbc2a96fab37636455f6c8ab718cc8884aba8f069c2"
+    },
+    "scripts/maintenance/verify_daily23_R_source_concurrent_CAS_before_publish_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "ab964a78f5014a8aa7601cfdf8c09f96cdc64173992701bd345254a067d18d74"
+    },
+    "scripts/prepare_GLM41Base_own_original_option_logprob_frontend200_native_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "4501062eb42a73331530ce950b0bdd835b5126800e67dfc67b57d0d3c94fdd9c"
+    },
+    "scripts/prepare_GLM41Base_own_original_option_probability_true3_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "39ce5d403a2f18a148532efb7aaa30dfbd8bea9ad299e52859f6926865a78b63"
+    },
+    "scripts/prepare_HancomHiLlava31_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "47a94ff9e4b899e58d0b55fea11c9fba7f7bb654263646837c4118ed6079a888"
+    },
+    "scripts/prepare_LlavaMore_own_original_FP16_letter_pad_frontend200_meta_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "91a7af12af35e06a971a5295c1503744915f74194df3b7e51038cbdf85a37067"
+    },
+    "scripts/prepare_LlavaMore_own_original_FP16_letter_true3_source_ready_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d4ac52b85747839d231135ee42f86aa780a78151833ad0c4fdfc47eb7e71685f"
+    },
+    "scripts/prepare_TurkishLlava_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "918038fcc5f5986d60ae0bc27e17f9f724729a404a7e50c67a5d8fa4d2aef43b"
+    },
+    "scripts/prepare_TurkishLlava_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v2_exact_own_template_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1d3d39f619aff6e837fe2755a9414d8d5a3edaac5a049062098178ac4ab14e22"
+    },
+    "scripts/prepare_gemma4_e4b_MLX8_own_original_Transformers_BF16_single_SF_frontend200_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b6b00d2c0dbdb76d78504e3206b517572283d2f142ecb34c662d539681348c15"
+    },
+    "scripts/prepare_gemma4_e4b_MLX8_own_original_Transformers_BF16_true3_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1abb6373c9485804e5627a065274646a3258b5a5cb2f66a0e17717f7a766c230"
+    },
+    "scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "79d0d11bf7e2855066740a00cda60b91f8695bd98a681d6bf7e41a75e2766cc2"
+    },
+    "scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v2_own_BF16_guard_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ab19c1797b3b9183aa10b730eb48abac30b3441d97286c225ebb5d0cae7cdda0"
+    },
+    "scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v3_original_registration_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3bb311ea1c6b7d76abfcb2bc75bc2ce66777e0f4e4bcd19b5b5e062f7cb9ce6e"
+    },
+    "scripts/prepare_turkish_llava_own_original_Transformers_FP16_2048_true3_v1_own_original_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "64d2b7fa33825c5465c25029dd8e1464e7eb5203aa0b6dab7b69139b53530a13"
+    },
+    "scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "8bda597d7b324a11cedb027472cd8824a8c6745093dba15ee30662e42bccdd9b"
+    },
+    "scripts/prepare_xtuner_llava3_own_original_Transformers_FP16_2048_true3_v2_IModel_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f0ab2ab7212f92415d0261e2e45b593a192aa67a1b23e07577b8a1723299a517"
+    },
+    "scripts/prepare_xtuner_llava3_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1dfcf8a683eddfc8f203f76daf3afbd1e9689150cb2e5c71040589789e4fa30a"
+    },
+    "scripts/prepare_xtuner_llava3_own_saved_Transformers_auto_FP16_frontend200_meta_no_NN_v2_original_tokenizer_fallback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c9db4b2c4b66c61e9ad86f4581a92491880cb2cca6cd194bbc1b183cf9d90634"
+    },
+    "scripts/publish_Gemma4E4BMLX8_verified185_single_original_lock_dual_transaction_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "567f27b07fde53904eb6916f7519a8a5980a7ee6078967743361e22fd3f6ed77"
+    },
+    "scripts/recover_TurkishLlava_completed_frontend200_current_unique_C690_metadata_only_v3_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "c2a17c9b031bffb483633b9e073f9ed35e6d924ff362876a0bc54a2e7f241134"
+    },
+    "scripts/run_Gemma4E4BMLX8_verified185_dual_publication_actual_completion_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6cd4c2a3acbd25efc2341a8ff5a6288e9cf1cfe21f8a6f7efaaab9aec4a29b43"
+    },
+    "scripts/tests/test_complete_module_values_tree_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "189400990ef62e4b6f904223aa1b547a338845d0b96365e840f6a0685066a1fb"
+    },
+    "scripts/tests/test_complete_standard_LZMA_NPZ_parallel_values_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1441c14aeed7d219dd003c7ba128af0e76a48630819e0f3acac283979cd6eb03"
+    },
+    "scripts/tests/test_unsloth_gemma_4_E4B_it_MLX_8bit_verified185_original_writer_isolated_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a6f1ae206bea756f1fec286d2a60674bb6238d30eadf64321a7a7f450d3eea5d"
+    },
+    "scripts/verify_LlavaMore_own_original_FP16_discriminative_letter_complete_values_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "97f30e70a99f0b516f7cc242db548d825c0d47faef5fe574f85a213910551b8b"
+    },
+    "scripts/verify_gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6f34e6fb44347adb14b3d768d863885e67953639a8caa63fd6dec510dfc424ad"
+    },
+    "scripts/verify_gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v2_actual_profiler_schema_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "980b32b3a346f47efa3312b84e760a9771dc2527287061c4dad02a84bc25be09"
+    },
+    "scripts/verify_glm41base_own_original_option_logprob_BF16_complete_values_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "6828f4bc390d3fda8ad81e4b6f5c3c25afe0afbaa4eab3d79bdc8b97f167eddf"
+    },
+    "scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e60a28b60f00225f3cc28433c7ff60f8ffb92384cd7bfb8b29137a3e3bcc1177"
+    },
+    "scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v2_original_registration_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "e3a645e8f25054b84490d9f9a09dcdd8b7489b5d98e5a65915f70450e3b37981"
+    },
+    "scripts/verify_llava_mini_own_original_FP16_2048_full_values_v2_single_JSON_stdout_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "96ffaae669faf1c5cc91a1877e96c2b4307997b42367b590db70e953de416d9d"
+    },
+    "scripts/verify_turkish_llava_own_original_Transformers_FP16_2048_full_values_v1_own_original_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b6120a53e7107b5d40fdeea49b4278d7ff67517c598aae84c1fe504cfb2278e2"
+    },
+    "scripts/verify_xtuner_llava3_own_original_Transformers_FP16_2048_full_values_v1_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "34b6bb348272d9966f58f4e5acbbb9b878a607d65c0b653c34065c28d851a4b8"
+    },
+    "scripts/windows_controls/build_Gemma4MLX8_completed3_profiler_schema_v2_formal_serial_capacity_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f8d6aebbbee154ccffb725b68e7bf4759fa9c67e352fc2c3445212ce87bf69ee"
+    },
+    "scripts/windows_controls/build_Gemma4MLX8_own_Transformers_frontend_and_native_sources_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "37473f9dab53b284d818b7bde689cd9c75762950279e5e36c9d4b94cbc4d14c9"
+    },
+    "scripts/windows_controls/build_official910b_verified184_Llava_completed_Gemma4MLX8_serial_v74_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ec3bae22226a701e05d90a274d75b5e210dca4f8c11d516ae305573ab68776ca"
+    },
+    "scripts/windows_controls/build_verified184_LlavaMini_Gemma4MLX8_incremental_handoff_plan_v74_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "3133e981efd68b26649f084be117c429020f0288e22cf973a490e87f2e478f48"
+    },
+    "scripts/windows_controls/finalize_daily22_remote_verified_receipt_and_local_workbook_stat_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "9371d691333e2bd2ac797480cba0c709e5436089ee8a06a0ddee8a65e61ec762"
+    },
+    "scripts/windows_controls/invoke_daily22_actual_reviewed_code_publisher_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "74275ea0530a02d8e5764673018e8c3d07177dd10da6624100932317ba24b05e"
+    },
+    "scripts/windows_controls/prepare_daily22_actual_publisher_plan_and_full_review_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "900b6c66df885d8d95054a8b5faada17ee888388b921c8eade49bd378a869e12"
+    },
+    "scripts/windows_controls/run_daily22_final_snapshot_tests_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "2e8ae717af2992749c41ca5d263bb906c5355477e39f1e09f9c7f64e37a3794a"
+    },
+    "scripts/windows_controls/verify_official910b_verified184_Gemma4MLX8_v74_readback_20261122.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "781e8c0393ffd1b550ca4e4ce1167d0d84904cda807e680b0791fc48b1985a6a"
+    },
+    "universal_eval/algorithm/glm41base_own_original_option_logprob_MC_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "89187de2d38c555248cef5492877a56c2a0787b981ac50f975691e49c450a6fd"
+    },
+    "universal_eval/algorithm/hancom_hillava31_own_original_FP16_2048_MC_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "68833622d1b5201f36f0cd77c57742ef487a260f2901344f1fbb6e2e2bdb4ecc"
+    },
+    "universal_eval/algorithm/llava_more_own_original_FP16_discriminative_letter_MC_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "91d6c4964306a7f1404c18a502aab378f9192c07751668505706892936b84b4f"
+    },
+    "universal_eval/algorithm/turkish_llava_own_original_FP16_2048_MC_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "19e98499ec578ef1ea74c11f5d187bfb2ea8833b6df334cda992331c870d3a0a"
+    },
+    "universal_eval/algorithm/xtuner_llava3_own_original_FP16_2048_MC_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "7400c75f20fa70c50399d96c034aeebe6b927d46542b705977fed0400d092342"
+    },
+    "universal_eval/model/adapters/gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "faf76bc72aa6138310a7c10a453f3cac9297608dd0da4ef495b89b2f26bd6899"
+    },
+    "universal_eval/model/adapters/glm41base_own_original_option_inputs_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnose_glm41base_completed_visual_full_value_CPU_reference_drift_v1_20261122.py; Actual local Python dependency of scripts/verify_glm41base_own_original_option_logprob_BF16_complete_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "b6ebc5660645aa49607a3312dd253105c38db15bce894c79db2eecc424078dd8"
+    },
+    "universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "ffc7d6f868514c2a5778580567745b7fdec2e2c1c27f4e73e0cac3076e627e55"
+    },
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "948208b087c6fcaaed829d627d5de60c17b077de85d0b0ee5fe98dc2026ce17d"
+    },
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "f67dbaaadad917b612daeadf2826c44d81d23712d312c00e250e6af7295f7d1f"
+    },
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "439cd4c8a30f0873addfb1ec6c22b184612b427f7ac423424c0614de7c9c507d"
+    },
+    "universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a922fc8957c26ac09e6504080d2277117f74be9a90f1147289c1fabef191caac"
+    },
+    "universal_eval/model/adapters/llava_more_vlm.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/prepare_LlavaMore_own_original_FP16_letter_pad_frontend200_meta_no_NN_v1_20261122.py; Actual local Python dependency of scripts/prepare_LlavaMore_own_original_FP16_letter_true3_source_ready_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "819af5fbdbda709c179b3b5f1256f19162f43b94d49182f3054a7e0b29af50a1"
+    },
+    "universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "7fdb55b9530d0f83065c264902a4c3f3f637c7ea780b688fdd34b15f55c99553"
+    },
+    "universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "229796cd236452dd9a2843bdc4fc72552a51568b4e2c62778295d12f0784b42a"
+    },
+    "universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v2_IModel_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "1c168f5aabe5e0718e176ee6bda98ba9b2e49337964df7908b306c1a0110e8d1"
+    },
+    "universal_eval/model/gemma4_e4b_MLX8_own_20261122/__init__.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "32c5395928954221ede868d402805fb4e297a591a24bdeda3d7cb7839ad3ed23"
+    },
+    "universal_eval/model/gemma4_e4b_MLX8_own_20261122/observer.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/adapters/gemma4_e4b_MLX8_own_original_Transformers_BF16_native_v1_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "637f44b1276ad433c4fea1681b02ddc8d015adc806fe50d9767e8b8d3ad131cb"
+    },
+    "universal_eval/model/hancom_hillava31_own_saved_Transformers_graph_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v1_20261122.py; Actual local Python dependency of scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v2_original_registration_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "97c6f2b99d36f43b540ecea879b25ceee678f43cbaa003b7b28445ad5b7f513e"
+    },
+    "universal_eval/model/llava_more_own_original_saved_Transformers_FP16_graph_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_LlavaMore_own_original_FP16_discriminative_letter_complete_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "a780ddda49f857bde308e61bdd2d4e59172bb15e54eded43ddf5d3e8682c0e20"
+    },
+    "universal_eval/model/turkish_llava_own_saved_Transformers_graph_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_turkish_llava_own_original_Transformers_FP16_2048_full_values_v1_own_original_20261122.py; Actual local Python dependency of universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "25713577a94fc7d6c871a798d3652b7dd771d0446036dc628b61db5a1fa999e6"
+    },
+    "universal_eval/model/xtuner_llava3_own_saved_Transformers_graph_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/verify_xtuner_llava3_own_original_Transformers_FP16_2048_full_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v2_IModel_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "97c6f2b99d36f43b540ecea879b25ceee678f43cbaa003b7b28445ad5b7f513e"
+    },
+    "universal_eval/utils/complete_module_values_tree_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of scripts/diagnose_glm41base_completed_visual_full_value_CPU_reference_drift_v1_20261122.py; Actual local Python dependency of scripts/tests/test_complete_module_values_tree_20261122.py; Actual local Python dependency of scripts/verify_glm41base_own_original_option_logprob_BF16_complete_values_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "82936193223d4dfa42e41276c2cf9df790921febd37b683b97254d6ce776aa47"
+    },
+    "universal_eval/utils/complete_standard_LZMA_NPZ_parallel_values_20261122.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
+      "initial_SHA256": "d1f8594c0dfa6b1fc9f549e9bde6cb634d661de08fbea70acdfb201da2e3c668"
     }
   }
 }

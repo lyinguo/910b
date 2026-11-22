@@ -1,0 +1,60 @@
+{
+  "name": "aimagelab--LLaVA_MORE-llama_3_1-8B-finetuning-own-original-FP16-letter-pad-native-v1-20261122",
+  "description": "Own686F16, saved nonCPUautoFP16. Original inherited legacy conversion omits flat raw rope_scaling. Original resize128257 BEFORE own legacy remap with own constructor-derived complete extra rows/RNG. Original padRGB122,116,104 and system, all200 own input pixels and IDs. Original discriminative_letter per ownR YAML: native fullhead/allpositions one forward use_cacheFalse and .float last logits/ALL spaced-unspaced variantID max. It is originally probability scoring, no new generation-to-probability switch, no head/math/dtype/prompt/data/score tuning. Original2048/outer10 preserved. Bounded CPU standard LZMA member compression is byte-identical to serial on complete values; genuine own3/fullNF still mandatory. Historical A100 engine/tensors uncaptured, not claimed.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning",
+    "adapter": "universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py:OwnLlavaMoreOriginalFP16Letter",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/llava_more_own_original_FP16_letter_pad_native_v1_20261122.json",
+      "protocol_sha256": "6a172f9b0b4ec17f58c8191046ca7b09721bac49967107fa9d141aa93470dc70",
+      "protocol": {
+        "model_id": "aimagelab/LLaVA_MORE-llama_3_1-8B-finetuning"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "llava_more_own_original_probability_letter",
+    "adapter": "universal_eval/algorithm/llava_more_own_original_FP16_discriminative_letter_MC_20261122.py:OwnLlavaMoreOriginalGreedyTail",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/llava_more_own_original_FP16_discriminative_letter_MC_20261122.py:OwnLlavaMoreOriginalAccuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.79,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}

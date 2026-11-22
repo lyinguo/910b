@@ -1,0 +1,16 @@
+{
+  "model_id": "HancomInSpaceAI/HiLLaVA-llama_3_1-8b",
+  "max_concurrent_models": 1,
+  "own_original_BF16_storage_auto_nonCPU_FP16": true,
+  "no_original_math_or_generation_protocol_change": true,
+  "exact_source_SHA256": {
+    "universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py": "948208b087c6fcaaed829d627d5de60c17b077de85d0b0ee5fe98dc2026ce17d",
+    "universal_eval/model/hancom_hillava31_own_saved_Transformers_graph_20261122.py": "97c6f2b99d36f43b540ecea879b25ceee678f43cbaa003b7b28445ad5b7f513e",
+    "universal_eval/algorithm/hancom_hillava31_own_original_FP16_2048_MC_20261122.py": "68833622d1b5201f36f0cd77c57742ef487a260f2901344f1fbb6e2e2bdb4ecc",
+    "scripts/verify_hancom_hillava31_own_original_Transformers_FP16_2048_full_values_v1_20261122.py": "e60a28b60f00225f3cc28433c7ff60f8ffb92384cd7bfb8b29137a3e3bcc1177",
+    "scripts/prepare_hancom_hillava31_own_original_Transformers_FP16_2048_true3_v1_20261122.py": "79d0d11bf7e2855066740a00cda60b91f8695bd98a681d6bf7e41a75e2766cc2",
+    "scripts/continue_hancom_hillava31_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_20261122.py": "2262775096aa0ce35217ee818a314b9dc39947d672238439ae02756fe6d9910c"
+  },
+  "wait_actual_own_CPU_then_source_prepare_then_previous_More_actual_release": true,
+  "no_G_or_canonical_write": true
+}

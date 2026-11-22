@@ -1,0 +1,16 @@
+{
+  "model_id": "ytu-ce-cosmos/Turkish-LLaVA-v0.1",
+  "max_concurrent_models": 1,
+  "exact_source_SHA256": {
+    "scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v2_after_known_Base_visual_failure_20261122.py": "b897c07959fcd32d5bcf07eb21f1b4747f8fd753ada5269d3f01589e721cbad5",
+    "scripts/continue_turkish_llava_own_original_Transformers_FP16_true3_capacity_fresh3_fixed200_serial_v1_own_original_20261122.py": "1de1f52d848f55a6524c69e4b3cb915b2f93f2fc886b8f3a6dcf101b23b46a36",
+    "universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py": "7fdb55b9530d0f83065c264902a4c3f3f637c7ea780b688fdd34b15f55c99553",
+    "scripts/verify_turkish_llava_own_original_Transformers_FP16_2048_full_values_v1_own_original_20261122.py": "b6120a53e7107b5d40fdeea49b4278d7ff67517c598aae84c1fe504cfb2278e2"
+  },
+  "previous_Base_job": "/root/projects/comperror/workspace/diagnostics/batch_910b/A100_relative5pct_alignment_20261103/request_20261103_user_A100_relative5pct/GLM41Base_own_original_option_probability_BF16_true3_v1_real_FLOCK_20261122",
+  "previous_Base_completion_SHA256": "112bf778aa5a960357c2c10570223df1d3d9383d5ffb2c0be7f1450260327d50",
+  "previous_Base_verifier_stderr_SHA256": "0a0fb2a00fc540c02b83e92c79a9e7da3b82d34507e253da9abb58acb4b18189",
+  "exact_previous_visual_failure": "('0/A/model.visual/last_hidden_state', 'relative_RMSE', 0.04171977283130191, 0.6875)",
+  "own_prepared_unused_job_SHA256": "5c5656e0b71c6c04fd2f0a7f41eba35efb61e97701649ddde5f8ba52cdc12154",
+  "no_Base_NN_replay_or_failure_threshold_change_or_G_write": true
+}

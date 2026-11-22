@@ -1,0 +1,60 @@
+{
+  "name": "xtuner--llava-llama-3-8b-v1_1-hf-own-original-Transformers-FP16-2048-native-v1-20261122",
+  "description": "Own686 physical sources cast to saved nonCPUauto requested FP16; original saved constructor expands to128257 BEFORE legacy remap, same-model constructor-derived extra rows full values/provenance retained, original FP32 analytic RoPE buffers. No foreign checkpoint/head/vision, no historical A100 runtime/tensor claim. Own2048/outer10/Greedy/EOS128001, all200 own input IDs/pixels, full source and original source paths preserved. Actual NPU source/dtype/math proven only by forthcoming own genuine3.",
+  "task_type": "image-text-to-text",
+  "sample_count": 200,
+  "sample_range": "0:199",
+  "data": {
+    "preprocess": true,
+    "apply_template": false,
+    "filter_empty": false,
+    "download": false,
+    "dataset_path": "/root/projects/comperror/workspace/datasets/image-text-to-text-mmbench/eval.jsonl"
+  },
+  "model": {
+    "name": "xtuner/llava-llama-3-8b-v1_1-hf",
+    "adapter": "universal_eval/model/adapters/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.py:OwnXtunerLlava3OriginalFP16",
+    "model_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/LlavaLlamaForCausalLM/xtuner/llava-llama-3-8b-v1_1-hf",
+    "download": false,
+    "kwargs": {
+      "protocol_file": "/root/projects/comperror/configs/protocols/xtuner_llava3_own_original_Transformers_FP16_2048_native_v1_20261122.json",
+      "protocol_sha256": "d817c4fe7e50bf82f5dbf74f59ff21c2da20b0e7d7816ce1984bbcdf76dec0ed",
+      "protocol": {
+        "model_id": "xtuner/llava-llama-3-8b-v1_1-hf"
+      },
+      "npu_device": 4,
+      "npu_devices": [
+        4
+      ]
+    }
+  },
+  "algorithm": {
+    "name": "xtuner_llava3_own_original_FP16_greedy2048",
+    "adapter": "universal_eval/algorithm/xtuner_llava3_own_original_FP16_2048_MC_20261122.py:OwnXtunerLlava3Greedy",
+    "batch_size": 10,
+    "kwargs": {
+      "extract_answer": true
+    }
+  },
+  "metrics": {
+    "override": [
+      "Accuracy"
+    ],
+    "adapters": [
+      "universal_eval/algorithm/xtuner_llava3_own_original_FP16_2048_MC_20261122.py:OwnXtunerLlava3Accuracy"
+    ],
+    "include_failed_predictions": true
+  },
+  "baseline": {
+    "score": 0.71,
+    "threshold": 0.05,
+    "primary_metric": "Accuracy"
+  },
+  "output": {
+    "reports_dir": "workspace/reports",
+    "layout": "model_task_timestamp",
+    "evidence_dir": "workspace/diagnostics/model_runs",
+    "timezone": "Asia/Hong_Kong",
+    "verbose": true
+  }
+}
