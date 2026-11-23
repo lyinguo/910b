@@ -1,0 +1,868 @@
+{
+  "model_id": "kakaocorp/kanana-1.5-v-3b-instruct",
+  "own_original_config_SHA256": "500c82ccfd5f8368c7a4dbbf3af13139a379db853a21a85c42df42f127d81e52",
+  "own_original_index_SHA256": "930f14ada407b77f2404b79ad5dcbdc30e5dd3544ed4ddf78e821e67108d190c",
+  "checkpoint_values_embedded": false,
+  "tensor_constants_in_graph": 0,
+  "actual_original_fast_norm": false,
+  "original_owned_source": {
+    "configuration.py": {
+      "original_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/KananaVForConditionalGeneration/kakaocorp/kanana-1.5-v-3b-instruct/configuration.py",
+      "SHA256": "a9086228f78d03eb04cb273488ec87452b611668c304aad10e44000ae4127530"
+    },
+    "modeling.py": {
+      "original_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/KananaVForConditionalGeneration/kakaocorp/kanana-1.5-v-3b-instruct/modeling.py",
+      "SHA256": "bd5929ff7dc385d0426f3dc1c2a9b3c8c6d9f18a00e1369ab1f032b5b02872db"
+    },
+    "processing.py": {
+      "original_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/KananaVForConditionalGeneration/kakaocorp/kanana-1.5-v-3b-instruct/processing.py",
+      "SHA256": "c2c190d1af62b976f03bae74151399abc16c7550ac1d7a12881b1c7fb4a03578"
+    },
+    "processing_image.py": {
+      "original_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/KananaVForConditionalGeneration/kakaocorp/kanana-1.5-v-3b-instruct/processing_image.py",
+      "SHA256": "4794fd3dc937b85b3e2682680fb06765c06d9d7626d7f8250179cbd63bb2bbc9"
+    },
+    "tokenization.py": {
+      "original_path": "/mnt/afs/huggingfaceautoclonemodels/downmodels/KananaVForConditionalGeneration/kakaocorp/kanana-1.5-v-3b-instruct/tokenization.py",
+      "SHA256": "4a5e953b6b047ac142fb476e2da9a9ff5cf6e37c7fbf91c0330281a2a021935b"
+    }
+  },
+  "original_RegStage_external_source_SHA256": "4c774e54bf83ebebd0e340cd7b37608f06c1e33dd768ef858d844ec8e4c29443",
+  "original_LayerNorm2d_external_source_SHA256": "afe3abf01a4379065c1c11bf6b6f947a1a743aff7f5e51849b353697b0db557d",
+  "all_imported_AA_timm_external_source_SHA256": {
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/version.py": "46fdfdda90bc1b69fb4dceb5f0d99adcb4a7e751c022bbc5c96ef5614812869f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/_fx.py": "234f6b7faf759c0c30e2e84483b20c358c1cc4c6f3c34af221f10b17c957ab8c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/activations.py": "effc50cc017066d60f3e8bc9f4a65b2765ad374a1b4da7bf023c1db99e8f1cd9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/format.py": "95c87c90abfc1968f2aa45d7e85e4a80d151eb46d2aa60364329b50073cf2ff0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/adaptive_avgmax_pool.py": "c82fd5bc5e44c0b2adf1165261cb2f318aa76db3d0a831304e3dd9e5538efe97",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/config.py": "59ec44335504ed70c5c3a02a7cf91d943c6435ee87c1006063730835783fa4e5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/grid.py": "94c33c6ccde0831ba7bd016a40207de3749901f63b370d38c3e94568c064c6df",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/trace_utils.py": "71b66e7ce6862a685318431ce764009eacc64537e7e2fbf3aac00e25a2ca250f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/pos_embed_sincos.py": "0662a5299197f64cf4a864ed0987191d986861b3ec157dee1a2a097ec5354fb7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/attention.py": "d5455aa091ceb1b7f5ff814e93910938227616d974550ad5a3f033e5dce52832",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/helpers.py": "f7a763dd6407288723e4e2da23e5dd131ceb49eb60b4e14f37d5eef428679cc5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/padding.py": "ed3a083809391e23acf0aa623f3aa935023c5221901c86f0596931927367219a",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/conv2d_same.py": "225395241462682adb5696b8cf29dd853d54babcd2ac78b27b7eb9e0ea55ea1c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/mixed_conv2d.py": "6dbfad421f06f72b558e15349f9cab7bd1e2da6393268c96cbe8b9c0302caca3",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/cond_conv2d.py": "315fd5d71c324474b8a3bf7a073c006f6773c4bfc2d110a7569c99a68d3c83f2",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/create_conv2d.py": "75aaf153392f3d853182eb89fd625dd4f7a993138ae227f92702730b9202f399",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/pool2d_same.py": "854b2afe33149cf4339f821a9b3aaa3c1053ad08d8284ee70a4bd6b968c8f92b",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/attention2d.py": "eea95e2f73f1500719dfb2d023d5968bc5ae919fd08ed43c53e5f69158b78c5e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/grn.py": "7a357b2a2f53c549cf8fc5ba4829934f7eb416456d0f4964cca825f0526ee95d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/mlp.py": "c024128a1c7e2a55ebc5e33a7c94c585ae1e960cd032b39b08445ea30f05c5a5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/weight_init.py": "cabd60684d955367d39fc58b02ac94e86f5285a3f3d97b1aa9f819a72aa92df8",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/attention_pool.py": "9c78e7472898892b02a8c5056380e5177e6fb0a9ffaef8689ec96ef74a048f79",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/pos_embed.py": "8e5beda55289ff7a4a91fadee6ea4134939b860642723f8fb5dc82039fcc4d37",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/attention_pool2d.py": "6b58a1d721bbc593af45f751190481b557a8725b61875323a90a81fa44ba1953",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/typing.py": "74f4a5f6ba98a42cc18a0d096118003de530dfba2b73a3f1df4b464745b8761a",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/blur_pool.py": "be6b5a5c89ac86d3c0678e5bb671991a4e9b82c10fd9dbe7eae456043b45a2f0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/activations_me.py": "a17a65e5f72c7938cdcd2ca7e54e779548e49c06af8f488c1666bf8c174cc60b",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/create_act.py": "88a6300c35d175c63a37943be714a9b7677edf001489897a95746f720d695b19",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/fast_norm.py": "977028a6c196a9dc94bd538c6bb120a0f141d8999831cc7f1757504032d4eba1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/norm.py": "afe3abf01a4379065c1c11bf6b6f947a1a743aff7f5e51849b353697b0db557d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/create_norm.py": "fe540d7462a2e9031b3c3a941a5fa9ad37c1a89043e65d71109b3044336ac156",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/classifier.py": "5dff2312d7c0cf0d8954be750ba0472cca26348fc648262474f6599180a9d38c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/evo_norm.py": "f4f7783e110c8ee899c4f29ce44686e100475fcd7a1fa5cc5bfba03fbdafa180",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/filter_response_norm.py": "dbd5cfe10d85d21eaf9bc96be6291eff12bdcf9ccd6c8e53ebb678262cb53010",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/norm_act.py": "4821c9fa7b73c19cb63d16a4c86912f36380c56e34d25bc6170ea728aa21fed6",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/inplace_abn.py": "b84f39bf33413cb651de20543f2af0a346e1de9b60e24a179f9c6e68d2fbfe35",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/create_norm_act.py": "7523d591ba2c3c7ac6efe374483f1dc5eaf5357baa953dbb475dd10807449750",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/conv_bn_act.py": "4855d97df31fb588634ac0cebd9fde7f4dced9aee9007c635c670c31cd97981e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/bottleneck_attn.py": "b09c15992ea042c412f17c28bb5145660d20483c10750c6edc8ac04bb00887d1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/cbam.py": "43512ab18f21a4817c53c9c8af6a8d9bc72c5e66926ea756dc606a5674f833ea",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/coord_attn.py": "952afa523e35ae6082ee4705b47189e601bb531ac0019fb7608585650ef77a42",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/eca.py": "c98058c0876fb71d3bec59c8ce5602685a03809d4f804afea3ea2b96017bcfa4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/gather_excite.py": "5ea5566fa417ced7a87a39313e63666acb1d4e9eb1d222ab2f99875c48ce5940",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/global_context.py": "82800e62e82da04a383594aa7bd02b8f6bbc22cfdd000884f678c6101d745888",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/halo_attn.py": "6b06d69e6f591a76f9da1ee18912b86df85c6e4f53fd571ea918450e95fa5b1f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/lambda_layer.py": "c3b0c0319ad8b60d7e026e23a8d82c37c180ccfbf3d30aba94fcb9825f983485",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/non_local_attn.py": "2f8a117c915150d76ef6bf92d177e7ca102adb5c13e62868cd10a374e69162bd",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/selective_kernel.py": "70e06298d6c9be1d98bb9cc98825db8a612ba9e526f1e2d6fefec08c4efe7b10",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/split_attn.py": "fb71f37b4b616848298c1e656c61edb126cb62371b523b0768c5b237dbcb4c02",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/squeeze_excite.py": "6d45bc824a71872e0035c25b2efe32feced5180ef5f702e46b39fb675065d4e5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/create_attn.py": "f9b13c1c2879bc3d14378cbc3b7818219d553b569153fbd377cce461dc6a37e8",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/diff_attention.py": "a3a4d9a7bf034aac5734ef23ad57d5e149452929890efd58a4ffb49076e6bc9d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/drop.py": "2047ce241398537d6e502716f1f3bb7a285b006554f2e27e9a68618d68376ac2",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/patch_embed.py": "439dab982fbebcaa27fc1d0fa1811064c2ef86d5f2d9d88d1aa15ef5749ae1e0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/hybrid_embed.py": "1215d2a428beb4cd20997388767252142fabd26f18c372504778e5cf83bb911e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/layer_scale.py": "499631e59c5ae5d2a36e3172a7e9e1a0feb8fc22fa3b404be38c447a1eef7b6c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/linear.py": "6da4b65a9974bd810b9ef86743a2f0eb98d5a2d689cf98866eba0927d2662113",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/patch_dropout.py": "829053987061419344ed83cefd5ec2f12024bf1801dcc0b4f936d85b1b701ee3",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/pool1d.py": "730f4c3cac736e0d63b564d79fc5d8e024e6255eefff70f3eceb2effba0aefc1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/other_pool.py": "85272f303f4fc61814e28abebb1c93bf6d548bc361264f1fd462ec6f8d5f9f97",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/interpolate.py": "3aca1b5aa1750aba4b7ba6245cb991cc049b02cc3fbb3cedcaab0167ac5462bb",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/pos_embed_rel.py": "fcc07b7ebcb8b807ed46d04eb5491ee8c985fd46ab13b1ea0158e485309ad254",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/separable_conv.py": "72b805d1e7bcc5dc3b0c64749d0501fadf1a4fcb3527f01a542376dace0b943c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/space_to_depth.py": "2fb48f6b310ead760dd31898cf52f329f8620377a48fd31a52a27aaf57a51d35",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/split_batchnorm.py": "46f243533e2d883876e085e92746762f780b1565319ac7dbf63a3f14bd5c9afe",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/std_conv.py": "7851e78f4cbd91bef5e6e42f42a0fd19c442e688e6ac046021828b932ff8a888",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/test_time_pool.py": "f4efe24ed6d4fa08235d40a7ca04d684171bcdf65c7f3890b1146d509f78dea9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/layers/__init__.py": "a0315d58dc2743906194afea5d4aa9a7c7ca9ad639ed4136cdc3780024b55eea",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/auto_augment.py": "fd0a707c17e3d925bbe720440e666bf2aac516ca8e01b643175b317f1bd3ac72",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/constants.py": "6644abed002b72c0f238e051610a4b7b873654e24a4406280d1535270609b1e1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/config.py": "b9fda9fa6356ff09ed09edf82bf5ebdc9e3970987c216125fdc33083228647e8",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/agc.py": "ea56420a17db5b428634c7e4cf3b560ff34ff3b112a298e4db85ed6f759b06a5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/attention_extract.py": "0823cc9a7124e1d33552bbcea58eec7c6648f0a2d07a42484fbadf960fb8a83c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/model_ema.py": "2e9a25fed2f8a319ffc62b0b803f997f33ae4f6b8df34e885eb171fa406a3384",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/model.py": "cbd0ae079c31bbdef9c21e6eabe038ab440661bbf6d341b65ada29fe99425a4d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/checkpoint_saver.py": "e6bd895efc161674ee2c2d9c43e49f1e21eb7521831a183ca62589cb9b9ca013",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/clip_grad.py": "8981447fb7ef3dba728792b5488f8429ecb91aab36833b51f555141a36b4181d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/cuda.py": "17e3fe0bf6df05b23f2e86dc5cb655527d12a993877e87bd95e7ef75669d51b3",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/decay_batch.py": "e5f3ab30ef7ce4fc3cbb3bc12bbf11c180a81f736fda36f8e8e19af46909e8b0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/distributed.py": "0d4166c612b21c6d5e702a0029dd4c7d01aea40b84aa7d924eb9b0abcc3561d4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/jit.py": "13aa862c777d8daec2c89f1d018335b4c3f49a6e436fc63c233393748e78f9e6",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/log.py": "05d6763aa5a8deff1def0b03449fae00272878d5214bc4c94b0237098beadd2b",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/metrics.py": "1bb613b59a40319c5f406a337e11a1b060af86398301f6371e8962c5553bc2ca",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/misc.py": "c14238c0948169b664cbf41b8e711a0765ea3178b1b25f6db9b46157a6027a0a",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/random.py": "62cbfa1779c83bc25813c8fa52b0f11b2243a77b8da6ae6ff14d0aa8bffc7627",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/summary.py": "1d80f99c9b13383dc31aa08f52ed8bdec5f85633454f26c76e3c27b52116062e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/utils/__init__.py": "afe9a013bb003986ad14462381d5d7287d118ce2ef439147d2b731bfcfa0351d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/class_map.py": "f632bab6c01562ecb3b16e44655824e316383d4a10aeb145c1dd2e6f5b684add",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/img_extensions.py": "293b640b27eb3a12f01fbbf0b3b93bc6c86412a7a476b10667eae612bc92bdc4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/reader.py": "fc5a7def02c8d5cc45148d5094e92f5882b0766b5068f1201fdeca9ad4036682",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/reader_image_folder.py": "0aa0b08e67698fddc71b800c4c57b040decdfd35b5396eaf920324d50db64b88",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/reader_image_in_tar.py": "be348ee04435afdb9dc23dea413e60f12d801a420e9e26b1b2f5e8b6d8c44469",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/reader_factory.py": "6b32177f056baa50b19ded699833b70b2bb0892c0e847658f312a9199c139554",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/readers/__init__.py": "02e2a0423679abd5c82c866eea2443209cbe5f276283fcc2d5395a5519917026",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/dataset.py": "d2340ca03764e115871da297d5488f2582c847c4689bf1d0d4ca01b7e8adf401",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/dataset_factory.py": "1058ccb9ccd392c3bbe9f96e5e7d0e5e653b5a487de7580235aa86f8ef3fe408",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/dataset_info.py": "07a1989cb0dcf8f29b299701b0a7156ea7e6f76d824d3bf9958c1fc5ebe333d9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/imagenet_info.py": "cdd521ee39702b4b4fcc95da95308488c053a7f68687f02f27b369c0218c32a5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/distributed_sampler.py": "99f712fdbccbff3108444a517abf0b01d5f0d56bd415826b5e0a8ac367ea9471",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/random_erasing.py": "8d24c9abed731994f5cd15afe41cb206e038950763fc415ca226dd2e3450683a",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/mixup.py": "53bd81ef4dd3d80c1795fd425c6eabd27e572da4941e0440902c2b17ef4ce3cb",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/transforms.py": "c2b65d35981b17239225be027a40e980e5070339799ef0ee4276917b74003456",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/naflex_transforms.py": "4180d0f54f990c03abfbd3a5e6632f7f38ddda8d318eae683908b039bbc9107e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/transforms_factory.py": "a0daa6177ae942ff9ecdc135251c62e407455df6ee8fe2da9e7b37ada92cd3b2",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/loader.py": "de8e473c9deb3751f872f423bd650efd9d87424ba4384a51b765698f8954f6f7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/naflex_dataset.py": "c730eac549da22e3ebf7fc433f05614e876edaa96175c118d8a8b669ed4b4e34",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/naflex_random_erasing.py": "1e582a239ede44622e6f9ff85e411d416829421a3ad8ed1f6bb71a3bdc62c379",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/naflex_loader.py": "fa411b5d7dfba46c165de4951c5620059272f31e18d5bcda1c444d13b9fa7683",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/naflex_mixup.py": "cbf5e3aba29f42e1164debb5fbfa1b36d5b8e3bf246eb4f1aeb063145f79ef39",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/real_labels.py": "c5d7b17a853f284e9cd876341bcd4dcb6f93fe24d0ff51ce58b8fb47f59f025b",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/data/__init__.py": "d32c6258634d4d3927073d287d9b0d94c540a853a8fb1a098bd8b7c8634c64a1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_manipulate.py": "67930863b7a9bb92c1bebcac360e72ad12b07a9d4c41a8588e04cffe31e327a3",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_features.py": "7db8cd957988bce4d78a6686986b08253d1c20451034ab1808d55edf573e9cba",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_features_fx.py": "0f14bc2648dd3bd89505e5e119883a4f471e48e56e44b373252a830d1ad6d332",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_helpers.py": "41d74bae4cdcf4acb1fd7ca997ff3c0aed546d3f512177150c532801e2f52005",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_pretrained.py": "b92f7900d2539f87983a429d2f3b99503cf7d414e7d281cc16463eaacdab0a31",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_hub.py": "c1ed2c01d0f6221588142ecbd280c0cd4f6b11d5c71e1d1e5aa49f4480ce23df",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_prune.py": "a9f585baa74c0bf5371a83f24bb0774a31ef634be02a2f692f69e292f1372316",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_registry.py": "4c8d2bb3d2fe6174d103ef33bb1acd5844f3add1b00f93de916d9452851a8db8",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_builder.py": "424afd527cb1780d73c50f2302cd0945f3b1589a860427c45221d4f136e29708",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/beit.py": "af8b0970956827c474ec0df3f07d1c8dd1dab74852b4e2203bdb54c79b761a5f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/byobnet.py": "e5431a13328989944ada9a3b1798f98e5dc6824181d3a68d056a3794fc40f0c4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/byoanet.py": "1486532a903ad95286c275e4ae2c02aba11e2b5d96e5663778dfa1f4a7fbd396",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/cait.py": "c95db1438d908e9c5350f7c2a69b7576a3a59e2efb5e80c6a7275b8fb3ffc0d9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/coat.py": "d8c3cb96189474d2ea7eb6e70a7ef02193c872faa4ee6f5292d652ae7524f3b4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/convit.py": "b6fa2642619c928e9198dda2d56f5c48dd116e99db2c9a3ab03142e427b3fc90",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/convmixer.py": "2b763acdbc88e3bdb057ccc5b246080d40152fa0baef62ea81ef46d6b01f8a88",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/convnext.py": "f79d244b01c1f79c38526b543a715666f768e96f6167afa9caf61ac4211cb865",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vision_transformer.py": "5165e015d1e67143b967964780753e757e6167278523cd9f5d7e47780c5d3119",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/crossvit.py": "9f5c9ba15b6e71ec194800942dc77fc19e59f3f59482c8f2ba8503e24cbf6cc0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/csatv2.py": "7e132d01b50aff9e2e680216486c70a1c54f7284978cdc5d42de4520e4e97c26",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/cspnet.py": "0f5cc540b334175034a4a0cbd79c10dea84d721574d786026c72786519ebf4bd",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/davit.py": "2d6e3e4a12770649a0ae357897d08be82f790079a86faacace0d4839501b77ee",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/deit.py": "7fa9a4f90fc3fafb09dfa5faa7e5196347eac599f0402190d7c89cbdc346d621",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/densenet.py": "081e85071519942d02d854ff9ef5a515c764b4b63571c1ee7f93e4100e7c3ee7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/dla.py": "c89cb6e225bdb4b9af08ff8635f893e0e7f5da44b7031634a1b3c162466d8e46",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/dpn.py": "7c7dcf8b961c706a935406155edde8cd223bcb1f6ef822acc56b5b81eea75b3d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/edgenext.py": "be7ad166f49874f0f787fb0f236bb4e1047ba351b3872a2bb5f28da1bee672e1",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/efficientformer.py": "43e1550f1c9a062ec66cef5b84e681bfef715072bac9182606ffd847f668de15",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/efficientformer_v2.py": "496e01475e258809beb2c89271173a845b0e6a611df3c5fd2a8c7e16061354ab",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_efficientnet_blocks.py": "2a3de2c0371a74d7f4fe165f4ad062d768473ca9565a9ebf63fadbd0aa5ae021",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_efficientnet_builder.py": "084cf15cc4725fd926966f0dad94c8b4786f4c96aae625a8497f35ae00704000",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/efficientnet.py": "c0a9b9ade7ca27395379217636ef2f222b33878fbd4ac81088b581594a06ad6a",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/efficientvit_mit.py": "98953fad56cd2a010e3abdee8cb58c7f04b5746cd2fd3b94b7526cad853bc518",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/efficientvit_msra.py": "551fc36b5e7bd4b44aa9c1243064021cd6c057bb0cea1b4f36af057d76b65766",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/eva.py": "3f6d3a923124aa6e14558eaf98c8e0eb24d71ab265320fa7fe928ae73652a2c0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/fasternet.py": "8e83078cdbf6c545a2368b46b0dcced29dc22c6d4cfdd8319f437f8a69c6bd4e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/fastvit.py": "72b870034010be73fd0c7b03577db0a69f2061a532fc026129776c92a0cde347",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/focalnet.py": "0cd2abd774397f4386b0989f831a22104a7af6aefa2f1edc8be87b85192e2f00",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/gcvit.py": "229368d1a6643085f4f30d25ff0c95f8618b85f5a2e5be87862b0fc124d7720c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/naflexvit.py": "d0a3fc37f46e99152b705c47aaf79fa3e7beb6b1ed949661596477e4c5ee31d7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/gemma4_vit.py": "c44e44d9e6118aa3fe811ad294ced2a928b72821af1c96e5bbab2f4e7dbc18e3",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/ghostnet.py": "118564f9270dd6978f877a1354ae37ecb9f0ce033dba0e64a99606bc07586993",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mobilenetv3.py": "b3acea82382aaee10d3e2aacd2bfbce88e59bf8c730d0b07a77109a9f62dd9ea",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/hardcorenas.py": "1c13f0bd46413f0655f2644a6bc77cf2a363f61ccbeb3b0e45c058662e96636e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/hgnet.py": "1be545332e08880b1b862cf7db0ec3fefd742f8d87dd256bf099643e2d4aefea",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/hiera.py": "73895a80fcf20c21f2bd6a2cd2294d8da1ef8400d6aa55326f7a4fb1eb43da31",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/hieradet_sam2.py": "f597ac0180565b81222574a60afc4df9e49366e14cc6c20c86594688c001cf1e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/resnet.py": "28695bc2be0ca05e07e9f02cb6533204b4ebf693bbda452386759b8f5b3c90d2",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/hrnet.py": "55ba88db4d76b61dfdb1c69b1161cae63d73c50a274e94138dad82222135d7c5",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/inception_next.py": "c5a2409eccfe52e886614a3eda3bf16b1b52913895e4858d43c6706d9f0b8253",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/inception_resnet_v2.py": "0440c1c536c8e074237f79d5307b7aa013b1f454f4c9fcff267c79814f8bfeb7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/inception_v3.py": "2874f3514c20bbf7ec45e859fa93b3ac10acff79f40c35dd93b9bffac9001502",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/inception_v4.py": "653319dcddb1c625e723627da805a3f963162b975cca828c1730e6ade12d0d44",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/levit.py": "3f8e9a09a4d0803adcc2725730f420c5cece6b2ad468811ba4c6f82dcd7f49ab",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/maxxvit.py": "69a68be12f6820649396f2d83d5dc9b679938c88767665d1c8f818b2dd306dde",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mambaout.py": "53cb5df5929050c1f91159648462401e04088c707ee55d93d6dda31ff555f552",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/metaformer.py": "e3d95b0fae94b90ea11bd610c6c3df0e19e5aa78c10fd7b4d4bfb595e0c43610",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mlp_mixer.py": "47ad2e88a062ec080de2886fb23e972ce12fed3251df2d6bb62b315533bb7696",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mobilenetv5.py": "ac943ba2499c57bc7df43f7a83880791404c2928717c86b0149691fbe2690721",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mobilevit.py": "904ff7754708a964cece18ada44a7f0af974296170b4d4fdc5c7573bb2cfe418",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/mvitv2.py": "c877ffb03b0ef9d3937a4c4bd5c9a616ff26c2132eb4baa63d4f24ed6660fc62",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/nasnet.py": "d6bba72ff7824c68e7afec9c9518aeb8525f33b486ba5dfa235cad99af124f9d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/nest.py": "69f128d2f07ce0ed440a182e392a0541eec1c53ee5d382815a41142f2fdb1206",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/nextvit.py": "1a34c3a38c08cd9e731193888e3d8b4f0ba45473e2c9ece55f7d2d21f8bcc3d9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/nfnet.py": "603c82291ead5683677f38be45b3eee48cf3593f9733793790f4485f6b63a83d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/pit.py": "dea61bfdd70e0e2efb18cc03fc851b3b9ebc5c8db27c0173b53977ddc15c2184",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/pnasnet.py": "50d00ea8a1a6ab99e9796ccf5c6b160ac410d4b78b7a491ea665bf08ca7475d9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/pvt_v2.py": "0d2a0150304c18d64a474ea2e17adf15dcab8e8aaec75994ade818f3f7a77b98",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/rdnet.py": "362530397c0705156dbf71587e4795b5407485fafd374f18006dc320691395f6",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/regnet.py": "4c774e54bf83ebebd0e340cd7b37608f06c1e33dd768ef858d844ec8e4c29443",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/repghost.py": "7af925e392e61b6a92605ceabc13c6eae60954270d2c4a7d83825d3a49bc3579",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/repvit.py": "d8477a9fbecc5848f44d01827219e46bad0fdfa2d7c2b9020cf2985f8de6510c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/res2net.py": "2da99a4faaaf360391cc9ff3f87ea1f080c19423c0b8ba1426633601bb7432d6",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/resnest.py": "f97bc1a68d7d59eba85b5231294fdebb1ed4b6029d39bb253d89d88518167c1f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/resnetv2.py": "7916e2cc59715026f74dd04418a5ae6e77cd775401fa7cf15232f3d94c200efa",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/rexnet.py": "27ca52c3dc34f0551c37b79bf17b5c48c1051a8a907a44574f5f2c99e28c45a9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/selecsls.py": "6e09bb6d41a29325b108345502746d07ba8807a4631830b07eb6eb0812f23a5d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/senet.py": "0ba30daa4356846707ab2e9cc06e73ab5ce0e634fc33ae18af332f3b26c4a903",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/sequencer.py": "7fb07d37d999fc3bc3aadc81edf311bbc230d96fdfd96f3ede847a56c41d6a33",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/shvit.py": "5d93860e3353297bf7a386cb43ede59e5aca1218efabce16b17967f53b3fa5f7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/sknet.py": "1260a96f6dc4308a55434efa2d477fd14dd157f65eab397200dbb905f6e3eca9",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/starnet.py": "7e4b87739514164970e959eb5b4140c98f1a8b4ee9e17d15975cad7f8cdb63ea",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/swiftformer.py": "e7f79c9bfb3750636ada4cd776c9ab9da41d321ba56ada28201a7dc480b654a7",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/swin_transformer.py": "07984f2232aebc5fadc48591e5a97bbdacdfc49274cdfdb778317d9844c26530",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/swin_transformer_v2.py": "03450f19d17ac33230dcfe7d1dde4d75b97dac7ad309c886881f9f79c80275ec",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/swin_transformer_v2_cr.py": "c3fea70a1a94ac29741e1d9e8ac8a9a0a91407accb167c28616131deb2781bc8",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/tiny_vit.py": "75fa2b312b617c28f03b741385abc291a018fb8c29c95d17268fde23038c7181",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/tnt.py": "08f39ad52f44150fe29be74bab721db29b2eda0679c705b3fc0e86b68ec9f27e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/tresnet.py": "61d94ea8fc955d3e4c317ad5122f93f587cffecd89e8f9fd148088875a59d622",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/twins.py": "c056ec2c7a899017b1132a9acf81cb7c1213a913a0f228f3801e2bb8dd04771c",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vgg.py": "36b743730f05aaca5aa25fdf0f3557a07137ea9be4296816819ddabcf6250525",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/visformer.py": "b7057d524295194f25fa554f82e55236a20463c6f593521c85b76fd5119e4400",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vision_transformer_hybrid.py": "c7d7326760e9afc2a7cd91c8bf27f3e50f70f381833cecd22dc44ad60b1f2501",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vision_transformer_relpos.py": "a6e34ebf4e02b4778c2eda7db185d3ee4aed0ed792fb92bca825e2ed4a91209b",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vision_transformer_sam.py": "20fac7a2dbf0fee6366a7f6a39ab255c42123a52cf751612ff8e3ee2c3c6efd6",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vitamin.py": "5722b047ed6825808b8109f8edce4466d354f88d16793b3db1fe0b1e35f67e8f",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/volo.py": "ba03ff5107746cfb143661a5c7a5174fee663ef72a99e24a91409b76c751b73d",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/vovnet.py": "283fb1ee724d3d262ff9edc2abb528d256b131523a202430cd7404152effe5b0",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/xception.py": "724f64aa5e0bf5747b73495d21e0396d44199db517e6b3c94a58b74f2cb814ad",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/xception_aligned.py": "c166417fc502c1f1d96dd3aafb37892bcda54f511b96a012d6fe49686aba6dab",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/xcit.py": "24e970deae6d3c152bad504fddd32b16a69954b311daac796be3a00c628b923e",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/_factory.py": "30a6eecdaba750af470cfae3196186fd647052c72338a21c928914aac06163e4",
+    "/mnt/afs/miniconda3/envs/lvzhiqiang/lib/python3.12/site-packages/timm/models/__init__.py": "a0008e4e7a54af90ce20bc9f6647fbcf255002c053fbf16d9c93734120e1ca87"
+  },
+  "original_pos_embed_external_source_SHA256": "8e5beda55289ff7a4a91fadee6ea4134939b860642723f8fb5dc82039fcc4d37",
+  "source_only_not_model_acceptance": true,
+  "stages": [
+    {
+      "name": "abstractor.net.0",
+      "input_channels": 1280,
+      "output_channels": 1024,
+      "depth": 2,
+      "graph_relative_path": "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_RegStage1280_parameterized_BF16.ir",
+      "graph_SHA256": "398fa86e142c76f7ea35d5108389be5265389931cc5d715f582c47834ab8d2dd",
+      "raw_export_graph_SHA256": "9f428f01cc470507b96474d184f3c548a43f2b44a3c8fdcbee8f4a44d98ca4a0",
+      "debug_scope_annotations_removed_only": 363,
+      "parameter_inputs": [
+        {
+          "own_state_key": "abstractor.net.0.b1.conv1.conv.weight",
+          "relative_key": "b1.conv1.conv.weight",
+          "shape": [
+            1024,
+            1280,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv1.bn.bias",
+          "relative_key": "b1.conv1.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv1.bn.weight",
+          "relative_key": "b1.conv1.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv2.conv.weight",
+          "relative_key": "b1.conv2.conv.weight",
+          "shape": [
+            1024,
+            1,
+            3,
+            3
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv2.bn.bias",
+          "relative_key": "b1.conv2.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv2.bn.weight",
+          "relative_key": "b1.conv2.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.se.fc1.bias",
+          "relative_key": "b1.se.fc1.bias",
+          "shape": [
+            320
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.se.fc1.weight",
+          "relative_key": "b1.se.fc1.weight",
+          "shape": [
+            320,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.se.fc2.bias",
+          "relative_key": "b1.se.fc2.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.se.fc2.weight",
+          "relative_key": "b1.se.fc2.weight",
+          "shape": [
+            1024,
+            320,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv3.conv.weight",
+          "relative_key": "b1.conv3.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv3.bn.bias",
+          "relative_key": "b1.conv3.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.conv3.bn.weight",
+          "relative_key": "b1.conv3.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.downsample.conv.weight",
+          "relative_key": "b1.downsample.conv.weight",
+          "shape": [
+            1024,
+            1280,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.downsample.bn.bias",
+          "relative_key": "b1.downsample.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b1.downsample.bn.weight",
+          "relative_key": "b1.downsample.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv1.conv.weight",
+          "relative_key": "b2.conv1.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv1.bn.bias",
+          "relative_key": "b2.conv1.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv1.bn.weight",
+          "relative_key": "b2.conv1.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv2.conv.weight",
+          "relative_key": "b2.conv2.conv.weight",
+          "shape": [
+            1024,
+            1,
+            3,
+            3
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv2.bn.bias",
+          "relative_key": "b2.conv2.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv2.bn.weight",
+          "relative_key": "b2.conv2.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.se.fc1.bias",
+          "relative_key": "b2.se.fc1.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.se.fc1.weight",
+          "relative_key": "b2.se.fc1.weight",
+          "shape": [
+            256,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.se.fc2.bias",
+          "relative_key": "b2.se.fc2.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.se.fc2.weight",
+          "relative_key": "b2.se.fc2.weight",
+          "shape": [
+            1024,
+            256,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv3.conv.weight",
+          "relative_key": "b2.conv3.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv3.bn.bias",
+          "relative_key": "b2.conv3.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.0.b2.conv3.bn.weight",
+          "relative_key": "b2.conv3.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      ],
+      "original_state_keys": [
+        "b1.conv1.bn.bias",
+        "b1.conv1.bn.weight",
+        "b1.conv1.conv.weight",
+        "b1.conv2.bn.bias",
+        "b1.conv2.bn.weight",
+        "b1.conv2.conv.weight",
+        "b1.conv3.bn.bias",
+        "b1.conv3.bn.weight",
+        "b1.conv3.conv.weight",
+        "b1.downsample.bn.bias",
+        "b1.downsample.bn.weight",
+        "b1.downsample.conv.weight",
+        "b1.se.fc1.bias",
+        "b1.se.fc1.weight",
+        "b1.se.fc2.bias",
+        "b1.se.fc2.weight",
+        "b2.conv1.bn.bias",
+        "b2.conv1.bn.weight",
+        "b2.conv1.conv.weight",
+        "b2.conv2.bn.bias",
+        "b2.conv2.bn.weight",
+        "b2.conv2.conv.weight",
+        "b2.conv3.bn.bias",
+        "b2.conv3.bn.weight",
+        "b2.conv3.conv.weight",
+        "b2.se.fc1.bias",
+        "b2.se.fc1.weight",
+        "b2.se.fc2.bias",
+        "b2.se.fc2.weight"
+      ]
+    },
+    {
+      "name": "abstractor.net.2",
+      "input_channels": 4096,
+      "output_channels": 1024,
+      "depth": 2,
+      "graph_relative_path": "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_RegStage4096_parameterized_BF16.ir",
+      "graph_SHA256": "454b046cfe44e1e7e5e624762be4e02b391adfe8264f7fdd23ac98179b5f3046",
+      "raw_export_graph_SHA256": "222b5f777b9d43733582cbde32fe991c6f45c50797be3795d59b2cf3081b57ea",
+      "debug_scope_annotations_removed_only": 363,
+      "parameter_inputs": [
+        {
+          "own_state_key": "abstractor.net.2.b1.conv1.conv.weight",
+          "relative_key": "b1.conv1.conv.weight",
+          "shape": [
+            1024,
+            4096,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv1.bn.bias",
+          "relative_key": "b1.conv1.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv1.bn.weight",
+          "relative_key": "b1.conv1.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv2.conv.weight",
+          "relative_key": "b1.conv2.conv.weight",
+          "shape": [
+            1024,
+            1,
+            3,
+            3
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv2.bn.bias",
+          "relative_key": "b1.conv2.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv2.bn.weight",
+          "relative_key": "b1.conv2.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.se.fc1.bias",
+          "relative_key": "b1.se.fc1.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.se.fc1.weight",
+          "relative_key": "b1.se.fc1.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.se.fc2.bias",
+          "relative_key": "b1.se.fc2.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.se.fc2.weight",
+          "relative_key": "b1.se.fc2.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv3.conv.weight",
+          "relative_key": "b1.conv3.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv3.bn.bias",
+          "relative_key": "b1.conv3.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.conv3.bn.weight",
+          "relative_key": "b1.conv3.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.downsample.conv.weight",
+          "relative_key": "b1.downsample.conv.weight",
+          "shape": [
+            1024,
+            4096,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.downsample.bn.bias",
+          "relative_key": "b1.downsample.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b1.downsample.bn.weight",
+          "relative_key": "b1.downsample.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv1.conv.weight",
+          "relative_key": "b2.conv1.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv1.bn.bias",
+          "relative_key": "b2.conv1.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv1.bn.weight",
+          "relative_key": "b2.conv1.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv2.conv.weight",
+          "relative_key": "b2.conv2.conv.weight",
+          "shape": [
+            1024,
+            1,
+            3,
+            3
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv2.bn.bias",
+          "relative_key": "b2.conv2.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv2.bn.weight",
+          "relative_key": "b2.conv2.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.se.fc1.bias",
+          "relative_key": "b2.se.fc1.bias",
+          "shape": [
+            256
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.se.fc1.weight",
+          "relative_key": "b2.se.fc1.weight",
+          "shape": [
+            256,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.se.fc2.bias",
+          "relative_key": "b2.se.fc2.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.se.fc2.weight",
+          "relative_key": "b2.se.fc2.weight",
+          "shape": [
+            1024,
+            256,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv3.conv.weight",
+          "relative_key": "b2.conv3.conv.weight",
+          "shape": [
+            1024,
+            1024,
+            1,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv3.bn.bias",
+          "relative_key": "b2.conv3.bn.bias",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "own_state_key": "abstractor.net.2.b2.conv3.bn.weight",
+          "relative_key": "b2.conv3.bn.weight",
+          "shape": [
+            1024
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      ],
+      "original_state_keys": [
+        "b1.conv1.bn.bias",
+        "b1.conv1.bn.weight",
+        "b1.conv1.conv.weight",
+        "b1.conv2.bn.bias",
+        "b1.conv2.bn.weight",
+        "b1.conv2.conv.weight",
+        "b1.conv3.bn.bias",
+        "b1.conv3.bn.weight",
+        "b1.conv3.conv.weight",
+        "b1.downsample.bn.bias",
+        "b1.downsample.bn.weight",
+        "b1.downsample.conv.weight",
+        "b1.se.fc1.bias",
+        "b1.se.fc1.weight",
+        "b1.se.fc2.bias",
+        "b1.se.fc2.weight",
+        "b2.conv1.bn.bias",
+        "b2.conv1.bn.weight",
+        "b2.conv1.conv.weight",
+        "b2.conv2.bn.bias",
+        "b2.conv2.bn.weight",
+        "b2.conv2.conv.weight",
+        "b2.conv3.bn.bias",
+        "b2.conv3.bn.weight",
+        "b2.conv3.conv.weight",
+        "b2.se.fc1.bias",
+        "b2.se.fc1.weight",
+        "b2.se.fc2.bias",
+        "b2.se.fc2.weight"
+      ]
+    }
+  ]
+}

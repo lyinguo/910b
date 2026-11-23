@@ -14935,6 +14935,468 @@
       "role": "runtime_code",
       "reason": "Actual local Python dependency of universal_eval/model/adapters/glm41base_own_original_option_logprob_BF16_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v2_own_BF16_guard_20261122.py; Actual local Python dependency of universal_eval/model/adapters/hancom_hillava31_own_original_Transformers_FP16_2048_native_v3_original_registration_20261122.py; Actual local Python dependency of universal_eval/model/adapters/llava_more_own_original_FP16_discriminative_letter_native_v1_20261122.py; Actual local Python dependency of universal_eval/model/adapters/turkish_llava_own_original_Transformers_FP16_2048_native_v1_own_original_20261122.py; Explicit SHA-pinned primary inventory pending_after_daily_20261122_verified185_resource_blocked_legacy_cleanup_all_primary_v89_20261122.json",
       "initial_SHA256": "d1f8594c0dfa6b1fc9f549e9bde6cb634d661de08fbea70acdfb201da2e3c668"
+    },
+    "configs/protocols/kanana_own_original_RegStage_BF16_parameterized_graphs_20261123.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_20261123.py, scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v4_graphtext_exact_lines_20261123.py, universal_eval/model/kanana_own_original_20261123/original_parameterized_RegStage_compat_20261123.py, scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v3_graphtext_20261123.py, scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v2_original_decorators_20261123.py",
+      "initial_SHA256": "c2efb840331f2d203c8ea63bd64620f0fb6ef0a6dc8f2445a6eb4d31bbea5584"
+    },
+    "configs/protocols/kanana_own_original_RegStage_BF16_parameterized_graphs_v2_graphtext_20261123.json": {
+      "role": "runtime_config",
+      "reason": "Runtime configuration actually consumed by universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_parameterized_RegStage_compat_20261123.py, scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v4_graphtext_exact_lines_20261123.py, scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v3_graphtext_20261123.py, scripts/diagnostics/diagnose_Kanana_original_parameterized_RegStage_actual_NPU_synthetic_interface_v4_20261123.py",
+      "initial_SHA256": "41f00cf0fe04d737fc2a8fc476e76c5f6f07d8c5573f2ff0ef53e0939ef14976"
+    },
+    "scripts/code_publication_windows/build_Day23_verified185_actual_commit_blocked_resource_full_handoff_v90_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "3169fe90838af47b1b15c1517ea1a555677a2d626a22741ffa9e9f5f8658b6e8"
+    },
+    "scripts/code_publication_windows/build_Kanana_own_frontend200_binding_and_source_v1_heartbeat1627_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e5278e9552743b79c7d32f35a2909a6c6dcee8092d06580c462987096a7cf7ec"
+    },
+    "scripts/code_publication_windows/build_Kanana_own_frontend200_binding_and_source_v2_exact_empty_cell_heartbeat1627_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "947f352d1e82831a3a49db5601768b55f189ec68f2210301cce1c3ee897ab1c0"
+    },
+    "scripts/code_publication_windows/build_Kanana_own_frontend200_binding_and_source_v3_original_Jinja_reference_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f23446293852287c52d0b46a8479c64faf505cb3d16d307bbd1b6d047557d071"
+    },
+    "scripts/code_publication_windows/build_Kanana_own_frontend200_v2_original_Jinja_whitespace_reference_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f862c188ad84453dd2292cb3774507e952b6d9926fba41de7471b027a2e48d47"
+    },
+    "scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4b62e2d482f42adff478d501391f66251550b04e7634a567b67b1d71e64a4e22"
+    },
+    "scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v2_original_decorators_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "84e10dad6a92c5b3430399c5b74fb5ce68dec5bf5dad817e9a1b6c3caf73c85c"
+    },
+    "scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v3_graphtext_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "ec27f4cb4788dce5c23fc4e139d0834ecc45193ce37727b357041d2daab49374"
+    },
+    "scripts/code_publication_windows/build_Kanana_owned_private_real_RegStage_graphs_and_meta_validation_v4_graphtext_exact_lines_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "80859ded14f7da01513fde139c5a355d57ab0496e4d3e98cdefbdebc9dc10bf4"
+    },
+    "scripts/code_publication_windows/build_daily24_controls_and_explicit_collection_20261124.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "86435d39fde3339e8a7df4a533d5515c3badaf322bad37f0ccd6907bfb1b268a"
+    },
+    "scripts/code_publication_windows/build_heartbeat0628_original_AA_source_review_and_fresh_cleanup_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "65796dc7d79ce9baf04d51d166928311f135656ec3b60aae129ba08c6def5789"
+    },
+    "scripts/code_publication_windows/build_heartbeat0628_verified185_AA_source_difference_resource_full_handoff_v92_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "539f8083fceb367529d91a78b83439d94889c48e675f6e03a1a1d7a90d8a2843"
+    },
+    "scripts/code_publication_windows/build_heartbeat1131_verified185_Kanana_graph_meta_drift_resource_full_handoff_v93_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "6039e2f9fd75d606f7f3d1861000d598b8d4f2962d90719184fd09af907c5a8e"
+    },
+    "scripts/code_publication_windows/build_heartbeat1627_verified185_Kanana_frontend200_NPU_operator_only_resource_full_handoff_v94_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "67e696d1fc8ce867d31f0e0a6a182152957522d0e9333ebd0c50d9155eddbb70"
+    },
+    "scripts/code_publication_windows/build_heartbeat2126_verified185_Kanana_complete_observer_reconstruction26_resource_full_handoff_v95_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "0709f263f99fd8fdaa67d950934a2604b1583ade0b802a4b2078192492b9924e"
+    },
+    "scripts/code_publication_windows/build_official910b_verified185_Day23_commit_MedraN_source_audit_v91_requested_args_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "9a7a732fbe4f0d212bf61fe5409f34ac0bcf99db3cc3ba298aa12d60bce7a0df"
+    },
+    "scripts/code_publication_windows/build_verified185_Day23_MedraN_source_official_full_handoff_v91_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "73c5e0f540cfee874aa1d0a78e5c4636611458516724717ddf05391a3f88f69c"
+    },
+    "scripts/code_publication_windows/daily24_reviewed_code_publication_controls_20261124.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "33bcc3898e3a5a624ecbc9fea953dd2a8af9ebe9a70c909ec00d57a4ee93a7b1"
+    },
+    "scripts/code_publication_windows/diagnose_private_TorchScript_inlining_with_tiny_synthetic_modules_readonly_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "b77232df1a0d10d8d2ee251ac96fcd56da7b14ca2c33cfe0880bb21fb9fc9904"
+    },
+    "scripts/code_publication_windows/export_Kanana_original_RegStage_weight_free_BF16_graphs_readonly_CPU_synthetic_control_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "8745485b528ba287eb0b61c502ab11db8e3a87eaa8c9417a5416235728ec301e"
+    },
+    "scripts/code_publication_windows/export_Kanana_original_RegStage_weight_free_BF16_graphs_v2_original_inline_before_lower_readonly_CPU_synthetic_control_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "ab72c170648f1d8ec1877d72800506375037ad9b95e73508f915ea1fdaf39d01"
+    },
+    "scripts/code_publication_windows/export_Kanana_original_RegStage_weight_free_BF16_graphs_v3_explicit_all_parameters_readonly_CPU_synthetic_control_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "9cb542998b9c78bd087f0925cae564ef9358694b3df158929e7662b76520ac90"
+    },
+    "scripts/code_publication_windows/export_Kanana_original_RegStage_weight_free_BF16_graphs_v4_complete_inline_explicit_parameters_readonly_CPU_synthetic_control_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e3e9e16e1dfc0ba045c2810613778a9d6b81793cf9eb768e8449fcbf8399961d"
+    },
+    "scripts/code_publication_windows/export_Kanana_original_RegStage_weight_free_BF16_graphs_v5_full_synthetic_control_values_and_pos_source_readonly_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4157fbf1bcaab77597b375dccde5964aad695c7221a4cb3ed1d6184da794f5d2"
+    },
+    "scripts/code_publication_windows/read_A100_MedraN_current_config_shard_headers_and_Kanana_original_RegStage_source_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "91ef272160374ebaf996bd4c57c5427f3e49eba8ee07a74ee04653bc08ff590f"
+    },
+    "scripts/code_publication_windows/read_Kanana_original_canonical_adapter_and_completed_failed_import_context_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "5ddaf4e2cfb23f0a005acffabfddfdf986fb1d3299d257f17c118e3367a220e4"
+    },
+    "scripts/code_publication_windows/read_Kanana_original_reference_and_native_Qwen2_interfaces_no_model_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "71e21e6746f931242dcd08cd65e4c455becc95e064dcb58c735d9278158542d1"
+    },
+    "scripts/code_publication_windows/read_Kanana_owned_original_source_config_headers_and_previous_stages_no_NN_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "3ad82c2627a8504fbf0e9853832a845446a26072d943ee106bbf9552ef25c435"
+    },
+    "scripts/code_publication_windows/read_original_A100_Gemma3n_vllm_native_vision_source_readonly_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "2b0acddba0cbf6ae1f5927ce8e5cbe0fb0877e26d21a20661d0f98f97a5eb2f6"
+    },
+    "scripts/code_publication_windows/read_original_A100_timm_exact_sources_for_MedraN_readonly_no_model_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "79f14698195cb2f18f098cdea6c77abe6f37b0223992a55b18842df2581ef378"
+    },
+    "scripts/code_publication_windows/read_original_timm_FX_decorator_source_readonly_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "bca6d9d7d831ddab6da30d4b5a482acecc49a059b7d1b886c6b89bf9af8a8f07"
+    },
+    "scripts/code_publication_windows/verify_official910b_verified185_Day23_MedraN_source_v91_actual_readback_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f3ce288d07c7be34842b0b722e42b417ab4be0ff22861b6d69f99a67795d3e80"
+    },
+    "scripts/diagnostics/diagnose_Kanana_original_parameterized_RegStage_actual_NPU_synthetic_interface_v4_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e26bd810333b2132242b73c32bf921bb951f1644d151c90fac8f4926a78ad4cf"
+    },
+    "scripts/diagnostics/diagnose_Kanana_private_RegStage_cross_Torch_CPU_drift_and_own739_meta_only_v3_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "8a9b1514fbb48d096f88c4f5dc612d91524973332e24890830ea3e0372b7fb25"
+    },
+    "scripts/diagnostics/probe_original_project_filesystem_copy_on_write_dedupe_tiny_new_files_only_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "db8b4eea7a25c7973834e1f028d3f2fe73dbb17284545cf37a1c3c929b7e0ec1"
+    },
+    "scripts/diagnostics/review_MedraN_original_AA_config_difference_and_real_timm_source_recovery_no_NN_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "3350f741010efaab419b560584bc1d349623d97627f0696f6f9bae3e9887337b"
+    },
+    "scripts/diagnostics/review_medran_original_FP16_graph_and_loader_source_contract_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e0bc21686108b589d3edea7acb4e22036da39b782522437edeb241b9984c0a34"
+    },
+    "scripts/diagnostics/verify_Kanana_private_RegStage_full_synthetic_controls_and_own739_meta_only_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "8cbc029e234de6e3d8f88305060dbb343f037a705b84e4aeb0ceb2cb8d3fa709"
+    },
+    "scripts/diagnostics/verify_Kanana_private_RegStage_full_synthetic_controls_and_own739_meta_only_v2_graphtext_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "83a4965d5cea3c32d91e6649ddd5f5d43a69e8ab32c13a4ad8e32b78251f85c0"
+    },
+    "scripts/maintenance/accept_Kanana_completed_frontend200_exact_source_scope_no_replay_v3_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "476ef7417d92e06c96bffa7d7efb6382e7994056260f04ee8bfa4942e5a59c31"
+    },
+    "scripts/maintenance/accept_Kanana_completed_frontend200_exact_source_scope_no_replay_v4_real_pipeline_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "27be8a5263812c3486be570c83dfae10dbfd66cf10b121b8c73f35cb4ebe6976"
+    },
+    "scripts/maintenance/collect_daily24_verified185_explicit_primary_sources_20261124.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "01b77ea432a2ba5bea6dcc6987a8e971184de918751dcf6643c25272be6e509d"
+    },
+    "scripts/maintenance/discover_verified185_current_full_accepted_correct_nonexample_metadata_only_v2_heartbeat0628_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "2615baff14f9c2372a525a4433ab23017496be08668d6dfc516c3b20aa38b42d"
+    },
+    "scripts/maintenance/discover_verified185_current_full_accepted_correct_nonexample_metadata_only_v3_heartbeat1131_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e52453575e4c0a364cb56362e60a2d33f36816b650b8426a723deecfc3770c53"
+    },
+    "scripts/maintenance/discover_verified185_current_full_accepted_correct_nonexample_metadata_only_v4_heartbeat1627_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "3cd092ec732c80d884ed9ac6fbfcfeb7d204f5beb5234b3569fa701f6789fe34"
+    },
+    "scripts/maintenance/discover_verified185_current_full_accepted_correct_nonexample_metadata_only_v5_heartbeat2126_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "62bdadcc38bd89affbc8e7eaa23b8e1e4a8c78b60d3493d84fca97299f01df72"
+    },
+    "scripts/maintenance/preserve_Day23_verified185_actual_commit_blocked_resource_full_handoff_v90_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f0c5577d787d8bdfd6427fdcb12c30f9f5e57177b85531798f19624d110264a1"
+    },
+    "scripts/maintenance/preserve_heartbeat0628_verified185_AA_source_difference_resource_full_handoff_v92_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "3869ca252d3f897b461ca8d77c1aed58d755baf754b544ea3ca4ae3a112bfd5a"
+    },
+    "scripts/maintenance/preserve_heartbeat1131_verified185_Kanana_graph_meta_drift_resource_full_handoff_v93_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "2a5b3adfb25962047f42d32863ab966aec4e88840dce9b8867d1798af557d65b"
+    },
+    "scripts/maintenance/preserve_heartbeat1627_verified185_Kanana_frontend200_NPU_operator_only_resource_full_handoff_v94_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "10bef8f09192185929b917d79762ebfdd24b7c35c5b6d0831d882472b7989eb1"
+    },
+    "scripts/maintenance/preserve_heartbeat2126_verified185_Kanana_complete_observer_reconstruction26_resource_full_handoff_v95_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "80f0b511e96b0990b4851691f1945eaba4086db64ee5d612a45d7b8cad1d2391"
+    },
+    "scripts/maintenance/preserve_verified185_Day23_MedraN_source_official_full_handoff_v91_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "0b13ae7b6b191470c73f8e4516dedb16f425364d5d4d2f40f948bc1c2ad4150a"
+    },
+    "scripts/maintenance/read_Kanana_dedicated_frontend_actual_contract_failures_no_model_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "fbbebf0d2934ed7db414495f512a280f15c9168194987372b1fb906cb3db2892"
+    },
+    "scripts/maintenance/read_Kanana_private_synthetic_control_meta_actual_progress_no_signal_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "70d829a0aeba5148c7087381426b8eb2e01e8151189e062046fca91727503221"
+    },
+    "scripts/maintenance/read_heartbeat0628_verified185_required_v90_latest_and_actual_20261123_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "2423bbfb210a7314f1b2ce621c854afcd37388d465dfec72a4931e5d29e0d1c8"
+    },
+    "scripts/maintenance/run_daily24_actual_R_source_tests_no_model_20261124_remote.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "15931e9dc4037ce55f2bbe7159fae928a6d00f4f366526eba6275b7c0afb403e"
+    },
+    "scripts/maintenance/sync_daily24_reviewed_code_policy_and_remote_receipts_only_20261124.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "e4ed58581ce0680f043eba8233ea06a93adb99f650996519ac21bb63836cc946"
+    },
+    "scripts/maintenance/verify_daily24_R_source_concurrent_CAS_before_publish_20261124.py": {
+      "role": "verification_code",
+      "reason": "Explicit current-day useful implementation or actual inspection/dependency",
+      "initial_SHA256": "4471ff1ba669e132bccbb1bbe8cf367904f017a1504bb6926f1d4f567429659b"
+    },
+    "scripts/prepare_kanana_own_original_BF16_dedicated_frontend200_v1_heartbeat1627_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "b92699105a2252d31208447bf9e7c1e3fa946deef44c0371407de3bb8ab9856d"
+    },
+    "scripts/prepare_kanana_own_original_BF16_dedicated_frontend200_v2_original_whitespace_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "b84c16628b284ac30d6d7a96a0720c2d12afa486c8a85888033c8cae7b5052a2"
+    },
+    "scripts/tests/test_kanana_complete_native_observer_values_no_model_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "1e5edf397b0d03a41c8d928351646d6ac8bd7bf79ae3c3d94342fd2adf1093c8"
+    },
+    "scripts/tests/test_kanana_independent_complete_capture_reconstruction_no_model_20261123.py": {
+      "role": "verification_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "5c8df97d5f64542229921df0b6d89aaa86bdcf3140832332a2227731fe4de493"
+    },
+    "universal_eval/model/kanana_own_original_20261123/__init__.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "universal_eval/model/kanana_own_original_20261123/configuration.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_20261123/modeling.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "a9086228f78d03eb04cb273488ec87452b611668c304aad10e44000ae4127530"
+    },
+    "universal_eval/model/kanana_own_original_20261123/modeling.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f05353f6680aee9e419e86950a59d4a5faec47d8151d185858b02e768d6ec11f"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_RegStage1280_parameterized_BF16.ir": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "weight_free_operator_graph_SHA256": [
+        "9f428f01cc470507b96474d184f3c548a43f2b44a3c8fdcbee8f4a44d98ca4a0"
+      ],
+      "initial_SHA256": "9f428f01cc470507b96474d184f3c548a43f2b44a3c8fdcbee8f4a44d98ca4a0"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_RegStage4096_parameterized_BF16.ir": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "weight_free_operator_graph_SHA256": [
+        "222b5f777b9d43733582cbde32fe991c6f45c50797be3795d59b2cf3081b57ea"
+      ],
+      "initial_SHA256": "222b5f777b9d43733582cbde32fe991c6f45c50797be3795d59b2cf3081b57ea"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_fast_norm_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_20261123/original_timm_layers_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "977028a6c196a9dc94bd538c6bb120a0f141d8999831cc7f1757504032d4eba1"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_parameterized_RegStage_compat_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_20261123/modeling.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4f6f2552b024f79e01aab283a80c1d73d46ecb45ed4a1e27d59547c95a9da831"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_timm_FX_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_20261123/original_timm_layers_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "234f6b7faf759c0c30e2e84483b20c358c1cc4c6f3c34af221f10b17c957ab8c"
+    },
+    "universal_eval/model/kanana_own_original_20261123/original_timm_layers_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_20261123/original_parameterized_RegStage_compat_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "01d23da716b4aa6e88bed4b7eace3a41f3ae65d6adbe3e68ce11fe24d30b6ec4"
+    },
+    "universal_eval/model/kanana_own_original_20261123/processing.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "c2c190d1af62b976f03bae74151399abc16c7550ac1d7a12881b1c7fb4a03578"
+    },
+    "universal_eval/model/kanana_own_original_20261123/processing_image.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4794fd3dc937b85b3e2682680fb06765c06d9d7626d7f8250179cbd63bb2bbc9"
+    },
+    "universal_eval/model/kanana_own_original_20261123/tokenization.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4a5e953b6b047ac142fb476e2da9a9ff5cf6e37c7fbf91c0330281a2a021935b"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/__init__.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/complete_native_observer_values_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "d05a1460fe83778a9ab32dc328f5fb6f805a034ddc5411da36eb294ed2b8f87e"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/configuration.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_graphtext_v2_20261123/modeling.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "a9086228f78d03eb04cb273488ec87452b611668c304aad10e44000ae4127530"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/independent_complete_capture_values_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "6029407eeef7ad73aaf0c04cb2787dbc3702f6a094d3a919651610941b2254be"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/modeling.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "f05353f6680aee9e419e86950a59d4a5faec47d8151d185858b02e768d6ec11f"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_RegStage1280_parameterized_BF16.ir": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "weight_free_operator_graph_SHA256": [
+        "398fa86e142c76f7ea35d5108389be5265389931cc5d715f582c47834ab8d2dd"
+      ],
+      "initial_SHA256": "398fa86e142c76f7ea35d5108389be5265389931cc5d715f582c47834ab8d2dd"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_RegStage4096_parameterized_BF16.ir": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "weight_free_operator_graph_SHA256": [
+        "454b046cfe44e1e7e5e624762be4e02b391adfe8264f7fdd23ac98179b5f3046"
+      ],
+      "initial_SHA256": "454b046cfe44e1e7e5e624762be4e02b391adfe8264f7fdd23ac98179b5f3046"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_fast_norm_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_timm_layers_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "977028a6c196a9dc94bd538c6bb120a0f141d8999831cc7f1757504032d4eba1"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_parameterized_RegStage_compat_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_graphtext_v2_20261123/modeling.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "d8d505eccaf5d17f0fb2a6aee707640982893f84606e0137256d15f89ca9a030"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_timm_FX_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_timm_layers_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "234f6b7faf759c0c30e2e84483b20c358c1cc4c6f3c34af221f10b17c957ab8c"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_timm_layers_20261123.py": {
+      "role": "runtime_code",
+      "reason": "Actual local Python dependency of universal_eval/model/kanana_own_original_graphtext_v2_20261123/original_parameterized_RegStage_compat_20261123.py; Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "01d23da716b4aa6e88bed4b7eace3a41f3ae65d6adbe3e68ce11fe24d30b6ec4"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/processing.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "c2c190d1af62b976f03bae74151399abc16c7550ac1d7a12881b1c7fb4a03578"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/processing_image.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4794fd3dc937b85b3e2682680fb06765c06d9d7626d7f8250179cbd63bb2bbc9"
+    },
+    "universal_eval/model/kanana_own_original_graphtext_v2_20261123/tokenization.py": {
+      "role": "runtime_code",
+      "reason": "Explicit SHA-pinned primary inventory pending_after_daily_20261123_verified185_Kanana_complete_observer_reconstruction26_resource_all_primary_v95_20261123.json",
+      "initial_SHA256": "4a5e953b6b047ac142fb476e2da9a9ff5cf6e37c7fbf91c0330281a2a021935b"
     }
   }
 }
